@@ -1,0 +1,47 @@
+* Project Charter:
+  Examine the power and thermal characteristics of the two leading
+  processor families running on the most recent release of the FreeBSD
+  operating system.  This will happen by running a collection of benchmark 
+  applications on an desktop PC with an Intel Core i3 processor and a 
+  Raspberry PI 2 running ARM1176, both machines configured with FreeBSD 10.0.  
+* Baseline Objectives:
+  1. Starting from Dr. Lewis's dissertation work,   develop shell
+     scripts (and programs, if required) to collect system performance
+     metrics from the processor during the time a benchmark program
+     executes. 
+     1. Scripts need to start data collection process, launch benchmark
+        and collect data, and save data to CSV files for further
+        processing 
+     2. Data collected
+	1. CPU and GPU temperature counters
+	2. Performance counter data (exactly which counters will be
+           provided by Dr. Lewis) 
+  2. Configure and test the infrastructure for building and modifying
+     the FreeBSD kernel 
+     1. Must be able to download a copy of the kernel sources from the
+        FreeBSD servers 
+     2. Need to be able to then overlay any local changes into the
+        FreeBSD build infrastructure 
+     3. Must be able to build release and debug versions of the base
+        kernel and modified kernel 
+     4. This can be done using virtual machines. 
+  3. Run a set of benchmark programs to characterize the thermal envelope of a machine
+     1. Uses data collection infrastructure described in first objective 
+     2. Original work used the SPEC and PARSEC benchmark suites, need to
+        find alternative benchmarks for the ARM architecture 
+* Extended Objectives
+  1. Implement system to collect power measurements
+     1. Original work used a combination of a WattsUP power meter
+        measuring power usage at main (AC readings in front of PSU) and
+        an Agilent oscilloscope with high resolution DC current probes
+        measuring each of the motherboard's voltage domains (3.3V, 5V,
+        12V DC current on back side of PSU). 
+     2. Do not currently have the required test equipment; Dr. Lewis
+        investigating the possibility of acquiring 'scope for use in
+        this effort, will have some electrical engineering work to do to
+        be able to use scope (need to design circuit with shunt
+        resistor) to measure power. 
+  2. Minimal need for custom FreeBSD kernel for this effort
+     1. No plan to do any work with scheduling for the Summer 16 project
+     2. May need to build a custom kernel for one or both processors to
+        enable collection of temperature and PMC data 
