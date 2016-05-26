@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: hotpower08.aux
+The style file: ULieeetran.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: hotpower08.bib.bib
+Warning--entry type for "WattsUp2006a" isn't style-file defined
+--line 280 of file hotpower08.bib.bib
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty author in HT2008
+Warning--empty author in SSI2004
+Warning--empty author in Micron2007
+Warning--empty author in Hitachi2006
+Warning--empty author in Intel2004
+
+Done.
+You've used 15 entries,
+            4024 wiz_defined-function locations,
+            909 strings with 9602 characters,
+and the built_in function-call counts, 8676 in all, are:
+= -- 676
+> -- 134
+< -- 59
++ -- 79
+- -- 19
+* -- 401
+:= -- 1338
+add.period$ -- 31
+call.type$ -- 15
+change.case$ -- 14
+chr.to.int$ -- 138
+cite$ -- 20
+duplicate$ -- 681
+empty$ -- 800
+format.name$ -- 26
+if$ -- 1977
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 125
+newline$ -- 70
+num.names$ -- 10
+pop$ -- 296
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 675
+stack$ -- 0
+substring$ -- 334
+swap$ -- 499
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 15
+warning$ -- 5
+while$ -- 34
+width$ -- 17
+write$ -- 152
+(There were 6 warnings)

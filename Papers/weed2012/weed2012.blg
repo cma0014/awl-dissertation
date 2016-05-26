@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: weed2012.aux
+The style file: weed2012.bst
+Database file #1: ../overall.bib.bib
+Warning--entry type for "WattsUp2006a" isn't style-file defined
+--line 3757 of file ../overall.bib.bib
+Warning--to sort, need author, organization, or key in Intel2006
+You've used 22 entries,
+            2535 wiz_defined-function locations,
+            734 strings with 8976 characters,
+and the built_in function-call counts, 9059 in all, are:
+= -- 908
+> -- 383
+< -- 9
++ -- 188
+- -- 104
+* -- 569
+:= -- 1401
+add.period$ -- 80
+call.type$ -- 22
+change.case$ -- 116
+chr.to.int$ -- 0
+cite$ -- 23
+duplicate$ -- 394
+empty$ -- 803
+format.name$ -- 122
+if$ -- 2052
+int.to.chr$ -- 0
+int.to.str$ -- 22
+missing$ -- 20
+newline$ -- 122
+num.names$ -- 42
+pop$ -- 139
+preamble$ -- 1
+purify$ -- 83
+quote$ -- 0
+skip$ -- 359
+stack$ -- 0
+substring$ -- 532
+swap$ -- 104
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 86
+warning$ -- 1
+while$ -- 78
+width$ -- 24
+write$ -- 263
+(There were 2 warnings)

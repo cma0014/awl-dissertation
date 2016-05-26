@@ -1,0 +1,62 @@
+-*- mode: Outline;-*-
+* the basic premise
+** reduce power consumption in data centers
+*** traditional methods focus on single processor
+*** data centers focus on storage
+** hierarchy of machines
+*** single processor machines
+*** multi-core processors
+*** multi-processor multi-core CPUs
+*** clusters of multi-core multi-processors CPUs
+*** groupings of clusters into grids
+** scalable energy conservation techniques across the hierarchy
+** virtualization
+*** move towards virtualization
+**** hardware sharing
+**** Who knows about the physical hardware?
+* baseline:
+
+statistics based benchmark of power consumption of virtualization
+** power consumption
+
+for each node in the hierarchy, examine how power consumption is affected by
+virtualization
+** experiment design
+
+* focus on
+** the processor
+*** the single multi-core processor
+**** extension of "classical" methods across multiple cores
+**** simularities to SMP
+**** linkage to the operating system and the hypervisor
+*** the cluster
+**** differences between the cluster and single machine
+**** coorindating policies across the cluster
+***** optimizing the resource from a global standpoint
+**** linkage to the operating system and the hypervisor
+** the hypervisor
+*** memory
+**** cache management
+**** relationship with the backplane network
+***** in the multi-core enviornment
+***** in the cluster environment
+*** process scheduling
+**** managing the processor by managing the workload
+**** distributing the workload across the cluster
+*** backplane network
+* the single multi-core processor and the hypervisor
+** memory
+** process scheduling
+* the cluster and the hypervisor
+** memory
+** process scheduling
+* research plan
+** establish the baseline
+** single multi-core processor
+** cluster
+* deliverables
+** publication plan
+** prototypes
+** prospectus
+** dissertation
+

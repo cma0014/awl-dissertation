@@ -1,0 +1,33 @@
+H:
+bm: bzip2 hurst parameter = 9.37508e-01 
+bm: cactusadm hurst parameter = 9.72879e-01 
+bm: gromacs hurst parameter = 9.56656e-01 
+bm: lbm hurst parameter = 9.49587e-01 
+bm: leslie3d hurst parameter = 9.77744e-01 
+bm: perlbench hurst parameter = 9.58381e-01 
+
+AR:
+bm mix max | mean(p) median(p) std(p) var(p) | %error mean(relerr) median(relerr) max(relerror) |  rmse
+astar |  41.5500  72.3000 |   6.7366   0.0674   0.0591   0.2853 |   4.9374
+gamess |  41.9700  68.5500 |   7.4120   0.0741   0.0563   0.4458 |   5.5429
+gobmk |  40.3680  69.2100 |   6.8372   0.0684   0.0531   0.2779 |   4.8306
+zeusmp |  41.5680  75.3900 |   9.2036   0.0920   0.0767   0.3184 |
+7.2425
+
+
+
+
+MARS:
+bm mix max | mean(p) median(p) std(p) var(p) | %error mean(relerr) median(relerr) max(relerror) |  rmse
+astar |  41.5500  72.3000 |   6.3659   0.0637   0.0537   0.2798 |   4.9707
+gamess |  41.9700  68.5500 |   6.2522   0.0625   0.0446   0.3305 |   4.5848
+gobmk |  40.3680  69.2100 |   6.1374   0.0614   0.0413   0.2791 |   4.7306
+zeusmp |  41.5680  75.3900 |  12.3356   0.1234   0.1164   0.3212 |   8.9147
+
+
+Chaotic:
+bm mix max | mean(p) median(p) std(p) var(p) | %error mean(relerr) median(relerr) max(relerror) |  rmse
+astar |  41.5500  72.3000 |   1.9244   0.0192   0.0093   0.2077 |   1.8386
+gamess |  41.9700  68.5500 |   1.4203   0.0142   0.0054   0.1479 |   1.5481
+gobmk |  40.3680  69.2100 |   2.3632   0.0236   0.0098   0.2147 |   2.1314
+zeusmp |  41.5680  75.3900 |   4.2029   0.0420   0.0334   0.2056 |   3.3069

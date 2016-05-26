@@ -1,0 +1,22 @@
+IOstat explanations :
+
+TTY : tin & tout
+- Number of terminal characters read IN and OUT
+
+Disk IO statistics :
+
+%w      percent of time there are transactions waiting for service (queue non-empty)
+%b      percent of time the disk is busy (transactions in progress) (should be < 5%)
+actv    average number of transactions actively being serviced (removed from the queue but not yet completed)
+disk    name of the disk
+r/s     reads per second
+w/s     writes per second
+Kr/s    kilobytes read per second
+Kw/s    kilobytes written per second
+wait    average number of transactions waiting for service (Q length)
+svc_t   average service time
+
+
+
+
+

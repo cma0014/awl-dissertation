@@ -1,0 +1,1258 @@
+pic0: pic0=PAPI_l2_tcm
+pic1: pic1=FSB_data_activity,sys
+   time cpu event      pic0      pic1 
+  5.006   0  tick    862615         0 
+  5.006   2  tick    862615         0 # counter shared with CPU 0
+ 10.006   0  tick    743323         0 
+ 10.006   2  tick    743323         0 # counter shared with CPU 0
+ 15.006   0  tick    718923         0 
+ 15.006   2  tick    718923         0 # counter shared with CPU 0
+ 15.006   1  tick    683350         0 
+ 15.006   3  tick    683350         0 # counter shared with CPU 1
+ 20.006   0  tick     66258         0 
+ 20.006   2  tick     66258         0 # counter shared with CPU 0
+ 25.006   1  tick    769074         0 
+ 25.006   3  tick    769074         0 # counter shared with CPU 1
+ 30.006   1  tick    791543         0 
+ 30.006   3  tick    791543         0 # counter shared with CPU 1
+ 35.006   0  tick    788820         0 
+ 35.006   2  tick    788820         0 # counter shared with CPU 0
+ 35.006   1  tick    738502         0 
+ 35.006   3  tick    738502         0 # counter shared with CPU 1
+ 40.006   0  tick    126964         0 
+ 40.006   2  tick    126964         0 # counter shared with CPU 0
+ 45.006   0  tick    577117         0 
+ 45.006   2  tick    577117         0 # counter shared with CPU 0
+ 50.006   0  tick    672965         0 
+ 50.006   2  tick    672965         0 # counter shared with CPU 0
+ 55.006   1  tick    690928         0 
+ 55.006   2  tick    668617         0 # counter shared with CPU 0
+ 55.006   3  tick    690928         0 # counter shared with CPU 1
+ 60.006   1  tick    108630         0 
+ 60.006   3  tick    108630         0 # counter shared with CPU 1
+ 65.006   0  tick    796374         0 
+ 65.006   2  tick    796374         0 # counter shared with CPU 0
+ 70.006   1  tick    720744         0 
+ 70.006   3  tick    720744         0 # counter shared with CPU 1
+ 75.006   0  tick    709469         0 
+ 75.006   2  tick    709469         0 # counter shared with CPU 0
+ 75.007   1  tick    694500         0 
+ 75.007   3  tick    694500         0 # counter shared with CPU 1
+ 80.006   0  tick     94271         0 
+ 80.006   2  tick     94271         0 # counter shared with CPU 0
+ 85.006   1  tick    715694         0 
+ 85.006   3  tick    715694         0 # counter shared with CPU 1
+ 90.006   1  tick    645363         0 
+ 90.006   3  tick    645363         0 # counter shared with CPU 1
+ 95.006   1  tick    729168         0 
+ 95.006   2  tick    791084         0 # counter shared with CPU 0
+ 95.006   3  tick    729168         0 # counter shared with CPU 1
+100.006   1  tick     75556         0 
+100.006   3  tick     75556         0 # counter shared with CPU 1
+105.006   1  tick    678470         0 
+105.006   3  tick    678470         0 # counter shared with CPU 1
+110.006   0  tick    701206         0 
+110.006   2  tick    701206         0 # counter shared with CPU 0
+115.006   0  tick    580130         0 
+115.006   2  tick    580130         0 # counter shared with CPU 0
+115.006   1  tick    756578         0 
+115.006   3  tick    756578         0 # counter shared with CPU 1
+120.006   1  tick    122979         0 
+120.006   3  tick    122979         0 # counter shared with CPU 1
+125.006   0  tick    767480         0 
+125.006   2  tick    767480         0 # counter shared with CPU 0
+130.006   0  tick    687185         0 
+130.006   2  tick    687185         0 # counter shared with CPU 0
+135.006   0  tick    703568         0 
+135.006   2  tick    703568         0 #135.006   3  tick    709201         0 # counter shared with CPU 1
+140.006   1  tick     68772         0 
+140.006   3  tick     68772         0 # counter shared with CPU 1
+145.006   1  tick    572769         0 
+145.006   3  tick    572769         0 # counter shared with CPU 1
+150.006   1  tick    765803         0 
+150.006   3  tick    765803         0 # counter shared with CPU 1
+155.006   0  tick    640165         0 
+155.006   2  tick    640165         0 # counter shared with CPU 0
+155.006   1  tick    907123         0 
+155.006   3  tick    907123         0 # counter shared with CPU 1
+160.006   1  tick    118866         0 
+160.006   3  tick    118866         0 # counter shared with CPU 1
+165.006   0  tick    603121         0 
+165.006   2  tick    603121         0 # counter shared with CPU 0
+170.006   0  tick    698727         0 
+170.006   2  tick    698727         0 # counter shared with CPU 0
+175.006   0  tick    789418         0 
+175.006   2  tick    789418         0 # counter shared with CPU 0
+180.006   0  tick    109678         0 
+180.006   2  tick    109678         0 # counter shared with CPU 0
+185.006   1  tick    801553         0 
+185.006   3  tick    801553         0 # counter shared with CPU 1
+190.006   0  tick    608943         0 
+190.006   2  tick    608943         0 # counter shared with CPU 0
+195.006   0  tick    719941         0 
+195.006   2  tick    719941         0 # counter shared with CPU 0
+195.006   1  tick    685967         0 
+195.006   3  tick    685967         0 # counter shared with CPU 1
+200.006   0  tick     98485         0 
+200.006   2  tick     98485         0 # counter shared with CPU 0
+205.006   0  tick    577066         0 
+205.006   2  tick    577066         0 # counter shared with CPU 0
+210.006   1  tick    719038         0 
+210.006   3  tick    719038         0 # counter shared with CPU 1
+215.006   1  tick    829505         0 
+215.006   3  tick    829505         0 # counter shared with CPU 1
+220.006   1  tick     87596         0 
+220.006   3  tick     87596         0 # counter shared with CPU 1
+225.006   0  tick    562223         0 
+225.006   2  tick    562223         0 # counter shared with CPU 0
+230.006   0  tick    615400         0 
+230.006   2  tick    615400         0 # counter shared with CPU 0
+235.006   0  tick    610149         0 
+235.006   2  tick    610149         0 # counter shared with CPU 0
+235.006   1  tick    787317         0 
+235.006   3  tick    787317         0 # counter shared with CPU 1
+240.006   0  tick    124489         0 
+240.006   2  tick    124489         0 # counter shared with CPU 0
+245.006   0  tick    739125         0 
+245.006   2  tick    739125         0 # counter shared with CPU 0
+250.006   0  tick    660385         0 
+250.006   2  tick    660385         0 # counter shared with CPU 0
+255.006   0  tick    683425         0 
+255.006   2  tick    683425         0 # counter shared with CPU 0
+260.006   1  tick     78978         0 
+260.006   3  tick     78978         0 # counter shared with CPU 1
+260.007   0  tick     86872         0 
+260.007   2  tick     86872         0 # counter shared with CPU 0
+265.006   0  tick    667348         0 
+265.006   2  tick    667348         0 # counter shared with CPU 0
+270.006   1  tick    719504         0 
+270.006   3  tick    719504         0 # counter shared with CPU 1
+275.006   1  tick    914601         0 
+275.006   3  tick    914601         0 # counter shared with CPU 1
+275.006   0  tick    621145         0 
+275.006   2  tick    621145         0 # counter shared with CPU 0
+280.006   0  tick     98000         0 
+280.006   2  tick     98000         0 # counter shared with CPU 0
+285.006   0  tick    756538         0 
+285.006   2  tick    756538         0 # counter shared with CPU 0
+290.006   0  tick    709873         0 
+290.006   2  tick    709873         0 # counter shared with CPU 0
+295.006   0  tick    667766         0 
+295.006   2  tick    667766         0 # counter shared with CPU 0
+300.006   1  tick    168884         0 
+300.006   3  tick    168884         0 # counter shared with CPU 1
+305.006   0  tick   3805521         0 
+305.006   2  tick   3805521         0 # counter shared with CPU 0
+310.006   0  tick    982073         0 
+310.006   1  tick    851259         0 
+310.006   3  tick    851259         0 # counter shared with CPU 1
+315.006   0  tick   4264150         0 
+315.006   2  tick   4264150         0 # counter shared with CPU 0
+315.006   1  tick   2274211         0 
+315.006   3  tick   2274211         0 # counter shared with CPU 1
+320.006   0  tick   2501770         0 
+320.006   2  tick   2501770         0 # counter shared with CPU 0
+325.006   0  tick    918270         0 
+325.006   2  tick    918270         0 # counter shared with CPU 0
+330.006   0  tick   4489910         0 
+330.006   2  tick   4489910         0 # counter shared with CPU 0
+335.006   0  tick   4596165         0 
+335.006   1  tick   1047820         0 
+335.006   3  tick   1047820         0 # counter shared with CPU 1
+340.006   0  tick   3975661         0 
+340.006   2  tick   3975661         0 # counter shared with CPU 0
+345.006   0  tick   5370343         0 
+345.006   2  tick   5370343         0 # counter shared with CPU 0
+350.006   1  tick   3369215         0 
+350.006   3  tick   3369215         0 # counter shared with CPU 1
+355.006   1  tick   4806554         0 
+355.006   3  tick   4806554         0 # counter shared with CPU 1
+360.006   0  tick   4621472         0 
+360.006   2  tick   4621472         0 # counter shared with CPU 0
+365.006   0  tick   3378082         0 
+365.006   2  tick   3378082         0 # counter shared with CPU 0
+370.006   1  tick   3551482         0 
+370.006   3  tick   3551482         0 # counter shared with CPU 1
+375.006   1  tick   2729015         0 
+375.006   3  tick   2729015         0 # counter shared with CPU 1
+380.006   1  tick   3769447         0 
+380.006   3  tick   3769447         0 # counter shared with CPU 1
+385.006   0  tick   4282199         0 
+385.006   2  tick   4282199         0 # counter shared with CPU 0
+390.006   1  tick   3521813         0 
+390.006   3  tick   3521813         0 # counter shared with CPU 1
+395.006   1  tick   5046870         0 
+395.006   3  tick   5046870         0 # counter shared with CPU 1
+400.006   0  tick   3747392         0 
+400.006   3  tick   1434237         0 # counter shared with CPU 1
+405.006   0  tick   4464189         0 
+405.006   2  tick   4464189         0 # counter shared with CPU 0
+410.006   0  tick   5178634         0 
+410.006   2  tick   5178634         0 # counter shared with CPU 0
+415.006   0  tick   1188007         0 
+415.006   2  tick   1188007         0 # counter shared with CPU 0
+415.006   1  tick   4200789         0 
+415.006   3  tick   4200789         0 # counter shared with CPU 1
+420.006   1  tick   5064344         0 
+420.006   3  tick   5064344         0 # counter shared with CPU 1
+425.006   0  tick   1836133         0 
+425.006   2  tick   1836133         0 # counter shared with CPU 0
+430.006   1  tick   4734716         0 
+430.006   3  tick   4734716         0 # counter shared with CPU 1
+435.006   1  tick   4429696         0 
+435.006   3  tick   4429696         0 # counter shared with CPU 1
+435.008   0  tick    141852         0 
+435.008   2  tick    141852         0 # counter shared with CPU 0
+440.006   0  tick   5160627         0 
+440.006   2  tick   5160627         0 # counter shared with CPU 0
+445.006   1  tick   3298269         0 
+445.006   3  tick   3298269         0 # counter shared with CPU 1
+450.006   1  tick   1572734         0 
+450.006   0  tick   3367499         0 
+450.006   2  tick   3367499         0 # counter shared with CPU 0
+455.006   1  tick   4095300         0 
+455.006   3  tick   4095300         0 # counter shared with CPU 1
+460.006   1  tick   4529772         0 
+460.006   3  tick   4529772         0 # counter shared with CPU 1
+465.006   0  tick   3398810         0 
+465.006   2  tick   3398810         0 # counter shared with CPU 0
+470.006   0  tick   1922638         0 
+470.006   2  tick   1922638         0 # counter shared with CPU 0
+475.006   0  tick   4682765         0 
+475.006   2  tick   4682765         0 # counter shared with CPU 0
+480.006   0  tick    706499         0 
+480.006   2  tick    706499         0 # counter shared with CPU 0
+485.006   1  tick   5044063         0 
+485.006   3  tick   5044063         0 # counter shared with CPU 1
+490.006   1  tick   5297134         0 
+490.006   3  tick   5297134         0 # counter shared with CPU 1
+495.006   1  tick   4217451         0 
+495.006   3  tick   4217451         0 # counter shared with CPU 1
+500.006   0  tick   4724605         0 
+500.006   2  tick   4724605         0 # counter shared with CPU 0
+505.006   0  tick   4444044         0 
+505.006   2  tick   4444044         0 # counter shared with CPU 0
+510.006   0  tick   3871503         0 
+510.006   2  tick   3871503         0 # counter shared with CPU 0
+515.006   1  tick    529800         0 
+515.006   3  tick    529800         0 #515.006   2  tick   5217609         0 # counter shared with CPU 0
+520.006   1  tick   4001476         0 
+520.006   3  tick   4001476         0 # counter shared with CPU 1
+525.006   1  tick   3577370         0 
+525.006   3  tick   3577370         0 # counter shared with CPU 1
+530.006   1  tick   4673227         0 
+530.006   3  tick   4673227         0 # counter shared with CPU 1
+530.007   0  tick    407595         0 
+530.007   2  tick    407595         0 # counter shared with CPU 0
+535.006   1  tick    808484         0 
+535.006   3  tick    808484         0 # counter shared with CPU 1
+540.006   1  tick   3819873         0 
+540.006   3  tick   3819873         0 # counter shared with CPU 1
+545.006   1  tick   4186684         0 
+545.006   3  tick   4186684         0 # counter shared with CPU 1
+550.006   1  tick   1062448         0 
+550.006   3  tick   1062448         0 # counter shared with CPU 1
+555.006   0  tick   3957772         0 
+555.006   2  tick   3957772         0 # counter shared with CPU 0
+560.006   1  tick   3126411         0 
+560.006   3  tick   3126411         0 # counter shared with CPU 1
+565.006   0  tick   2282882         0 
+565.006   2  tick   2282882         0 # counter shared with CPU 0
+570.006   0  tick    547588         0 
+570.006   2  tick    547588         0 # counter shared with CPU 0
+575.006   0  tick   4300569         0 
+575.006   2  tick   4300569         0 # counter shared with CPU 0
+580.006   1  tick   3158097         0 
+580.006   3  tick   3158097         0 # counter shared with CPU 1
+585.006   1  tick   5092877         0 
+585.006   3  tick   5092877         0 # counter shared with CPU 1
+590.006   0  tick    610647         0 
+590.006   2  tick    610647         0 # counter shared with CPU 0
+595.006   0  tick   5033018         0 
+595.006   2  tick   5033018         0 # counter shared with CPU 0
+600.006   1  tick   3163443         0 
+600.006   3  tick   3163443         0 # counter shared with CPU 1
+605.006   0  tick   1666775         0 
+605.006   2  tick   1666775         0 # counter shared with CPU 0
+610.006   1  tick    494092         0 
+610.006   3  tick    494092         0 # counter shared with CPU 1
+610.008   0  tick   3128877         0 
+610.008   2  tick   3128877         0 # counter shared with CPU 0
+615.006   1  tick   4531710         0 
+615.006   3  tick   4531710         0 # counter shared with CPU 1
+620.006   1  tick   4254518         0 
+620.006   3  tick   4254518         0 # counter shared with CPU 1
+625.006   1  tick   4325694         0 
+625.006   3  tick   4325694         0 # counter shared with CPU 1
+630.006   1  tick   4834143         0 
+630.006   3  tick   4834143         0 # counter shared with CPU 1
+635.006   1  tick   4954352         0 
+635.006   3  tick   4954352         0 # counter shared with CPU 1
+640.006   0  tick   2616368         0 
+640.006   2  tick   2616368         0 # counter shared with CPU 0
+645.006   1  tick   1927653         0 
+645.006   3  tick   1927653         0 # counter shared with CPU 1
+650.006   1  tick   4425986         0 
+650.006   3  tick   4425986         0 # counter shared with CPU 1
+655.006   0  tick   4487315         0 
+655.006   2  tick   4487315         0 # counter shared with CPU 0
+660.006   1  tick   2631202         0 
+660.006   3  tick   2631202         0 # counter shared with CPU 1
+665.006   0  tick   1059654         0 
+665.006   2  tick   1059654         0 # counter shared with CPU 0
+670.006   1  tick   4520246         0 
+670.006   3  tick   4520246         0 # counter shared with CPU 1
+675.006   1  tick   4208493         0 
+675.006   3  tick   4208493         0 # counter shared with CPU 1
+680.006   1  tick   3257967         0 
+680.006   0  tick   2496413         0 
+680.006   2  tick   2496413         0 # counter shared with CPU 0
+685.006   0  tick   4261436         0 
+685.006   2  tick   4261436         0 # counter shared with CPU 0
+685.006   1  tick   1758760         0 
+685.006   3  tick   1758760         0 # counter shared with CPU 1
+690.006   0  tick   4959483         0 
+690.006   2  tick   4959483         0 # counter shared with CPU 0
+695.006   1  tick   4763644         0 
+695.006   3  tick   4763644         0 # counter shared with CPU 1
+700.006   0  tick   1581691         0 
+700.006   2  tick   1581691         0 # counter shared with CPU 0
+705.006   1  tick    770981         0 
+705.006   3  tick    770981         0 # counter shared with CPU 1
+710.006   0  tick   5313437         0 
+710.006   2  tick   5313437         0 # counter shared with CPU 0
+715.006   0  tick   4572098         0 
+715.006   2  tick   4572098         0 # counter shared with CPU 0
+720.006   1  tick   1915524         0 
+720.006   3  tick   1915524         0 # counter shared with CPU 1
+725.006   1  tick   4884308         0 
+725.006   3  tick   4884308         0 # counter shared with CPU 1
+730.006   1  tick   4004583         0 
+730.006   3  tick   4004583         0 # counter shared with CPU 1
+735.006   0  tick   3026554         0 
+735.006   2  tick   3026554         0 # counter shared with CPU 0
+740.006   1  tick   1598872         0 
+740.006   3  tick   1598872         0 # counter shared with CPU 1
+745.006   0  tick    373346         0 
+745.006   2  tick    373346         0 # counter shared with CPU 0
+750.006   1  tick   4367112         0 
+750.006   3  tick   4367112         0 # counter shared with CPU 1
+755.006   1  tick   4653745         0 
+755.006   3  tick   4653745         0 # counter shared with CPU 1
+760.006   1  tick   3409740         0 
+760.006   3  tick   3409740         0 # counter shared with CPU 1
+765.006   0  tick   4588440         0 
+765.006   2  tick   4588440         0 # counter shared with CPU 0
+770.006   1  tick   1444859         0 
+770.006   3  tick   1444859         0 # counter shared with CPU 1
+775.006   1  tick   3647571         0 
+775.006   3  tick   3647571         0 # counter shared with CPU 1
+780.006   1  tick   1920993         0 
+780.006   0  tick   4169148         0 
+780.006   2  tick   4169148         0 # counter shared with CPU 0
+785.006   1  tick    270821         0 
+785.006   0  tick   4690824         0 
+785.006   2  tick   4690824         0 # counter shared with CPU 0
+790.006   1  tick   4613060         0 
+790.006   3  tick   4613060         0 # counter shared with CPU 1
+795.006   1  tick   3213704         0 
+795.006   3  tick   3213704         0 # counter shared with CPU 1
+800.006   0  tick   2108693         0 
+800.006   2  tick   2108693         0 # counter shared with CPU 0
+805.006   0  tick   4560308         0 
+805.006   2  tick   4560308         0 # counter shared with CPU 0
+805.008   1  tick    141674         0 
+805.008   3  tick    141674         0 # counter shared with CPU 1
+810.006   0  tick   3647437         0 
+810.006   2  tick   3647437         0 # counter shared with CPU 0
+815.006   1  tick   4027505         0 
+815.006   3  tick   4027505         0 # counter shared with CPU 1
+820.006   1  tick   1349286         0 
+820.006   3  tick   1349286         0 # counter shared with CPU 1
+825.006   1  tick   2916986         0 
+825.006   3  tick   2916986         0 # counter shared with CPU 1
+830.006   0  tick   3385686         0 
+830.006   2  tick   3385686         0 # counter shared with CPU 0
+835.006   0  tick   3945766         0 
+835.006   2  tick   3945766         0 # counter shared with CPU 0
+840.006   0  tick   3085889         0 
+840.006   2  tick   3085889         0 # counter shared with CPU 0
+845.006   1  tick   4139829         0 
+845.006   3  tick   4139829         0 # counter shared with CPU 1
+850.006   0  tick   1278831         0 
+850.006   2  tick   1278831         0 # counter shared with CPU 0
+855.006   1  tick   4744582         0 
+855.006   3  tick   4744582         0 # counter shared with CPU 1
+860.006   0  tick    625157         0 
+860.006   2  tick    625157         0 # counter shared with CPU 0
+865.006   1  tick   3910763         0 
+865.006   3  tick   3910763         0 # counter shared with CPU 1
+870.006   1  tick   1076400         0 
+870.006   3  tick   1076400         0 # counter shared with CPU 1
+875.006   1  tick   6056128         0 
+875.006   3  tick   6056128         0 # counter shared with CPU 1
+880.006   0  tick   3116264         0 
+880.006   2  tick   3116264         0 # counter shared with CPU 0
+885.006   1  tick    478450         0 
+885.006   3  tick    478450         0 # counter shared with CPU 1
+890.006   0  tick    553277         0 
+890.006   2  tick    553277         0 # counter shared with CPU 0
+895.006   1  tick    629638         0 
+895.006   3  tick    629638         0 # counter shared with CPU 1
+900.006   1  tick    427866         0 
+900.006   3  tick    427866         0 # counter shared with CPU 1
+905.006   0  tick    242377         0 
+905.006   2  tick    242377         0 # counter shared with CPU 0
+910.006   1  tick    638530         0 
+910.006   3  tick    638530         0 # counter shared with CPU 1
+915.006   0  tick    675238         0 
+915.006   2  tick    675238         0 # counter shared with CPU 0
+920.006   0  tick   1874168         0 
+920.006   2  tick   1874168         0 # counter shared with CPU 0
+920.008   1  tick    328947         0 
+920.008   3  tick    328947         0 # counter shared with CPU 1
+925.006   0  tick    434436         0 
+925.006   2  tick    434436         0 # counter shared with CPU 0
+930.006   0  tick    575763         0 
+930.006   2  tick    575763         0 # counter shared with CPU 0
+935.006   0  tick    677764         0 
+935.006   2  tick    677764         0 # counter shared with CPU 0
+940.006   0  tick    199255         0 
+940.006   2  tick    199255         0 # counter shared with CPU 0
+945.006   0  tick    435818         0 
+945.006   2  tick    435818         0 # counter shared with CPU 0
+950.006   1  tick    750007         0 
+950.006   0  tick    775903         0 
+950.006   2  tick    775903         0 # counter shared with CPU 0
+955.006   1  tick   2015300         0 
+955.006   3  tick   2015300         0 # counter shared with CPU 1
+960.006   0  tick    261212         0 
+960.006   2  tick    261212         0 # counter shared with CPU 0
+965.006   0  tick    743923         0 
+965.006   2  tick    743923         0 # counter shared with CPU 0
+970.006   0  tick    779115         0 
+970.006   2  tick    779115         0 # counter shared with CPU 0
+975.006   0  tick    498830         0 
+975.006   2  tick    498830         0 # counter shared with CPU 0
+980.006   0  tick     85771         0 
+980.006   2  tick     85771         0 # counter shared with CPU 0
+980.014   1  tick    136007         0 
+980.014   3  tick    136007         0 # counter shared with CPU 1
+985.006   0  tick   2219843         0 
+985.006   2  tick   2219843         0 # counter shared with CPU 0
+990.006   1  tick    926771         0 
+990.006   3  tick    926771         0 # counter shared with CPU 1
+995.006   1  tick    465806         0 
+995.006   3  tick    465806         0 # counter shared with CPU 1
+1000.006   0  tick     76066         0 
+1000.006   2  tick     76066         0 # counter shared with CPU 0
+1005.006   0  tick    698185         0 
+1005.006   2  tick    698185         0 # counter shared with CPU 0
+1010.006   0  tick    770981         0 
+1010.006   2  tick    770981         0 # counter shared with CPU 0
+1015.006   0  tick    722154         0 
+1015.006   2  tick    722154         0 # counter shared with CPU 0
+1020.006   1  tick    112223         0 
+1020.006   3  tick    112223         0 # counter shared with CPU 1
+1025.006   1  tick   1737564         0 
+1025.006   3  tick   1737564         0 # counter shared with CPU 1
+1030.006   0  tick    448474         0 
+1030.006   2  tick    448474         0 # counter shared with CPU 0
+1035.006   0  tick    517394         0 
+1035.006   2  tick    517394         0 # counter shared with CPU 0
+1040.006   0  tick     65903         0 
+1040.006   2  tick     65903         0 # counter shared with CPU 0
+1040.028   1  tick    113757         0 
+1040.028   3  tick    113757         0 # counter shared with CPU 1
+1045.006   1  tick    529713         0 
+1045.006   3  tick    529713         0 # counter shared with CPU 1
+1050.006   0  tick    684847         0 
+1050.006   2  tick    684847         0 # counter shared with CPU 0
+1055.006   0  tick    452340         0 
+1055.006   2  tick    452340         0 # counter shared with CPU 0
+1055.006   1  tick    593168         0 
+1055.006   3  tick    593168         0 # counter shared with CPU 1
+1060.006   0  tick    349891         0 
+1060.006   2  tick    349891         0 # counter shared with CPU 0
+1065.006   1  tick    536574         0 
+1065.006   3  tick    536574         0 # counter shared with CPU 1
+1070.006   0  tick    885291         0 
+1070.006   2  tick    885291         0 # counter shared with CPU 0
+1075.006   0  tick    316242         0 
+1075.006   2  tick    316242         0 # counter shared with CPU 0
+1080.006   0  tick    607853         0 
+1080.006   2  tick    607853         0 # counter shared with CPU 0
+1085.006   0  tick    889698         0 
+1085.006   2  tick    889698         0 # counter shared with CPU 0
+1090.006   0  tick    723635         0 
+1090.006   2  tick    723635         0 # counter shared with CPU 0
+1095.006   0  tick    382389         0 
+1095.006   2  tick    382389         0 # counter shared with CPU 0
+1100.006   0  tick   2034299         0 
+1100.006   2  tick   2034299         0 # counter shared with CPU 0
+1105.006   0  tick    451279         0 
+1105.006   2  tick    451279         0 # counter shared with CPU 0
+1110.006   0  tick   2956076         0 
+1110.006   2  tick   2956076         0 # counter shared with CPU 0
+1115.006   1  tick    404084         0 
+1115.006   0  tick   6026670         0 
+1115.006   2  tick   6026670         0 # counter shared with CPU 0
+1120.006   1  tick   4875075         0 
+1120.006   3  tick   4875075         0 # counter shared with CPU 1
+1125.006   1  tick   5982557         0 
+1125.006   3  tick   5982557         0 # counter shared with CPU 1
+1130.006   1  tick   9518837         0 
+1130.006   3  tick   9518837         0 # counter shared with CPU 1
+1135.006   1  tick   8658207         0 
+1135.006   3  tick   8658207         0 # counter shared with CPU 1
+1140.006   0  tick   8665004         0 
+1140.006   2  tick   8665004         0 # counter shared with CPU 0
+1145.006   1  tick   4110513         0 
+1145.006   3  tick   4110513         0 # counter shared with CPU 1
+1150.006   1  tick   7669666         0 
+1150.006   3  tick   7669666         0 # counter shared with CPU 1
+1155.006   0  tick   6498934         0 
+1155.006   2  tick   6498934         0 # counter shared with CPU 0
+1155.007   1  tick   5346679         0 
+1155.007   3  tick   5346679         0 # counter shared with CPU 1
+1160.006   0  tick   8013478         0 
+1160.006   2  tick   8013478         0 # counter shared with CPU 0
+1165.006   1  tick   5373274         0 
+1165.006   3  tick   5373274         0 # counter shared with CPU 1
+1170.006   1  tick  12336617         0 
+1170.006   3  tick  12336617         0 # counter shared with CPU 1
+1170.006   0  tick   2913481         0 
+1170.006   2  tick   2913481         0 # counter shared with CPU 0
+1175.006   0  tick   4889759         0 
+1175.006   2  tick   4889759         0 # counter shared with CPU 0
+1175.007   1  tick   1781352         0 
+1175.007   3  tick   1781352         0 # counter shared with CPU 1
+1180.006   0  tick   1705984         0 
+1180.006   2  tick   1705984         0 #1180.006   3  tick   8772553         0 # counter shared with CPU 1
+1185.006   0  tick   7619706         0 
+1185.006   2  tick   7619706         0 # counter shared with CPU 0
+1190.006   0  tick  13660784         0 
+1190.006   2  tick  13660784         0 # counter shared with CPU 0
+1195.006   0  tick   4823085         0 
+1195.006   3  tick    714855         0 # counter shared with CPU 1
+1195.006   2  tick   4823085         0 # counter shared with CPU 0
+1200.006   1  tick  11646850         0 
+1200.006   3  tick  11646850         0 # counter shared with CPU 1
+1205.006   1  tick   7468140         0 
+1205.006   3  tick   7468140         0 # counter shared with CPU 1
+1210.006   1  tick   2346037         0 
+1210.006   3  tick   2346037         0 # counter shared with CPU 1
+1215.006   1  tick   1994232         0 
+1215.006   3  tick   1994232         0 # counter shared with CPU 1
+1220.006   0  tick    810787         0 
+1220.006   1  tick   6635815         0 
+1220.006   3  tick   6635815         0 # counter shared with CPU 1
+1225.006   0  tick   1650829         0 
+1225.006   2  tick   1650829         0 # counter shared with CPU 0
+1230.006   0  tick  12804878         0 
+1230.006   2  tick  12804878         0 # counter shared with CPU 0
+1235.006   0  tick   6845764         0 
+1235.006   2  tick   6845764         0 # counter shared with CPU 0
+1240.006   1  tick   8310660         0 
+1240.006   3  tick   8310660         0 # counter shared with CPU 1
+1245.006   0  tick   2363156         0 
+1245.006   2  tick   2363156         0 # counter shared with CPU 0
+1250.006   0  tick  10742814         0 
+1250.006   2  tick  10742814         0 # counter shared with CPU 0
+1250.006   1  tick   1329993         0 
+1250.006   3  tick   1329993         0 # counter shared with CPU 1
+1255.006   0  tick    801477         0 
+1255.006   2  tick    801477         0 # counter shared with CPU 0
+1260.006   0  tick   4683403         0 
+1260.006   2  tick   4683403         0 # counter shared with CPU 0
+1265.006   0  tick  14374241         0 
+1265.006   2  tick  14374241         0 # counter shared with CPU 0
+1270.006   1  tick   8540440         0 
+1270.006   3  tick   8540440         0 # counter shared with CPU 1
+1270.007   0  tick    363876         0 
+1270.007   2  tick    363876         0 # counter shared with CPU 0
+1275.006   0  tick  12722451         0 
+1275.006   2  tick  12722451         0 # counter shared with CPU 0
+1280.006   0  tick  10144670         0 
+1280.006   2  tick  10144670         0 # counter shared with CPU 0
+1285.006   0  tick  14605284         0 
+1285.006   2  tick  14605284         0 # counter shared with CPU 0
+1290.006   0  tick   7423946         0 
+1290.006   2  tick   7423946         0 # counter shared with CPU 0
+1290.008   1  tick    484990         0 
+1290.008   3  tick    484990         0 # counter shared with CPU 1
+1295.006   1  tick   4619316         0 
+1295.006   3  tick   4619316         0 # counter shared with CPU 1
+1300.006   1  tick  10435486         0 
+1300.006   3  tick  10435486         0 # counter shared with CPU 1
+1305.006   0  tick   3241195         0 
+1305.006   2  tick   3241195         0 # counter shared with CPU 0
+1310.006   1  tick    170192         0 
+1310.006   3  tick    170192         0 # counter shared with CPU 1
+1310.006   0  tick   6101856         0 
+1310.006   2  tick   6101856         0 # counter shared with CPU 0
+1315.006   0  tick  13559814         0 
+1315.006   2  tick  13559814         0 # counter shared with CPU 0
+1320.006   0  tick   7793074         0 
+1320.006   2  tick   7793074         0 #1320.006   3  tick   7318183         0 # counter shared with CPU 1
+1325.006   0  tick    955870         0 
+1325.006   2  tick    955870         0 # counter shared with CPU 0
+1330.006   0  tick  11973659         0 
+1330.006   2  tick  11973659         0 # counter shared with CPU 0
+1330.007   1  tick    104998         0 
+1330.007   3  tick    104998         0 # counter shared with CPU 1
+1335.006   0  tick   4707043         0 
+1335.006   2  tick   4707043         0 # counter shared with CPU 0
+1340.006   0  tick   3199513         0 
+1340.006   2  tick   3199513         0 # counter shared with CPU 0
+1345.006   0  tick   1071723         0 
+1345.006   2  tick   1071723         0 # counter shared with CPU 0
+1350.006   0  tick   2366541         0 
+1350.006   2  tick   2366541         0 # counter shared with CPU 0
+1350.006   1  tick    529813         0 
+1350.006   3  tick    529813         0 # counter shared with CPU 1
+1355.006   1  tick   1048218         0 
+1355.006   3  tick   1048218         0 # counter shared with CPU 1
+1360.006   1  tick   3585272         0 
+1360.006   3  tick   3585272         0 # counter shared with CPU 1
+1365.006   0  tick   1236833         0 
+1365.006   2  tick   1236833         0 # counter shared with CPU 0
+1370.006   0  tick   3041048         0 
+1370.006   2  tick   3041048         0 # counter shared with CPU 0
+1370.008   1  tick    141196         0 
+1370.008   3  tick    141196         0 # counter shared with CPU 1
+1375.006   1  tick   3620929         0 
+1375.006   3  tick   3620929         0 # counter shared with CPU 1
+1380.006   1  tick   3420439         0 
+1380.006   3  tick   3420439         0 # counter shared with CPU 1
+1385.006   0  tick    783802         0 
+1385.006   2  tick    783802         0 # counter shared with CPU 0
+1385.006   1  tick   3466598         0 
+1385.006   3  tick   3466598         0 # counter shared with CPU 1
+1390.006   0  tick    100216         0 
+1390.006   2  tick    100216         0 # counter shared with CPU 0
+1395.006   0  tick   2647618         0 
+1395.006   2  tick   2647618         0 # counter shared with CPU 0
+1400.006   1  tick   1762057         0 
+1400.006   3  tick   1762057         0 # counter shared with CPU 1
+1405.006   0  tick    793030         0 
+1405.006   2  tick    793030         0 # counter shared with CPU 0
+1410.006   1  tick   3458405         0 
+1410.006   3  tick   3458405         0 # counter shared with CPU 1
+1415.006   0  tick   2678761         0 
+1415.006   2  tick   2678761         0 # counter shared with CPU 0
+1420.006   1  tick   1776876         0 
+1420.006   3  tick   1776876         0 # counter shared with CPU 1
+1425.006   0  tick   1182630         0 
+1425.006   2  tick   1182630         0 # counter shared with CPU 0
+1430.006   1  tick   3489921         0 
+1430.006   3  tick   3489921         0 # counter shared with CPU 1
+1435.006   1  tick   3235729         0 
+1435.006   3  tick   3235729         0 # counter shared with CPU 1
+1440.006   0  tick   1504692         0 
+1440.006   2  tick   1504692         0 # counter shared with CPU 0
+1445.006   1  tick    769063         0 
+1445.006   3  tick    769063         0 # counter shared with CPU 1
+1450.006   1  tick   3346816         0 
+1450.006   3  tick   3346816         0 # counter shared with CPU 1
+1455.006   1  tick   3436228         0 
+1455.006   3  tick   3436228         0 # counter shared with CPU 1
+1460.006   0  tick   1482584         0 
+1460.006   2  tick   1482584         0 # counter shared with CPU 0
+1465.006   0  tick   2968294         0 
+1465.006   2  tick   2968294         0 # counter shared with CPU 0
+1470.006   1  tick   3484414         0 
+1470.006   3  tick   3484414         0 # counter shared with CPU 1
+1475.006   1  tick   3021184         0 
+1475.006   3  tick   3021184         0 # counter shared with CPU 1
+1480.006   1  tick   2902338         0 
+1480.006   3  tick   2902338         0 #1480.006   2  tick   1457846         0 # counter shared with CPU 0
+1485.006   0  tick    689054         0 
+1485.006   2  tick    689054         0 # counter shared with CPU 0
+1490.006   0  tick   2985845         0 
+1490.006   2  tick   2985845         0 # counter shared with CPU 0
+1495.006   1  tick   2864254         0 
+1495.006   3  tick   2864254         0 # counter shared with CPU 1
+1500.006   0  tick   1419408         0 
+1500.006   2  tick   1419408         0 # counter shared with CPU 0
+1505.006   0  tick   3178749         0 
+1505.006   2  tick   3178749         0 # counter shared with CPU 0
+1505.006   1  tick    163615         0 
+1505.006   3  tick    163615         0 # counter shared with CPU 1
+1510.006   1  tick   1059646         0 
+1510.006   0  tick   2846750         0 
+1510.006   2  tick   2846750         0 # counter shared with CPU 0
+1515.006   0  tick   3697931         0 
+1515.006   2  tick   3697931         0 # counter shared with CPU 0
+1520.006   0  tick   3414188         0 
+1520.006   2  tick   3414188         0 # counter shared with CPU 0
+1525.006   0  tick   3233053         0 
+1525.006   2  tick   3233053         0 # counter shared with CPU 0
+1530.006   0  tick   3478782         0 
+1530.006   2  tick   3478782         0 # counter shared with CPU 0
+1535.006   1  tick   1877429         0 
+1535.006   3  tick   1877429         0 # counter shared with CPU 1
+1540.006   1  tick   3717664         0 
+1540.006   3  tick   3717664         0 # counter shared with CPU 1
+1545.006   1  tick    362306         0 
+1545.006   3  tick    362306         0 # counter shared with CPU 1
+1550.006   1  tick   2463381         0 
+1550.006   3  tick   2463381         0 # counter shared with CPU 1
+1555.006   1  tick   1907069         0 
+1555.006   3  tick   1907069         0 # counter shared with CPU 1
+1560.006   0  tick   1580989         0 
+1560.006   2  tick   1580989         0 #1560.006   3  tick   2745236         0 # counter shared with CPU 1
+1565.006   1  tick   3002663         0 
+1565.006   3  tick   3002663         0 # counter shared with CPU 1
+1570.006   1  tick   3250793         0 
+1570.006   3  tick   3250793         0 # counter shared with CPU 1
+1575.006   0  tick   1742496         0 
+1575.006   2  tick   1742496         0 # counter shared with CPU 0
+1580.006   0  tick   1454173         0 
+1580.006   2  tick   1454173         0 # counter shared with CPU 0
+1580.006   1  tick   3035358         0 
+1580.006   3  tick   3035358         0 # counter shared with CPU 1
+1585.006   1  tick   1887757         0 
+1585.006   3  tick   1887757         0 # counter shared with CPU 1
+1590.006   1  tick   3150605         0 
+1590.006   3  tick   3150605         0 # counter shared with CPU 1
+1595.006   0  tick   2686550         0 
+1595.006   2  tick   2686550         0 # counter shared with CPU 0
+1600.006   0  tick   2606782         0 
+1600.006   2  tick   2606782         0 # counter shared with CPU 0
+1600.006   1  tick    853390         0 
+1600.006   3  tick    853390         0 # counter shared with CPU 1
+1605.006   1  tick   3380040         0 
+1605.006   3  tick   3380040         0 # counter shared with CPU 1
+1610.006   0  tick   2339788         0 
+1610.006   2  tick   2339788         0 # counter shared with CPU 0
+1615.006   1  tick   3731977         0 
+1615.006   3  tick   3731977         0 # counter shared with CPU 1
+1620.006   1  tick   3021256         0 
+1620.006   3  tick   3021256         0 # counter shared with CPU 1
+1625.006   0  tick    412086         0 
+1625.006   2  tick    412086         0 #1625.006   3  tick   3514799         0 # counter shared with CPU 1
+1630.006   0  tick   2027223         0 
+1630.006   2  tick   2027223         0 # counter shared with CPU 0
+1635.006   0  tick   3282468         0 
+1635.006   2  tick   3282468         0 # counter shared with CPU 0
+1640.006   1  tick    388884         0 
+1640.006   3  tick    388884         0 # counter shared with CPU 1
+1645.006   1  tick   3147354         0 
+1645.006   3  tick   3147354         0 # counter shared with CPU 1
+1650.006   0  tick   2745838         0 
+1650.006   2  tick   2745838         0 # counter shared with CPU 0
+1655.006   0  tick   3888260         0 
+1655.006   2  tick   3888260         0 # counter shared with CPU 0
+1660.006   0  tick   2757043         0 
+1660.006   2  tick   2757043         0 # counter shared with CPU 0
+1665.006   1  tick   3415719         0 
+1665.006   3  tick   3415719         0 # counter shared with CPU 1
+1670.006   0  tick   2702809         0 
+1670.006   2  tick   2702809         0 # counter shared with CPU 0
+1675.006   0  tick   3383754         0 
+1675.006   2  tick   3383754         0 # counter shared with CPU 0
+1680.006   0  tick   3690633         0 
+1680.006   2  tick   3690633         0 # counter shared with CPU 0
+1680.006   1  tick    520345         0 
+1680.006   3  tick    520345         0 # counter shared with CPU 1
+1685.006   1  tick    616988         0 
+1685.006   0  tick   3642024         0 
+1685.006   2  tick   3642024         0 # counter shared with CPU 0
+1690.006   1  tick   2295936         0 
+1690.006   3  tick   2295936         0 # counter shared with CPU 1
+1695.006   0  tick   2290800         0 
+1695.006   2  tick   2290800         0 # counter shared with CPU 0
+1700.006   0  tick   1983935         0 
+1700.006   2  tick   1983935         0 # counter shared with CPU 0
+1700.006   1  tick    608762         0 
+1700.006   3  tick    608762         0 # counter shared with CPU 1
+1705.006   0  tick   3408726         0 
+1705.006   2  tick   3408726         0 # counter shared with CPU 0
+1710.006   0  tick   3639044         0 
+1710.006   2  tick   3639044         0 # counter shared with CPU 0
+1715.006   1  tick   1504263         0 
+1715.006   3  tick   1504263         0 # counter shared with CPU 1
+1720.006   1  tick   3053758         0 
+1720.006   3  tick   3053758         0 # counter shared with CPU 1
+1725.006   0  tick   2491844         0 
+1725.006   2  tick   2491844         0 # counter shared with CPU 0
+1730.006   0  tick   3059571         0 
+1730.006   2  tick   3059571         0 # counter shared with CPU 0
+1735.006   1  tick   1065107         0 
+1735.006   3  tick   1065107         0 # counter shared with CPU 1
+1740.006   0  tick    238689         0 
+1740.006   2  tick    238689         0 # counter shared with CPU 0
+1745.006   1  tick   2739965         0 
+1745.006   3  tick   2739965         0 # counter shared with CPU 1
+1750.006   1  tick   3592677         0 
+1750.006   3  tick   3592677         0 # counter shared with CPU 1
+1755.006   0  tick   1780095         0 
+1755.006   2  tick   1780095         0 # counter shared with CPU 0
+1760.006   1  tick   2675580         0 
+1760.006   3  tick   2675580         0 # counter shared with CPU 1
+1760.008   0  tick    126411         0 
+1760.008   2  tick    126411         0 # counter shared with CPU 0
+1765.006   1  tick   3572374         0 
+1765.006   3  tick   3572374         0 # counter shared with CPU 1
+1770.006   0  tick   1927853         0 
+1770.006   2  tick   1927853         0 # counter shared with CPU 0
+1775.006   1  tick   1564917         0 
+1775.006   0  tick   2182463         0 
+1775.006   2  tick   2182463         0 # counter shared with CPU 0
+1780.006   1  tick    391806         0 
+1780.006   0  tick   3230803         0 
+1780.006   2  tick   3230803         0 # counter shared with CPU 0
+1785.006   0  tick   3033256         0 
+1785.006   2  tick   3033256         0 # counter shared with CPU 0
+1790.006   1  tick   1807900         0 
+1790.006   3  tick   1807900         0 # counter shared with CPU 1
+1795.006   1  tick   3285649         0 
+1795.006   3  tick   3285649         0 # counter shared with CPU 1
+1800.006   1  tick   3266347         0 
+1800.006   3  tick   3266347         0 # counter shared with CPU 1
+1805.006   0  tick   2177502         0 
+1805.006   2  tick   2177502         0 # counter shared with CPU 0
+1810.006   1  tick   3437849         0 
+1810.006   3  tick   3437849         0 # counter shared with CPU 1
+1815.006   1  tick   2966466         0 
+1815.006   3  tick   2966466         0 # counter shared with CPU 1
+1820.006   0  tick   3263501         0 
+1820.006   2  tick   3263501         0 # counter shared with CPU 0
+1825.006   1  tick   5277794         0 
+1825.006   3  tick   5277794         0 # counter shared with CPU 1
+1830.006   0  tick    812166         0 
+1830.006   2  tick    812166         0 # counter shared with CPU 0
+1835.006   0  tick    353477         0 
+1835.006   2  tick    353477         0 # counter shared with CPU 0
+1840.006   0  tick    323366         0 
+1840.006   2  tick    323366         0 # counter shared with CPU 0
+1845.006   0  tick    736688         0 
+1845.006   2  tick    736688         0 # counter shared with CPU 0
+1850.006   0  tick    653849         0 
+1850.006   2  tick    653849         0 # counter shared with CPU 0
+1855.006   0  tick   1204627         0 
+1855.006   2  tick   1204627         0 # counter shared with CPU 0
+1860.006   0  tick    825709         0 
+1860.006   2  tick    825709         0 # counter shared with CPU 0
+1865.006   1  tick    571424         0 
+1865.006   3  tick    571424         0 # counter shared with CPU 1
+1870.006   0  tick    733628         0 
+1870.006   2  tick    733628         0 # counter shared with CPU 0
+1875.006   0  tick     93529         0 
+1875.006   2  tick     93529         0 # counter shared with CPU 0
+1880.006   0  tick    678904         0 
+1880.006   2  tick    678904         0 # counter shared with CPU 0
+1885.006   0  tick    584146         0 
+1885.006   2  tick    584146         0 # counter shared with CPU 0
+1890.006   0  tick    980812         0 
+1890.006   2  tick    980812         0 # counter shared with CPU 0
+1895.006   1  tick     58323         0 
+1895.006   3  tick     58323         0 # counter shared with CPU 1
+1895.007   0  tick    121295         0 
+1895.007   2  tick    121295         0 # counter shared with CPU 0
+1900.006   1  tick    740063         0 
+1900.006   3  tick    740063         0 # counter shared with CPU 1
+1905.006   0  tick   1566719         0 
+1905.006   2  tick   1566719         0 # counter shared with CPU 0
+1910.006   0  tick    484620         0 
+1910.006   2  tick    484620         0 # counter shared with CPU 0
+1915.006   0  tick    103869         0 
+1915.006   2  tick    103869         0 # counter shared with CPU 0
+1920.006   0  tick    582309         0 
+1920.006   2  tick    582309         0 # counter shared with CPU 0
+1925.006   0  tick    737039         0 
+1925.006   3  tick    666004         0 # counter shared with CPU 1
+1925.006   2  tick    737039         0 # counter shared with CPU 0
+1930.006   0  tick    510978         0 
+1930.006   2  tick    510978         0 # counter shared with CPU 0
+1930.007   1  tick   1049803         0 
+1930.007   3  tick   1049803         0 # counter shared with CPU 1
+1935.006   1  tick    644933         0 
+1935.006   2  tick    264441         0 # counter shared with CPU 0
+1935.006   3  tick    644933         0 # counter shared with CPU 1
+1940.006   0  tick    715748         0 
+1940.006   2  tick    715748         0 # counter shared with CPU 0
+1945.006   0  tick    507130         0 
+1945.006   2  tick    507130         0 # counter shared with CPU 0
+1950.006   0  tick    217378         0 
+1950.006   2  tick    217378         0 # counter shared with CPU 0
+1955.006   0  tick   1183851         0 
+1955.006   2  tick   1183851         0 # counter shared with CPU 0
+1960.006   1  tick    549094         0 
+1960.006   3  tick    549094         0 # counter shared with CPU 1
+1965.006   0  tick    411838         0 
+1965.006   2  tick    411838         0 # counter shared with CPU 0
+1970.006   1  tick    334766         0 
+1970.006   3  tick    334766         0 # counter shared with CPU 1
+1975.006   0  tick    594690         0 
+1975.006   2  tick    594690         0 # counter shared with CPU 0
+1980.006   0  tick    580308         0 
+1980.006   2  tick    580308         0 # counter shared with CPU 0
+1985.006   1  tick    663763         0 
+1985.006   3  tick    663763         0 # counter shared with CPU 1
+1990.006   0  tick    432641         0 
+1990.006   2  tick    432641         0 #1990.006   3  tick   2416591         0 # counter shared with CPU 1
+1995.006   1  tick   5694924         0 
+1995.006   3  tick   5694924         0 # counter shared with CPU 1
+2000.006   0  tick   4675838         0 
+2000.006   2  tick   4675838         0 # counter shared with CPU 0
+2005.006   0  tick   6207642         0 
+2005.006   2  tick   6207642         0 # counter shared with CPU 0
+2010.006   0  tick   7565865         0 
+2010.006   2  tick   7565865         0 # counter shared with CPU 0
+2015.006   1  tick   7952828         0 
+2015.006   3  tick   7952828         0 # counter shared with CPU 1
+2020.006   1  tick   4956284         0 
+2020.006   3  tick   4956284         0 # counter shared with CPU 1
+2025.006   1  tick   4153606         0 
+2025.006   3  tick   4153606         0 # counter shared with CPU 1
+2030.006   1  tick    807371         0 
+2030.006   3  tick    807371         0 # counter shared with CPU 1
+2030.008   0  tick     85005         0 
+2030.008   2  tick     85005         0 # counter shared with CPU 0
+2035.006   0  tick   1140446         0 
+2035.006   2  tick   1140446         0 # counter shared with CPU 0
+2040.006   0  tick    983038         0 
+2040.006   2  tick    983038         0 # counter shared with CPU 0
+2045.006   0  tick    662239         0 
+2045.006   2  tick    662239         0 # counter shared with CPU 0
+2050.006   0  tick    549943         0 
+2050.006   2  tick    549943         0 # counter shared with CPU 0
+2055.006   1  tick   1192636         0 
+2055.006   3  tick   1192636         0 # counter shared with CPU 1
+2060.006   0  tick    784116         0 
+2060.006   2  tick    784116         0 # counter shared with CPU 0
+2065.006   1  tick    757644         0 
+2065.006   3  tick    757644         0 # counter shared with CPU 1
+2070.006   1  tick    405924         0 
+2070.006   2  tick    273636         0 # counter shared with CPU 0
+2070.006   3  tick    405924         0 # counter shared with CPU 1
+2075.006   0  tick    813350         0 
+2075.006   2  tick    813350         0 #2075.006   3  tick   1113338         0 # counter shared with CPU 1
+2080.006   0  tick    756377         0 
+2080.006   2  tick    756377         0 # counter shared with CPU 0
+2085.006   0  tick   1095370         0 
+2085.006   2  tick   1095370         0 # counter shared with CPU 0
+2090.006   0  tick    196886         0 
+2090.006   3  tick    568484         0 # counter shared with CPU 1
+2090.006   2  tick    196886         0 # counter shared with CPU 0
+2095.006   0  tick    889164         0 
+2095.006   2  tick    889164         0 # counter shared with CPU 0
+2100.006   0  tick    878023         0 
+2100.006   2  tick    878023         0 # counter shared with CPU 0
+2105.006   0  tick    516222         0 
+2105.006   2  tick    516222         0 # counter shared with CPU 0
+2110.006   0  tick    923575         0 
+2110.006   2  tick    923575         0 # counter shared with CPU 0
+2115.006   1  tick    879108         0 
+2115.006   3  tick    879108         0 # counter shared with CPU 1
+2120.006   0  tick    814945         0 
+2120.006   2  tick    814945         0 # counter shared with CPU 0
+2125.006   1  tick    502358         0 
+2125.006   3  tick    502358         0 # counter shared with CPU 1
+2130.006   1  tick    997497         0 
+2130.006   3  tick    997497         0 # counter shared with CPU 1
+2135.006   0  tick   1145110         0 
+2135.006   2  tick   1145110         0 # counter shared with CPU 0
+2140.006   0  tick    970318         0 
+2140.006   2  tick    970318         0 # counter shared with CPU 0
+2145.006   0  tick    664121         0 
+2145.006   2  tick    664121         0 # counter shared with CPU 0
+2150.006   0  tick   1039503         0 
+2150.006   2  tick   1039503         0 # counter shared with CPU 0
+2155.006   0  tick    942322         0 
+2155.006   2  tick    942322         0 # counter shared with CPU 0
+2160.006   1  tick   1023133         0 
+2160.006   3  tick   1023133         0 # counter shared with CPU 1
+2160.006   0  tick    901041         0 
+2160.006   2  tick    901041         0 # counter shared with CPU 0
+2165.006   0  tick    720342         0 
+2165.006   2  tick    720342         0 # counter shared with CPU 0
+2170.006   0  tick    636516         0 
+2170.006   3  tick    629546         0 # counter shared with CPU 1
+2170.006   2  tick    636516         0 # counter shared with CPU 0
+2175.006   0  tick   1061463         0 
+2175.006   2  tick   1061463         0 # counter shared with CPU 0
+2180.006   1  tick    869453         0 
+2180.006   3  tick    869453         0 # counter shared with CPU 1
+2185.006   0  tick    184928         0 
+2185.006   2  tick    184928         0 # counter shared with CPU 0
+2185.007   1  tick   1199043         0 
+2185.007   3  tick   1199043         0 # counter shared with CPU 1
+2190.006   1  tick   1176904         0 
+2190.006   3  tick   1176904         0 # counter shared with CPU 1
+2195.006   1  tick   1004096         0 
+2195.006   3  tick   1004096         0 # counter shared with CPU 1
+2200.006   1  tick    591582         0 
+2200.006   3  tick    591582         0 # counter shared with CPU 1
+2205.006   0  tick    117513         0 
+2205.006   2  tick    117513         0 # counter shared with CPU 0
+2205.006   1  tick    111531         0 
+2205.006   3  tick    111531         0 # counter shared with CPU 1
+2210.006   1  tick    748769         0 
+2210.006   3  tick    748769         0 # counter shared with CPU 1
+2215.006   0  tick    809267         0 
+2215.006   2  tick    809267         0 # counter shared with CPU 0
+2220.006   1  tick    699255         0 
+2220.006   3  tick    699255         0 # counter shared with CPU 1
+2225.006   1  tick     76741         0 
+2225.006   3  tick     76741         0 # counter shared with CPU 1
+2225.007   0  tick     54431         0 
+2225.007   2  tick     54431         0 # counter shared with CPU 0
+2230.006   1  tick    727956         0 
+2230.006   3  tick    727956         0 # counter shared with CPU 1
+2235.006   0  tick    650864         0 
+2235.006   3  tick    814596         0 # counter shared with CPU 1
+2235.006   2  tick    650864         0 # counter shared with CPU 0
+2240.006   0  tick    644748         0 
+2240.006   2  tick    644748         0 #2240.006   3  tick    763251         0 # counter shared with CPU 1
+2245.006   1  tick    246013         0 
+2245.006   3  tick    246013         0 # counter shared with CPU 1
+2250.006   1  tick    904179         0 
+2250.006   3  tick    904179         0 # counter shared with CPU 1
+2255.006   1  tick    792431         0 
+2255.006   3  tick    792431         0 # counter shared with CPU 1
+2260.006   0  tick    662361         0 
+2260.006   2  tick    662361         0 # counter shared with CPU 0
+2265.006   1  tick    108733         0 
+2265.006   3  tick    108733         0 # counter shared with CPU 1
+2270.006   1  tick    653753         0 
+2270.006   3  tick    653753         0 # counter shared with CPU 1
+2275.006   0  tick    773031         0 
+2275.006   2  tick    773031         0 # counter shared with CPU 0
+2280.006   1  tick    825893         0 
+2280.006   3  tick    825893         0 # counter shared with CPU 1
+2285.006   0  tick     81501         0 
+2285.006   2  tick     81501         0 # counter shared with CPU 0
+2290.006   0  tick    727775         0 
+2290.006   2  tick    727775         0 # counter shared with CPU 0
+2295.006   0  tick    623619         0 
+2295.006   2  tick    623619         0 # counter shared with CPU 0
+2300.006   0  tick    686236         0 
+2300.006   2  tick    686236         0 # counter shared with CPU 0
+2305.006   0  tick    104198         0 
+2305.006   2  tick    104198         0 # counter shared with CPU 0
+2310.006   1  tick    639868         0 
+2310.006   0  tick    825418         0 
+2310.006   2  tick    825418         0 # counter shared with CPU 0
+2315.006   0  tick    674894         0 
+2315.006   2  tick    674894         0 # counter shared with CPU 0
+2320.006   1  tick    644020         0 
+2320.006   3  tick    644020         0 # counter shared with CPU 1
+2325.006   0  tick     72630         0 
+2325.006   2  tick     72630         0 # counter shared with CPU 0
+2330.006   1  tick    632583         0 
+2330.006   3  tick    632583         0 # counter shared with CPU 1
+2335.006   1  tick    932289         0 
+2335.006   3  tick    932289         0 # counter shared with CPU 1
+2340.006   1  tick    767793         0 
+2340.006   3  tick    767793         0 # counter shared with CPU 1
+2345.006   0  tick     83072         0 
+2345.006   3  tick     63784         0 # counter shared with CPU 1
+2345.006   2  tick     83072         0 # counter shared with CPU 0
+2350.006   1  tick    589353         0 
+2350.006   2  tick    776339         0 # counter shared with CPU 0
+2350.006   3  tick    589353         0 # counter shared with CPU 1
+2355.006   0  tick    759622         0 
+2355.006   2  tick    759622         0 # counter shared with CPU 0
+2360.006   0  tick    801865         0 
+2360.006   2  tick    801865         0 # counter shared with CPU 0
+2365.006   0  tick    218817         0 
+2365.006   3  tick    151829         0 # counter shared with CPU 1
+2365.006   2  tick    218817         0 # counter shared with CPU 0
+2370.006   1  tick    764765         0 
+2370.006   3  tick    764765         0 # counter shared with CPU 1
+2375.006   0  tick    688583         0 
+2375.006   2  tick    688583         0 # counter shared with CPU 0
+2380.006   1  tick    771221         0 
+2380.006   3  tick    771221         0 # counter shared with CPU 1
+2385.006   1  tick    169796         0 
+2385.006   3  tick    169796         0 # counter shared with CPU 1
+2390.006   0  tick    660069         0 
+2390.006   2  tick    660069         0 # counter shared with CPU 0
+2395.006   0  tick    677999         0 
+2395.006   1  tick    871585         0 
+2395.006   3  tick    871585         0 # counter shared with CPU 1
+2400.006   0  tick    704705         0 
+2400.006   1  tick    801926         0 
+2400.006   3  tick    801926         0 # counter shared with CPU 1
+2405.006   1  tick    154113         0 
+2405.006   3  tick    154113         0 # counter shared with CPU 1
+2410.006   0  tick    618577         0 
+2410.006   2  tick    618577         0 # counter shared with CPU 0
+2415.006   0  tick    762471         0 
+2415.006   2  tick    762471         0 # counter shared with CPU 0
+2420.006   0  tick    621992         0 
+2420.006   2  tick    621992         0 # counter shared with CPU 0
+2425.006   0  tick    321982         0 
+2425.006   2  tick    321982         0 # counter shared with CPU 0
+2430.006   0  tick    740166         0 
+2430.006   1  tick    482822         0 
+2430.006   3  tick    482822         0 # counter shared with CPU 1
+2435.006   0  tick    749292         0 
+2435.006   2  tick    749292         0 #2435.006   3  tick    664321         0 # counter shared with CPU 1
+2440.006   0  tick    817057         0 
+2440.006   1  tick    607348         0 
+2440.006   3  tick    607348         0 # counter shared with CPU 1
+2445.006   1  tick    216366         0 
+2445.006   2  tick    338897         0 # counter shared with CPU 0
+2445.006   3  tick    216366         0 # counter shared with CPU 1
+2450.006   1  tick    510896         0 
+2450.006   3  tick    510896         0 # counter shared with CPU 1
+2455.006   0  tick    755832         0 
+2455.006   1  tick    792769         0 
+2455.006   3  tick    792769         0 # counter shared with CPU 1
+2460.006   0  tick    778152         0 
+2460.006   3  tick    718591         0 # counter shared with CPU 1
+2460.006   2  tick    778152         0 # counter shared with CPU 0
+2465.006   0  tick    316478         0 
+2465.006   2  tick    316478         0 # counter shared with CPU 0
+2465.006   1  tick    215642         0 
+2465.006   3  tick    215642         0 # counter shared with CPU 1
+2470.006   1  tick    511844         0 
+2470.006   3  tick    511844         0 # counter shared with CPU 1
+2475.006   0  tick    742014         0 
+2475.006   2  tick    742014         0 # counter shared with CPU 0
+2475.009   1  tick    702325         0 
+2475.009   3  tick    702325         0 # counter shared with CPU 1
+2480.006   1  tick    672463         0 
+2480.006   3  tick    672463         0 # counter shared with CPU 1
+2485.006   0  tick    276249         0 
+2485.006   2  tick    276249         0 #2485.006   3  tick    499507         0 # counter shared with CPU 1
+2490.006   0  tick    512852         0 
+2490.006   2  tick    512852         0 # counter shared with CPU 0
+2495.006   0  tick    578973         0 
+2495.006   2  tick    578973         0 # counter shared with CPU 0
+2500.006   0  tick    580875         0 
+2500.006   2  tick    580875         0 # counter shared with CPU 0
+2505.006   0  tick    311776         0 
+2505.006   2  tick    311776         0 # counter shared with CPU 0
+2505.006   1  tick    337192         0 
+2505.006   3  tick    337192         0 # counter shared with CPU 1
+2510.006   0  tick    507399         0 
+2510.006   2  tick    507399         0 # counter shared with CPU 0
+2515.006   0  tick    765987         0 
+2515.006   2  tick    765987         0 # counter shared with CPU 0
+2520.006   1  tick    830946         0 
+2520.006   3  tick    830946         0 # counter shared with CPU 1
+2525.006   0  tick    253847         0 
+2525.006   2  tick    253847         0 # counter shared with CPU 0
+2525.007   1  tick    332491         0 
+2525.007   3  tick    332491         0 # counter shared with CPU 1
+2530.006   0  tick    457598         0 
+2530.006   2  tick    457598         0 # counter shared with CPU 0
+2535.006   0  tick    630548         0 
+2535.006   2  tick    630548         0 # counter shared with CPU 0
+2540.006   0  tick    684506         0 
+2540.006   2  tick    684506         0 # counter shared with CPU 0
+2545.006   0  tick    421600         0 
+2545.006   2  tick    421600         0 # counter shared with CPU 0
+2545.006   1  tick    327544         0 
+2545.006   3  tick    327544         0 # counter shared with CPU 1
+2550.006   0  tick    571361         0 
+2550.006   2  tick    571361         0 # counter shared with CPU 0
+2555.006   0  tick    761290         0 
+2555.006   2  tick    761290         0 # counter shared with CPU 0
+2560.006   0  tick    646306         0 
+2560.006   2  tick    646306         0 # counter shared with CPU 0
+2565.006   0  tick    292333         0 
+2565.006   2  tick    292333         0 # counter shared with CPU 0
+2565.006   1  tick    334238         0 
+2565.006   3  tick    334238         0 # counter shared with CPU 1
+2570.006   1  tick    512016         0 
+2570.006   3  tick    512016         0 # counter shared with CPU 1
+2575.006   1  tick    803976         0 
+2575.006   3  tick    803976         0 # counter shared with CPU 1
+2580.006   1  tick    821987         0 
+2580.006   3  tick    821987         0 # counter shared with CPU 1
+2585.006   0  tick    307949         0 
+2585.006   2  tick    307949         0 # counter shared with CPU 0
+2590.006   0  tick    525443         0 
+2590.006   2  tick    525443         0 # counter shared with CPU 0
+2595.006   0  tick    703901         0 
+2595.006   2  tick    703901         0 # counter shared with CPU 0
+2600.006   0  tick    680397         0 
+2600.006   2  tick    680397         0 # counter shared with CPU 0
+2605.006   0  tick    463300         0 
+2605.006   2  tick    463300         0 # counter shared with CPU 0
+2610.006   0  tick    564907         0 
+2610.006   2  tick    564907         0 # counter shared with CPU 0
+2615.006   0  tick    637443         0 
+2615.006   2  tick    637443         0 # counter shared with CPU 0
+2620.006   0  tick    659815         0 
+2620.006   2  tick    659815         0 # counter shared with CPU 0
+2625.006   1  tick    312819         0 
+2625.006   3  tick    312819         0 # counter shared with CPU 1
+2625.006   0  tick    308120         0 
+2625.006   2  tick    308120         0 # counter shared with CPU 0
+2630.006   0  tick    399214         0 
+2630.006   2  tick    399214         0 # counter shared with CPU 0
+2635.006   0  tick    701543         0 
+2635.006   2  tick    701543         0 # counter shared with CPU 0
+2640.006   0  tick    787644         0 
+2640.006   2  tick    787644         0 # counter shared with CPU 0
+2645.006   0  tick    308108         0 
+2645.006   2  tick    308108         0 # counter shared with CPU 0
+2650.006   0  tick    467666         0 
+2650.006   2  tick    467666         0 # counter shared with CPU 0
+2655.006   0  tick    688561         0 
+2655.006   2  tick    688561         0 # counter shared with CPU 0
+2660.006   1  tick    804426         0 
+2660.006   3  tick    804426         0 # counter shared with CPU 1
+2665.006   0  tick    308522         0 
+2665.006   2  tick    308522         0 # counter shared with CPU 0
+2670.006   0  tick    389413         0 
+2670.006   2  tick    389413         0 # counter shared with CPU 0
+2675.006   0  tick    627808         0 
+2675.006   2  tick    627808         0 # counter shared with CPU 0
+2680.006   1  tick    702397         0 
+2680.006   3  tick    702397         0 # counter shared with CPU 1
+2685.006   0  tick    337458         0 
+2685.006   2  tick    337458         0 # counter shared with CPU 0
+2690.006   1  tick    456836         0 
+2690.006   3  tick    456836         0 # counter shared with CPU 1
+2695.006   1  tick    731520         0 
+2695.006   3  tick    731520         0 # counter shared with CPU 1
+2700.006   0  tick    717550         0 
+2700.006   2  tick    717550         0 # counter shared with CPU 0
+2705.006   0  tick    318144         0 
+2705.006   2  tick    318144         0 # counter shared with CPU 0
+2710.006   0  tick    405266         0 
+2710.006   2  tick    405266         0 # counter shared with CPU 0
+2715.006   0  tick    699804         0 
+2715.006   2  tick    699804         0 # counter shared with CPU 0
+2720.006   0  tick    705622         0 
+2720.006   2  tick    705622         0 # counter shared with CPU 0
+2725.006   0  tick    447574         0 
+2725.006   2  tick    447574         0 # counter shared with CPU 0
+2730.006   1  tick    491597         0 
+2730.006   3  tick    491597         0 # counter shared with CPU 1
+2735.006   1  tick    832710         0 
+2735.006   3  tick    832710         0 # counter shared with CPU 1
+2740.006   0  tick    619755         0 
+2740.006   2  tick    619755         0 # counter shared with CPU 0
+2745.006   1  tick    325177         0 
+2745.006   3  tick    325177         0 # counter shared with CPU 1
+2745.007   0  tick    314372         0 
+2745.007   2  tick    314372         0 # counter shared with CPU 0
+2750.006   0  tick    433748         0 
+2750.006   2  tick    433748         0 # counter shared with CPU 0
+2755.006   1  tick    806851         0 
+2755.006   3  tick    806851         0 # counter shared with CPU 1
+2760.006   1  tick    788619         0 
+2760.006   3  tick    788619         0 # counter shared with CPU 1
+2765.006   0  tick    258247         0 
+2765.006   2  tick    258247         0 # counter shared with CPU 0
+2770.006   1  tick    505897         0 
+2770.006   3  tick    505897         0 # counter shared with CPU 1
+2775.006   1  tick    772696         0 
+2775.006   3  tick    772696         0 # counter shared with CPU 1
+2780.006   1  tick    653147         0 
+2780.006   3  tick    653147         0 # counter shared with CPU 1
+2785.006   0  tick    450147         0 
+2785.006   2  tick    450147         0 # counter shared with CPU 0
+2785.006   1  tick    318539         0 
+2785.006   3  tick    318539         0 # counter shared with CPU 1
+2790.006   0  tick    482575         0 
+2790.006   2  tick    482575         0 # counter shared with CPU 0

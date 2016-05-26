@@ -1,0 +1,157 @@
+function armaDriver(model, data)
+close all
+total = 0;
+
+bench = {   'data/astar.xls', ...
+            'data/gamess.xls', ...
+            'data/gobmk.xls', ...
+            'data/zeusmp.xls'};
+        
+bench2 = {  'overall.csv', ...
+            'nbzip2.csv', ...
+            'nh264ref.csv', ...
+            'nomnetpp.csv', ...
+            'bzip2.csv', ...
+            'cactusadm.csv', ...
+            'gromac.csv', ...
+            'h264ref.csv', ...
+            'lbm.csv', ...
+            'leslie3d.csv', ...
+            'mcf.csv', ...
+            'omnetpp.csv', ...
+            'perlbench.csv'};
+for i=1:length(bench)
+    [data hdr] = xlsread(bench{i}, '');
+    data = getProcPwr(data, hdr);
+    N = length(data);
+    figure(i)
+    [error, pctErr] = armaPredict(model, data);
+    plot((steps+1:N), data(1:N-steps), 'g-', ...
+         (steps+1:N), est{1}(steps+1:N), 'b-')
+    legend('Actual', 'Predicted'), title(bench{i});
+end
+
+numBenchmarks = length(benchmarks);
+total = 0;
+totalPer = 0;
+
+bmname = benchmarks{1};
+[error, pctErr] = armaPredict(model, data.A);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{2};
+[error, pctErr] = armaPredict(model, data.B);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{3};
+[error, pctErr] = armaPredict(model, data.C);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{4};
+[error, pctErr] = armaPredict(model, data.D);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{5};
+[error, pctErr] = armaPredict(model, data.E);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{6};
+[error, pctErr] = armaPredict(model, data.F);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{7};
+[error, pctErr] = armaPredict(model, data.G);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{8};
+[error, pctErr] = armaPredict(model, data.H);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{9};
+[error, pctErr] = armaPredict(model, data.I);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{10};
+[error, pctErr] = armaPredict(model, data.J);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{11};
+[error, pctErr] = armaPredict(model, data.K);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{12};
+[error, pctErr] = armaPredict(model, data.L);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+bmname = benchmarks{13};
+[error, pctErr] = armaPredict(model, data.M);
+title(bmname);
+xlabel('Time'), ylabel('ProcPwr');
+total = total + error;
+totalPer = totalPer + pctErr;
+fprintf('Error For %s: %.5f\n', bmname, error);
+fprintf('Percent Error For %s: %.5f\n\n', bmname, pctErr);
+
+fprintf('Average Error: %.5f\n', total/numBenchmarks);
+fprintf('Average Percent Error: %.5f\n', totalPer/numBenchmarks);
+end

@@ -1,0 +1,22 @@
+The sample interval is 5 seconds
+Resetting power meter...
+Collection of IPMI data started
+Collection of PMC data started
+Collection of system statistics started
+Sleeping for 300 seconds to let everyone settle
+Now starting to log iostat data
+Now starting to log vmstat data
+Now starting to log page fault data
+Now starting to log krenel memory allocation data
+Now starting to log disk data
+And now we start the benchmarks
+Starting the 436.gromacs benchmark at 00:28
+The process id for the 436.gromacs benchmark is 307362
+And now we start the 471.omnetpp benchmark at 00:28
+The process id for the  benchmark is 307375
+Now we wait until both benchmarks have finished
+Both benchmarks have completed at 00:50
+Sleeping for 600 secondsto allow the machine to cool down.
+Now shutdowning the data collection utilities.
+OK...I'm back, and now I'm downloading the power data
+Data collection complete at 01:00

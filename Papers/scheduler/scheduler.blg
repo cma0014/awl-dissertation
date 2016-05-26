@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: scheduler.aux
+The style file: ULieeetran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ../overall.bib.bib
+Warning--entry type for "WattsUp2006a" isn't style-file defined
+--line 3757 of file ../overall.bib.bib
+Warning--I didn't find a database entry for "w"
+-- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 44 entries,
+            4024 wiz_defined-function locations,
+            1097 strings with 15850 characters,
+and the built_in function-call counts, 31910 in all, are:
+= -- 2550
+> -- 755
+< -- 260
++ -- 406
+- -- 128
+* -- 1501
+:= -- 4762
+add.period$ -- 95
+call.type$ -- 44
+change.case$ -- 40
+chr.to.int$ -- 630
+cite$ -- 44
+duplicate$ -- 2352
+empty$ -- 2640
+format.name$ -- 160
+if$ -- 7361
+int.to.chr$ -- 0
+int.to.str$ -- 44
+missing$ -- 412
+newline$ -- 159
+num.names$ -- 43
+pop$ -- 974
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 2425
+stack$ -- 0
+substring$ -- 1499
+swap$ -- 1895
+text.length$ -- 50
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 44
+warning$ -- 0
+while$ -- 152
+width$ -- 46
+write$ -- 431
+(There were 2 warnings)

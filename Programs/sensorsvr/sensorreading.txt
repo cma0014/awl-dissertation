@@ -1,0 +1,40 @@
+File:	 sensorreading.txt
+Author:  awl8049
+Purpose: Define the sensor reading format
+
+We avoid having to put the code for reading sensor data into the kernel
+by providing a userland process that reads the data from the various
+devices and writes a string containing the readings into a file stored
+in /tmp.  Long term the plan is to replace this obvious hack with
+writing this string to a piece of shared memory.
+
+We also include a version of this server that reads data from the data
+collection spreadsheets we used to build the model.  This code writes to
+the same location.
+
+The data file in /tmp contains one record in the format
+<TS> T  <TC1> <TC2> <TA1> <TA2> F <BF1> <BF2> <AF1> <AF2> H <HT0> <HT1> <HT2> C <CM0> <CM1> <CM2> <CM3>
+
+where we have the following:
+<TS>  timestamp
+T
+<TC1>	Die temp of CPU1
+<TC2>	Die temp of CPU2
+<TA1>	Ambient temp 1
+<TA2>   Ambient temp 2
+F
+<BF1>   Blower Fan Speed at CPU1
+<BF2>	Blower Fan Speed at CPU2
+<AF1>	Axial Fan Speed at Memory Bank 1
+<AF2>	Axial Fan Speed at Memory Bank 2
+H
+<HT0>	Number of HT bus transactions on bus 0
+<HT1>	Number of HT bus transactions on bus 1
+<HT2>	Number of HT bus transactions on bus 2
+C
+<CM0>	L2 cache misses for core 0
+<CM1>	L2 cache misses for core 1
+<CM2>	L2 cache misses for core 2
+<CM3>	L2 cache misses for core 3
+
+

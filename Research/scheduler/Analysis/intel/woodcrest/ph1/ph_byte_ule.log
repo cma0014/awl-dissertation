@@ -1,0 +1,87 @@
+phoronix.sh: Executing pts/byte benchmark.
+phoronix.sh: Destination directory is /usr/home/awl8049/scheduler/
+phoronix.sh: Using ph_byte_ule as id for this run
+phoronix.sh: Clearing memory on power meter
+Restarting teaplant.
+And now we start the Phoronix pts/byte benchmark at 21:05
+
+Phoronix Test Suite v3.2.1
+Estimated Run-Time: 25 Minutes
+
+
+
+BYTE Unix Benchmark:
+    pts/byte-1.1.0 [Computational Test: Dhrystone 2]
+    Test 1 of 4
+    Estimated Time Remaining: 25 Minutes
+    Estimated Test Run-Time: 7 Minutes
+    Expected Trial Run Count: 3
+        Started Run 1 @ 03:05:41
+        Started Run 2 @ 03:07:44
+        Started Run 3 @ 03:09:47  [Std. Dev: 0.18%]
+
+    Test Results:
+        11055008.3
+        11071797.7
+        11032645.4
+
+    Average: 11053150.47 LPS
+
+
+BYTE Unix Benchmark:
+    pts/byte-1.1.0 [Computational Test: Register Arithmetic]
+    Test 2 of 4
+    Estimated Time Remaining: 19 Minutes
+    Estimated Test Run-Time: 7 Minutes
+    Expected Trial Run Count: 3
+        Started Run 1 @ 03:11:53
+        Started Run 2 @ 03:13:55
+        Started Run 3 @ 03:15:57  [Std. Dev: 0.05%]
+
+    Test Results:
+        1488999.4
+        1490151.3
+        1490568.7
+
+    Average: 1489906.47 LPS
+
+
+BYTE Unix Benchmark:
+    pts/byte-1.1.0 [Computational Test: Integer Arithmetic]
+    Test 3 of 4
+    Estimated Time Remaining: 13 Minutes
+    Estimated Test Run-Time: 7 Minutes
+    Expected Trial Run Count: 3
+        Started Run 1 @ 03:18:04
+        Started Run 2 @ 03:20:06
+        Started Run 3 @ 03:22:08  [Std. Dev: 0.08%]
+
+    Test Results:
+        1490619.2
+        1488658.6
+        1488468.1
+
+    Average: 1489248.63 LPS
+
+
+BYTE Unix Benchmark:
+    pts/byte-1.1.0 [Computational Test: Floating-Point Arithmetic]
+    Test 4 of 4
+    Estimated Time Remaining: 7 Minutes
+    Expected Trial Run Count: 3
+        Started Run 1 @ 03:24:14
+        Started Run 2 @ 03:26:17
+        Started Run 3 @ 03:28:19  [Std. Dev: 0.04%]
+
+    Test Results:
+        1065325.5
+        1066163.4
+        1065966.9
+
+    Average: 1065818.60 LPS
+
+
+And the Phoronix pts/byte benchmark has completed at 
+phoronix.sh: Telling teaplant to cycle log files
+phoronix.sh: Downloading data from the power meter
+phoronix.sh: Data collection complete

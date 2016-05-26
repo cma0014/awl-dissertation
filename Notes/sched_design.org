@@ -1,0 +1,123 @@
+#+TITLE:     sched_design.org
+#+AUTHOR:    awl8049
+#+EMAIL:     awl8049@cacs.louisiana.edu
+#+DATE:      2011-04-29 Fri
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+* Schedulers in FreeBSD
+** sched_4bsd.c:: The original 4.4BSD scheduler
+   1. First implemented as part of 4.4BSD.  
+   2. One global run queue,round-robin with priority management
+   3. added support for SMP by adding one run-queue for each logical CPU
+      in the system.
+** The ULE scheduler
+   1. Name is portmaneau of the word "schedULE".
+   2. Objective: scalability
+   Original scheduler maintained a global queue of all runnable
+   proceses.  This was not scalable as the number of threads gets
+   larger.  Want to avoid the need to globally enumerate processes to
+   make scheduling decisions.
+*** Key Data Structures
+#+BEGIN_SRC C
+/*
+ * tdq - per processor runqs and statistics.  All fields are protected by the
+ * tdq_lock.  The load and lowpri may be accessed without to avoid excess
+ * locking in sched_pickcpu();
+ */
+struct tdq {
+  /* Ordered to improve efficiency of cpu_search() and switch(). */
+  struct mtx      tdq_lock;               /* run queue lock. */
+  struct cpu_group *tdq_cg;               /* Pointer to cpu topology. */
+  volatile int    tdq_load;               /* Aggregate load. */
+  int             tdq_sysload;            /* For loadavg, !ITHD load. */
+
+  int             tdq_transferable;       /* Transferable thread count. */
+  short           tdq_switchcnt;          /* Switches this tick. */
+  short           tdq_oldswitchcnt;       /* Switches last tick. */
+  u_char          tdq_lowpri;             /* Lowest priority thread. */
+  u_char          tdq_ipipending;         /* IPI pending. */
+  u_char          tdq_idx;                /* Current insert index. */
+  u_char          tdq_ridx;               /* Current removal index. */
+  struct runq     tdq_realtime;           /* real-time run queue. */
+  struct runq     tdq_timeshare;          /* timeshare run queue. */
+  struct runq     tdq_idle;               /* Queue of IDLE threads. */
+  char            tdq_name[TDQ_NAME_LEN];
+#ifdef KTR
+  char            tdq_loadname[TDQ_LOADNAME_LEN];
+#endif
+} __aligned(64);
+#+END_SRC
+    1. tdq::Thread run-queue structure
+       1.1. One per logical CPU
+       1.2. Three separate run queues: realtime, timeshare, idle
+       1.3. Each queue protected by a mutex
+    2. runq:: Run-queue structure
+
+*** Available queues
+    Three queues per CPU: idle, current, and next
+    a) idle: threads in idle run only when no other threads are on
+    current or next
+
+    b) current
+       1. real-time & interrupt threads are always inserted into this queue
+       2. interactive threads inserted into this queue
+       3. Threads are considered interactvie based weighted ratio of sleep to run time
+       4. Threads run in priority order from current queue until empty
+
+    c) next 
+       1) Other threads added to this queue.
+       2) When current becomes empty, current and next are swapped.
+
+*** Priorities
+    1. Handles the "who runs when question"
+    2. Concentrates on ambient temperature
+    3. Process contribution to the increases in the ambient temperature
+       3.1. Need to expand on how to compute the "contribution"
+       3.2. Predictor calculation: ambient temperature =
+       F(hwpmcs[1...x], sysutil[])
+	  
+*** Load balancing
+    a. global idle migration
+       1. System gets a global bitmap of idle CPUs
+       2. CPU sets its bit in this bitmap when it goes idle
+       3. Migration strategy 
+          If CPU is about to take thread active, it
+          checks to see if it is overloaded and if any processor has set
+          its idle. Task is migrated to the idle processor if one is
+          available.
+    b. push migration
+       1. Every 500ms, the function sched_balance() is called.
+	  1.1. Select most-loaded and least-loaded processors
+	  1.2. Only selects 2 processors as most common configuration
+       2. For Multi-core, each core is assigned a kseq structure
+	  2.1 Each kseq structure is assigned to kseq group
+	  2.2 One group per physical CPU
+	  2.3 Push migration will favor migration amogst cores before
+          migration amongst processors.
+
+* Priorities and run-queue selection
+  
+
+* Load balancing and processor affinity
+  1. Changes for TBS requires modification to the push migration scheme.
+  2. Need to extend the kseq_group structure to keep track of cpu
+     temperature
+     2.1. Measure indicating how close we are thermal emergency
+     2.2. TBD: How to set this value?
+  3. Need to include similar quantity in kseq structure to be used if we
+     can get core level granularity with temperature sensors.
+  4. Load will migrate towards processor with smallest value with equal
+     balancing amongst cores if cores do not support temperatue
+     balancing.
+  5. Extension would be to include other values other temperatue in
+     these computations.
+     

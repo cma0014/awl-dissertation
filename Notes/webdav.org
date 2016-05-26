@@ -1,0 +1,28 @@
+#+TITLE:   webdav.org
+#+AUTHOR:    awl8049
+#+EMAIL:     awlewis@cacs.louisiana.edu
+#+DATE:      2011-03-13 Sun
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT: 
+* Using MobileMe iDisk with Linux
+** Install davfs2 package using apt-get or yum.
+Also available in the FreeBSD port system
+** Create mount point in file system
+Want to create this in the /mnt folder on most systems.
+** Add line with login and password to /etc/davfs2/secrets
+#+BEGIN_EXAMPLE
+https://idisk.mac.com/{account_name} {account_name} {account_password
+#+END_EXAMPLE
+*( Add line to /etc/fstab to automagically mount share
+#+BEGIN_EXAMPLE
+https://idisk.mac.com/{account_name}  /mnt/idsk davfs rw,noauto,user 0 0
+#+END_EXAMPLE

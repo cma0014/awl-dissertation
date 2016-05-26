@@ -1,0 +1,67 @@
+/usr/local/cpu2006 /usr/home2/awl8049/dissertation/vmpowermgt/Programs/sched_data_collect
+runspec v4662 - Copyright 1999-2006 Standard Performance Evaluation Corporation
+Using 'linux-suse101-i386' tools
+Reading MANIFEST... 17934 files
+Loading runspec modules...............
+Locating benchmarks...found 31 benchmarks in 12 benchsets.
+Locating output formats: ASCII, config, CSV, flags, HTML, mail, PDF, PostScript, raw, Screen, Submission Check
+Reading config file '/usr/local/cpu2006/config/schedtas.cfg'
+Benchmarks selected: 444.namd
+Compiling Binaries
+  Up to date 444.namd ref base i386-m32-gcc42-nn default
+
+
+Parsing Flags
+  Looking at 444.namd base i386-m32-gcc42-nn default: done
+Flag Parsing Complete
+
+Setting Up Run Directories
+  Setting up 444.namd ref base i386-m32-gcc42-nn default: existing (run_base_ref_i386-m32-gcc42-nn.0000)
+Running Benchmarks
+  Running 444.namd ref base i386-m32-gcc42-nn default
+/usr/local/cpu2006/bin/specinvoke -d /usr/local/cpu2006/benchspec/CPU2006/444.namd/run/run_base_ref_i386-m32-gcc42-nn.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C
+/usr/local/cpu2006/bin/specinvoke -E -d /usr/local/cpu2006/benchspec/CPU2006/444.namd/run/run_base_ref_i386-m32-gcc42-nn.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd
+Success: 1x444.namd
+Producing Reports
+mach: default
+  ext: i386-m32-gcc42-nn
+    size: ref
+      set: int
+      set: fp
+NOTICE: sw_compiler is longer than 50 characters and will be split
+        format: raw -> /usr/local/cpu2006/result/CFP2006.140.rsf
+        format: flags -> /usr/local/cpu2006/result/CFP2006.140.flags.html
+        format: ASCII -> /usr/local/cpu2006/result/CFP2006.140.txt
+        format: HTML -> /usr/local/cpu2006/result/CFP2006.140.html, CFP2006.140.gif
+        format: PDF -> /usr/local/cpu2006/result/CFP2006.140.pdf
+        format: Screen -> 
+
+                                  Estimated                       Estimated
+                Base     Base       Base        Peak     Peak       Peak
+Benchmarks      Ref.   Run Time     Ratio       Ref.   Run Time     Ratio
+-------------- ------  ---------  ---------    ------  ---------  ---------
+410.bwaves                                  NR                                 
+416.gamess                                  NR                                 
+433.milc                                    NR                                 
+434.zeusmp                                  NR                                 
+435.gromacs                                 NR                                 
+436.cactusADM                               NR                                 
+437.leslie3d                                NR                                 
+444.namd         8020        900       8.91 *                                  
+447.dealII                                  NR                                 
+450.soplex                                  NR                                 
+453.povray                                  NR                                 
+454.calculix                                NR                                 
+459.GemsFDTD                                NR                                 
+465.tonto                                   NR                                 
+470.lbm                                     NR                                 
+481.wrf                                     NR                                 
+482.sphinx3                                 NR                                 
+ Est. SPECfp_base2006                    --
+ Est. SPECfp2006                                                    Not Run
+
+
+The log for this run is in /usr/local/cpu2006/result/CPU2006.140.log
+
+runspec finished at Fri Jan 13 18:58:16 2012; 918 total seconds elapsed
+/usr/home2/awl8049/dissertation/vmpowermgt/Programs/sched_data_collect

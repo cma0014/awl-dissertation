@@ -1,0 +1,317 @@
+%
+% File:     chapter-related.tex
+% Author:   awl8049
+% Revision: $Revision: 2.2 $
+%
+\chapter{Background and Related Work}
+\label{chp:priorwork}
+The thread scheduler of an OS kernel is responsible for placing threads
+in the dispatch queue, deciding which threads to run next on available
+logical cores, and managing thread migration to balance the workload
+amongst all cores.  In addition, a scheduler must fulfill two major
+applications requirements: (1) making equal progress on all threads of a
+given application, and (2) exploiting as much hardware parallelism as
+possible~\cite{Hofmeyr2010}. Traditional server load balancing has
+various assumptions about workload behavior when making thread placement
+decisions.  In particular, interactive workloads are assumed to involve
+independent tasks that remain quiet for extended periods.  Server
+workloads, on the other hand, are assumed to contain large numbers of
+threads which are highly independent of each other and use
+synchronization objects to ensure mutual exclusion on small data items.
+Modern operating systems (such as Linux and Solaris) make load balancing
+more power-aware by placing workloads to cores as tightly as possible
+(inside the fewest processors possible), thereby presenting more
+opportunities for power management software to shutdown unused resources
+\cite{Sun2009,Sun2009b,Xia2010}.
+
+The following sections provide in sequence, background and prior work
+pertinent to power modeling, thermal modeling, chaotic behavior of
+energy consumption, and scheduling with load balancing support,
+
+\section{Power Modeling}
+\label{sec:related-power-modeling} Used to guide power management
+mechanisms in server systems, power models can be classified into two
+broad categories: simulation-based and analytical models. Although
+simulation may provide details and breakdowns of energy consumption, it
+is usually done statically in an off-line manner, is slow, and does not
+scale well nor apply favorably to realistic applications and large data
+sets. For example, the HotSpot thermal simulator~\cite{Skadron2004}
+models thermal behavior (and, indirectly, power behavior) by building a
+network of thermal resistances and capacitances to account for heating
+and power dissipation on a circuit.Such models must accurately reflect
+empirical data from the real systems being simulated. Studies of the
+power characteristics of the SPEC CPU2000 and CPU2006 benchmarks suites
+executed on the AMD Athlon 64 processor \cite{MesaMartinez2007} and
+thermal characteristics \cite{MesaMartinez2010} show that
+simulation-based models (1) need long execution times to accurately
+predict power behavior and (2) have problems dealing with key thermal
+metrics.  Mercury \cite{Heath2006} attempts to address these issues by
+adopting a hybrid approach with an out-of-band solver that processes
+component observations collected from a monitor daemon on the target
+system.  The solver in this system uses the collected information to
+simulate the thermal behavior in the system.  The Mercury infrastructure
+was used to construct Freon and FreonEC for thermal and energy
+management of clusters. However, statistical analysis of methods similar
+to those used in Freon indicate significant issues in this case
+\cite{DavisRivoire2011}. Therefore, simulation-based models are
+unsuitable when dynamic power and thermal optimization are
+concerned~\cite{Economou2006}.
+ 
+Analytical models, by contrast, rely on power measurements at the
+constituent components of a server via sampling its hardware and
+software performance metrics, i.e., processor PeCs (performance
+counters) and operating system performance metrics.  PeCs are hardware
+registers that can be configured to count various micro-architectural
+events, such as branch mis-predictions and cache misses.  Attempts have
+been made to reconcile analytic models by mapping program phases to
+events~\cite{Isci2006}.  Common techniques for associating PeCs and/or
+performance metrics with energy consumption adopt linear regression to
+map collected metrics to energy consumed during program execution
+\cite{Contreras2005,Economou2006,Isci2003b}.
+
+Models have been built for the processor, storage devices, single
+systems, and groups of systems in data
+centers~\cite{Kadayif2001,Isci2003b}.  For example, memory manufacturers
+provide clear architectural documentation concerning the power
+consumption of their products \cite{Micron2007}; this information is
+regularly used as the foundation for modeling DRAM power
+usage~\cite{Liu2008,Lewis2008}.  Similarly, detailed thermal and power
+models of storage devices \cite{Gurumurthi2005} have been proposed.
+However, those models considered only the maximum internal data rate,
+thereby inadequate for our purpose of run-time measurement.  At the
+processor level, Bellosa \citeyear{Bellosa2003} and Contreras et al.\
+\citeyear{Contreras2005} created power models which linearly correlated
+power consumption with PeCs.  Those models are simple and fast with
+low-overhead~\cite{Bircher2007,Powell2009,Bircher2011}, but they are
+sensitive to benchmarks chosen for model calibration and often suffer
+from large worst-case errors, making them unsuitable for predictive
+purposes~\cite{McCullough2011}.  Furthermore, they do not consider
+full-system power consumption.
+
+The black-box approach, without detailed knowledge of underlying
+hardware, has been applied recently to full-system modeling
+\cite{Bircher2007,Bircher2011} by using PeCs to estimate power
+consumption of I/O devices, in addition to the processor.  In general,
+full-system models can be created using operating system CPU
+utilization~\cite{Fan2007} and similar metrics~\cite{Heath2005} in
+addition to PeCs. Such full-system models, like
+MANTIS~\cite{Economou2006,Rivoire2008a} and trickle-down power modeling
+\cite{Bircher2011}, relate usage information to the power of the entire
+system rather than of its individual components.  Each of those models
+requires one or more calibration phases to determine the contribution of
+each system component to overall power consumption.  The accuracy and
+the portability of full system power models were assessed
+earlier~\cite{Rivoire2008b}, revealing that reasonable accuracy across
+machines and different workloads was achievable by considering both PeCs
+(performance counters) and operating system performance metrics, since
+they together may capture all components of system dynamic power
+consumption.
+
+Auto-regressive (AR) techniques have been adopted popularly to construct
+power and temperature models for servers
+\cite{Coskun2008,Powell2009,Bircher2011}, since they are simple and
+efficient.  The linear AR models attempt to correlate PeCs to system
+behavior, with an average error of five to twenty-five percent
+(depending on architecture and benchmarks).  Unfortunately, their
+maximum errors tend to be ill-conditioned, because of their
+\textit{stationary} nature.  In a stationary process, the probability
+distribution does not change with time, nor do the mean and the
+variance.  Hence, AR and auto-regressive/moving average (ARMA) models
+are not suited for data that exhibits sudden bursts of large amplitudes
+at irregular time epochs, due to their assumptions of
+normality~\cite{Tong1993}.  Given workload dynamics of a server vary in
+time and its power profiles often diverge over time, effort has been
+made to accommodate this diverse behavior
+\cite{MesaMartinez2007,Coskun2008} so as to permit continuing use of AR
+and ARMA models.  This way, however, negatively impacts the performance
+advantage resulting from auto-regressive techniques, namely, their
+simplicity.
+
+\section{Thermal Modeling}
+\label{sec:related-thermal-modeling}
+Existing thermal models all required to fit targeted mathematical
+expressions based on time-series observations of temperatures during the
+course of executing various workloads.  Expression coefficients were
+estimated by minimizing total least square errors between modeling
+results and actual temperature readings.  After proper calibration, such
+a mathematical expression becomes a model for extrapolating future
+temperatures.  Different modeling techniques have been devised.  In
+particular, a model based on integer linear programming was adopted by
+an earlier task scheduler~\cite{Kursun2009}, which aimed to meet
+real-time deadlines while minimizing hot spots and spatial temperature
+differentials across the die.  Meanwhile, dynamic thermal modeling
+includes Heat-and-Run~\cite{Gomaa2004}, HybDTM~\cite{Ayoub2011} and
+ThreshHot~\cite{Yang2008}.  Heat-and-Run distributes
+work among available cores until the DTM events arise, and it then
+migrates threads from the overheated cores to other cool cores.  On the
+other hand, HybDTM enhances DTM with a thread migration strategy which
+lowers the priority of jobs executed on hot cores.  Separately,
+ThreshHot employs an on-line temperature estimator to determine the
+proper order to schedule threads across cores, favoring those threads
+which cause the greatest temperature hikes while avoiding DTM events to
+occur.  Schedulers based on prior thermal modeling all rely on readings
+of hardware performance counters and temperature sensors.  They can be
+improved by analyzing on-die thermal variations to aid in system power
+and thermal management \cite{Kursun2009,Bailis2011,Murali2008}.
+
+However, preceding techniques are reactive to the temperature
+approaching the DTM threshold rather than trying to avoid reaching that
+temperature in the first place.  A proactive solution with multi-tier
+prediction was suggested earlier \cite{Ayoub2011}, where a core level
+predictor was employed to convert temperature observations to operating
+frequency estimates while a control-theoretic based scheduler was
+followed at the socket level for process level scheduling.  Separately,
+a scheduling policy for sorting the tasks in each core's run queue
+according to memory intensity was considered so as to schedule
+memory-bound tasks at slower frequencies \cite{Merkel2008b,Merkel2010}.
+Later, the process scheduling policy was modified in \cite{Bellosa2003}
+to allocate time slices following (1) the contribution of each task to
+the system power consumption and (2) the current processor temperature.
+A similar approach made use of idle cycle injection to manage CPU time
+slice allocation, aiming to maintain a lower average temperature over
+time, as opposed to managing temperatures against a critical threshold.
+Meanwhile, Cool Loop \cite{Choi2007} and Dimentrodon \cite{Bailis2011}
+address a lack of heat slack by inserting additional cycles into the
+task scheduling to create thermal slack, naturally leading to
+performance degradation.  A variation of preceding schemes relied on
+system level compiler support to insert a run-time profiling code into
+applications for providing hints on the thermal intensity of a task
+\cite{LiK2008}.  However, such an approach works ineffectively under
+many server cases where the slack in deadlines usually is unavailable.
+
+\section{Chaotic Behavior of Energy Consumption}
+\label{sec:chaot-pred-energy}
+Lately, the power consumption data collected during benchmark execution
+have signified their increasing non-linearity over time. For example,
+analysis of published results for the SPECpower\_ssj2008
+benchmark~\cite{Varsampoulos2010,Hsu2011} revealed maximum errors as
+large as 40\% when modeling the benchmark results using linear two-point
+interpolation with the observation that the behavior of the power
+curves of this benchmark was neither linear nor
+convex.  A variation of the MANTIS power model \cite{Economou2006} was
+used to analyze the power curves of the SPEC CPU2006, PARSEC
+multi-threaded benchmark suite~\cite{Bienia2011}, and a set of synthetic
+system stress benchmarks~\cite{McCullough2011}.  This work found for
+multi-core processors that the mean relative error doubled as compared
+to when the benchmark was restricted to executing on a single core.
+Furthermore, mean relative errors for individual subsystems such as the
+CPU were significantly higher, with an average error of 10-14\% and the
+largest error as much as 150\% for some workloads.
+
+The cause of non-linear behavior in power data may be attributed to a
+number of factors.  First, while the assumption of linearity depends
+upon homogeneous workloads, observations of the behavior of SPEC CPU
+benchmarks in both physical and virtual machine environments reveal that
+distributing execution tasks across multi-core processors is rarely
+uniform to have homogeneous workloads~\cite{Kansal2010}.  Second, modern
+processors have no simple features which can be abstracted
+easily to permit linear models (for example, effects such as cache
+contention, processor performance optimizations, and hidden device
+states) ~\cite{McCullough2011}.
+
+Dealing with workload dynamics without high computational complexity
+requires efficient estimation able to address inherent non-linearity in
+the time series.  One approach follows local polynomial fitting via
+weighted least squares regression \cite{Fan1996} or its variation
+\cite{Singh2009}.  Another approach is to utilize a moving average
+technique for smoothing the data by computing an average of the a subset
+of data from the time series observations.  For example, an
+exponentially-weighted moving average will weight the members of the
+subset in geometrically decreasing order so as give less weight to
+samples as they are further removed in time \cite{NIST2010}. A third
+approach to fitting non-linear curves with varying degrees of smoothness
+in different locations makes use of the derivatives of an approximating
+function with discontinuities.  This can be accomplished by employing
+splines with discontinuities existing at points identified as knots.  An
+example of this approach is Multivariate Adaptive Regression Splines
+(MARS) \cite{Friedman1991}, which models the time series as a weighted
+sum of basis functions $B_{i}(x)$ and constant coefficients $c_{i}$:
+\begin{equation}
+  \label{eq:mars}
+  f(x)= \displaystyle\sum_{i=1}^{k}c_{i}B_{i}(x),
+\end{equation}
+where each of the basis functions can take the form of (1) a constant 1,
+with only one such term present, the intercept, (2) a hinge function in
+the form of $max(0,x - c)$ or $max(0, c - x)$, or (3) a product of two or
+more hinge functions.   MARS is suitable for modeling power
+behavior because of their good balance between bias and variance.
+A model with low bias signifies that it is flexible enough to address
+non-linearity while sufficiently constrained to maintain low variance.
+
+Chaotic systems are ubiquitous in nature, found in many different
+physical domains.  It has been shown that the DC-DC power converters
+commonly used by power circuitry in modern computers demonstrates such
+behavior~\cite{Hamill1997,Tse2002}.  It follows then that any system
+that models such a physical system must reflect this behavior. One key
+feature of such a dynamic system is its sensitivity to initial
+conditions, whose small difference $\delta{x}$ can result in the marked
+difference of $\delta{x}e^{\lambda t}$ after time $t$, for a certain
+$\lambda > 0$.  This exponential separation signifies that even a small
+difference or error may lead to large divergence in the near future.
+
+From a mathematical standpoint, chaos can be produced by both continuous
+and discrete systems.  A continuous system expressed by a differential
+equation
+\begin{equation}
+  \label{eq:chaoscontinuous}
+  \dfrac{dx(t)}{dt} = F(x(t)),
+\end{equation}
+with at least three degrees of freedom
+$x(t)=[x_{1}(t),x_{2}(t),x_{3}(t),\ldots, x_{m}(t)]$,
+can be related to a companion discrete system of
+\begin{equation}
+  \label{eq:chaosdiscrete}
+  x_{n+1}=f(x_{n}),
+\end{equation}
+by considering \equationname~(\ref{eq:chaosdiscrete}) as a projection of
+the flow for \equationname~(\ref{eq:chaoscontinuous}) on a surface.
+Three conditions are necessary for such a system to show chaos: (1) the
+differential equation and companion discrete system are
+deterministic, (2) the functions of $f$ and $F$ must be nonlinear, and (3) the
+discrete system must have a positive Lyapunov exponent~\cite{Liu2010}.
+
+\section{Limitations of Existing Scheduling}
+\label{sec:shortc-comp-workl}
+Current power management software that utilizes DVFS techniques to
+address DTM events has been effective in addressing thermal emergencies
+\cite{Donald2006,Hanson2007}, commonly implemented in modern server
+processors \cite{AMD2007,Intel2009}.  However, handling DTM through DVFS
+can be problematic due to issues with program phase behavior and
+contention for shared resources \cite{Bircher2008,Coskun2008d},
+resulting directly from slow transitions between the active and the idle
+device states and also from inability to access resources associated
+with idle processors.  When the power phase changes frequently, abundant
+thermal variations among cores within the processor occurs, leading to
+decreased reliability \cite{Rosing2007,Coskun2008d,Kursun2009}.  For
+example, the Intel XScale processor was reported to decrease its
+component MTTF (Mean Time to Failure) by 12\% to 34\%, depending upon
+the selected power management strategy \cite{Rosing2007}.
+
+Work migration for energy savings and thermal management has a long
+history in the SMP, SMT, and CMP environments
+\cite{Yao1995,Gomaa2004,Kumar2006,Yang2008}.  A study of OS-level
+thermal migration using Linux on the IBM POWER5
+processor~\cite{Choi2007} discovered that the rise and fall times of
+core temperatures vary in the order of hundreds of milliseconds.  As
+most operating systems choose scheduler ticks to be of 10 ms or less, it
+often is impossible to react to thermal conditions before a critical
+state is reached.  As a result, three improvement mechanisms for
+managing thermal states have been pursued: (1) core hopping for
+leveraging spatial heat slack, (2) task scheduling for leveraging
+temporal heat slack, and (3) SMT scheduling for leveraging temporal heat
+slack.  In the presence of slack, each of those mechanisms may reduce
+core die temperatures by 3 to 5$^{\circ}$ C on an average, at the
+expense of 3\% mean performance degradation ~\cite{Choi2007,Ayoub2009}.
+However, in the absence of slack commonly found under heavy workloads in
+high-performance servers, the three mechanisms becomes ineffective,
+calling for suitable scheduling with thermal awareness proactively.
+
+
+% Following comment block used by GNU-EMACS and AUCTEX packages
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "dissertation.tex"
+%%% TeX-PDF-mode: t
+%%% TeX-source-correlate-mode: t
+%%% End: 

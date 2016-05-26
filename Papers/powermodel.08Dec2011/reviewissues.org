@@ -1,0 +1,460 @@
+#+TITLE:     reviewissues.org
+#+AUTHOR:    Adam Lewis
+#+EMAIL:     awlewis@cacs.louisiana.edu
+#+DATE:      2011-07-11 Mon
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+LaTeX_CLASS: scrartcl
+* Reviewer #1
+** DONE Uniqueness of work
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape} 
+The innovative idea in this paper is a specific way of using thermal
+sensors, performance counters, and bus activity to estimate power
+consumption. The novelty is that they show mathematically that server
+power consumption exhibits chaotic behavior and develop a way to
+estimate the power consumption. IMO, that is a somewhat weak
+contribution given that server power modeling is a well trodden 
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+1. Approach
+   1. Response not taking into account evolution of processors
+   2.  Many of the references quoted as supporting the "well-trodden"
+   comment are out-of-date
+   3. Papers published by others during review period confirm many of
+   the claims being made in our work.
+   4. Really question whether the reviewer actually read some of the
+   references. Many of the papers quoted or follow-on work to those
+   papers were considered in related work.
+2. Address some of these issues in introduction and related works
+** DONE Missing references
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+First, the authors have to address how their work is related to the
+papers I have listed. Since power modeling of servers is a well-troddenf
+area, the authors have to highlight how their contribution advances the
+state of the art/knowledge.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+1. Related works need to include these specific references.
+   1. [[http://doi.acm.org/10.1145/1735970.1736043][MesaMartinez2010]]
+      - Summary
+	 This paper builds on the Ware2010 paper with a focus on thermal
+	 characterization of the SPEC CPU 2000 and CPU 2006 benchmarks.  The
+	 focus is on thermal modeling with the implication that profile-based
+	 sampling methods are ill-suited for this type of measurement.
+	 However, these concerns seems directed more towards simulation based
+	 techniques rather than methods used in our paper.
+      - Comments
+	 This paper was to be one of the primary references for our scheduler
+	 paper. The connection appears tenuous to power modeling but there are
+	 very interesting issues this paper raises on the thermal side.  The
+	 author's contention about profile-based sampling methods appears to
+	 be based on the use short execution times of certain simulation
+	 techniques.  The authors also raise concerns about the use of the
+	 SPEC CPU benchmark.
+   2. [[http://dx.doi.org/10.1109/HPCA.2010.5416627][Ware2010]]
+      - Summary
+	 This paper summarizes the architecture of the IBM POWER7
+	 architecture with a focus on processor that promote better energy
+	 efficiency over prior members of the POWER family of processors.
+      - Comments
+         The statement about NUMA architecture was valid when we did the
+	 original work (as documented in the 2008 conference paper) but our
+	 position isn't as strong today in that regard.  Note, however, the
+	 connection of this specific work to the issues we discuss is tenuous
+	 as the paper is very focused on the specific features of the
+	 POWER7. Additional cites to more relevant recent work will be added
+	 to the discussion in the paper.  For example, [[http://dx.doi.org/10.1007/s00450-010-0123-3][Blanchard2010]]
+        covers much the same material as this work but is much more
+        focused on the power aspects than this survey paper.
+   3. [[http://biere.louisiana.edu:2061/search/srchabstract.jsp?tp=&arnumber=4798264&queryText%3DCAMP%3A+A+Technique+to+Estimate+Per-Structure+Power+at+Run-time+using+a+Few+Simple+Parameters%26openedRefinements%3D*%26filter%3DAND%28NOT%284283010803%29%29%26searchField%3DSearch+All][Powell2009]]
+      - Summary
+	The implementation in this paper is quite similar to the
+	regression approach used on our part.  They have a model that
+	measures many of the same inputs as ours.  They, in turn, combine
+	those together using linear regression.
+      - Comments
+        The key differentiator here is "linear".  One of our key
+	premises is that linear regression has serious problems with extreme
+	mis-predictions.  These are avoided in our work by using a regression
+	technique that captures the chaotic dynamics of the systems being modeled
+   4. [[http://doi.acm.org/10.1145/1391469.1391691][Liu2008]]
+      - Summary
+        This power model proposed in this work is based on a RC-analogy
+	model based on the same data from Micron Technology used in our
+	model. 
+      - Comments
+        The underlying transaction model appears similar to our model
+	as both models are based on the work published by Micron Technology.
+	Again, the key is that we are interested in the amount of data as
+	indicator of switching activity and resulting power drain.l
+   5. [[http://biere.louisiana.edu:2088/10.1109/ISCA.2005.24][Gurumurthi2005]]
+      - Summary
+        This paper presents a detailed analytical model of disk drive
+	capacity, data rates and thermal behavior. 
+      - Comments
+        The model proposed in our work requires some indication of the
+	amount of data being transferred to/from storage (as an measure of
+	the amount of data moving through the disk controller) as a
+	contributor to the overall power budget in the system.
+	Therefore, we would be most interested in this work's methods of
+	calculating internal data rate. 
+   6. [[http://ieeexplore.ieee.org/stamp/stamp.jsp?tp%3D&arnumber%3D1206984][Skadron2003]]
+      - Comments
+	One of the earliest papers on power-modeling; introduced the
+	HotSpot thermal model, which models the circuits in a processor
+	in terms of an equivalent RC-model thermal circuit.  While
+	effective, it is simulation based and has issues with use in
+	real-time (cite needed).  Our model is an improvement in that
+	is real-time and does not require the extra cost of simulation.
+**** DONE Related work published during review that needs to be incorporated
+    - References from my task list for scheduler paper
+      - [[http://portal.acm.org/citation.cfm?id=1870115&CFID=15681338&CFTOKEN=80689202][Dhiman2010]]
+      - [[http://doi.acm.org/10.1145/1952998.1953000][Cher2011]]
+      - [[http://doi.acm.org/10.1145/1952998.1952999][Eyerman2011]]
+      - [[http://doi.acm.org/10.1145/1952998.1953001][Wu2011]]
+      - [[http://doi.acm.org/10.1145/1941487.1941507][Borkar2011]]
+      - [[http://dx.doi.org/10.1093/comjnl/bxq041][Chung2010]]
+      - [[http://castl.cs.columbia.edu/limit/images/c/c3/Limit.pdf][Demme2011]]
+      - [[http://www.eecs.harvard.edu/~pbailis/papers/dimetrodon-dac2011.pdf][Bailis2011]]
+*** DONE Recent work supporting our contentions of non-linearity
+     - [[http://doi.acm.org/10.1145/1807128.1807136][Kansal2010]]
+       Authors found that linearity assumptions hold when workload is
+       homogeneous.  Our position is that workload on multi-core devices
+       is rarely structured as such; note the observations made by
+       reviewers about the oddities in the linear models in our
+       appendix.
+     - [[http://doi.acm.org/10.1145/1807167.1807194][Tsirogiannis2010]]
+       Showed that CPU power does not vary linearly with CPU utilization
+       and that utilization is a poor proxy for CPU power.
+     - [[https://www.usenix.org/events/atc11/tech/final_files/McCullough.pdf][McCullough2011]]
+       This work analyzed many of the same models as was done in our
+       work and found that linear models, including many listed in the
+       prior work quoted by reviewers, performed poorly on non-trivial
+       workloads with wide error swings due to issues of
+       - not taking into account cross-dependency
+       - not good fit with modern processors due to using features not
+         available on modern processors
+       - can be difficult to model components as due to abstracting
+         hardware complexity, they do not expose all power states and
+         thus make it difficult to associate changes in power
+         consumption to changes in exposed states.
+     - [[http://www.doi.org/10.1109/ISPASS.2011.5762739][Hsu2010]]
+       The authors analyze 177 published results from the
+       SPECpower_ssj2008 benchmark and discovered that, OVER TIME, the
+       results from the benchmarks became more  and more correlated to a
+       set of non-linear functions.
+     - [[http://doi.acm.org/10.1145/1810085.1810108][Bertan2010]]
+*** DONE How the contribution advances state of art.
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape} 
+Second, related to the above point, since the per component models are
+not new, the novelty has to be in the way the power mqqodeling itself is
+done and the additional benefits and insights such a modeling approach
+will provide. While the idea of a Chaotic Attractor Predictor appears to
+be novel, none of the quantitative results are convincing that such a
+predictor is an improvement over the prior approaches. The authors
+either need to quantitatively compare, or atleast provide a strong
+qualitative discussion about how the CAP predictor advances the
+state-of-the-knowledge on power modeling.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+**** Our contributions
+     1. Prior methods are subject to wild mis-prediction.
+     2. System model as dynamic system
+     3. Chaotic behavior in the model.
+     4. Our approach is an approximation that better models those dynamics.
+* Reviewer #2
+** Discuss time interval used in evaluation
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+I'd like the authors to discuss the time interval used in the evaluation
+(for the collection of the PeC and measurement of power). This is also
+needed in the appendix which has equations for energy, without
+discussing the time interval to which the equations apply. The time
+interval determines the possible applications (power capping) for using
+the power estimation. For example, actuators that use the parameters
+must work on the same time scale to be effective.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+   1. Discussion to be added in the evaluation and appendix.
+** Request revision of calibration discussion to improve clarity
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+I could not follow the discussion on calibrating the CAP. The text
+claims that p=100 and 4 workloads were run to calibrate the model. I
+take this to mean that the 4 workloads together were divided into 100
+time intervals (of many seconds or minutes?) and the PeC values and
+measured power were averaged over each interval to calibrate the
+model. Is this correct? It would be helpful to add a couple of
+sentences to be clear how you obtain the 100 vectors required for
+calibration.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+   1. Clarification to be added at appropriate location(s) in document.
+** DONE Need to refine definition of $E_{em}$
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+The definition of $E_{em}$ is very strange. $E_{em}$ is defined as a component
+of server power, but the equation seems to contain the entire servers
+power in the form of $V(t) * I(t)$, which contains CPU power (and other
+components) which have been already accounted for. In fact, the fan
+power itself should be part of $V(t) * I(t)$, the DC power, so it is not
+clear why they are added together in the equation for $P_{elect}$.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+   1. Needs discussion.
+** DONE Need to define SMPS
+   1. SMPS: Switching Mode Power Supply.
+   2. Will replace acronym in document with text.
+** DONE Need to clarify in Sec 3.6 as to how is power controlled?
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape} 
+I was confused by Section 3.6 which claims that power is controlled, but
+the rest of the paper does not come back to how power is controlled or
+how controlling power is relevant for developing the model.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+   1. Reviewer #3 recommended that we remove this section.  
+   2. This section has much the same issue as the point about NUMA
+      architecture; while relevant when we did the Hotpower paper in
+      2008, this position is consider de rigeur in 2011.
+** Need to clarify the process used for predicting the distant future
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape} 
+I'd like a longer discussion of the step-wise process in section 5 for
+predicting the distant future. I thought that the function $\hat{f}$ was for
+estimating the power of the system for interval $k$, based on PeC
+measurements made during time interval $k$. How does one use this to get
+power estimates for which PeC has not yet been measured? Are the values
+for PeC also being predicted?
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+   1. Will revise/enhance the discussion to address the concern.
+** DONE Issue with the coefficients of the temperature quantities in appendix
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+I found the equation for $E_{intel_proc}$ (in the appendix) surprising
+because the coefficients for the temperature of each core is so
+different (more than a factor of 70x). It looks like core 1 does not
+contribute much to the power of the processor, which is hard to
+believe. I would expect them to be more balanced as in the AMD
+processor. If all the workload were scheduled on core 1 (core 0
+disabled), would these equations still hold?
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+    1. An interesting observation from this reviewer in that I suspect
+       we're seeing an indication of an architectural difference between
+       the processors and how Solaris load balances the workloads.  The
+       design of the OS favors balancing workload in the fashion
+       noticed; in fact, given my observations of the source code, that
+       we would be able to disable the core in the manner described.
+    2. That said, I would speculate that the equations are going to be tied to
+       the topology of the processor.  This is another limitation of the
+       linear regression approach, in my opinion.
+    3. Confirming this would be difficult as it would require changes to
+       both the benchmarks and operating system configuration.
+* Reviewer #3
+** DONE Concerns about connection of title to material
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+What does "time-series approximation of energy consumption estimation"
+mean? Do you fit an estimated energy consumption to a timeseries to
+predict future power behavior? Are you proposing CAP as a timeseries
+method for estimated power, or are you proposing an instantaneous energy
+estimation method based on performance counters; or both? This is not
+clearly explained in the paper. Second, what is "based on server
+workload"? It seems the evaluations are only for Spec CPU benchmarks.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+   1. For the first question, we are proposing an instantaneous energy
+      method for estimating power that we are approximating with using
+      CAP. The reviewer's point emphasizes the issue of how the
+      analytical model proposed in the first part of the paper is linked
+      to CAP.  This needs to be better explained in the paper.
+   2. The second point raises a theme that is found throughout this
+      reviewers comments that questions the assumption that SPEC CPU
+      2006 is a sufficient set of benchmarks for server workloads.
+      - Approach:
+	* Enhance related works to include references to prior work that
+          used these benchmarks for server workload.
+	* Emphasize concentration on HPC workloads with minimal I/O.
+** DONE Related point: connection of work to NUMA systems vs. non-NUMA systems
+   1. See the response to reviewer #1's similar comment.
+   2. Key point: much of what we're seeing is related to working in a
+      NUMA environment.
+** DONE Need more detail about why complexity of CAP is required 
+   1. Linkage between problems with linear regression and other methods.
+   2. An important point that we're trying to make in this work is that
+      people are being seduced by the simplicity of linear methods to
+      use techniques that have some serious problems when used as a
+      predictive tool.
+      a.  This position has been borne out by related work published
+      during the review period that will be incorporated into the
+      revisions of this document.
+** DONE Are thermal effects taken into account across entire system or just processor?
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+You highlight that your approach accounts for thermal effects in power
+estimation. Does this only pertain to processor power estimation, or for
+overall system?
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+   1. Valid point, needs to be clarified in that we are trying to work
+      over total system.
+** What is meant by "linear relationship between dependent variables and previous data points"
+   1. Will be addressed in document.
+** DONE Questions about components of the model
+*** DONE $P_{proc}$
+#+BEGIN_LaTex
+\begin{quote}
+\begin{itshape}
+\begin{enumerate}
+\item  The derived processor power model (intel) shows a ~100X difference in
+       sensitivity to two thermal sensors. Is there any reason for this
+       discrepancy? 
+\item The model seems quite oblivious to workload and very dependent on
+       temperature. Considering temperature does not vary instantaneously,
+       while power does, does this model remain valid for different workload
+       intensities? For example an idle period after a long running cpu burn
+       can result in a higher estimated power then a long-running idle
+       period. Or the order of different workload intensities can impact the
+       estimated power.
+\end{enumerate}
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+*** DONE $E_{hdd}$ \& $E_{board}$
+
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+I think the HDD power would also depend random vs. sequential writes and
+the involvement of disk cache. For the board, I expected more or less
+constant power, do you see any significant variations from different
+workloads?
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+
+*** Validation of subsystem models & use of SPEC CPU
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+As I have mentioned previously, it is also quite hard to gauge the
+accuracy of the subsystem models without any validation, and
+particularly for some of the components Spec CPU would be limiting as it
+is designed not to exercise components below memory.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+    1. This is related to a point we've discussed numerous times as potential weak
+       point in the paper: what is the link between analytical model and
+       chaotic model
+    2. There is an important underlying point that both this reviewer
+       and reviewer #1 aren't picking up upon in that everyone goes to
+       the modeling the system using timeseries methods (either the most
+       popular linear regression or related multivariate methods)
+       without picking up upon the fact that the underlying system is a
+       dynamic system whose behavior is described as a system of
+       differential equations.Our contention is that the system is chaotic in nature and needs
+       to be modeled using a technique that captures those dynamics.
+    3. As to using SPEC CPU benchmarks, references to be included
+       documented cases where that's been done.
+*** DONE More detail about physical implications of chaotic behavior
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+The observations on the chaotic nature of power bahavior are quite
+interesting. Are the two conditions with Lyapunov and Hurst parameter
+sufficient to consider power behavior chaotic? Can you provide some
+intuition behind these? I cannot see how the two requisites (high
+sensitivity to initial condition & dense period orbits) hold necessarily
+true for power behavior?
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+    - Additional discussion, exact content to be determined.
+*** Additional detail requested concerning server configuration
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+Power measurements: The measured power for both systems vary between
+60-70W from idle-active. This seems rather low for both servers, and the
+delta seems very low for the entire system including CPUs, memory, and
+so on. Could you please provide more details on the system
+configurations and what is reported.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+     - More detail to be included. Will examine other references for
+       information included.
+*** DONE Typos detected by reviewer
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+- Please consider reviewing the paper for language. Here are a few typos that caught my eye:
+ - valid valid --> validate
+ - CAT --> CAP
+ - 5.2: number of past observations --> number of future observations
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+    - To be addressed in revision.
+** DONE Specific changes requested
+#+BEGIN_LaTeX
+\begin{quote}
+\begin{itshape}
+Majority of the paper is devoted to introducing the power model,
+susbsystem models, CAP, and a variety of other issues such as timeseries
+forecasting, linearity issues, DC vs. AC power distribution and
+alternative performance counters for improving power estimation. After
+these a few examples of estimated and total power is shown for some SPEC
+CPU benchmarks, which do not help us (i) validate any of the assumptions
+for subsystem models; and (ii) build any intuition to how the CAP better
+understands and predicts power behavior.
+
+I recommend reducing some of the lengthy discussions at the beginning of
+this work and removing some tangential points (i.e., AC vs. DC,
+additional counters). It would be much more useful to use the remaining
+space to expand on the observed results and to provide some insights to
+why the CAP method is a better model for system power estimation.
+\end{itshape}
+\end{quote}
+#+END_LaTeX
+    1. This comments summarizes much of the reviewers concerns and is
+       addressed in the prior discussion.
+
+       

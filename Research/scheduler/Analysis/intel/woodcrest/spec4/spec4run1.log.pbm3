@@ -1,0 +1,68 @@
+/usr/local/cpu2006 /usr/home2/awl8049/dissertation/vmpowermgt/Programs/sched_data_collect
+runspec v4662 - Copyright 1999-2006 Standard Performance Evaluation Corporation
+Using 'linux-suse101-i386' tools
+Reading MANIFEST... 17934 files
+Loading runspec modules...............
+Locating benchmarks...found 31 benchmarks in 12 benchsets.
+Locating output formats: ASCII, config, CSV, flags, HTML, mail, PDF, PostScript, raw, Screen, Submission Check
+Reading config file '/usr/local/cpu2006/config/schedtas.cfg'
+Benchmarks selected: 429.mcf
+Compiling Binaries
+  Up to date 429.mcf ref base i386-m32-gcc42-nn default
+  Up to date 429.mcf ref peak i386-m32-gcc42-nn default
+
+
+Parsing Flags
+  Looking at 429.mcf base i386-m32-gcc42-nn default: done
+  Looking at 429.mcf peak i386-m32-gcc42-nn default: done
+Flag Parsing Complete
+
+Setting Up Run Directories
+  Setting up 429.mcf ref base i386-m32-gcc42-nn default: existing (run_base_ref_i386-m32-gcc42-nn.0000)
+  Setting up 429.mcf ref peak i386-m32-gcc42-nn default: existing (run_peak_ref_i386-m32-gcc42-nn.0000)
+Running Benchmarks
+  Running 429.mcf ref base i386-m32-gcc42-nn default
+/usr/local/cpu2006/bin/specinvoke -d /usr/local/cpu2006/benchspec/CPU2006/429.mcf/run/run_base_ref_i386-m32-gcc42-nn.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C
+/usr/local/cpu2006/bin/specinvoke -E -d /usr/local/cpu2006/benchspec/CPU2006/429.mcf/run/run_base_ref_i386-m32-gcc42-nn.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd
+  Running 429.mcf ref peak i386-m32-gcc42-nn default
+/usr/local/cpu2006/bin/specinvoke -d /usr/local/cpu2006/benchspec/CPU2006/429.mcf/run/run_peak_ref_i386-m32-gcc42-nn.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C
+/usr/local/cpu2006/bin/specinvoke -E -d /usr/local/cpu2006/benchspec/CPU2006/429.mcf/run/run_peak_ref_i386-m32-gcc42-nn.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd
+Success: 2x429.mcf
+Producing Reports
+mach: default
+  ext: i386-m32-gcc42-nn
+    size: ref
+      set: int
+NOTICE: sw_compiler is longer than 50 characters and will be split
+        format: raw -> /usr/local/cpu2006/result/CINT2006.020.rsf
+        format: flags -> /usr/local/cpu2006/result/CINT2006.020.flags.html
+        format: ASCII -> /usr/local/cpu2006/result/CINT2006.020.txt
+        format: HTML -> /usr/local/cpu2006/result/CINT2006.020.html, CINT2006.020.gif
+        format: PDF -> /usr/local/cpu2006/result/CINT2006.020.pdf
+        format: Screen -> 
+
+                                  Estimated                       Estimated
+                Base     Base       Base        Peak     Peak       Peak
+Benchmarks      Ref.   Run Time     Ratio       Ref.   Run Time     Ratio
+-------------- ------  ---------  ---------    ------  ---------  ---------
+400.perlbench                               NR                              NR 
+401.bzip2                                   NR                              NR 
+403.gcc                                     NR                              NR 
+429.mcf          9120      10600      0.856 *    9120       1420       6.40 *  
+445.gobmk                                   NR                              NR 
+456.hmmer                                   NR                              NR 
+458.sjeng                                   NR                              NR 
+462.libquantum                              NR                              NR 
+464.h264ref                                 NR                              NR 
+471.omnetpp                                 NR                              NR 
+473.astar                                   NR                              NR 
+483.xalancbmk                               NR                              NR 
+ Est. SPECint_base2006                   --
+ Est. SPECint2006                                                        --
+
+      set: fp
+
+The log for this run is in /usr/local/cpu2006/result/CPU2006.020.log
+
+runspec finished at Fri Oct 21 13:09:22 2011; 12106 total seconds elapsed
+/usr/home2/awl8049/dissertation/vmpowermgt/Programs/sched_data_collect

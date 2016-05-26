@@ -1,0 +1,354 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  16 FEB 2011 13:42
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\input hpca09.tex
+(./hpca09.tex (/usr/local/texlive/2010/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./latex8.sty
+IEEE 8.5 x 11-Inch Proceedings Style `latex8.sty'.
+\@ctmp=\skip43
+\@figindent=\skip44
+) (/usr/local/texlive/2010/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(./authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip45
+\@affilsep=\skip46
+\c@Maxaffil=\count88
+\c@authors=\count89
+\c@affil=\count90
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks16
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip50
+\thm@postskip=\skip51
+\thm@headsep=\skip52
+\dth@everypar=\toks25
+)
+(./algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(./algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count103
+\c@ALG@rem=\count104
+\c@ALG@nested=\count105
+\ALG@tlm=\skip53
+\ALG@thistlm=\skip54
+\c@ALG@Lnr=\count106
+\c@ALG@blocknr=\count107
+\c@ALG@storecount=\count108
+\c@ALG@tmpcounter=\count109
+\ALG@tmplength=\skip55
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+
+LaTeX Warning: Unused global option(s):
+    [times].
+
+(./hpca09.aux)
+\openout1 = `hpca09.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 17.
+ (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen114
+\scratchbox=\box28
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen115
+\MPnumerator=\count114
+\everyMPtoPDFconversion=\toks27
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/02/22 v3.7 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2010/03/01 v1.9 Key value parser (HO)
+
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2010/01/28 v1.3 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 436.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 26.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+\c@defn=\count115
+\c@thm=\count116
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+ [1
+
+{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 59.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Overfull \hbox (7.14354pt too wide) in paragraph at lines 63--63
+[]\OT1/pcr/m/n/12 * Current text is only reporting prior work, needs to be more
+ critical[] 
+ []
+
+[2] [3]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no Ô in font ptmr7t!
+Missing character: There is no ¨ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+ [4] <padarch.pdf, id=20, 413.545pt x 314.17375pt>
+File: padarch.pdf Graphic file (type pdf)
+ <use padarch.pdf>
+[5 <./padarch.pdf>]
+Overfull \hbox (41.38667pt too wide) in paragraph at lines 235--242
+\OT1/ptm/m/n/12 nine PeCs to cal-cu-late shared and un-shared cache ac-tiv-ity 
+on the AMD Opteron pro-ces-sor: $\OML/cmm/m/it/12 RetiredInstructions$\OT1/ptm/
+m/n/12 ,
+ []
+
+
+Overfull \hbox (76.0161pt too wide) in paragraph at lines 235--242
+\OML/cmm/m/it/12 DCAccesses$\OT1/ptm/m/n/12 , $\OML/cmm/m/it/12 DCRefillsL\OT1/
+cmr/m/n/12 2$\OT1/ptm/m/n/12 , $\OML/cmm/m/it/12 DCRefillsFromSystem$\OT1/ptm/m
+/n/12 , $\OML/cmm/m/it/12 ICFetches$\OT1/ptm/m/n/12 , $\OML/cmm/m/it/12 ICrefil
+lsFromL\OT1/cmr/m/n/12 2$\OT1/ptm/m/n/12 , $\OML/cmm/m/it/12 ICRefillsFromSyste
+m$\OT1/ptm/m/n/12 ,
+ []
+
+[6] [7] [8]
+Overfull \hbox (30.51512pt too wide) in paragraph at lines 354--361
+\OT1/ptm/m/n/12 where $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A\OT
+1/cmr/m/n/12 (\OML/cmm/m/it/12 p[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; d[]\OT1/c
+mr/m/n/12 )$ \OT1/ptm/m/n/12 is the over-all power con-sumed dur-ing the ap-pli
+-ca-tion life-time. the quan-tity $[][] \OML/cmm/m/it/12 v\OT1/cmr/m/n/12 (\OML
+/cmm/m/it/12 t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 i\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 t\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dt$
+ []
+
+
+Overfull \hbox (33.3914pt too wide) detected at line 369
+[] \OT1/cmr/m/n/12 = [][][]  \OMS/cmsy/m/n/12 ^^B []
+ []
+
+[9] <schedarch.pdf, id=107, 548.0475pt x 296.10625pt>
+File: schedarch.pdf Graphic file (type pdf)
+ <use schedarch.pdf>
+<procgroup.pdf, id=108, 687.56876pt x 353.32pt>
+File: procgroup.pdf Graphic file (type pdf)
+ <use procgroup.pdf>
+<thermalpredictor.pdf, id=109, 373.395pt x 217.81375pt>
+File: thermalpredictor.pdf Graphic file (type pdf)
+
+<use thermalpredictor.pdf>
+<threadinsert.pdf, id=110, 402.50375pt x 512.91624pt>
+File: threadinsert.pdf Graphic file (type pdf)
+ <use threadinsert.pdf>
+[10 <./schedarch.pdf> <./procgroup.pdf>] [11 <./thermalpredictor.pdf> <./thread
+insert.pdf>] (./hpca09.bbl [12]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
+ [13] [14]) [15] (./hpca09.aux) ) 
+Here is how much of TeX's memory you used:
+ 2785 strings out of 493747
+ 37227 string characters out of 3143546
+ 95300 words of memory out of 3000000
+ 6020 multiletter control sequences out of 15000+200000
+ 24370 words of font info for 53 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 38i,10n,23p,296b,270s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/
+dvips/base/8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmex10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr
+/local/texlive/2010/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/
+texlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/20
+10/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-d
+ist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on hpca09.pdf (15 pages, 394346 bytes).
+PDF statistics:
+ 407 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,48 @@
+parsecsingle.sh: Executing freqmine benchmark.
+parsecsingle.sh: Destination directory is /usr/home/awl8049/scheduler/
+parsecsingle.sh: Using parsec_awldev1freqmine as id for this run
+parsecsingle.sh: Clearing memory on power meter
+parsecsingle.sh: Restarting teaplant.
+And now we start the Parsecsingle freqmine benchmark at 
+DEBUG - PARSECPLAT is amd64-bsd.gcc
+DEBUG buildfile = /usr/home/awl8049/Projects/parsec-2.1/config/gcc.bldconf
+[PARSEC] Benchmarks to run:  freqmine
+
+[PARSEC] [========== Running benchmark freqmine ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'native'.
+[PARSEC] Running 'time /usr/home/awl8049/Projects/parsec-2.1/pkgs/apps/freqmine/inst/amd64-bsd.gcc/bin/freqmine webdocs_250k.dat 11000':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+transaction number is 250000
+829
+28599
+363898
+2699198
+13410070
+47495313
+124190838
+245065199
+369974305
+430373350
+386138019
+265795578
+138598934
+53551164
+14790217
+2753445
+311877
+17498
+269
+the data preparation cost 3.514558 seconds, the FPgrowth cost 1118.460309 seconds
+
+real	18m42.059s
+user	17m10.867s
+sys	1m31.064s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+And the Parsecsingle freqmine benchmark has completed at 17:21
+parsecsingle.sh: Telling teaplant to cycle log files
+parsecsingle.sh: Downloading data from the power meter
+parsecsingle.sh: Data collection complete

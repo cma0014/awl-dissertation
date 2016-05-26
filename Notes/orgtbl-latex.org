@@ -1,0 +1,76 @@
+#+TITLE:     orgtbl-latex.org
+#+AUTHOR:    Adam Lewis
+#+EMAIL:     awl8049@cacs.louisiana.edu
+#+DATE:      2011-03-20 Sun
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT: 
+* How to mix EMACS org-mode and LaTeX tables
+** Prerequisites
+*** Make certain that the LaTeX comment package has been installed
+- Usually in one of the TeX-Live extra packages.
+- Can be download from ctan.org if needed
+*** (Optional) Add code to LaTeX start-up hook to enable orgtbl-mode
+#+BEGIN_SRC emacs-lisp
+(add-hook 'LaTeX-mode-hook '(lambda () (orgtbl-mode 1)))
+#+END_SRC
+** Adding a table to a document
+1) Insert a new table environment into your document.
+2) Set the required formatting settings on the table
+This would be things like position, caption, label, and so on.
+3) Insert a new tabular environment using the orgtbl-insert-radio-table
+   command
+#+BEGIN_EXAMPLE
+M-x orgtbl-insert-radio-table
+#+END_EXAMPLE
+The will insert the following into your document at point:
+#+BEGIN_EXAMPLE
+% BEGIN RECEIVE ORGTBL test
+% END RECEIVE ORGTBL test
+\begin{comment}
+#+ORGTBL: SEND test orgtbl-to-latex :splice nil :skip 0
+| | |
+\end{comment}
+#+END_EXAMPLE
+4) You can now edit your table using the EMACS org-mode table commands.
+5) Upon completion of your edits, you enter 'C-c C-c' and this will update
+the text between "BEGIN RECEIVE ORGTBL" and "END RECEIVE ORGTBL" with
+a LaTeX tabular environment that matches the format of the org-mode
+table:
+#+BEGIN_EXAMPLE
+% BEGIN RECEIVE ORGTBL test
+\begin{tabular}{lr}
+heading 1 & data 1 \\
+\hline
+data & data \\
+data & 3.00 \\
+data & 2.10 \\
+\hline
+\end{tabular}
+% END RECEIVE ORGTBL test
+\begin{comment}
+#+ORGTBL: SEND test orgtbl-to-latex :splice nil :skip 0
+| heading 1 | data 1 |
+|-----------+--------|
+| data      |   data |
+| data      |   3.00 |
+| data      |   2.10 |
+|-----------+--------|
+\end{comment}
+#+END_EXAMPLE
+** Details
+1) The LaTeX translator can't handle org-mode table's multi-column
+   features.  You can work around this by turning on the splice feature
+   in the ORGTBL line, manually entering the header portions of the
+   tabular environment, and setting the skip count as required.
+2) Otherwise, you can use all of the other features of org-mode tables.
+   Really useful are the "spreadsheet-style" formulas and column
+   formatting.

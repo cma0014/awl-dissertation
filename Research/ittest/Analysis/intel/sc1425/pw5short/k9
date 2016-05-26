@@ -1,0 +1,12 @@
+./fixiostat.sh astar
+./fixiostat.sh bzip2
+./fixiostat.sh cactusADM
+./fixiostat.sh gamess
+./fixiostat.sh gobmk
+./fixiostat.sh gromacs
+./fixiostat.sh lbm
+./fixiostat.sh leslie3d
+./fixiostat.sh mcf
+./fixiostat.sh omnetpp
+./fixiostat.sh perlbench
+./fixiostat.sh zeusmp

@@ -1,0 +1,189 @@
+    186 #define	AMD_cmn_events						\
+    187 	{ "FP_dispatched_fpu_ops",			0x0 },	\
+    188 	{ "FP_cycles_no_fpu_ops_retired",		0x1 },	\
+    189 	{ "FP_dispatched_fpu_ops_ff",			0x2 },	\
+    190 	{ "LS_seg_reg_load",				0x20 },	\
+    191 	{ "LS_uarch_resync_self_modify",		0x21 },	\
+    192 	{ "LS_uarch_resync_snoop",			0x22 },	\
+    193 	{ "LS_buffer_2_full",				0x23 },	\
+    194 	{ "LS_locked_operation",			0x24 },	\
+    195 	{ "LS_retired_cflush",				0x26 },	\
+    196 	{ "LS_retired_cpuid",				0x27 },	\
+    197 	{ "DC_access",					0x40 },	\
+    198 	{ "DC_miss",					0x41 },	\
+    199 	{ "DC_refill_from_L2",				0x42 },	\
+    200 	{ "DC_refill_from_system",			0x43 },	\
+    201 	{ "DC_copyback",				0x44 },	\
+    202 	{ "DC_dtlb_L1_miss_L2_hit",			0x45 },	\
+    203 	{ "DC_dtlb_L1_miss_L2_miss",			0x46 },	\
+    204 	{ "DC_misaligned_data_ref",			0x47 },	\
+    205 	{ "DC_uarch_late_cancel_access",		0x48 },	\
+    206 	{ "DC_uarch_early_cancel_access",		0x49 },	\
+    207 	{ "DC_1bit_ecc_error_found",			0x4A },	\
+    208 	{ "DC_dispatched_prefetch_instr",		0x4B },	\
+    209 	{ "DC_dcache_accesses_by_locks",		0x4C },	\
+    210 	{ "BU_memory_requests",				0x65 },	\
+    211 	{ "BU_data_prefetch",				0x67 },	\
+    212 	{ "BU_system_read_responses",			0x6C },	\
+    213 	{ "BU_cpu_clk_unhalted",			0x76 },	\
+    214 	{ "BU_internal_L2_req",				0x7D },	\
+    215 	{ "BU_fill_req_missed_L2",			0x7E },	\
+    216 	{ "BU_fill_into_L2",				0x7F },	\
+    217 	{ "IC_fetch",					0x80 },	\
+    218 	{ "IC_miss",					0x81 },	\
+    219 	{ "IC_refill_from_L2",				0x82 },	\
+    220 	{ "IC_refill_from_system",			0x83 },	\
+    221 	{ "IC_itlb_L1_miss_L2_hit",			0x84 },	\
+    222 	{ "IC_itlb_L1_miss_L2_miss",			0x85 },	\
+    223 	{ "IC_uarch_resync_snoop",			0x86 },	\
+    224 	{ "IC_instr_fetch_stall",			0x87 },	\
+    225 	{ "IC_return_stack_hit",			0x88 },	\
+    226 	{ "IC_return_stack_overflow",			0x89 },	\
+    227 	{ "FR_retired_x86_instr_w_excp_intr",		0xC0 },	\
+    228 	{ "FR_retired_uops",				0xC1 },	\
+    229 	{ "FR_retired_branches_w_excp_intr",		0xC2 },	\
+    230 	{ "FR_retired_branches_mispred",		0xC3 },	\
+    231 	{ "FR_retired_taken_branches",			0xC4 },	\
+    232 	{ "FR_retired_taken_branches_mispred",		0xC5 },	\
+    233 	{ "FR_retired_far_ctl_transfer",		0xC6 },	\
+    234 	{ "FR_retired_resyncs",				0xC7 },	\
+    235 	{ "FR_retired_near_rets",			0xC8 },	\
+    236 	{ "FR_retired_near_rets_mispred",		0xC9 },	\
+    237 	{ "FR_retired_taken_branches_mispred_addr_miscomp",	0xCA },\
+    238 	{ "FR_retired_fastpath_double_op_instr",	0xCC },	\
+    239 	{ "FR_intr_masked_cycles",			0xCD },	\
+    240 	{ "FR_intr_masked_while_pending_cycles",	0xCE },	\
+    241 	{ "FR_taken_hardware_intrs",			0xCF },	\
+    242 	{ "FR_nothing_to_dispatch",			0xD0 },	\
+    243 	{ "FR_dispatch_stalls",				0xD1 },	\
+    244 	{ "FR_dispatch_stall_branch_abort_to_retire",	0xD2 },	\
+    245 	{ "FR_dispatch_stall_serialization",		0xD3 },	\
+    246 	{ "FR_dispatch_stall_segment_load",		0xD4 },	\
+    247 	{ "FR_dispatch_stall_reorder_buffer_full",	0xD5 },	\
+    248 	{ "FR_dispatch_stall_resv_stations_full",	0xD6 },	\
+    249 	{ "FR_dispatch_stall_fpu_full",			0xD7 },	\
+    250 	{ "FR_dispatch_stall_ls_full",			0xD8 },	\
+    251 	{ "FR_dispatch_stall_waiting_all_quiet",	0xD9 },	\
+    252 	{ "FR_dispatch_stall_far_ctl_trsfr_resync_branch_pend",	0xDA },\
+    253 	{ "FR_fpu_exception",				0xDB },	\
+    254 	{ "FR_num_brkpts_dr0",				0xDC },	\
+    255 	{ "FR_num_brkpts_dr1",				0xDD },	\
+    256 	{ "FR_num_brkpts_dr2",				0xDE },	\
+    257 	{ "FR_num_brkpts_dr3",				0xDF },	\
+    258 	{ "NB_mem_ctrlr_page_access",			0xE0 },	\
+    259 	{ "NB_mem_ctrlr_turnaround",			0xE3 },	\
+    260 	{ "NB_mem_ctrlr_bypass_counter_saturation",	0xE4 },	\
+    261 	{ "NB_cpu_io_to_mem_io",			0xE9 },	\
+    262 	{ "NB_cache_block_commands",			0xEA },	\
+    263 	{ "NB_sized_commands",				0xEB },	\
+    264 	{ "NB_ht_bus0_bandwidth",			0xF6 }
+    265 
+    266 #define	AMD_FAMILY_f_events					\
+    267 	{ "BU_quadwords_written_to_system",		0x6D },	\
+    268 	{ "FR_retired_fpu_instr",			0xCB },	\
+    269 	{ "NB_mem_ctrlr_page_table_overflow",		0xE1 },	\
+    270 	{ "NB_sized_blocks",				0xE5 },	\
+    271 	{ "NB_ECC_errors",				0xE8 },	\
+    272 	{ "NB_probe_result",				0xEC },	\
+    273 	{ "NB_gart_events",				0xEE },	\
+    274 	{ "NB_ht_bus1_bandwidth",			0xF7 },	\
+    275 	{ "NB_ht_bus2_bandwidth",			0xF8 }
+    276 
+    277 #define	AMD_FAMILY_10h_events					\
+    278 	{ "FP_retired_sse_ops",				0x3 },	\
+    279 	{ "FP_retired_move_ops",			0x4 },	\
+    280 	{ "FP_retired_serialize_ops",			0x5 },	\
+    281 	{ "FP_serialize_ops_cycles",			0x6 },	\
+    282 	{ "LS_cancelled_store_to_load_fwd_ops",		0x2A },	\
+    283 	{ "LS_smi_received",				0x2B },	\
+    284 	{ "DC_dtlb_L1_hit",				0x4D },	\
+    285 	{ "LS_ineffective_prefetch",			0x52 },	\
+    286 	{ "LS_global_tlb_flush",			0x54 },	\
+    287 	{ "BU_octwords_written_to_system",		0x6D },	\
+    288 	{ "Page_size_mismatches",			0x165 },	\
+    289 	{ "IC_eviction",				0x8B },	\
+    290 	{ "IC_cache_lines_invalidate",			0x8C },	\
+    291 	{ "IC_itlb_reload",				0x99 },	\
+    292 	{ "IC_itlb_reload_aborted",			0x9A },	\
+    293 	{ "FR_retired_mmx_sse_fp_instr",		0xCB },	\
+    294 	{ "Retired_x87_fp_ops",				0x1C0 },	\
+    295 	{ "IBS_ops_tagged",				0x1CF },	\
+    296 	{ "LFENCE_inst_retired",			0x1D3 },	\
+    297 	{ "SFENCE_inst_retired",			0x1D4 },	\
+    298 	{ "MFENCE_inst_retired",			0x1D5 },	\
+    299 	{ "NB_mem_ctrlr_page_table_overflow",		0xE1 },	\
+    300 	{ "NB_mem_ctrlr_dram_cmd_slots_missed",		0xE2 },	\
+    301 	{ "NB_thermal_status",				0xE8 },	\
+    302 	{ "NB_probe_results_upstream_req",		0xEC },	\
+    303 	{ "NB_gart_events",				0xEE },	\
+    304 	{ "NB_mem_ctrlr_req",				0x1F0 },	\
+    305 	{ "CB_cpu_to_dram_req_to_target",		0x1E0 },	\
+    306 	{ "CB_io_to_dram_req_to_target",		0x1E1 },	\
+    307 	{ "CB_cpu_read_cmd_latency_to_target_0_to_3",	0x1E2 },	\
+    308 	{ "CB_cpu_read_cmd_req_to_target_0_to_3",	0x1E3 },	\
+    309 	{ "CB_cpu_read_cmd_latency_to_target_4_to_7",	0x1E4 },	\
+    310 	{ "CB_cpu_read_cmd_req_to_target_4_to_7",	0x1E5 },	\
+    311 	{ "CB_cpu_cmd_latency_to_target_0_to_7",	0x1E6 },	\
+    312 	{ "CB_cpu_req_to_target_0_to_7",		0x1E7 },	\
+    313 	{ "NB_ht_bus1_bandwidth",			0xF7 },	\
+    314 	{ "NB_ht_bus2_bandwidth",			0xF8 },	\
+    315 	{ "NB_ht_bus3_bandwidth",			0x1F9 },	\
+    316 	{ "L3_read_req",				0x4E0 },	\
+    317 	{ "L3_miss",					0x4E1 },	\
+    318 	{ "L3_l2_eviction_l3_fill",			0x4E2 },	\
+    319 	{ "L3_eviction",				0x4E3 }
+    320 
+    321 #define	AMD_FAMILY_11h_events					\
+    322 	{ "BU_quadwords_written_to_system",		0x6D },	\
+    323 	{ "FR_retired_mmx_fp_instr",			0xCB },	\
+    324 	{ "NB_mem_ctrlr_page_table_events",		0xE1 },	\
+    325 	{ "NB_thermal_status",				0xE8 },	\
+    326 	{ "NB_probe_results_upstream_req",		0xEC },	\
+    327 	{ "NB_dev_events",				0xEE },	\
+    328 	{ "NB_mem_ctrlr_req",				0x1F0 }
+    329 
+    330 #define	AMD_cmn_generic_events						\
+    331 	{ "PAPI_br_ins",	"FR_retired_branches_w_excp_intr", 0x0 },\
+    332 	{ "PAPI_br_msp",	"FR_retired_branches_mispred",	0x0 },	\
+    333 	{ "PAPI_br_tkn",	"FR_retired_taken_branches",	0x0 },	\
+    334 	{ "PAPI_fp_ops",	"FP_dispatched_fpu_ops",	0x3 },	\
+    335 	{ "PAPI_fad_ins",	"FP_dispatched_fpu_ops",	0x1 },	\
+    336 	{ "PAPI_fml_ins",	"FP_dispatched_fpu_ops",	0x2 },	\
+    337 	{ "PAPI_fpu_idl",	"FP_cycles_no_fpu_ops_retired",	0x0 },	\
+    338 	{ "PAPI_tot_cyc",	"BU_cpu_clk_unhalted",		0x0 },	\
+    339 	{ "PAPI_tot_ins",	"FR_retired_x86_instr_w_excp_intr", 0x0 }, \
+    340 	{ "PAPI_l1_dca",	"DC_access",			0x0 },	\
+    341 	{ "PAPI_l1_dcm",	"DC_miss",			0x0 },	\
+    342 	{ "PAPI_l1_ldm",	"DC_refill_from_L2",		0xe },	\
+    343 	{ "PAPI_l1_stm",	"DC_refill_from_L2",		0x10 },	\
+    344 	{ "PAPI_l1_ica",	"IC_fetch",			0x0 },	\
+    345 	{ "PAPI_l1_icm",	"IC_miss",			0x0 },	\
+    346 	{ "PAPI_l1_icr",	"IC_fetch",			0x0 },	\
+    347 	{ "PAPI_l2_dch",	"DC_refill_from_L2",		0x1e },	\
+    348 	{ "PAPI_l2_dcm",	"DC_refill_from_system",	0x1e },	\
+    349 	{ "PAPI_l2_dcr",	"DC_refill_from_L2",		0xe },	\
+    350 	{ "PAPI_l2_dcw",	"DC_refill_from_L2",		0x10 },	\
+    351 	{ "PAPI_l2_ich",	"IC_refill_from_L2",		0x0 },	\
+    352 	{ "PAPI_l2_icm",	"IC_refill_from_system",	0x0 },	\
+    353 	{ "PAPI_l2_ldm",	"DC_refill_from_system",	0xe },	\
+    354 	{ "PAPI_l2_stm",	"DC_refill_from_system",	0x10 },	\
+    355 	{ "PAPI_res_stl",	"FR_dispatch_stalls",		0x0 },	\
+    356 	{ "PAPI_stl_icy",	"FR_nothing_to_dispatch",	0x0 },	\
+    357 	{ "PAPI_hw_int",	"FR_taken_hardware_intrs",	0x0 }
+    358 
+    359 #define	OPT_cmn_generic_events						\
+    360 	{ "PAPI_tlb_dm",	"DC_dtlb_L1_miss_L2_miss",	0x0 },	\
+    361 	{ "PAPI_tlb_im",	"IC_itlb_L1_miss_L2_miss",	0x0 },	\
+    362 	{ "PAPI_fp_ins",	"FR_retired_fpu_instr",		0xd },	\
+    363 	{ "PAPI_vec_ins",	"FR_retired_fpu_instr",		0x4 }
+    364 
+    365 #define	AMD_FAMILY_10h_generic_events					\
+    366 	{ "PAPI_tlb_dm",	"DC_dtlb_L1_miss_L2_miss",	0x7 },	\
+    367 	{ "PAPI_tlb_im",	"IC_itlb_L1_miss_L2_miss",	0x3 },	\
+    368 	{ "PAPI_l3_dcr",	"L3_read_req",			0xf1 }, \
+    369 	{ "PAPI_l3_icr",	"L3_read_req",			0xf2 }, \
+    370 	{ "PAPI_l3_tcr",	"L3_read_req",			0xf7 }, \
+    371 	{ "PAPI_l3_stm",	"L3_miss",			0xf4 }, \
+    372 	{ "PAPI_l3_ldm",	"L3_miss",			0xf3 }, \
+    373 	{ "PAPI_l3_tcm",	"L3_miss",			0xf7 }
+    374 

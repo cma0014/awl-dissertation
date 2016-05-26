@@ -1,0 +1,60 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Cisco~Systems}{Cisco~Systems}{2010}]{Cisco2010}
+{\sc Cisco~Systems, I.} 2010.
+\newblock {Using SPEC CPU2006 Benchmark Results To Compare the Compute
+  Performance of Servers}.
+\newblock white paper.
+
+\bibitem[\protect\citeauthoryear{Economou, Rivoire, Kozyrakis, and
+  Ranganathan}{Economou et~al\mbox{.}}{2006}]{Economou2006}
+{\sc Economou, D.}, {\sc Rivoire, S.}, {\sc Kozyrakis, C.}, {\sc and} {\sc
+  Ranganathan, P.} 2006.
+\newblock {Full-System Power Analysis and Modeling for Server Environments}.
+\newblock In {\em Proc. of the 2008 Workshop on Modeling Benchmarking and
+  Simulation}.
+
+\bibitem[\protect\citeauthoryear{Hsu and Poole}{Hsu and Poole}{2011}]{Hsu2011}
+{\sc Hsu, C.-H.} {\sc and} {\sc Poole, S.} 2011.
+\newblock {Power Signature Analysis of the SPECpower\_ssj2008 Benchmark}.
+\newblock In {\em {Proc. of the 2011 IEEE Int'l. Symp. on Performance Analysis
+  of Systems and Software}}. 227 --236.
+
+\bibitem[\protect\citeauthoryear{Kansal, Zhao, Liu, Kothari, and
+  Bhattacharya}{Kansal et~al\mbox{.}}{2010}]{Kansal2010}
+{\sc Kansal, A.}, {\sc Zhao, F.}, {\sc Liu, J.}, {\sc Kothari, N.}, {\sc and}
+  {\sc Bhattacharya, A.~A.} 2010.
+\newblock {Virtual Machine Power Metering and Provisioning}.
+\newblock In {\em {Proc. of the 1st ACM Symp. on Cloud Computing}}. SoCC '10.
+  ACM, New York, NY, USA, 39--50.
+
+\bibitem[\protect\citeauthoryear{McCullough, Agarwal, Chandrashekar,
+  Kuppuswamy, Snoeren, and Gupta}{McCullough
+  et~al\mbox{.}}{2011}]{McCullough2011}
+{\sc McCullough, J.~C.}, {\sc Agarwal, Y.}, {\sc Chandrashekar, J.}, {\sc
+  Kuppuswamy, S.}, {\sc Snoeren, A.~C.}, {\sc and} {\sc Gupta, R.~K.} 2011.
+\newblock {Evaluating the Effectiveness of Model-Based Power Characterization}.
+\newblock In {\em USENIX ATC '11}.
+
+\bibitem[\protect\citeauthoryear{Phansalkar, Joshi, and John}{Phansalkar
+  et~al\mbox{.}}{2007}]{Phansalkar2007}
+{\sc Phansalkar, A.}, {\sc Joshi, A.}, {\sc and} {\sc John, L.~K.} 2007.
+\newblock {Analysis of Redundancy and Application Balance In the SPEC CPU2006
+  Benchmark Suite}.
+\newblock {\em SIGARCH Comput. Archit. News\/}~{\em 35}, 412--423.
+
+\bibitem[\protect\citeauthoryear{Varsamopoulos, Abbasi, and
+  Gupta}{Varsamopoulos et~al\mbox{.}}{2010}]{Varsampoulos2010}
+{\sc Varsamopoulos, G.}, {\sc Abbasi, Z.}, {\sc and} {\sc Gupta, S.} 2010.
+\newblock {Trends and Effects of Energy Proportionality On Server Provisioning
+  In Data Centers}.
+\newblock In {\em Proc. of the 2010 Int'l. Conf. on High Performance
+  Computing}. 1 --11.
+
+\bibitem[\protect\citeauthoryear{Ye, Ray, and Kaeli}{Ye
+  et~al\mbox{.}}{2007}]{Ye2007}
+{\sc Ye, D.}, {\sc Ray, J.}, {\sc and} {\sc Kaeli, D.} 2007.
+\newblock Characterization of file i/o activity for spec cpu2006.
+\newblock {\em SIGARCH Comput. Archit. News\/}~{\em 35}, 112--117.
+
+\end{thebibliography}

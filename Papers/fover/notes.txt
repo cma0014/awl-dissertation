@@ -1,0 +1,58 @@
+Terms:
+virtual machine
+hypervisor
+virtual machine monitor
+host operating system
+guest operating system
+domain0
+domainU
+
+Assumption:
+The temperature of the physical hardware is directly related to workload
+applied to the machine as measured by the physical sensors and internal
+counters in the physical operating system.
+
+10 Theses:
+1.
+There exists a linear relationship between the application workload within a
+domainU machine and the physical workload experienced by the domain0 machine.
+
+2.
+The physical load experienced by the domain0 machine can be determined by the
+amount of work required to virtualize the devices in each domainU.
+
+3.
+The virtual I/O workload can be measured through instrumentation in the
+hypervisor.
+
+4.
+The virtual I/O workload can be considered to be same as the overhead
+introduced by virtualization of the application server.
+
+5.
+The total workload introduced by virtualization on the domain0 can be modeled
+by the summation of all workload from all domainU machines running on that
+single domain0 machine.
+
+6.
+The workload introduced by the hypervisor into the domain0 machine is a single
+component of the overall workload on the domain0 machine.
+
+7.
+The workload introduced by the hypervisor into the domain0 machine is the
+significant contributor to the overall physical workload when serving
+application servers (web services, databases).
+
+8.
+Removing the workload from the physical machine by migrating the loaded
+service to a "cooler" machine in the cluster will result in less load on the
+physical machine.
+
+9.
+Reduced load on the physical machine will result in an overall temperature
+reduction on the physical machine.
+
+10.
+Moving processing to cooler regions of the cluster will distribute the thermal
+load across the cluster and thus resulting in a lower steady state temperature
+for the entire cluster.

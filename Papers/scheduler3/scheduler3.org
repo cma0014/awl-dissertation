@@ -1,0 +1,126 @@
+#+TITLE:  scheduler3.org
+#+AUTHOR:  Adam Lewis 
+#+EMAIL:   awl8049@canmac01.cacs.louisiana.edu
+#+DATE:    2010-10-27 Wed
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT: 
+* THERMAL-AWARE SCHEDULING
+** Terminology
+*** thread
+A schedulable entity reflecting a single flow of execution.
+*** task
+A collection of threads running within one address space.
+*** timeslice
+A period of time a scheduler intends to schedule a thread.
+*** quantum
+The actual execution time utilized by a thread.
+*** run-queue
+A queue containing runnable threads of a processor.
+*** scheduling policy
+** Scheduling policies
+*** constant time scheduling
+Priority based scheduling algorithm favoring I/O-bound threads
+**** Linux O(1) scheduler
+*** linear time scheduling
+**** Round-robin scheduler
+**** Multilevel feedback queue
+*** Proportional share policies
+**** fair scheduling/stride scheduling
+Fair scheduling: allocation of available CPU time is equally distributed
+amongst system users and groups as opposed to equal distribution among
+processes.  Common implementation method is to recursively apply
+round-robin scheduling strategy at each level of abstraction.
+***** Terminology
+****** Stride
+The time interval a thread has to wait between its consecutive
+executions.
+****** Virtual time
+Defines which thread is scheduled next.  Each thread has own concept of
+virtual time which is synchronized with a per run-queue global virtual
+time when a thread becomes runnable.  The idea is that virtual times of
+all threads and the global virtual time of a run-queue are equal at each
+distinct point of time.
+***** Start-time fair queuing
+***** completely fair scheduler
+Implementation in the most recent Linux kernel. Complexity is O(log N)
+where N is the number of tasks in the runqueue.  Choosing a task can be
+done in constant time, but reinserting task requires O(log N) because
+runqueue is implemented as red/black tree.
+***** brain f*** scheduler
+****** Loosely based on idea of earliest eligible virtual deadline first
+****** Signal queue of queued but not running processes
+****** Avoid complexity of per-CPU queues 
+****** Optimized for mobile and desktop, light NUMA & fewer than 16 cores
+Balancing of heuristics is a problem.  Gains of local runqueue locking
+lost due to need of having grab multiple locks.
+** Approaches 
+*** real-time and embedded systems
+*** adjusting heuristics
+Use scheduling heuristics to determine how to adjust how processes are scheduled.
+**** Heat and Run
+Proposed to distribute work amongst available cores until DTM occurs and
+migrate work away from the overheated cores.
+**** HybDTM
+Combine DTM techniques with a thread migration strategy that reduces the
+thread priority of jobs on cores that are running hot.
+**** ThreshHot 
+\cite{Yang2008;Yang2010} used an on-line temperature estimator to
+determine what order threads should be scheduled onto cores. This work
+analytically demonstrated that you want give preference to those threads
+that contribute the most to the increase in the temperature to complete
+them as quickly as possible
+**** Task Vectors
+In \cite{Merkel2008b}, sort taks in each core's run-queue by memory
+intensity so as to schedule memory-bound tasks at slower frequencies.
+*** avoiding thermal emergencies
+**** thread migration 
+Based on adjusting scheduling heuristics 
+**** Adjust load balancing based on thread migration
+\cite{Coskun2007} move work to the coolest processor.
+** Opportunities
+*** assets
+**** power model
+***** thermal extension
+*** Energy as resource
+**** Prior work
+***** ECOSystem and currentcy \cite{Zeng2002}
+Currentcy: an abstraction for the energy a system can spend on various
+devices.  One unit of currentcy represents the right to consume a
+certain amount of energy within a fixed amount of time.   Schedule
+processes either with a static-priority policy where system allocates
+currentcy to devices according to a static share while currentcy-centric
+scheduling adjusts priorities on the basis of ration of consumed
+currentcy to entitled currentcy.
+***** Cinder capacitors \cite{Rumble2009}
+Proposed for mobile devices.  Treat energy as equivalent resource to
+disk, memory, etc.   Manage in the same way as physical capacitor.
+***** Energy limits and task vectors \cite{Bellosa2003;Klee2008;Merkel2008}
+**** Thermal equivalence of application
+Adaptation of the analytical model from journal paper to thermal
+domain.  Provides way of dynamically allocating concept of currentcy to
+tasks. Use similar model to what was used in Cinder to manage.
+*** Avoidance of DTM events
+**** The time differential
+Nanosecond decisions in the scheduler, minutes at the application.
+Application decisions for managing temperature and how does this map
+into effects seen at the scheduler level?
+**** How this notion of fair scheduling affect these schemes?
+CFS and BFS both make serious effort to avoid complicated heuristics.
+Avoid the complex structures involved with classic UNIX schedulers?
+** Proposed contributions
+*** Thermal model
+A switching activity based thermal model that extends the power model in prior work.
+*** Thermal load of application (TheA)
+A means to dynamically gauge application contribution to the thermal load of the system.
+*** Energy-Aware Fair Scheduling (EAFS)
+A energy-aware fair scheduling policy that treats energy as a first
+level scheduling constraint 

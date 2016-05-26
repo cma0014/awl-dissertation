@@ -1,0 +1,302 @@
+%-----------------------BIBLIOGRAPHY STUFF-------------------------
+% this is adapted (November 1993) by Andrew Appel and Rebecca Davies from
+% 
+%%%     filename        = "chicago.sty",
+%%%     version         = "4",  % MODIFIED!
+%%%     date            = "31 August 1992",
+%%%     time            = "09:42:44 199",
+%%%     author          = "Glenn Paulley",
+%%%     address         = "Data Structuring Group
+%%%                        Department of Computer Science
+%%%                        University of Waterloo
+%%%                        Waterloo, Ontario, Canada
+%%%                        N2L 3G1",
+%%%     telephone       = "(519) 885-1211",
+%%%     FAX             = "(519) 885-1208",
+%%%     email           = "gnpaulle@bluebox.uwaterloo.ca",
+
+%%% ====================================================================
+%
+% this file: Modification of chicago.sty for new ACM bibliography
+% style, which is similar (but not identical) to the ``Chicago'' style.
+%
+% chicago.sty: Style file for use with bibtex style chicago.bst, for
+% bibliographies formatted according to the 13th Edition of the Chicago
+% Manual of Style.
+%
+% 'newapa.bst' was made from 'plain.bst', 'named.bst', and 'apalike.bst',
+% with lots of tweaking to make it look like APA style, along with tips
+% from Young Ryu and Brian Reiser's modifications of 'apalike.bst'.
+% newapa.sty formed the basis of this style, chicago.sty. Author-date
+% references in newapa.bst formed the basis for chicago.bst. Chicagoa.bst
+% supports annotations.
+%
+% Version 4 (August, 1992):
+% - fixed chicago.bst and chicagoa.bst to handle long author lists in
+%   sorting
+% - fixed chicago.bst and chicagoa.bst so that missing page numbers in
+%   ``article'' entries are handled correctly
+% - modified chicago.sty to format entries with 2nd and subsequent lines
+%   indented.
+%
+%   Citation format: (author-last-name year)
+%             (author-last-name and author-last-name year)
+%             (author-last-name et al. year)
+%             (author-last-name)
+%             author-last-name
+%             author-last-name (year)
+%             (author-last-name and author-last-name)
+%             (author-last-name et al.)
+%             (year) or (year,year)
+%             year or year,year
+%
+%   Reference list ordering: alphabetical by author or whatever passes
+%    for author in the absence of one.
+%
+% This BibTeX style has support for abbreviated author lists and for
+%    year-only citations.  This is done by having the citations
+%    actually look like
+%
+%    \citeauthoryear{full-author-info}{abbrev-author-info}{year}
+%
+% The LaTeX style has to have the following (or similar)
+%
+%     \let\@internalcite\cite
+%     \def\fullcite{\def\citeauthoryear##1##2##3{##1, ##3}\@internalcite}
+%     \def\fullciteA{\def\citeauthoryear##1##2##3{##1}\@internalcite}
+%     \def\shortcite{\def\citeauthoryear##1##2##3{##2, ##3}\@internalcite}
+%     \def\shortciteA{\def\citeauthoryear##1##2##3{##2}\@internalcite}
+%     \def\citeyear{\def\citeauthoryear##1##2##3{##3}\@internalcite}
+%
+%
+% -------------------------------------------------------------------------
+%
+% Citation macros.
+%
+
+\let\@internalcite\cite
+\def\cite{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
+    \def\citeauthoryear##1##2##3{##2 ##3}\@internalcite}
+\def\citeXNP#1#2{%
+  \def\@cite@label{#2}%
+  \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+  \def\citeauthoryear##1##2##3{\@cite@label}\@internalcite{#1}}
+% \def\@citeseppen{-1000}%
+%    \def\@cite@label{#1}
+%    \def\@cite##1##2{\if@tempswa ##2\fi}%
+%    \def\citeauthoryear##1##2##3{##2 ##3}\@internalcite}
+\def\citeNP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##2 ##3}\@internalcite}
+\def\citeN{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2]\else{]}\fi}%
+    \def\citeauthoryear##1##2##3{##2 [##3}\@citedata}
+\def\shortcite#1{\citeyear{#1}}
+\def\citeS#1{[\citeANP{#1} \citeyearNP{#1}]}
+\def\citeNS#1{\citeANP{#1} \citeyear{#1}}
+\def\citeNPS#1{\citeANP{#1} \citeyearNP{#1}}
+%testing year,year
+\def\citeNN{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
+    \def\citeauthoryear##1##2##3{##3}\@citedata}
+
+\def\citeA{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
+    \def\citeauthoryear##1##2##3{##2}\@internalcite}
+
+\def\citeauthor{\def\@citeseppen{-1000}%
+   \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+   \def\citeauthoryear##1##2##3{##2}\@internalcite}    
+    
+\def\citeANP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##2}\@internalcite}
+
+\def\citeyear{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
+    \def\citeauthoryear##1##2##3{##3}\@citedata}
+\def\citeyearNP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##3}\@citedata}
+
+%
+% \@citedata and \@citedatax:
+%
+% Place commas in-between citations in the same \citeyear, \citeyearNP,
+% or \citeN command.
+% Use something like \citeN{ref1,ref2,ref3} and \citeN{ref4} for a list.
+%
+\def\@citedata{%
+        \@ifnextchar [{\@tempswatrue\@citedatax}%
+                                  {\@tempswafalse\@citedatax[]}%
+}
+
+\def\@citedatax[#1]#2{%
+\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi%
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do%
+    {\@citea\def\@citea{; }\@ifundefined% by Young
+       {b@\@citeb}{{\bf ?}%
+       \@warning{Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{#1}}%
+
+% don't box citations, separate with ; and a space
+% also, make the penalty between citations negative: a good place to break.
+%
+\def\@citex[#1]#2{%
+\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi%
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do%
+    {\@citea\def\@citea{; }\@ifundefined% by Young
+       {b@\@citeb}{{\bf ?}%
+       \@warning{Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{#1}}%
+
+% (from apalike.sty)
+% No labels in the bibliography.
+%
+\def\@biblabel#1{}
+
+% (from apalike.sty)
+% Set length of hanging indentation for bibliography entries.
+%
+\newlength{\bibhang}
+\setlength{\bibhang}{2em}
+
+% Indent second and subsequent lines of bibliographic entries. Stolen
+% from openbib.sty: \newblock is set to {}.
+
+\newdimen\bibindent
+\bibindent=1em
+\@ifundefined{refname}%
+   {\@ifundefined{chapter}%
+     {\newcommand{\refname}{\footnotesize REFERENCES}}%
+     {\newcommand{\refname}{\footnotesize BIBLIOGRAPHY}}%
+   }%
+   {}%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fixes to acm trans macro package
+% 31-JAN-1996
+% John Tang Boyland
+
+% newdef need to take the optional parameters of newtheorem
+\def\newdef#1{\@ifnextchar[{\@xnewdef{#1}}{\@ynewdef{#1}}}
+\def\@xnewdef#1[#2]#3{\newtheorem{italic@#1}[#2]{{\em #3}}\@newdef{#1}}
+\def\@ynewdef#1#2{\@ifnextchar[{\@xynewdef{#1}{#2}}{\@yynewdef{#1}{#2}}}
+\def\@xynewdef#1#2[#3]{\newtheorem{italic@#1}{{\em #2}}[#3]\@newdef{#1}}
+\def\@yynewdef#1#2{\newtheorem{italic@#1}{{\em #2}}\@newdef{#1}}
+% and now fix up definition, to change body to use roman font:
+\def\@newdef#1{\newenvironment{#1}{\@ifnextchar[{\@xstartdef{#1}}{\@ystartdef{#1}}}{\end{italic@#1}}}
+%changed by K.R. Apt on Sep. 27, 2000. It was: \def\@xstartdef#1[#2]{\begin{italic@#1}[#2]\rm}
+\def\@xstartdef#1[#2]{\begin{italic@#1}[{\em #2}]\rm}
+\def\@ystartdef#1{\begin{italic@#1}\rm}
+
+
+% alternate way of using citeyear
+%  \def\shortcite#1{\citeyear{#1}
+% enumerations and longenums are wrong
+% 1. the second line in a paragraph of an enumerations in theorems
+%  (or other trivlists) doesn't line up under the first
+% 1. the second line of a longenum doesn't properly wrap around
+%  back to the left margin.
+
+% the original definition of \@listI doesn't set labelwidth
+\def\@listI{\leftmargin\leftmargini
+ \labelwidth\leftmargini\advance\labelwidth-\labelsep
+ \parsep 0pt plus 1pt
+ \topsep 6pt plus 2pt minus 2pt
+ \itemsep 2pt plus 1pt minus .5pt}
+\let\@listi\@listI
+\@listi 
+
+% add set of \labelwidth and \itemindent
+\def\longenum{\ifnum \@enumdepth >3 \@toodeep\else
+ \advance\@enumdepth \@ne 
+ \edef\@enumctr{enum\romannumeral\the\@enumdepth}\list
+ {\csname label\@enumctr\endcsname}{\usecounter
+ {\@enumctr}\labelwidth\z@\leftmargin\z@
+ \itemindent\parindent \advance\itemindent\labelsep}\fi}
+
+
+
+
+\newcommand{\longpage}{\enlargethispage{\baselineskip}}
+\newcommand{\shortpage}{\enlargethispage{-\baselineskip}}
+
+
+% Don't indent bibliography and
+% override \refname (which sets fontsize):
+\def\thebibliography#1{
+  \singlespacing
+  \vspace*{0pt}
+  \chapter*{Bibliography}
+  \thispagestyle{empty}
+
+  %\footnotesize\section*{\footnotesize\sf{REFERENCES}
+  %\@mkboth
+  \addcontentsline{toc}{chapter}{Bibliography}
+  %{\uppercase{\refname}}{\uppercase{\refname}}%}%
+   %\pdfbookmark{References}{Ref}
+   \list
+  {\@biblabel{\arabic{enumiv}}}{%
+   %\settowidth\labelwidth{[#1]}
+   \labelwidth 0pt
+   \leftmargin \bibindent
+   \labelsep 0pt
+   \if@hyperref
+     \itemindent -\bibindent
+   \fi
+   \listparindent -\bibindent
+   \labelsep -\bibindent
+    \usecounter{enumiv}%
+    \let\p@enumiv\@empty
+    \def\theenumiv{\arabic{enumiv}}}%
+    \def\newblock{\hskip .11em plus.33em minus.07em}%
+    \sloppy
+    \clubpenalty=4500
+    \widowpenalty=4500
+    \frenchspacing}
+\def\endthebibliography{%
+  \def\@noitemerr{\@warning{Empty `thebibliography' environment}}%
+  \endlist}
+\def\@lbibitem[#1]#2{\item[]\if@filesw
+      {\def\protect##1{\string ##1\space}\immediate
+       \write\@auxout{\string\bibcite{#2}{#1}}}\fi\hskip-1em\ignorespaces}
+% Fix cite so it doesn't repeat author lists in citations:
+
+\def\cite{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
+    \let\@lastauthor=\@noauthor
+    \let\citeauthoryear=\citeauthoryear@no@repeats\@internalcite}
+    %\def\citeauthoryear##1##2##3{##2 ##3}\@internalcite
+
+\def\@noauthor={\relax}
+\let\@lastauthor=\@noauthor
+\let\@currauthor=\@noauthor
+
+\def\citeauthoryear@no@repeats#1#2#3{%
+  \def\@currauthor{\csname @author #1\endcsname}%
+  \ifx\@lastauthor\@currauthor{#3}\else{#2 #3}\fi%
+  \let\@lastauthor=\@currauthor}
+
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
+\DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
+
+
+%\if@hyperref
+%   \let\pdfbookmark=\relax
+%   \RequirePackage[pdfmark]{hyperref}
+%\fi
+
+% \renewcommand{\thefootnote}{\arabic{footnote}\hspace{-3pt}}
+
+

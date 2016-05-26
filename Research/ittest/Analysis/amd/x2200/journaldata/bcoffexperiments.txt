@@ -1,0 +1,124 @@
+Before adjustment:
+ 1     1.0032 + 
+ 2    -0.8809 +  Ambient_Temp0
+ 3     0.5973 +  Ambient_Temp1
+ 4     0.5728 +  CPU_0_Temp
+ 5     0.5461 +  CPU_1_Temp
+ 6     0.0073 +  HT1Scaled
+ 7    -0.0048 +  HT2Scaled
+ 8     0.0030 +  cmiss_core0_scaled
+ 9     0.0029 +  cmiss_core1_scaled
+10     0.0037 +  cmiss_core2_scaled
+11     0.0038 +  cmiss_core3_scaled
+12     0.0282 +  disk_read_kbytes
+13     0.0135 +  disk_write_kbytes
+14     0.0011 +  Axial_Fan_0
+15     0.0006 +  Axial_Fan_1
+16     0.0012 +  Blower_Fan_0
+17    -0.0009 +  Blower_Fan_1
+
+After adjustment:
+ 1     0.1000 + 
+ 2    -0.8809 +  Ambient_Temp0
+ 3     0.5973 +  Ambient_Temp1
+ 4     0.5600 +  CPU_0_Temp
+ 5     0.5100 +  CPU_1_Temp
+ 6     0.0073 +  HT1Scaled
+ 7    -0.0048 +  HT2Scaled
+ 8     0.0030 +  cmiss_core0_scaled
+ 9     0.0029 +  cmiss_core1_scaled
+10     0.0037 +  cmiss_core2_scaled
+11     0.0038 +  cmiss_core3_scaled
+12     0.0282 +  disk_read_kbytes
+13     0.0135 +  disk_write_kbytes
+14     0.0011 +  Axial_Fan_0
+15     0.0006 +  Axial_Fan_1
+16     0.0012 +  Blower_Fan_0
+17    -0.0009 +  Blower_Fan_1
+
+After adjustment:
+ 1     0.1000 + 
+ 2    -0.8809 +  Ambient_Temp0
+ 3     0.5973 +  Ambient_Temp1
+ 4     0.5650 +  CPU_0_Temp
+ 5     0.5200 +  CPU_1_Temp
+ 6     0.0073 +  HT1Scaled
+ 7    -0.0048 +  HT2Scaled
+ 8     0.0030 +  cmiss_core0_scaled
+ 9     0.0029 +  cmiss_core1_scaled
+10     0.0037 +  cmiss_core2_scaled
+11     0.0038 +  cmiss_core3_scaled
+12     0.0140 +  disk_read_kbytes
+13     0.0070 +  disk_write_kbytes
+14     0.0011 +  Axial_Fan_0
+15     0.0006 +  Axial_Fan_1
+16     0.0012 +  Blower_Fan_0
+17    -0.0009 +  Blower_Fan_1
+
+After adjustment:
+ 1     0.1000 + 
+ 2    -0.8809 +  Ambient_Temp0
+ 3     0.5973 +  Ambient_Temp1
+ 4     0.5650 +  CPU_0_Temp
+ 5     0.5200 +  CPU_1_Temp
+ 6     0.0073 +  HT1Scaled
+ 7    -0.0048 +  HT2Scaled
+ 8     0.0030 +  cmiss_core0_scaled
+ 9     0.0029 +  cmiss_core1_scaled
+10     0.0037 +  cmiss_core2_scaled
+11     0.0038 +  cmiss_core3_scaled
+12     0.0140 +  disk_read_kbytes
+13     0.0070 +  disk_write_kbytes
+14     0.0011 +  Axial_Fan_0
+15     0.0006 +  Axial_Fan_1
+16     0.0012 +  Blower_Fan_0
+17    -0.0009 +  Blower_Fan_1
+
+the temp cpeff should be high..and teh fan coeffs should be low..
+
+6:12
+but there is a banaced sweet spot for them..
+where the coeff.s reflect the normalized numbers..the fan RPMs are
+high..
+
+so the fan coeff. should be low and teh temp are low so the temp coeff.
+should be high and so on
+
+
+After adjustment:
+ 1     0.1000 + 
+ 2    -0.8809 +  Ambient_Temp0
+ 3     0.5973 +  Ambient_Temp1
+ 4     0.5650 +  CPU_0_Temp
+ 5     0.5200 +  CPU_1_Temp
+ 6     0.0073 +  HT1Scaled
+ 7    -0.0048 +  HT2Scaled
+ 8     0.0030 +  cmiss_core0_scaled
+ 9     0.0029 +  cmiss_core1_scaled
+10     0.0037 +  cmiss_core2_scaled
+11     0.0038 +  cmiss_core3_scaled
+12     0.0140 +  disk_read_kbytes
+13     0.0070 +  disk_write_kbytes
+14     0.0012 +  Axial_Fan_0
+15     0.0007 +  Axial_Fan_1
+16     0.0012 +  Blower_Fan_0
+17    -0.0009 +  Blower_Fan_1
+
+After adjustment:
+ 1     0.1000 + 
+ 2    -0.8809 +  Ambient_Temp0
+ 3     0.5973 +  Ambient_Temp1
+ 4     0.5650 +  CPU_0_Temp
+ 5     0.5200 +  CPU_1_Temp
+ 6     0.0073 +  HT1Scaled
+ 7    -0.0048 +  HT2Scaled
+ 8     0.0030 +  cmiss_core0_scaled
+ 9     0.0029 +  cmiss_core1_scaled
+10     0.0037 +  cmiss_core2_scaled
+11     0.0038 +  cmiss_core3_scaled
+12     0.0140 +  disk_read_kbytes
+13     0.0070 +  disk_write_kbytes
+14     0.0012 +  Axial_Fan_0
+15     0.0007 +  Axial_Fan_1
+16     0.0012 +  Blower_Fan_0
+17    -0.0009 +  Blower_Fan_1

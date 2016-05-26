@@ -1,0 +1,38 @@
+/opt/wattsup/benchcmd.sh 437.cactusADM
+~/Research/cpu2006 ~/Research/vmpowermgt/Programs/scheduler/Analysis/amd/x2200/cross2
+runspec v4662 - Copyright 1999-2006 Standard Performance Evaluation Corporation
+Using 'solaris-x86' tools
+Reading MANIFEST... 17935 files
+Loading runspec modules...............
+Locating benchmarks...found 31 benchmarks in 12 benchsets.
+Locating output formats: ASCII, config, CSV, flags, HTML, mail, PDF, PostScript, raw, Screen, Submission Check
+Reading config file '/export/home/awl8049/Research/cpu2006/config/powermodel.cfg'
+Benchmarks selected: 437.leslie3d
+Compiling Binaries
+  Up to date 437.leslie3d ref base mar30.amd64 default
+
+
+Parsing Flags
+  Looking at 437.leslie3d base mar30.amd64 default: done
+Flag Parsing Complete
+
+Setting Up Run Directories
+  Setting up 437.leslie3d ref base mar30.amd64 default: existing (run_base_ref_mar30.amd64.0000)
+Running Benchmarks
+  Running 437.leslie3d ref base mar30.amd64 default
+Success: 1x437.leslie3d
+Producing Reports
+mach: default
+  ext: mar30.amd64
+    size: ref
+      set: int
+      set: fp
+        format: raw -> /export/home/awl8049/Research/cpu2006/result/CFP2006.268.rsf
+        format: flags -> /export/home/awl8049/Research/cpu2006/result/CFP2006.268.flags.html
+        format: ASCII -> /export/home/awl8049/Research/cpu2006/result/CFP2006.268.txt
+        format: HTML -> /export/home/awl8049/Research/cpu2006/result/CFP2006.268.html, CFP2006.268.gif
+
+The log for this run is in /export/home/awl8049/Research/cpu2006/result/CPU2006.268.log
+
+runspec finished at Sun May 10 03:42:56 2009; 832 total seconds elapsed
+~/Research/vmpowermgt/Programs/scheduler/Analysis/amd/x2200/cross2

@@ -1,0 +1,303 @@
+% 
+% File:  letterbib.sty
+% Author:awl8049
+% Revision: $Revision: 2.2 $
+%
+% Some enhancements for the hyperref package
+% Give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+%\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+% Add section counters and commands into here as letter class doesn't 
+% include them
+\newcounter {part}
+\newcounter {section}
+\newcounter {subsection}[section]
+\newcounter {subsubsection}[subsection]
+\newcounter {paragraph}[subsubsection]
+\newcounter {subparagraph}[paragraph]
+\renewcommand \thepart {\@Roman\c@part}
+\renewcommand \thesection {\@arabic\c@section}
+\renewcommand\thesubsection   {\thesection.\@arabic\c@subsection}
+\renewcommand\thesubsubsection{\thesubsection.\@arabic\c@subsubsection}
+\renewcommand\theparagraph    {\thesubsubsection.\@arabic\c@paragraph}
+\renewcommand\thesubparagraph {\theparagraph.\@arabic\c@subparagraph}
+
+\makeatletter
+\newcommand\section{\setcounter{page}{1}%
+  \setcounter{subsection}{0}%
+  \setcounter{subsubsection}{0}%
+  \addtocounter{section}{1}%
+  \@startsection{section}{1}{\z@}%
+  {-2.5ex \@plus -1ex \@minus -.2ex}%
+  {1.3ex \@plus.2ex}%
+   {\pagebreak\normalfont\large\bfseries}}
+\makeatother
+\makeatletter
+\newcommand\subsection{\setcounter{subsubsection}{0}%
+  \addtocounter{subsection}{1}%
+  \@startsection{subsection}{1}{\z@}%
+  {-2.5ex \@plus -1ex \@minus -.2ex}%
+  {1.3ex \@plus.2ex}%
+   {\normalfont\bfseries}}
+\makeatother
+\makeatletter
+\newcommand\subsubsection{\addtocounter{subsubsection}{1}%
+  \@startsection{subsubsection}{1}{\z@}%
+  {-2.5ex \@plus -1ex \@minus -.2ex}%
+  {1.3ex \@plus.2ex}%
+  {\normalfont\bfseries}}
+\makeatother
+
+% LaTeX letter template does not provide letter support by default.  The
+% following is copied from the LaTeX article template.
+%
+
+
+%-----------------------BIBLIOGRAPHY STUFF-------------------------
+% this is adapted (November 1993) by Andrew Appel and Rebecca Davies from
+% 
+%%%     filename        = "chicago.sty",
+%%%     version         = "4",  % MODIFIED!
+%%%     date            = "31 August 1992",
+%%%     time            = "09:42:44 199",
+%%%     author          = "Glenn Paulley",
+%%%     address         = "Data Structuring Group
+%%%                        Department of Computer Science
+%%%                        University of Waterloo
+%%%                        Waterloo, Ontario, Canada
+%%%                        N2L 3G1",
+%%%     telephone       = "(519) 885-1211",
+%%%     FAX             = "(519) 885-1208",
+%%%     email           = "gnpaulle@bluebox.uwaterloo.ca",
+
+%%% ====================================================================
+%
+% this file: Modification of chicago.sty for new ACM bibliography
+% style, which is similar (but not identical) to the ``Chicago'' style.
+%
+% chicago.sty: Style file for use with bibtex style chicago.bst, for
+% bibliographies formatted according to the 13th Edition of the Chicago
+% Manual of Style.
+%
+% 'newapa.bst' was made from 'plain.bst', 'named.bst', and 'apalike.bst',
+% with lots of tweaking to make it look like APA style, along with tips
+% from Young Ryu and Brian Reiser's modifications of 'apalike.bst'.
+% newapa.sty formed the basis of this style, chicago.sty. Author-date
+% references in newapa.bst formed the basis for chicago.bst. Chicagoa.bst
+% supports annotations.
+%
+% Version 4 (August, 1992):
+% - fixed chicago.bst and chicagoa.bst to handle long author lists in
+%   sorting
+% - fixed chicago.bst and chicagoa.bst so that missing page numbers in
+%   ``article'' entries are handled correctly
+% - modified chicago.sty to format entries with 2nd and subsequent lines
+%   indented.
+%
+%   Citation format: (author-last-name year)
+%             (author-last-name and author-last-name year)
+%             (author-last-name et al. year)
+%             (author-last-name)
+%             author-last-name
+%             author-last-name (year)
+%             (author-last-name and author-last-name)
+%             (author-last-name et al.)
+%             (year) or (year,year)
+%             year or year,year
+%
+%   Reference list ordering: alphabetical by author or whatever passes
+%    for author in the absence of one.
+%
+% This BibTeX style has support for abbreviated author lists and for
+%    year-only citations.  This is done by having the citations
+%    actually look like
+%
+%    \citeauthoryear{full-author-info}{abbrev-author-info}{year}
+%
+% The LaTeX style has to have the following (or similar)
+%
+%     \let\@internalcite\cite
+%     \def\fullcite{\def\citeauthoryear##1##2##3{##1, ##3}\@internalcite}
+%     \def\fullciteA{\def\citeauthoryear##1##2##3{##1}\@internalcite}
+%     \def\shortcite{\def\citeauthoryear##1##2##3{##2, ##3}\@internalcite}
+%     \def\shortciteA{\def\citeauthoryear##1##2##3{##2}\@internalcite}
+%     \def\citeyear{\def\citeauthoryear##1##2##3{##3}\@internalcite}
+%
+%
+% -------------------------------------------------------------------------
+%
+% Citation macros.
+%
+\makeatletter
+\let\@internalcite\cite
+
+\def\cite{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
+    \def\citeauthoryear##1##2##3{##2 ##3}\@internalcite}
+\def\citeXNP#1#2{%
+  \def\@cite@label{#2}%
+  \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+  \def\citeauthoryear##1##2##3{\@cite@label}\@internalcite{#1}}
+% \def\@citeseppen{-1000}%
+%    \def\@cite@label{#1}
+%    \def\@cite##1##2{\if@tempswa ##2\fi}%
+%    \def\citeauthoryear##1##2##3{##2 ##3}\@internalcite}
+\def\citeNP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##2 ##3}\@internalcite}
+\def\citeN{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2]\else{]}\fi}%
+    \def\citeauthoryear##1##2##3{##2 [##3}\@citedata}
+\def\shortcite#1{\citeyear{#1}}
+\def\citeS#1{[\citeANP{#1} \citeyearNP{#1}]}
+\def\citeNS#1{\citeANP{#1} \citeyear{#1}}
+\def\citeNPS#1{\citeANP{#1} \citeyearNP{#1}}
+%testing year,year
+\def\citeNN{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
+    \def\citeauthoryear##1##2##3{##3}\@citedata}
+
+\def\citeA{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
+    \def\citeauthoryear##1##2##3{##2}\@internalcite}
+\def\citeANP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##2}\@internalcite}
+
+\def\citeyear{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{[##1\if@tempswa , ##2\fi]}%
+    \def\citeauthoryear##1##2##3{##3}\@citedata}
+\def\citeyearNP{\def\@citeseppen{-1000}%
+    \def\@cite##1##2{##1\if@tempswa , ##2\fi}%
+    \def\citeauthoryear##1##2##3{##3}\@citedata}
+
+%
+% \@citedata and \@citedatax:
+%
+% Place commas in-between citations in the same \citeyear, \citeyearNP,
+% or \citeN command.
+% Use something like \citeN{ref1,ref2,ref3} and \citeN{ref4} for a list.
+%
+\def\@citedata{%
+        \@ifnextchar [{\@tempswatrue\@citedatax}%
+                                  {\@tempswafalse\@citedatax[]}%
+}
+
+\def\@citedatax[#1]#2{%
+\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi%
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do%
+    {\@citea\def\@citea{; }\@ifundefined% by Young
+       {b@\@citeb}{{\bf ?}%
+       \@warning{Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{#1}}%
+
+% don't box citations, separate with ; and a space
+% also, make the penalty between citations negative: a good place to break.
+%
+\def\@citex[#1]#2{%
+\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi%
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do%
+    {\@citea\def\@citea{; }\@ifundefined% by Young
+       {b@\@citeb}{{\bf ?}%
+       \@warning{Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{#1}}%
+
+% (from apalike.sty)
+% No labels in the bibliography.
+%
+\def\@biblabel#1{}
+
+% (from apalike.sty)
+% Set length of hanging indentation for bibliography entries.
+%
+\newlength{\bibhang}
+\setlength{\bibhang}{2em}
+
+% Indent second and subsequent lines of bibliographic entries. Stolen
+% from openbib.sty: \newblock is set to {}.
+
+\newdimen\bibindent
+\bibindent=1em
+\@ifundefined{refname}%
+   {\@ifundefined{chapter}%
+     {\newcommand{\refname}{\footnotesize REFERENCES}}%
+     {\newcommand{\refname}{\footnotesize BIBLIOGRAPHY}}%
+   }%
+   {}%
+\@ifundefined{chapter}%
+ {\def\thebibliography#1{\footnotesize \section*{\refname\@mkboth 
+   {\uppercase{\refname}}{\uppercase{\refname}}}\list
+   {[\arabic{enumi}]}{
+   \settowidth\labelwidth{[#1]}
+   \leftmargin\labelwidth
+   \advance\leftmargin\labelsep
+   \advance\leftmargin\bibindent
+   \itemindent -\bibindent
+   \listparindent \itemindent
+   \parsep \z@
+   \usecounter{enumi}}
+   \def\newblock{}
+   \sloppy
+   \sfcode`\.=1000\relax}}
+ {\def\thebibliography#1{\footnotesize \chapter*{\refname\@mkboth 
+   {\uppercase{\refname}}{\uppercase{\refname}}}\list
+   {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}
+   \leftmargin\labelwidth
+   \advance\leftmargin\labelsep
+   \advance\leftmargin\bibindent
+   \itemindent -\bibindent
+   \listparindent \itemindent
+   \parsep \z@
+   \usecounter{enumi}}
+   \def\newblock{}
+   \sloppy
+   \sfcode`\.=1000\relax}}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \setlength \labelsep {.5em} 
+
+% \newcommand\newblock{\hskip
+%   .11em\@plus.33em\@minus.07em} 
+
+% \newcommand\refname{References} 
+
+% \makeatletter
+% \newenvironment{thebibliography}[1]
+% {\section*{\refname}%
+%   \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+%   \list{\@biblabel{\@arabic\c@enumiv}}%
+%   {\settowidth\labelwidth{\@biblabel{#1}}%
+%     \leftmargin\labelwidth \advance\leftmargin\labelsep \@empty
+%     \usecounter{enumiv}%
+%     \let\p@enumiv\@empty \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+%   \sloppy \clubpenalty4000 \@clubpenalty \clubpenalty
+%   \widowpenalty4000%
+%   \sfcode`\.\@m} {\def\@noitemerr {\@latex@warning{Empty
+%       `thebibliography' environment}}%
+%       \endlist}
+% \makeatother

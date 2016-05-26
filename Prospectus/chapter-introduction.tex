@@ -1,0 +1,201 @@
+%
+% File:     chapter-introduction.tex
+% Author:   awl8049
+% Revision: $Revision: 1.6 $
+%
+\chapter{Introduction}
+\label{sec:Introduction}
+The upwardly spiraling operating costs of the infrastructure
+for enterprise-scale computing demand efficient power management in
+server environments. It is difficult in practice to achieve efficient
+power management as data centers usually over-provision their power
+capacity to address the worst case scenarios. This results in either waste
+of considerable power budget or severe under-utilization of capacity.
+Thus, it is critical to quantitatively understand the relationship
+between power consumption and thermal envelope at the system level so as to
+optimize the use of deployed power capacity in the data center.
+
+Chip multiprocessors (CMP) and processors employing simultaneous
+multi-threading (SMT) have become common in server blades due to
+advantages these devices have in low design cost and better performance.
+As these technologies have evolved, there has been an evolution from
+\textit{multi-core} processors composed of a limited number of
+homogeneous cores to the idea of \textit{many-core} processors composed
+of many heterogeneous processors cores.  However, the greater chip
+complexity entailed by many-core processors lead to larger power
+envelopes, elevated peak chip die temperatures, and imbalanced thermal
+gradients.  So, as the workload increases on the server, so does the
+thermal stress placed on the processor with the resulting probability of
+damage to the machine.
+
+Modern processors crudely manage this problem through Dynamic Thermal
+Management (DTM) where the processor monitors the die temperature and
+dynamically adjusts the processor voltage and frequency (DVFS) to slow
+down the processor.  However, DVFS has a significant negative impact on
+application performance. An examination of the impact of dynamic power
+adaption on the performance and power envelope of a Quad-Core AMD
+Opteron processor found that significant performance loss is entailed
+due to slow transitions between different levels of DVFS
+\cite{Bircher2008}. Indirect effects due to shared, power-managed
+resources such as cache and memory can greatly reduce performance; this
+is a significant problem for memory-bound workloads typical of server
+workloads. Thus, pro-active scheduling techniques that avoid thermal
+emergencies are preferable to reactive hardware techniques such as DTM.
+
+Furthermore, there is a significant cost to the use of DVFS as a method
+to avoid thermal emergencies.  A categorization of the different thermal
+management techniques based on this approach can be found in
+\cite{Donald2006}.  In that work, the authors claimed the best approach
+to using DTM/DVFS includes a combination of a control-theoretic
+distributed DVFS system and a sensor-based migration policy.  The issue
+with this approach is the granularity of DVFS; existing commercial
+systems do not allow for independent frequency scaling of cores and
+threads.  A related approach is the capability of turning off the power
+to unused cores in the processor.  However, use of this capability for
+power management can lead to reduced reliability in the processor
+\cite{Rosing2007,Coskun2008d}.   In addition, operating system
+schedulers operate on a millisecond time scale but architectural events
+such as cache misses occur vary on a nanosecond time scale.  Thus,
+operating system driven DVFS can be too slow to adapt to fine scale
+variations in program behavior \cite{Rangan2009}.
+
+The component of the operating system most aware of the existence of
+multiple cores is the thread scheduler. The current generation of
+operating systems treat the CPU cores in a multi-core processor as
+distinct physical processors when making scheduling
+decisions. Furthermore, operating systems treat virtualized SMT
+processors on a single physical core (such as Intel's HyperThreading
+technology) as ``logical CPUs'' that behave as independent processors
+for scheduling purposes. The thread scheduler is responsible for
+ensuring that all of the logical CPUs across all processors in a system
+is kept busy; the scheduler must be able to efficiently migrate the
+state of threads across processors regardless if that migration is
+amongst the logical CPUs on a single processor or across physical
+processors.  However, data and instruction dependencies exist between
+logical CPUs that must be taken into account when balancing performance
+and energy efficiency.  These dependencies lead to contention for shared
+resources that result in performance penalties and inefficient use of
+energy.
+
+Modern multiprocessor operating systems such as Windows, Linux, Solaris,
+and FreeBSD take a two-level approach to scheduling in an attempt to
+maximize system resources.  The first level manages each core using a
+distributed run queue model with per logical CPU queues and fair
+scheduling policies. The second level attempts to balance the resource
+load by redistributing tasks across the queues on each logical CPU.  The
+design of this type of scheduler is based upon three principles: (1)
+threads are assumed to be independent, (2) load is equated to queue
+length, and (3) locality is important \cite{Hofmeyr2010}.
+
+Traditional server scheduling makes assumptions about workload
+behavior to make scheduling decisions.  Interactive workloads are
+characterized by the independent tasks that remain quiet for extended
+periods.  Server workloads contain large numbers of threads that are
+highly independent of each other that use synchronization objects to
+ensure mutual exclusion on small data items.  In parallel applications,
+there is a higher levels of interaction between threads; consequently,
+load balancing such applications requires additional mechanisms.  
+
+Parallel applications are implemented most often on contemporary
+processors using a Single Process, Multiple Data (SPMD) programming
+model where logical CPUs simultaneously execute the same program at
+independent points.  Tasks execute independently and communicate with
+other nodes by sending and receiving messages with some form of barrier
+synchronization implemented as part of the message interface.  The
+details of the message process is isolated from the application by
+standard interfaces such as MPI and OpenMP.  Note how this programming
+model contravenes the assumptions for system level load balancing: (1)
+threads are logically related, (2) have data and control dependencies
+between threads, and (3) have equally long life-spans
+\cite{Hofmeyr2010}.
+
+In this work, we introduce two techniques for thermal management that
+minimizes server energy consumption by (1) for each logical CPU,
+selecting the next thread to execute based upon an estimate of which
+thread has the least probability of causing a DTM in the next quantum,
+and (2) adjusting the load balance allocation of threads to available
+logical CPUs so as to migrate workload away from thermally overextended
+resources on the processor.  These techniques manage power density and
+thermal stress in two ways. In the
+first case, we seek to find the best temporal solution to the problem of
+maximizing duty cycle, and thus maximizing the amount of computation
+that occurs per unit cooling time.  Thermally-aware load balancing as
+suggested by our second contribution is a spatial solution for managing
+power density where we move computation in a hot resource to redundant or
+under-utilized resources.
+
+Intelligent thermally-aware scheduling decisions requires an full-system
+model of energy consumption based on computational load of system that
+can be used to effectively predict future energy consumption and
+resulting changes in thermal load.  This Prospectus presents a
+full-system model that provides run-time system-wide prediction of
+energy consumption on server blades as a continuous system of
+differential equations, taking thermal effects into account.  Our model
+considers a single server blade as a closed black-box system, relying on
+the fact that measured energy input into the system can be a function of
+the work done by the system (in executing its computational tasks) and
+of residual thermal energy given off by the system during execution.  It
+relates server energy consumption to its overall thermal envelope,
+establishing an energy relationship between the workload and the overall
+thermodynamics of the system.
+
+Our approach measures the total DC power input to the server at its
+power supply output, treating total energy delivered to the system as a
+sum of the energy components consumed by different sub-systems in the
+server.  The approach utilizes the hardware performance counters (PeCs)
+of the server for relating power consumption to its consequent thermal
+envelope, enabling dynamical control of the thermal footprint under
+given workload.  With PeCs, the computational load of a server can be
+estimated using relevant PeC readings together with a set of operating
+system's performance metrics.  Given the current generation of server
+systems lack (1)~the complete set of measurement and monitoring
+capabilities and (2)~data flow state capture mechanisms required in
+order to formulate the parameters of an exact analytical model, our
+approach resorts to statistical approximation to compensate for those
+model components which cannot be determined exactly.  In other words,
+our energy consumption prediction model is approximated following a
+discrete time series of observed readings of available PeCs.
+
+Generally, time series models operate by observing past outcomes of a
+physical phenomenon in order to anticipate future values of that
+phenomenon.  Many time series-based models of processor energy
+consumption have been proposed
+\cite{Rivoire2008a,Bhattacharjee2009,Reich2010}, with recent work
+extending such models into the thermal domain \cite{Coskun2008}.  Time
+series are typically handled in three broad classes of mechanisms:
+auto-regressive, integrated, and moving average models \cite{Box1994}.
+Each of these classes assumes a linear relationship between the
+dependent variable(s) and previous data points. However, energy
+consumption, ambient temperature, and processor die temperatures in
+computers can be affected by more than just past values of those
+measurements made in isolation from each other.  Our analysis of
+experimental measurements of key processor PeC readings and performance
+metrics reveals that the measured readings and metrics of a server over
+the time series do not possess linearity and are \textit{chaotic in
+  nature}.  It thus leads to our development of a Chaotic Attractor
+Predictor (CAP).
+
+Servers based on the HyperTransport bus \cite{HT2008} and the Intel
+QuickPath Links \cite{Intel2009} are chosen as representatives to valid
+valid our CAP for estimating run-time power consumption.  CAP takes into
+account key thermal indicators (like ambient temperatures and die
+temperatures) and system performance metrics (like performance counters)
+for system energy consumption estimation within a given power and
+thermal envelope.  It captures the chaotic dynamics of a server system
+without complex and time-consuming corrective steps usually required by
+linear prediction to account for the effects of non-linear and chaotic
+behavior in the system, exhibiting polynomial time complexity.  This
+work demonstrates that appropriate provision of additional PeCs beyond
+what are provided by a typical server is required to obtain more
+accurate prediction of system-wide energy consumption.  Effective
+scheduling can result from taking advantage of the proposed CAP when
+dispatching jobs to confine server power consumption within a given
+power budget and thermal envelope while minimizing impact upon server
+performance.
+
+% Following comment block used by GNU-EMACS and AUCTEX packages
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "prospectus.tex"
+%%% End: 

@@ -1,0 +1,509 @@
+%
+%  $Author: awl8049 $
+%  $Date: 2008/04/07 03:02:47 $
+%  $Revision: 1.5 $
+%
+%\documentclass[times, 10pt,twocolumn]{article} 
+\documentclass[times, 10pt,onecolumn]{article} 
+\usepackage{setspace}
+\usepackage{latex8}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{pdfsync}
+\pagestyle{empty}
+\begin{document}
+\title{An Information-Therortic Thermal Model for Energy Conservation}
+\author[*]{Adam Lewis} 
+\author[*]{Soumik Ghosh} 
+\author[*]{N.-F. Tzeng}
+\affil[*]{Center for Advanced Computer Studies\\ 
+University of Louisiana at Lafayette\\ 
+Lafayette, LA 70504, USA\\ 
+\{awlewis,sxg5317,tzeng\}@cacs.louisiana.edu
+}
+\maketitle
+\newtheorem{defn}{Definition}
+\newtheorem{thm}{Theorem}
+\thispagestyle{empty}
+
+\begin{abstract}
+  
+\end{abstract}
+\doublespacing
+\section{Introduction}
+\label{sec:Introduction}
+A negative consequence of Moore's Law is the thermal cooling challenges that
+have resulted from the exponential increase in power density of
+microprocessors.  The current solution of choice for addressing these issues
+are mechanical cooling solutions but these solutions are unsatisfactory from a
+cost, complexity, and completeness standpoint. Many thermal-aware techniques
+have been proposed in the past five years to optimize processor performance
+while addressing ever more stringent thermal constraints.  These techniques
+show many similarities to power-aware techniques \cite{Donald2006} but must
+differ from such mechanisms due to a need to address both local hotspot
+constraints and overall thermal limits.
+
+At the VLSI level, thermal models have been constructed based on the duality
+between heat transfer and electrical phenomena where heat flow can be
+described as a ``current'' passing through a thermal resisntance.  This
+observation is the basis of the \textit{HotSpot} thermal model
+\cite{Skadron2004}.  This model has been used as the starting point for a
+number of control-theory based proposals for dynamically adjusting the voltage
+and/or frequency of the processor to balance the thermal load.  However, these
+approaches are difficult to scale to situations where multiple processors are
+involved (as in multi-core and multi-processor configurations) or when you
+need coordinate ensembles of processors (such as seen in computing clusters).
+
+Information theory is a mathematical framework for the analysis of data
+sources that was originally proposed in the context of communications and
+cryptography and has been applied to many diverse applications in machine
+learning, image processing, and financial market prediction.   Given the
+importance of these concepts to the fundamentals of computer science, it leads
+one to consider how it can be used as derive a thermal model of computation
+from first principles of information theory and thermodynamics.   Such a model
+can be extended from the processor to the system level and further to cluster
+and grid configurations.
+
+The contributions of this paper are:
+\begin{itemize}
+\item We propose a thermal model of computation constructed from the first
+  principles of information theory and thermodynamics.
+\item A implementation of this model to manage the thermal characteristics of
+  a typical micro-controller.
+\item An experimental analysis of the model using our implementation and a
+  simulator of the target micro-controller.
+\end{itemize}
+
+The remainder of this paper is structured as follows.  Section
+\ref{sec:entropy} reviews the concepts of information theory and
+thermodynamics that form the basis of our model.  Section
+\ref{sec:model} describes the structure of the model.  Section
+\ref{sec:experiment} shows our experimental results.  Section
+\ref{sec:related} describes related work. Section \ref{sec:conclusions}
+offers our conclusions.
+
+\section{Entropy: Information and Thermodynamic}
+\label{sec:entropy}
+Consider a processor $P$ that has an instruction set
+\begin{equation}
+  \label{eq:instset}
+  I = {i_{1},i_{2},i_{3},\ldots,i_{4}}
+\end{equation}
+where each $i_{n}$ is of the form
+\begin{equation}
+  \label{eq:instform}
+  operator destination operand1 operand2
+\end{equation}
+Each instruction performs the operation indicated by $operator$ using
+$operator1$ and $operator2$ and stores the result into $destination$
+where each of these quantities denote a location in memory within the
+processor. 
+
+A program $p$ in the processor $P$ memory is the sequence of instructions
+required to manipulate the memory to perform a calculation.   We can view this process as a general device producing symbols
+according to some random variable $X$ defined over a finite alphabet of
+possible symbols $s\in S$ is independent of the previous symbols, we can
+define as
+\begin{defn}
+  The \textit{unconditional entropy} as
+  \begin{equation}
+    \label{eq:uncodent}
+    H(X)=\sum_{i=1}^{|S|}p(i)log(p(i))
+  \end{equation}
+  where $p(i)$ is the probability of the $i$th symbol being produced.
+\end{defn}
+where we can estimate $p(i)$ with frequency counts
+\begin{equation}
+  \label{eq:freqcntsym}
+  p(i)=\frac{number of occurrences of s_{i}}{total number of symbols seen}
+\end{equation}
+
+Note that we also need to consider the case where the processor $P$
+transitions from state to state.  In this case, we need to consider how the
+random variable(s) will behave in this case:  the variable is now $X$ while
+after executing the next instruction the variable is now $Y$ and we wish to
+know the entropy of $Y$ given that we know $X$.
+\begin{defn}
+  The \textit{conditional entropy} is
+  \begin{equation}
+    \label{eq:condent}
+    H(Y|X)=-\sum_{i=1}^{|S|}p(i)\sum_{j=1}^{|S|}p(j|i)log(p(j|i))
+  \end{equation}
+  where we can again estimate the probabilities from frequency counts
+  \begin{equation}
+    \label{eq:freqcnt}
+    p(j|i)=\frac{number of times s_{j} follows s_{i}}{number of occurrences of
+    s_{i}}
+  \end{equation}
+\end{defn}
+
+Consider the bit string $s$ stored in memory of $P$.  So,
+we can define a program $p(s)$ as being a program that will produce this
+bit string.   This program is called a \textit{description} $d(s)$ of the
+string $s$.   This leads to the following definition:
+\begin{defn}
+  The Kolmorgorov Complexity $K(s)$ of a string $s$ is the length of the
+  smallest possible description of $s$.
+\end{defn}
+We can use Kolmorgorov Complexity is show that we can reason about our
+model in the general case by applying the following invariance theorem:
+\begin{thm}
+  Given any two languages $L_{1}$ and $L_{2}$, then there exists a
+  constant $c$ such that for all strings $s$, 
+  \begin{equation}
+    |K_{1}(s) - K_{2}(s)| <= c
+  \end{equation}
+  such that $c$ is dependent upon $L_{1}$ and $L_{2}$ and not on $s$.
+\end{thm}
+The implication of such a theorem is that we can reason about an ideal
+processor $P$ to build our model and then draw conclusions for a
+particular processor of interest.   The classical interpretation of
+invariance comes from the observation that it is appears easier to
+program symbolic logic programs in LISP and numeric calculations in
+FORTRAN.  However, the set of problems either language can compute is
+the same.   We apply a similar logic to our approach to different processors.
+
+Recall from thermodynamics that the classical (or Boltzmann's) entropy of a
+system can be expressed as
+\begin{equation}
+  \label{eq:boltzmann}
+  S_{B}=-k\sum_{i=1}^{\omega}p_{i}\log{p_{i}}
+\end{equation}
+where $i$ indexes the possible micro-states of a system, $p_{i}$ is the
+probability that the system will be in $i$th configuration, $\omega$ is the
+total number of configurations, and $k$ is Boltzmann's constant
+($1.38x10^{-38}$ Joules per degree Kelvin).  Now consider the process of
+executing the sequence of instructions that compose $p(s)$.  In our case of an
+idealized processor, this can be construed in the physical system as being
+the processor's instruction stream.  The execution of each step in the
+sequence results in some physical work being performed to execute that
+command.  
+
+So, we can view each physical state of the memory as representing a
+micro-state in the physical thermodynamic system that is the processor $P$.
+\begin{defn}
+  The set of \textit{micro-states} ${X}$ of the processor $P$ is the state of
+  the processor's memory and register file at each clock cycle of the processor.
+\end{defn}
+Now suppose we encode the set ${X}$ as an integer $x$ that describes the
+state of processor at a time of equilibrium.   From this, we can make
+the following definition:
+\begin{defn}
+  The algorithmic entropy is the quantity 
+  \begin{equation}
+    \label{eq:algentropy}
+    K(x) + H_{x}    
+  \end{equation}
+  where $K(x)$  is the Kolgormov complexity of $x$ and 
+  \begin{equation}
+    \label{eq:boltzentropy}
+    H_{x}=\frac{S_{b}(x)}{k\ln(2)}
+  \end{equation}
+  where $S_{B}(x)$ is the classical Boltzman's entropy of the system and
+  $k$ is Boltzman's constant.
+\end{defn}
+
+Kolmogorov complexity has the unpleasant characteristic of being
+noncomputable. So, we need to find some reasonable estimator of $K(x)$
+that we can use as alternative in our model.   One possibility is to
+take advantage of the relationship between Kolmorgorov complexity and
+classical information entropy.   It has been shown that the quantity
+$H(x)$ is equivalent to expected Kolmogorov complexity within some
+additive constant.  In other words as the complexity of the micro-states
+in our processor's memory decreases, we can reasonably assume that the
+expected Kolmogorov complexity becomes close in the limit to the
+unconditional entropy.  Therefore, we can, with some experimental
+confirmation, use $H(x)$ as an estimator for $K(x))$ in Eq. \ref{eq:algentropy}.
+
+\section{The Model}
+\label{sec:model}
+We define
+five sources of energy consumption within sa system:
+\begin{itemize}
+\item $e_{proc}$: Energy dissipated in the processor due to calculations
+\item $e_{memory}$: Energy dissipated in process of accessing memory
+\item $e_{electrical}$: Energy dissipated by ... 
+\item $e_{board}$: Energy disipated by perphierals that support the
+  operation of the board such as fans and other cooling devices
+\item $e_{net}$: Energy required for transferring data accross the
+  network, in particular,  the energy dissipated by calculations in support
+  of the network protocol (encode/decode packets)
+\end{itemize}
+The energy consumed by a processor is modeled as a linear function of these
+metrics over time:
+\begin{equation}
+\label{eq:linmodel}
+e_{processor}=  A*e_{proc}+B*e_{memory}+C*e_{electrical}+D*e{board}+E*e{net}
+\end{equation}
+where$A$,$B$,$C$, and $D$ are unknown constants. 
+
+\subsection{Computation and Entropy}
+\label{sec:cpuentropy}
+The quantity $e_{proc}$ has two major components:
+\begin{itemize}
+\item $e_{CPU}$: energy dissipation due to computation
+\item $e_{cache}$: energy dissipation due to cache access.
+\end{itemize}
+Consider again our ideal processor $P$.  For each clock cycle $t$, the
+processor is fetching, decoding, and executing an instruction from our
+program.  If the processor is pipelined, we can assume that each of
+these steps occurs at time $t$ for multiple instructions.  Each of these
+steps can be viewed as performing some work on the processor with a
+resulting thermal load.
+
+Our physical model of $P$ considers the micro-states of the physical system as
+being the state of memory over time.  As result, we can limit ourselves to
+instructions that modify memory over time. Suppose that we define $p(i)$ to be
+the probability of accessing memmory location $i$.  We can estimate the value
+of $p(i)$ using frequency counts of memory locations accesed over time.
+
+This information is used to compute the conditional entropy that would be
+involved in accessing a memory location given the previous memory accesses:
+\begin{equation}
+  \label{eq:memoryent}
+  H(loc_{y}|loc_{x})=-\sum_{i=1}^{|{0,1}^{*}|}p(i)\sum_{j=1}^{|{0,1}^{*}|}p(loc_{y}|loc_{x})log(p(loc_{y}|loc_{x}))
+\end{equation}
+In turn, we apply this equation to \ref{eq:algentropy} such that
+\begin{equation}
+  \label{eq:cpuenergy}
+  entropy_{cpu}=H(loc_{y}|loc_{x})+\frac{S_{b}(x)}{k\ln(2)}
+\end{equation}
+
+\subsubsection{Effect of Caching}
+\label{sec:cache}
+So far our model has operated upon the assumption that memory access is
+both direct and without latenchy.  In real processors, this assumption
+does not hold as for performance reasons the processor's memory may be
+fronted by some form of cache.    In this case, the cost of memory
+access might not be linear and this needs to be reflected in our model.
+
+Consider the typical arrangement of a processor with $n$ levels of cache. So,
+for each cache level, if the probability of accessing a memory location is
+defined as $p$, the probability of the contents of that location being in
+cache can be calculated by
+\begin{equation}
+  \label{eq:cacheprob}
+  P(x)=\prod_{i=1}^{n}p(1-p)^{i}
+\end{equation}
+where $n$ is the number of levels in the cache hierarchy.
+
+\label{sec:completemodel}
+The cost of the memory access increases the further away from the processor
+you proceed in the cache hierarchy.   So, we can adjust
+Eq. \ref{eq:cpuenergy} to reflect the possibility that a memory location is
+cached:
+\begin{equation}
+  \label{eq:cacheent}
+  entropy_{CPU}=H(P(loc_{y})|P(loc_{y})+\frac{S_{b}(x)}{k\ln(2)}
+\end{equation}
+\textit{Need to add the calculation to go from entropy to energy}
+
+\subsection{Memory}
+\label{sec:memoryenergy}
+\textit{How does this link back to the previous section?}
+
+\subsection{Network}
+\label{sec:networkengery}
+The energy dissipated as result of network activity is captured by the
+quantity $e_{net}$.   \textit{How to calculate?}
+
+\subsection{Board Components}
+\label{sec:board}
+The quantity $e_{board}$ captures the energy dissipated by the need to
+power supporting components on the board.  This quantity takes into
+account power consumed by active cooling devices (fans, water cooling)
+and is calculated by ...
+
+\subsection{Electrical}
+\label{sec:electrical}
+There is a basic electrical cost related to running the computer.  The
+quantity $e_{elect}$ in our model takes these quantities into account.
+$e_{elect}$ is calculated as summation of the active and reactive power
+consumption in the peripherals supporting the processor.
+
+
+\subsection{Putting it all together}
+\label{sec:wholemodel}
+
+
+\section{Experimental Study}
+\label{sec:experiment}
+We have performed an experimental study of our model's behavior to answer the
+following questions:
+\begin{itemize}
+\item Does the model predict accurately predict the processor
+  temperature over time?
+\item How 
+\item 
+\end{itemize}
+
+\subsection{Experimental Methodology}
+\label{sec:Method}
+A set of experiments has been performed to test the hypothesis behind each of
+the questions asked at the start of this section.  The experiments have been
+designed upon the principles of Statistical Design of Experiments (DoE).
+DoE \cite{Montgomery2005} is a methodology to efficiently determine the effects
+input factors have upon one or more response metrics.  There are three
+principles in DoE: Replication, Randomization, and Blocking.  Replication
+ensures that the results were not a fluke and reduces the error.
+Randomization ensures that no unintended bias is introduced by uncontrollable
+factors.  Blocking organizes the trials so that common factors can be examined
+concurrently.
+
+There are two types of input factors, qualitative and quantitative.
+Quantitative factors are those that can be given a value like number of
+wireless nodes or distance from a gateway.  Qualitative factors are those
+which cannot be given a value as in surface terrain or routing protocol.  The
+R-Squared value tells us how much of the variability in our data can be
+contributed to the input factors.
+
+A factorial design consists several input factors are tested at different
+levels to and the response metrics are examined.  Each input factor typically
+has two levels, a high and a low.  Other common designs include three level
+factors and mixed level factors.  Full factorial design means that all
+possible combination of factors are tested.  In a $2^{3}$ experiment, 8 trials
+are performed.  In a half factorial design, only 4 trials would be performed.
+This is done when there is not enough time or resources available to complete
+all of the trials.
+
+Once all of the trials have been completed, Analysis of Variance is performed
+to determine the factor effects and regression model.  The factor effects tell
+us what main effects (those based on individual factors) and interaction
+effects (those based on the interaction between the individual factors) are
+important to our regression model.  The regression model will give us a
+formula that can be used to estimate the response metric based on the input
+factors without running any experiments.  DoE has an advantage of typical
+one-factor-at-a-time experiments in that it observes the effect of the
+interactions of the input factors.  These factors are often overlooked in
+one--factor--at--a--time experiments and could be the most important effect
+in the regression model.
+
+\subsection{Experiment Environment}
+\label{sec:expdesign}
+\begin{table}
+  \centering
+  \label{tab:hardware}
+  \begin{tabular}{|l|l|l|}
+    \hline
+    \multicolumn{2}{c}{\textbf{Dell PowerEdge 1950}}&\textbf{Sun v20s}\\  
+    \hline 
+    CPU&2 Quad-core Intel Xeon &2 AMD Opteron\\
+    \hline 
+    CPU L2 cache&2x4MB&2x2MB\\
+    \hline 
+    Memory&16GB&8GB\\
+    \hline 
+    Internal\\disk&160GB&2060GB\\
+    \hline 
+    Network\\ Interface Card&2x1000Mbps&2x1000Mbps\\
+    \hline 
+    Video&On-board&On-board \\
+    \hline 
+    Height&1 rack units&1 rack unit\\
+    \hline
+  \end{tabular}
+  \caption{Test Hardware Configuration}
+\end{table}
+The test hardware used to evaluate our model is a pair of servers
+consisting of the configurations shown in Table \ref{tab:hardware}.
+
+The power consumed is measured with a WattsUP \cite{WattsUp2006a} power meter
+that is connected between the AC Main and each compute node in our test
+cluster.  The power meter measures the total and average wattage, voltage, and
+amperage over the run of a workload.  The internal memory of the power meter
+is cleared at the start of the run and the measures during the run are
+downloaded after the run completes from the meter's internal memory into a
+relational database \cite{WattsUp2006b}.
+
+Four metrics are sampled at 15 second intervals during the experiment:
+\begin{itemize}
+\item CPU temperature (for all processors in the system)
+\item Ambient temperature in the computer case
+\item System utilization
+\item Network throughput 
+\end{itemize}
+Data is collected from the system baseboard controller using the IPMI
+interface and is collected on a central server using the Ganglia server
+monitoring system \cite{Ganglia2003} is used to collect the data over a
+twenty-four hour period.
+
+\subsection{Model Prediction Accuracy}
+\label{sec:linearreg}
+Our first experiment considers the prediction accuracy of our model.
+Data is collected from the test hardware and a matching set of
+predictions is generated from the model. The variances between the two
+data sets are analyzed using a paired t-test ANOVA.
+
+The data collected for the experiment can be found in \ref{tab:exp1},
+the ANOVA for the experiment is in \ref{tab:exp1anova}, and the fit
+statistics for the model is in \ref{tab:exp1fit}.
+
+
+\emph{Analysis of what the experiment implies will go here.  We expect to see
+  slightly worse power savings than turning off the machines but expect to
+  gain that back with improvements in QoS in the next experiment.}
+
+\section{Related Work}
+\label{sec:related}
+
+\section{Conclusions and Future Work}
+\label{sec:conclusions}
+
+\label{sec:references}
+\nocite{*}
+\bibliographystyle{latex8}
+\bibliography{infotheory.bib}
+
+\begin{table}
+  \centering
+  \begin{tabular}{ll|ll}
+    data&model&data&model\\
+    \hline
+    data1&model1&data2&model2 \\
+  \end{tabular}
+  \caption{Power Consumed and CPU temperature}
+  \label{tab:exp1}
+\end{table}
+
+\begin{table}
+  \centering
+  \begin{tabular}{llllll|lllll}
+    \multicolumn{1}{c}{} & \multicolumn{5}{c|}{Master Model}&\multicolumn{5}{c}{Predictive Model} \\
+    Source&$DF$&$MS$&$MS$&$F$&$PR>F$&$DF$&$SS$&$MS$&$F$&$Pr>F$ \\
+    \hline
+    $IFP$&1&152325.300&152325.300 &13.0392&0.00257&1&152325.300&152325.300&13.172&0.002255 \\
+    $WXEN$&1&9800.000&9800&0.839&0.374&&&&& \\
+    &&&&&&&&&& \\
+    $Model$&2&162125.300&81062.670&6.939065&0.00735&1&152325.300&152325.300&13.1719&0.00226\\
+    $Error$&15&175231.100&11682.070&&&16&185031.100&11567.440&&\\
+    $(Lack of Fit)$&3&52207.110&17402.370&1.975&0.220&1&22002.780&22002.780&2.0244&0.1753\\
+    $Total$&17&337356.400& & & &17&337356.400&&& \\
+  \end{tabular}
+  \caption{ANOVA Analysis for Experiment 2}
+  \label{tab:exp1anova}
+\end{table}
+
+\begin{table}
+  \centering
+  \begin{tabular}{l|ll}
+    &Master Model&Predictive Model \\
+    $RMSE$&108.084&107.538\\
+    $R-square$&48.06\%&45.15\% \\
+    $Adjusted R-square$&41.13\%&41.72\% \\
+    $Coefficient of variation$&3.301832&3.285167 \\
+  \end{tabular}
+  \caption{Fit Statistics for Experiment 1}
+  \label{tab:exp1fit}
+\end{table}
+
+\end{document}
+% Following comment block used by GNU-EMACS and AUCTEX packages
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+
+

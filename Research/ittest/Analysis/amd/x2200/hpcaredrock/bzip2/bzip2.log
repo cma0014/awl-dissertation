@@ -1,0 +1,16 @@
+The sample interval is 5 seconds
+Resetting power meter...
+Collection of IPMI data started
+Collection of PMC data started
+Collection of system statistics started
+Sleeping for 300 seconds to let everyone settle
+Now starting to log iostat data
+Now starting to log vmstat data
+Now starting to log page fault data
+Now starting to log krenel memory allocation data
+Now starting to log disk data
+And now we start the 401.bzip2 benchmark at 22:16
+The 401.bzip2 benchmark has completed at 22:34
+Sleeping for 600 secondsto allow the machine to cool down.
+Now shutdowning the data collection utilities.
+Data collection complete at 22:44

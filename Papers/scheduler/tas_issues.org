@@ -1,0 +1,29 @@
+#+TITLE:     issues.org
+#+AUTHOR:    Adam Lewis
+#+SEQ_TODO: TODO(t) WAITING(w) CANCELED(c) DONE(d)
+* Concerns about the validity of the SPEC data
+  - Summary :: Dr. Tzeng is very concerned by the difference in SPEC
+               CPU206 results we report in our paper and the results
+               reported for prior work. Need additional support for
+               results and enhance document detailing why differences exist.
+** Action items
+   - TODO Analyze and document how SPEC CPU2006 benchmarks to confirm
+     they are by default single-threaded.
+   - TODO Analyze and document prior work (particularly CoolLoop and
+     Predict-and-Act) 
+     to better understand how those authors approach this issue.
+* Detail about scheduler design needed for both this paper and dissertation.
+  - Summary :: Discussion about the use of queues in the thread
+               selection process is weak.  Additional text and figures
+               required to address this issue.
+** Action items
+   - TODO Revise document with detail and discuss with Dr. Tzeng.
+* Additional results needed to support a journal submission
+  - Summary :: Results to date collected on a single core Intel Xeon
+               server-class processor.  Would be helpful to report
+               results on other processor architecture and on processor
+               with additional cores.
+** Actions items
+   - WAITING Install FreeBSD & our s/w on new hardware
+   - WAITING Run benchmarks on new hardware
+   - WAITING Analyze and report on data

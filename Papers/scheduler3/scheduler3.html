@@ -1,0 +1,112 @@
+<ol class='xoxo'>
+  <li>THERMAL-AWARE SCHEDULING
+    <ol>
+      <li>Terminology
+	<ol>
+	  <li>thread</li>
+	  <li>task</li>
+	  <li>timeslice</li>
+	  <li>quantum</li>
+	  <li>run-queue</li>
+	  <li>scheduling policy</li>
+	</ol>
+      </li>
+      <li>Scheduling policies
+	<ol>
+	  <li>constant time scheduling
+	    <ol>
+	      <li>Linux O(1) scheduler</li>
+	    </ol>
+	  </li>
+	  <li>linear time scheduling
+	    <ol>
+	      <li>Round-robin scheduler</li>
+	      <li>Multilevel feedback queue</li>
+	    </ol>
+	  </li>
+	  <li>Proportional share policies
+	    <ol>
+	      <li>fair scheduling/stride scheduling
+		<ol>
+		  <li>Terminology
+		    <ol>
+		      <li>Stride</li>
+		      <li>Virtual time</li>
+		    </ol>
+		  </li>
+		  <li>Start-time fair queuing</li>
+		  <li>completely fair scheduler</li>
+		  <li>brain f*** scheduler
+		    <ol>
+		      <li>Loosely based on idea of earliest eligible virtual deadline first</li>
+		      <li>Signal queue of queued but not running processes</li>
+		      <li>Avoid complexity of per-CPU queues </li>
+		      <li>Optimized for mobile and desktop, light NUMA & fewer than 16 cores</li>
+		    </ol>
+		  </li>
+		</ol>
+	      </li>
+	    </ol>
+	  </li>
+	</ol>
+      </li>
+      <li>Approaches 
+	<ol>
+	  <li>real-time and embedded systems</li>
+	  <li>adjusting heuristics
+	    <ol>
+	      <li>Heat and Run</li>
+	      <li>HybDTM</li>
+	      <li>ThreshHot </li>
+	      <li>Task Vectors</li>
+	    </ol>
+	  </li>
+	  <li>avoiding thermal emergencies
+	    <ol>
+	      <li>thread migration </li>
+	      <li>Adjust load balancing based on thread migration</li>
+	    </ol>
+	  </li>
+	</ol>
+      </li>
+      <li>Opportunities
+	<ol>
+	  <li>assets
+	    <ol>
+	      <li>power model
+		<ol>
+		  <li>thermal extension</li>
+		</ol>
+	      </li>
+	    </ol>
+	  </li>
+	  <li>Energy as resource
+	    <ol>
+	      <li>Prior work
+		<ol>
+		  <li>ECOSystem and currentcy \cite{Zeng2002}</li>
+		  <li>Cinder capacitors \cite{Rumble2009}</li>
+		  <li>Energy limits and task vectors \cite{Bellosa2003;Klee2008;Merkel2008}</li>
+		</ol>
+	      </li>
+	      <li>Thermal equivalence of application</li>
+	    </ol>
+	  </li>
+	  <li>Avoidance of DTM events
+	    <ol>
+	      <li>The time differential</li>
+	      <li>How this notion of fair scheduling affect these schemes?</li>
+	    </ol>
+	  </li>
+	</ol>
+      </li>
+      <li>Proposed contributions
+	<ol>
+	  <li>Thermal model</li>
+	  <li>Thermal load of application (TheA)</li>
+	  <li>Energy-Aware Fair Scheduling (EAFS)</li>
+	</ol>
+      </li>
+    </ol>
+  </li>
+</ol>

@@ -1,0 +1,47 @@
+function prettyprt(results)
+    % Now pretty print things
+    fprintf('\nError statistics:\n');
+    numbm = size(results,1);
+    fprintf('\nbm mean median std var pcterr\n');
+    for i = 1:numbm
+        subplot(2,2,i);
+        bmname = results{i,1};
+        bmerror = results{i,3};
+        errstats = results{i,4};
+        pcnterr = results{i,5};
+        h = results{i,6};
+        p = results{i,7};
+        ci = results{i,8};
+        power = results{i,9};
+        powerhat = results{i,10};
+        fprintf('%s\t%10.6f\t%10.6f\t%10.6f\t%10.6f\t%10.6f\n',...
+            bmerror,...
+            errstats, ...
+            pcnterr);
+        t = 5*(1:size(power));
+        plot(t,power,'b',t,powerhat,'r-');
+        title(bmname);
+        ylabel('Power(watts)');
+        % xlabel('Time(s)');
+        switch i
+          case {1}
+            set(gca,'YTickMode','auto');
+            set(gca,'XTick',[]);
+            % ylabel('Power(watts)');
+          case {2}
+            set(gca,'YTickMode','auto');
+            set(gca,'XTick',[]);
+          case {3}
+            set(gca,'XTickMode','auto');
+            set(gca,'YtickMode','auto');
+            xlabel('Time(s)');
+            % ylabel('Power(watts)');
+          case {4}  
+            set(gca,'YTickMode','auto');
+            xlabel('Time(s)');
+          otherwise
+            set(gca,'XTick',[],'YTick',[]);
+        end
+    end
+    legend('Actual','Estimated');
+   

@@ -1,0 +1,403 @@
+File:	rev27issues.txt
+Version Control:
+	$Author: awl8049 $
+	$Date: 2011/11/16 08:28:52 $
+	$Revision: 3.1 $
+
+
+****
+Issue#:	25.1
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Additional discussion about meaning of figures in Section 5
+
+Comment: 
+ 
+
+****
+Issue#: 25.2
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Improve readability of figures
+
+Comment: 
+ 
+
+****
+Issue#: 25.3
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Additional discussion about source of data for ARMA and MARS in Section 5.
+
+Comment: 
+ 
+
+****
+Issue#:	26.1
+Source:	Soumik
+Date:	08/16/10
+
+Issue:
+The material is presented without adequate rationale  or
+development. 
+
+Comments:
+(AWL 08/16/10) First, general comment that could apply just as well to
+the comments provided by the reviewer.  Second, much of what is being
+presented here, esp. in sections about the chaotic behavior of the time
+series is application of the technique, comments more oriented towards 
+****
+Issue#:	26.2
+Source:	Soumik
+Date:	08/16/10
+
+Issue:
+For the Lyapunov exponent, what is the function being differentiated?
+and does it hold under all conditions? What are the restrictions on
+lambda?
+
+Comments:
+(AWL 08-16-2010) No update for the 1PM meeting.
+
+****
+Issue#:	26.3
+Source:	Soumik
+Date:	08/16/10
+
+Issue:
+  For the Kernel density function, H is supposed to be a positive
+  definite matrix (dxd). Is that really true under all cases here? Could
+  there have been another Kernel density function? The approaches
+  currently mentioned are purely textbook.
+
+Comments:
+(AWL 08-16-2010) Certainly, other kernel density functions are possible;
+function chosen best fits this space and represents good balance from a
+computational standpoint.   Again, time series data fits into the
+model... is there a specific counter-example he has in mind disproving
+positive definite?   Agreed, the method is purely textbook.  We're not
+trying to find a new way to use chaotic time series; what's novel is
+using these techniques in this space.
+
+****
+Issue#:	26.4
+Source:	Soumik
+Date:	08/16/10
+
+Issue:  
+- Eq. 13 looks wrong [ should be H^(-1/2) ]
+
+Comments:
+(AWL 08-16-2010) Agreed, editing error.
+
+****
+Issue#:	26.5
+Source:	Soumik
+Date:	08/16/10
+
+Issue:
+- It is unclear why a local weighted averaging method is being used
+  since it is not clear how "local" is local. (akin to doing a local
+  convex optimization over a global function trying to find a global
+  minima).
+
+Comments:
+(AWL 08-16-2010) Not exactly certain what Soumik's is asking at this
+point.  Need to discuss with him directly to clarify.
+
+****
+Issue#:	26.7
+Source:	Soumik
+Date:	08/16/10
+
+Issue:
+  Given that the function f(x) will be determined off-line, the
+  polynomial complexity of  f(x) is only of academic interest and has no
+  bearing on the utility of this approach. The Key missing link (if
+  there is one), is, how is f(x) connected to the "betas".
+
+Comments:
+(AWL 08/16/10):  The function will be determined off-line, however, the
+it will be evaluated on-line. Thus, there is some interest in efficiency
+of computation.  Also, there is far too much emphasis on
+Soumik's part on the regression coefficients.  Yes, they are important
+as they map each of the quantities into the energy domain.  Beyond, that
+it is unclear as to what he is implying in this case.
+
+****
+Issue#:	26.8
+Source:	Soumik
+Date:	08/16/10
+
+Issue: 
+- Eq 14 is minimized with respect to what? and under what constraints?
+
+Comments:
+(AWL 08-16-2010) Under investigation as of 1PM.
+
+****
+Issue#:	26.9
+Source:	Soumik
+Date:	Monday, August 16, 2010
+
+Issue:
+- A contour plot of f(x) would be a good indicator of how good f(x) is.
+
+Comments:
+(AWL 08-16-2010) OK, will investigate how to add.
+
+**** 
+Issue#:	26.10
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Also, I'd like you to reexamine Eq. (15) and its associated
+complexity explanation.  I'm not sure what you stated about
+its complexity is clear (or correct).
+
+Comment: 
+(AWL 08-16-2010) Need to discuss with Dr. Tzeng.
+
+
+**** 
+Issue#:	HP.A.1
+Source:	Hotpower2010 Reviewer A: Strong Reject
+Date:	08/16/10
+
+Issue:
+This paper suggests using different regression models and chaotic
+theory to predict system energy consumption. This approach treats the
+consequence as the reason. A system consumes energy for running
+programs. Hence, prediction should be conducted on the behavior of
+programs' activities.
+
+Comment: 
+
+**** 
+Issue#:	HP.A.2
+Source:	Hotpower2010 Reviewer A: Strong Reject
+Date:	08/16/10
+
+Issue:
+This paper shows power consumption can be modeled by using
+different regression models. This is not a new concept. Many studies
+have shown that.
+
+
+Comment: 
+
+**** 
+Issue#:	HP.A.3
+Source:	Hotpower2010 Reviewer A: Strong Reject
+Date:	08/16/10
+
+Issue:
+This paper does not provide sufficient explanation about what to
+do with the prediction results. Also, the paper does not compare the
+proposed approach with existing solutions, for example, reactive to
+workload demands.
+
+Comment: 
+
+**** 
+Issue#:	HP.A.4
+Source:	Hotpower2010 Reviewer A: Strong Reject
+Date:	08/16/10
+
+Issue:
+The paper does not fit the scope of HowPower well. This paper
+should be submitted to a conference on prediction theory or stochastic
+modeling.
+
+Comment: 
+
+**** 
+Issue#:	HP.A.5
+Source:	Hotpower2010 Reviewer A: Strong Reject
+Date:	08/16/10
+
+Issue:
+The writing quality requires improvement. Figure 6 is completely
+unreadable. The titles for X and Y axes, as well as the legends are too
+small to see.
+
+Comment: 
+
+
+**** 
+Issue#:	HP.B.1
+Source:	Hotpower1010 Reviewer B: Weak Reject
+Date:	08/16/10
+
+Issue:
+I had a hard time following much of the paper, since it is
+heavily focused on modeling and time series analysis. In fact, the
+abstract and intro talk a lot about thermal management, but this topic
+is essentially forgotten throughout the rest of the paper.
+
+
+Comment:
+
+**** 
+Issue#:	HP.B.2
+Source:	Hotpowwe1010 Reviewer B: Weak Reject
+Date:	08/16/10
+
+Issue:
+The results do confirm that the proposed method is better than
+the alternatives at predicting power. However, how important are the
+small reductions in prediction error? Moreover, no insight is provided
+as to why predictions are much better for the AMD-based server than the
+Intel-based server.
+
+
+Comment:
+
+**** 
+Issue#:	HP.B.3
+Source:	Hotpowwe1010 Reviewer B: Weak Reject
+Date:	08/16/10
+
+Issue:
+Minor: The ARMA section of Table 2 is clearly wrong (it's
+currently a copy of the same section of Table 1).
+
+Comment:
+
+
+**** 
+Issue#:	HP.B.4
+Source:	Hotpower2010 Reviewer C: Weak Accept
+Date:	08/16/10
+
+Issue:
+How representative is the HPC benchmark you used? to thoroughly
+evaluate your technique, it is necessary to exercise all the major
+components of system, including the processor, memory, hdd, networking,
+bus, power supply etc. 
+
+Comment:
+
+**** 
+Issue#:	HP.C.1
+Source:	Hotpower2010 Reviewer C: Weak Accept
+Date:	08/16/10
+
+Issue:
+The table 1 lists the benchmark suites that do not match the ones
+listed in the text (1st paragraph of Sec 3).
+
+
+Comment:
+
+**** 
+Issue#:	HP.C.2
+Source:	Hotpower2010 Reviewer C: Weak Accept
+Date:	08/16/10
+
+Issue:
+I also have questions about the complexity of the nonlinear
+estimation method, which is more complex than the linear models. I did
+not see any emprical data on the time it takes to compute the model.
+
+Comment:
+
+
+**** 
+Issue#:	HP.D.1
+Source:	Hotpower2010 Reviewer D: Strong Accept
+Date:	08/16/10
+
+Issue:
+The CAPP models achieve much better results, but it as a
+computation overhead. One thing that it is not shown in the paper is the
+program phases.
+
+Comment:
+
+**** 
+Issue#:	HP.D.2
+Source:	Hotpower2010 Reviewer D: Strong Accept
+Date:	08/16/10
+
+Issue:
+Different applications have different chaotic parameters. The
+paper find the parameters with a training set. It may be interesting to
+find them and adjusting them as the application runs.
+
+Comment:
+
+**** 
+Issue#:	27.1
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Editing issues throughout document.
+
+Comment: 
+ 
+
+**** 
+Issue#:	27.2
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Move all discussion of linear regression to an appendix.  Remove
+discussion about ARIMA.
+
+Comment: 
+ 
+
+**** 
+Issue#:	27.3
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Add additional discussion in appendix about MARS.
+
+Comment: 
+ 
+
+**** 
+Issue#:	27.4
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Move discussion about PSU in section 3 to new section at end of document.
+
+Comment: 
+ 
+
+**** 
+Issue#:	27.5
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Revise, extend, and CORRECT the math for the CAPP.
+
+Comment: 
+ 
+
+**** 
+Issue#:	27.6
+Source:	Dr. Tzeng
+Date:	08/16/10
+
+Issue:
+Separate time complexity discussion into separate section. Revise,
+extend, and CORRECT the math in this discussion.
+
+Comment: 
+ 

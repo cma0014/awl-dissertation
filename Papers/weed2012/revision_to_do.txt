@@ -1,0 +1,62 @@
+                           revision_to_do.org
+                           ==================
+
+Author: 
+Date: 2012-04-24 Tue
+
+
+Table of Contents
+=================
+1 Comparison TAS performance against results in [Merkel2010]
+2 Address reviewer's request to clarify Figure 1
+3 Add clarification from main paper re: streamcluster performance
+4 Address reviewer's concern re: disconnection with [Lewis2010]
+5 Discussion about complexity of hacking into FreeBSD code.
+6 Additional discussion re: thermal model clarification.
+7 More discussion about differ from prior art
+8 Clarify discussion in Sec. IID re. contention wrt DVFS
+9 Reviewer rejects clam about OS tick for core temp rise, revisit.
+10 Additional detail requested explaining Eqns. 3 and 4
+11 Clarify purpose of idle queue
+12 Is there more than one thread balancing on each tick?
+13 Clarify that temp. reduction numbers from physical sensor measurement.
+
+
+1 TODO Comparison TAS performance against results in [Merkel2010] :Reviewer1:
+-----------------------------------------------------------------------------
+
+2 TODO Address reviewer's request to clarify Figure 1 :Reviewer1:
+-----------------------------------------------------------------
+
+3 TODO Add clarification from main paper re: streamcluster performance :Reviewer1:Reviewer5:
+--------------------------------------------------------------------------------------------
+
+4 TODO Address reviewer's concern re: disconnection with [Lewis2010] :Reviewer3:
+--------------------------------------------------------------------------------
+
+5 TODO Discussion about complexity of hacking into FreeBSD code. :Reviewer3:
+----------------------------------------------------------------------------
+
+6 TODO Additional discussion re: thermal model clarification. :Reviewer3:
+-------------------------------------------------------------------------
+
+7 TODO More discussion about differ from prior art :Reviewer5:
+--------------------------------------------------------------
+
+8 TODO Clarify discussion in Sec. IID re. contention wrt DVFS :Reviewer5:
+-------------------------------------------------------------------------
+
+9 TODO Reviewer rejects clam about OS tick for core temp rise, revisit. :Reviewer5:
+-----------------------------------------------------------------------------------
+
+10 TODO Additional detail requested explaining Eqns. 3 and 4 :Reviewer5:
+------------------------------------------------------------------------
+
+11 TODO Clarify purpose of idle queue :Reviewer5:
+-------------------------------------------------
+
+12 TODO Is there more than one thread balancing on each tick? :Reviewer5:
+-------------------------------------------------------------------------
+
+13 TODO Clarify that temp. reduction numbers from physical sensor measurement. :Reviewer5:
+------------------------------------------------------------------------------------------

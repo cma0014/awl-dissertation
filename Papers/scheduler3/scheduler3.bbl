@@ -1,0 +1,210 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{AMD}{AMD}{2006}]{AMD2008}
+AMD 2006.
+\newblock {\em {BIOS and Kernel Developer's Guide for AMD Athlon 64 and AMD
+  Opteron Processors}\/}, 26094 Rev 3.30 ed.
+\newblock AMD.
+
+\bibitem[\protect\citeauthoryear{Azimi, Stumm, and Wisniewski}{Azimi
+  et~al\mbox{.}}{2005}]{Azimi2005}
+{\sc Azimi, R.}, {\sc Stumm, M.}, {\sc and} {\sc Wisniewski, R.~W.} 2005.
+\newblock {Online Performance Analysis by Statistical Sampling of
+  Microprocessor Performance Counters}.
+\newblock In {\em {ICS '05: Proceedings of the 19th Annual Intl. Conf. on
+  Supercomputing}}. ACM, New York, NY, USA, 101--110.
+
+\bibitem[\protect\citeauthoryear{Bellosa, Weissel, Waitz, and Kellner}{Bellosa
+  et~al\mbox{.}}{2003}]{Bellosa2003}
+{\sc Bellosa, F.}, {\sc Weissel, A.}, {\sc Waitz, M.}, {\sc and} {\sc Kellner,
+  S.} 2003.
+\newblock {Event-driven energy accounting for dynamic thermal management}.
+\newblock {\em {Proceedings of the Workshop on Compilers and Operating Systems
+  for Low Power (COLP'03)}\/}.
+
+\bibitem[\protect\citeauthoryear{Bircher and John}{Bircher and
+  John}{2007}]{Bircher2007}
+{\sc Bircher, W.} {\sc and} {\sc John, L.} 2007.
+\newblock {Complete System Power Estimation: A Trickle-Down Approach Based on
+  Performance Events}.
+\newblock {\em Ispass\/}~{\em 0}, 158--168.
+
+\bibitem[\protect\citeauthoryear{Bircher and John}{Bircher and
+  John}{2008}]{Bircher2008}
+{\sc Bircher, W.~L.} {\sc and} {\sc John, L.~K.} 2008.
+\newblock Analysis of dynamic power management on multi-core processors.
+\newblock In {\em ICS '08: Proceedings of the 22nd annual international
+  conference on Supercomputing}. ACM, New York, NY, USA, 327--338.
+
+\bibitem[\protect\citeauthoryear{Contreras and Martonosi}{Contreras and
+  Martonosi}{2005}]{Contreras2005}
+{\sc Contreras, G.} {\sc and} {\sc Martonosi, M.} 2005.
+\newblock {Power Prediction for Intel XScale\textregistered Processors Using
+  Performance Monitoring Unit Events}.
+\newblock In {\em {ISLPED '05: Proc. of the 2005 Intl. Symp. on Low Power
+  Electronics and Design}}. ACM, New York, NY, USA, 221--226.
+
+\bibitem[\protect\citeauthoryear{Corporation}{Corporation}{}]{Yokogawa2009}
+{\sc Corporation, Y.~E.}
+\newblock {\em {WT210/WT230 Digital Power Meter User's Manual}\/}, 4th ed. ed.
+\newblock Yokogawa Electric Corporation.
+
+\bibitem[\protect\citeauthoryear{Coskun, Rosing, Whisnant, and Gross}{Coskun
+  et~al\mbox{.}}{2008a}]{Coskun2008d}
+{\sc Coskun, A.~K.}, {\sc Rosing, T.~S.}, {\sc Whisnant, K.~A.}, {\sc and} {\sc
+  Gross, K.~C.} 2008a.
+\newblock Static and dynamic temperature-aware scheduling for multiprocessor
+  {SoCs}.
+\newblock {\em IEEE Transactions on Very Large Scale Integration (VLSI)
+  Systems\/}~{\em 16,\/}~9, 1127--1140.
+
+\bibitem[\protect\citeauthoryear{Coskun, Rosing, Whisnant, and Gross}{Coskun
+  et~al\mbox{.}}{2008b}]{Coskun2008a}
+{\sc Coskun, A.~K.}, {\sc Rosing, T.~S.}, {\sc Whisnant, K.~A.}, {\sc and} {\sc
+  Gross, K.~C.} 2008b.
+\newblock Temperature-aware mpsoc scheduling for reducing hot spots and
+  gradients.
+\newblock {\em Proc. of the 2008 Asia and South Pacific Design Automation
+  Conference\/}, 49--54.
+
+\bibitem[\protect\citeauthoryear{Donald and Martonosi}{Donald and
+  Martonosi}{2006}]{Donald2006}
+{\sc Donald, J.} {\sc and} {\sc Martonosi, M.} 2006.
+\newblock {Techniques for Multicore Thermal Management: Classification and New
+  Exploration}.
+\newblock In {\em {ISCA '06: Proc. of the 33rd Intl. Symp. on Computer
+  Architecture}}. IEEE Computer Society, Washington, DC, USA, 78--88.
+
+\bibitem[\protect\citeauthoryear{Economou, Rivoire, Kozyrakis, and
+  Ranganathan}{Economou et~al\mbox{.}}{2006}]{Economou2006}
+{\sc Economou, D.}, {\sc Rivoire, S.}, {\sc Kozyrakis, C.}, {\sc and} {\sc
+  Ranganathan, P.} 2006.
+\newblock {Full-System Power Analysis and Modeling for Server Environments}.
+\newblock In {\em Workshop on Modeling Benchmarking and Simulation (MOBS) at
+  ISCA}.
+
+\bibitem[\protect\citeauthoryear{Gomaa, Powell, and Vijaykumar}{Gomaa
+  et~al\mbox{.}}{2004}]{Gomaa2004}
+{\sc Gomaa, M.}, {\sc Powell, M.~D.}, {\sc and} {\sc Vijaykumar, T.~N.} 2004.
+\newblock Heat-and-run: leveraging smt and cmp to manage power density through
+  the operating system.
+\newblock {\em SIGOPS Oper. Syst. Rev.\/}~{\em 38,\/}~5, 260--270.
+
+\bibitem[\protect\citeauthoryear{Henning}{Henning}{2006}]{Henning2006}
+{\sc Henning, J.~L.} 2006.
+\newblock {SPEC CPU2006 Benchmark Descriptions}.
+\newblock {\em SIGARCH Comp. Archit. News\/}~{\em 34,\/}~4, 1--17.
+
+\bibitem[\protect\citeauthoryear{Isci and Martonosi}{Isci and
+  Martonosi}{2006}]{Isci2006}
+{\sc Isci, C.} {\sc and} {\sc Martonosi, M.} 11-15 Feb. 2006.
+\newblock {Phase Characterization for Power: Evaluating Control-flow-based and
+  Event-counter-based Techniques}.
+\newblock {\em {The 12th Intl. Symp. on High-Performance Computer
+  Architecture}\/}, 121--132.
+
+\bibitem[\protect\citeauthoryear{Isci and Martonosi}{Isci and
+  Martonosi}{2003}]{Isci2003b}
+{\sc Isci, C.} {\sc and} {\sc Martonosi, M.} 3-5 Dec. 2003.
+\newblock {Runtime Power Monitoring in High-end Processors: Methodology and
+  Empirical Data}.
+\newblock {\em {MICRO-36: Proc. 36th IEEE/ACM Intl. Symp. on
+  Microarchitecture}\/}, 93--104.
+
+\bibitem[\protect\citeauthoryear{Kumar, Shang, Peh, and Jha}{Kumar
+  et~al\mbox{.}}{2006}]{Kumar2006}
+{\sc Kumar, A.}, {\sc Shang, L.}, {\sc Peh, L.-S.}, {\sc and} {\sc Jha, N.~K.}
+  2006.
+\newblock Hybdtm: a coordinated hardware-software approach for dynamic thermal
+  management.
+\newblock {\em Proceedings of 43th ACM/IEEE Design Automation Conference\/},
+  548--553.
+
+\bibitem[\protect\citeauthoryear{Lewis, Ghosh, and Tzeng}{Lewis
+  et~al\mbox{.}}{2008}]{Lewis2008}
+{\sc Lewis, A.}, {\sc Ghosh, S.}, {\sc and} {\sc Tzeng, N.-F.} 2008.
+\newblock Run-time energy consumption estimation based on workload in server
+  systems.
+\newblock In {\em {Proc. of the 2008 Workshop on Power Aware Computing and
+  Systems (Hotpower'08)}}.
+
+\bibitem[\protect\citeauthoryear{Li}{Li}{2008}]{LiK2008}
+{\sc Li, K.} 2008.
+\newblock Performance analysis of power-aware task scheduling algorithms on
+  multiprocessor computers with dynamic voltage and speed.
+\newblock {\em IEEE Transactions on Parallel and Distributed Systems\/}~{\em
+  19,\/}~11 (Nov), 1484--1497.
+
+\bibitem[\protect\citeauthoryear{McDougall and Mauro}{McDougall and
+  Mauro}{2007}]{McDougall2007}
+{\sc McDougall, R.} {\sc and} {\sc Mauro, J.} 2007.
+\newblock {\em Solaris Internals: Solaris 10 and OpenSolaris Kernel
+  Architecture}.
+
+\bibitem[\protect\citeauthoryear{Merkel and Bellosa}{Merkel and
+  Bellosa}{}]{Merkel2008b}
+{\sc Merkel, A.} {\sc and} {\sc Bellosa, F.}
+\newblock Memory-aware scheduling for energy efficiency on multicore
+  processors.
+\newblock {\em Proceedings of the 2008 Workshop on Power Aware Computing and
+  Systems (Hotpower'08)\/}.
+
+\bibitem[\protect\citeauthoryear{Rangan, Wei, and Brooks}{Rangan
+  et~al\mbox{.}}{2009}]{Rangan2009}
+{\sc Rangan, K.~K.}, {\sc Wei, G.-Y.}, {\sc and} {\sc Brooks, D.} 2009.
+\newblock Thread motion: fine-grained power management for multi-core systems.
+\newblock {\em SIGARCH Comput. Archit. News\/}~{\em 37,\/}~3, 302--313.
+
+\bibitem[\protect\citeauthoryear{Rivoire}{Rivoire}{2008}]{Rivoire2008a}
+{\sc Rivoire, S.} 2008.
+\newblock {Models and Metrics for Energy-efficient Computer Systems}.
+\newblock Ph.D. thesis, Stanford University.
+
+\bibitem[\protect\citeauthoryear{Rivoire, Ranganathan, and Kozyrakis}{Rivoire
+  et~al\mbox{.}}{2008}]{Rivoire2008b}
+{\sc Rivoire, S.}, {\sc Ranganathan, P.}, {\sc and} {\sc Kozyrakis, C.} 2008.
+\newblock {A Comparison of High Level Full-System Power Models}.
+\newblock In {\em {Proc. of USENIX Workshop on Power Aware Computing and
+  Systems (HotPower'08)}}.
+
+\bibitem[\protect\citeauthoryear{Rosing, Mihic, and De~Micheli}{Rosing
+  et~al\mbox{.}}{2007}]{Rosing2007}
+{\sc Rosing, T.}, {\sc Mihic, K.}, {\sc and} {\sc De~Micheli, G.} 2007.
+\newblock Power and reliability management of socs.
+\newblock {\em Very Large Scale Integration (VLSI) Systems, IEEE Transactions
+  on\/}~{\em 15,\/}~4 (April), 391--403.
+
+\bibitem[\protect\citeauthoryear{Singhal}{Singhal}{2008}]{Singhal2008}
+{\sc Singhal, R.} 2008.
+\newblock {Inside Intel Next Generation Nehalem Microarchitecture}.
+\newblock In {\em Intel Developer Forum, Shanghai, China}.
+
+\bibitem[\protect\citeauthoryear{Skadron, Stan, Sankaranarayanan, Huang,
+  Velusamy, and Tarjan}{Skadron et~al\mbox{.}}{2004}]{Skadron2004}
+{\sc Skadron, K.}, {\sc Stan, M.~R.}, {\sc Sankaranarayanan, K.}, {\sc Huang,
+  W.}, {\sc Velusamy, S.}, {\sc and} {\sc Tarjan, D.} 2004.
+\newblock {Temperature-aware Microarchitecture: Modeling and Implementation}.
+\newblock {\em {ACM Transactions on Architecture and Code Optimization}\/}~{\em
+  1,\/}~1, 94--125.
+
+\bibitem[\protect\citeauthoryear{{Sun Microsystems}}{{Sun
+  Microsystems}}{2009}]{Sun2009}
+{\sc {Sun Microsystems}}. 2009.
+\newblock {OpenSolaris CPU Power Management - Project Tesla}.
+
+\bibitem[\protect\citeauthoryear{Yang, Zhou, Chrobak, Zhang, and Jin}{Yang
+  et~al\mbox{.}}{2008}]{Yang2008}
+{\sc Yang, J.}, {\sc Zhou, X.}, {\sc Chrobak, M.}, {\sc Zhang, Y.}, {\sc and}
+  {\sc Jin, L.} 2008.
+\newblock Dynamic thermal management through task scheduling.
+\newblock {\em Proc. of the 2008 IEEE Int'l Symp. on Performance Analysis of
+  Systems and Software\/}, 191--201.
+
+\bibitem[\protect\citeauthoryear{Yao, Demers, and Shenker}{Yao
+  et~al\mbox{.}}{1995}]{Yao1995}
+{\sc Yao, F.}, {\sc Demers, A.}, {\sc and} {\sc Shenker, S.} 1995.
+\newblock A scheduling model for reduced cpu energy.
+\newblock {\em Proc. of the 36th IEEE Symp. on Foundations of Computer
+  Science\/}, 374.
+
+\end{thebibliography}

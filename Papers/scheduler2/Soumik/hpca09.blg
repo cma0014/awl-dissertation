@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: hpca09.aux
+The style file: latex8.bst
+Database file #1: hpca09.bib.bib
+Warning--entry type for "Sun2009" isn't style-file defined
+--line 2162 of file hpca09.bib.bib
+Warning--empty booktitle in Li2008
+Warning--empty year in Merkel2008
+You've used 30 entries,
+            2118 wiz_defined-function locations,
+            689 strings with 9652 characters,
+and the built_in function-call counts, 10970 in all, are:
+= -- 1113
+> -- 473
+< -- 14
++ -- 187
+- -- 156
+* -- 698
+:= -- 1726
+add.period$ -- 98
+call.type$ -- 30
+change.case$ -- 168
+chr.to.int$ -- 0
+cite$ -- 32
+duplicate$ -- 478
+empty$ -- 881
+format.name$ -- 156
+if$ -- 2414
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 27
+newline$ -- 151
+num.names$ -- 58
+pop$ -- 213
+preamble$ -- 1
+purify$ -- 139
+quote$ -- 0
+skip$ -- 347
+stack$ -- 0
+substring$ -- 625
+swap$ -- 148
+text.length$ -- 14
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 118
+warning$ -- 2
+while$ -- 103
+width$ -- 32
+write$ -- 338
+(There were 3 warnings)

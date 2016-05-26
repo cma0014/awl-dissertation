@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>specsummary.org</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="specsummary.org"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2012-03-19 Mon"/>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">specsummary.org</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 What do we mean by thread?</a>
+<ul>
+<li><a href="#sec-1-1">1.1 Thread of execution in program</a></li>
+<li><a href="#sec-1-2">1.2 Operating system thread</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Are the SPEC CPU2006 benchmarks multi-threaded?</a>
+<ul>
+<li><a href="#sec-2-1">2.1 Supporting documentation</a></li>
+<li><a href="#sec-2-2">2.2 What is the SPEC CPU2006 configuration?</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 \cite{Ayoub2011d}</a>
+<ul>
+<li><a href="#sec-3-1">3.1 CPU:</a>
+<ul>
+<li><a href="#sec-3-1-1">3.1.1 2 simulated Quad Core Xeon E4440 processor (2 chips, 8 cores)</a></li>
+<li><a href="#sec-3-1-2">3.1.2 Simulation environment</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-2">3.2 Workloads:</a>
+<ul>
+<li><a href="#sec-3-2-1">3.2.1 Starting point</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> What do we mean by thread?</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Thread of execution in program</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<ul>
+<li>Compiler optimization
+</li>
+<li>Requires the use of compilers that understand how to do this
+     optimization and work with some sort of threading library like
+     Intel's Thread Building Blocks (Intel compiler) or MPI.
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Operating system thread</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<ul>
+<li>Scheduling unit in operating system
+</li>
+<li>Used to be called "Lightweight process" in Unix
+</li>
+<li>Applications have to use some sort of threading directive such as
+     POSIX pthreads (as used in PARSEC) to implement parallel algorithms.
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Are the SPEC CPU2006 benchmarks multi-threaded?</h2>
+<div class="outline-text-2" id="text-2">
+
+<dl>
+<dt>CONCLUSION</dt><dd>Individual SPEC CPU2006 benchmarks are single-threaded
+                  serial implementations.
+</dd>
+</dl>
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Supporting documentation</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<ul>
+<li>From the CPU2006 web site
+    (<a href="http://www.spec.org/cpu2006/docs/config.html">http://www.spec.org/cpu2006/docs/config.html</a>)
+    "Note: the SPEC CPU2006 benchmarks do not require multi-threading,
+    and do not contain threading directives; but a compiler is allowed
+    to try to automatically decompose threads, and there's nothing in
+    the run rules to prohibit you from linking with your preferred
+    version of a supported malloc library."
+</li>
+<li>The shell scripts provided by SPEC to execute these benchmarks
+    provide an option 
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> What is the SPEC CPU2006 configuration?</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<ul>
+<li>The SPEC benchmarks use the GCC compiler.
+<ol>
+<li>It does not any sort of automatic thread
+        decomposition. Therefore, any sort of multithreading done in
+        this case will require to use of threading directives.
+</li>
+<li>The benchmarks are built using the "-o2" option which only does
+        very simple optimizations such as instruction scheduling.  In
+        particular, it does not any form of loop-rolling
+</li>
+</ol>
+
+</li>
+</ul>
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> \cite{Ayoub2011d}</h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> CPU:</h3>
+<div class="outline-text-3" id="text-3-1">
+
+
+</div>
+
+<div id="outline-container-3-1-1" class="outline-4">
+<h4 id="sec-3-1-1"><span class="section-number-4">3.1.1</span> 2 simulated Quad Core Xeon E4440 processor (2 chips, 8 cores)</h4>
+<div class="outline-text-4" id="text-3-1-1">
+
+</div>
+
+</div>
+
+<div id="outline-container-3-1-2" class="outline-4">
+<h4 id="sec-3-1-2"><span class="section-number-4">3.1.2</span> Simulation environment</h4>
+<div class="outline-text-4" id="text-3-1-2">
+
+<p>    HotSpot simulator using Xeon floorplan
+</p></div>
+</div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Workloads:</h3>
+<div class="outline-text-3" id="text-3-2">
+
+
+</div>
+
+<div id="outline-container-3-2-1" class="outline-4">
+<h4 id="sec-3-2-1"><span class="section-number-4">3.2.1</span> Starting point</h4>
+<div class="outline-text-4" id="text-3-2-1">
+
+<ul>
+<li>Conference paper (quoted in current draft) used SPEC CPU2006,
+      journal paper use SPEC CPU2000.
+</li>
+<li>Workload combinations used in their test
+<ul>
+<li>Table notation: &lt;number of copies&gt;&lt;benchmark
+</li>
+<li>For example, 3eon says 3 copies of eon benchmark
+</li>
+</ul>
+
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<tbody>
+<tr><td class="left">Workload</td><td class="left">CPU Socket A</td><td class="left">CPU Socket B</td></tr>
+<tr><td class="left">W1</td><td class="left">3eon</td><td class="left">eon + mcf + gcc</td></tr>
+<tr><td class="left">W2</td><td class="left">2eon + mcf</td><td class="left">eon + bzip2 + mcf</td></tr>
+<tr><td class="left">W3</td><td class="left">2bzip2 + 2mcf</td><td class="left">2bzip2 + 2mcf</td></tr>
+<tr><td class="left">W4</td><td class="left">2perl + 2eon</td><td class="left">2gcc + 2mcf</td></tr>
+<tr><td class="left">W5</td><td class="left">2perl + 2bzip2</td><td class="left">2gcc + 2mcf</td></tr>
+<tr><td class="left">W6</td><td class="left">2perl + 2bzip2</td><td class="left">2gcc + 2mcf</td></tr>
+<tr><td class="left">W7</td><td class="left">2perl + bzip2</td><td class="left">gcc+2mcf</td></tr>
+<tr><td class="left">W8</td><td class="left">perl + 3gcc</td><td class="left">perl + 2gcc</td></tr>
+<tr><td class="left">W9</td><td class="left">perl + 3gcc</td><td class="left">perl + 2gcc</td></tr>
+<tr><td class="left">W10</td><td class="left">perl + 3gcc</td><td class="left">perl + 2gcc</td></tr>
+<tr><td class="left">W11</td><td class="left">perl + 3gzip</td><td class="left">perl + gcc + gzip</td></tr>
+<tr><td class="left">W12</td><td class="left">3eon</td><td class="left">3eon</td></tr>
+<tr><td class="left">W13</td><td class="left">2eon+mcf</td><td class="left">2eon+mcf</td></tr>
+<tr><td class="left">W14</td><td class="left">2bzip2</td><td class="left">2bzip2</td></tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2012-03-19 Mon</p>
+<p class="author">Author: </p>
+<p class="creator">Org version 7.8.03 with Emacs version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

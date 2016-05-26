@@ -1,0 +1,400 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2009.11.7)  7 SEP 2010 15:48
+entering extended mode
+ %&-line parsing enabled.
+**\input timeseries.tex
+(./timeseries.tex (./usetex-v1.cls
+Document Class: usetex-v1 2002/10/31 v1.2 usetex Usenix article class
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\@discard=\box26
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+\@sectionaboveskip=\skip43
+\@sectionbelowskip=\skip44
+\@subsectionaboveskip=\skip45
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 285.
+LaTeX Info: Redefining \nocite on input line 356.
+Package: cite 2009/08/29  v 5.2
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen114
+\extrarowheight=\dimen115
+\NC@list=\toks20
+\extratabsurround=\skip49
+\backup@length=\skip50
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen116
+\lightrulewidth=\dimen117
+\cmidrulewidth=\dimen118
+\belowrulesep=\dimen119
+\belowbottomsep=\dimen120
+\aboverulesep=\dimen121
+\abovetopsep=\dimen122
+\cmidrulesep=\dimen123
+\cmidrulekern=\dimen124
+\defaultaddspace=\dimen125
+\@cmidla=\count100
+\@cmidlb=\count101
+\@aboverulesep=\dimen126
+\@belowrulesep=\dimen127
+\@thisruleclass=\count102
+\@lastruleclass=\count103
+\@thisrulewidth=\dimen128
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/local/texlive/2009/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen129
+\captionmargin@=\dimen130
+\captionwidth=\dimen131
+\caption@indent=\dimen132
+\caption@parindent=\dimen133
+\caption@hangindent=\dimen134
+)
+\c@KVtest=\count104
+\sf@farskip=\skip51
+\sf@captopadj=\dimen135
+\sf@capskip=\skip52
+\sf@nearskip=\skip53
+\c@subfigure=\count105
+\c@subfigure@save=\count106
+\c@lofdepth=\count107
+\c@subtable=\count108
+\c@subtable@save=\count109
+\c@lotdepth=\count110
+\sf@top=\skip54
+\sf@bottom=\skip55
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
+LaTeX Info: The control sequence `\[' is already robust on input line 471.
+LaTeX Info: The control sequence `\]' is already robust on input line 472.
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/ltxmisc/dblfloatfix.sty
+Package: dblfloatfix 2003/11/18 v1.0 (MH)
+\@dblbotnum=\count111
+\c@dblbotnumber=\count112
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+\c@ContinuedFloat=\count113
+)
+(./bibspacing.sty
+\bibindent=\dimen136
+\bibspacing=\dimen137
+)
+(/usr/local/texlive/2009/texmf-dist/tex/latex/sttools/flushend.sty
+Package: flushend 1997/10/01
+\@aaa=\box29
+\@ccc=\box30
+\@viper=\box31
+\hold@viper=\box32
+\atColsBreak=\toks21
+\@extra@skip=\dimen138
+\@nd@page@rule=\dimen139
+)
+
+LaTeX Warning: Unused global option(s):
+    [times].
+
+(./timeseries.aux)
+\openout1 = `timeseries.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 50.
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/local/texlive/2009/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count114
+\scratchdimen=\dimen140
+\scratchbox=\box33
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen141
+\MPnumerator=\count118
+\everyMPtoPDFconversion=\toks23
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
+LaTeX Info: Redefining \subref on input line 50.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 58.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 58.
+ (/usr/local/texlive/2009/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 58.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 138.
+ [1{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
+
+Underfull \vbox (badness 3078) has occurred while \output is active []
+
+
+<graphics/amdzeusmppwr2.png, id=15, 486.81876pt x 362.35374pt>
+File: graphics/amdzeusmppwr2.png Graphic file (type png)
+
+<use graphics/amdzeusmppwr2.png>
+Overfull \hbox (2.53056pt too wide) in paragraph at lines 308--310
+ [][] 
+ []
+
+
+Underfull \vbox (badness 6808) has occurred while \output is active []
+
+ [2 <./graphics/amdzeusmppwr2.png (PNG copy)>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 371.
+
+<graphics/amdzeusmars.png, id=20, 449.68pt x 336.457pt>
+File: graphics/amdzeusmars.png Graphic file (type png)
+
+<use graphics/amdzeusmars.png>
+<graphics/amdzeuspredict.png, id=21, 449.68pt x 336.457pt>
+File: graphics/amdzeuspredict.png Graphic file (type png)
+
+<use graphics/amdzeuspredict.png>
+Overfull \hbox (10.0pt too wide) in paragraph at lines 387--403
+[][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+<graphics/intelzeusmars.png, id=33, 449.68pt x 336.457pt>
+File: graphics/intelzeusmars.png Graphic file (type png)
+
+<use graphics/intelzeusmars.png>
+<graphics/intelzeuspredict.png, id=34, 449.68pt x 336.457pt>
+File: graphics/intelzeuspredict.png Graphic file (type png)
+
+<use graphics/intelzeuspredict.png>
+Overfull \hbox (10.0pt too wide) in paragraph at lines 469--485
+[][] [] 
+ []
+
+<graphics/pcterr.png, id=35, 768.471pt x 586.19pt>
+File: graphics/pcterr.png Graphic file (type png)
+ <use graphics/pcterr.png>
+Overfull \hbox (2.72734pt too wide) in paragraph at lines 567--568
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./graphics/amdzeusmars.png (PNG copy)> <./graphics/amdzeuspredict.png (PNG
+ copy)>]
+(./timeseries.bbl)
+Underfull \vbox (badness 2042) has occurred while \output is active []
+
+Extra height:0.0pt when 489.56892pt
+
+Underfull \vbox (badness 2042) has occurred while \output is active []
+
+(2)Left:489.56892pt Right:491.95319pt Output:489.56892pt
+
+Underfull \vbox (badness 5175) has occurred while \output is active []
+
+(2)Left:491.95319pt Right:491.95319pt Output:491.95319pt
+- LAST -
+Extra skip:0.0pt
+Left:491.95319pt
+Right:491.95319pt
+Output:491.95319pt
+
+Underfull \vbox (badness 5175) has occurred while \output is active []
+
+ [5 <./graphics/intelzeusmars.png (PNG copy)> <./graphics/intelzeuspredict.png 
+(PNG copy)> <./graphics/pcterr.png>] (./timeseries.aux) ) 
+Here is how much of TeX's memory you used:
+ 3187 strings out of 493848
+ 46145 string characters out of 3149207
+ 129068 words of memory out of 3000000
+ 6415 multiletter control sequences out of 15000+200000
+ 26142 words of font info for 52 fonts, out of 3000000 for 9000
+ 717 hyphenation exceptions out of 8191
+ 36i,11n,38p,434b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/20
+09/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2009/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2009/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2009/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2009/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2009/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2009/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr7.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr9.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy5.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy6.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy7.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy9.pfb></usr/local/texlive/2009/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
+></usr/local/texlive/2009/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loc
+al/texlive/2009/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive
+/2009/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on timeseries.pdf (5 pages, 302839 bytes).
+PDF statistics:
+ 107 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+

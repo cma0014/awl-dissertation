@@ -1,0 +1,342 @@
+%  $Author: awl8049 $$ 
+%  $Date: 2011/12/13 17:51:16 $
+%  $Revision: 3.5 $
+% 
+\documentclass[10pt]{letter} % Uses 10pt
+%Use \documentstyle[newcent]{letter} for New Century Schoolbook postscript font
+% the following commands control the margins:
+\usepackage[paper=letterpaper,
+            marginparwidth=0in,
+            marginparsep=0.5in,
+            margin=1in,
+            includemp]{geometry}
+
+% Add the code to give us a biblography environment
+\usepackage{enhletter}
+% Comment environment support
+\usepackage{comment}
+\usepackage{graphicx}
+% Use fancyhdr and lastpage to get decent page headers and footers
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{TACO-2010-27: Review Response: Reviewer \#\thesection, Page \thepage}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{2pt}
+
+\newenvironment{rviewcomment}
+{~\\%
+\begin{bfseries}}
+{\end{bfseries}}
+
+\newcommand{\rviewresponse}{\textbf{\textit{Response}}:}
+\newcommand{\rviewresponses}{\textbf{\textit{Responses}}:}
+
+% Packages for managing per section biblographies
+\usepackage[sectionbib]{chapterbib}
+
+\begin{document}
+
+%\signature{Adam Wade Lewis}           % name for signature 
+\longindentation=0pt                       % needed to get closing flush left
+\let\raggedleft\raggedright                % needed to get date flush left
+ 
+ 
+\begin{letter}{Professor Tom Conte \\
+Editor-in-Chief \\
+ACM Transactions on Architecture and Code Optimization }
+
+
+\begin{flushright}
+{\hfill \large\bf The University of Louisiana at Lafayette}
+\end{flushright}
+\medskip\hrule height 1pt
+\begin{flushright}
+\hfill Center for Advanced Computer Studies\\
+\hfill P.O. Box 44330 \\
+\hfill Lafayette, Louisiana 70504-4330\\
+\hfill (337) 482-6338 \\
+\hfill \email{awlewis@cacs.louisiana.edu}
+\end{flushright} 
+%\vfill % forces letterhead to top of page
+
+ 
+\opening{Dear Professor Conte:} 
+ 
+\noindent We thank the reviewers for the time and effort required for
+their thorough reviews of our revision and greatly appreciate their
+candid and valuable comments, which clearly strengthen our manuscript.
+We have taken all comments into full consideration, addressing them in
+the revised manuscript.  Please find a detailed
+response to the review comments raised by Reviewer \#1, in the enclosed
+attachment of this cover letter.
+ 
+\closing{Respectfully yours, \\
+\fromsig{\includegraphics[scale=0.2]{sig.jpg}} \\
+\fromname{Adam Wade Lewis}}
+
+\encl{(1) Response to Reviewer \#1}
+\clearpage
+\section{TACO-2010-27: Review Response: Reviewer \#1}
+\label{sec-1}
+First of all, we greatly appreciate your time and effort put toward
+your candid and informative review, which helps to improve the quality
+of our submission.  The following lists our responses to your concerns
+and comments made on our earlier revision.  Hopefully, we have addressed
+all your concerns and comments to your satisfaction.
+
+\begin{rviewcomment}
+  First Comment/Concern:
+\end{rviewcomment}
+\begin{quote}
+\begin{itshape} 
+  First, again, I think the paper title needs to be clearer. As it
+  stands, it refers to an "approximation of an estimation". Based on
+  your response, CAP is an instantaneous power estimation method, and I
+  think "Run-time Energy Consumption Estimation based on time-series
+  approximation.." might be more representative.
+\end{itshape}
+\end{quote}
+
+\rviewresponse
+
+The title of our paper has been adjusted according to your suggestion.
+
+\begin{rviewcomment}
+  Second Comment/Concern:
+\end{rviewcomment}
+\begin{quote}
+  \begin{itshape}
+    Next, it is still not clear to me where the benefit of CAP comes
+    from. For example, can you give an example to where simple,
+    Mantis-like approaches do not perform well for the workloads you
+    evaluate? 
+  \end{itshape}
+\end{quote}
+\rviewresponse 
+
+The issue of workloads inadequately addressed by Mantis-like approaches
+has been unveiled in recent work, particularly by
+\cite{Varsampoulos2010},\cite{Kansal2010}, \cite{Hsu2011}, and
+\cite{McCullough2011}. In \cite{Hsu2011}, the authors examined 177
+measured results of the SPECpower\_ssj2008 benchmark published from
+December 2007 to August 2010 to statistically analyze the shape of the
+power curves over time and evaluate the effect of the aggressive
+power-management schemes introduced since the publication of
+\cite{Economou2006}. Both our work and \cite{Varsampoulos2010} found
+that the resulting power curves were neither linear nor convex, which
+invalidate an underlying assumption behind models such as MANTIS.  For
+example, in \cite{McCullough2011}, the authors found that MANTIS
+(adjusted for evolution of processor performance counters since the
+publication of \cite{Economou2006}) exhibited the mean prediction error of
+10-14\% for the SPEC CPU2006 suite, the PARSEC multicore benchmark
+suite, and synthetic micro-architecture benchmarks that focused on
+components of system energy consumption.  In particular, \cite{McCullough2011}
+found that MANTIS suffered from pronounced error behavior in cases of
+high utilization and low IPC (for instance, the \texttt{canneal}
+benchmark from the PARSEC suite, the \texttt{Bonnie} I/O benchmark and a
+synthetic system stress benchmark).
+
+The causes of this error behavior were described and discussed by recent
+work cited in our paper. In particular, \cite{Kansal2010} observed that
+the error behavior of SPEC CPU2006 benchmarks in both physical and
+virtual machine environments is rarely uniform in distributing tasks
+across multi-core processors.  It was postulated in
+\cite{McCullough2011} that multi-core processors have evolved to the
+point where features cannot be abstracted easily to permit linear models
+to accurately predict the behavior of these systems (as attempted by
+MANTIS-like modeling).
+
+We have added additional materials to our discussion of prior work
+that considers the issues raised by these references.
+\newpage
+\begin{rviewcomment}
+  Third Comment/Concern
+\end{rviewcomment}
+
+\begin{itshape}
+  As you argue in the beginning of the paper, these approaches relate
+  usage information to the power of the entire system rather than its
+  individual components. So what kind of improvement do we see with the
+  CAP approach with subcomponent prediction?
+\end{itshape}
+
+\rviewresponse 
+
+CAP is a full-system model, aiming to predict the individual
+sub-components energy consumption for attributing these components to
+the total energy consumption.  In doing so, we address the concerns
+raised by \cite{Kansal2010} and \cite{McCullough2011} in regard to the
+factors that contribute to non-linearity in the power curves of
+multi-core processors.  As shown in Tables IX and X in our revision,
+both average and maximum error for CAP are fare less as compared to
+those of linear AR, MARS, and EWMA predictors, in particular when we
+consider a more recent processor such as the Intel processor used in our
+study.
+
+\begin{rviewcomment}
+  Fourth Comment/Concern:
+\end{rviewcomment}
+\begin{quote}
+  \begin{itshape}
+    Along the same lines of comparative evaluation, as I had mentioned
+    in the original review, there are other prior approaches that
+    predict future behavior based patterns/statistics. How does CAP
+    compare to even simplistic approaches for future behavior prediction
+    like last-value, or simple exponentially-weighted moving averaging?
+    I suspect the resulting power curves would look very similar, albeit
+    slightly shifted versions of what is depicted in Figures 7/8. A
+    simple error analysis can demonstrate the value of CAP, in addition
+    to those included for AR and MARS.
+  \end{itshape}
+\end{quote}
+\rviewresponse
+
+Your intuition about the shape of the power curves is correct; some
+similarity exists between the shape of CAP and the power curves
+predicted by exponentially-weighted moving averages (EWMA) predicted
+power curves.  However, EWMA demonstrates error amounts similar to those
+of AR(1) and MARS predictors, with average errors between 1.0\% and
+1.8\% and maximum errors between 6.9\% and 9.2\% for the AMD Opteron
+processor (Intel Nehalem: average error: 1.8\% - 5.0\%; maximum error:
+27.3\% - 32.4\%). CAP differs from methods such as EMWA by using points
+on the attractor to approximate the next entry in the series.  By doing
+so, we lower the approximation error as compared to the error amounts of
+EWMA and others.  In addition
+to the extra information included in Tables IX and X, we provide
+additional discussion in Section 5.3 and the Appendix on this topic.
+\newpage
+\begin{rviewcomment}
+  Fifth Comment/Concern
+\end{rviewcomment}
+\begin{quote}
+  \begin{itshape}
+    I am also still not sure how the four SPEC benchmarks can help
+    verify the sub-component power models beyond memory per your
+    response. Do you see these benchmarks exercising these components at
+    different rates and creating different dynamic power? Section 5.1
+    para-1, suggests these four were selected as workloads more common
+    to server workloads. Can you please explain what this means? Can you
+    also further provide an example to sub-component power estimations?
+  \end{itshape}
+\end{quote}
+\rviewresponse
+
+Benchmark selection in our work is based upon the decision criteria
+listed in \cite{Phansalkar2007}, with the additional criterion of
+selecting benchmarks from the SPEC CPU2006 suite most representative of
+scientific computing workloads \cite{Cisco2010}.  These benchmarks, as
+you observed, primarily focus on the processor, cache, and memory;
+however, the execution of them affects the entire system, as noted in
+\cite{Ye2007} and confirmed by examining the details of the PeCs
+collected in our study.  The following table contains averages of the
+fan speed, the number of HyperTransport bus transactions, and the amount
+of bytes read/written to disks for the four benchmarks over the same
+period during their execution on the AMD Operton system in our testbed:
+
+% BEGIN RECEIVE ORGTBL pecs
+\begin{tabular}{lrrrrr}
+\hline
+Benchmark & Fan Speed & HT0 & HT1 & HT2 & Disk Write \\
+ & (RPM) &  &  &  & KB \\
+\hline
+astar & 3619 & 722292 & 9977044 & 8269956 & 10878 \\
+gobmk & 3636 & 1263067 & 4075556 & 17123935 & 11622 \\
+calculix & 3645 & 697783 & 11007822 & 8025921 & 23544 \\
+zeusmp & 3640 & 1271058 & 17166529 & 14100030 & 1052 \\
+\hline
+\end{tabular}
+% END RECEIVE ORGTBL pecs
+\begin{comment}
+#+ORGTBL: SEND pecs orgtbl-to-latex :splice nil :skip 0
+|-----------+-----------+---------+----------+----------+------------|
+| Benchmark | Fan Speed |     HT0 |      HT1 |      HT2 | Disk Write |
+|           |     (RPM) |         |          |          |         KB |
+|-----------+-----------+---------+----------+----------+------------|
+| astar     |      3619 |  722292 |  9977044 |  8269956 |      10878 |
+| gobmk     |      3636 | 1263067 |  4075556 | 17123935 |      11622 |
+| calculix  |      3645 |  697783 | 11007822 |  8025921 |      23544 |
+| zeusmp    |      3640 | 1271058 | 17166529 | 14100030 |       1052 |
+|-----------+-----------+---------+----------+----------+------------|
+\end{comment}
+
+From the listed component data above, we can see that benchmarks
+exercise system components at different rates during their execution on
+the AMD machine.  In general, benchmark execution affects the full
+system, beyond just the processor/cache/memory hierarchy.  The above
+table results signify that data move from the processor via the HT2
+HyperTransport bus to the disks in a different rate during benchmark
+execution.  A similar situation is also observed when the benchmarks are
+executed on the Intel machine.
+
+\begin{rviewcomment}
+  Sixth Comment/Concern
+\end{rviewcomment}
+\begin{quote}
+  \begin{itshape}
+    Last, I am still not clear how these servers exhibit just 60W-70W
+    and 45W-70W idle-active power ranges. Are you showing ONLY CPU
+    power? Can you please provide more details to how you confirm this
+    with data provided by server manufacturers?  Based on what I had
+    seen, Sun quick reference reports 450W power consumption for Sun
+    Fire 2200 and Dell PowerEdge Power and Performance Data Sheet
+    reports Min:138W, Typical:285W, and Max:425W, which are more in line
+    with what I expected.
+  \end{itshape}
+\end{quote}
+\rviewresponse
+
+The values reported previously in Figures 7 \& 8 included only CPU
+power, as you correctly pointed out. We have redrawn the two figures to
+show total system power consumption in this revision.
+\clearpage
+\bibliographystyle{acmtrans}
+\bibliography{../overall}
+
+\end{letter}
+\end{document}
+% The following comment block is used by the different flavors of EMACS and
+% the AUCTEX package to manage multiple documents.  In order for AUCTEX
+% to understand you're working with multiple files, you should define
+% the TeX-master variable as a file local variable that identifies your
+% master document.
+%
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "secondreviewresp.tex"
+%%% TeX-PDF-mode: t
+%%% End: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}THERMAL-AWARE SCHEDULING}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Terminology}{2}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}thread}{2}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}task}{2}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}timeslice}{2}{subsubsection.1.1.3}
+\contentsline {subsubsection}{\numberline {1.1.4}quantum}{2}{subsubsection.1.1.4}
+\contentsline {subsubsection}{\numberline {1.1.5}run-queue}{2}{subsubsection.1.1.5}
+\contentsline {subsubsection}{\numberline {1.1.6}scheduling policy}{2}{subsubsection.1.1.6}
+\contentsline {subsection}{\numberline {1.2}Scheduling policies}{2}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}constant time scheduling}{2}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}linear time scheduling}{2}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}Proportional share policies}{3}{subsubsection.1.2.3}
+\contentsline {subsection}{\numberline {1.3}Approaches}{4}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}real-time and embedded systems}{4}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}adjusting heuristics}{4}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3}avoiding thermal emergencies}{4}{subsubsection.1.3.3}
+\contentsline {subsection}{\numberline {1.4}Opportunities}{4}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}assets}{4}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Energy as resource}{5}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}Avoidance of DTM events}{5}{subsubsection.1.4.3}
+\contentsline {subsection}{\numberline {1.5}Proposed contributions}{5}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Thermal model}{5}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}Thermal load of application (TheA)}{6}{subsubsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.3}Energy-Aware Fair Scheduling (EAFS)}{6}{subsubsection.1.5.3}

@@ -1,0 +1,134 @@
+===========================================================================
+                          HotPower '10 Review #4A
+                Updated Tuesday 27 Jul 2010 12:01:12pm PDT
+---------------------------------------------------------------------------
+    Paper #4: Chaotic Attractor Polynomial Prediction for Server Run-time
+              Energy Consumption
+---------------------------------------------------------------------------
+
+                      Overall merit: 1. Reject
+                 Reviewer expertise: 3. Knowledgeable
+
+                         ===== Paper summary =====
+
+This paper proposes using chaotic theory to predict the system energy
+consumption. The paper explains why system energy consumption can be
+modeled as chaotic behavior and use different regression techniques to
+match the data.
+
+                      ===== Comments for author =====
+
+This paper suggests using different regression models and chaotic theory
+to predict system energy consumption.  This approach treats the
+consequence as the reason.  A system consumes energy for running
+programs. Hence, prediction should be conducted on the behavior of
+programs' activities.
+
+This paper shows power consumption can be modeled by using different
+regression models. This is not a new concept. Many studies have shown
+that.
+
+This paper does not provide sufficient explanation about what to do with
+the prediction results. Also, the paper does not compare the proposed
+approach with existing solutions, for example, reactive to workload
+demands.
+
+The paper does not fit the scope of HowPower well.  This paper should be
+submitted to a conference on prediction theory or stochastic modeling.
+
+The writing quality requires improvement. Figure 6 is completely
+unreadable. The titles for X and Y axes, as well as the legends are too
+small to see.
+
+===========================================================================
+                          HotPower '10 Review #4B
+                Updated Thursday 5 Aug 2010 12:19:47pm PDT
+---------------------------------------------------------------------------
+    Paper #4: Chaotic Attractor Polynomial Prediction for Server Run-time
+              Energy Consumption
+---------------------------------------------------------------------------
+
+                      Overall merit: 2. Weak reject
+                 Reviewer expertise: 1. No familiarity
+
+                         ===== Paper summary =====
+
+This paper presents a method for predicting the power consumption of a
+server over time.  The method is capable of dealing with non-linear
+behavior in the time series using least-squares regression.  The results
+show that the method produces smaller errors than more common linear
+regression methods (AR, ARMA, and MARS).
+
+                      ===== Comments for author =====
+
+I had a hard time following much of the paper, since it is heavily
+focused on modeling and time series analysis.  In fact, the abstract and
+intro talk a lot about thermal management, but this topic is essentially
+forgotten throughout the rest of the paper.
+
+The results do confirm that the proposed method is better than the
+alternatives at predicting power.  However, how important are the small
+reductions in prediction error?  Moreover, no insight is provided as to
+why predictions are much better for the AMD-based server than the
+Intel-based server.
+
+Minor: The ARMA section of Table 2 is clearly wrong (it's currently a
+copy of the same section of Table 1).
+
+===========================================================================
+                          HotPower '10 Review #4C
+                Updated Saturday 7 Aug 2010 10:17:50pm PDT
+---------------------------------------------------------------------------
+    Paper #4: Chaotic Attractor Polynomial Prediction for Server Run-time
+              Energy Consumption
+---------------------------------------------------------------------------
+
+                      Overall merit: 3. Weak accept
+                 Reviewer expertise: 3. Knowledgeable
+
+                         ===== Paper summary =====
+
+Predict energy use of processor system using a nonlinear model. Showing
+advantage over linear techniques (e.g. regression).
+
+                      ===== Comments for author =====
+
+The method seems promising, with evaluation over several HPC benchmark
+suites. Some comments below:
+
+How representative is the HPC benchmark you used? to thoroughly evaluate
+your technique, it is necessary to exercise all the major components of
+system, including the processor, memory, hdd, networking, bus, power
+supply etc. Btw, the table 1 lists the benchmark suites that do not
+match the ones listed in the text (1st paragraph of Sec 3).
+
+I also have questions about the complexity of the nonlinear estimation
+method, which is more complex than the linear models. I did not see any
+emprical data on the time it takes to compute the model.
+
+===========================================================================
+                          HotPower '10 Review #4D
+                  Updated Sunday 8 Aug 2010 2:12:09am PDT
+---------------------------------------------------------------------------
+    Paper #4: Chaotic Attractor Polynomial Prediction for Server Run-time
+              Energy Consumption
+---------------------------------------------------------------------------
+
+                      Overall merit: 5. Strong accept
+                 Reviewer expertise: 3. Knowledgeable
+
+                         ===== Paper summary =====
+
+The paper proposes a attractor polynomial predictor for the short term
+power estimation
+
+                      ===== Comments for author =====
+
+Good technique and interesting results.
+
+The CAPP models achieve much better results, but it as a computation
+overhead. One thing that it is not shown in the paper is the program
+phases.  Different applications have different chaotic parameters. The
+paper find the parameters with a training set. It may be interesting to
+find them and adjusting them as the application runs.
+

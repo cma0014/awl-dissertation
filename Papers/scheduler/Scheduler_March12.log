@@ -1,0 +1,1341 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  12 MAR 2012 19:34
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\input Scheduler_March12.tex
+(./Scheduler_March12.tex
+(/usr/local/texlive/2011/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 366.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen117
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen118
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen119
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks16
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks17
+\eqnshift@=\dimen120
+\alignsep@=\dimen121
+\tagshift@=\dimen122
+\tagwidth@=\dimen123
+\totwidth@=\dimen124
+\lineht@=\dimen125
+\@envbody=\toks18
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2009/07/02 v2.20.1
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip47
+\thm@postskip=\skip48
+\thm@headsep=\skip49
+\dth@everypar=\toks25
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amscd.sty
+Package: amscd 1999/11/29 v1.2d
+\athelp@=\toks26
+\minaw@=\dimen126
+\bigaw@=\dimen127
+\minCDarrowwidth=\dimen128
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2011/03/10 v0.4n Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count103
+\calc@Bcount=\count104
+\calc@Adimen=\dimen129
+\calc@Bdimen=\dimen130
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count105
+\calc@Cskip=\skip52
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks27
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count106
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen131
+\Gin@req@width=\dimen132
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2011/03/10 v0.4n Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box29
+\AM@toc@title=\toks28
+\c@AM@survey=\count107
+\AM@templatesizebox=\box30
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/local/texlive/2011/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen133
+\captionmargin@=\dimen134
+\captionwidth=\dimen135
+\caption@indent=\dimen136
+\caption@parindent=\dimen137
+\caption@hangindent=\dimen138
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used on input line 1084.
+)
+\c@KVtest=\count108
+\sf@farskip=\skip53
+\sf@captopadj=\dimen139
+\sf@capskip=\skip54
+\sf@nearskip=\skip55
+\c@subfigure=\count109
+\c@subfigure@save=\count110
+\c@lofdepth=\count111
+\c@subtable=\count112
+\c@subtable@save=\count113
+\c@lotdepth=\count114
+\sf@top=\skip56
+\sf@bottom=\skip57
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2009/11/18 1.3 (PWD)
+\affilsep=\skip58
+\@affilsep=\skip59
+\c@Maxaffil=\count115
+\c@authors=\count116
+\c@affil=\count117
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks29
+\verbatim@line=\toks30
+\verbatim@in@stream=\read1
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count118
+\lst@gtempboxa=\box31
+\lst@token=\toks31
+\lst@length=\count119
+\lst@currlwidth=\dimen140
+\lst@column=\count120
+\lst@pos=\count121
+\lst@lostspace=\dimen141
+\lst@width=\dimen142
+\lst@newlines=\count122
+\lst@lineno=\count123
+\lst@maxwidth=\dimen143
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count124
+\lst@skipnumbers=\count125
+\lst@framebox=\box32
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks32
+\AP@partial=\box33
+\AP@footins=\box34
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen144
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \begin {center}{\normalfont \footnotesize #1}\\{\normal
+font \footnotesize \scshape #2}\end {center}\@IEEEtablecaptionsepspace \else \@
+IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {
+#1.}~~ #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \
+footnotesize {#1.}~~ }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent 
+\unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfon
+t \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont 
+\footnotesize \box \@tempboxa \hfil }\fi \fi \fi .
+\c@ContinuedFloat=\count126
+Package caption Info: listings package is loaded.
+) (/usr/local/texlive/2011/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2007/08/12 v2.8 Sectioning titles
+\ttl@box=\box35
+\beforetitleunit=\skip60
+\aftertitleunit=\skip61
+\ttl@plus=\dimen145
+\ttl@minus=\dimen146
+\ttl@toksa=\toks33
+\titlewidth=\dimen147
+\titlewidthlast=\dimen148
+\titlewidthfirst=\dimen149
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+)
+
+LaTeX Warning: Unused global option(s):
+    [times].
+
+No file Scheduler_March12.aux.
+\openout1 = `Scheduler_March12.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+\AtBeginShipoutBox=\box36
+(/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count127
+\scratchdimen=\dimen150
+\scratchbox=\box37
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen151
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
+\everyMPtoPDFconversion=\toks35
+) (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.jpg,.pdf,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
+LaTeX Info: Redefining \subref on input line 87.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count133
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 95.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <11> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
+\c@defn=\count134
+\c@thm=\count135
+LaTeX Font Info:    Try loading font information for U+msa on input line 127.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 127.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+
+LaTeX Warning: Citation `Donald2006' on page 1 undefined on input line 142.
+
+
+LaTeX Warning: Citation `Bircher2008' on page 1 undefined on input line 142.
+
+
+LaTeX Warning: Citation `Coskun2008d' on page 1 undefined on input line 142.
+
+
+LaTeX Warning: Citation `Gomaa2004' on page 1 undefined on input line 151.
+
+
+LaTeX Warning: Citation `Choi2007' on page 1 undefined on input line 151.
+
+
+LaTeX Warning: Citation `Yang2008' on page 1 undefined on input line 151.
+
+
+LaTeX Warning: Citation `Sarood2011' on page 1 undefined on input line 151.
+
+
+LaTeX Warning: Citation `Khan2011' on page 1 undefined on input line 163.
+
+[1{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+
+LaTeX Warning: Citation `Sarood2011' on page 2 undefined on input line 214.
+
+
+LaTeX Warning: Reference `sec:related' on page 2 undefined on input line 217.
+
+
+LaTeX Warning: Reference `sec:model' on page 2 undefined on input line 218.
+
+
+LaTeX Warning: Reference `sec:therm-chaot-attr' on page 2 undefined on input li
+ne 219.
+
+
+LaTeX Warning: Reference `sec:sdesign' on page 2 undefined on input line 220.
+
+
+LaTeX Warning: Reference `sec:experiment' on page 2 undefined on input line 221
+.
+
+
+LaTeX Warning: Reference `sec:conclusion' on page 2 undefined on input line 223
+.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Citation `Hofmeyr2010' on page 2 undefined on input line 234.
+
+
+LaTeX Warning: Citation `Sun2009' on page 2 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Sun2009b' on page 2 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Xia2010' on page 2 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Kursun2009' on page 2 undefined on input line 262.
+
+
+LaTeX Warning: Citation `Gomaa2004' on page 2 undefined on input line 265.
+
+
+LaTeX Warning: Citation `Ayoub2011' on page 2 undefined on input line 265.
+
+
+LaTeX Warning: Citation `Yang2008' on page 2 undefined on input line 266.
+
+
+LaTeX Warning: Citation `Bellosa2003' on page 2 undefined on input line 266.
+
+
+LaTeX Warning: Citation `Kursun2009' on page 2 undefined on input line 277.
+
+
+LaTeX Warning: Citation `Bailis2011' on page 2 undefined on input line 277.
+
+
+LaTeX Warning: Citation `Murali2008' on page 2 undefined on input line 277.
+
+
+LaTeX Warning: Citation `Ayoub2011' on page 2 undefined on input line 282.
+
+
+LaTeX Warning: Citation `Merkel2008b' on page 2 undefined on input line 288.
+
+
+LaTeX Warning: Citation `Merkel2010' on page 2 undefined on input line 288.
+
+
+LaTeX Warning: Citation `Bellosa2003' on page 2 undefined on input line 289.
+
+
+LaTeX Warning: Citation `Choi2007' on page 2 undefined on input line 295.
+
+
+LaTeX Warning: Citation `Bailis2011' on page 2 undefined on input line 295.
+
+
+LaTeX Warning: Citation `LiK2008' on page 2 undefined on input line 301.
+
+[2]
+
+LaTeX Warning: Citation `Roberson2003' on page 3 undefined on input line 312.
+
+
+LaTeX Warning: Citation `McKusick2004' on page 3 undefined on input line 312.
+
+
+LaTeX Warning: Citation `McKusick2004b' on page 3 undefined on input line 312.
+
+
+LaTeX Warning: Citation `Hofmeyr2010' on page 3 undefined on input line 325.
+
+
+LaTeX Warning: Citation `Hofmeyr2010' on page 3 undefined on input line 329.
+
+
+LaTeX Warning: Citation `Sun2009' on page 3 undefined on input line 334.
+
+
+LaTeX Warning: Citation `Sun2009b' on page 3 undefined on input line 334.
+
+
+LaTeX Warning: Citation `Xia2010' on page 3 undefined on input line 334.
+
+
+LaTeX Warning: Citation `Sarood2011' on page 3 undefined on input line 334.
+
+
+LaTeX Warning: Citation `Lewis2008' on page 3 undefined on input line 344.
+
+
+LaTeX Warning: Citation `Lewis2010' on page 3 undefined on input line 344.
+
+
+LaTeX Warning: Reference `eq:system' on page 3 undefined on input line 361.
+
+<graphics/intelnehalem.pdf, id=16, 293.095pt x 326.21875pt>
+File: graphics/intelnehalem.pdf Graphic file (type pdf)
+
+<use graphics/intelnehalem.pdf>
+Package pdftex.def Info: graphics/intelnehalem.pdf used on input line 371.
+(pdftex.def)             Requested size: 146.54713pt x 163.10896pt.
+
+
+LaTeX Warning: Reference `tab:intelmodel' on page 3 undefined on input line 426
+.
+
+
+LaTeX Warning: Reference `fig:intarch' on page 3 undefined on input line 432.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./graphics/intelnehalem.pdf>]
+
+LaTeX Warning: Citation `Donald2006' on page 4 undefined on input line 451.
+
+
+LaTeX Warning: Citation `Hanson2007' on page 4 undefined on input line 451.
+
+
+LaTeX Warning: Citation `AMD2007' on page 4 undefined on input line 452.
+
+
+LaTeX Warning: Citation `Intel2009' on page 4 undefined on input line 452.
+
+
+LaTeX Warning: Citation `Bircher2008' on page 4 undefined on input line 454.
+
+
+LaTeX Warning: Citation `Coskun2008d' on page 4 undefined on input line 454.
+
+
+LaTeX Warning: Citation `Rosing2007' on page 4 undefined on input line 459.
+
+
+LaTeX Warning: Citation `Coskun2008d' on page 4 undefined on input line 459.
+
+
+LaTeX Warning: Citation `Kursun2009' on page 4 undefined on input line 459.
+
+
+LaTeX Warning: Citation `Rosing2007' on page 4 undefined on input line 462.
+
+
+LaTeX Warning: Citation `Yao1995' on page 4 undefined on input line 466.
+
+
+LaTeX Warning: Citation `Gomaa2004' on page 4 undefined on input line 466.
+
+
+LaTeX Warning: Citation `Kumar2006' on page 4 undefined on input line 466.
+
+
+LaTeX Warning: Citation `Yang2008' on page 4 undefined on input line 466.
+
+
+LaTeX Warning: Citation `Choi2007' on page 4 undefined on input line 468.
+
+
+LaTeX Warning: Citation `Choi2007' on page 4 undefined on input line 478.
+
+
+LaTeX Warning: Citation `Ayoub2009' on page 4 undefined on input line 478.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.483 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Reference `sec:chaot-pred-energy' on page 4 undefined on input l
+ine 487.
+
+
+LaTeX Warning: Reference `eq:system' on page 4 undefined on input line 489.
+
+
+Underfull \vbox (badness 2142) has occurred while \output is active []
+
+
+
+LaTeX Warning: Citation `Intel2006' on page 4 undefined on input line 547.
+
+[4]
+
+LaTeX Warning: Reference `eq:system' on page 5 undefined on input line 559.
+
+
+LaTeX Warning: Reference `tab:intelmodel' on page 5 undefined on input line 563
+.
+
+
+LaTeX Warning: Reference `eq:thermcost' on page 5 undefined on input line 565.
+
+
+LaTeX Warning: Reference `tab:intelmodel' on page 5 undefined on input line 573
+.
+
+
+LaTeX Warning: Reference `sec:chaot-pred-energy' on page 5 undefined on input l
+ine 577.
+
+
+LaTeX Warning: Citation `Lewis2010' on page 5 undefined on input line 578.
+
+
+LaTeX Warning: Reference `eq:thermcost' on page 5 undefined on input line 580.
+
+
+LaTeX Warning: Citation `Sprott2003' on page 5 undefined on input line 590.
+
+
+LaTeX Warning: Reference `tab:chaotic' on page 5 undefined on input line 592.
+
+
+LaTeX Warning: Reference `eq:thermcost' on page 5 undefined on input line 597.
+
+
+LaTeX Warning: Citation `Sprott2003' on page 5 undefined on input line 601.
+
+
+LaTeX Warning: Reference `tab:chaotic' on page 5 undefined on input line 604.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.636 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.649 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<graphics/tasdesign.pdf, id=66, 499.8675pt x 228.855pt>
+File: graphics/tasdesign.pdf Graphic file (type pdf)
+
+<use graphics/tasdesign.pdf>
+Package pdftex.def Info: graphics/tasdesign.pdf used on input line 651.
+(pdftex.def)             Requested size: 224.9383pt x 102.9838pt.
+
+
+LaTeX Warning: Citation `Merkel2008a' on page 5 undefined on input line 660.
+
+
+LaTeX Warning: Reference `fig:teaplant' on page 5 undefined on input line 665.
+
+[5 <./graphics/tasdesign.pdf>]
+
+LaTeX Warning: Citation `Zhou2010b' on page 6 undefined on input line 712.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.736 Note that if a physical core supports \alpha
+                                                   threads,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.744 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (844.95908pt too wide) in paragraph at lines 727--744
+\OML/cmm/m/it/10 threads; logcalcoreswillresultfromthephysicalcore; withtheir
+temperaturesallequaltothatofthephysicalcore:Inaddition; logicalcoresaregroupedi
+ntofastandslowclansaccordingtotheexecutionfrequenciesoftheirunderlyingphysicalc
+ores:Thistwo \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (641.08109pt too wide) in paragraph at lines 727--744
+\OML/cmm/m/it/10 levelcategorizationallowsTAStomanageworkloaddistributionbetter
+fromthethermalandperformanceprospectives; bymigratingworkawayfromhotunitswithne
+gligibleexecutionperformancedegradation:$ 
+ []
+
+<graphics/tbalance.pdf, id=101, 255.95625pt x 301.125pt>
+File: graphics/tbalance.pdf Graphic file (type pdf)
+
+<use graphics/tbalance.pdf>
+Package pdftex.def Info: graphics/tbalance.pdf used on input line 781.
+(pdftex.def)             Requested size: 179.16814pt x 210.78606pt.
+
+
+LaTeX Warning: Reference `fig:thermbal' on page 6 undefined on input line 786.
+
+
+LaTeX Warning: Citation `Choi2007' on page 6 undefined on input line 799.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.804 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Citation `Roberson2003' on page 6 undefined on input line 810.
+
+
+LaTeX Warning: Reference `sec:sdesign' on page 6 undefined on input line 811.
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 813.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+
+LaTeX Warning: Reference `fig:teaplant' on page 6 undefined on input line 817.
+
+[6 <./graphics/tbalance.pdf>]
+
+LaTeX Warning: Citation `Henning2006' on page 7 undefined on input line 824.
+
+
+LaTeX Warning: Citation `Bienia2008' on page 7 undefined on input line 826.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.830 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package caption Error: \caption outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.832   \caption
+                {Processor used in evaluation}
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.847 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.847 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.847 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.847 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.847 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 848--848
+ |[]\OT1/ptm/m/it/10 Experiment Setup|
+ []
+
+
+LaTeX Warning: Reference `tab:hardware' on page 7 undefined on input line 851.
+
+
+LaTeX Warning: Citation `WattsUp2006a' on page 7 undefined on input line 854.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 860--860
+ |[]\OT1/ptm/m/it/10 Benchmark Se-lec-tion|
+ []
+
+
+LaTeX Warning: Citation `Kumar2008' on page 7 undefined on input line 863.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 892--892
+ |[]\OT1/ptm/m/it/10 tCAP Es-tab-lish-ment|
+ []
+
+
+LaTeX Warning: Citation `Lewis2010' on page 7 undefined on input line 899.
+
+
+LaTeX Warning: Citation `Lewis2010' on page 7 undefined on input line 920.
+
+
+LaTeX Warning: Citation `Su2010' on page 7 undefined on input line 923.
+
+
+LaTeX Warning: Citation `Lewis2010' on page 7 undefined on input line 930.
+
+
+LaTeX Warning: Reference `tab:benchmarks' on page 7 undefined on input line 935
+.
+
+
+LaTeX Warning: Reference `tab:parsecbench' on page 7 undefined on input line 93
+6.
+
+
+LaTeX Warning: Reference `sec:mult-behav' on page 7 undefined on input line 948
+.
+
+[7]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.950 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 990--990
+ |[]\OT1/ptm/m/it/10 SPEC Bench-mark Be-hav-ior and Dis-cus-sion|
+ []
+
+
+LaTeX Warning: Citation `Choi2007' on page 8 undefined on input line 992.
+
+
+LaTeX Warning: Citation `Cher2011' on page 8 undefined on input line 992.
+
+
+LaTeX Warning: Citation `Spec2006' on page 8 undefined on input line 995.
+
+
+LaTeX Warning: Reference `tab:benchmarks' on page 8 undefined on input line 995
+.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.999 \newline
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<graphics/speccputemp.png, id=145, 696.201pt x 210.0648pt>
+File: graphics/speccputemp.png Graphic file (type png)
+
+<use graphics/speccputemp.png>
+Package pdftex.def Info: graphics/speccputemp.png used on input line 1002.
+(pdftex.def)             Requested size: 252.00255pt x 144.54099pt.
+
+
+LaTeX Warning: Reference `fig:ubenchmarks' on page 8 undefined on input line 10
+07.
+
+
+LaTeX Warning: Reference `tab:benchmarks' on page 8 undefined on input line 100
+9.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1016 \newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (6.46939pt too wide) in paragraph at lines 1020--1025
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1027--1027
+ |[]\OT1/ptm/m/it/10 Execution of SPEC Bench-mark Com-bi-na-tions|
+ []
+
+
+LaTeX Warning: Citation `Kursun2008' on page 8 undefined on input line 1033.
+
+
+LaTeX Warning: Reference `tab:crossbench' on page 8 undefined on input line 103
+4.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1041 \newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Reference `tab:mixwkload' on page 8 undefined on input line 1074
+.
+
+
+LaTeX Warning: Citation `Choi2007' on page 8 undefined on input line 1076.
+
+
+LaTeX Warning: Citation `Kursun2008' on page 8 undefined on input line 1077.
+
+
+LaTeX Warning: Citation `Ayoub2009' on page 8 undefined on input line 1077.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1081 \newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<graphics/parsectemp.png, id=147, 697.6464pt x 202.356pt>
+File: graphics/parsectemp.png Graphic file (type png)
+
+<use graphics/parsectemp.png>
+Package pdftex.def Info: graphics/parsectemp.png used on input line 1084.
+(pdftex.def)             Requested size: 251.99347pt x 144.54758pt.
+
+Underfull \hbox (badness 1902) in paragraph at lines 1100--1101
+[]\OT1/ptm/m/n/10 Simulate FP-growth method for
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 1101--1102
+[]\OT1/ptm/m/n/10 Online clus-ter-ing al-go-rithm for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1118--1118
+ |[]\OT1/ptm/m/it/10 PARSEC Bench-mark Be-hav-ior and Dis-cus-sion|
+ []
+
+
+LaTeX Warning: Citation `Bienia2008' on page 8 undefined on input line 1122.
+
+
+LaTeX Warning: Reference `tab:parsecbench' on page 8 undefined on input line 11
+25.
+
+[8 <./graphics/speccputemp.png> <./graphics/parsectemp.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1129 \newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<graphics/parsecperformance.png, id=153, 693.792pt x 199.947pt>
+File: graphics/parsecperformance.png Graphic file (type png)
+
+<use graphics/parsecperformance.png>
+Package pdftex.def Info: graphics/parsecperformance.png used on input line 1131
+.
+(pdftex.def)             Requested size: 251.99866pt x 144.54445pt.
+
+
+LaTeX Warning: Reference `fig:pbenchmarkt' on page 9 undefined on input line 11
+38.
+
+
+LaTeX Warning: Reference `fig:pbenchmarkp' on page 9 undefined on input line 11
+39.
+
+
+LaTeX Warning: Reference `fig:pbenchmark' on page 9 undefined on input line 114
+0.
+
+
+LaTeX Warning: Citation `Bienia2011' on page 9 undefined on input line 1143.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1150 \newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<graphics/ParsecPowerConsumption.png, id=154, 648.9846pt x 224.037pt>
+File: graphics/ParsecPowerConsumption.png Graphic file (type png)
+
+<use graphics/ParsecPowerConsumption.png>
+Package pdftex.def Info: graphics/ParsecPowerConsumption.png used on input line
+ 1152.
+(pdftex.def)             Requested size: 252.00377pt x 144.54205pt.
+
+
+LaTeX Warning: Reference `fig:tasvsedp' on page 9 undefined on input line 1156.
+
+
+
+LaTeX Warning: Citation `Cochran2011' on page 9 undefined on input line 1168.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1170 \newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<graphics/tasvsedpc.png, id=155, 297.2706pt x 221.628pt>
+File: graphics/tasvsedpc.png Graphic file (type png)
+
+<use graphics/tasvsedpc.png>
+Package pdftex.def Info: graphics/tasvsedpc.png used on input line 1173.
+(pdftex.def)             Requested size: 178.36372pt x 132.97781pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1179 \newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Citation `Sarood2011' on page 9 undefined on input line 1196.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./graphics/parsecperformance.png> <./graphics/ParsecPowerConsumption.png> 
+<./graphics/tasvsedpc.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1199 \newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+No file Scheduler_March12.bbl.
+[10
+
+] (./Scheduler_March12.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7121 strings out of 493633
+ 108552 string characters out of 3143378
+ 210379 words of memory out of 3000000
+ 10278 multiletter control sequences out of 15000+200000
+ 40765 words of font info for 87 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 38i,11n,39p,350b,286s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texli
+ve/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
+/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2011
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2011/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2011/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2011/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2011/texmf-d
+ist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2011/texmf-dist/font
+s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/ur
+w/times/utmbi8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on Scheduler_March12.pdf (10 pages, 563464 bytes).
+PDF statistics:
+ 215 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+

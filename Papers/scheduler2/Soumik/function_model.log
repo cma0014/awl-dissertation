@@ -1,0 +1,860 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=prv_function_model 2009.7.27)  27 JUL 2009 23:59
+entering extended mode
+ %&-line parsing enabled.
+**&prv_function_model function_model.tex
+(./function_model.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, r
+omanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turki
+sh, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+CUSTOMISED FORMAT. Preloaded files:
+        .
+  amsart.cls    2004/08/06 v2.20
+ amsmath.sty    2000/07/18 v2.13 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+    umsa.fd    2002/01/19 v2.2g AMS font definitions
+amsfonts.sty    2001/10/25 v2.2f
+geometry.sty    2008/12/21 v4.2 Page Geometry
+  keyval.sty    1999/03/16 v1.13 key=value parser (DPC)
+   ifpdf.sty    2007/12/12 v1.6 Provides the ifpdf switch (HO)
+  ifvtex.sty    2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+geometry.cfg
+ parskip.sty    2001/04/09 non-zero parskip adjustments
+graphicx.sty    1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+graphics.sty    2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+  pdftex.def    2008/09/08 v0.04l Graphics/color for pdfTeX
+ amssymb.sty    2002/01/22 v2.2d
+epstopdf.sty    2008/05/06 v1.7 Conversion with epstopdf on the fly (HO)
+infwarerr.sty    2007/09/09 v1.2 Providing info/warning/message (HO)
+  grfext.sty    2007/09/30 v1.0 Managing graphics extensions (HO)
+kvoptions.sty    2007/10/18 v3.0 Keyval support for LaTeX options (HO)
+pdftexcmds.sty    2007/12/12 v0.3 LuaTeX support for pdfTeX utility functions (
+HO)
+    umsa.fd    2002/01/19 v2.2g AMS font definitions
+    umsb.fd    2002/01/19 v2.2g AMS font definitions
+        .
+(./function_model.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/preview.sty
+Package: preview 2008/02/03 11.85 (AUCTeX/preview-latex)
+
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/prtightpage.
+def
+\PreviewBorder=\dimen120
+)
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/prauctex.def
+No auxiliary output files.
+
+
+\hbadness=\count103
+\hfuzz=\dimen121
+
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/prauctex.cfg
+))
+(/Applications/Emacs.app/Contents/Resources/site-lisp/auctex/latex/prfootnotes.
+def)
+\pr@snippet=\count104
+\pr@box=\box29
+\pr@output=\toks27
+
+Preview: Fontsize 10.95pt
+Preview: PDFoutput 1
+)
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: letterpaper
+landscape: --
+twocolumn: --
+twoside: true
+asymmetric: --
+h-parts: 73.71613pt, 0.7\paperwidth , 110.57425pt (default)
+v-parts: 95.39737pt, 0.7\paperheight , 143.09605pt (default)
+hmarginratio: 2:3
+vmarginratio: 2:3
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  614.295pt
+\paperheight 794.96999pt
+\textwidth  430.00462pt
+\textheight 556.47656pt
+\oddsidemargin  1.44614pt
+\evensidemargin 38.30426pt
+\topmargin  1.12738pt
+\headheight 8.0pt
+\headsep    14.0pt
+\footskip   12.0pt
+\marginparwidth 90.0pt
+\marginparsep   11.0pt
+\columnsep  10.0pt
+\skip\footins  7.0pt plus 11.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+\@twosidetrue \@mparswitchtrue 
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+(/usr/local/texlive/2008/texmf-dist/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count105
+\scratchdimen=\dimen122
+\scratchbox=\box30
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen123
+\MPnumerator=\count109
+\everyMPtoPDFconversion=\toks29
+)
+! Preview: Snippet 1 started.
+<-><->
+      
+l.17 ...the total time of execution ( denoted by $
+                                                  L$ for length ) of a certa...
+
+Not a real error.
+
+Preview: Tightpage -32891 -32891 32891 32891
+! Preview: Snippet 1 ended.(490372+0x488380).
+<-><->
+      
+l.17 ...e total time of execution ( denoted by $L$
+                                                   for length ) of a certain...
+
+Not a real error.
+
+[1{/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+! Preview: Snippet 2 started.
+<-><->
+      
+l.17 ...h ) of a certain application (denoted by $
+                                                  A$),
+Not a real error.
+
+! Preview: Snippet 2 ended.(490372+0x538215).
+<-><->
+      
+l.17 ...) of a certain application (denoted by $A$
+                                                  ),
+Not a real error.
+
+[2]
+! Preview: Snippet 3 started.
+<-><->
+      
+l.19 \[
+       
+Not a real error.
+
+! Preview: Snippet 3 ended.(717618+0x16523833).
+<-><->
+      
+l.21 \]
+       
+Not a real error.
+
+[3]
+! Preview: Snippet 4 started.
+<-><->
+      
+l.23 where application $
+                        A$ has $p$ processes, each associated with a data se...
+
+Not a real error.
+
+! Preview: Snippet 4 ended.(490372+0x538215).
+<-><->
+      
+l.23 where application $A$
+                           has $p$ processes, each associated with a data se...
+
+Not a real error.
+
+[4]
+! Preview: Snippet 5 started.
+<-><->
+      
+l.23 where application $A$ has $
+                                p$ processes, each associated with a data se...
+
+Not a real error.
+
+! Preview: Snippet 5 ended.(308974+139537x361052).
+<-><->
+      
+l.23 where application $A$ has $p$
+                                   processes, each associated with a data se...
+
+Not a real error.
+
+[5]
+! Preview: Snippet 6 started.
+<-><->
+      
+l.23 ... each associated with a data set of size $
+                                                  d_i$ in a single chip. $D_...
+
+Not a real error.
+
+! Preview: Snippet 6 ended.(498346+107642x595937).
+<-><->
+      
+l.23 ...h associated with a data set of size $d_i$
+                                                   in a single chip. $D_A$ i...
+
+Not a real error.
+
+[6]
+! Preview: Snippet 7 started.
+<-><->
+      
+l.23 ...data set of size $d_i$ in a single chip. $
+                                                  D_A$ is the total data ass...
+
+Not a real error.
+
+! Preview: Snippet 7 ended.(490372+111084x1044149).
+<-><->
+      
+l.23 ... set of size $d_i$ in a single chip. $D_A$
+                                                   is the total data associa...
+
+Not a real error.
+
+[7]
+! Preview: Snippet 8 started.
+<-><->
+      
+l.23 ...e total data associated with application $
+                                                  A$, and $D_A = \sum_{i=1}^...
+
+Not a real error.
+
+! Preview: Snippet 8 ended.(490372+0x538215).
+<-><->
+      
+l.23 ...total data associated with application $A$
+                                                  , and $D_A = \sum_{i=1}^p{...
+
+Not a real error.
+
+[8]
+! Preview: Snippet 9 started.
+<-><->
+      
+l.23 ...ata associated with application $A$, and $
+                                                  D_A = \sum_{i=1}^p{d_i}$.
+Not a real error.
+
+! Preview: Snippet 9 ended.(574859+214237x4408226).
+<-><->
+      
+l.23 ...ication $A$, and $D_A = \sum_{i=1}^p{d_i}$
+                                                  .
+Not a real error.
+
+[9]
+! Preview: Snippet 10 started.
+<-><->
+      
+l.28 ...on or energy workload of an application, $
+                                                  U(A(p_i),d_i)$. For each a...
+
+Not a real error.
+
+! Preview: Snippet 10 ended.(538214+179404x3721083).
+<-><->
+      
+l.28 ...orkload of an application, $U(A(p_i),d_i)$
+                                                  . For each application $A$...
+
+Not a real error.
+
+[10]
+! Preview: Snippet 11 started.
+<-><->
+      
+l.28 ...n, $U(A(p_i),d_i)$. For each application $
+                                                  A$ and problem size $D_A$,...
+
+Not a real error.
+
+! Preview: Snippet 11 ended.(490372+0x538215).
+<-><->
+      
+l.28 ... $U(A(p_i),d_i)$. For each application $A$
+                                                   and problem size $D_A$, a...
+
+Not a real error.
+
+[11]
+! Preview: Snippet 12 started.
+<-><->
+      
+l.28 ...or each application $A$ and problem size $
+                                                  D_A$, a measure of the wor...
+
+Not a real error.
+
+! Preview: Snippet 12 ended.(490372+111084x1044149).
+<-><->
+      
+l.28 ...ach application $A$ and problem size $D_A$
+                                                  , a measure of the workloa...
+
+Not a real error.
+
+[12]
+! Preview: Snippet 13 started.
+<-><->
+      
+l.28 ...m size $D_A$, a measure of the workload, $
+                                                  W(A(p_i),d_i)$, is defined...
+
+Not a real error.
+
+! Preview: Snippet 13 ended.(538214+179404x3930292).
+<-><->
+      
+l.28 ...a measure of the workload, $W(A(p_i),d_i)$
+                                                  , is defined in a data-ope...
+
+Not a real error.
+
+[13]
+! Preview: Snippet 14 started.
+<-><->
+      
+l.28 ...us the energy workload of an application $
+                                                  A$ operating on a data set...
+
+Not a real error.
+
+! Preview: Snippet 14 ended.(490372+0x538215).
+<-><->
+      
+l.28 ... the energy workload of an application $A$
+                                                   operating on a data set $...
+
+Not a real error.
+
+[14]
+! Preview: Snippet 15 started.
+<-><->
+      
+l.28 ... application $A$ operating on a data set $
+                                                  D_A$ can be expressed as :
+Not a real error.
+
+! Preview: Snippet 15 ended.(490372+111084x1044149).
+<-><->
+      
+l.28 ...lication $A$ operating on a data set $D_A$
+                                                   can be expressed as :
+Not a real error.
+
+[15]
+! Preview: Snippet 16 started.
+<-><->
+      
+l.30 \[
+       
+Not a real error.
+
+! Preview: Snippet 16 ended.(1159204+0x22566545).
+<-><->
+      
+l.32 \]
+       
+Not a real error.
+
+[16]
+! Preview: Snippet 17 started.
+<-><->
+      
+l.34 where $
+            L_n(k, d_i)$ is the total time to execute $n$ applications using...
+
+Not a real error.
+
+! Preview: Snippet 17 ended.(538214+179404x2728361).
+<-><->
+      
+l.34 where $L_n(k, d_i)$
+                         is the total time to execute $n$ applications using...
+
+Not a real error.
+
+[17]
+! Preview: Snippet 18 started.
+<-><->
+      
+l.34 ..._n(k, d_i)$ is the total time to execute $
+                                                  n$ applications using the ...
+
+Not a real error.
+
+! Preview: Snippet 18 ended.(308974+0x430740).
+<-><->
+      
+l.34 ...(k, d_i)$ is the total time to execute $n$
+                                                   applications using the ch...
+
+Not a real error.
+
+[18]
+! Preview: Snippet 19 started.
+<-><->
+      
+l.34 ...n$ applications using the chip. The term $
+                                                  k_e$ is the total number o...
+
+Not a real error.
+
+! Preview: Snippet 19 ended.(498346+107642x664779).
+<-><->
+      
+l.34 ...pplications using the chip. The term $k_e$
+                                                   is the total number of ap...
+
+Not a real error.
+
+[19]
+! Preview: Snippet 20 started.
+<-><->
+      
+l.34 ...d with the associated length of time for $
+                                                  L_n$, at which point a ``t...
+
+Not a real error.
+
+! Preview: Snippet 20 ended.(490372+107642x859148).
+<-><->
+      
+l.34 ...th the associated length of time for $L_n$
+                                                  , at which point a ``therm...
+
+Not a real error.
+
+[20]
+! Preview: Snippet 21 started.
+<-><->
+      
+l.36 ... of the system. Thus for the application $
+                                                  A$ we express TEA as :
+Not a real error.
+
+! Preview: Snippet 21 ended.(490372+0x538215).
+<-><->
+      
+l.36 ...f the system. Thus for the application $A$
+                                                   we express TEA as :
+Not a real error.
+
+[21]
+! Preview: Snippet 22 started.
+<-><->
+      
+l.38 \begin{align*}
+                   
+Not a real error.
+
+! Preview: Snippet 22 ended.(5010004+0x23553257).
+<-><->
+      
+l.41 \end{align*}
+                 
+Not a real error.
+
+[22]
+! Preview: Snippet 23 started.
+<-><->
+      
+l.43 In these expressions, $
+                            T_{th}$ refers to the threshold temperature at w...
+
+Not a real error.
+
+! Preview: Snippet 23 ended.(490372+116910x974298).
+<-><->
+      
+l.43 In these expressions, $T_{th}$
+                                    refers to the threshold temperature at w...
+
+Not a real error.
+
+[23]
+! Preview: Snippet 24 started.
+<-><->
+      
+l.43 ...which a DTM triggered event will occur.  $
+                                                  T_{nominal}$ refers to the...
+
+Not a real error.
+
+! Preview: Snippet 24 ended.(490372+116910x2548148).
+<-><->
+      
+l.43 ...triggered event will occur.  $T_{nominal}$
+                                                   refers to the nominal tem...
+
+Not a real error.
+
+[24]
+! Preview: Snippet 25 started.
+<-><->
+      
+l.44 The term $
+               J_e$ is the ``electrical equivalent of heat'' for the chip, w...
+
+Not a real error.
+
+! Preview: Snippet 25 ended.(490372+107642x689113).
+<-><->
+      
+l.44 The term $J_e$
+                    is the ``electrical equivalent of heat'' for the chip, w...
+
+Not a real error.
+
+[25]
+! Preview: Snippet 26 started.
+<-><->
+      
+l.44 ...ted with processing the bits application $
+                                                  A(p_i)$ computes and commu...
+
+Not a real error.
+
+! Preview: Snippet 26 ended.(538214+179404x1679843).
+<-><->
+      
+l.44 ...h processing the bits application $A(p_i)$
+                                                   computes and communicates...
+
+Not a real error.
+
+[26]
+! Preview: Snippet 27 started.
+<-><->
+      
+l.46 ...to completion. In general the efficiency $
+                                                  \eta(A(p_i), d_i,T)$ is de...
+
+Not a real error.
+
+! Preview: Snippet 27 ended.(538214+179404x4372906).
+<-><->
+      
+l.46 ...neral the efficiency $\eta(A(p_i), d_i,T)$
+                                                   is defined as
+Not a real error.
+
+[27]
+! Preview: Snippet 28 started.
+<-><->
+      
+l.48 \[
+       
+Not a real error.
+
+! Preview: Snippet 28 ended.(1695343+0x20524860).
+<-><->
+      
+l.50 \]
+       
+Not a real error.
+
+[28]
+! Preview: Snippet 29 started.
+<-><->
+      
+l.52 where $
+            T_(me)$ is the maximum temperature till which the core will carr...
+
+Not a real error.
+
+! Preview: Snippet 29 ended.(538214+277109x1912059).
+<-><->
+      
+l.52 where $T_(me)$
+                    is the maximum temperature till which the core will carr...
+
+Not a real error.
+
+[29]
+! Preview: Snippet 30 started.
+<-><->
+      
+l.52 ... over till a DTM triggered event occurs. $
+                                                  A_e$ refers to the applica...
+
+Not a real error.
+
+! Preview: Snippet 30 ended.(490372+107642x829399).
+<-><->
+      
+l.52 ...r till a DTM triggered event occurs. $A_e$
+                                                   refers to the application...
+
+Not a real error.
+
+[30]
+! Preview: Snippet 31 started.
+<-><->
+      
+l.52 ...d the DTM triggered event to take place. $
+                                                  T_e$ is the execution time...
+
+Not a real error.
+
+! Preview: Snippet 31 ended.(490372+107642x710543).
+<-><->
+      
+l.52 ...e DTM triggered event to take place. $T_e$
+                                                   is the execution time of ...
+
+Not a real error.
+
+[31]
+! Preview: Snippet 32 started.
+<-><->
+      
+l.52 ..._e$ is the execution time of application $
+                                                  A_e$. Thus $\eta(A(p_i), d...
+
+Not a real error.
+
+! Preview: Snippet 32 ended.(490372+107642x829399).
+<-><->
+      
+l.52 ...is the execution time of application $A_e$
+                                                  . Thus $\eta(A(p_i), d_i,T...
+
+Not a real error.
+
+[32]
+! Preview: Snippet 33 started.
+<-><->
+      
+l.52 ...xecution time of application $A_e$. Thus $
+                                                  \eta(A(p_i), d_i,T)$ is a ...
+
+Not a real error.
+
+! Preview: Snippet 33 ended.(538214+179404x4372906).
+<-><->
+      
+l.52 ...lication $A_e$. Thus $\eta(A(p_i), d_i,T)$
+                                                   is a measure of the ``the...
+
+Not a real error.
+
+[33]
+! Preview: Snippet 34 started.
+<-><->
+      
+l.52 ... a thermal event. Thus the definition of $
+                                                  \eta$ is linked to the def...
+
+Not a real error.
+
+! Preview: Snippet 34 ended.(308974+139537x382067).
+<-><->
+      
+l.52 ...ermal event. Thus the definition of $\eta$
+                                                   is linked to the definiti...
+
+Not a real error.
+
+[34]
+! Preview: Snippet 35 started.
+<-><->
+      
+l.56 \begin{align*}
+                   
+Not a real error.
+
+! Preview: Snippet 35 ended.(4940380+0x22806338).
+<-><->
+      
+l.59 \end{align*}
+                 
+Not a real error.
+
+[35]
+! Preview: Snippet 36 started.
+<-><->
+      
+l.61 where $
+            P(A(p_i),d_i)$ is the overall power consumed during the applicat...
+
+Not a real error.
+
+! Preview: Snippet 36 ended.(538214+179404x3713261).
+<-><->
+      
+l.61 where $P(A(p_i),d_i)$
+                           is the overall power consumed during the applicat...
+
+Not a real error.
+
+[36]
+! Preview: Snippet 37 started.
+<-><->
+      
+l.61 ...g the application lifetime. the quantity $
+                                                  \int_{t=0}^{t=L_A}v(t)i(t)...
+
+Not a real error.
+
+! Preview: Snippet 37 ended.(728817+252045x4928239).
+<-><->
+      
+l.61 ...he quantity $\int_{t=0}^{t=L_A}v(t)i(t)dt$
+                                                   is the total power consum...
+
+Not a real error.
+
+[37]
+! Preview: Snippet 38 started.
+<-><->
+      
+l.61 ...SB) during the length of the application $
+                                                  L_A$, with $v(t)$ and $i(t...
+
+Not a real error.
+
+! Preview: Snippet 38 ended.(490372+111084x938400).
+<-><->
+      
+l.61 ...during the length of the application $L_A$
+                                                  , with $v(t)$ and $i(t)$ b...
+
+Not a real error.
+
+[38]
+! Preview: Snippet 39 started.
+<-><->
+      
+l.61 ...he length of the application $L_A$, with $
+                                                  v(t)$ and $i(t)$ being the...
+
+Not a real error.
+
+! Preview: Snippet 39 ended.(538214+179404x1190885).
+<-><->
+      
+l.61 ...ngth of the application $L_A$, with $v(t)$
+                                                   and $i(t)$ being the inst...
+
+Not a real error.
+
+[39]
+! Preview: Snippet 40 started.
+<-><->
+      
+l.61 ...f the application $L_A$, with $v(t)$ and $
+                                                  i(t)$ being the instantane...
+
+Not a real error.
+
+! Preview: Snippet 40 ended.(538214+179404x1064520).
+<-><->
+      
+l.61 ... application $L_A$, with $v(t)$ and $i(t)$
+                                                   being the instantaneous v...
+
+Not a real error.
+
+[40]
+! Preview: Snippet 41 started.
+<-><->
+      
+l.63 This normalized quantity $
+                               C_\theta$ gives some indication of the ``cost...
+
+Not a real error.
+
+! Preview: Snippet 41 ended.(490372+116910x821010).
+<-><->
+      
+l.63 This normalized quantity $C_\theta$
+                                         gives some indication of the ``cost...
+
+Not a real error.
+
+[41]
+! Preview: Snippet 42 started.
+<-><->
+      
+l.67 \[
+       
+Not a real error.
+
+! Preview: Snippet 42 ended.(3381893+0x28180783).
+<-><->
+      
+l.70 \]
+       
+Not a real error.
+
+[42]
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{0pt}
+\newlabel{tocindent2}{0pt}
+\newlabel{tocindent3}{0pt}
+ ) 
+Here is how much of TeX's memory you used:
+ 486 strings out of 491348
+ 6819 string characters out of 1118406
+ 94697 words of memory out of 3000000
+ 6071 multiletter control sequences out of 10000+50000
+ 12280 words of font info for 47 fonts, out of 3000000 for 5000
+ 875 hyphenation exceptions out of 8191
+ 22i,12n,22p,759b,195s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmex10.pfb></usr/l
+ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi10.pfb></usr/local/texl
+ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmmi6.pfb></usr/local/texlive/2008/t
+exmf-dist/fonts/type1/bluesky/cm/cmmi8.pfb></usr/local/texlive/2008/texmf-dist/
+fonts/type1/bluesky/cm/cmr10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type
+1/bluesky/cm/cmr8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/c
+m/cmsy10.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmsy8.p
+fb>
+Output written on function_model.pdf (42 pages, 53255 bytes).
+PDF statistics:
+ 170 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

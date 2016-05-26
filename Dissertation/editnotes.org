@@ -1,0 +1,31 @@
+# -*- mode: org -*-
+#+TITLE:   editnotes.org
+#+AUTHOR:    Adam Lewis
+#+EMAIL:     adaml@awlconsulting.com
+#+DATE:      2010-10-28 Thu
+#+DESCRIPTION: Notes to editor for Dissertation
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+STARTUP: overview
+#+STARTUP: logdone
+#+PROPERTY: Effort_ALL 0:10 0:20 0:30 1:00 2:00 4:00 8:00
+#+TAGS: Content(c) Presentation(p) Format(f) Other(o)
+* Overall
+* Introduction
+* Background and Related Work
+* System Modeling
+* Effective Prediction
+* Thermal-Aware Scheduling
+* Evaluation and Results
+* Current State, Plan for Completion, and Conclusions
+* Bibliography and other end matter
+
+

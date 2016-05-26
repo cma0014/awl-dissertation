@@ -1,0 +1,53 @@
+%
+% Following stuff is included for page squeezing if we need to cut for 
+% a specific conference.   These values are selected from the
+% documentation for the savetrees style.  We have to manually set these
+% as there is some sort of weird interaction between the IEEE style
+% files and the savetrees package that precludes us from directly
+% including the savetrees package.
+%
+% Redfine maketitle macro to cut down on the amount of space used
+\renewcommand\maketitle{%
+ \newpage%
+ \begin{center}%
+ \let \footnote \thanks%
+ {\large \textbf{\@title}}%
+ \vskip 0.5em%
+ \begin{tabular}{c}%
+ \@author
+ \end{tabular}%
+ \end{center}%
+}
+% Tigenten up LaTeX's widow control parameters
+\let\markeverypar\everypar
+\newtoks\everypar
+\everypar\markeverypar
+\markeverypar{\the\everypar\looseness=-1\relax}
+% Float placement
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.9}
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\dblfloatpagefraction}{0.9}
+\setcounter{topnumber}{50}
+\setcounter{bottomnumber}{50}
+\setcounter{totalnumber}{50}
+\setcounter{dbltopnumber}{50}
+% 
+% Float spacing
+\setlength{\intextsep}{1ex}
+\setlength{\floatsep}{1ex}
+\setlength{\dblfloatsep}{1ex}
+\setlength{\abovecaptionskip}{1ex}
+\setlength{\belowcaptionskip}{1ex}
+\setlength{\textfloatsep}{1ex}
+\setlength{\dbltextfloatsep}{1ex}
+%  Reduce interline spacing
+\renewcommand{\baselinestretch}{0.9}
+% Configure titlesec package to go as tight as possible
+\newcommand{\subparagraph}{} % IEEEtran doesn't define, so null it 
+\usepackage[tiny,compact]{titlesec}
+% Tighten paragraph indentation
+\setlength{\parindent}{1em}
+% End modifications to try compress space

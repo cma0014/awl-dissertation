@@ -1,0 +1,17 @@
+phoronix.sh: Executing pts/cachebench benchmark.
+phoronix.sh: Destination directory is /usr/home/awl8049/scheduler/
+phoronix.sh: Using pts_cachebench_ule as id for this run
+phoronix.sh: Clearing memory on power meter
+Restarting teaplant.
+And now we start the Phoronix pts/cachebench benchmark at 07:22
+
+ERROR: pts/cachebench-1.0.0 is not installed.
+       To install, run: phoronix-test-suite install pts/cachebench-1.0.0
+
+
+ERROR: You must enter at least one test, suite, or result identifier to run.
+
+And the Phoronix pts/cachebench benchmark has completed at 
+phoronix.sh: Telling teaplant to cycle log files
+phoronix.sh: Downloading data from the power meter
+phoronix.sh: Data collection complete

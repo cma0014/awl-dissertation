@@ -1,0 +1,52 @@
+n#+TITLE:     conflist.org
+#+AUTHOR:    Adam Lewis
+#+EMAIL:     adaml@awlair.local
+#+DATE:      2012-03-11 Sun
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+* OSDI 2012 :: 10th USENIX Symp. on Oper. Systems Design and Implementation
+  - Location :: Los Angeles
+  - Conf. date :: [2012-10-08 Mon]
+  - Submission deadline :: [2012-05-03 Thu]
+  - Website :: [[http://www.usenix.org/events/osdi12/]]
+* SC12 :: 
+  - Location :: Salt Lake City
+  - Conf. Date :: [2012-11-10 Sat]
+  - Submission deadline :: Abstract -  [2012-04-20 Fri], Full paper -
+       [2012-04-27 Fri]
+  - Website :: [[http://sc12.supercomputing.org/content/papers]]
+* ROSS 2012 :: Int'l Workshop on Runtime and Operating Systems for Supercomputers
+  - Location :: Venice, Italy
+  - Conf. Date :: [2012-06-29 Fri]
+  - Submission deadline :: [2012-03-30 Fri]
+  - Website :: [[http://www.mcs.anl.gov/events/workshops/ross/2012/]]
+* HPCC 2012 :: 14th IEEE Int'l Conf. on High Perf. Computing and Communications
+  - Location :: Liverpool, England, UK
+  - Conf. Date :: [2012-06-25 Mon]
+  - Submission deadline :: [2012-03-18 Sun]
+  - Website :: [[http://www.scim.brad.ac.uk/~hmibrahi/HPCC2012/]]
+* ASBD 2012 :: 2nd Workshop on Architectures and Systems for Big Data
+  - Location :: Portland, OR
+  - Conf. Date :: [2012-06-09 Sat]
+  - Submission deadline :: [2012-03-15 Thu]
+  - Website :: [[https://sites.google.com/site/asbdworkshop/]]
+* SBAC-PAD 2012 : 24th Int'l Symp. on Comp. Arch. and HPC
+  - Location :: New York City, NY
+  - Conf. Date :: [2012-10-24 Wed]
+  - Submission deadline :: [2012-06-29 Fri]
+  - Website :: [[http://www.sbc.org.br/sbac/2012/]]
+* WEED 2012 :: Fourth Workshop on Energy Efficient Design
+  - Location :: Portland, OR
+  - Conf. Date :: [2012-06-09 Sat]
+  - Submission deadline :: [2012-04-02 Mon]
+  - Website :: [[http://research.ihost.com/asbd2011/program.htm]]
+

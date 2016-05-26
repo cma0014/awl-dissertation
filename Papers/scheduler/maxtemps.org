@@ -1,0 +1,105 @@
+#+TITLE:     maxtemps.org
+#+AUTHOR:    
+#+EMAIL:     awl8049@canmac01.cacs.louisiana.edu
+#+DATE:      2011-10-17 Mon
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+b* Thermal shutdown control in the IA-32 processor
+Source: [[http://www.intel.com/cd/ids/developer/asmo-na/eng/downloads/54118.htm?page%3D1][Intel.com: Thermal Protection and Monitoring Features: A Software Perspective]]
+#+BEGIN_QUOTE
+The catastrophic thermal protection mechanism was an "all or nothing"
+capability without pre-notification of a thermal problem. Once the
+preset core temperature was reached, the processor was shutdown. With
+the introduction of Pentium 4 and Intel Xeon processors, a new thermal
+protection mechanism was introduced, allowing for the processor to
+automatically control the processor temperature before reaching the
+catastrophic shutdown temperature but at the expense of temporarily
+reducing processor performance. Current IA-32 processors use internal
+circuitry to periodically stop the internal clock to most of the
+processor. All interrupts during the modulated period are delayed but
+not lost. The processor time stamp counter continues to maintain count
+even during processor modulation. The duration of modulation is
+typically 1 msec intervals. At the end of each interval, the processor
+will again operate at full frequency. If the temperature is still above
+the second preset temperature level, the processor will again modulate
+the internal clock. If the temperature drops below the second preset
+level, the processor will continue to operate at its normal clock
+frequency. The effective processor performance is approximately 50% of
+full performance. Note that the method to modulate processor performance
+is not architecturally specified and is subject to change in future
+processors.
+
+Automatic thermal control can be enabled / disabled by software. Bit 3
+of the Model Specific Register (MSR) IA32_MISC_ENABLE_MSR (0x1A0h) is
+used to enabled / disable this feature. The default for automatic
+thermal control at power-on is for this bit to be cleared indicating the
+feature is disabled. Unless an operating system plans to manage thermal
+control directly, it will typically enable this feature if
+available. Note that there is only one IA32_MISC_ENABLE_MSR per physical
+processor package. If this feature is enabled on one logical processor
+in a Hyper-Threading Technology (HT technology) enabled processor, this
+feature is enabled for all other logical processors in the same physical
+package. However, independent physical processors in a multi-processor
+platform must be enabled or disabled separately. Access to this MSR
+requires operating system ring 0 access, i.e. must be a device driver.
+#+END_QUOTE
+* Maximum operating temperatures for common processors
+  This data is slightly out-of-date as it was taken from a collection of
+  web pages in the 2008/2009 timeframe.
+|-------------------------------------------------+-----------------|
+| CPU                                             | Max Temperature |
+|-------------------------------------------------+-----------------|
+| AMD Athlon (socket) upto 1Ghz                   |              90 |
+| AMD Athlon (slot) all speeds                    |              70 |
+| AMD Athlon Thunderbird 1.1Ghz+                  |              95 |
+| AMD Athlon MP 1.33Ghz+                          |              95 |
+| AMD Athlon XP 1.33Ghz+                          |              90 |
+| AMD Athlon XP T-Bred upto 2100+                 |              90 |
+| AMD Athlon XP T-Bred over 2100+                 |              85 |
+| AMD Athlon XP Barton                            |              85 |
+| AMD Duron up to 1Ghz                            |              90 |
+| AMD Duron 1Ghz+                                 |              90 |
+| AMD Duron Applebred                             |              85 |
+| AMD Opteron                                     |         65 – 71 |
+| AMD Athlon 64                                   |              70 |
+| AMD Athlon 64 (Socket 939 1.4 volts)            |              65 |
+| AMD Athlon 64 FX                                |              70 |
+| AMD Athlon 64 X2                                |              71 |
+| AMD Sempron (T-bred/Barton core)                |              90 |
+| AMD Sempron (Paris core)                        |              70 |
+| AMD Mobile Sempron                              |              95 |
+| AMD K6/K6-2/K6-III (All except below)           |              70 |
+| AMD K6-2/K6-III (model number ending in X)      |              65 |
+| AMD K6-2+/K6-III+                               |              85 |
+| Pentium III Slot 1 500-866Mhz                   |              80 |
+| Pentium III Slot and socket 933Mhz              |              75 |
+| Pentium III Slot 1 1Ghz                         |         60 – 70 |
+| Pentium III Slot 1 1.13Ghz                      |              62 |
+| Intel Celeron 266-433Mhz                        |              85 |
+| Intel Celeron 466-533Mhz                        |              70 |
+| Intel Celeron 566-600Mhz (Coppermine)           |              90 |
+| Intel Celeron 633-667Mhz                        |              82 |
+| Intel Celeron 700 – 850Mhz                      |              80 |
+| Intel Celeron 900Mhz – 1.6Ghz                   |         69 – 70 |
+| Intel Celeron 1.7Ghz and Higher                 |         67 – 77 |
+| Intel Pentium II (First Generation "Klamath")   |         72 – 75 |
+| Intel Pentium II (Second Generation 266-333Mhz) |              65 |
+| Intel Pentium II (350 – 400Mhz)                 |              75 |
+| Intel Pentium II (450Mhz)                       |              70 |
+| Intel Pentium 4                                 |         64 – 78 |
+| Intel Pentium M (notebooks)                     |             100 |
+| Intel Pentium D 820 (2.8Ghz)                    |              63 |
+| Intel Pentium D 830 & 840 (3.0 – 3.2Ghz)        |            69.8 |
+| Intel Pentium Pro. 256 or 512K L2 Cache         |              85 |
+| Intel Pentium Pro. 1MB L2 Cache                 |              80 |
+|-------------------------------------------------+-----------------|
+

@@ -1,0 +1,54 @@
+#+TITLE:     notes_to_editor_13Apr2012.org
+#+AUTHOR:    Adam Lewis
+#+EMAIL:     awl8049@cacs.louisiana.edu
+#+DATE:      2012-04-13 Fri
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XS LT:|
+* Overall comments
+  - Page numbers in these notes refer to page numbers in original
+    submission.
+  - Indentation in the Bibliography is done per the requirements of the
+    Journal used as starting point (ACM Transaction on Architecture and
+    Code Optimizaiton).   This journal uses the Chicago Manual of Style
+    as it's guide and the indentation style used matches the
+    requirements of that style guide, as confirmed with the information
+    in the on-line version of the 16th-edition of the CMOS.
+* Specific comments
+|--------+------------+---------------------------------------------------|
+| Page # | Correction | Note                                              |
+| <c>    | <c>        | <l>                                               |
+|--------+------------+---------------------------------------------------|
+| iii    | 1          | Corrected. Right justification is not enabled.    |
+| v      | 1          | Changed.                                          |
+| v      | 2          | Changed.                                          |
+| vii    | All        | Page numbers corrected.                           |
+| viii   | All        | Page numbers corrected.                           |
+| ix     | All        | Page numbers corrected.                           |
+| x      | All        | Page numbers corrected.                           |
+|--------+------------+---------------------------------------------------|
+| 1      | 1          | Corrected.                                        |
+| 6      | 1          | Corrected.                                        |
+| 8      | 1          | Text font changed as directed.                    |
+| 67     | 1          | Blank page deleted.                               |
+|--------+------------+---------------------------------------------------|
+| 67-75  |            | See general comments re: indentation style.       |
+| 67-75  |            | Extra dashes in references removed as directed    |
+|--------+------------+---------------------------------------------------|
+| 76-78  |            | Order of Biographical Sketch and Extended Heading |
+|        |            | Abstract reversed (per feedback from Emily)       |
+| 76     | 1          | Page count corrected.                             |
+| 76     | 2          | Spacing corrected.                                |
+|--------+------------+---------------------------------------------------|
+| 78     | 1          | Text deleted as directed.                         |
+| 78     | 2          | Job titles capitalized.                           |
+|--------+------------+---------------------------------------------------|
+

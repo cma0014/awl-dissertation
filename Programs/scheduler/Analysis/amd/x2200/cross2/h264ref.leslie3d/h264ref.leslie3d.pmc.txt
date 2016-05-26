@@ -1,0 +1,1534 @@
+pic0: pic0=NB_ht_bus0_bandwidth,umask0=0x07
+pic1: pic1=NB_ht_bus1_bandwidth,umask=0x07
+pic2: pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+pic3: pic0=PAPI_l2_dcr
+pic4: pic1=PAPI_l2_dcw,sys
+   time cpu event      pic0      pic1      pic2 
+  2.003   2  tick         0  43581523         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+  2.003   3  tick         0  43571430         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+  4.003   1  tick      2660      3184  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+  4.003   0  tick     12264     12124  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+  4.003   3  tick     60698      1790  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+  6.003   1  tick    814539         0  19523003  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+  8.003   3  tick     76469     88215  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 10.003   1  tick     86638         0    923511  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 10.003   0  tick     86658         0    964788  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 10.003   3  tick         0    780501         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 12.003   2  tick    191061    264610  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 14.003   1  tick     86888         0   1250396  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 14.003   3  tick         0   1294426         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 16.003   3  tick    178276      7946  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 16.003   0  tick     27166     54110  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 18.003   2  tick         0  31457382         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 20.003   2  tick       410       329  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 20.003   3  tick     40405      1962  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 22.003   3  tick         0   2954133         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 24.003   0  tick    394334    497108  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 26.003   0  tick     86747         0   4033031  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 26.003   2  tick         0   3839606         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 28.003   0  tick     12858     12555  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 28.003   3  tick    222471       659  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 30.003   3  tick         0  30725268         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 32.003   1  tick     30703     90526  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 34.003   1  tick    120184         0   2308264  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 34.014   2  tick         0   2043308         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 36.003   0  tick    336671    429390  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 38.003   2  tick         0    395051         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 38.003   3  tick         0    409937         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 40.003   3  tick    255244    246843  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 40.004   0  tick    143436    151218  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 42.003   3  tick         0  16660741         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 44.003   1  tick      2842      3575  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 44.003   3  tick    178243       691  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 46.003   2  tick         0  34255282         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 48.003   2  tick      1093      2074  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 48.003   3  tick    143583      4362  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 50.003   0  tick     87103         0    697557  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 50.003   3  tick         0    427335         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 52.003   3  tick    423160    407357  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 54.003   3  tick         0   2524314         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 56.003   3  tick    214913      8572  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 58.003   1  tick   1387906         0  34281450  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 60.003   0  tick     12843     14234  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 60.003   3  tick    208932      1424  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 62.003   1  tick     86882         0   3000086  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 62.003   3  tick         0   3016563         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 64.003   3  tick    133671    127306  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 66.003   1  tick     86874         0   2453407  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 66.003   0  tick     86876         0   2498703  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 68.003   3  tick     35176     16890  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 68.003   0  tick     32525     38534  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 70.003   3  tick         0  33245435         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 72.003   0  tick     26255     55455  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 72.003   3  tick    225810      8694  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 74.003   3  tick         0  17652086         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 74.004   0  tick    804558         0  19510259  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 76.003   0  tick    139127    182838  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 78.003   0  tick     86768         0    987145  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 78.003   3  tick         0    936157         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 80.003   2  tick    242439    344528  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 82.003   1  tick     86530         0   3209986  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 84.003   0  tick     36473     25768  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 86.003   2  tick         0  37070012         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 88.003   0  tick     12652     12361  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 88.003   3  tick    222947       634  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 90.003   0  tick     86794         0   1208343  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 90.003   3  tick         0   1168800         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 92.003   3  tick    466869    430741  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 94.003   1  tick     86516         0    761175  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 94.003   3  tick         0    521299         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+ 96.003   0  tick     26206     56331  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 96.003   1  tick     29872     83697  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+ 98.003   3  tick         0  34553428         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+100.003   3  tick    112979       603  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+102.003   3  tick         0   4594913         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+102.004   0  tick    210954         0   4815113  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+104.003   3  tick    242269    108702  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+106.003   0  tick     86640         0   4567860  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+108.003   0  tick    164086    218879  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+108.004   2  tick    119683    167301  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+110.003   3  tick         0  15890502         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+112.003   3  tick    194033     20774  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+114.003   2  tick         0  36565595         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+116.003   0  tick     28086     57916  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+118.003   2  tick         0   1676577         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+118.003   3  tick         0   1662548         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+120.003   3  tick    458519    415795  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+122.003   0  tick     86790         0   4001451  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+122.003   3  tick         0   3868118         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+124.003   0  tick     12581     12711  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+124.003   3  tick     45039       776  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+126.003   0  tick   1399819         0  34127579  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+128.003   0  tick     12503     11575  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+128.003   3  tick     24342       783  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+130.003   1  tick     86505         0    988568  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+130.003   3  tick         0    854883         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+132.003   3  tick    477758    427133  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+134.003   0  tick     86872         0   1116198  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+134.003   3  tick         0   1036864         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+136.003   3  tick    195769     26125  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+138.003   2  tick         0  33049481         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+140.003   0  tick     13315     13485  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+140.003   2  tick     40174       656  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+142.003   0  tick    984989         0  20723762  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+142.003   2  tick         0  21055513         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+144.003   2  tick    310029    130110  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+146.003   2  tick         0   3694206         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+148.003   0  tick    343087    474397  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+150.003   1  tick     86859         0   1461602  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+150.003   2  tick         0   1371238         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+152.003   2  tick    224239     55412  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+154.003   2  tick         0  29715054         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+156.003   0  tick     25502     53964  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+158.003   0  tick     86965         0    503437  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+158.003   3  tick         0    411607         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+160.003   2  tick    199111    267845  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+162.003   0  tick     86794         0   3999553  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+162.003   3  tick         0   3889324         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+164.003   2  tick       507       632  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+164.003   3  tick    167537       561  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+166.003   3  tick         0  35875402         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+168.003   0  tick     12292     12245  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+168.003   3  tick    128488      4135  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+170.003   2  tick         0   2005363         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+170.004   0  tick    300368         0   2492374  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+172.003   3  tick    304333    183318  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+174.003   0  tick    169076         0   2598774  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+176.003   3  tick    270082     97046  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+176.004   2  tick    138896    185184  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+178.003   3  tick         0  17574952         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+180.003   0  tick     13102     12640  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+182.003   3  tick         0  35632381         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+184.003   1  tick      1489      1580  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+184.003   3  tick     39671      2320  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+186.003   3  tick         0   2214562         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+188.003   2  tick    276269    399586  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+190.003   0  tick     86547         0   1080513  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+190.003   3  tick         0    984955         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+192.003   3  tick    224966      7245  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+194.003   3  tick         0  34734254         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+196.003   0  tick     26059     53428  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+198.003   2  tick         0    869037         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+198.003   3  tick         0    877707         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+200.003   2  tick    191729    264773  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+202.003   0  tick     86504         0   4525902  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+202.003   3  tick         0   4037223         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+204.003   3  tick    242516     27130  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+204.003   2  tick     27666     34540  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+206.003   3  tick         0  31111316         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+208.003   0  tick     12086     12436  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+208.003   3  tick    222512       579  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+210.003   1  tick    942115         0  18953923  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+210.004   2  tick         0  19791188         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+212.003   0  tick    210768    315213  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+214.003   1  tick     86450         0    751735  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+214.003   2  tick         0    394531         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+216.003   3  tick     48240     73445  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+218.003   1  tick     86991         0    762788  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+218.003   2  tick         0    567284         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+220.003   0  tick     12530     12916  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+220.003   2  tick    130606       645  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+222.003   2  tick         0  36770643         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+224.003   0  tick     14996     13619  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+224.003   2  tick    162559       816  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+226.003   1  tick     86538         0   4685491  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+228.003   3  tick     96231    151735  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+230.003   0  tick     86881         0    796340  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+230.003   2  tick         0    514360         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+232.003   3  tick      4588      7207  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+232.003   2  tick    221847     27093  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+234.003   2  tick         0  36215124         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+236.003   0  tick     13170     14184  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+236.003   2  tick    235316     54323  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+238.003   2  tick         0   3486437         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+238.003   3  tick         0   3572656         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+238.004   0  tick    325786         0   3941393  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+240.003   2  tick    381124    245831  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+242.003   1  tick     86893         0   2993588  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+242.003   2  tick         0   3007170         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+244.003   0  tick    204055    274045  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+244.003   2  tick    148596    171631  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+246.003   0  tick    464450         0  16787155  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+248.003   0  tick     12976     12080  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+248.003   2  tick     24340       710  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+250.003   1  tick   1391058         0  32944806  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+252.003   3  tick      4736      8112  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+252.003   2  tick    234928     14359  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+254.003   1  tick     86863         0   1034174  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+254.003   2  tick         0    977873         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+256.003   0  tick    312467    464859  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+258.003   3  tick         0    946340         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+258.003   2  tick         0   1000263         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+260.003   2  tick     38304       465  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+262.003   2  tick         0  37195042         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+264.003   3  tick    249257     30381  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+266.003   0  tick     86929         0   2935003  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+268.003   3  tick    303266    126728  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+270.003   2  tick         0   1217278         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+270.003   3  tick         0   1184057         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+272.003   3  tick    210815     23681  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+274.003   3  tick         0  31793618         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+276.003   3  tick     24304      1442  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+278.003   3  tick         0  19134591         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+278.004   0  tick   1021890         0  17967056  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+280.003   3  tick    176950     59628  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+282.003   0  tick     86831         0   3905385  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+282.003   3  tick         0   3747045         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+284.003   2  tick    183313    256857  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+284.003   0  tick    362587    519927  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+286.003   3  tick         0   3080436         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+286.003   1  tick     86614         0   3100877  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+288.003   0  tick     12249     11894  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+288.003   3  tick    114725      3782  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+290.003   3  tick         0  30383830         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+292.003   3  tick    210246     15580  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+294.003   3  tick         0   2542673         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+296.003   0  tick    304546    468102  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+298.003   3  tick         0   1685368         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+300.003   0  tick     13209     13294  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+300.003   3  tick    206407       532  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+302.003   0  tick   1382016         0 143975019  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+302.003   2  tick         0 139866543         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+304.003   0  tick  34098838  19491157  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+306.003   0  tick    286271         0 285051874  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+306.004   3  tick         0 185937419         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+308.003   0  tick   7855350   8036838  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+310.003   0  tick     86228         0 251997407  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+312.003   0  tick  52615354  24618849  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+312.004   2  tick   1299996   1095255  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+314.003   1  tick    657803         0 258461509  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+316.003   3  tick    185903     10386  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+316.003   0  tick  56321172  25812392  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+318.003   1  tick   1373113         0 295892069  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+318.004   3  tick         0 201369434         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+320.003   0  tick   7704494   7824793  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+322.003   3  tick         0 228044190         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+324.003   1  tick  34406160  17505693  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+326.003   3  tick         0 208144357         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+328.003   3  tick      3761      4042  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+328.003   0  tick   7780018   7623337  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+330.003   3  tick         0 266943076         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+332.003   3  tick    218504     18036  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+332.003   0  tick   8062518   7813917  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+334.003   3  tick         0 159505346         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+334.003   0  tick     86187         0 238620537  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+336.003   2  tick   5266836   2916318  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+336.003   0  tick  38082898  18941800  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+338.003   0  tick     86632         0 311444694  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+340.003   2  tick      2215      2448  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+340.003   0  tick   7748590   7705362  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+342.003   2  tick         0 221011792         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+344.003   0  tick   7900040   7698614  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+346.003   0  tick    343445         0 354924753  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+346.003   3  tick         0 229707521         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+348.003   1  tick  49827876  23392661  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+350.003   0  tick     86529         0 267508859  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+352.003   3  tick   3904264   1897223  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+352.004   0  tick  47869678  22333991  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+354.003   3  tick         0 260582438         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+356.003   2  tick    541665    513870  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+356.003   1  tick   7436182   7241600  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+358.003   0  tick   1406322         0 369554041  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+360.003   0  tick  55534619  25587360  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+362.003   3  tick         0 166520249         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+364.003   3  tick    453922    660063  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+366.003   2  tick         0 172779531         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+366.003   0  tick     86595         0 257067677  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+368.003   0  tick   7190771   7035080  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+370.003   0  tick   1368785         0 335402831  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+370.003   2  tick         0 223913215         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+372.003   2  tick    226625     15361  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+374.003   1  tick     86659         0 256173415  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+376.003   2  tick   2815899   1842699  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+376.003   0  tick  49024340  22763123  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+378.003   0  tick     86494         0 260403750  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+380.003   3  tick      1695      2110  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+380.003   0  tick   7940840   7780421  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+382.003   0  tick   1359870         0 295286732  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+384.003   0  tick  55547575  25355611  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+386.003   2  tick         0 256651791         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+386.003   0  tick    615855         0 401262833  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+386.004   1  tick    618726         0 401914077  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+388.003   2  tick   1323759    896774  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+390.003   1  tick     86476         0 311782163  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+392.003   1  tick   6462117   6389095  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+392.004   0  tick  49372856  22786841  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+394.003   2  tick         0 181530113         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+394.003   0  tick    360385         0 273168381  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+396.003   0  tick  56288312  25936758  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+398.003   2  tick         0 251832816         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+398.003   0  tick   1368910         0 375549992  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+400.003   2  tick    127740    124857  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+402.003   1  tick     86480         0 308126734  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+404.003   0  tick  26565999  14182004  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+406.003   2  tick         0 160864990         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+406.003   0  tick     86251         0 239174897  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+408.003   3  tick      1550      1887  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+408.003   0  tick  56047932  25804543  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+410.003   1  tick   1407896         0 431508754  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+410.003   0  tick   1407896         0 431521787  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+412.003   2  tick     27637     17123  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+412.003   0  tick   7690027   7466585  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+414.003   2  tick         0 176282382         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+416.003   3  tick    691152   1007087  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+416.003   0  tick  53314859  24600210  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+418.003   1  tick     86199         0 246204254  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+420.003   2  tick    218726      2195  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+422.003   2  tick         0 279284873         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+422.003   0  tick   1374927         0 429092059  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+424.003   2  tick     25133      3265  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+426.003   2  tick         0 188756665         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+428.003   1  tick  55562318  25815835  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+430.003   1  tick     86287         0 260802833  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+432.003   3  tick   5935706   2699210  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+432.004   2  tick   4585368   2580142  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+434.003   2  tick         0 168767696         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+436.003   2  tick    185814      6580  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+436.003   0  tick   8075928   7804964  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+438.003   1  tick   1377292         0 529568369  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+440.003   0  tick  54899213  25377070  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+442.003   2  tick         0 164654855         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+442.003   0  tick     86190         0 245274127  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+444.003   2  tick   7746431   4210361  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+446.003   2  tick         0 169534459         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+446.003   0  tick     86623         0 252688869  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+448.003   0  tick  55327979  25389191  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+450.003   0  tick   1369875         0 532094368  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+452.003   2  tick    275913    114121  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+452.003   0  tick   7755617   7517801  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+454.003   1  tick     86235         0 249225476  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+456.003   0  tick  17333733  10102902  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+458.003   3  tick         0 197009512         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+460.003   3  tick    164549     19269  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+460.004   0  tick  55261990  25580965  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+462.003   0  tick   1317476         0 358260604  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+464.003   2  tick    326532    168206  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+466.003   2  tick         0 295539138         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+468.003   1  tick  56420366  25920786  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+470.003   0  tick     86571         0 250870769  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+472.003   0  tick  49202573  22797298  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+472.003   2  tick   5153638   2667361  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+474.003   0  tick    212158         0 253233136  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+476.003   2  tick   3170826   1508515  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+476.003   0  tick  51767033  23795437  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+478.003   3  tick         0 291844190         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+480.003   3  tick    214862      1492  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+482.003   3  tick         0 158394514         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+484.003   3  tick    526156   1047509  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+486.003   2  tick         0 166692063         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+486.008   0  tick     86635         0 240402762  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+488.003   3  tick    242017     71435  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+490.003   3  tick         0 197958426         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+492.003   2  tick   4289710  18381688  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+494.003   2  tick         0 162201047         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+496.003   0  tick  21688954  10283250  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+498.003   3  tick         0 169882050         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+500.003   1  tick  59041863  27256975  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+500.003   3  tick     64588     35933  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+502.003   0  tick   1008246         0 278387498  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+504.003   0  tick  55584377  25834212  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+504.003   3  tick    584817    944699  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+506.003   0  tick   1030399         0 253869396  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+506.003   2  tick         0 180152647         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+506.004   1  tick   1032725         0 254368097  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+508.003   2  tick    388758    456785  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+510.003   0  tick     86496         0 244187202  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+512.003   3  tick    707525    854908  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+514.003   2  tick         0 163769938         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+514.003   3  tick         0 163806463         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+516.003   1  tick      3493      4075  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+516.003   2  tick   7395412  19355175  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+518.003   2  tick         0 195708013         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+518.003   3  tick         0 195820931         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+520.003   3  tick    162869      3086  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+522.003   3  tick         0 165694744         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+524.003   3  tick   1511047   3141271  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+526.003   3  tick         0 164583367         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+528.003   3  tick   3136457   1257090  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+530.003   3  tick         0 204597985         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+530.003   2  tick         0 204718982         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+532.003   1  tick  32316718  15222808  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+532.003   2  tick   7196492  16807311  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+534.003   2  tick         0 166400188         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+536.003   2  tick   1401287   2783082  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+538.003   3  tick         0 168333731         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+540.003   3  tick    378824    427060  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+542.003   2  tick         0 187238131         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+544.003   1  tick      2988      3704  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+544.003   3  tick   7246682  16980756  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+546.003   2  tick         0 184336207         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+548.003   3  tick    423684   1414870  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+550.003   3  tick         0 164899986         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+552.003   1  tick  39898362  18840954  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+554.003   3  tick         0 162421721         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+556.003   1  tick      2631      3339  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+556.003   2  tick   7629040  21555679  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+558.003   3  tick         0 201955360         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+558.003   2  tick         0 201923201         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+560.003   2  tick     47041      2713  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+560.003   3  tick   6776520  27796513  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+562.003   0  tick     86320         0 239040646  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+562.003   2  tick         0 166469572         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+564.003   3  tick   1937106   4439601  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+566.003   1  tick     86594         0 235235929  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+566.003   2  tick         0 162769212         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+568.003   3  tick    803375   1857062  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+570.003   3  tick         0 195590797         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+570.003   2  tick         0 195687693         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+572.003   0  tick  23558966  10966940  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+574.003   2  tick         0 166290462         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+574.004   3  tick         0 166537000         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+576.003   3  tick   1588266   3918676  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+578.003   3  tick         0 170559075         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+580.003   0  tick  53838975  24993423  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+582.003   2  tick         0 180380567         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+584.003   2  tick    140894      1690  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+586.003   3  tick         0 206618472         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+588.003   3  tick    154248     66058  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+590.003   0  tick     86716         0 233913305  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+590.003   1  tick     86751         0 234124863  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+592.003   3  tick   4181013  11762078  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+594.003   3  tick         0 164099586         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+594.003   2  tick         0 164181813         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+596.003   1  tick      3429      4039  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+596.003   0  tick  58626961  26998916  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+598.003   3  tick         0 197371292         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+600.003   2  tick    981898   2648212  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+602.003   1  tick     86620         0 222007078  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+604.003   2  tick  10483331  52118213  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+606.003   2  tick         0 149984034         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+608.003   2  tick    587868   1417561  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+610.003   3  tick         0 195075555         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+612.003   1  tick  58769659  27098578  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+614.003   3  tick         0 157250794         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+616.003   2  tick   8455065  28510266  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+616.003   0  tick   9433431   4462423  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+618.003   2  tick         0 165211845         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+620.003   1  tick  52067326  24002748  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+620.007   3  tick   6529371  21884198  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+622.003   1  tick    141775         0 242750152  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+624.003   1  tick      3298      3727  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+624.003   2  tick   9311478  27991331  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+626.003   3  tick         0 196796360         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+628.003   2  tick   1316635   3701706  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+630.003   0  tick     86634         0 234453780  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+630.003   1  tick     86669         0 234677903  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+632.003   2  tick   5350880  11427237  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+634.003   3  tick         0 158861902         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+636.003   3  tick     42567     11733  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+638.003   2  tick         0 197888478         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+640.003   2  tick    175679      1549  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+640.003   3  tick   8822735  19833627  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+642.003   1  tick     86637         0 247450554  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+644.003   3  tick    696271    916017  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+646.003   3  tick         0 163426447         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+646.004   2  tick         0 163896564         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+648.003   2  tick   2135187   5347640  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+650.003   3  tick         0 196231173         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+650.003   2  tick         0 196135195         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+652.003   0  tick  19304434   8994323  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+654.003   0  tick    849583         0 258648696  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+656.003   3  tick    370984    415018  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+658.003   3  tick         0 155306533         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+660.003   2  tick  10458814  40964209  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+660.004   3  tick   1108063    891150  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+662.003   2  tick         0 178658832         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+664.003   0  tick     19320     18209  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+664.003   3  tick   9465472  20838170  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+666.003   3  tick         0 196556433         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+668.003   3  tick     20005      3394  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+670.003   3  tick         0 163625699         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+672.003   1  tick  19060883   9081774  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+674.003   2  tick         0 180816206         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+676.003   1  tick      3156      3847  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+676.003   3  tick   9334905  49456462  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+678.003   2  tick         0 200876292         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+678.003   3  tick         0 200917227         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+680.003   3  tick     52754      1301  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+682.003   1  tick     86286         0 239498201  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+682.003   2  tick         0 167050989         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+684.003   2  tick   1795658   2719915  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+686.003   1  tick     86552         0 236149133  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+686.003   3  tick         0 163550823         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+688.003   3  tick    237879     39113  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+690.003   2  tick         0 198059039         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+692.003   0  tick  58376250  26936763  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+694.003   2  tick         0 182774974         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+694.003   3  tick         0 182774026         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+696.003   2  tick    292261    396792  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+698.003   3  tick         0 152855220         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+700.003   2  tick   1738025   3484989  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+702.003   2  tick         0 168115544         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+704.003   3  tick    293859    401003  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+706.003   2  tick         0 226750881         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+708.003   3  tick   3106818   1357755  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+710.003   3  tick         0 162507788         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+710.003   2  tick         0 162604044         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+712.003   2  tick   6981826  18894664  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+714.003   3  tick         0 170607589         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+716.003   3  tick    221247     14626  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+718.003   2  tick         0 289654994         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+720.003   3  tick    106556      1646  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+722.003   0  tick     86464         0 239341209  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+724.003   3  tick    641435    947260  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+726.003   3  tick         0 162814074         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+726.003   2  tick         0 162928156         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+728.003   2  tick    545538    873325  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+730.003   2  tick         0 189016116         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+732.003   0  tick  14699536   6784855  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+734.003   0  tick   1410238         0 257091435  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+734.004   2  tick         0 183405754         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+736.003   2  tick    453161    414817  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+738.003   3  tick         0 183415988         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+740.003   3  tick   1847122   3365881  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+742.003   0  tick     86399         0 240773838  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+742.003   3  tick         0 168974272         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+744.003   2  tick    987861    407613  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+746.003   3  tick         0 204078049         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+746.003   2  tick         0 204069409         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+748.003   3  tick   2418291   5109166  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+750.003   3  tick         0 163690227         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+750.003   2  tick         0 163777755         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+752.003   2  tick   2245323   4062713  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+754.003   2  tick         0 163783999         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+756.003   2  tick     44280     15252  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+756.003   3  tick   9417220  23867119  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+758.003   2  tick         0 199691216         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+760.003   2  tick    191083      2220  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+760.003   3  tick   9713141  23857922  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+762.003   1  tick    315819         0 248173870  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+762.003   2  tick         0 178851253         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+762.004   3  tick         0 179066262         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+764.003   2  tick   1875785   4573467  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+766.003   1  tick     86143         0 235794571  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+766.003   3  tick         0 163284131         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+768.003   3  tick   6283668  14558720  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+768.004   2  tick   3171884   8707988  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+770.003   2  tick         0 195453244         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+772.003   0  tick  12426093   5877608  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+774.003   3  tick         0 196670430         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+776.003   0  tick     19134     17580  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+776.003   2  tick   9665504  23714682  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+778.003   3  tick         0 148522289         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+780.003   3  tick   1488965   4829560  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+782.003   1  tick     86745         0 238640537  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+784.003   1  tick      3124      3427  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+784.003   0  tick  57733246  26601707  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+786.003   3  tick         0 197062340         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+786.003   2  tick         0 197136894         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+788.003   3  tick   2579302  10842149  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+790.003   3  tick         0 164911168         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+792.003   1  tick  39748134  18686794  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+794.003   2  tick         0 164004856         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+794.003   3  tick         0 164182675         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+796.003   3  tick    115546     19462  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+798.003   2  tick         0 205839930         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+800.003   0  tick     18682     16450  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+800.003   3  tick  10083577  24433192  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+802.003   3  tick         0 169400663         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+802.013   1  tick    707080         0 242731976  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+804.003   3  tick   2014091   5090002  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+806.003   1  tick     86526         0 235954588  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+806.003   2  tick         0 163328255         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+808.003   3  tick   4258974  12069752  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+808.015   0  tick  31503325  14830321  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+810.003   3  tick         0 178640420         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+812.003   1  tick  10675845   6198298  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+814.003   3  tick         0 196545596         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+814.003   2  tick         0 196400584         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+816.003   1  tick      2924      3296  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+816.003   3  tick   9795248  24624982  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+818.003   2  tick         0 151218548         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+820.003   2  tick   1372249   2943651  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+822.003   3  tick         0 167829880         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+824.003   3  tick    142987      2112  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+826.003   3  tick         0 197659301         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+826.003   1  tick   1409456         0 273052449  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+828.003   3  tick   3148130   8991070  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+830.003   0  tick     86854         0 236107358  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+830.003   2  tick         0 163162565         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+832.003   2  tick   7555761   9619116  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+834.003   3  tick         0 173561639         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+836.003   3  tick    362456    428152  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+836.004   0  tick  57842049  26918822  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+838.003   3  tick         0 199892491         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+840.003   0  tick     18574     16491  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+840.003   2  tick  10709846  26890928  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+842.003   2  tick         0 186220943         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+844.003   2  tick    285798    414298  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+846.003   0  tick     86671         0 237195945  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+848.003   3  tick   3428982   4501085  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+850.003   3  tick         0 170335936         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+852.003   1  tick  58767016  27225850  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+854.003   3  tick         0 196539794         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+854.003   2  tick         0 196602291         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+856.003   2  tick    204823     23202  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+856.003   3  tick   9664505  49388630  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+858.003   2  tick         0 193165813         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+860.003   3  tick   7055045  27019112  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+860.003   0  tick  35674482  16524351  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+862.003   0  tick     86411         0 238668610  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+864.003   3  tick    198892      2098  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+864.003   2  tick   9923013  51366932  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+866.003   2  tick         0 199487343         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+868.003   2  tick   3773896  17939573  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+870.003   0  tick     86711         0 236953785  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+870.003   1  tick     86711         0 237166775  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+872.003   0  tick  17037019   8258517  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+874.003   2  tick         0 162832721         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+876.003   3  tick   9756830  49889724  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+876.011   2  tick     66707     58533  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+878.003   2  tick         0 195017796         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+880.003   0  tick     19381     17010  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+880.003   3  tick   9739995  50941821  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+882.003   3  tick         0 185157730         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+882.004   0  tick   1097579         0 259208261  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+884.003   3  tick    396245    417927  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+886.003   3  tick         0 164342176         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+888.003   0  tick  35275237  16173506  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+890.003   3  tick         0 164011197         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+892.003   0  tick  53512305  24814529  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+894.003   2  tick         0 207302611         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+896.003   2  tick    227527     18569  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+896.003   3  tick  10464963  26071996  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+898.003   3  tick         0 157798988         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+900.003   3  tick   1792229   2509619  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+902.003   0  tick     86629         0 244859172  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+902.003   3  tick         0 174532219         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+904.003   2  tick   3337866   1627894  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+904.003   0  tick  54042812  25005355  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+906.003   2  tick         0 198074996         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+908.003   3  tick   4063729  10369803  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+910.003   3  tick         0 162869349         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+910.003   2  tick         0 162958298         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+910.004   0  tick     86325         0 235872157  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+912.003   2  tick   2422670   5407278  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+914.003   2  tick         0 163400369         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+916.003   0  tick   7945793   3699097  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+918.003   3  tick         0 191437605         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+920.003   0  tick  58723722  27183497  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+922.003   0  tick   1379840         0 265457122  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+924.003   3  tick    388230    311720  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+926.003   2  tick         0 166809366         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+928.003   3  tick   5143694  13914105  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+930.003   0  tick     86737         0 236858262  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+930.003   2  tick         0 164597601         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+932.003   0  tick  55332511  25717778  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+934.003   2  tick         0 194173669         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+936.003   1  tick      2529      3118  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+936.003   3  tick  10211023  43137730  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+938.003   3  tick         0 153672837         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+940.003   2  tick   3351143  15758602  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+942.003   2  tick         0 169437513         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+944.003   2  tick    143449      2240  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+946.003   3  tick         0 197415736         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+948.003   3  tick    169102    129534  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+950.003   2  tick         0 165229582         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+950.003   3  tick         0 165279519         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+952.003   0  tick  12042556   5959085  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+954.003   3  tick         0 164611907         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+956.003   2  tick   8399390  46947540  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+956.003   3  tick   1554167   5943178  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+958.003   3  tick         0 182916025         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+960.003   0  tick     18356     16829  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+960.003   1  tick  58864334  27232351  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+962.003   3  tick         0 199810935         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+964.003   0  tick     18400     16344  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+964.003   2  tick  10023923  26953814  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+966.003   1  tick     86524         0 236353226  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+966.003   0  tick     86559         0 236642878  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+968.003   3  tick   3777127  11049712  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+970.003   3  tick         0 175243677         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+972.003   0  tick  58704445  27182193  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+974.003   1  tick   1393602         0 273472547  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+976.003   1  tick      3097      3654  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+976.003   3  tick   9395002  49893167  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+978.003   2  tick         0 157446254         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+980.003   2  tick   4309061  20925823  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+982.003   1  tick     86297         0 238333101  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+984.003   3  tick    525081     95814  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+986.003   3  tick         0 194433990         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+986.003   2  tick         0 194524034         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+988.003   3  tick   5008292  26546194  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+990.003   2  tick         0 174152845         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+992.003   2  tick   1500525   2445763  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+994.003   3  tick         0 186941070         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+996.003   2  tick   8494991  42667033  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+996.005   1  tick  43874995  25109826  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+998.003   3  tick         0 180053835         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1000.003   0  tick     19252     17997  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1000.003   1  tick  58736655  27236174  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1002.003   2  tick         0 199229518         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1004.003   3  tick    180819     24163  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1006.003   2  tick         0 166447106         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1008.003   3  tick   5501445   8046655  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1010.003   0  tick     86730         0 236277037  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1010.003   2  tick         0 163974061         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1012.003   2  tick    238889     32940  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1014.003   2  tick         0 202488543         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1016.003   2  tick    225871     17679  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1016.003   3  tick   9936728  28292867  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1018.003   2  tick         0 154626677         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1020.003   2  tick   2214785   6749050  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1022.003   2  tick         0 165569292         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1024.003   1  tick  58522779  27027389  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1026.003   3  tick         0 204977687         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1028.003   0  tick  58568015  27123017  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1030.003   2  tick         0 178637632         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1030.004   3  tick         0 178956401         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1032.003   3  tick   1800922   3919483  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1034.003   2  tick         0 164363519         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1036.003   3  tick   8774462  22109814  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1038.003   0  tick    244402         0 255376344  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1040.003   3  tick    105077      2056  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1042.003   1  tick   1400518         0 352189751  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1044.003   2  tick    507513    660517  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1046.003   1  tick     86456         0 236629903  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1046.003   3  tick         0 163900847         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1048.003   3  tick    758556    883458  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1048.003   2  tick   7247130  11471325  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1050.003   3  tick         0 172082212         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1052.003   1  tick      3249      3815  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1052.003   2  tick   9713545  50754305  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1054.003   3  tick         0 202487746         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1056.003   3  tick     45872     18053  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1058.003   0  tick     86685         0 226846172  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1060.003   2  tick    755618    882706  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1062.003   2  tick         0 165294900         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1064.003   2  tick   9346863  47953392  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1064.004   3  tick    892077   3844298  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1066.003   2  tick         0 197639969         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1068.003   0  tick  25050149  11606879  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1070.003   0  tick   1094602         0 277265026  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1072.003   2  tick    570547    699334  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1074.003   2  tick         0 213530373         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1076.003   3  tick   7948005  19116562  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1078.003   3  tick         0 169590016         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1080.003   1  tick      3200      3916  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1080.003   0  tick  58589288  26973996  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1082.003   3  tick         0 196642210         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1084.003   2  tick     65118     45226  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1086.003   3  tick         0 168652306         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1088.003   2  tick   5478424  13181288  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1090.003   2  tick         0 165351379         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1092.003   1  tick      3246      3982  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1092.003   0  tick  58614797  27031717  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1094.003   2  tick         0 198140838         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1096.003   2  tick    191616     17492  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1096.003   3  tick   9683065  25302025  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1098.003   2  tick         0 153020059         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1098.004   0  tick    248602         0 225318014  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1100.003   2  tick   1313030   3386187  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1102.003   1  tick     86149         0 238610062  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1102.003   0  tick     86191         0 238855131  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1104.003   3  tick   2165686   1787628  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1104.004   1  tick   7619550   3685085  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1106.003   3  tick         0 187688265         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1108.003   1  tick  58786170  27247656  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1110.003   2  tick         0 202532140         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1112.003   3  tick    205584    297699  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1114.003   2  tick         0 166094000         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1116.003   2  tick    580678    876692  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1118.003   1  tick     86767         0 246123906  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1120.003   1  tick      3259      3963  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1120.003   2  tick   4883963  14017670  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1122.003   3  tick         0 196340191         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1124.003   3  tick    233494     35457  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1126.003   1  tick     86199         0 235467352  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1126.003   0  tick     86234         0 235670405  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1128.003   2  tick   5559301  15175857  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1130.003   2  tick         0  20958933         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1130.003   3  tick         0  21000034         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1132.003   0  tick     16333     14163  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1132.003   2  tick  10110756  30070016  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1134.003   3  tick         0  68190752         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1136.003   3  tick    291646     99090  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1138.003   1  tick    489955         0  23946075  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1138.004   2  tick         0  24296967         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1140.003   3  tick   1971149   5496305  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1142.003   1  tick     86896         0  22788419  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1142.003   0  tick     86896         0  22729561  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1144.003   2  tick   1515500   4615444  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1144.004   0  tick    195583    265444  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1146.003   2  tick         0  35461747         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1148.003   2  tick   4639209   7066012  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1150.003   3  tick         0  54499081         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1152.003   2  tick    349700    196890  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1154.003   1  tick     86783         0  23718996  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1154.003   3  tick         0  23533887         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1156.003   3  tick    327418    342400  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1158.003   0  tick    323610         0  24538689  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1160.003   1  tick      2831      3118  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1160.003   3  tick   9535784  24998471  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1162.003   2  tick         0  57492311         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1164.003   2  tick    214621     43964  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1166.003   0  tick     86895         0  19237115  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1166.003   3  tick         0  18400356         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1168.003   2  tick   5459166  12976498  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1170.003   2  tick         0  20961722         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1172.003   3  tick  10094027  26140167  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1172.004   2  tick    127696     51410  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1174.003   3  tick         0  64762177         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1176.003   0  tick     16099     14262  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1176.003   3  tick     44985     18075  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1178.003   3  tick         0  35914730         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1178.004   0  tick    998840         0  36754617  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1180.003   2  tick  10698794  46220102  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1182.003   2  tick         0  22305056         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1184.003   3  tick   2379271   8854631  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1186.003   1  tick     86558         0  20789193  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1186.003   3  tick         0  20322658         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1188.003   3  tick   2764536   5293034  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1190.003   3  tick         0  64212029         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1192.003   0  tick     16503     15357  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1192.003   2  tick  10207816  19178400  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1194.003   3  tick         0  31005175         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1196.003   2  tick   4777456  13638652  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1198.003   3  tick         0  23355828         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1200.003   1  tick      2494      3542  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1200.003   2  tick   8889063  22607198  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1202.003   2  tick         0  54208662         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1204.003   3  tick   1610597   2519666  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1206.003   0  tick    234328         0  26807944  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1206.004   3  tick         0  28651376         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1208.003   2  tick   4159314  11354352  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1210.003   2  tick         0  21070191         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1210.004   3  tick         0  21480125         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1212.003   3  tick    476369    478890  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1212.004   0  tick    193565    217230  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1214.003   2  tick         0  33322361         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1216.003   0  tick     16011     13772  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1216.003   3  tick  10873197  35289344  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1218.003   3  tick         0  57826019         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1220.003   3  tick    127362      1248  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1222.003   1  tick     86404         0  28314621  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1222.003   3  tick         0  30759011         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1224.003   2  tick   2772760   6527646  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1226.003   1  tick     86962         0  19165708  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1226.003   3  tick         0  18398368         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1228.003   2  tick   6288771  17499245  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1230.003   2  tick         0  53514577         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1232.003   0  tick     16032     13157  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1232.003   3  tick  10401886  27641233  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1234.003   2  tick         0  32969974         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1236.003   2  tick    243575    308406  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1238.003   0  tick     86892         0  24362778  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1240.003   2  tick    220601      7619  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1240.004   0  tick     36882     41121  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1242.003   2  tick         0  53882821         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1242.005   0  tick   1457048         0  54656590  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1244.003   3  tick   2011296   3099527  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1246.003   2  tick         0  38702430         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1248.003   2  tick   2491447  11829547  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1250.003   1  tick     87010         0  25340089  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1250.003   3  tick         0  26518622         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1252.003   3  tick    448004    368257  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1254.003   3  tick         0  10796430         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1256.003   0  tick     15593     13581  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1256.003   2  tick   8446479  33445817  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1258.003   2  tick         0  59156656         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1260.003   3  tick   9174041  49880278  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1262.003   1  tick     86828         0  27202448  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1262.003   3  tick         0  29386415         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1264.003   3  tick    336757    906513  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1266.003   3  tick         0  17604522         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1266.003   2  tick         0  17641201         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1268.003   0  tick     44846     97466  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1270.003   2  tick         0  52710929         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1270.003   1  tick   1415766         0  51156553  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1272.003   2  tick    196390      3614  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1274.003   3  tick         0  27170953         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1274.004   2  tick         0  27503533         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1276.003   2  tick   1569876   3813334  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1278.003   3  tick         0  39899048         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1280.003   0  tick    160288    180596  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1282.003   3  tick         0  35227486         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1284.003   1  tick     32579     90421  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1284.003   2  tick   8952286  23936517  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1286.003   0  tick   1399952         0  54731049  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1288.003   3  tick    222350     19396  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1290.003   3  tick         0  20959739         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1292.003   3  tick    269269    304319  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1294.003   0  tick     86511         0   9374158  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1296.003   0  tick     15743     13748  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1296.003   3  tick  10425625  24931497  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1298.003   0  tick   1397864         0  56790178  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1300.003   3  tick    214181       770  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1300.003   0  tick     16077     14703  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1300.003   2  tick   9346275  23932264  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1302.003   3  tick         0  22496733         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1304.003   3  tick    618520    744850  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1306.003   1  tick     86564         0  20910455  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1306.003   3  tick         0  20016999         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1308.003   2  tick   6260043   9853843  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1310.003   3  tick         0  56831897         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1312.003   3  tick    233653     29680  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1314.003   2  tick         0  37393555         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1314.004   0  tick    712516         0  38010660  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1316.003   2  tick    252924    219254  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1318.003   3  tick         0  25519854         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1320.003   0  tick    270948    362953  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1322.003   2  tick         0  23191538         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1324.003   3  tick   3591794  10263725  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1326.003   3  tick         0  53989215         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1328.003   0  tick     44600     97178  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1330.003   2  tick         0  20020222         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1330.003   0  tick     86451         0  20098825  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1330.003   3  tick         0  20216226         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1332.003   3  tick    260232    353860  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1334.003   2  tick         0   7563716         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1336.003   0  tick     15954     12787  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1336.003   3  tick   9347064  51007394  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1338.003   1  tick   1390912         0  66373251  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1340.003   0  tick     16185     13388  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1340.003   3  tick   9129968  50148641  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1342.003   0  tick     86511         0  20883147  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1342.003   2  tick         0  20501940         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1344.003   2  tick   6072420   9033537  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1346.003   0  tick     86728         0  20168912  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1346.003   3  tick         0  19635997         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1348.003   0  tick    103236    131272  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1350.003   2  tick         0  44100458         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1352.003   0  tick     16639     14045  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1352.003   3  tick   9470813  52681619  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1354.003   0  tick   1383622         0  50088729  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1356.003   2  tick     81655     72953  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1358.003   2  tick         0  23925654         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1360.003   3  tick   9652190  23068865  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1360.003   0  tick    357212    455792  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1362.003   3  tick         0  20472889         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1364.003   2  tick   3627923   8796998  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1366.003   3  tick         0  56255652         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1368.003   2  tick   8375122  21457514  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1370.003   0  tick     87051         0  20998358  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1370.003   2  tick         0  20639714         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1372.003   2  tick   6449648  34293285  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1374.003   1  tick     87028         0   9940059  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1374.003   2  tick         0  10030076         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1376.003   2  tick    233090     19661  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1378.003   2  tick         0  69400518         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1380.003   0  tick     16210     13325  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1380.003   3  tick   9876900  27790521  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1382.003   3  tick         0  42962688         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1384.003   2  tick   3054457   8064085  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1386.003   0  tick     86956         0  18722773  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1386.003   3  tick         0  17737229         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1388.003   0  tick    269373    376007  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1390.003   3  tick         0  35111017         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1390.003   0  tick    177132         0  40936176  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1392.003   3  tick    258658     69854  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1394.003   2  tick         0  58289843         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1396.003   0  tick     17136     14530  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1396.003   3  tick   9753221  26132070  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1398.003   0  tick     86722         0  29890039  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1400.003   3  tick    369050    318931  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1402.003   1  tick     86555         0  20205755  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1402.003   2  tick         0  19476643         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1404.003   2  tick   4482186  23456553  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1406.003   2  tick         0  54694973         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1408.003   3  tick   8533627  45861941  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1410.003   0  tick     86770         0  20508334  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1410.003   2  tick         0  20197538         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1412.003   2  tick   8757004  54004367  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1414.003   1  tick     86626         0  12388854  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1416.003   2  tick    115172    199225  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1416.003   3  tick  10011878  42249715  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1418.003   2  tick         0  53122384         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1420.003   0  tick     15528     13034  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1420.003   3  tick   9898555  41428219  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1422.003   2  tick         0  43972193         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1422.003   1  tick   1552495         0  44444901  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1424.003   3  tick   3997689   6558638  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1426.003   1  tick     86601         0  20953714  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1426.003   3  tick         0  19977006         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1428.003   2  tick   9123019  16263216  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1430.003   1  tick     86835         0  20891850  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1432.003   1  tick      2927      3326  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1432.003   2  tick   9506067  51258629  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1434.003   2  tick         0  60305256         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1436.003   0  tick     16849     14451  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1436.003   3  tick   9097492  50105452  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1438.003   3  tick         0  23221761         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1440.003   3  tick   1360576   2049813  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1442.003   2  tick         0  18836819         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1444.003   1  tick    562568   1163867  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1446.003   3  tick         0  56625337         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1448.003   3  tick    127972     45260  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1450.003   1  tick    678656         0  23235634  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1450.003   2  tick         0  23366558         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1450.011   0  tick    736290         0  24193446  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1452.003   3  tick    660683   1083239  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1454.003   2  tick         0  17437449         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1456.003   3  tick   8817613  23149412  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1456.009   2  tick   1407316   2764999  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1458.003   0  tick    208875         0  49316870  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1460.003   0  tick     15519     12656  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1460.003   3  tick   9754193  24438911  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1462.003   2  tick         0  64320546         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1464.003   3  tick   4856355  13435426  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1466.003   3  tick         0  21512941         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1468.003   0  tick    570100   1144196  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1470.003   0  tick     86822         0  21147208  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1470.003   3  tick         0  21053729         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1472.003   3  tick     73201     20325  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1474.003   3  tick         0  56572475         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1476.003   0  tick     15162     13207  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1476.003   2  tick   9655949  32948283  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1478.003   3  tick         0  29416610         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1478.007   0  tick     87070         0  28742308  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1480.003   3  tick   1399669   3374855  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1480.003   0  tick    339330    462619  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1482.003   3  tick         0  19485025         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1484.003   2  tick   9549352  36421118  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1484.003   3  tick    200387     58702  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1486.003   3  tick         0  53116802         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1488.003   0  tick     16327     14072  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1488.005   1  tick     12366     26037  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1490.003   2  tick         0  41221671         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1490.013   0  tick   1242633         0  39729974  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1492.003   1  tick    151412    235488  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1494.003   2  tick         0  24455860         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1496.003   3  tick   7161761  18702507  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1498.003   0  tick     86510         0  22047397  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1500.003   3  tick    321188    282457  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1502.003   3  tick         0  55070592         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1504.003   3  tick     40862     45022  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1506.003   0  tick     86661         0  18848769  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1506.003   2  tick         0  17836701         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1508.003   3  tick   4021147  10333116  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1510.003   3  tick         0  22543164         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1512.003   2  tick     98993     15344  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1514.003   0  tick   1364623         0  55767841  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1516.003   2  tick    154797     24324  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1518.003   3  tick         0  19724615         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1520.003   3  tick   1708418   3868656  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1522.003   1  tick     86475         0  23601379  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1522.003   3  tick         0  24872529         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1524.003   1  tick    199881    299725  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1526.003   2  tick         0  45323227         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1528.003   0  tick     16065     13278  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1528.003   3  tick  10823762  28011399  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1530.003   2  tick         0  62536151         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1532.003   0  tick     15994     13286  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1534.003   1  tick     86572         0  36456439  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1536.003   2  tick    216320    294637  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1538.003   2  tick         0  21040008         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1540.003   2  tick    231760     44354  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1540.003   0  tick     43431     97213  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1542.003   3  tick         0  56449340         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1544.003   2  tick   7888496  14308608  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1546.003   0  tick     86518         0  20173283  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1546.003   3  tick         0  19460494         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1548.003   2  tick   2076331   3736482  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1550.003   2  tick         0  22842812         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1552.003   2  tick    238981     37319  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1552.004   0  tick     41271     53654  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1554.003   3  tick         0  57009573         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1556.003   0  tick     15972     13232  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1556.003   3  tick   8920009  34752295  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1558.003   0  tick   1015024         0  38254117  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1558.004   3  tick         0  38808211         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1560.003   3  tick    185861    135635  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1562.003   0  tick     86914         0  19074037  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1562.003   2  tick         0  18608080         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1564.003   2  tick   1505168   3908584  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1566.003   1  tick     86700         0  29083620  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1566.003   3  tick         0  31110052         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1568.003   3  tick    127676       953  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1570.003   2  tick         0  58977825         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1572.003   3  tick    317230   1154145  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1574.003   0  tick     86870         0  30294102  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1576.003   2  tick   7849435  20804673  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1578.003   2  tick         0  21266565         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1580.003   3  tick   1039986   2417008  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1582.003   1  tick   1363034         0  53627981  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1584.003   2  tick    211233     43871  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1586.003   2  tick         0  30161824         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1586.003   0  tick    327065         0  28402196  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1588.003   3  tick   1036953   3800647  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1590.003   1  tick     86987         0  24143383  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1592.003   3  tick    294301    465049  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1594.003   2  tick         0  43727244         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1596.003   2  tick     44922     11030  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1598.003   3  tick         0  64239610         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1600.003   2  tick   9667469  25508411  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1600.003   0  tick     42151     93693  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1602.003   2  tick         0  23020658         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1604.003   3  tick   8022046  22215230  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1606.003   1  tick     86625         0  28822325  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1608.003   3  tick     40346       937  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1610.003   2  tick         0  38201931         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1612.003   2  tick    231146     29917  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1614.003   1  tick     86806         0  22648395  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1616.003   3  tick   2754986  13157505  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1618.003   3  tick         0  20838058         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1620.003   2  tick   8319583  20833827  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1620.004   3  tick    218822     34053  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1622.003   2  tick         0  58498192         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1624.003   3  tick   5596843  12455422  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1626.003   2  tick         0  37389350         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1628.003   3  tick    246014    168250  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1630.003   2  tick         0  22573180         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1630.003   3  tick         0  22579303         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1632.003   2  tick   7352667  38416883  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1634.003   2  tick         0  21985691         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1636.003   0  tick     16602     14198  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1636.003   3  tick   7494575  11133947  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1638.003   2  tick         0  52781662         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1640.003   2  tick    187621      1998  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1642.003   0  tick     86509         0  22186348  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1642.003   3  tick         0  21901643         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1644.003   3  tick    396375    295616  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1646.003   0  tick     86868         0  21978875  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1646.003   2  tick         0  21662529         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1648.003   1  tick     12766      9463  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1650.003   2  tick         0  45886516         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1652.003   0  tick     16193     13110  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1652.003   3  tick  10041770  28269984  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1654.003   0  tick     86509         0  23039340  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1656.003   2  tick   1344006   3598788  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1658.003   3  tick         0  31673599         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1660.003   2  tick   9603501  27577491  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1660.003   0  tick     50926    105067  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1660.016   3  tick    236788     40008  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1662.003   2  tick         0  54415416         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1664.003   2  tick    204517     48536  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1666.003   3  tick         0  40885112         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1666.005   0  tick   1230798         0  41741310  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1668.003   3  tick    133240    137267  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1670.003   2  tick         0  25545036         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1672.003   2  tick   1459477   6316948  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1674.003   3  tick         0  21059145         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1676.003   0  tick     15654     14162  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1676.003   2  tick   9052049  15307375  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1678.003   3  tick         0  57520931         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1680.003   2  tick   5110723  27481784  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1682.003   0  tick     86894         0  20533502  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1682.003   3  tick         0  19804390         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1684.003   3  tick    239214    631041  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1686.003   0  tick     86803         0  17493948  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1686.003   2  tick         0  16875679         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1688.003   2  tick    140990      1070  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1688.003   3  tick  12187390  48338126  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1690.003   3  tick         0  69374594         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1690.003   0  tick   1393559         0  66334037  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1692.003   3  tick    212599     44975  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1694.003   3  tick         0  24086171         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1694.004   2  tick         0  24309227         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1696.003   3  tick    579541   2259466  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1698.003   0  tick     86954         0  17933250  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1698.003   2  tick         0  16952665         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1700.003   3  tick   9439617  28103149  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1700.004   0  tick    183033    218705  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1702.003   2  tick         0  33635842         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1704.003   3  tick   7863490  27167427  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1706.003   2  tick         0  60900729         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1708.003   2  tick    205637       340  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1710.003   1  tick     86787         0  33819186  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1712.003   3  tick    275545    428179  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1714.003   1  tick     86585         0   3319215  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1716.003   0  tick     13318     13167  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1718.003   3  tick         0  31102355         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1720.003   2  tick   3330178   4791735  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1720.003   0  tick    105435    201869  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1722.003   3  tick         0   4689710         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1724.003   2  tick    311721    452523  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1726.003   2  tick         0   1117989         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1728.003   3  tick     50918     17838  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1730.003   2  tick         0  35635301         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1732.003   0  tick     13527     13138  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1734.003   2  tick         0  21220244         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1734.003   0  tick   1153197         0  22335296  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1736.003   2  tick    353238    172046  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1738.003   0  tick     86785         0   1797809  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1740.003   0  tick    371578    537858  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1742.003   0  tick     86808         0    825148  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1744.003   0  tick     39188     95511  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1746.003   2  tick         0  33586760         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1748.003   2  tick    148201       873  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1750.003   1  tick     86653         0   3005165  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1752.003   3  tick    294658    449451  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1754.003   2  tick         0   3636548         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1756.003   0  tick     13595     13201  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1758.003   2  tick         0  34911706         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1760.003   2  tick    210440      1601  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1762.003   1  tick    522365         0   3587919  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1762.004   2  tick         0   3760815         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1764.003   2  tick    246790    347631  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1766.003   2  tick         0   1288570         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1768.003   2  tick    105842    155240  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1770.003   3  tick         0  18081430         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1772.003   0  tick     12603     12526  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1774.003   2  tick         0  36475771         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1776.003   2  tick     23057     11444  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1776.003   3  tick     27191      2081  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1778.003   0  tick     86946         0   1040618  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1780.003   2  tick    193525    281990  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1782.003   3  tick         0   3287247         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1784.003   3  tick    194207      4026  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1786.003   3  tick         0  35602973         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1788.003   1  tick      9101     13354  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1790.003   1  tick     86842         0   2692033  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1790.003   3  tick         0   2822015         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1792.003   3  tick    339424    178592  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1794.003   1  tick     86856         0   2925967  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1794.003   3  tick         0   2972092         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1796.003   3  tick    243925     11190  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1796.004   2  tick     21406     36215  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1798.003   3  tick         0  29161266         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1800.003   3  tick    186166      6392  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1802.003   3  tick         0  18732723         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1804.003   0  tick    151176    237280  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1806.003   0  tick     86836         0    757370  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1808.003   3  tick    235319    131190  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1810.003   0  tick     86802         0   3119911  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1810.004   3  tick         0   3645462         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1812.003   3  tick    208263     54325  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1814.003   0  tick   1379233         0  36249365  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1816.003   2  tick     10040      6732  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1818.003   2  tick         0    439155         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1820.003   2  tick    254005    367398  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1822.003   2  tick         0   1478318         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1822.003   3  tick         0   1496045         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1824.003   3  tick    226126     47577  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1826.003   3  tick         0  34763711         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1828.003   3  tick    209001       475  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1830.003   3  tick         0   5766785         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1832.003   2  tick    265200    321652  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1834.003   0  tick     86595         0   2120530  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1836.003   3  tick     58029     91695  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1836.004   2  tick    174166    189600  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1838.003   2  tick         0  16433380         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1840.003   0  tick     26591     53106  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1840.004   2  tick    238469     44450  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1842.003   2  tick         0  32679191         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1844.003   0  tick     42465     95685  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1846.003   1  tick     86557         0   1054707  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1848.003   3  tick     60863     95644  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1850.003   2  tick         0   2981248         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1852.003   0  tick     12878     12566  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1854.003   0  tick   1379283         0  36050541  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1856.003   0  tick     12283     11656  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1858.003   2  tick         0   1522619         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1860.003   2  tick    388360    324281  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1862.003   0  tick     86916         0    635478  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1864.003   1  tick     44601    104228  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1864.004   2  tick     44579     35677  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1866.003   3  tick         0  28268623         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1868.003   0  tick     12761     13401  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1870.003   0  tick   1111136         0  20981764  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1870.004   2  tick         0  22458450         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1872.003   2  tick    256296    144904  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1874.003   2  tick         0   2979844         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1876.003   3  tick     44750     67839  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1878.003   3  tick         0    544791         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1880.003   0  tick     26820     56171  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1882.003   0  tick   1382374         0  35240711  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1884.003   2  tick     15901     47572  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1886.003   2  tick         0   1317108         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1888.003   0  tick    387178    541871  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1890.003   2  tick         0   2857389         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1890.003   3  tick         0   2995061         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1892.003   2  tick     23285     11572  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1894.003   0  tick   1378031         0  34451338  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1896.003   2  tick     23446     11373  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1898.003   3  tick         0   3090931         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1900.003   2  tick    466705    373343  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1902.003   2  tick         0   2803614         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1904.003   2  tick    296431    164639  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1906.003   2  tick         0  17128496         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1908.003   1  tick      8828     13676  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1910.003   3  tick         0  37007579         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1912.003   2  tick    241567     32407  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1914.003   0  tick     86933         0   4182014  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1916.003   1  tick    295048    378058  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1918.003   0  tick     86628         0   1826147  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1918.003   2  tick         0   1899584         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1920.003   2  tick    178431     46460  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1922.003   3  tick         0  34437932         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1924.003   1  tick     18163     45955  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1926.003   0  tick     86783         0    860820  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1928.003   2  tick    358705    272953  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1930.003   2  tick         0   3119817         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1930.004   0  tick     87192         0   3593313  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1932.003   2  tick    178159     21262  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1932.003   0  tick     54659     57804  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1934.003   2  tick         0  34903190         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1936.003   3  tick      9761      5290  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1938.003   3  tick         0  18625830         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1940.003   2  tick    302875    115576  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1942.003   0  tick     86525         0   1524726  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1944.003   2  tick    457115    364065  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1946.003   3  tick         0   1382102         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1948.003   1  tick      2938      3223  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1948.003   2  tick    209675       402  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1950.003   0  tick   1413132         0  35043731  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1952.003   3  tick     10306      6845  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1954.003   0  tick     86612         0   2061156  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1956.003   2  tick    218849    256776  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1958.003   0  tick     86870         0   1142357  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1960.003   2  tick    218160      1624  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1960.004   0  tick     48116     95822  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1962.003   2  tick         0  39134400         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1964.003   0  tick     42549     94792  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1966.003   2  tick         0   2497613         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1966.004   0  tick    386556         0   2908298  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1968.003   2  tick    245476    291632  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1970.003   0  tick     86867         0   2903326  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1972.003   0  tick    148202    203897  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1972.004   2  tick    338857    177432  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1974.003   1  tick    426777         0  17488220  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1976.003   3  tick      9753      5404  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1978.003   0  tick   1381870         0  34228257  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1980.003   2  tick    157248      4771  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1982.003   3  tick         0    431929         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1984.003   2  tick    290053    434828  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1986.003   2  tick         0   1185128         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1986.003   3  tick         0   1344057         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1988.003   0  tick     13477     14546  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1990.003   2  tick         0  36295446         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1990.003   1  tick   1400309         0  35024613  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1992.003   3  tick    192556     51980  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1994.003   0  tick     87031         0   1194060  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+1996.003   3  tick    317556    372181  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+1998.003   2  tick         0    525724         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2000.003   3  tick    235715     19251  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2002.003   3  tick         0  33262197         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2004.003   1  tick      2442      2848  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2006.003   3  tick         0  22264759         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2006.004   2  tick         0  22653456         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2008.003   3  tick    246677     60436  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2010.003   2  tick         0   2747570         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2010.003   3  tick         0   2740056         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2012.003   2  tick    234161    310432  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2014.003   1  tick     86628         0    668650  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2014.003   3  tick         0    526140         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2016.003   3  tick     35043      2812  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2018.003   2  tick         0  31775828         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2020.003   1  tick     16035     45170  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2020.003   0  tick     41345     98488  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2022.003   3  tick         0   3204413         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2024.003   2  tick    193717    272535  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2026.003   3  tick         0   4036597         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2028.003   3  tick     50628       477  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2030.003   0  tick   1398533         0  34726563  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2032.003   0  tick     12542     12320  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2034.003   2  tick         0   2912727         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2034.004   0  tick    387752         0   3134838  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2036.003   3  tick    273611     84169  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2038.003   3  tick         0   1531030         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2040.003   3  tick    229037    126373  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2042.003   2  tick         0  15973428         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2044.003   1  tick      2724      2899  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2046.003   2  tick         0  31241986         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2048.003   0  tick     12924     12378  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2050.003   1  tick     86652         0   2870053  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2050.003   0  tick     86666         0   2822963  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2052.003   2  tick    306592    307251  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2054.003   0  tick     86898         0   1468132  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2054.003   3  tick         0   1410106         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2056.003   3  tick     83108      4463  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2058.003   3  tick         0  35150973         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2060.003   1  tick     29331     83747  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2062.003   2  tick         0   1619757         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2064.003   3  tick    465475    422671  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2066.003   3  tick         0   3039519         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2068.003   3  tick    220400     16438  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2068.005   0  tick     37123     54675  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2070.003   0  tick   1079322         0  33537095  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2072.003   3  tick     23453       682  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2074.003   2  tick         0  17071294         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2074.004   0  tick   1037700         0  18809352  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2076.003   3  tick    169649    226254  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2078.003   0  tick     86852         0   1086245  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2080.003   2  tick    206551    313456  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2080.003   0  tick    354559    487488  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2082.003   3  tick         0   2992896         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2084.003   0  tick     12978     12459  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2084.003   1  tick      3003      3324  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2086.003   0  tick   1391962         0  34927711  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2088.003   3  tick     56767       415  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2090.003   1  tick     86931         0   2827463  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2092.003   2  tick    203927    275691  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2094.003   1  tick     86905         0   1280528  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2096.003   3  tick    230478      7555  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2098.003   2  tick         0  35076385         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2100.003   2  tick      1639      1496  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2100.003   0  tick     41265     97734  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2102.003   2  tick         0   2222038         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2102.004   0  tick    389028         0   2544433  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2104.003   3  tick     71332     82358  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2106.003   3  tick         0   2287126         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2108.003   0  tick    204393    283886  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2110.003   0  tick    440077         0  17403145  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2110.004   3  tick         0  19089503         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2112.003   3  tick    197313     48250  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2114.003   3  tick         0  30418395         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2116.003   2  tick     15469     44365  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2118.003   0  tick     86794         0    776058  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2120.003   3  tick    325367    154869  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2122.003   2  tick         0   1540300         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2124.003   0  tick     12901     12481  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2126.003   2  tick         0  36165949         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2128.003   0  tick     12719     13096  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2130.003   2  tick         0   3466799         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2132.003   3  tick    147854    189943  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2134.003   0  tick     86604         0    597555  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2136.003   3  tick     61032     25490  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2136.003   0  tick     63551    125297  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2138.003   3  tick         0  34065667         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2140.003   1  tick     17502     45200  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2140.004   0  tick     63549    107241  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2142.003   0  tick   1212657         0  20556585  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2144.003   3  tick    206895     35379  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2146.003   2  tick         0   3201459         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2148.003   2  tick    195142    277514  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2150.003   2  tick         0   3719695         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2152.003   2  tick      9785      5504  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2154.003   0  tick   1399657         0  32693369  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2156.003   3  tick    234191      8383  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2158.003   3  tick         0   1587913         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2160.003   0  tick    404801    591195  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2162.003   2  tick         0    501285         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2164.003   3  tick     23479       475  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2166.003   3  tick         0  36350706         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2168.003   1  tick      3015      3147  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2170.003   3  tick         0   5651589         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2170.004   2  tick         0   6355889         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2170.004   0  tick    303460         0   6328511  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2172.003   3  tick    495070    531505  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2174.003   2  tick         0   1150961         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2176.003   1  tick    234778    334753  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2176.004   0  tick    202697    351422  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2178.003   3  tick         0  15612184         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2180.003   3  tick    229505      3606  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2182.003   1  tick   1402451         0  33157754  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2184.003   0  tick     12884     12122  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2184.003   3  tick    214921       706  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2186.003   2  tick         0   3729245         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2188.003   2  tick    160461    232425  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2190.003   3  tick         0   2817180         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2192.003   3  tick     46330     11531  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2194.003   0  tick   1386067         0  33001417  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2196.003   0  tick     26517     53244  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2198.003   0  tick     87066         0   1125128  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2200.003   0  tick    338611    508003  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2200.005   1  tick    355463    490473  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2202.003   0  tick    289299         0   2633975  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2204.003   3  tick    198721     21306  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2204.004   0  tick     33661     42994  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2206.003   3  tick         0  34343717         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2208.003   0  tick     12480     13499  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2210.003   1  tick    883626         0  21379148  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2210.003   2  tick         0  19275849         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2212.003   3  tick    349404    204875  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2214.003   0  tick     86918         0   1196868  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2216.003   1  tick    276232    421723  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2218.003   3  tick         0   1670605         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2220.003   3  tick    130316     18933  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2222.003   2  tick         0  34347619         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2224.003   3  tick     23318       552  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2226.003   1  tick     87035         0   2547616  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2226.003   3  tick         0   2254300         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2228.003   2  tick    267229    410088  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2230.003   2  tick         0   3088093         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2230.003   1  tick     86647         0   3044346  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2232.003   3  tick    208572     57512  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2234.003   3  tick         0  35455999         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2236.003   1  tick     16017     48224  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2238.003   3  tick         0   2317762         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2238.004   2  tick         0   2563409         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2240.003   2  tick    478209    382510  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2242.003   3  tick         0   1499879         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2242.003   2  tick         0   1465727         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2244.003   2  tick    359801    209087  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2244.004   0  tick    154777    195090  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2246.003   2  tick         0  15918195         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2248.003   0  tick     12036     12123  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2250.003   3  tick         0  36899911         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2252.003   3  tick     23562     11447  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2254.003   0  tick     86399         0    461907  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2256.003   3  tick    121907    167041  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2258.003   1  tick     86952         0   1452113  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2258.003   2  tick         0   1338773         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2260.003   1  tick     30166     87197  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2260.004   0  tick     39140     60343  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2262.003   3  tick         0  36328589         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2264.003   0  tick     12390     12373  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2266.003   2  tick         0   3099150         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2268.003   2  tick    267555    265426  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2270.003   1  tick     86936         0   2978813  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2270.003   2  tick         0   2916879         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2272.003   2  tick    218748     25398  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2272.004   0  tick     33777     42055  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2274.003   2  tick         0  34205846         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2276.003   2  tick    233008     48456  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2278.003   2  tick         0  18815308         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2278.005   0  tick    859144         0  20594454  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2280.003   3  tick    144678    239205  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2282.003   3  tick         0    440329         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2284.003   3  tick     61278     98575  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2286.003   2  tick         0   2377280         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2288.003   0  tick     12270     12063  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2290.003   0  tick   1387188         0  37087422  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2290.003   2  tick         0  34065170         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2292.003   3  tick    215636     47308  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2294.003   2  tick         0   1143793         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2296.003   1  tick    303247    458459  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2298.003   0  tick     86901         0    828404  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2298.003   3  tick         0    749812         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2300.003   0  tick     30397     58798  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2302.003   3  tick         0  31926692         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2304.003   0  tick     12431     12161  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2306.003   3  tick         0   4590605         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2308.003   3  tick    276547    109694  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2310.003   3  tick         0   2662956         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2312.003   2  tick    130947    188888  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2312.003   0  tick    170549    199036  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2314.003   2  tick         0  14440291         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2316.003   3  tick     58550     13323  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2318.003   3  tick         0  34893181         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2320.003   0  tick     26939     54865  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2320.003   2  tick      7068      4828  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys
+2322.003   3  tick         0   2893953         0  # pic0=NB_ht_bus0_bandwidth,umask0=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,pic2=NB_ht_bus2_bandwidth,umask=0x07,sys
+2324.003   0  tick    382888    487377  # pic0=PAPI_l2_dcr,pic1=PAPI_l2_dcw,sys

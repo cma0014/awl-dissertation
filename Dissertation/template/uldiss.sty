@@ -1,0 +1,1304 @@
+%!TEX root = ../example.tex
+%
+% File:    uldiss.sty
+% Author:  UL CACS graduate students
+%
+% First adpted by Malcolm Hutson (malcolm@louisiana.edu)
+% to meet the Graduate School requirements of the 
+% University of Louisiana at Lafayette, Spring 2008
+%
+% Extensively modified by Adam Lewis (awlewis@cacs.louisiana.edu) to
+% meet the UL Graduate School requirements as of Spring 2011. 
+%
+% Further modifications were made by Aaron Boudreaux (hmb7226@louisiana.edu)
+% to meet UL Graduate School requirements as of Spring 2012.
+%
+% The template is based upon the Doctoral Dissertation Format Macros for
+% The Univ. of Texas at Austin By Young U. Ryu and some fixes by Miguel
+% A. Lerma (malerma@math.utexas.edu) and some more fixes by Craig
+% McCluskey (mccluskey@mail.utexas.edu).
+%
+% This file was first modified in October, 2001 by Craig W. McCluskey
+% to meet the Graduate School requirements of March, 2001. The name of
+% the file was changed to utdiss2.sty to distinguish it from the
+% original utdiss.sty of June 1991 and Miguel A. Lerma's utdiss1.sty.
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                utdiss2.sty-05.sty (August 2002) 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% How to Use -
+%
+% \documentclass[12pt]{report} 
+%
+% \usepackage{uldiss}
+% 
+%
+% Note: This style file does not guarantee the satisfaction
+%       of all requirements specified by the Graduate School
+%       Users should always compare their document against the
+%       guidelines in regulations published by the UL Graduate School.
+%
+\typeout{*}
+\typeout{* UL Lafayette Doctoral Dissertation Format}
+\typeout{* arranged by Malcolm Hutson (malcolm@louisiana.edu)}
+\typeout{*}
+\typeout{* Modified by Adam Lewis (awlewis@cacs.louisiana.edu )}
+\typeout{* in Spring 2011 to meet Graduate School requirements}
+\typeout{* as of that semester.}
+\typeout{*}
+\typeout{* Modified by Aaron Boudreaux (hmb7226@louisiana.edu )}
+\typeout{* in Spring 2012 to meet Graduate School requirements}
+\typeout{* as of that semester.}
+\typeout{*}
+\typeout{* Note: This style file does not guarantee the satisifaction}
+\typeout{* of all requirements specified by the UL Graudate School.}
+\typeout{* Users should always compare their document against the}
+\typeout{* guidelines in regulations published by the UL Graduate School.}
+\typeout{*}
+\typeout{* Based on the U.T. Austin Doctoral Dissertation Format by}
+\typeout{* Young. U. Ryu, Miguel A. Lerma, Craig McCluskey}
+\typeout{* utdiss2.sty-05.sty}
+\typeout{*}
+
+%%%%%%%%%%%%%%%%%%%%%
+% Dimension Setting %
+%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1in}
+
+%\oddsidemargin 0.625in \evensidemargin 0.625in
+%\textwidth 5.5in
+%\headheight .21in
+%\headsep .29in  % \headheight + \headsep = 0.5in
+%\textheight 8in  % \textheight includes \footskip
+%\footskip .5in
+
+\def\default@par{
+  %\skip\footins 22.8pt plus 4pt minus 2pt
+  \parindent .5in
+  %\parskip 5 pt plus 1.5pt minus .5pt
+  \parskip 0 pt plus 1.5pt minus .5pt
+  \itemsep 0 pt plus .5pt
+  }
+\default@par
+
+\pagenumbering{roman}
+
+%%%%%%%%%%%%%%%%
+% Font Setting %   LMH 2008
+%%%%%%%%%%%%%%%%
+
+%\usepackage[urw-garamond]{}
+%\renewcommand{\familydefault}{ugm}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+%%%%%%%%%%%%%%%%%%
+% Other Packages %   LMH 2008
+%%%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+\usepackage{totpages}
+\usepackage{makeidx}       	% Package to make an index.
+\usepackage{listings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Macros to Modify Some Default Settings of `report.sty'. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Regarding the space after the zero in the value setting above:
+%
+% "For best results, ALWAYS PUT A BLANK SPACE AFTER A NUMERIC CONSTANT;
+%  this blank space tells TeX that the constant is complete, and
+%  such a space will never "get through" to the output."
+% " ... a missing space ... might cause TeX to expand macros when you
+%  don't want any expansion, and such anomalies can cause subtle and
+%  confusing errors"
+%    - the TeXbook, p. 208.      cwm
+
+%
+%     Macros to set spacing of text and quotations.
+%                          ^^^^ ^^^ ^^^^^^^^^^
+\def\single@space{%
+    \vskip\baselineskip
+    \baselineskip=15.5pt plus .5pt minus .2pt
+    \vskip-\baselineskip}
+\def\endsingle@space{\par}
+
+\def\oneandonehalf@space{%
+    \vskip\baselineskip
+    \baselineskip=20.5pt plus .5pt minus .2pt
+    \vskip-\baselineskip}
+\def\endoneandonehalf@space{\par}
+
+\def\double@space{%
+    \vskip\baselineskip
+    \baselineskip=23.5pt plus .5pt minus .2pt
+    \vskip-\baselineskip}
+\def\enddouble@space{\par}
+
+
+
+%
+%     hanging paragraphs - LMH 2008
+%
+\newcommand{\hangpara}[2]{\hangindent#1\hangafter#2\noindent}
+\newenvironment{hangparas}[2]{
+  \setlength{\parindent}{0pt}
+  \everypar={\hangpara{#1}{#2}}}
+
+
+
+%
+%     Spacing for quotations
+%
+\let\old@quote\quote
+\let\endold@quote\endquote
+\let\old@quotation\quotation
+\let\endold@quotation\endquotation
+
+\def\singlespacequote{%
+  \def\quote{\old@quote\single@space}
+  \def\endquote{\endsingle@space\endold@quote}
+  \def\quotation{\old@quotation\single@space}
+  \def\endquotation{\endsingle@space\endold@quotation}}
+
+\def\oneandonehalfspacequote{%
+  \def\quote{\old@quote\oneandonehalf@space}
+  \def\endquote{\endoneandonehalf@space\endold@quote}
+  \def\quotation{\old@quotation\oneandonehalf@space}
+  \def\endquotation{\endoneandonehalf@space\endold@quotation}}
+
+
+
+%
+%     Regular Justification - ULL Requires Left Justified Ragged Right 
+%
+\raggedright
+\parindent=1.5em % <- or whatever indent you want
+
+
+
+%
+%     Regular text spacing
+%
+ \def\doublespacing{%
+     \def\default@spacing{\baselineskip=23.5pt plus .5pt minus .2pt}}
+ \def\oneandonehalfspacing{%
+     \def\default@spacing{\baselineskip=20.5pt plus .5pt minus .2pt}}
+ \def\singlespacing{%
+     \def\default@spacing{\baselineskip=15.5pt plus .5pt minus .2pt}}
+
+
+%
+%     Table Of Contents
+%
+% Macros to adjust the shape of table of contents.
+% Adopted from macros of Stefan Timphus.
+% Modified by Young U. Ryu so that entries are correctly indented.
+% If there are 10 or more sections,
+%              10 or more subsections for a section, etc. etc.
+% enter `\longtocentry' somewhere before `\begin{document}'.
+%
+%  Choose one of the following two \newlength commands depending
+%  upon how you want your Table of Contents to look.
+%          05 Oct 2001  cwm
+%\newlength{\one@num}\setlength{\one@num}{0pt}  % 1.5em  % indent of \section
+
+% Changed from 18 to 36 pt so the sections will be indented properly, relative
+% to the chapters (Spring 2012 AMB)
+\newlength{\one@num}\setlength{\one@num}{36pt}  
+\newlength{\two@num}\settowidth{\two@num}{9.9...}
+\newlength{\three@num}\settowidth{\three@num}{9.9.9...}
+\newlength{\four@num}\settowidth{\four@num}{9.9.9.9...}
+\newlength{\five@num}\settowidth{\five@num}{9.9.9.9.9...}
+\newlength{\six@num}\settowidth{\six@num}{9.9.9.9.9.9...}
+
+\def\longtocentry{%
+\settowidth{\two@num}{99.99...}
+\settowidth{\three@num}{99.99.99...}
+\settowidth{\four@num}{99.99.99.99...}
+\settowidth{\five@num}{99.99.99.99.99...}
+\settowidth{\six@num}{99.99.99.99.99.99...}}
+
+\newlength{\c@onenum}
+  \setlength{\c@onenum}{\one@num}
+\newlength{\c@twonum}
+  \setlength{\c@twonum}{\c@onenum}\addtolength{\c@twonum}{\two@num}
+\newlength{\c@threenum}
+  \setlength{\c@threenum}{\c@twonum}\addtolength{\c@threenum}{\three@num}
+\newlength{\c@fournum}
+  \setlength{\c@fournum}{\c@threenum}\addtolength{\c@fournum}{\four@num}
+\newlength{\c@fivenum}
+  \setlength{\c@fivenum}{\c@fournum}\addtolength{\c@fivenum}{\five@num}
+
+\renewcommand{\@tocrmarg}{4em}
+\def\@dottedtocline#1#2#3#4#5{%
+  \ifnum #1>\c@tocdepth \else
+    %\righthyphenmin 62
+    %\hyphenpenalty=100000
+    \ifnum #1>0
+      \vskip \z@ \@plus.2\p@
+      {
+      \leftskip #2\relax \rightskip \@tocrmarg \parfillskip -\rightskip
+      \parindent #2\relax\@afterindenttrue
+      %\interlinepenalty\@M
+      \leavevmode
+      \@tempdima #3\relax
+      \advance\leftskip \@tempdima \null\nobreak\hskip -\leftskip
+      {#4\dotfill#5}%
+      \par}%
+    \else
+      {
+      \vskip 12pt
+      \rightskip \@tocrmarg \parfillskip -\rightskip
+      \hangindent 98.75pt
+      {{\bf#4}\dotfill#5}%
+      \par}%
+    \fi 
+  \fi}
+    
+\def\l@chapter{\@dottedtocline{0}{\c@onenum}{\five@num}}
+\def\l@section{\@dottedtocline{1}{\c@onenum}{\two@num}}
+\def\l@subsection{\@dottedtocline{2}{\c@twonum}{\three@num}}
+% Old definition of subsubsection.
+% \def\l@subsubsection{\@dottedtocline{3}{\c@threenum}{\four@num}}
+\def\l@subsubsection{\@dottedtocline{3}{\c@threenum}{\four@num}}
+\def\l@paragraph{\@dottedtocline{4}{\c@fournum}{\five@num}}
+\def\l@subparagraph{\@dottedtocline{5}{\c@fivenum}{\six@num}}
+
+
+
+%
+% Define \nopage@addcontentsline to not place page numbers
+% in the table of contents.
+%
+\def\nopage@addcontentsline#1#2#3{\addtocontents{#1}%
+{\protect \contentsline {#2}{#3}{}}}
+
+
+
+%
+% Stolen from `report.sty'. Modified to change the size of left skip
+%     for \chapter title which is longer than one line.
+%
+%\newlength{\toc@chap@indent}
+%\settowidth{\toc@chap@indent}{\bf\@chapapp\space\thechapter.\hspace*{1em}}
+    
+
+
+%
+%     Chapter Headings
+%
+\def\@makechapterhead#1{  
+  {\parindent 0pt \raggedleft 
+    \ifnum \c@secnumdepth >\m@ne \center {\bf \@chapapp{} \thechapter}
+    \par
+    \par \centering \vskip 15pt \fi  \bf #1\par \nobreak \vskip 35pt
+  }}
+
+
+\def\@makeschapterhead#1{ {\parindent 0pt \centering
+     \bf #1\par \nobreak \vskip 12pt}}
+
+\def\chapter{%
+  \clearpage
+  %%\short@page \setcounter{regular@short}{0}  %<<--
+  \default@spacing
+  %
+  % Comment out one of the two lines below to determine indention of
+  %  first lines of chapters.  28 Sep 2001  cwm
+  %
+  \global\@topnum\z@ \@afterindenttrue  % Indent 1st line of chapter.
+  %\global\@topnum\z@ \@afterindentfalse  % Do NOT indent 1st line of chapter.
+  \secdef\@chapter\@schapter
+  }
+
+\def\shortchapter{%
+  \clearpage
+  %%\short@page \setcounter{regular@short}{1}  %<<--
+  \default@spacing    
+  %
+  % Comment out one of the two lines below to determine indention of
+  %  first lines of short chapters.  28 Sep 2001  cwm
+  %
+  \global\@topnum\z@ \@afterindenttrue  % Indent 1st line of short chapter.
+  %\global\@topnum\z@ \@afterindentfalse  % Do NOT indent 1st line of short chapter.
+  \secdef\@chapter\@schapter
+  }
+
+\newcount\chap@or@app\chap@or@app=1
+
+
+
+%
+%     For single Appendix
+%
+\def\appendixname{Appendix}
+\def\appendix{\clearpage\thispagestyle{empty}\pagestyle{plain}
+  \index{Appendix@\emph{Appendix}}%
+  %\pagestyle{empty}
+  \typeout{Appendix.}
+  %\vspace*{\fill}
+  \centerline{\bf Appendix}
+  %\vspace*{\fill}
+  \addcontentsline{toc}{chapter}{Appendix}  % <-
+  \setcounter{chapter}{0}
+  \setcounter{section}{0}
+  \def\@chapapp{\appendixname}
+  \chap@or@app=2
+  %\def\thechapter{\Alph{chapter}}}  % Commented out 15 Aug 02  cwm
+        % as a partial solution to
+        % the problem of labeling
+        % one appendix as Appendix A.
+  }
+
+
+
+%
+%     Solo Scores
+%       This Command Creates an Apendix style section for the printing of full music scores. 
+%
+\def\soloscores{\clearpage\thispagestyle{empty}\pagestyle{plain}
+  \typeout{Solo Scores.}
+  \centerline{\bf Solo Scores}
+  %\vspace*{\fill}
+  \addcontentsline{toc}{chapter}{Solo Scores}  % <-
+  \setcounter{chapter}{0}
+  \setcounter{section}{0}
+  \def\@chapapp{\appendixname}
+  \chap@or@app=2
+  \def\thechapter{\Alph{chapter}}}
+
+
+
+%
+%     For multiple Appendices
+%
+\def\appendices{\clearpage\thispagestyle{empty}\pagestyle{plain}
+  \typeout{Appendices.}
+  \index{Appendices@\emph{Appendices}}%
+  \centerline{\bf Appendices}
+  %\vspace*{\fill}
+  \addcontentsline{toc}{chapter}{Appendices}
+  \setcounter{chapter}{0}
+  \setcounter{section}{0}
+  \def\@chapapp{\appendixname}
+  \chap@or@app=2
+  \def\thechapter{\Alph{chapter}}}
+  
+    
+    
+%    
+%     Redefinition of \@part for using by \part (M.A.L.)
+%
+\newcount\with@parts\with@parts=0 % <- this would allow to restart page number with Chapter 1 (MAL)
+\def\@part[#1]#2{%
+  \ifnum \c@secnumdepth >-2 \relax
+    \refstepcounter{part}%        % Added \partname~ below (M.A.L.)
+    \addcontentsline{toc}{part}{\partname~\thepart\hspace{1em}#1}%
+  \else
+    \addcontentsline{toc}{part}{#1}%
+  \fi
+  \markboth{}{}
+  {\centering
+   \interlinepenalty \@M
+   \reset@font
+   \ifnum \c@secnumdepth >-2 \relax
+     \huge\bfseries \partname~\thepart
+     \par
+     \vskip 20\p@
+   \fi
+   \Huge \bfseries #2\par}%
+   \ifnum\value{part}=1 \pagenumbering{arabic}%  % if Part I
+   \with@parts=1 \fi%  % <- to avoid restarting page number with chapter 1
+  \@endpart
+  }
+
+
+
+%
+%     \chapter and \section commands
+%
+\def\@chapter[#1]#2{\ifnum \c@secnumdepth >\m@ne 
+  \refstepcounter{chapter}
+  \typeout{\space\@chapapp\space\thechapter\space}
+  \addcontentsline{toc}{chapter}{\@chapapp\space\thechapter.\newline\vskip -31pt\nobreak\hspace*{6em}#1}\else
+  \addcontentsline{toc}{chapter}{#1}\fi
+  % \chaptermark{#1}
+  %\addtocontents{lof}{\protect\addvspace{10pt}}
+  \addtocontents{lof}{}
+  %\addtocontents{lot}{\protect\addvspace{10pt}}
+  \addtocontents{lot}{}
+  \@makechapterhead{#2} \@afterheading
+  %\thispagestyle{empty}
+  %\pagestyle{plain}
+  \thispagestyle{fancy} %Only This Page is fancy rest is plain
+  %\fancyhf{} %Supress Page Numbers by deleting Header/Footer Info
+  \renewcommand{\headrulewidth}{0.0pt}
+  \ifnum\chap@or@app=1 \ifnum\value{chapter}=1         % if Chapter 1      
+    \ifnum\with@parts=0 \pagenumbering{arabic}\fi% Restart page number only if there are no parts (MAL)
+  \fi\fi 
+  }
+
+\def\@schapter#1{
+  \@makeschapterhead{#1} \@afterheading}
+
+\def\section{%
+  \@startsection{section}{1}{\z@}%
+  {2.3ex plus -1ex minus -.2ex}{.3ex plus .2ex}{\bf\normalsize}}
+\def\subsection{\@startsection{subsection}{2}{\z@}%
+  {1.5ex plus -1ex minus -.2ex}{.2ex plus .2ex}{\bf\normalsize}}
+
+% Changed definition of subsubsection below from first line (commented
+% out) to second line. For some reason (buried in the depths of TeX,
+% most likely) using the parameter 3 causes the subsubsections to not
+% be numbered. Changing it to a 2 puts numbers on subsubsections.
+%          13 Mar 2002  cwm
+%
+%\def\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+\def\subsubsection{\@startsection{subsubsection}{2}{\z@}%
+  %{3.25ex plus -1ex minus -.2ex}{-1.5ex plus .2ex}{\normalsize\it}}
+  %{3.25ex plus -1ex minus -.2ex}{.1ex plus .2ex}{\normalsize\it}}
+      % Change formatting of subsubsection headings
+      % to same as subsections.
+      %    13 Mar 2002  cwm
+  {3.9ex plus -1ex minus -.2ex}{.2ex plus .2ex}{\normalsize\bf}}
+
+%
+%     Default Bibliography
+%       overridden by school customizations
+%
+% \def\thebibliography#1{\chapter*{Bibliography}
+%   \thispagestyle{empty}
+%   \singlespacing
+%   \addcontentsline{toc}{chapter}{Bibliography}
+%   \list
+%   {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+%   \advance\leftmargin\labelsep
+%   \usecounter{enumi}} \def\newblock{\hskip .11em plus .33em minus -.07em}%    \sloppy \sfcode`\.=1000 \relax}
+%   \let\endthebibliography=\endlist
+%   }
+
+
+
+%
+%     Index Page
+%
+\renewenvironment{theindex} 
+{  \if@twocolumn 
+    \@restonecolfalse 
+  \else 
+    \@restonecoltrue 
+  \fi 
+  \columnseprule \z@ 
+  \columnsep 35\p@ 
+  \twocolumn[\@makeschapterhead{\indexname}]% 
+  \@mkboth{\MakeUppercase\indexname}% 
+      {\MakeUppercase\indexname}% 
+  \addcontentsline{toc}{chapter}{\indexname}
+  \thispagestyle{empty}\parindent\z@ 
+  \parskip\z@ \@plus .3\p@\relax 
+  \single@space
+  \let\item\@idxitem}
+  {\if@restonecol\onecolumn\else\clearpage\fi}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PRELIMINARY DATA (AND/OR THEIR DEFAULTS) FOR DISSERTATION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       Default Data of Author, Dissertation, etc.
+%
+
+\def\au@thor{\bf Author Name Required!!! \textbackslash author\{First Last\}}
+\def\AU@THOR{\bf \uppercase{Author Name Required!!! \textbackslash author\{First Last\}}}
+
+\def\properau@thor{\bf Proper Author Name Required!!! \textbackslash properauthor\{Last, First\}}
+
+\def\ti@tle{\bf Title Required!!! \textbackslash title\{My Title\}}
+\def\TI@TLE{\bf Title Required!!! \textbackslash title\{My Title\}}
+
+\def\abstract@wordwount{\bf Abstract Word Count Required!!! \textbackslash abstractwordcount\{Number of Words in Abstract\}}
+
+\def\abstract@pagewount{\bf Abstract Word Count Required!!! \textbackslash abstractwordcount\{Number of Words in Abstract\}}
+
+\def\previous@degrees{\bf Previous Degrees Required!!! \textbackslash previousdegrees\{My Previous Education\}}
+
+% Auto-detect graduation semester based on current month -LMH
+\def\graduation@month{\ifcase\month\or
+  Spring\or Spring\or Spring\or Spring\or Spring\or Summer\or Summer\or
+  Summer\or Fall\or Fall\or Fall\or Fall\fi}
+
+\def\graduation@year{\number\year}
+
+\def\add@ress{\bf Permanent Address Required!!! \textbackslash address\{My Address\}}
+\def\typ@ist{\bf Typist Required!!! \textbackslash typist\{My Typist\}}
+
+\def\ma@jor{\bf Major Required!!! \textbackslash major\{My Major\}}
+
+\def\supervisor@title{Dr.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       School Customizations                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\def\cacscmps{%
+	\typeout{*                        *}
+	\typeout{*                        *}
+	\typeout{*    COMPUTER SCIENCE    *}
+	\typeout{*                        *}
+	\typeout{*                        *}
+	\def\@degreeshort{S}
+	\def\@degreefield{Science}
+	\def\ma@jor{Computer Science}
+	\usepackage{template/acmtrans/acmtrans}
+	\bibliographystyle{template/acmtrans/acmtrans}
+}
+
+\def\cacseece{%
+	\typeout{*                        *}
+	\typeout{*                        *}
+        \typeout{*  COMPUTER ENGINEERING  *}
+	\typeout{*                        *}
+	\typeout{*                        *}
+	\def\@degreeshort{E}
+	\def\@degreefield{Engineering}
+	\def\ma@jor{Computer Engineering}
+	\usepackage{template/acmtrans/acmtrans}
+	\bibliographystyle{template/acmtrans/acmtrans}
+}
+
+
+\def\schoolofmusic{
+  \typeout{*                        *}
+  \typeout{*                        *}
+  \typeout{*         MUSIC          *}
+  \typeout{*                        *}
+  \typeout{*                        *}
+  \def\@degreeshort{A}
+  \def\@degreefield{Music}
+  \def\ma@jor{Music}
+ 
+  \usepackage[sorting=nty, style=verbose-ibid]{biblatex}
+  \usepackage[marginal,hang]{footmisc}
+
+  \DefineBibliographyStrings{american} {namedash={\underline{\qquad}}}
+  %\DeclareFieldFormat{postnote}{{#1}}
+  \interfootnotelinepenalty=10000
+  \widowpenalty=10000
+  \clubpenalty=10000
+  \raggedbottom
+  %\bibliographystyle{plain}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define Masters Thesis.
+%
+\def\masterthesis{%
+  \typeout{*                         *}
+  \typeout{*                         *}
+  \typeout{* This is a master thesis *}
+  \typeout{*                         *}
+  \typeout{*                         *}
+  \def\doc@type{Thesis}
+  \def\DOC@TYPE{THESIS}
+                         
+  \def\target@degree{M.\@degreeshort.}
+  \def\d@gree{Master of \@degreefield}
+
+}  % End of definition of master's thesis.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define Masters Report.
+%
+\def\masterreport{%
+  \typeout{*                         *}
+  \typeout{*                         *}
+  \typeout{* This is a master report *}
+  \typeout{*                         *}
+  \typeout{*                         *}
+  
+  \def\doc@type{Report}
+  \def\DOC@TYPE{REPORT}
+                         
+  \def\target@degree{M.\@degreeshort.}
+  \def\d@gree{Master of \@degreefield}
+  
+}  % End of definition of master's report.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define Dissertation.
+%
+\def\dissertation{%               % (M.A.L., 3/18/98)
+  \typeout{*                        *}
+  \typeout{*                        *}
+  \typeout{* This is a dissertation *}
+  \typeout{*                        *}
+  \typeout{*                        *}
+  
+  \def\doc@type{Dissertation}
+  \def\DOC@TYPE{DISSERTATION}
+
+  \def\target@degree{Ph.D.}
+  \def\d@gree{Doctor of Philosophy}
+  
+}  % End of definition of dissertation.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define Dissertation.
+%
+\def\prospectus{%               % (awl8049, Spring 2011}
+  \typeout{*                        *}
+  \typeout{*                        *}
+  \typeout{* This is a prospectus   *}
+  \typeout{*                        *}
+  \typeout{*                        *}
+  
+  \def\doc@type{Prospectus}
+  \def\DOC@TYPE{PROSPECTUS}
+
+  \def\target@degree{Ph.D.}
+  \def\d@gree{Doctor of Philosophy}
+  
+}  % End of definition of dissertation.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Input Data of Author, Dissertation, etc.            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\def\doctype#1{
+  \def\doc@type{#1}
+  \def\DOC@TYPE{\uppercase{#1}}
+  }
+
+\def\thedoctype{\doc@type}
+
+\def\author#1{
+  \def\au@thor{#1}
+  \def\AU@THOR{\uppercase{#1}}
+  }
+  
+\def\properauthor#1{\def\properau@thor{#1}}
+
+\def\title#1{
+  \def\ti@tle{#1}
+  \def\TI@TLE{\uppercase{#1}}
+  } 
+
+\def\thetitle{\ti@tle}
+
+\def\abstractwordcount#1{\def\abstract@wordcount{#1}}
+\def\abstractpagecount#1{\def\abstract@pagecount{#1}}
+
+\def\previousdegrees#1{\def\previous@degrees{#1}}
+\def\degreeabbr#1{\def\target@degree{#1}}
+\def\degree#1{\def\d@gree{#1}}
+
+\def\graduationmonth#1{\def\graduation@month{#1}}
+\def\graduationyear#1{\def\graduation@year{#1}}
+
+\def\thegraduationmonth{\graduation@month}
+\def\thegraduationyear{\graduation@year}
+
+\def\address#1{\def\add@ress{#1}}
+\def\typist#1{\def\typ@ist{#1}}
+\def\major#1{\def\ma@jor{#1}}
+
+\def\themajor{\ma@jor}
+
+\def\supervisortitle#1{\def\supervisor@title{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        Process information for Committee Certification page        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\dean#1{\def\de@an{#1}}
+\def\deantitle{Dean of the Graduate School}
+
+\def\committeemembera{}
+\def\committeememberb{}
+\def\committeememberc{}
+\def\committeememberd{}
+\def\committeemembere{}
+\def\committeememberf{}
+\def\committeememberg{}
+
+\def\committeememberatitle{}
+\def\committeememberbtitle{}
+\def\committeememberctitle{}
+\def\committeememberdtitle{}
+\def\committeememberetitle{}
+\def\committeememberftitle{}
+\def\committeemembergtitle{}
+
+\newcount\numberofmembers\numberofmembers=0
+\newcount\numberofmemberstitle\numberofmemberstitle=0
+\newcount\membernumbercounter
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Print the signature lines for the committee.   LMH 2008
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\signturelines{%
+  \noindent
+  \setlength{\tabcolsep}{0ex}
+  
+  \begin{tabular}{ p{2.75in} p{0.6in} p{2.75in} }
+    \cline{1-1}  
+    \ifnum\numberofmembers>1 \cline{3-3} \fi 
+    % If you have 2+ chairs in your committee, change Chair to Co-chair
+    % in the line below (Spring 2012 AMB)
+    \committeemembera, Chair \par \committeememberatitle 
+    &  & 
+    % For 1 chair, use the first line. For co-chairs, use the second line.
+    % (Spring 2012 AMB)
+    \ifnum\numberofmembers>1 \committeememberb \par \committeememberbtitle \fi
+    %\ifnum\numberofmembers>1 \committeememberb, Co-chair \par \committeememberbtitle \fi
+    % If your first or second committee member is CACS faculty, uncomment the
+    % following line. Delete \mbox{The Center...} for any committee member that 
+    % is not CACS faculty. (Spring 2012 AMB)
+    \\\mbox{The Center for Advanced Computer Studies} & & \mbox{The Center for Advanced Computer Studies}
+
+    \tabularnewline
+    \noalign{\vskip0.5in}
+    &  & \tabularnewline    
+    
+    \ifnum\numberofmembers>2 \cline{1-1} \fi
+    \ifnum\numberofmembers>3 \cline{3-3} \fi
+    \ifnum\numberofmembers>2 \committeememberc \par \mbox{\committeememberctitle} \fi
+    &  & 
+    \ifnum\numberofmembers>3 \committeememberd \par \mbox{\committeememberdtitle} \fi 
+    % If your third or fourth (if applicable) committee member is CACS faculty,
+    % uncomment the following line. Delete \mbox{The Center...} for any committee
+    % member that is not CACS faculty. (Spring 2012 AMB)
+    \\\mbox{The Center for Advanced Computer Studies} & & 
+    \tabularnewline
+    \noalign{\vskip0.5in}
+     &  & \tabularnewline
+     
+    
+    \ifnum\numberofmembers>4 \cline{1-1} \fi
+    \ifnum\numberofmembers>5 \cline{3-3} \fi
+    \ifnum\numberofmembers>4 \committeemembere \par \mbox{\committeememberetitle} \fi
+    &  & 
+    \ifnum\numberofmembers>5 \committeememberf \par \mbox{\committeememberftitle} \fi
+    % If your fifth or sixth (if applicable) committee member is CACS faculty,
+    % uncomment the following line. Delete \mbox{The Center...} for any committee
+    % member that is not CACS faculty. (Spring 2012 AMB)
+    %\\\mbox{The Center for Advanced Computer Studies} & & \mbox{The Center for Advanced Computer Studies}    
+    \tabularnewline
+    \noalign{\vskip0.5in}
+     &  & \tabularnewline
+    
+    \ifnum\numberofmembers>6 \cline{1-1}
+    \committeememberg \par \committeemembergtitle
+    \fi
+    \tabularnewline
+   
+  
+  \end{tabular}
+  \setlength{\tabcolsep}{0.5em} 
+  }
+
+
+
+%
+% Read in \committeemembers variable. Count and separate committee
+% members' names.      04 Oct 2001  cwm
+% modified LMH 2008
+% 
+\def\committeemembers{%
+  \@ifnextchar [{\morethanonemember}
+  {\onecommitteemember}}
+\def\morethanonemember[#1]{%
+  \@ifnextchar [{\morethantwomembers[#1]}
+  {\twocommitteemembers[#1]}}
+\def\morethantwomembers[#1][#2]{%
+  \@ifnextchar [{\morethanthreemembers[#1][#2]}
+  {\threecommitteemembers[#1][#2]}}
+\def\morethanthreemembers[#1][#2][#3]{%
+  \@ifnextchar [{\morethanfourmembers[#1][#2][#3]}
+  {\fourcommitteemembers[#1][#2][#3]}}
+\def\morethanfourmembers[#1][#2][#3][#4]{%
+  \@ifnextchar [{\sixcommitteemembers[#1][#2][#3][#4]}
+  {\fivecommitteemembers[#1][#2][#3][#4]}}
+
+\def\onecommitteemember#1{%
+  \def\committeemembera{#1}
+  \def\committeememberb{\de@an}
+  \numberofmembers=2}
+\def\twocommitteemembers[#1]#2{%
+  \def\committeemembera{#1}
+  \def\committeememberb{#2}
+  \def\committeememberc{\de@an}
+  \numberofmembers=3}
+\def\threecommitteemembers[#1][#2]#3{%
+  \def\committeemembera{#1}
+  \def\committeememberb{#2}
+  \def\committeememberc{#3}
+  \def\committeememberd{\de@an}
+  \numberofmembers=4}
+\def\fourcommitteemembers[#1][#2][#3]#4{%
+  \def\committeemembera{#1}
+  \def\committeememberb{#2}
+  \def\committeememberc{#3}
+  \def\committeememberd{#4}
+  \def\committeemembere{\de@an}
+  \numberofmembers=5}
+\def\fivecommitteemembers[#1][#2][#3][#4]#5{%
+  \def\committeemembera{#1}
+  \def\committeememberb{#2}
+  \def\committeememberc{#3}
+  \def\committeememberd{#4}
+  \def\committeemembere{#5}
+  \def\committeememberf{\de@an}
+  \numberofmembers=6}
+\def\sixcommitteemembers[#1][#2][#3][#4][#5]#6{%
+  \def\committeemembera{#1}
+  \def\committeememberb{#2}
+  \def\committeememberc{#3}
+  \def\committeememberd{#4}
+  \def\committeemembere{#5}
+  \def\committeememberf{#6}
+  \def\committeememberg{\de@an}
+  \numberofmembers=7}
+
+
+
+%
+% Read in \committeememberstitle variable. LMH 2008
+% 
+\def\committeememberstitle{%
+  \@ifnextchar [{\morethanonemembertitle}
+  {\onecommitteemembertitle}}
+\def\morethanonemembertitle[#1]{%
+  \@ifnextchar [{\morethantwomemberstitle[#1]}
+  {\twocommitteememberstitle[#1]}}
+\def\morethantwomemberstitle[#1][#2]{%
+  \@ifnextchar [{\morethanthreememberstitle[#1][#2]}
+  {\threecommitteememberstitle[#1][#2]}}
+\def\morethanthreememberstitle[#1][#2][#3]{%
+  \@ifnextchar [{\morethanfourmemberstitle[#1][#2][#3]}
+  {\fourcommitteememberstitle[#1][#2][#3]}}
+\def\morethanfourmemberstitle[#1][#2][#3][#4]{%
+  \@ifnextchar [{\sixcommitteememberstitle[#1][#2][#3][#4]}
+  {\fivecommitteememberstitle[#1][#2][#3][#4]}}
+
+\def\onecommitteemembertitle#1{%
+  \def\committeememberatitle{#1}
+  \def\committeememberbtitle{\deantitle}
+  \numberofmemberstitle=2}
+\def\twocommitteememberstitle[#1]#2{%
+  \def\committeememberatitle{#1}
+  \def\committeememberbtitle{#2}
+  \def\committeememberctitle{\deantitle}
+  \numberofmemberstitle=3}
+\def\threecommitteememberstitle[#1][#2]#3{%
+  \def\committeememberatitle{#1}
+  \def\committeememberbtitle{#2}
+  \def\committeememberctitle{#3}
+  \def\committeememberdtitle{\deantitle}
+  \numberofmemberstitle=4}
+\def\fourcommitteememberstitle[#1][#2][#3]#4{%
+  \def\committeememberatitle{#1}
+  \def\committeememberbtitle{#2}
+  \def\committeememberctitle{#3}
+  \def\committeememberdtitle{#4}
+  \def\committeememberetitle{\deantitle}
+  \numberofmemberstitle=5}
+\def\fivecommitteememberstitle[#1][#2][#3][#4]#5{%
+  \def\committeememberatitle{#1}
+  \def\committeememberbtitle{#2}
+  \def\committeememberctitle{#3}
+  \def\committeememberdtitle{#4}
+  \def\committeememberetitle{#5}
+  \def\committeememberftitle{\deantitle}
+  \numberofmemberstitle=6}
+\def\sixcommitteememberstitle[#1][#2][#3][#4][#5]#6{%
+  \def\committeememberatitle{#1}
+  \def\committeememberbtitle{#2}
+  \def\committeememberctitle{#3}
+  \def\committeememberdtitle{#4}
+  \def\committeememberetitle{#5}
+  \def\committeememberetitle{#6}
+  \def\committeememberftitle{\deantitle}
+  \numberofmemberstitle=7}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Approval Page  LMH 2008
+%
+\def\approvalpage{
+  \pagestyle{empty}
+  %Title Goes 96pts bellow the margin.  
+  %This Must be adjusted when necessary based on title length
+  \vspace*{96pt}
+  \baselineskip=12pt plus .5pt minus .2 pt
+  \begin{center}
+      \ti@tle
+  \end{center}    % Mixed case title.
+  \vspace*{12pt}
+  \centerline{\au@thor}
+  %Aprroved goes 120 points below the name when possible
+  %This space is the first to be sacrificed
+  \vspace{108pt}
+
+  APPROVED:
+  
+  \vspace*{40pt}
+
+  \signturelines
+
+  \clearpage
+  }
+
+
+
+%
+%       Copyright Page
+%
+\def\copyrightpage{\pagestyle{empty}
+  % 32 single spaced lines
+  \vspace*{384pt}
+  \doublespacing
+  \centerline{\copyright\  \au@thor}
+  \centerline{\graduation@year}
+  \centerline{All Rights Reserved}
+  \clearpage}
+
+
+
+%
+%       Dedication Page
+%
+\newenvironment{dedication}{\pagestyle{empty}
+  \index{Dedication@\emph{Dedication}}%
+  \addcontentsline{toc}{chapter}{Dedication}
+  \shortchapter*{Dedication}
+  \vspace*{170pt}\begin{center}\default@spacing}%
+  {\end{center}\clearpage}
+
+
+    
+%
+%       Epigraph Page
+%
+\newenvironment{epigraph}{\thispagestyle{empty}
+  \index{Epigraph@\emph{Epigraph}}%
+  \addcontentsline{toc}{chapter}{Epigraph}
+  \shortchapter*{Epigraph}
+  \vspace*{170pt}\begin{center}\default@spacing}%
+  {\end{center}\clearpage}
+
+
+
+%
+%       Title Page
+%
+\def\titlepage{\pagestyle{empty}
+  \vspace*{72pt}
+  %\baselineskip=30.5pt
+  \begin{center}
+  \ti@tle    % Mixed case title.
+  \end{center}
+  \vspace*{96pt}
+  \baselineskip=24pt
+  \begin{center}
+  A \doc@type\\
+  Presented to the\\
+  Graduate Faculty of the\\
+  University of Louisiana at Lafayette\\
+  In Partial Fulfillment of the\\
+  Requirements for the Degree\\
+  \d@gree
+  \end{center}
+  %Vertical Space here is variable until
+  %We update it to be elastic we must lower the number
+  \vspace*{96pt}
+  \centerline{\au@thor}
+  \centerline{\graduation@month~\graduation@year}
+  \clearpage
+  }
+
+
+
+%
+%       Acknowledgments
+% 
+\def\acknowledgments{%
+  \shortchapter*{Acknowledgments}  
+  \thispagestyle{empty}
+  \index{Acknowledgments@\emph{Acknowledgments}}%
+  \addcontentsline{toc}{chapter}{Acknowledgments}
+  }
+
+
+
+%
+%       Preface
+%
+\def\preface{%
+  \shortchapter*{Preface}
+  \addcontentsline{toc}{chapter}{Preface}
+  \thispagestyle{empty}
+  }
+
+
+
+%
+%       Abstract Page
+%
+\renewenvironment{abstract}{\clearpage
+  \thispagestyle{empty}  
+  \addcontentsline{toc}{chapter}{Abstract}
+  \singlespacing
+  \default@spacing
+  
+  \begin{hangparas}{0.5in}{1}
+  \parskip 0pt
+  \properau@thor. \previous@degrees
+  \ Major: \themajor\\
+  Title of \thedoctype: \thetitle\\
+  % If you have two co-chairs for your committee, use the second version.
+  % (Spring 2012 AMB)
+  \thedoctype\ Director: \supervisor@title\space\committeemembera\\
+  %\thedoctype\ Directors: \supervisor@title\space\committeemembera~and~Dr.~\committeememberb\\
+  Pages in \thedoctype: \abstract@pagecount; Words in Abstract: \abstract@wordcount
+  \end{hangparas}
+  \doublespacing
+  \default@spacing
+  \vspace{12pt}
+  \centerline{ABSTRACT}
+  \vspace{12pt}
+  }{\doublespacing\default@spacing}
+
+
+
+%
+%       Table of Contents page
+%
+\def\tableofcontents{%
+  \shortchapter*{Table of Contents}
+  \thispagestyle{fancy} %Only This Page is fancy rest is plain
+  \fancyhf{} %Supress Page Numbers by deleting Header/Footer Info
+  \pagestyle{plain}
+  \renewcommand{\headrulewidth}{0.0pt}
+  \single@space
+  \vskip -12pt  
+  \@starttoc{toc}}
+
+
+%
+%       Captions (except for captions in listings)
+%         redfine caption to add the items proper name before its number
+%         this allows "Figure X  The First Picture.....5"
+%
+\def\caption{\refstepcounter\@captype \@dblarg{\@caption\@captype}}
+\long\def\@caption#1[#2]#3{%
+  \par
+  \addcontentsline{\csname ext@#1\endcsname}{#1}%
+    {\protect\numberline{\csname #1@name\endcsname\space\csname the#1\endcsname}{\ignorespaces #2}}%
+  \begingroup
+    \@parboxrestore
+    \if@minipage
+      \@setminipage
+    \fi
+    \normalsize
+    \@makecaption{\csname fcapjust@#1\endcsname
+                \csname fcapsize@#1\endcsname
+                \csname fname@#1\endcsname
+                \csname fnum@#1\endcsname}%
+               {#3}\par%\csname fcapstyle@#1\endcsname
+  \endgroup}
+
+
+
+%
+%       Listings hack
+%         because listings do not use real captions, we trap its call to addcontentsline
+%         and add the "Listing X" title
+%    
+\newcommand\stdaddcontentsline{}
+\let\stdaddcontentsline\addcontentsline
+\renewcommand\addcontentsline[3]{
+  \def\tempa{#1}
+  \def\tempb{lol}
+  \ifx\tempa\tempb
+    \stdaddcontentsline{#1}{#2}{Listing #3}
+  \else
+    \stdaddcontentsline{#1}{#2}{#3}
+  \fi
+  }
+
+
+
+%
+%       List of Figures page
+%
+\def\l@figure{\@dottedtocline{1}{18pt}{\four@num}}
+\def\figure@name{Figure}
+\renewcommand\thefigure {\thechapter.\@arabic\c@figure}
+\def\fnum@figure{\figure@name\space\thefigure}
+\def\listoffigures{%
+  \shortchapter*{List of Figures}
+  \addcontentsline{toc}{chapter}{List of Figures}
+  \single@space
+  \thispagestyle{fancy} %Only This Page is fancy rest is plain
+  \fancyhf{} %Supress Page Numbers by deleting Header/Footer Info
+  \pagestyle{plain}
+  \renewcommand{\headrulewidth}{0.0pt}
+  \vskip \parskip
+  \parskip=15.5pt plus .5pt minus .5pt
+  \vskip -\parskip
+  \@starttoc{lof}
+  \default@par  
+  }
+
+
+
+%
+%       List of Tables page
+%
+\def\l@table{\@dottedtocline{1}{18pt}{\four@num}}
+\def\table@name{Table}
+\renewcommand\thetable {\thechapter.\@arabic\c@table}
+\def\fnum@table{\table@name\space\thetable}
+\def\listoftables{%
+  \shortchapter*{List of Tables}
+  \addcontentsline{toc}{chapter}{List of Tables}
+  \single@space
+  \thispagestyle{fancy} %Only This Page is fancy rest is plain
+  \fancyhf{} %Supress Page Numbers by deleting Header/Footer Info
+  \pagestyle{plain}
+  \renewcommand{\headrulewidth}{0.0pt}
+  \vskip \parskip
+  \parskip=15.5pt plus .5pt minus .5pt
+  \vskip -\parskip  	
+  \@starttoc{lot}
+  \default@par
+  }
+
+
+
+%
+%       List of Listings page
+%
+%\def\l@listing{\@dottedtocline{1}{\c@onenum}{\four@num}}
+%\def\listing@name{Listing}
+%\renewcommand\thelstlisting {YY \thechapter.\@arabic\c@listing}
+%\def\fnum@listing{\listing@name\space\thelisting}
+\def\listoflistings{%
+  \shortchapter*{List of Listings}
+  \addcontentsline{toc}{chapter}{List of Listings}
+  \single@space
+  \thispagestyle{fancy} %Only This Page is fancy rest is plain
+  \fancyhf{} %Supress Page Numbers by deleting Header/Footer Info
+  \pagestyle{plain}
+  \renewcommand{\headrulewidth}{0.0pt}
+  \vskip \parskip
+  \parskip=15.5pt plus .5pt minus .5pt
+  \vskip -\parskip
+  \@starttoc{lol}
+  \default@par
+  }
+
+
+
+%
+%       Vita Page
+%
+\newenvironment{vita}{\vitahead}{\vitatail}
+\def\vitahead{\chapter*{Vita}
+  \thispagestyle{empty}
+  \pagestyle{plain}
+  \addcontentsline{toc}{chapter}{Vita} }
+\def\vitatail{ \par\vfill\par
+  \noindent Permanent address: \parbox[t]{3.5in}{\raggedright\add@ress}
+  \vfill\par\noindent
+  \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+  This \doc@type{} was typeset by \typ@ist
+  with \LaTeX\footnote[2]{\LaTeX{} is a document preparation
+  system developed by Leslie Lamport as a special
+  version of Donald Knuth's \TeX{} Program. } 
+  }
+
+
+
+%
+%       Biographical Sketch
+%    
+\newenvironment{biography}{\biohead}{\biotail}
+\def\biohead{\chapter*{Biographical Sketch}
+  \thispagestyle{empty}
+  \pagestyle{plain}
+  \addcontentsline{toc}{chapter}{Biographical Sketch}
+  \doublespacing
+  \default@spacing }
+\def\biotail{
+  \par\vfill\par
+  % \noindent Permanent address: \parbox[t]{3.5in}{\raggedright\add@ress}
+  %     \vfill\par\noindent
+  %     \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+  %     This \doc@type{} was typeset by \typ@ist
+  %     with \LaTeX\footnote[2]{\LaTeX{} is a document preparation
+  %     system developed by Leslie Lamport as a special
+  %     version of Donald Knuth's \TeX{} Program.}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Macros.							                                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	Here some macros that are needed in this document:
+
+\chardef\bslash=`\\ % \bslash makes a backslash (in tt fonts)
+                    %	p. 424, TeXbook
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Defaults                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\masterthesis
+\longtocentry
+\doublespacing
+\oneandonehalfspacequote 

@@ -1,0 +1,179 @@
+%
+% File:     chapter-related.tex
+% Author:   awl8049
+% Revision: $Revision: 1.4 $
+%
+\chapter{Background and Related Work}
+\label{chp:priorwork}
+Power management techniques developed for mobile and desktop computers
+have been applied with some success to managing the power consumption of
+microprocessors used in server hardware.  The current generation of AMD
+and Intel processors employs different techniques for processor-level
+power management, including (1)~per core clock gating, (2)~power-gating
+functional blocks (for processors to turn off certain blocks not in
+use), (3)~multiple clock domains, (4)~multiple voltage domains for
+cores, caches, and memory, (5)~dynamic voltage and frequency scaling per
+core and per processor, and (6)~hardware support for virtualization
+techniques~\cite{AMD2008b,Intel2009}. In general, those
+techniques take advantage of the fact that reducing switching activity
+within the processor lowers energy consumption, and that application
+performance can be adjusted to utilize otherwise idle time on the
+processor for energy savings \cite{Contreras2005}.  Power profiles of
+the Intel Pentium architecture have been studied for workstations
+\cite{Isci2003a,Isci2003b,Isci2006} and servers
+\cite{Bircher2004,Bircher2007,Lee2005}.  However, little
+consideration has ever been given to the power profiles of servers
+constructed using the {NUMA}-based architecture, such as the AMD64
+\cite{AMD2007} and the Intel Nehalem \cite{Intel2009}
+processors. Management of system-critical thermal issues due to
+excessive power consumption is further complicated by the existence of
+multiple cores per processor.
+
+Power models are the basis for power management, but existing power
+models mostly do not take thermal effects of power dissipation into
+consideration, despite that such effects are essential to power
+management in severs.  They can be classified into two broad categories:
+simulation-based models and detailed analytical power models. Although
+simulation may provide details and breakdowns of energy consumption, it
+is usually done statically in an off-line manner, is slow, and does not
+scale well nor apply favorably to realistic applications and large data
+sets.  Existing simulation-based models do not fit well in scenarios
+where dynamic power and thermal optimization for application performance
+is required~\cite{Economou2006}.
+ 
+Analytical models use detailed knowledge of underlying hardware to
+directly estimate energy consumption at the hardware level.  They rely
+on power measurements at the micro-architectural units of the processor
+via sampling hardware and software performance metrics.  Two distinct
+classes of metrics have been used in those models: processor PeCs
+(performance counters) and operating system performance metrics.  PeCs
+are hardware registers that can be configured to count various
+micro-architectural events, such as branch mis-predictions and cache
+misses.  Typically, analytic models do not take into account the energy
+consumption of devices other than the processor, and they require
+detailed knowledge of the micro-architecture of the processor.  Attempts
+have been made to reconcile analytic models by mapping program phases to
+events \cite{Isci2006}.  Common techniques for associating PeCs and/or
+performance metrics with energy consumption adopt linear regression to
+map collected metrics to energy consumed during program execution
+\cite{Contreras2005,Economou2006,Isci2003b,Bircher2007,Lewis2008}.
+
+In general, the number of recordable events exceeds the number of
+available counters (i.e., PeCs).  As a result, models that use these
+counters must time-multiplex different sets of events on the available
+PeCs.  While it allows for more events to be monitored,
+time-multiplexing leads to increased overhead and lower accuracy due to
+sampling issues~\cite{Economou2006,Rivoire2008a}.  A power model
+is desirable to involve the fewest possible metrics (either PeCs or OS
+performance measures) required to accurately capture the system behavior
+in order to avoid the need for time-multiplexing.  High level black-box
+models sacrifice accuracy by avoiding extensive detailed knowledge of
+underlying hardware.  At the processor level, Contreras \textit{et al.}
+\citeyear{Contreras2005} and Bellosa \citeyear{Bellosa2003} created power models
+that linearly correlated power consumption with PeCs.  Meanwhile, models
+have been built for the processor, storage devices, single systems, and
+groups of systems in data centers~\cite{Kadayif2001,Isci2003b}.
+Those models have the advantage of being simple and fast with
+low-overhead, but they do not consider full-system power consumption.
+
+In server environments, full-system models can be created using
+operating system CPU utilization~\cite{Fan2007} and similar
+metrics~\cite{Heath2005}. Such full-system models, like
+MANTIS~\cite{Economou2006,Rivoire2008a}, relate usage information
+to the power of the entire system rather than its individual components.
+Each of those models requires one or more calibration phases to
+determine the contribution of each system component to overall power
+consumption.  The accuracy and the portability of full system power
+models were assessed earlier~\cite{Rivoire2008b}, revealing that
+reasonable accuracy across machines and different workloads was
+achievable by considering both PeCs and operating system performance
+metrics.  This is because PeCs and OS metrics together may capture all
+components of system dynamic power consumption.
+
+Auto-regressive techniques have been adopted popularly to construct
+power and temperature models for servers \cite{Coskun2008}, since they
+can yield predictors that are both quick and accurate.  However, such
+techniques are $stationary$ in nature.  In a stationary process, the
+probability distribution does not change with time, nor do the mean and
+the variance.  Hence, auto-regressive (AR) and auto-regressive/moving
+average (ARMA) models are not suited for data that exhibits sudden
+bursts of large amplitude at irregular time epochs, due to their
+assumptions of normality~\cite{Tong1993}.  Given workload dynamics of a
+server vary in time and its power profiles often diverge over time,
+effort has been made to accommodate this diverse behavior so as to
+permit continuing use of AR and ARMA models.  For example, one recent
+work \cite{Coskun2008} included a machine learning-based element in its
+predictors for on-line adaption over times.  This way, however,
+negatively impacts the performance advantage resulting from
+auto-regressive techniques, namely, their simplicity.
+
+Dealing with workload dynamics without high computational complexity requires
+efficient estimation able to address inherent non-linearity in the time series.
+One approach follows local polynomial fitting: given a time series of
+$X_{1}, X_{2},\ldots,X_{n}$, a $k$-step forecasting result can be
+obtained using a function of $m(x)=E(X_{i+k}|X_{i}=x)$ by constructing
+a set of observations $(X_{i},Y_{i})$, for $i=1,\ldots,n-k$, with $Y_{i}=X_{i+k}$.
+Function $m(x)$ can be approximated by a Taylor series expansion,
+which realizes local fitting in the time series via solving
+a weighted least squares regression problem \cite{Fan1996}.  In
+\cite{Singh2009}, a variation of this approach was proposed using
+piece-wise linear functions rather than Taylor series expansion.
+
+Another approach to fitting non-linear curves with varying
+degrees of smoothness in different locations makes use of the
+derivatives of an approximating function with discontinuities.
+This can be accomplished by employing splines with discontinuities
+existing at points identified as knots.
+An example of this approach is Multivariate Adaptive Regression Splines (MARS)
+\cite{Friedman1991}, which models the time series as a weighted sum of
+basis functions $B_{i}(x)$ and constant coefficients $c_{i}$:
+\begin{equation}
+  \label{eq:mars}
+  f(x)= \displaystyle\sum_{i=1}^{k}c_{i}B_{i}(x)
+\end{equation}
+where each of the basis functions can take the form of (1) a constant 1,
+with only one such term present, the intercept, (2) a hinge function in
+the form of $max(0,x - c)$ or $max(0, c - x)$, or (3) a product of two or
+more hinge functions.   MARS is suitable for modeling power
+behavior because of their good balance between bias and variance.
+A model with low bias signifies that it is flexible enough to address
+non-linearity while sufficiently constrained to maintain low variance.
+More details about MARS can be found in Appendix.
+
+The idea of migration of work for energy savings and thermal management
+has a long history in the SMP, SMT, and CMP environments
+\cite{Yao1995}. Static methods been applied in attempts to solve this
+problem.  In Coskun \texttt{et. al}\cite{Coskun2008a}, integer linear
+programming was used to obtain a task schedule that met real-time
+deadlines while attempting to minimize hot spots and spatial temperature
+differentials across the die.
+
+Examples of dynamic methods to solve this problem include Heat-and-Run
+\cite{Gomaa2004},HybDTM \cite{Kumar2006}, and ThreshHot \cite{Yang2008,Zhou2010b}.
+Heat-and-Run proposed to distribute work amongst available cores until
+the DTM events occur and then migrate threads from the overheated cores
+to other non-heated cores. HybDTM combined DTM techniques with a thread
+migration strategy that reduces the thread priority of jobs on cores
+that are running hot. ThreshHot uses an on-line temperature estimator to
+determine in what order threads should be scheduled onto cores. In all
+three cases, these techniques utilize data from hardware performance
+counters and hardware temperature sensors to guide the scheduling
+decision.
+
+A related approach to migration is to control the CPU time slice
+allocation.  In \citeN{Bellosa2003}, it was
+proposed to modify the process scheduler to allocate time slices as
+indicated by the contribution of each task to the system power
+consumption and the current temperature of the processor. A variation on
+this scheme was proposed in \cite{LiK2008} where system level compiler
+support was used to insert run-time profiling code into applications to
+provide hints to the thermal intensity of a task. In Merkel
+\texttt{et.al.}~\cite{Merkel2008b,Merkel2010}, a scheduling policy was proposed
+that sorts the tasks in each core's run queue by memory intensity so as
+to schedule memory-bound tasks at slower frequencies.
+% Following comment block used by GNU-EMACS and AUCTEX packages
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "prospectus.tex"
+%%% End: 

@@ -1,0 +1,136 @@
+From: WEED 2012 <weed2012@easychair.org>
+Subject: WEED 2012 notification for paper 2
+Date: April 23, 2012 3:44:34 PM CDT
+To: Adam Lewis <awlewis@cacs.louisiana.edu>
+
+Dear Adam,
+
+It is our pleasure to inform you that 
+
+Thermal-Aware Scheduling in Multicore Systems Using Chaotic Attractor Predictors
+
+has been selected for publication and presentation at the Fourth Workshop on Energy-efficient Design (WEED 2012).
+
+The workshop would be held on Saturday June 9th, 2012 in Portland, Oregon with ISCA-2012.
+
+Please confirm by response to this note that one of the authors would be on hand to present your work and let us know who that would be.
+
+Please carefully consider the feedback provided by your reviewers as you create the final version of your manuscript. You are allowed one additional page (a total of 7 pages, in 2-column, 10pt format) to enable you to address any reviewer comments seeking more information for the final version.
+
+The final version of your paper is due to us on May 21st (submit through the same easychair web-site). It would be published on the workshop page at http://research.ihost.com/weed2012 along with your presentation.
+
+We are in the process of developing the workshop program.  Each paper will likely be allotted a 25-minute slot including Q&A. Please plan your presentation accordingly.
+
+Finally, if you have not done so already, please register for the workshop as soon as possible. The cutoff date for early registration is May 5th, 2012.
+
+Regards,
+
+Karthick and John,
+Co-chairs for the WEED 2012 PC.
+
+
+----------------------- REVIEW 1 ---------------------
+PAPER: 2
+TITLE: Thermal-Aware Scheduling in Multicore Systems Using Chaotic Attractor Predictors
+AUTHORS: Adam Lewis and Nian-Feng Tzeng
+
+OVERALL RATING: 1 (weak accept)
+REVIEWER'S CONFIDENCE: 3 (high)
+
+This paper presents an approach for thermal-aware scheduling in multi-core systems.
+The scheduler uses Chaotic Attractor Predictors (CAPs) to (1) select the threads that
+are less likely to trigger automatic Dynamic Thermal Management (DTM) to execute next;
+and (2) migrate threads from thermally overextended cores to other cores.  The scheduler
+was implemented into FreeBSD.
+
+There have been several papers on thermal-aware scheduling for multi-cores (the bar
+here is higher).  This paper seems to make decisions a bit differently, but it is
+not clear how much it differs fundamentally from [18].  In fact, it is unclear how 
+it really works.  For example, CAP is not really explained in this paper.  Figure 1 
+needs more clarification as well. 
+
+The results are good, except that one application shows significant performance 
+degradation.  It would have been better to compare the proposed scheduler against
+a state-of-the-art scheduler (like [18]), instead of just against the default FreeBSD
+scheduler.
+
+
+----------------------- REVIEW 2 ---------------------
+PAPER: 2
+TITLE: Thermal-Aware Scheduling in Multicore Systems Using Chaotic Attractor Predictors
+AUTHORS: Adam Lewis and Nian-Feng Tzeng
+
+OVERALL RATING: 2 (accept)
+REVIEWER'S CONFIDENCE: 3 (high)
+
+The authors present TAS, a thermal-aware scheduling approach that uses a two-level scheduling structure to try to schedule less thermal-intensive application threads onto the hottest cores in an effort to prevent thermal emergencies.  TAS is based on the FreeBSD ULE scheduler.  It decides whether to put threads on the ready or current scheduling queues by taking their thermal-stress intensity into account, thus reducing the frequency with which "thermally expensive" threads are scheduled.  A higher level load balancing layer shifts threads among cores by periodically classifying the cores based on their current temperatures and shifting high thermal-cost threads to cores that are currently cool.
+
+One of the strengths of this paper is that the authors have implemented their scheduler in FreeBSD and evaluated its effects in a real system.
+
+I had some trouble following the development of the thermal predictors in II.C and III.A, but both of these sections are summarizing things that are described in detail in prior publications, hence, I think this is ok (the high-level ideas came across clearly).
+
+
+----------------------- REVIEW 3 ---------------------
+PAPER: 2
+TITLE: Thermal-Aware Scheduling in Multicore Systems Using Chaotic Attractor Predictors
+AUTHORS: Adam Lewis and Nian-Feng Tzeng
+
+OVERALL RATING: 1 (weak accept)
+REVIEWER'S CONFIDENCE: 3 (high)
+
+This paper deals with the topic of temperature-aware OS task scheduling. The incremental improvement of prior art (e.g. [6]) appears to be along the following lines:
+
+(a) The emphasis here is on so-called "heavy workloads" - i.e. assuming that the multi-core system is fully utilized. In such a case, standard load balancing techniques used in within
+the OS are not going to make much difference, because all cores are always busy anyway. 
+
+(b) The authors use a proactive (or predictive) model to guide the process of thread (task)
+selection and scheduling. The authors use the so-called tCAPS model for proactive prevention
+of DTM engagement.
+
+The paper is reasonably well written with good methodology and the reported temperature and power benefit results are quite impressive.
+
+The negatives are:
+(a) Somewhat incremental. The concept is not new, and [6] was published quite a while back in 2007.
+(b) The authors claim that in prior work (e.g. [6]) was based on trying to bound temperatures to below critical temperatures - but that does not appear to be true, in reading [6].
+(c) The complexity of hacking the OS to put in tCAPS predictive scheduling heuristics is not mentioned or addressed at all. How many additional lines of code, how was the OS modified? Was it done fully through a kernel extension, or was the core scheduler also "hacked"? How was the augmented OS scheduler tested to make sure it still works - without any functional issues from a user point of view?
+(d) Not fully clear how the thermal model was calibrated. Direct thermal measurements on setup do not seem to available.
+
+
+----------------------- REVIEW 4 ---------------------
+PAPER: 2
+TITLE: Thermal-Aware Scheduling in Multicore Systems Using Chaotic Attractor Predictors
+AUTHORS: Adam Lewis and Nian-Feng Tzeng
+
+OVERALL RATING: 0 (borderline paper)
+REVIEWER'S CONFIDENCE: 2 (medium)
+
+The authors leverage their prior work on system energy modeling to build a scheduler that schedules threads and balance loads in order to prevent thermal emergencies.
+
+It is not clear to the reviewer if the proposed scheduler is better than the large number of existing solutions for thermal aware scheduling and load balancing. Conceptually the reviewer did not see anything new. Your energy model may be different but how the estimated energy is used by the scheduler seems to be usual. The evaluation is largely self-comparison: you compared your own solution to ULE. ULE is NOT the state of the art in thermal-aware scheduling. Moreover, your results are actually suggesting TAS may lead to more energy consumption. For example, streamcluster will take much longer time to finish using TAS. This performance degradation will cancel the power reduction achieved by TASand leads to more energy consumption.
+
+
+Please do not abuse the passive voice. For example, the first sentence of Section II.C would be much clearer (that the model was your own prior work) if you use the active voice.
+
+
+----------------------- REVIEW 5 ---------------------
+PAPER: 2
+TITLE: Thermal-Aware Scheduling in Multicore Systems Using Chaotic Attractor Predictors
+AUTHORS: Adam Lewis and Nian-Feng Tzeng
+
+OVERALL RATING: 2 (accept)
+REVIEWER'S CONFIDENCE: 4 (expert)
+
+The authors propose a method for thermal-aware scheduling based on their predictors for temperature and power, implement their approach in the FreeBSD scheduler and evaluate its effectiveness using some PARSEC benchmarks. Their results show good temperature and power reduction for their scheduling with big performance impact on one of the eight workloads examined.
+
+It appears that the scheduling implementation is novel but the predictors are based on their prior work. Implementation and evaluation on of their proposal on a real system is good.
+
+The writing needs significant improvement. The authors should address the following for the final version if this paper is accepted:
+1) Performance impact is given as 1-4% in intro and abstract. It seems much bigger for streamcluster (Fig 4) in the 25% range - it is inappropriate to summarize the results leaving out the bad data point in such a small data set.
+2) The distinction/improvement in impact of this work over some of the prior art is not clear. A slightly broader discussion of on this than that under IIA would be good.
+3) The comment in IID on slow transitions, contention of shared resources etc wrt DVFS to address DTM don't seem right. Most processors with DVFS today don't have to idle during transition when access to resources are unavailable. Statements need to be better clarified.
+4) Comment about 10ms or SMALLER OS tick responsible for inability to respond to core temp rise fall time in 100s of ms doesn't make sense. 
+5) Eqns 3 and 4 are important and need to be better explained. What exactly does (3) give you, discussion before it doesn't seem to be clear on that. Its usage in (4) is more confusing..
+6) III A talks about executing "idle" queue threads after threads in other two queues are executed. It doesn't makes sense to schedule threads waiting on other stuff - which is when one would assume they would be idle.
+7) III C - load balancing, is really only one thread moved (with greatest temperature impact) each period? 
+8) Are physical temperature sensors read for this work or just the models used to estimate temperature values - is the temperature reduction numbers from physical sensor measurement. I assumed so but wasn't sure.
+

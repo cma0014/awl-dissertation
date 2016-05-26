@@ -1,0 +1,1202 @@
+% 
+%  $Author: awl8049 $
+%  $Date: 2012/03/13 13:38:44 $
+%  $Revision: 1.22 $
+%
+\documentclass[times, 10pt,twocolumn]{IEEEtran} 
+\usepackage{amsmath,amsthm,amsfonts,amscd} % Some packages to write mathematics.
+\usepackage{setspace}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg,.pdf,.eps}
+\graphicspath{{graphics/}}
+%\usepackage[caption=false,labelfont=sf,textfont=sf,captionskip=5pt]{subfig}
+\usepackage{authblk}
+\usepackage{afterpage}
+\usepackage{multirow}
+\usepackage[section]{placeins}
+\usepackage[small]{caption}
+\newcommand{\equationname}{Eq.\ }
+\newcommand{\equationnames}{Eq.\ }
+\newcommand{\figurenames}{Figs.}
+%
+% Following stuff is included for page squeezing if we need to cut for 
+% a specific conference. Leaving them commented until such time as we
+% need them.
+%
+% Page dimensions.
+% \setlength{\textheight}{9.45in}
+% \setlength{\textwidth}{6.95in}
+% \setlength{\marginparwidth}{0.0in}
+% \setlength{\tabcolsep}{3pt} 
+% \setlength{\parskip}{0pt}
+% \setlength{\parsep}{0pt}
+% \setlength{\headsep}{4pt}
+% \setlength{\topskip}{4pt}
+% \setlength{\topmargin}{0pt}
+% \setlength{\topsep}{0pt}
+% \setlength{\partopsep}{0pt}
+%
+% Adjust spacing on floating elements like figures and tables.
+%
+\renewcommand\floatpagefraction{.9}
+\renewcommand\topfraction{.9}
+\renewcommand\bottomfraction{.9}
+\renewcommand\textfraction{.1}   
+\setcounter{totalnumber}{50}
+\setcounter{topnumber}{50}
+\setcounter{bottomnumber}{50}
+% \setlength{\intextsep}{3pt} % space left on top/bottom of in-text float
+% \setlength{\textfloatsep}{5pt} % space between text & last top or first
+%                               % bottom float
+% \setlength{\dbltextfloatsep}{5pt} % Same as above for dbl column
+% \setlength{\abovecaptionskip}{5pt} % Space above caption
+% \setlength{\belowcaptionskip}{3pt} % Space below caption
+% Get rid of all the extra space that LaTeX wants to stick after section
+% headings.
+% Add a dummy command for sub-paragraph so titlesec.sty gets happy
+\newcommand{\subparagraph}{}
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+%
+\begin{document}
+\title{Thermal-Aware Scheduling and Load Balancing Using Predictive
+  Energy Consumption Models in High-Performance Multicore Systems} 
+\author[]{Adam  Lewis} 
+\author[]{Nian-Feng Tzeng} 
+\affil[]{Center for Advanced Computer Studies, University of Louisiana at
+  Lafayette, Louisiana 70504\\
+  \{awlewis, tzeng\}@cacs.louisiana.edu }
+\maketitle
+\newtheorem{defn}{Definition}
+\newtheorem{thm}{Theorem}
+\thispagestyle{empty}
+\begin{abstract}
+  Modern processors crudely manage thermal emergencies through Dynamic
+  Thermal Management (DTM), where the processor monitors the die
+  temperature and dynamically adjusts the processor voltage and
+  frequency (DVFS) to throttle down the processor when
+  necessary. However, DVFS tends to yield marked degradation in both
+  application performance and system reliability. Thus, pro-active
+  scheduling techniques that avoid thermal emergencies are preferable
+  over reactive hardware techniques like DTM.  Based on our previously
+  introduced thermal Chaotic Attractor Predictors (CAPs, which take into
+  account key thermal indicators and system performance metrics for
+  overall energy consumption estimation within a given power and thermal
+  envelope), we have developed and evaluated an effective thread
+  scheduler for multicore systems.  Besides CAPs, our scheduler makes
+  use of two basic principles to minimize server energy consumption: (1)
+  selecting the thread with the least probability of causing a DTM in
+  the subsequent time quantum, for execution on the next available core,
+  and (2) migrating execution threads on thermally overextended cores to
+  other cool cores via load balancing so as to observe the thermal
+  envelope.  Our developed scheduler is evaluated in practice to assess
+  its potential advantage resulting from thermal-awareness by
+  incorporating CAPs (for temperature prediction) and basic principles
+  (for energy reduction) into the existing scheduler in the FreeBSD
+  operating system.  Our implemented scheduler is run on a server with
+  the Intel Xeon processor for gathering measures of interest (including
+  die temperature readings and execution times) when benchmark codes
+  from PARSEC and SPEC CPU2006 suites are executed.  The gathered
+  results reveal that our proposed scheduler exhibits reduction in mean
+  core die temperatures by up to 12$^{\circ}$C\ under PARSEC
+  benchmarks (which have multithreaded workloads) and by up to 3.3$^{\circ}$C\
+  under mixes of SPEC CPU2006 benchmarks for concurrent  
+  execution on all four server cores, while experiencing
+  only 1\% to 4\% performance degradation.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:Introduction}
+Modern processors crudely manage thermal emergencies through Dynamic
+Thermal Management (DTM), where the processor monitors the die
+temperature and dynamically adjusts the processor voltage and frequency
+(known as Dynamic Voltage and Frequency Scaling (DVFS))
+to throttle down the processor whenever necessary. However, the use of
+DVFS tends to cause significant negative impacts on application performance
+and system reliability \cite{Donald2006,Bircher2008,Coskun2008d}.
+
+This paper introduces effective scheduling for preventive thermal
+management that minimizes server energy consumption by (1) 
+selecting the subsequent thread with the smallest thermal impact
+in the next time quantum to execute on an available core, and (2)
+relocating threads run on thermally overextended cores
+to other available cores for load balancing.
+As opposed to prior pursuit of thermal-aware
+scheduling \cite{Gomaa2004,Choi2007,Yang2008,Sarood2011} that 
+aimed to bound temperatures below critical thresholds, our work considers
+how to schedule high workload for die temperature management across all cores.
+
+The current generation of operating systems treats those cores in
+multicore and virtualized multi-threaded processors (like those with
+Intel's HyperThreading technology) as distinct logical units, called
+\textit{logical cores}, which are scheduled independently.  However,
+dependency and contention exist in shared resources among those logical
+cores, and hence they need to be taken into account upon their
+scheduling to address performance and energy efficiency.  One approach
+based on software optimization at the application level aimed to make
+codes themselves more aware of existing dependencies~\cite{Khan2011}.
+While effective, such an approach may not be applicable in all cases and
+does not possess economies of scale.  It thus calls for the need of
+intelligent, thermal-aware load balancing and scheduling within the
+operating system, achievable via modeling full-system energy consumption
+based on computational load for effectively predicting future energy
+consumption and its associated thermal change.
+
+To this end, we arrive at a thermal model which relates server energy
+consumption to the overall thermal envelope, establishing an energy
+relationship between workload and overall system thermodynamics.
+According to our analysis of experimental measurements of key processor
+performance counter readings and performance metrics, it is found that
+the measured readings and metrics do not possess linearity and are
+\textit{chaotic in nature}.  Hence, our thermal model, based on a
+thermal Chaotic Attractor Predictor (tCAP), takes into account key
+thermal indicators (like ambient temperatures and die temperatures) and
+system performance metrics (like performance counters) for system energy
+consumption estimation within a given power and thermal envelope.  This
+work demonstrates that effective scheduling can result from taking
+advantage of our devised tCAP when dispatching jobs to confine server
+power consumption within a given power budget and thermal envelope while
+avoiding detrimental impact on thread execution performance.
+
+Dealing with all cores in a multicore system, a thermal-aware thread
+scheduler is highly desirable to ensure that all of the cores in such a
+system are kept equally busy, realized by migrating threads over all the
+cores (no matter whether in the same processors or different ones) when
+necessary for load balancing in the system.  Existing schedulers aid in
+processor thermal management by dispatching workloads to cores as
+tightly as possible within the same processors to expose more
+opportunities for power management via shutting down unused cores.
+However, computation-bound server workload fully utilizes available
+system cores in most times, thereby rendering such schedulers
+ineffectual.  Our Thermal-Aware Scheduler (TAS) addresses this problem
+by thermally balancing system workload with as little performance
+degradation as possible.  
+
+Our TAS is demonstrated and evaluated by adding thermal-awareness to the
+existing scheduler in the FreeBSD operating system executed on Intel
+Xeon (Woodcrest) processors.  Benchmarks from SPEC CPU2006 and PARSEC
+suites which represent typical application server workloads, are chosen
+to evaluate our TAS.  The gathered results unveil that TAS achieves
+reduction in mean core on-die temperatures by up to 12$^{\circ}$C\ 
+(from 47$^\circ$C down to 35$^\circ$C) under
+PARSEC benchmarks (which have multithreaded workloads) and by up to
+3.3$^{\circ}$C\ under mixes of SPEC CPU2006 benchmarks for concurrent
+execution on all four server cores, while experiencing only 1\% to 4\%
+performance degradation.  Our TAS compares favorably with a recent
+energy-aware scheduling technique, which gets core temperature reduction
+by up to 4$^\circ$C (from 63$^\circ$C down to 59$^\circ$C) when ??? parallel
+benchmarks written using the Charm++ object library were executed on a physical
+4-core Intel Xeon 5520 processor (similar to our testbed processor)
+\cite{Sarood2011}.
+
+After an overview on pertinent background and related work is provided
+in Section~\ref{sec:related}, this article introduces our proposed
+thermal model in Section \ref{sec:model} and explains in Section
+\ref{sec:therm-chaot-attr} how the model can be used for predictive
+purposes.  Section~\ref{sec:sdesign} details the design of our TAS,
+which is experimentally evaluated in Section~\ref{sec:experiment}, with
+obtained evaluation results included and discussed as well.
+Section~\ref{sec:conclusion} offers our conclusion.
+
+\section{Background and Related Work}
+\label{sec:related}
+The thread scheduler of an OS kernel is responsible for placing threads
+in the dispatch queue, deciding which threads to run next on available
+logical cores, and managing thread migration to balance the workload
+amongst all cores.  In addition, a scheduler must fulfill two major
+applications requirements: (1) making equal progress on all threads of a
+given application, and (2) exploiting as much hardware parallelism as
+possible~\cite{Hofmeyr2010}. Traditional server load balancing has
+various assumptions about workload behavior when making thread placement
+decisions.  In particular, interactive workloads are assumed to involve
+independent tasks that remain quiet for extended periods.  Server
+workloads, on the other hand, are assumed to contain large numbers of
+threads which are highly independent of each other and use
+synchronization objects to ensure mutual exclusion on small data items.
+Modern operating systems (such as Linux and Solaris) make load balancing
+more power-aware by placing workloads to cores as tightly as possible
+(inside fewest processors possible), thereby presenting more
+opportunities for power management software to shutdown unused resources
+\cite{Sun2009,Sun2009b,Xia2010}.
+
+The following subsections provide in sequence, background and prior work
+pertinent to thermal modeling, scheduling with load balancing support,
+and chaotic behavior of energy consumption observed in our prior
+article.
+
+\subsection{Thermal Modeling}
+\label{sec:thermal-modeling}
+Existing thermal models all required to fit targeted mathematical
+expressions based on time-series observations of temperatures during the
+course of executing various workloads.  Expression coefficients were
+estimated by minimizing total least square errors between modeling
+results and actual temperature readings.  After proper calibration, such
+a mathematical expression becomes a model for extrapolating future
+temperatures.  Different modeling techniques have been devised.  In
+particular, a model based on integer linear programming was adopted by
+an earlier task scheduler~\cite{Kursun2009}, which aimed to meet
+real-time deadlines while minimizing hot spots and spatial temperature
+differentials across the die.  Meanwhile, dynamic thermal modeling
+includes Heat-and-Run~\cite{Gomaa2004}, HybDTM~\cite{Ayoub2011} and
+ThreshHot~\cite{Yang2008},\cite{Bellosa2003}.  Heat-and-Run distributes
+work among available cores until the DTM events arise, and it then
+migrates threads from the overheated cores to other cool cores.  On the
+other hand, HybDTM enhances DTM with a thread migration strategy which
+lowers the priority of jobs executed on hot cores.  Separately,
+ThreshHot employs an on-line temperature estimator to determine the
+proper order to schedule threads across cores, favoring those threads
+which cause the greatest temperature hikes while avoiding DTM events to
+occur.  Schedulers based on prior thermal modeling all rely on readings
+of hardware performance counters and temperature sensors.  They can be
+improved by analyzing on-die thermal variations to aid in system power
+and thermal management \cite{Kursun2009}, \cite{Bailis2011}, \cite{Murali2008}.
+
+However, preceding techniques are reactive to the temperature
+approaching the DTM threshold rather than trying to avoid reaching that
+temperature in the first place.  A proactive solution with multi-tier
+prediction was suggested earlier \cite{Ayoub2011}, where a core level
+predictor was employed to convert temperature observations to operating
+frequency estimates while a control-theoretic based scheduler was
+followed at the socket level for process level scheduling.  Separately,
+a scheduling policy for sorting the tasks in each core's run queue
+according to memory intensity was considered so as to schedule
+memory-bound tasks at slower frequencies \cite{Merkel2008b,Merkel2010}.
+Later, the process scheduling policy was modified in \cite{Bellosa2003}
+to allocate time slices following (1) the contribution of each task to
+the system power consumption and (2) the current processor temperature.
+A similar approach made use of idle cycle injection to manage CPU time
+slice allocation, aiming to maintain a lower average temperature over
+time, as opposed to managing temperatures against a critical threshold.
+Meanwhile, Cool Loop \cite{Choi2007} and Dimentrodon \cite{Bailis2011}
+address a lack of heat slack by inserting additional cycles into the
+task scheduling to create thermal slack, naturally leading to
+performance degradation.  A variation of preceding schemes relied on
+system level compiler support to insert a run-time profiling code into
+applications for providing hints on the thermal intensity of a task
+\cite{LiK2008}.  However, such an approach works ineffectively under
+many server cases where the slack in deadlines usually is unavailable.
+
+\subsection{Earlier Scheduling with Load Balancing Support}
+\label{sec:therm-comp-workl}
+Modern multiprocessor operating systems (such as Windows, Linux,
+Solaris, and FreeBSD) often take a two-level approach to task scheduling
+for maximized system resource utilization.  Such an approach uses a
+distributed run queue and follows fair scheduling policies to manage
+each core at the first level.  Its second level balances the work load
+by redistributing tasks across the queues.  In particular, the FreeBSD
+ULE scheduler \cite{Roberson2003,McKusick2004,McKusick2004b} uses a
+combination of push and pull thread migration for load balancing.
+\textit{Push migration} scans the run queues associated with each
+processor every 500 milliseconds to pick the most-loaded and
+least-loaded logical cores before equalizing their run-queues.  The
+processor then attempts to pick a core in the same processor group so as
+to minimize the migration cost.  In \textit{pull migration}, a processor
+checks if it has excess work in its run queue and also if another
+processor in the system is idle, before adding new thread to its run
+queue.  The existence of an idle processor triggers an inter-processor
+interrupt to migrate the new thread to the idle processor.  Such
+two-level schedulers work under three assumptions: (1) threads are
+independent, (2) load is governed by queue length, and (3) locality
+exists and is important \cite{Hofmeyr2010}.  In practice, however,
+common servers often have the following characteristics: (1) their
+threads are logically related, with data and control dependencies among
+threads, and (2) their threads have equally long life spans
+\cite{Hofmeyr2010}, rendering previous two-level scheduling ineffective.
+
+Meanwhile, existing operating systems have made their load balancing
+schemes more power-aware by taking advantages of their power management
+drivers which intend to find as compact an allocation of processes to
+run-queues as possible \cite{Sun2009,Sun2009b,Xia2010,Sarood2011}.  This
+way presents more opportunities for the power management software to
+shutdown unused resources.  Such power-aware load balancing, while
+effective for interactive workloads, works only if system resources are
+not completely utilized; it becomes nonviable if the system workload is
+high (common to high-performance servers).
+
+\subsection{Chaotic Behavior of Energy Consumption}
+\label{sec:chaot-pred-energy}
+An analytical model of server energy consumption was built earlier
+\cite{Lewis2008,Lewis2010} by modeling energy consumption as a
+function of the work done by the system in executing its computational
+tasks and of residual thermal energy given off by the system in doing
+that work.  The resulting dynamic system expresses energy consumption in
+the time domain as follows:
+\begin{equation}
+  \label{eq:system}
+  E_{system}=f(E_{proc},E_{mem},E_{em},E_{board},E_{hdd})
+\end{equation}
+where each of the terms in the above equation is defined as: (1)
+$E_{proc}$: energy consumed in the processor due to computations, (2)
+$E_{mem}$: energy consumed in the DDR SDRAM chips, (3) $E_{em}$: energy
+taken by the electromechanical components in the system, (4)
+$E_{board}$: energy consumed by peripherals that support the operation
+of the board, and (5) $E_{hdd}$: energy consumed by the hard disk drive
+during the system's operation.
+
+The continuous system in \equationnames~\eqref{eq:system} can be viewed
+as a multi-variate differential equation in the time domain that can be
+estimated using a time series representation. This time series is
+constructed by considering (1) an initial energy state $E_{system}$ at
+time $t=0$ and (2) a set of physical predictors that approximate the
+values of $E_{proc}$, $E_{mem}$, $E_{board}$, and $E_{hdd}$ at the next
+interval $t+\Delta t$.
+
+\begin{figure}[tbph]
+  \centering
+  \includegraphics[scale=0.5]{intelnehalem}
+  \caption{Intel Xeon (Woodcrest) architecture.}
+  \label{fig:intarch}
+\end{figure}
+
+\begin{small}
+\begin{table}[tbhp]
+  \centering
+  \caption{PeCs and performance metrics for Intel Xeon server}
+  \label{tab:intelmodel}
+  \begin{tabular}{l l}
+\hline
+\hline
+\textbf{Variable}&\textbf{Measurement}\\
+\hline
+\multicolumn{2}{l}{\textit{Application length}}\\
+$IR$&Instructions Retired \\
+&\\
+\multicolumn{2}{l}{\textit{Application data set}}\\
+$QPL_{C}$&Transactions on the QPLs between Cores\\
+$QPL_{IO}$&Transactions on QPLs for IO Handler\\
+$CM_{0}$&Last-level Cache Misses due to Core 0\\
+$CM_{1}$&Last-level Cache Misses due to Core 1\\
+$CM_{2}$&Last-level Cache Misses due to Core 2\\
+$CM_{3}$&Last-level Cache Misses due to Core 3\\
+$D_{r}$&Disk bytes read\\
+$D_{w}$&Disk bytes written\\
+& \\
+\multicolumn{2}{l}{\textit{Physical core temperature}}\\
+$T_{C_{0}}$&Core 0 Die Temp\\
+$T_{C_{1}}$&Core 1 Die Temp\\
+$T_{C_{2}}$&Core 2 Die Temp\\
+$T_{C_{3}}$&Core 3 Die Temp\\
+& \\
+\multicolumn{2}{l}{\textit{System temperature}}\\
+$T_{A_{0}}$&Ambient Temp 0\\
+$T_{A_{1}}$&Ambient Temp 1\\
+$T_{A_{2}}$&Ambient Temp 2\\
+& \\
+\multicolumn{2}{l}{\textit{Electromechanism}}\\
+$F_{C}$&Memory Cooling Fan Speed\\
+$F_{M2a}$&Memory Cooling Fan Speed 2a\\
+$F_{M2b}$&Memory Cooling Fan Speed 2a\\
+$F_{M3a}$&Memory Cooling Fan Speed 3a\\
+$F_{M3b}$&Memory Cooling Fan Speed 3b\\
+$F_{M4a}$&Memory Cooling Fan Speed 4a\\
+$F_{M4b}$&Memory Cooling Fan Speed 4b\\
+$F_{M5a}$&Memory Cooling Fan Speed 5a\\
+$F_{M5b}$&Memory Cooling Fan Speed 5b\\
+\hline
+  \end{tabular}
+\end{table}
+\end{small}
+Observations from each time series are measured using (1)~the
+appropriate PeCs for the targeted processor (2)~operating system kernel
+virtual memory statistics, and (3)~processor die temperatures and
+chassis ambient temperatures.  Twenty-four server measures are input to
+our predictor for energy consumption, as listed in
+Table~\ref{tab:intelmodel}.  They are classified into five groups, each
+associated with one server energy contributor.  As one contributor,
+application length is estimated in each time period by the quantity
+$IR$, the total number of retired instructions of the thread.  Among the
+contributor of "application data set" listed in Table I, $QPL_{C}$ and
+$QPL_{IO}$ are relevant to QuickPath Links (depicted in
+\figurename~\ref{fig:intarch}), and they are associated with $E_{proc}$
+and $E_{mem}$, respectively.  In practice, however, there is just one
+single PeC for holding aggregated $QPL_{C}$ and $QPL_{IO}$ together.
+The next four $CM_{i}$ measures indicate the total L3 (last-level) cache
+miss counts due to Core \textit{i}, $i$ = 0, 1, 2, or 3, and they
+determine $E_{mem}$.  As the contributor of "physical core temperature,"
+the core die temperature measures are pertinent to $E_{proc}$.  The
+subsequent three measures dictate $E_{board}$, obtained from 3
+temperature sensors placed on the board for ambient temperature
+readings.  Finally, the last nine measures contribute to
+"electromechanism" and determine $E_{em}$, offering speed information of
+those nine memory cooling fans, to constitute $MP_{em}$.  As a result,
+each observation for the Intel server at time $t$ comprises the 24
+measures as listed in the table.
+
+\subsection{Limitations of Existing Scheduling}
+\label{sec:shortc-comp-workl}
+Current power management software that utilizes DVFS techniques to
+address DTM events has been effective in addressing thermal emergencies
+\cite{Donald2006,Hanson2007}, commonly implemented in modern server
+processors \cite{AMD2007,Intel2009}.  However, handling DTM through DVFS
+can be problematic due to issues with program phase behavior and
+contention for shared resources \cite{Bircher2008,Coskun2008d},
+resulting directly from slow transitions between the active and the idle
+device states and also from inability to access resources associated
+with idle processors.  When the power phase changes frequently, abundant
+thermal variations among cores within the processor occurs, leading to
+decreased reliability \cite{Rosing2007,Coskun2008d,Kursun2009}.  For
+example, the Intel XScale processor was reported to decrease its
+component MTTF (Mean Time to Failure) by 12\% to 34\%, depending upon
+the selected power management strategy \cite{Rosing2007}.
+
+Work migration for energy savings and thermal management has a long
+history in the SMP, SMT, and CMP environments
+\cite{Yao1995,Gomaa2004,Kumar2006,Yang2008}.  A study of OS-level
+thermal migration using Linux on the IBM POWER5
+processor~\cite{Choi2007} discovered that the rise and fall times of
+core temperatures vary in the order of hundreds of milliseconds.  As
+most operating systems choose scheduler ticks to be of 10 ms or less, it
+often is impossible to react to thermal conditions before a critical
+state is reached.  As a result, three improvement mechanisms for
+managing thermal states have been pursued: (1) core hopping for
+leveraging spatial heat slack, (2) task scheduling for leveraging
+temporal heat slack, and (3) SMT scheduling for leveraging temporal heat
+slack.  In the presence of slack, each of those mechanisms may reduce
+core die temperatures by 3 to 5$^{\circ}$ C on an average, at the
+expense of 3\% mean performance degradation ~\cite{Choi2007,Ayoub2009}.
+However, in the absence of slack commonly found under heavy workloads in
+high-performance servers, the three mechanisms becomes ineffective,
+calling for suitable scheduling with thermal awareness proactively.
+
+\section{System Thermal Model}
+\label{sec:model}
+In this section, we introduce a system thermal model built upon what was
+reviewed in Section \ref{sec:chaot-pred-energy} to address the thermal
+domain by first considering how to extend
+\equationname~\eqref{eq:system} to account for energy consumed during 
+application execution.
+
+An application is composed of $p$ execution threads, each associated with a
+data set sized $d_{i}$, for $1\leq i \leq p$, in a processor. The total
+data associated with $A$ is the sum of the data associated with its
+component threads:
+\begin{equation}
+\label{eq:totaldata} D_{A}=\displaystyle\sum_{i=1}^{p}{d_i}.
+\end{equation} 
+We assume that the activities take place (1) in a staging area,
+which contains both main and virtual memory operating space,
+and (2) in the processor with its cores and their associated caches.
+The execution time measurement includes 
+computation time and the time to move application data from the
+staging area (on peripherals off the chip like DRAM and HDD) to a
+computation or operation area (on the chip, such as the caches and the cores).
+
+Each application $A$ with the problem size of $D_{A}$ involves workload
+$W(\tau_{i},d_{i},t_{i})$, for $1 \leq i \leq p$, comprising two
+components: (1) a count of the operations performed by the computational
+core, and (2) the count of communication operations required for
+transferring data, instructions, and data coherency and book-keeping
+functionality traffic.  They are measured in terms of the number of
+bytes operated upon or transferred over, during the course of completing
+those instructions retired by the logical core for each thread $p$.
+Thus, energy consumed by executing application $A$ with data set $D_{A}$
+can be expressed as:
+\begin{equation}
+\label{eq:eworkload} 
+E_{A}(A,D_{A},t) = \displaystyle \sum_{i=1}^{p}W(\tau_{i},d_{i},t_{i})
+\end{equation}
+for $1\leq i \leq p$, where $\tau_{i}$ is an execution thread involved in
+application $A$, $d_{i}$ is the corresponding data set for that thread,
+and $t_{i}$ is its thread execution time.
+
+In order to relate system energy expenditure (upon application
+execution) to corresponding joule heating, we define the term of
+``Thermal Equivalent of Application'' (TEA), as the electrical work
+converted to heat in running the application, leading to die temperature
+change and ambient temperature change of the system.  Hence, the TEA of
+application $A$ is expressed by:
+\begin{equation}
+\label{eq:tea} \Theta(A, D_{A}, T, t) =
+\frac{E_{A}(A, D_{A}, t)}{\displaystyle \lim_{T \to T_{th}} J_e(D_{A}, \Psi_{cp}) (T -T_{nominal})},
+\end{equation} 
+where $T_{th}$ denotes the threshold temperature at which a thermal
+emergency event will occur, and $T_{nominal}$ refers to the nominal
+temperature as reported by the system when it is in a quiescent state,
+i.e., only the operating system is running without any application
+execution.  The term $J_{e}$ is the ``electrical equivalent of heat''
+for the chip, which reflects the \textit{informational
+  entropy}\index{ientropy} of the system due to processing the data bits
+during application execution and to the black body thermal properties of
+the chip packaging as well as the cooling mechanisms around the chip, as
+defined by the parameter $\Psi_{cp}$.  The value of $\Psi_{cp}$ is an
+ambient thermal characterization parameter provided by the hardware
+manufacturer to relate temperature to power for cooling
+purposes~\cite{Intel2006}.  Thus, TEA is a dimensionless quantity, with
+both denominator and numerator expressing work done or energy consumed
+in finishing an application.
+
+We combine these metrics into achieved performance per unit energy
+consumed by the chip:
+\begin{equation}
+\label{eq:thermcost} C_{\theta}(A, D_{A}, T, t)=\frac{\Theta (A, D_{A}, t)}{E_{A}(A, D_{A}, t)}
+\end{equation}
+This normalized quantity indicates the ``cost'' of executing an
+application on a given processor, with $E_{A}(A, D_{A}, t)$ obtained
+from energy consumption of individual physical components (processor,
+DRAM units, HDD, motherboard, and electrical/electromechanism) given by
+\equationname~\eqref{eq:system}.
+
+\subsection{Thermal Chaotic Attractor Predictors}
+\label{sec:therm-chaot-attr} 
+We use the measured PeCs listed in Table~\ref{tab:intelmodel} to
+estimate the quantities of $\Theta(A, D_{A}, t)$ and $E_{A}(A, D_{A},
+t)$ in \equationname~\eqref{eq:thermcost}.  Specifically, thread length
+is estimated in each time period by the PeC measure of $IR$, namely, the
+total number of instructions retired during that thread execution.  The
+total data amount associated with thread execution is measured by
+summing up (1) the data bytes moved across the QuickPath links on the
+processor (reflected by $QPL_{C}$ and $QPL_{IO}$), (2) last-level cache
+misses ($CM_{i}$, $1\leq i \leq 4$), and (3) data read from or written
+to disks.  as listed under the contributor of "application data set" in
+Table~\ref{tab:intelmodel}.  System temperature is measured using the
+ambient temperatures reported by the system, as listed under the
+contributor of "system temperature."
+
+Following the procedure reviewed in Section~\ref{sec:chaot-pred-energy}
+(and detailed in \cite{Lewis2010}), we intend to create a thermal
+Chaotic Attractor Predictor (tCAP) for
+\equationnames~\eqref{eq:thermcost} as an effective means for predicting
+the thermal behavior during application execution.  To this end, an
+analysis on the measurement data collected from our test systems is
+first performed to confirm that the behavior of the time series data can
+be attributed to a certain form of chaotic behavior.  It involves
+evaluating system (i.e., testbed) sensitivity to initial conditions, by
+calculating the Lyapunov exponents of the time series data observed
+while running various benchmarks (stated in Section V.B) on the testbed.
+The Lyapunov exponent quantifies the sensitivity of a system such that a
+positive Lyapunov exponent indicates that the system is chaotic
+\cite{Sprott2003}.  We have found a positive Lyapunov exponent when
+performing this calculation on our data set, ranging from 0.019 to 0.051
+on our Intel test server, as listed in Table~\ref{tab:chaotic}.
+Therefore, our collected data has met the first and the most significant
+criterion to qualify as a chaotic process.
+
+The second indication of the chaotic behavior for time series
+approximations expressed by \equationnames~\eqref{eq:thermcost} is an
+estimate of the Hurst parameter $H$ for the time series observations. If
+the value of the Hurst parameter is greater than $0.5$, an increment in
+the random process is positively correlated and long range dependence
+exists in the case of time series \cite{Sprott2003}.  In a chaotic
+system, a value of $H$ approaching 1.0 indicates the presence of
+self-similarity in the system.  As demonstrated in
+Table~~\ref{tab:chaotic}, the time series data collected in our
+experiments all have $H$ values close to 1.0, ranging from 0.95 to 0.99
+for the Intel server in our test environment.
+
+\begin{small}
+\begin{table}[tbhp]
+\caption{Chaotic behavior in core die temperature time series}
+\label{tab:chaotic} 
+\centering 
+\begin{tabular}{lcc}
+\hline
+\hline
+ & Hurst Exp. ($H$) & Lyaponov Exp. ($\lambda$) \\
+\hline
+Core 0 & 0.99 & 0.051 \\
+Core 1 & 0.98 & 0.019 \\
+Core 2 & 0.97 & 0.034 \\
+Core 3 & 0.95 & 0.040 \\
+\hline
+\end{tabular}
+\end{table}
+\end{small}
+
+\section{Proposed Thermal Aware Scheduler}
+\label{sec:sdesign} 
+The scheduler in an operating system is responsible for making two
+decisions in each time quantum: (1) thread scheduling, i.e., deciding
+the next thread to run on an available core and (2) load balancing,
+namely, distributing workload evenly across all cores, with existing
+implementations mostly focusing on performance.  Our TAS (Thermal Aware
+Scheduler) incorporates a heuristic scheduling algorithm in a popular
+scheduler (i.e., ULE in the FreeBSD operating system) for thermal stress
+reduction on a multicore processor while meeting the SPMD requirements
+of equal execution progress and maximum parallelism exploitation.
+
+\begin{figure}[btph] \centering
+  \includegraphics[scale=0.45]{tasdesign}
+  \caption{TEAPlant and TEAHarvest data collection.}
+  \label{fig:teaplant}
+\end{figure}
+
+\subsection{Thermal Predictors}
+\label{sec:therm-pred-design} 
+We enhance the existing FreeBSD operating system to maintain information
+required by the thermal estimator. Our design is based on the concept of
+Task Activity Vectors (TAVs) introduced earlier \cite{Merkel2008a},
+with a vector for each kernel thread to store the required history in order to make
+sound prediction.  Generally, the more additional space is employed
+for history maintenance, the higher benefit our thermal scheduling gains.
+
+The high-level design of TAS is shown in \figurename~\ref{fig:teaplant}.
+A user-level daemon process collects required information to compute
+the time-series predictions for $\Theta$ and $C_{\theta}$. Temperature
+readings are collected by this process from the digital temperature
+sensor associated with a core.  Similarly, processor performance
+counters are gathered by the same process, with both sets of metrics
+used to generate estimates. Estimates are posted via a system call
+interface to a device driver that collects the data for use by
+the currently executing thread.  The scheduler queries this
+driver via a kernel function call interface when making scheduling
+decisions to determine the $\Theta$ and $C_{\theta}$ estimates
+associated with a thread.
+
+\subsection{Thread Scheduling}
+\label{sec:selection} 
+The scheduler uses the cost predictor for $C_{\theta}$ to predict a
+thread's impact on core temperature and adjust the
+thread priority as required to prevent an increase in core temperature.
+TAS maintains three queue structures per core: an idle queue, a
+current queue, and the next queue. The core executes all work on the
+current queue and then swaps its current queue and its next queue. For
+performance reasons, our implementation follows the convention used by
+the existing FreeBSD ULE scheduler, placing real-time and interrupt
+threads on the current queue.  This is a reasonable limitation given that
+real-time thread deadlines must be satisfied and 
+interrupt service routines are typically short in length.
+
+All other threads are scheduled in terms of an interactivity score.  As
+with the ULE scheduler, the interactivity of a process is
+determined by the formulas of
+\begin{equation}
+  \label{eq:interactsleeprun} 
+I = \dfrac{S}{\dfrac{SL}{RUN}}
+\end{equation} 
+and, for cases where thread's run time exceeds its sleep
+time,
+\begin{equation}
+  \label{eq:interactrunsleep} I = \dfrac{S}{\dfrac{SL}{RUN}}+S
+\end{equation} 
+where $I$ is the interactivity score, $S$, the scaling factor of the
+maximum interactivity score divided by two, and $SL$ and $RUN$ refer
+respectively to the cumulative sleep and run times for the thread.   
+Threads whose scores fall below a predefined threshold are considered
+interactive and are assigned to the current queue, while all other
+threads are assigned to the next queue.
+
+For our TAS, the interactivity score $I$ is scaled by the predicted
+value of $C_{\theta}$, normalized to a percentage value.  It was shown
+previously \cite{Zhou2010b} that the greatest thermal benefit occurred
+when a scheduler favored the thread which moved the core temperature as
+close as possible to the DTM threshold without actually triggering a DTM
+event.  TAS achieves a similar effect by scaling the interactivity of a
+thread its normalized execution cost, thereby giving less ``thermally
+costly'' threads greater opportunities for execution so as to moderate
+the processor temperature.  Penalizing more thermally costly threads
+reduces the opportunities for such threads to gain access to logical
+cores, presenting similar advantages of techniques which artificially
+inject slack into thread scheduling but without extra scheduling
+overhead incurred to those techniques.
+
+\subsection{Load Balancing}
+\label{sec:loadbalance} 
+Load balancing distributes workload evenly across the available logical
+cores, with current implementation mostly aiming to maximize
+performance.  This work applies load balancing to minimize thermal
+stress while seeking best performance.  Specifically, TAS extends push
+migration by organizing system cores into ``thermal clans'' based upon
+the temperature and execution frequency.  Specifically, a local core is
+assigned to one of the three thermal clans: Hot, Warm, and Cold, if its
+on-die temperature is respectively 90\% or higher, between 75\% and
+90\%, and below 75\% of the DTM threshold temperature.  Note that if a
+physical core supports $\alpha$ threads, $\alpha$ logical cores will
+result from the physical core, with their temperatures all equal to that
+of the physical core.  In addition, logical cores are grouped into fast
+and slow clans according to the execution frequencies of their
+underlying physical cores.  This two-level categorization allows TAS to
+manage work load distribution better from the thermal and performance
+prospectives, by migrating work away from hot units with negligible
+execution performance degradation.
+
+For performance reasons, information about thermal clans of all logical
+cores is maintained by the TEAHarvest thermal predictor driver.  The
+driver allocates threads to local cores for execution, according to
+thermal efficiency and cost estimates.  TAS scheduler queries the driver
+to determine whether a core will move towards the DTM threshold
+temperature if a thread becomes ready to execute on one of its logical
+core.  In this way, TAS predicts whether a thread moves its assigned
+core closer to a DTM event and adjusts the core's run-queue accordingly
+to prevent DTM occurrence.
+
+ \begin{figure}[t] 
+ \centering
+ \begin{verbatim} 
+ BEGIN 
+   Determine if the logical core 
+     is Hot, Warm, or Cold.  
+   FOR each thread in the run queue 
+      BEGIN 
+         Use tCAP to estimate resulting 
+           temperature change if the thread 
+           is executed  
+       END 
+   Determine least loaded core in the
+	     ``Cold'' clan  
+   Migrate the thread with ``worst'' impact 
+	 on temperature to logical core in
+       the ``Cold'' clan most suitable
+       from speed standpoint  
+ END
+ \end{verbatim}
+ \caption{Pseudo code of TAS balancing algorithm.}
+ \label{fig:tascode}
+ \end{figure}
+ 
+% \begin{figure}[t] \centering
+% \includegraphics[scale=0.7]{tbalance.pdf}
+% \caption{Design of thermal load balancing in TAS.}
+% \label{fig:thermbal}
+% \end{figure}
+
+On a periodic basis (i.e., once in every 500 ms), the TAS scheduler executes the algorithm listed in \figurename~\ref{fig:tascode} to balance the workload among logical cores, giving sufficient times for overtaxed resources to thermally recover. 
+For each thread in the run queue, TAS uses the tCAP to estimate 
+the value of $\Theta$ for each
+thread in the queue and predict the resulting change in temperature if
+this thread were to execute.  It then moves the thread with the greatest
+temperature impact to the least loaded logical core in the ``Cold''
+clan.  This way results in workloads being moved away from thermally
+stressed logical cores, while maintaining execution performance.
+
+Periodically, the system reads the temperatures of it all logical cores
+and, if required, also moves a logical cores to a different thermal
+clan.  It should be noted that the time required for a logical core to
+recover from a thermal event is significantly longer than the interval
+used for thread scheduling~\cite{Choi2007}. This allows our TAS to use a
+much larger interval (2 seconds) between scans (across core
+temperatures) to determine if any logical core must be assigned to a new
+thermal clan for better scheduling outcomes.
+
+\section{Experimental Evaluation and Results}
+\label{sec:experiment} 
+We have evaluated our TAS (Thermal Aware Scheduler) using the FreeBSD
+operating system run on a commodity server.  Our TAS implementation
+modified the existing push migration in FreeBSD's ULE
+scheduler~\cite{Roberson2003} to take into account both thermal behavior
+and system performance, as elaborated in Section~\ref{sec:sdesign}.  PeC
+data were collected at the user level through standard tools provided
+for the data collection purpose by FreeBSD (i.e., the \texttt{coretemp}
+and \texttt{hwpmc} kernel extensions).  They were collected and collated
+by a FreeBSD kernel extension, made available to the operating system
+scheduler for query when making scheduling decisions
+(\figurename~\ref{fig:teaplant})
+
+The processor thermal model was calibrated by measuring behavior
+outcomes of the testbed with TAS at idle and under high load stress
+using common utilities from the FreeBSD regression test suites and
+software collections.  The CPU-related behavior of our scheduler was
+then characterized using integer and floating point benchmarks from the
+SPEC CPU2006~\cite{Henning2006} benchmark suite.  Benchmarks from the
+Princeton Application Repository for Shared-Memory Computers (PARSEC)
+suite~\cite{Bienia2008} were then evaluated on the testbed to assess TAS
+in terms of key metrics of interest (i.e., die temperature and execution
+completion time) under high parallelism in the thread level.
+
+\begin{small}
+\begin{table}[tbhp] 
+\centering
+  \caption{Processor used in evaluation}
+  \label{tab:hardware}
+  \begin{tabular}{l l} 
+\hline 
+\hline
+&\textbf{Dell Precision 490}\\ 
+\hline 
+CPU&Intel Xeon 5300 (Woodcrest)\\ 
+CPU L2 cache&4MB\\ 
+Memory&8GB,DDR2 667Mhz ECC\\
+Internal disk&500GB\\ 
+Network&1x1000Mbps\\ 
+Video&NVIDA Quadro FX3400\\ 
+\hline
+  \end{tabular}
+\end{table}
+\end{small}
+\subsection{Experiment Setup}
+\label{sec:experiment-setup} 
+Experimental evaluation was conducted on our testbed running TAS, with
+its hardware specified in Table~\ref{tab:hardware}.  The key metrics of
+interest were gathered during the course of application execution.
+Power consumed was measured by a WattsUP power meter
+\cite{WattsUp2006a}, connected between the AC Main and the server
+testbed.  The power meter measured the total and average wattage,
+voltage, and amperage over the run of a workload.  The internal memory
+of the power meter was cleared at the start of each run and the measures
+collected during the runs were downloaded (after execution completion)
+from the meter's internal memory into a spreadsheet.
+\subsection{Benchmark Selection}
+\label{sec:experimental-setup-1} 
+Given processor components affect the thermal envelope in different
+ways~\cite{Kumar2008}, we selected our benchmarks carefully from SPEC
+CPU2006 and PARSEC suites (in addition to the FreeBSD stress testing
+codes) for TAS evaluation to satisfy three objectives: (1) sufficient
+coverage of the functional units in the testbed processor, (2) varying
+levels of CPU and memory intensity to reflect real-life scenarios, and
+(3) reasonable applicability to problem space.
+
+Benchmarks chosen for our evaluation satisfy the first objective in two
+ways.  The FreeBSD stress testing codes operate by repeating a tight set
+of integer and floating-point instructions while doing multiple reads
+and writes of large memory blocks.  This way stresses the integer and
+floating-point units in the processor while engaging in large amounts of
+cache activities.  Furthermore, the integer and floating-point
+benchmarks from the SPEC CPU2000 suite are chosen in different
+combinations for execution on the logical cores of the testbed
+simultaneously.  This way of combining integer and floating-points
+benchmarks diversely for concurrent execution (as listed in Table V)
+stresses the functional units of the processor differently.
+
+The second objective is met by selecting benchmarks from the SPEC
+CPU2006 and PARSEC suites that exhibit varying levels of CPU and memory
+intensity.  It is demonstrated by executing (1) benchmarks singly to
+focus on each functional unit in the processor, and (2) various mixes of
+integer and floating-point benchmarks allocated across all logical cores
+in the system.  Finally, the benchmarks were chosen from SPEC CPU2006
+and PARSEC suites based on their degrees of fit into the problem space.
+Each benchmark represents an application typical for high-performance
+system execution.
+
+\subsection{tCAP Establishment}
+\label{sec:callibration}
+Since our TAS relies on tCAP (thermal Chaotic Attractor Predictor) of
+the testbed for effectively predicting its thermal behavior during
+application execution, it is required first to establish tCAP using
+suitable applications.  In our earlier work, a few SPEC CPU2006
+benchmarks were used as training applications for deciding the
+coefficients of the chaotic attractor predictor \cite{Lewis2010}.  Here,
+we instead employed two applications which were expected to yield the
+extreme thermal results for training execution: the idle scenario and
+the most stress scenario.  An idle application referred to no
+application thread ready for execution and thus the testbed runs only
+the OS threads, whereas the most stress application leads to the highest
+processor utilization coupled with heaviest memory activities, achieved
+by launching multiple instances of the FreeBSD \texttt{cpuburn} stress
+testing codes for concurrent execution, one per core with symmetric
+multiple threads disabled.  The \texttt{cpuburn} stress test code
+implements a single-threaded infinite loop with a sequence of integer
+and floating-point operations and large blocks of memory reads and
+writes to thermally stress the testbed system, driving it close to a
+thermal emergency.  The use of these two extreme thermal scenarios is
+preferred over employing SPEC CPU2006 benchmarks for tCAP establishment,
+since any typical application execution will lies between the two
+extremes, as far as the coefficients of tCAP are concerned.
+
+These two training scenarios run for 600 seconds, with PeCs sampled at
+an interval of $t=5$ seconds for establishing tCAP.  The procedure for
+establishing tCAP is the same as what was described earlier
+\cite{Lewis2010}, and it involved three steps. First, the training set
+is constructed by consolidating the observed PeCs into a time series
+using geometric means.  In the second step, the Takens Embedding
+Theorem~\cite{Su2010} is applied to find delay embedding, with the
+nearest neighbors algorithm then employed to identify the set of
+attractors using the embedded set.  Finally, our tCAP is established by
+solving the linear least squares problem resulted from fitting a
+multi-variate polynomial to the attractor set.  The time complexity of
+establishing tCAP equals O($n ^2$), where $n$ is the number of sampled
+PeCs~\cite{Lewis2010}.  Note that the establishment of the attractor set
+for tCAP is required only once for a processor type, irrespective of applications executed on the processor.
+
+Both SPEC CPU2006 benchmarks (listed in Table~\ref{tab:benchmarks}) and
+PARSEC benchmarks (listed in Table~\ref{tab:parsecbench}) were chosen
+for assessing our TAS.  It is well known that SPEC benchmarks are
+intended for assessing CPU of processors and their execution parallelism
+exploitable via multi-threading is limited, thereby unable to benefit
+noticeably from executed on a multicore system with more effective
+thread scheduler (like our TAS); processes of those benchmarks
+tend to congregate on the same cores for execution following cache affinity
+to avoid steep performance degradation.
+By contrast, PARSEC benchmarks are multi-threaded
+programs aiming at on-chip multiprocessor (and shared-memory system)
+evaluation.  With abundant threads for execution on the multiple cores
+of the testbed, PARSEC benchmarks are expected to enjoy higher gains under
+a more effective scheduling mechanism, as will be demonstrated in
+Section~\ref{sec:mult-behav} below.
+
+\begin{figure}[!tbhp] 
+\centering
+\includegraphics[width=1.0\linewidth,height=2in]{graphics/speccputemp}
+\caption{Average core die temperature for selected SPEC CPU20006
+benchmarks under ULE and TAS schedulers.}
+\label{fig:ubenchmarks}
+\end{figure}
+
+\begin{small}
+\begin{table}[tbph]
+\caption{SPEC benchmarks used for evaluation}
+\label{tab:benchmarks} 
+\centering
+\begin{tabular}{l c p{5cm}} 
+\hline 
+\hline
+\multicolumn{3}{l}{\textbf{Integer Benchmarks}}\\
+\hline 
+hmmer &  & Search gene sequence \\
+mcf &  & Combinatorial optimization \\
+\hline 
+\hline
+\multicolumn{3}{l}{\textbf{Floating-Point Benchmarks}}\\ 
+\hline 
+milc &  & Quantum Chromodynamics \\
+libquantum &  & Physics/General Relativity \\
+namd &  & Fluid Dynamics \\
+\hline
+\end{tabular} % system benchmark table
+\end{table}
+\end{small}
+\subsection{SPEC Benchmark Results and Discussion}
+\label{sec:microarch} 
+Benchmarks from the SPEC CPU2006 suite \cite{Spec2006}, as listed in
+Table~\ref{tab:benchmarks}, were used to evaluate the thermal behavior
+of CPU-bound workloads executed on our testbed with the TAS scheduler.
+The benchmarks were selected to represent real
+life applications under various levels of thermal stress.  
+As demonstrated in \figurename~\ref{fig:ubenchmarks}, 
+the on-die temperatures of cores range from 32$^\circ$C 
+(for the \texttt{namd} benchmark) to some 42.7$^\circ$C 
+(for the \texttt{libquantum} benchmark) under TAS, 
+with \texttt{namd} (or \texttt{libquantum})
+leading to the lowest (or highest) mean temperature across the four cores. 
+Temperature outcomes for the same benchmarks under the classical ULE scheduler
+are very close to those under TAS, as shown in \figurename~\ref{fig:ubenchmarks}. 
+This is possibly resulted from the nature of SPEC benchmarks,
+whose threads, being CPU-bound, tend to congregate on the same cores for execution,
+observing cache affinity to avoid noticable performance degradation and
+thereby limiting TAS from scheduling threads based on thermal prediction.
+
+\begin{small}
+\begin{table}[bp]
+\caption{SPEC benchmark mixes for concurrent execution}
+\label{tab:crossbench} 
+\centering
+\begin{tabular}{clllll} 
+\hline 
+\hline 
+Workload & & Benchmark 1 & Benchmark 2 & Benchmark 3 & Benchmark 4\\ 
+\hline 
+A & & namd & namd & hmmer & mcf \\
+B & & milc & milc & namd & hmmer \\ 
+C & & milc & mcf & mcf & hmmer \\
+\hline
+\end{tabular}
+\end{table}
+\end{small}
+
+\subsubsection{Execution of SPEC Benchmark Mixes}
+\label{sec:cross-funct-unit} 
+It has been shown previously \cite{Choi2007,Cher2011} that 
+significant core-to-core and functional unit-to-functional unit
+thermal variations occur on modern processors.  
+We thus consider mixing integer and floating-point SPEC CPU2006 benchmarks
+for concurrent execution on the four cores of our testbed processor.
+Three workload mixes are considered, and they span a range of cases, including
+high-IPC/low-IPC, hot/cold thermal profiles \cite{Kursun2008}, and
+integer/floating-point combinations for better evaluating our scheduler 
+under diverse workload variations, as listed in Table~\ref{tab:crossbench}.
+Four benchmarks in each workload mix were executed concurrently,
+with the OS scheduler deciding how the threads of those benchmarks 
+were executed on the cores.
+For example, workload mix B involved three copies of floating-point benchmarks (termed Benchmarks 1, 2, and 3)
+and one integer benchmark (termed Benchmark 4).
+It was observed that as execution progressed, the threads of those benchmarks again tended to 
+pin themselves to particular cores, depending upon cache and memory utilization
+of other concurrent threads.
+
+\begin{small}
+\begin{table}[!bp] 
+\centering
+\caption{Reduction in temperature and performance under benchmark mixes}
+\label{tab:mixwkload}
+\begin{tabular}{cllllll} 
+\hline
+\hline
+Workload & \multicolumn{4}{c}{Core Die Temp. Reduction} & Performance\\
+ & Core 0 & Core 1 & Core2  & Core 3 & Degradation \\
+\hline
+A & 2.8$^{\circ}$C & 1.0$^{\circ}$C & 1.7$^{\circ}$C & 2.0$^{\circ}$C & 2.1\% \\
+B & 1.0$^{\circ}$C & 0.8$^{\circ}$C & 2.0$^{\circ}$C & 1.1$^{\circ}$C & 2.9\% \\
+C & 3.1$^{\circ}$C & 3.3$^{\circ}$C & 3.0$^{\circ}$C & 2.9$^{\circ}$C & 2.5\% \\
+\hline
+\end{tabular}
+\end{table}
+\end{small} 
+
+Core temperatures are reduced more under TAS than under ULE,
+with the reduction amounts listed in Table~\ref{tab:mixwkload}
+for the three workload mixes.
+Under workload mix C, for example, core temperatures under TAS are reduced by at least 2.9$^{\circ}$C and as much as 3.3$^{\circ}$C.
+The degree of performance degradation (denoting the increased execution time for completing a given workload mix) is negligible consistently, ranging from 2.1% to 2.9%.
+
+?????
+This compares favorably
+with techniques from prior work such as Core Hopping~\cite{Choi2007},
+Variation-Aware~\cite{Kursun2008}, and Predict-and-Act~\cite{Ayoub2009},
+with comparable reductions in average core die temperatures and
+performance impact for similar workloads and processors.
+?????
+
+\begin{small}
+\begin{table}[phbt] 
+\centering
+ \caption{PARSEC benchmarks used in evaluation}
+\label{tab:parsecbench}
+\begin{tabular}[bthp]{l l p{5cm}} 
+\hline 
+\hline 
+bodytrack &  & Computer vision image tracking application \\
+canneal &  & Simulated annealing chip routing cost computation \\
+facesim &  & Physical simulation of facial behavior \\
+ferret &  & Content-based similarity search \\
+freqmine &  & Simulate FP-growth method for Frequent Itemset Mining \\
+streamcluster &  & Online clustering algorithm for data mining \\
+swaptions &  & Simulated pricing of portfolio options \\
+\hline
+\end{tabular}
+\end{table}
+\end{small}
+\subsection{PARSEC Benchmark Results and Discussion}
+\label{sec:mult-behav} 
+Selected benchmarks from the PARSEC~\cite{Bienia2008} suite, described in Table~\ref{tab:parsecbench}, 
+were used to evaluate our TAS as well.
+They were compiled with the POSIX \texttt{pthreads} library 
+and executed using the PARSEC \texttt{native} input sets.
+Being parallel workloads selected from the fields of
+computer vision, computational finance, enterprise servers, 
+and animation physics (see Table VII), PARSEC benchmarks
+better represent real life applications than SPEC CPU2006 
+and can benefit markedly from scheduling their abundant independent threads freely based on thermal prediction. 
+
+\begin{figure}[tbp] 
+\centering
+  \includegraphics[width=1.0\linewidth,height=2in]{graphics/parsectemp}
+  \caption{Comparison of PARSEC benchmark average core die temperatures
+under ULE and TAS schedulers.}
+  \label{fig:pbenchmarkt}
+\end{figure}
+\begin{figure}[tbp]
+  \includegraphics[width=1.0\linewidth,height=2in]{graphics/parsecperformance}
+  \caption{Comparison of PARSEC benchmark performance under ULE and TAS
+schedulers.}
+  \label{fig:pbenchmarkp}
+\end{figure} 
+Three behavior metrics of interest under TAS are gathered:
+(1) the average core on-die temperature, 
+(2) the benchmark run time, 
+and (3) mean system power dissipation.
+The outcomes of average core on-die temperatures upon
+executing those seven PARSEC benchmarks are depicted in
+\figurename~\ref{fig:pbenchmarkt}.
+As can be seen from the figure,
+the core on-die temperatures range from 32$^\circ$C 
+(for Benchmark \texttt{swaption}) to 42$^\circ$C 
+(for Benchmark \texttt{streamcluster}) under TAS, 
+with \texttt{swaption} and \texttt{bodytrack} (or \texttt{streamcluster})
+experiencing the lowest (or highest) mean temperature across the four cores. 
+Temperature outcomes for the same benchmarks under the classical ULE scheduler
+are also included in \figurename~\ref{fig:ubenchmarks} for comparison.
+It is found that temperature reduction amounts are larger
+for benchmarks with smaller working sets
+(like \texttt{bodytrack} and \texttt{swaptions}).
+This is because such a benchmark has a lower cache requirement
+\cite{Bienia2011} and thereby lets TAS schedule threads 
+more freely according to thermal prediction with negligible performance degradation, resulting in better temperature reduction.
+Consequently, TAS enjoys temperature reduction by
+more than 12$^{\circ}$C (from 44.8$^{\circ}$C down to 
+32.2$^{\circ}$C) for Banchmark \texttt{swaptions}. 
+  
+Benchmarks with streaming functions, such
+as\texttt{facesim}, \texttt{freqmine}, and \texttt{streamcluster}, all have large working sets,
+which hinder TAS from scheduling threads freely
+based on thermal prediction, since doing so degrades performance considerably.
+Hence, those benchmarks tend to yield less temperature reduction unser TAS, with the
+average core on-die temperature lowered by 3-6$^{\circ}$C.
+
+????????
+Here, you ought to add two paragraphs describing and contrasting the results given in
+Fig. 6 and
+\figurename~\ref{fig:pbenchmarkp} 
+??????????
+
+\begin{figure}[tbp]
+  \includegraphics[width=1.0\linewidth,height=2in]{ParsecPowerConsumption.png}
+  \caption{Comparison of PARSEC benchmark average power consumption under ULE and TAS schedulers.}
+  \label{fig:pbenchmark}
+\end{figure}
+
+???????? - I didn't go through the following paragraph yet,
+but I trust that you can now make it better and self-contained
+???????
+
+In \figurename~\ref{fig:tasvsedp}, we contrast the optimization strategy
+used by TAS versus other possible optimizations schemes for managing the
+trade-off between performance and energy.  In this figure, we compare
+TAS performance results from executing the PARSEC
+\texttt{facesim} benchmark as compared to schemes that minimize delay
+under peak power constraints (DPC) and minimize energy under peak power and
+delay constraints (EPDC). DPC minimizes the delay of an execution
+interval so that the maximum power within an execution interval never
+exceeds a limit while EPDC schemes seek to minimize energy while
+operating a system within a power budget with a limit on the workload
+performance impact. In this case, the optimizations used by TAS
+outperforms both DPC and EPDC for the \texttt{facesim} 
+benchmark by 4\% to 6\%  as reported in prior work~\cite{Cochran2011}. 
+
+\begin{figure}[bpt]
+  \centering
+\includegraphics[scale=0.6]{graphics/tasvsedpc}
+  \caption{Average percentage reduction in core die temperature for the
+    \texttt{facesim} benchmark under various optimization strategies.}
+  \label{fig:tasvsedp}
+\end{figure}
+\section{Conclusion}
+\label{sec:conclusion}
+Dense servers pose power and thermal challenges, which often cannot be
+addressed satisfactorily by conventional DVFS and DTM mechanisms,
+especially under heavy workloads common for high-performance systems.
+We have investigated into thermal-aware scheduling to deal with such
+challenges, capable of managing system energy consumption within a given
+power and thread envelope effectively.  As opposed to prior work aiming
+to bound temperatures below critical thresholds, our proposed scheduler
+considers how to dispatch heavy workloads in the high-performance
+multi-core system for die temperature management across all cores.  It
+is based on the thermal Chaotic Attractor Predictors (tCAPs) we develop
+to guide thread selection and load balancing, taking into account key
+thermal indicators and system performance metrics for preventing DTM
+instances proactively.  The proposed tCAP-oriented scheduling (dubbed
+the TAS scheduler) has been implemented to replace the original
+scheduler of the FreeBSD operating system (called the ULE scheduler) for
+evaluation on a testbed server under benchmarks from the SPEC CPU2006
+and PARSEC suites.  Experimental results demonstrate that our TAS
+scheduler can lower the mean on-die core temperature by up to
+12$^{\circ}$C (from 47$^\circ$C down to 35$^\circ$C) 
+under PARSEC benchmarks and by up to 3.3$^{\circ}$C under
+mixes of SPEC benchmarks for concurrent execution, while exhibiting
+negligible performance degradation, in comparison to the ULE scheduler.
+When compared with a recent energy-aware scheduling technique reported
+to attain core temperature reduction by up to 4$^\circ$C 
+(from 63$^\circ$C down to 59$^\circ$C) upon executing 
+??? parallel benchmark applications (written using the Charm++ object library)
+on an Intel Xeon 5520 4-core processor \cite{Sarood2011}, our TAS
+clearly enjoys better thermal reduction under multi-threaded execution.
+
+\label{sec:references}
+\begin{small}
+\bibliographystyle{ULieeetran}
+\bibliography{../overall.bib}
+\end{small}
+\end{document}
+% The following comment block is used by the different flavors of EMACS and
+% the AUCTEX package to manage multiple documents.  In order for AUCTEX
+% to understand you're working with multiple files, you should define
+% the TeX-master variable as a file local variable that identifies your
+% master document.
+%
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "scheduler.tex"
+%%% TeX-PDF-mode: t
+%%% TeX-source-correlate-mode: t
+%%% End: 

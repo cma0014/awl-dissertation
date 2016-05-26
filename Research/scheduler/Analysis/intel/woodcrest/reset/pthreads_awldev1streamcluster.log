@@ -1,0 +1,32 @@
+parsecsingle.sh: Executing streamcluster benchmark.
+parsecsingle.sh: Destination directory is /usr/home/awl8049/scheduler/
+parsecsingle.sh: Using pthreads_awldev1streamcluster as id for this run
+parsecsingle.sh: Clearing memory on power meter
+parsecsingle.sh: Restarting teaplant.
+And now we start the Parsecsingle streamcluster benchmark at 
+DEBUG - PARSECPLAT is amd64-bsd.gcc-pthreads
+DEBUG buildfile = /usr/home/awl8049/Projects/parsec-2.1/config/gcc-pthreads.bldconf
+[PARSEC] Benchmarks to run:  streamcluster
+
+[PARSEC] [========== Running benchmark streamcluster ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /usr/home/awl8049/Projects/parsec-2.1/pkgs/kernels/streamcluster/inst/amd64-bsd.gcc-pthreads/bin/streamcluster 10 20 128 1000000 200000 5000 none output.txt 1':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+read 200000 points
+read 200000 points
+read 200000 points
+read 200000 points
+read 200000 points
+
+real	17m24.187s
+user	17m23.682s
+sys	0m0.206s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+And the Parsecsingle streamcluster benchmark has completed at 08:34
+parsecsingle.sh: Telling teaplant to cycle log files
+parsecsingle.sh: Downloading data from the power meter
+parsecsingle.sh: Data collection complete

@@ -1,0 +1,18 @@
+For managing the thermal envelope of applications on server systems as
+well as embedded systems, we are interested in the thermal efficiency of
+the operation, that is, the thermal cost of taking an application to
+completion. The thermal efficiency is defined as:
+\begin{equation}
+\label{eq:thermeff}
+      \eta(A, D_{A},T,t) = \frac{\Theta_A(A,D_{A}, T,t)}{\Theta_A(A_e,D_{A_{e}}, T_{me}, L_{e})}
+\end{equation}
+where $T_{me}$ is the maximum temperature which the core will carry
+over until a DTM triggered event occurs and $A_e$ refers to the application
+whose energy consumption has caused the DTM triggered event to take
+place. $L_{e}$ is the execution time of application $A_e$. Thus
+$\eta(A, D_{A},T,t)$ is a measure of the ``thermal efficiency of the
+application'', which implies how much an application affects temperature
+change without compromising it's throughput and/or leads to a thermal
+event. Thus the definition of $\eta$ is linked to the definition of the
+thermal and energy workload.
+

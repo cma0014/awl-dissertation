@@ -1,0 +1,38 @@
+/opt/wattsup/benchcmd.sh 470.lbm
+~/Research/cpu2006 ~/Research/vmpowermgt/Programs/scheduler/Analysis/amd/x2200/cross2
+runspec v4662 - Copyright 1999-2006 Standard Performance Evaluation Corporation
+Using 'solaris-x86' tools
+Reading MANIFEST... 17935 files
+Loading runspec modules...............
+Locating benchmarks...found 31 benchmarks in 12 benchsets.
+Locating output formats: ASCII, config, CSV, flags, HTML, mail, PDF, PostScript, raw, Screen, Submission Check
+Reading config file '/export/home/awl8049/Research/cpu2006/config/powermodel.cfg'
+Benchmarks selected: 470.lbm
+Compiling Binaries
+  Up to date 470.lbm ref base mar30.amd64 default
+
+
+Parsing Flags
+  Looking at 470.lbm base mar30.amd64 default: done
+Flag Parsing Complete
+
+Setting Up Run Directories
+  Setting up 470.lbm ref base mar30.amd64 default: existing (run_base_ref_mar30.amd64.0000)
+Running Benchmarks
+  Running 470.lbm ref base mar30.amd64 default
+Success: 1x470.lbm
+Producing Reports
+mach: default
+  ext: mar30.amd64
+    size: ref
+      set: int
+      set: fp
+        format: raw -> /export/home/awl8049/Research/cpu2006/result/CFP2006.267.rsf
+        format: flags -> /export/home/awl8049/Research/cpu2006/result/CFP2006.267.flags.html
+        format: ASCII -> /export/home/awl8049/Research/cpu2006/result/CFP2006.267.txt
+        format: HTML -> /export/home/awl8049/Research/cpu2006/result/CFP2006.267.html, CFP2006.267.gif
+
+The log for this run is in /export/home/awl8049/Research/cpu2006/result/CPU2006.267.log
+
+runspec finished at Sun May 10 03:13:22 2009; 1227 total seconds elapsed
+~/Research/vmpowermgt/Programs/scheduler/Analysis/amd/x2200/cross2

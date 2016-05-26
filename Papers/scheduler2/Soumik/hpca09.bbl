@@ -1,0 +1,188 @@
+\begin{thebibliography}{10}\setlength{\itemsep}{-1ex}\small
+
+\bibitem{AMD2008}
+AMD.
+\newblock {\em {BIOS and Kernel Developer's Guide for AMD Athlon 64 and AMD
+  Opteron Processors}}, 26094 rev 3.30 edition, February 2006.
+
+\bibitem{Azimi2005}
+R.~Azimi, M.~Stumm, and R.~W. Wisniewski.
+\newblock {Online Performance Analysis by Statistical Sampling of
+  Microprocessor Performance Counters}.
+\newblock In {\em {ICS '05: Proceedings of the 19th Annual Intl. Conf. on
+  Supercomputing}}, pages 101--110, New York, NY, USA, 2005. ACM.
+
+\bibitem{Bellosa2003}
+F.~Bellosa, A.~Weissel, M.~Waitz, and S.~Kellner.
+\newblock {Event-driven energy accounting for dynamic thermal management}.
+\newblock {\em {Proceedings of the Workshop on Compilers and Operating Systems
+  for Low Power (COLP'03)}}, 2003.
+
+\bibitem{Bircher2007}
+W.~Bircher and L.~John.
+\newblock {Complete System Power Estimation: A Trickle-Down Approach Based on
+  Performance Events}.
+\newblock {\em Ispass}, 0:158--168, 2007.
+
+\bibitem{Bircher2008}
+W.~L. Bircher and L.~K. John.
+\newblock Analysis of dynamic power management on multi-core processors.
+\newblock In {\em ICS '08: Proceedings of the 22nd annual international
+  conference on Supercomputing}, pages 327--338, New York, NY, USA, 2008. ACM.
+
+\bibitem{Contreras2005}
+G.~Contreras and M.~Martonosi.
+\newblock {Power Prediction for Intel XScale\textregistered Processors Using
+  Performance Monitoring Unit Events}.
+\newblock In {\em {ISLPED '05: Proc. of the 2005 Intl. Symp. on Low Power
+  Electronics and Design}}, pages 221--226, New York, NY, USA, 2005. ACM.
+
+\bibitem{Yokogawa2009}
+Y.~E. Corporation.
+\newblock {\em {WT210/WT230 Digital Power Meter User's Manual}}.
+\newblock Yokogawa Electric Corporation, 4th ed. edition.
+
+\bibitem{Coskun2008d}
+A.~K. Coskun, T.~S. Rosing, and K.~C. Gross.
+\newblock Proactive temperature management in mpsocs.
+\newblock In {\em ISLPED '08: Proceeding of the thirteenth international
+  symposium on Low power electronics and design}, pages 165--170, New York, NY,
+  USA, 2008. ACM.
+
+\bibitem{Coskun2008}
+A.~K. Coskun, T.~S. Rosing, K.~A. Whisnant, and K.~C. Gross.
+\newblock Temperature-aware mpsoc scheduling for reducing hot spots and
+  gradients.
+\newblock In {\em ASP-DAC '08: Proceedings of the 2008 conference on Asia and
+  South Pacific design automation}, pages 49--54, Los Alamitos, CA, USA, 2008.
+  IEEE Computer Society Press.
+
+\bibitem{Donald2006}
+J.~Donald and M.~Martonosi.
+\newblock {Techniques for Multicore Thermal Management: Classification and New
+  Exploration}.
+\newblock In {\em {ISCA '06: Proc. of the 33rd Intl. Symp. on Computer
+  Architecture}}, pages 78--88, Washington, DC, USA, 2006. IEEE Computer
+  Society.
+
+\bibitem{Economou2006}
+D.~Economou, S.~Rivoire, C.~Kozyrakis, and P.~Ranganathan.
+\newblock {Full-System Power Analysis and Modeling for Server Environments}.
+\newblock In {\em Workshop on Modeling Benchmarking and Simulation (MOBS) at
+  ISCA}, 2006.
+
+\bibitem{Fan2007}
+X.~Fan, W.-D. Weber, and L.~A. Barroso.
+\newblock Power provisioning for a warehouse-sized computer.
+\newblock In {\em ISCA '07: Proc. of the 34th Intl. Symp. on Computer
+  architecture}, pages 13--23, New York, NY, USA, 2007. ACM.
+
+\bibitem{Gomaa2004}
+M.~Gomaa, M.~D. Powell, and T.~N. Vijaykumar.
+\newblock Heat-and-run: leveraging smt and cmp to manage power density through
+  the operating system.
+\newblock {\em SIGOPS Oper. Syst. Rev.}, 38(5):260--270, 2004.
+
+\bibitem{Heath2005}
+T.~Heath, B.~Diniz, E.~V. Carrera, W.~M. Jr., and R.~Bianchini.
+\newblock {Energy Conservation in Heterogeneous Server Clusters}.
+\newblock In {\em {PPoPP '05: Proc. of the 10th ACM SIGPLAN Symp. on Principles
+  and Practice of Parallel Programming}}, pages 186--195, New York, NY, USA,
+  2005. ACM.
+
+\bibitem{Henning2006}
+J.~L. Henning.
+\newblock {SPEC CPU2006 Benchmark Descriptions}.
+\newblock {\em SIGARCH Comp. Archit. News}, 34(4):1--17, 2006.
+
+\bibitem{Isci2006}
+C.~Isci and M.~Martonosi.
+\newblock {Phase Characterization for Power: Evaluating Control-flow-based and
+  Event-counter-based Techniques}.
+\newblock {\em {The 12th Intl. Symp. on High-Performance Computer
+  Architecture}}, pages 121--132, 11-15 Feb. 2006.
+
+\bibitem{Isci2003b}
+C.~Isci and M.~Martonosi.
+\newblock {Runtime Power Monitoring in High-end Processors: Methodology and
+  Empirical Data}.
+\newblock {\em {MICRO-36: Proc. 36th IEEE/ACM Intl. Symp. on
+  Microarchitecture}}, pages 93--104, 3-5 Dec. 2003.
+
+\bibitem{Kumar2006}
+A.~Kumar, L.~Shang, L.-S. Peh, and N.~K. Jha.
+\newblock Hybdtm: a coordinated hardware-software approach for dynamic thermal
+  management.
+\newblock In {\em DAC '06: Proceedings of the 43rd annual conference on Design
+  automation}, pages 548--553, New York, NY, USA, 2006. ACM.
+
+\bibitem{Lewis2008}
+A.~Lewis, S.~Ghosh, and N.-F. Tzeng.
+\newblock Run-time energy consumption estimation based on workload in server
+  systems.
+\newblock In {\em {Proc. of the 2008 Workshop on Power Aware Computing and
+  Systems (Hotpower'08)}}, 2008.
+
+\bibitem{Li2008}
+D.~Li, H.-C. Chang, H.~Pyla, and K.~Cameron.
+\newblock System-level, thermal-aware, fully-loaded process scheduling.
+\newblock pages 1--7, April 2008.
+
+\bibitem{McDougall2007}
+R.~McDougall and J.~Mauro.
+\newblock {\em {Solaris Internals: Solaris 10 and OpenSolaris Kernel
+  Architecture}}.
+\newblock Prentice Hall, 2nd edition, 2007.
+
+\bibitem{Merkel2008}
+A.~Merkel and F.~Bellosa.
+\newblock {Memory-aware Scheduling for Energy Efficiency on Multicore
+  Processors}.
+\newblock In {\em Proc. of the USENIX Workshop on Power-aware Computing and
+  Systems (HotPower'08)}.
+
+\bibitem{Rangan2009}
+K.~K. Rangan, G.-Y. Wei, and D.~Brooks.
+\newblock Thread motion: fine-grained power management for multi-core systems.
+\newblock {\em SIGARCH Comput. Archit. News}, 37(3):302--313, 2009.
+
+\bibitem{Rivoire2008a}
+S.~Rivoire.
+\newblock {\em {Models and Metrics for Energy-efficient Computer Systems}}.
+\newblock PhD thesis, Stanford University, 2008.
+
+\bibitem{Rivoire2008b}
+S.~Rivoire, P.~Ranganathan, and C.~Kozyrakis.
+\newblock {A Comparison of High Level Full-System Power Models}.
+\newblock In {\em {Proc. of USENIX Workshop on Power Aware Computing and
+  Systems (HotPower'08)}}, 2008.
+
+\bibitem{Rosing2007}
+T.~Rosing, K.~Mihic, and G.~De~Micheli.
+\newblock Power and reliability management of socs.
+\newblock {\em Very Large Scale Integration (VLSI) Systems, IEEE Transactions
+  on}, 15(4):391--403, April 2007.
+
+\bibitem{Singhal2008}
+R.~Singhal.
+\newblock {Inside Intel Next Generation Nehalem Microarchitecture}.
+\newblock In {\em Intel Developer Forum, Shanghai, China}, 2008.
+
+\bibitem{Sun2009}
+{Sun Microsystems}.
+\newblock {OpenSolaris CPU Power Management - Project Tesla}, June 2009.
+
+\bibitem{Yang2008}
+J.~Yang, X.~Zhou, M.~Chrobak, Y.~Zhang, and L.~Jin.
+\newblock Dynamic thermal management through task scheduling.
+\newblock {\em Performance Analysis of Systems and software, 2008. ISPASS 2008.
+  IEEE International Symposium on}, pages 191--201, April 2008.
+
+\bibitem{Yao1995}
+F.~Yao, A.~Demers, and S.~Shenker.
+\newblock A scheduling model for reduced cpu energy.
+\newblock In {\em FOCS '95: Proceedings of the 36th Annual Symposium on
+  Foundations of Computer Science (FOCS'95)}, page 374, Washington, DC, USA,
+  1995. IEEE Computer Society.
+
+\end{thebibliography}

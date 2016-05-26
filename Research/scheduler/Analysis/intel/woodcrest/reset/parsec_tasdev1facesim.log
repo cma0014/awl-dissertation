@@ -1,0 +1,272 @@
+parsecsingle.sh: Executing facesim benchmark.
+parsecsingle.sh: Destination directory is /usr/home/awl8049/scheduler/
+parsecsingle.sh: Using parsec_tasdev1facesim as id for this run
+parsecsingle.sh: Clearing memory on power meter
+parsecsingle.sh: Restarting teaplant.
+And now we start the Parsecsingle facesim benchmark at 
+DEBUG - PARSECPLAT is amd64-bsd.gcc
+DEBUG buildfile = /usr/home/awl8049/Projects/parsec-2.1/config/gcc.bldconf
+[PARSEC] Benchmarks to run:  facesim
+
+[PARSEC] [========== Running benchmark facesim ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'native'.
+[PARSEC] Running 'time /usr/home/awl8049/Projects/parsec-2.1/pkgs/apps/facesim/inst/amd64-bsd.gcc/bin/facesim -timing -threads 1 -lastframe 100':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Creating directory using system("mkdir -p Storytelling/output")...Successful!
+Simulation                                        Reading simulation model : ./Face_Data/Eftychis_840k/Front_370k/face_simulation_1.tet
+Total particles = 80598
+Total tetrahedra = 372126
+muscles = 32
+attachments = 3
+
+  Frame 1                                         
+  END Frame 1                                      12.2154 s
+  Frame 2                                         
+  END Frame 2                                      11.6472 s
+  Frame 3                                         
+  END Frame 3                                      11.7306 s
+  Frame 4                                         
+  END Frame 4                                      11.6650 s
+  Frame 5                                         
+  END Frame 5                                      11.6365 s
+  Frame 6                                         
+  END Frame 6                                      11.7741 s
+  Frame 7                                         
+  END Frame 7                                      11.6264 s
+  Frame 8                                         
+  END Frame 8                                      11.6332 s
+  Frame 9                                         
+  END Frame 9                                      11.6797 s
+  Frame 10                                        
+  END Frame 10                                     11.6243 s
+  Frame 11                                        
+  END Frame 11                                     11.6327 s
+  Frame 12                                        
+  END Frame 12                                     11.7472 s
+  Frame 13                                        
+  END Frame 13                                     11.6503 s
+  Frame 14                                        
+  END Frame 14                                     11.6714 s
+  Frame 15                                        
+  END Frame 15                                     11.6432 s
+  Frame 16                                        
+  END Frame 16                                     11.6338 s
+  Frame 17                                        
+  END Frame 17                                     11.7499 s
+  Frame 18                                        
+  END Frame 18                                     11.6431 s
+  Frame 19                                        
+  END Frame 19                                     11.6361 s
+  Frame 20                                        
+  END Frame 20                                     11.6483 s
+  Frame 21                                        
+  END Frame 21                                     11.6956 s
+  Frame 22                                        
+  END Frame 22                                     11.7703 s
+  Frame 23                                        
+  END Frame 23                                     11.6294 s
+  Frame 24                                        
+  END Frame 24                                     11.6457 s
+  Frame 25                                        
+  END Frame 25                                     11.7592 s
+  Frame 26                                        
+  END Frame 26                                     11.6370 s
+  Frame 27                                        
+  END Frame 27                                     11.7684 s
+  Frame 28                                        
+  END Frame 28                                     11.6284 s
+  Frame 29                                        
+  END Frame 29                                     11.6442 s
+  Frame 30                                        
+  END Frame 30                                     11.7478 s
+  Frame 31                                        
+  END Frame 31                                     11.6351 s
+  Frame 32                                        
+  END Frame 32                                     11.6454 s
+  Frame 33                                        
+  END Frame 33                                     11.7656 s
+  Frame 34                                        
+  END Frame 34                                     11.6402 s
+  Frame 35                                        
+  END Frame 35                                     11.7489 s
+  Frame 36                                        
+  END Frame 36                                     11.6532 s
+  Frame 37                                        
+  END Frame 37                                     11.6492 s
+  Frame 38                                        
+  END Frame 38                                     11.6833 s
+  Frame 39                                        
+  END Frame 39                                     11.6496 s
+  Frame 40                                        
+  END Frame 40                                     11.6411 s
+  Frame 41                                        
+  END Frame 41                                     11.7567 s
+  Frame 42                                        
+  END Frame 42                                     11.6547 s
+  Frame 43                                        
+  END Frame 43                                     11.7736 s
+  Frame 44                                        
+  END Frame 44                                     11.6559 s
+  Frame 45                                        
+  END Frame 45                                     11.6562 s
+  Frame 46                                        
+  END Frame 46                                     11.7680 s
+  Frame 47                                        
+  END Frame 47                                     11.6518 s
+  Frame 48                                        
+  END Frame 48                                     11.6482 s
+  Frame 49                                        
+  END Frame 49                                     11.7649 s
+  Frame 50                                        
+  END Frame 50                                     11.6422 s
+  Frame 51                                        
+  END Frame 51                                     11.7752 s
+  Frame 52                                        
+  END Frame 52                                     11.6345 s
+  Frame 53                                        
+  END Frame 53                                     11.6514 s
+  Frame 54                                        
+  END Frame 54                                     11.7628 s
+  Frame 55                                        
+  END Frame 55                                     11.6498 s
+  Frame 56                                        
+  END Frame 56                                     11.6440 s
+  Frame 57                                        
+  END Frame 57                                     11.7708 s
+  Frame 58                                        
+  END Frame 58                                     11.6364 s
+  Frame 59                                        
+  END Frame 59                                     11.7144 s
+  Frame 60                                        
+  END Frame 60                                     11.6420 s
+  Frame 61                                        
+  END Frame 61                                     11.6566 s
+  Frame 62                                        
+  END Frame 62                                     11.6832 s
+  Frame 63                                        
+  END Frame 63                                     11.6586 s
+  Frame 64                                        
+  END Frame 64                                     11.6514 s
+  Frame 65                                        
+  END Frame 65                                     11.7655 s
+  Frame 66                                        
+  END Frame 66                                     11.6433 s
+  Frame 67                                        
+  END Frame 67                                     11.6681 s
+  Frame 68                                        
+  END Frame 68                                     11.6877 s
+  Frame 69                                        
+  END Frame 69                                     11.6438 s
+  Frame 70                                        
+  END Frame 70                                     11.6925 s
+  Frame 71                                        
+  END Frame 71                                     11.6355 s
+  Frame 72                                        
+  END Frame 72                                     11.7119 s
+  Frame 73                                        
+  END Frame 73                                     11.6349 s
+  Frame 74                                        
+  END Frame 74                                     11.6470 s
+  Frame 75                                        
+  END Frame 75                                     11.7573 s
+  Frame 76                                        
+  END Frame 76                                     11.6425 s
+  Frame 77                                        
+  END Frame 77                                     11.6699 s
+  Frame 78                                        
+  END Frame 78                                     11.7574 s
+  Frame 79                                        
+  END Frame 79                                     11.6350 s
+  Frame 80                                        
+  END Frame 80                                     11.7651 s
+  Frame 81                                        
+  END Frame 81                                     11.6450 s
+  Frame 82                                        
+  END Frame 82                                     11.6473 s
+  Frame 83                                        
+  END Frame 83                                     11.7492 s
+  Frame 84                                        
+  END Frame 84                                     11.6539 s
+  Frame 85                                        
+  END Frame 85                                     11.6515 s
+  Frame 86                                        
+  END Frame 86                                     11.7727 s
+  Frame 87                                        
+  END Frame 87                                     11.6509 s
+  Frame 88                                        
+  END Frame 88                                     11.6438 s
+  Frame 89                                        
+  END Frame 89                                     11.6314 s
+  Frame 90                                        
+  END Frame 90                                     11.6512 s
+  Frame 91                                        
+  END Frame 91                                     11.6769 s
+  Frame 92                                        
+  END Frame 92                                     11.6454 s
+  Frame 93                                        
+  END Frame 93                                     11.6332 s
+  Frame 94                                        
+  END Frame 94                                     11.7491 s
+  Frame 95                                        
+  END Frame 95                                     11.6498 s
+  Frame 96                                        
+  END Frame 96                                     11.7572 s
+  Frame 97                                        
+  END Frame 97                                     11.6415 s
+  Frame 98                                        
+  END Frame 98                                     11.6538 s
+  Frame 99                                        
+  END Frame 99                                     11.7696 s
+  Frame 100                                       
+  END Frame 100                                    11.6507 s
+SIMULATION                                          0.0000
+  FRAME                                           1168.5109
+    ADB                                           1168.3589
+      UPBS                                        163.6556
+        UPBS (FEM) - Initialize                     0.3501 s
+        UPBS (FEM) - Element Loop                 163.2919 s
+        UPBS (CPF)                                  0.0001 s
+      ADO                                         1004.6984
+        ADO - Update collision bodies               0.0009 s
+        AOTSQ                                     1004.6925
+          AOTSQ - Initialize                        0.0050 s
+          AOTSQ - NR loop                         1004.6832
+            AOTSQ - NR loop - Initialize            0.1453 s
+            UCPF                                   11.5707 s
+            NRS                                   809.6222
+              NRS - Initialize                      0.0002 s
+              NRS - Boundary conditions 1           0.1017 s
+              UPBS                                163.8359
+                UPBS (FEM) - Initialize             0.0005 s
+                UPBS (FEM) - Element Loop         163.8216 s
+                UPBS (CPF)                          0.0001 s
+              AFD (FEM)                             1.8598 s
+              AVIF                                 17.5324
+                AVIF (FEM)                         17.4518 s
+                AVIF (CPF)                          0.0697 s
+              NRS - Boundary conditions 2           0.0068 s
+              NRS - Compute residual                0.0820
+              NRS - Copy initial guess              0.0053 s
+              CGI                                 625.9595
+            UPBS                                  165.6390
+              UPBS (FEM) - Initialize               0.0006 s
+              UPBS (FEM) - Element Loop           165.5640 s
+              UPBS (CPF)                            0.0001 s
+            AVIF                                   17.4895
+              AVIF (FEM)                           17.4084 s
+              AVIF (CPF)                            0.0695 s
+            AOTSQ - NR loop - Boundary conditions   0.0068 s
+            AOTSQ - NR loop - Compute residual      0.0406 s
+
+real	19m35.840s
+user	19m29.157s
+sys	0m1.685s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+And the Parsecsingle facesim benchmark has completed at 12:48
+parsecsingle.sh: Telling teaplant to cycle log files
+parsecsingle.sh: Downloading data from the power meter
+parsecsingle.sh: Data collection complete

@@ -1,0 +1,98 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.7)
+The top-level auxiliary file: prospectus.aux
+The style file: template/acmtrans/acmtrans.bst
+A level-1 auxiliary file: chapter-introduction.aux
+A level-1 auxiliary file: chapter-related.aux
+A level-1 auxiliary file: chapter-systemmodel.aux
+A level-1 auxiliary file: chapter-prediction.aux
+A level-1 auxiliary file: chapter-scheduling.aux
+A level-1 auxiliary file: chapter-evaluation.aux
+A level-1 auxiliary file: chapter-futures.aux
+Database file #1: prospectus.bib.bib
+Warning--entry type for "WattsUp2006a" isn't style-file defined
+--line 1708 of file prospectus.bib.bib
+Warning--no number and no volume in Bellosa2003
+Warning--page numbers missing in Bellosa2003
+Warning--no number and no volume in Bhattacharjee2009
+Warning--no number and no volume in Bircher2007
+Warning--empty address in Bowman1997
+Warning--no number and no volume in Coskun2008
+Warning--no number and no volume in Coskun2008a
+Warning--empty publisher in Economou2006
+Warning--empty address in Economou2006
+Warning--empty publisher in Fan2007
+Warning--empty address in Fan2007
+Warning--empty publisher in Heath2005
+Warning--empty address in Heath2005
+Warning--page numbers missing in spec2006
+Warning--empty year in Isci2006
+Warning--no number and no volume in Isci2006
+Warning--no number and no volume in Isci2003a
+Warning--no number and no volume in Isci2003b
+Warning--empty publisher in Kadayif2001
+Warning--empty address in Kadayif2001
+Warning--no number and no volume in Kumar2006
+Warning--no number and no volume in Kursun2006
+Warning--page numbers missing in Kursun2006
+Warning--no number and no volume in Lee2005
+Warning--page numbers missing in Lee2005
+Warning--no number and no volume in Lewis2008
+Warning--no number and no volume in Lewis2010
+Warning--page numbers missing in Lewis2010
+Warning--no number and no volume in London2001
+Warning--page numbers missing in London2001
+Warning--no number and no volume in McCalpin1995
+Warning--empty address in McKusick2004
+Warning--empty year in Merkel2008b
+Warning--no number and no volume in Merkel2008b
+Warning--page numbers missing in Merkel2008b
+Warning--no number and no volume in Merkel2008a
+Warning--no number and no volume in Reich2010
+Warning--page numbers missing in Reich2010
+Warning--empty publisher in Rivoire2008b
+Warning--empty address in Rivoire2008b
+Warning--no number and no volume in Turlach1993
+Warning--no number and no volume in Yang2008
+Warning--no number and no volume in Yao1995
+You've used 67 entries,
+            2969 wiz_defined-function locations,
+            1120 strings with 17413 characters,
+and the built_in function-call counts, 46466 in all, are:
+= -- 3848
+> -- 3549
+< -- 5
++ -- 1047
+- -- 1190
+* -- 4342
+:= -- 8544
+add.period$ -- 277
+call.type$ -- 67
+change.case$ -- 489
+chr.to.int$ -- 65
+cite$ -- 110
+duplicate$ -- 1271
+empty$ -- 2664
+format.name$ -- 1368
+if$ -- 8576
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 69
+newline$ -- 334
+num.names$ -- 666
+pop$ -- 413
+preamble$ -- 1
+purify$ -- 898
+quote$ -- 0
+skip$ -- 1295
+stack$ -- 0
+substring$ -- 2146
+swap$ -- 402
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1262
+warning$ -- 43
+while$ -- 618
+width$ -- 0
+write$ -- 899
+(There were 44 warnings)

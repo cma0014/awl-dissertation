@@ -1,0 +1,266 @@
+%
+% File:     prospectus.tex
+% Author:   awl8049
+% Revision: $Revision: 1.7 $
+%
+% Document based on the template for thesis and dissertations
+% developed by Steven White and Malcolm Hutson.
+
+\documentclass[12pt]{report}	% The documentclass must be ``report''.
+
+% Dissertation package style file.
+\usepackage{template/uldiss}  		
+
+\usepackage{amsmath,amsthm,amsfonts,amscd} % Some packages to write mathematics.
+\usepackage{eucal} % Euler fonts
+\usepackage{verbatim} % Allows quoting source with commands.
+\usepackage{listings}
+\lstloadlanguages{Matlab,C++,C,Pascal}
+\lstset{
+         basicstyle=\footnotesize\ttfamily, 
+         %numbers=left,              
+         numberstyle=\tiny,          
+         %stepnumber=2,              
+         numbersep=5pt,              
+         tabsize=2,                  
+         extendedchars=true,         
+         breaklines=true,            
+         keywordstyle=textbf,    
+         stringstyle=\ttfamily, 
+         showspaces=false,       
+         showtabs=false,         
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false  
+ }
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg,.pdf}
+\graphicspath{{graphics/}}
+\usepackage[caption=false,labelfont=sf,textfont=sf,captionskip=5pt]{subfig}
+%\usepackage{fixltx2e}
+
+%\usepackage{draftwatermark}		% Uncomment this line to have the
+				% word, "DRAFT," as a background
+				% "watermark" on all of the pages of
+				% of your draft versions. When ready
+				% to generate your final copy, re-comment
+				% it out with a percent sign to remove
+				% the word draft before you run
+				% latex for the last time.
+\newcommand{\equationname}{Equation}
+\newcommand{\equationnames}{Equations}
+\newcommand{\figurenames}{Figures}
+%\newcommand{\figurename}{Figure}
+
+% Uncomment one of the following depending upon the type of document
+% you are producing
+\prospectus
+%\dissertation
+%\masterthesis
+%\masterreport
+
+\cacscmps
+
+%
+% Basic Information 
+%
+
+\author{Adam Wade Lewis}
+  % Your name how it should normally appear across the document.
+  % The graduate school requires that your name always appear identically
+  %   every time that it is used. To help, we recommend use \theauthor
+  %   wherever your name should be printed for consistency.
+
+\properauthor{Lewis, Adam Wade}
+  % Your proper name for alphabetizing. (Used in the abstract.)
+  % Last, First Middle Suffix
+
+\title{Energy~Conservation~and~Thermal~Management in~High-Performance
+  Server~Architectures}
+  % The title of your thesis/dissertation. Use a tilde (~) for any
+  %   spaces that should not be broken at line breaks.
+
+\dean{C. E. Palmer}
+  % The Dean of the Graduate School
+
+\degree{Doctor of Philosophy}
+\major{Computer Science}
+\graduationmonth{Spring}      
+\graduationyear{2011}   
+  
+\previousdegrees{Bachelor of Arts, The University of the South, 1986;
+  Master of Science, University of Tennessee at Chattanooga, 1989; Doctor of Philosophy, University of Louisiana at Lafayette, \thegraduationmonth \ \thegraduationyear}
+
+% LaTeX doesn't have a good way to count words in section, use word
+% counting functions in your favorite editor and insert result here
+\abstractwordcount{120}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Enter names of the member(s) of your committee. 
+% Put one name per line with the name in square brackets. 
+% The name on the last line, however, must be in curly braces.
+% NOTE: The first member should be your comittee chairr.
+% NOTE: Maximum six members. Minimum one member (supervisor).
+%
+\committeemembers
+         [Nian-Feng Tzeng]
+         [Magdy Bayoumi]
+         [Dmitri Perkins]
+         {Ashok Kumar}
+	
+\committeememberstitle
+    [Professor of Computer Engineering]
+    [Head and Professor of Computer Engineering]
+    [Associate Professor of Computer Science]
+    {Assistant Professor of Computer Science}
+
+%\supervisortitle{Dr.}   
+
+\hyphenation{FORTRAN Hy-phen-a-tion}
+%\hyphenpenalty=100000
+
+
+%\singlespacing
+%\oneandonehalfspacing
+
+%\singlespacequote
+%\oneandonehalfspacequote
+
+%\topmargin 0.125in	% Adjust this value if the PostScript file output
+			% of your dissertation has incorrect top and 
+			% bottom margins. Print a copy of at least one
+			% full page of your dissertation (not the first
+			% page of a chapter) and measure the top and
+			% bottom margins with a ruler. You must have
+			% a top margin of 1.5" and a bottom margin of
+			% at least 1.25". The page numbers must be at
+			% least 1.00" from the bottom of the page.
+			% If the margins are not correct, adjust this
+			% value accordingly and re-compile and print again.
+			%
+			% The default value is 0.125" 
+
+
+\makeindex              % Make the index
+
+\begin{document}
+
+\titlepage              % Produces the title page.
+\copyrightpage          % Produces the copyright page.
+\approvalpage           % Produces the approval page
+
+%
+% Dedication, epigraph, and/or acknowledgments are optional, but must
+% occur here.
+%
+% \begin{dedication}
+% Dedicated to my parents.
+% \end{dedication}
+
+% \begin{epigraph}
+% Never travel without a towel.\\
+% --Douglas Adams, \emph{The Hitchhiker's Guide to the Galaxy}, 1980
+% \end{epigraph}
+
+% \begin{acknowledgments}		% Optional
+
+% \end{acknowledgments}
+
+\tableofcontents 
+\listoftables    
+\listoffigures   
+
+% For really large documents, it's best to use the LaTeX include
+% function to insert each chapter into the document.  If you insist, you can
+% just include each chapter here...
+\include{chapter-introduction}
+\include{chapter-related}
+\include{chapter-systemmodel}
+\include{chapter-prediction}
+\include{chapter-scheduling}
+\include{chapter-evaluation}
+\include{chapter-futures}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix/Appendices                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% If you have only one appendix, use the command \appendix instead
+% of \appendices.
+%
+%\appendix
+%\appendices
+
+%\include{chapter-appendix1}
+%\include{chapter-appendix2}
+
+%
+% Biblography
+%
+%\nocite{*}      % This command causes all items in the               %
+                % bibliographic database to be added to              %
+                % the bibliography, even if they are not             %
+                % explicitly cited in the text.                      %
+
+\bibliography{prospectus.bib}                      
+\index{Bibliography@\emph{Bibliography}}
+%
+% Generate the index.
+%
+\printindex     % Include the index here. Comment out this line      %
+%               % with a percent sign if you do not want an index .  %
+
+
+% \begin{abstract} 
+% Lorem ipsum dolor sit amet, consectetur adipiscing
+% elit. Duis tristique nibh nec enim egestas lobortis. Cum sociis natoque
+% penatibus et magnis dis parturient montes, nascetur ridiculus
+% mus. Praesent vitae lorem a ante congue imperdiet. Aenean gravida lacus
+% ac sem pharetra facilisis laoreet elit facilisis. Integer ullamcorper
+% blandit lorem, at pharetra felis vestibulum a. Cras vitae elit non neque
+% lacinia euismod eget ac orci. Ut nibh ligula, porttitor eget facilisis
+% id, fringilla eu sapien. Vivamus in congue dui. Nunc lacus nunc, ornare
+% eu vulputate quis, auctor id lacus. Ut luctus interdum ligula. Donec ac
+% rhoncus urna. Ut suscipit nulla molestie libero pretium sed lacinia elit
+% commodo. Nulla a neque eget odio consequat bibendum. Aliquam egestas
+% sollicitudin eros at sollicitudin. Proin et ipsum at dolor molestie
+% rutrum vitae et leo.
+% \end{abstract}
+
+% \begin{biography}
+%   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+%   tristique nibh nec enim egestas lobortis. Cum sociis natoque
+%   penatibus et magnis dis parturient montes, nascetur ridiculus
+%   mus. Praesent vitae lorem a ante congue imperdiet. Aenean gravida
+%   lacus ac sem pharetra facilisis laoreet elit facilisis. Integer
+%   ullamcorper blandit lorem, at pharetra felis vestibulum a. Cras
+%   vitae elit non neque lacinia euismod eget ac orci. Ut nibh ligula,
+%   porttitor eget facilisis id, fringilla eu sapien. Vivamus in congue
+%   dui. Nunc lacus nunc, ornare eu vulputate quis, auctor id lacus. Ut
+%   luctus interdum ligula. Donec ac rhoncus urna. Ut suscipit nulla
+%   molestie libero pretium sed lacinia elit commodo. Nulla a neque eget
+%   odio consequat bibendum. Aliquam egestas sollicitudin eros at
+%   sollicitudin. Proin et ipsum at dolor molestie rutrum vitae et leo.
+% \end{biography}
+
+\end{document}
+% The following comment block is used by the different flavors of EMACS and
+% the AUCTEX package to manage multiple documents.  In order for AUCTEX
+% to understand you're working with multiple files, you should define
+% the TeX-master variable as a file local variable that identifies your
+% master document.
+%
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "prospectus.tex"
+%%% End: 

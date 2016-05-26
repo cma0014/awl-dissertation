@@ -1,0 +1,186 @@
+%
+% File:     chapter-introduction.tex
+% Author:   awl8049
+% Revision: $Revision: 2.2 $
+%
+\chapter{Introduction}
+\label{sec:Introduction}
+The upwardly spiraling operating costs of the infrastructure for
+enterprise-scale computing demand efficient power management in data centers.
+It is difficult to achieve efficient power management in
+such environments, as they usually over-provision their power capacity to
+address the worst case scenarios.  A recent study by the United States
+Department of Energy~\cite{DOE2011} reports that energy consumed by
+information technology equipment in data centers accounts for over half
+of an entire facility's energy use.  As servers with multi-core
+processors have become more common in information technology equipment
+used in data centers, opportunities for greater power and thermal
+efficiencies arise from: (1) improved performance with the same power
+and cooling load and (2) consolidation of shared devices onto a single
+processor package. However, applications such as high performance
+computing codes have characteristics that make ineffectual
+techniques that have been used in the past to take advantage of these
+opportunities. This calls for the development of alternative methods
+that better reflect the quantitative relationship between power
+consumption and thermal envelope at the system level and better optimize
+the use of deployed power capacity in the data center.
+
+Current AMD and Intel processors employ different techniques for
+processor-level power management~\cite{AMD2008b,Intel2009}. In general,
+those techniques take advantage of the fact that reducing switching
+activity within the processor lowers energy consumption, and that
+application performance can be adjusted to utilize otherwise idle time
+slacks on the processor for energy savings~\cite{Contreras2005}. Modern
+processors crudely manage thermal emergencies through Dynamic Thermal
+Management (DTM), where the processor monitors the die temperature and
+dynamically adjusts the processor voltage and frequency (known as
+Dynamic Voltage and Frequency Scaling (DVFS)) to throttle down the
+processor whenever necessary. However, the use of DVFS tends to cause
+significant negative impacts on application performance and system
+reliability \cite{Donald2006,Bircher2008,Coskun2008d}. Power profiles of
+the Intel Pentium architecture have been studied for workstations
+\cite{Isci2003a,Isci2003b,Isci2006} and servers
+\cite{Bircher2004,Bircher2007,Lee2005}. Recent investigation into the
+power profiles of servers based on the NUMA architecture (for example,
+the AMD64 \cite{AMD2007}, the Intel Nehalem~\cite{Intel2009}, and IBM
+POWER7~processors~\cite{Ware2010,Brochard2010}) indicates that managing
+server power profiles is complicated by the existence of multiple cores
+per
+processor~\cite{Kansal2010,Tsirogiannis2010,Lewis2010,McCullough2011}.
+
+The current generation of operating systems treats the cores in
+multi-core and virtualized multi-threaded processors (like those with
+Intel's HyperThreading technology) as distinct logical units, called
+\textit{logical cores}, which are scheduled independently.  However,
+dependency and contention exist in shared resources among those logical
+cores, and hence they need to be taken into account upon their
+scheduling to address performance and energy efficiency.  One approach
+based on software optimization at the application level aimed to make
+codes themselves more aware of existing dependencies~\cite{Khan2011}.
+While effective, such an approach may not be applicable in all cases and
+does not possess economies of scale.  It thus calls for the need of
+intelligent, thermal-aware load balancing and scheduling within the
+operating system, achievable via modeling full-system energy consumption
+based on computational load for effectively predicting future energy
+consumption and its associated thermal change.
+
+To this end, we arrive at a energy and thermal model which relates server energy
+consumption to the overall thermal envelope, establishing an energy
+relationship between workload and overall system thermodynamics.
+Our model treats a single server blade as one closed black-box system,
+relying on the fact that measured energy input into the system can be a
+function of the work done by the system (in executing its computational
+tasks) and of residual thermal energy given off by the system during
+execution.  It utilizes the hardware performance counters (PeCs) of the
+server for relating power consumption to its consequent thermal
+envelope, enabling dynamical control of the thermal footprint under
+given workload.  With PeCs, the computational load of a server can be
+estimated using relevant PeC readings together with a set of operating
+system's performance metrics. The selection of PeCs and metrics is
+guided by the observation that the computational load in processors that
+use a Non-Uniform Memory Access (NUMA) architecture can be estimated by
+the amount of data transferred to/from memory and amongst processors
+over system buses. The result is that the underlying system is a dynamic
+system whose behavior can be described as a system of deterministic
+differential equations whose solution can be estimated via time-series
+approximation. Our energy consumption prediction treats observed
+readings of available PeCs in a discrete time series and resorts to
+statistical approximation to compensate for those model components that
+cannot be determined exactly.
+
+Generally, a time series model observes past outcomes of a physical
+phenomenon to anticipate future values of that phenomenon.  Many time
+series-based models of processor energy consumption have been considered
+\cite{Rivoire2008a,Bhattacharjee2009,Powell2009,Reich2010,Bircher2011},
+with recent work extending such models into the thermal domain
+\cite{Coskun2008}.  Time series are typically handled in three broad
+classes of mechanisms: auto-regressive, integrated, and moving average
+models \cite{Box1994}.  Each of these classes assumes a \textit{linear
+  relationship} between the dependent variable(s) and previous data
+points. However, energy consumption, ambient temperature, processor die
+temperatures, and CPU utilization in computers can be affected by more
+than just past values of those measurements made in isolation from each
+other~\cite{Bertran2010,McCullough2011}.  Our analysis of experimental
+measurements of key processor PeC readings and performance metrics
+reveals that the measured readings and metrics of a server over the time
+series do not possess linearity and are \textit{chaotic in nature}.
+
+This chaotic nature may result from the behavior of various server
+components, like DC-DC switching power converters commonly used by power
+circuitry in modern computers~\cite{Hamill1997,Tse2002}.  It thus leads
+to our development of Chaotic Attractor Predictor (CAPs) that model
+the dynamics of the underlying system of differential equations. Hence,
+our thermal model takes into account key thermal indicators (like ambient
+temperatures and die temperatures) and system performance metrics (like
+performance counters) for system energy consumption estimation within a
+given power and thermal envelope.  
+
+Servers based on the HyperTransport bus \cite{HT2008} and the Intel
+QuickPath Links \cite{Intel2009} are chosen as representatives to
+validate our CAPs for estimating run-time power consumption and thermal
+prediction.  CAPs takes into account key thermal indicators (like
+ambient temperatures and die temperatures) and system performance
+metrics (like performance counters) for system energy consumption
+estimation within a given power and thermal envelope. It captures the
+chaotic dynamics of a server system without complex and time-consuming
+corrective steps usually required by linear prediction to account for
+the effects of non-linear and chaotic behavior in the system, exhibiting
+polynomial time complexity.  
+
+Starting with CAPs as a predictive tool, effective scheduling methods
+can be constructed to dispatch jobs to confine server power consumption
+within a given power budget and thermal envelope while avoiding
+detrimental impact on thread execution performance.  Our scheduling
+techniques for preventive thermal management minimizes server energy
+consumption by (1) for each logical processor, selecting the next thread
+to execute based upon an estimate of which thread will have the largest
+thermal impact in the next quantum, and (2) adjusting the load balance
+allocation of threads to available logical processors to migrate
+workload away from thermally overextended resources on the processor.
+As opposed to prior work on thermal scheduling
+\cite{Gomaa2004,Choi2007,Yang2008,Sarood2011} that focused on bounding
+temperatures below critical thresholds, our work considers how we can
+schedule high utilization workloads so as to manage average temperatures
+via balancing of thermal load across logical processors.
+
+The component of the operating system most aware of the existence of
+multiple cores is the thread scheduling algorithm.  The scheduler is
+responsible for ensuring that all of the cores across all processors in
+a system is kept busy; the scheduler must be able to efficiently migrate
+the state of threads across processors regardless if that migration
+remains on a core or across processors.  Schedulers in the current
+generation of operating systems aid in processor thermal management by
+assigning workloads to logical processors as tightly as possible to
+provide more opportunities for power management to shutdown unused
+resources. However, compute bound server workloads common to the data
+center fully utilize available system resources, rendering these schemes
+ineffectual.  Our Thermally-Aware Scheduler (TAS) addresses this problem
+by attempting to thermally balance the system with as little impact on
+performance as possible.
+
+Our TAS is demonstrated and evaluated by adding thermal-awareness to the
+existing scheduler in the FreeBSD operating system executed on Intel
+Xeon (Woodcrest) processors.  Benchmarks from SPEC
+CPU2006~\cite{Henning2006} and PARSEC~\cite{Bienia2011} suites which
+represent typical application server workloads are chosen to evaluate
+our TAS.  The gathered results reveal that TAS achieves reduction in
+mean core on-die temperatures by up to 12.8$^{\circ}$C\ (from
+44.8$^\circ$C down to 32.0$^\circ$C) under PARSEC benchmarks (which have
+multi-threaded workloads) and by up to 3.3$^{\circ}$C\ under mixes of
+SPEC CPU2006 benchmarks for concurrent execution on all four server
+cores, while experiencing only 1\% to 4\% performance degradation.  Our
+TAS compares favorably with a recent energy-aware scheduling technique
+\cite{Sarood2011}, which gets core temperature reduction by up to
+4$^\circ$C (from 63$^\circ$C down to 59$^\circ$C) when four parallel
+scientific applications compatible to the PARSEC benchmarks were executed on
+a physical 4-core Intel Xeon 5520 processor (similar to our testbed
+processor).
+
+% Following comment block used by GNU-EMACS and AUCTEX packages
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "dissertation.tex"
+%%% TeX-PDF-mode: t
+%%% TeX-source-correlate-mode: t
+%%% End: 

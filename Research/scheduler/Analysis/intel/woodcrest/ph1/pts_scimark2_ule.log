@@ -1,0 +1,132 @@
+phoronix.sh: Executing pts/scimark2 benchmark.
+phoronix.sh: Destination directory is /usr/home/awl8049/scheduler/
+phoronix.sh: Using pts_scimark2_ule as id for this run
+phoronix.sh: Clearing memory on power meter
+Restarting teaplant.
+And now we start the Phoronix pts/scimark2 benchmark at 07:07
+
+
+SciMark:
+    pts/scimark2-1.1.1 [Computational Test: Composite]
+    Test 1 of 6
+    Expected Trial Run Count: 4
+        Started Run 1 @ 13:08:00phoronix.sh: Executing pts/scimark2 benchmark.
+phoronix.sh: Destination directory is /usr/home/awl8049/scheduler/
+phoronix.sh: Using pts_scimark2_ule as id for this run
+phoronix.sh: Clearing memory on power meter
+Restarting teaplant.
+And now we start the Phoronix pts/scimark2 benchmark at 07:09
+
+
+SciMark:
+    pts/scimark2-1.1.1 [Computational Test: Composite]
+    Test 1 of 6
+    Expected Trial Run Count: 4
+        Started Run 1 @ 13:09:19
+        Started Run 2 @ 13:09:42
+        Started Run 3 @ 13:10:05
+        Started Run 4 @ 13:10:28  [Std. Dev: 0.30%]
+
+    Test Results:
+        267.79
+        268.58
+        268.97
+        269.73
+
+    Average: 268.77 Mflops
+
+
+SciMark:
+    pts/scimark2-1.1.1 [Computational Test: Fast Fourier Transform]
+    Test 2 of 6
+    Expected Trial Run Count: 4
+        Started Run 1 @ 13:10:49
+        Started Run 2 @ 13:10:49
+        Started Run 3 @ 13:10:49
+        Started Run 4 @ 13:10:49  [Std. Dev: 0.82%]
+
+    Test Results:
+        28.11
+        27.94
+        27.71
+        27.6
+
+    Average: 27.84 Mflops
+
+
+SciMark:
+    pts/scimark2-1.1.1 [Computational Test: Jacobi Successive Over-Relaxation]
+    Test 3 of 6
+    Expected Trial Run Count: 4
+        Started Run 1 @ 13:10:49
+        Started Run 2 @ 13:10:49
+        Started Run 3 @ 13:10:49
+        Started Run 4 @ 13:10:49  [Std. Dev: 0.34%]
+
+    Test Results:
+        537.58
+        534.65
+        537.58
+        539.05
+
+    Average: 537.22 Mflops
+
+
+SciMark:
+    pts/scimark2-1.1.1 [Computational Test: Monte Carlo]
+    Test 4 of 6
+    Expected Trial Run Count: 4
+        Started Run 1 @ 13:10:49
+        Started Run 2 @ 13:10:49
+        Started Run 3 @ 13:10:49
+        Started Run 4 @ 13:10:49  [Std. Dev: 0.18%]
+
+    Test Results:
+        243.69
+        243.69
+        243.69
+        244.55
+
+    Average: 243.91 Mflops
+
+
+SciMark:
+    pts/scimark2-1.1.1 [Computational Test: Sparse Matrix Multiply]
+    Test 5 of 6
+    Expected Trial Run Count: 4
+        Started Run 1 @ 13:10:49
+        Started Run 2 @ 13:10:49
+        Started Run 3 @ 13:10:49
+        Started Run 4 @ 13:10:49  [Std. Dev: 1.86%]
+
+    Test Results:
+        217.01
+        225.21
+        224.44
+        225.99
+
+    Average: 223.16 Mflops
+
+
+SciMark:
+    pts/scimark2-1.1.1 [Computational Test: Dense LU Matrix Factorization]
+    Test 6 of 6
+    Expected Trial Run Count: 4
+        Started Run 1 @ 13:10:49
+        Started Run 2 @ 13:10:49
+        Started Run 3 @ 13:10:49
+        Started Run 4 @ 13:10:49  [Std. Dev: 0.18%]
+
+    Test Results:
+        312.58
+        311.44
+        311.44
+        311.44
+
+    Average: 311.73 Mflops
+
+
+And the Phoronix pts/scimark2 benchmark has completed at 
+phoronix.sh: Telling teaplant to cycle log files
+phoronix.sh: Downloading data from the power meter
+phoronix.sh: Data collection complete

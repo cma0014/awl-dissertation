@@ -1,0 +1,37 @@
+Auto-regression - Intel
+error data for building model
+Error statistics for each benchmark:
+
+bm mix max | mean(p) median(p) std(p) var(p) | %error mean(relerr) median(relerr) max(relerror) |  rmse
+bzip2 |  41.9700  69.9600 |   5.9893   0.0599   0.0480   0.3243 |   4.2982
+cactusadm |  42.0900  73.9800 |   6.2115   0.0621   0.0473   0.2943 |   4.6941
+gromacs |  42.0300  65.6100 |   4.5545   0.0455   0.0381   0.3719 |   3.1626
+lbm |  41.8080  70.7700 |   7.2391   0.0724   0.0667   0.3026 |   5.3644
+mcf |  42.1500  75.6000 |   6.9636   0.0696   0.0540   0.3125 |   5.5299
+leslie3d |  40.5225  73.4700 |   5.9960   0.0600   0.0490   0.2702 |   4.4613
+
+Error statistics for analysis of model
+bm mix max | mean(p) median(p) std(p) var(p) | %error mean(relerr) median(relerr) max(relerror) |  rmse
+astar |  41.0160  72.3000 |   7.1300   0.0713   0.0599   0.2853 |   5.0026
+gamess |  41.9700  71.7000 |   7.5398   0.0754   0.0578   0.4458 |   5.5934
+gobmk |  40.3680  69.2100 |   6.8372   0.0684   0.0531   0.2779 |   4.8306
+zeusmp |  38.9700  75.3900 |   9.6030   0.0960   0.0769   0.3184 |
+7.7534
+
+Local Polynomial Regression - Intel
+error data for building model
+bm mix max | mean(p) median(p) std(p) var(p) | %error mean(relerr) median(relerr) max(relerror) |  rmse
+bzip2 |  41.9700  69.9600 |   1.2970   0.0130   0.0049   0.1739 |   1.4212
+cactusadm |  42.0900  73.9800 |   1.8174   0.0182   0.0063   0.2593 |   1.9007
+gromacs |  42.0300  65.6100 |   1.2434   0.0124   0.0056   0.1489 |   1.1990
+lbm |  41.8080  70.7700 |   0.7378   0.0074   0.0030   0.2380 |   1.0346
+leslie3d |  40.5225  73.4700 |   2.1605   0.0216   0.0136   0.2291 |   2.0807
+perlbench |  37.5120  66.5400 |   2.5309   0.0253   0.0112   0.2319 |
+2.3159
+
+error data for analysis of model
+bm mix max | mean(p) median(p) std(p) var(p) | %error mean(relerr) median(relerr) max(relerror) |  rmse
+astar |  41.0160  72.3000 |   2.3786   0.0238   0.0137   0.2093 |   1.9668
+gamess |  41.9700  71.7000 |   1.5156   0.0152   0.0056   0.1486 |   1.6144
+gobmk |  40.3680  69.2100 |   2.3632   0.0236   0.0098   0.2147 |   2.1314
+zeusmp |  38.9700  75.3900 |   4.3789   0.0438   0.0340   0.2059 |   3.4376

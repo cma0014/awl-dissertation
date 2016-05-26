@@ -1,0 +1,20 @@
+TEST DESCRIPTION
+Add a 5 minute pause before starting the system to give system time
+to reach a steady state.   Add a 10 minute pause afterwards to give system
+time to return to that steady state.
+
+Benchmarks used: bzip2 gcc povray catcusadm
+
+Test procedure:
+- Idle machine at default run level (run level 3)
+- Confirm that neither ipmitool(1) or cpustat(1) are running
+- Use su(1) command to switch to root user
+- Start benchmark using the runbench.sh shell script
+--- Parameters: runid, 5s sample interval, amd architecture
+- Wait until completion of benchmark
+- Manually terminate cpustat(1)
+
+Notes:
+- Added a 5m pause at the start of the process and 10m process after the benchmark
+  completes.
+

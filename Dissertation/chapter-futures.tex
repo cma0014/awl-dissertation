@@ -1,0 +1,61 @@
+\chapter{Conclusions}
+\label{chp:conclusions}
+A fast and accurate model for energy consumption and thermal envelope in
+a server is critical to understanding and solving the power management
+challenges unique in dense servers.  In this paper, we have introduced a
+comprehensive model of energy consumption by servers as a continuous
+system of differential equations.  The model measures energy input to
+the system as a function of the work done for completing tasks being
+gauged and the residual thermal energy given off by the system as a
+result.  Traffic on the system bus, misses in the L2 cache, CPU
+temperatures, and ambient temperatures are combined together to create a
+model, which can be employed to manage the processor thermal envelope.
+
+The model serves as a predictive tool by approximating observed
+performance metrics in a discrete time series for estimating future
+metrics, and thus corresponding energy consumption amounts.  It was
+found through experimental validation that commonly used techniques of
+regressive time series forecasting, while attractive because of their
+simplicity, inadequately capture the non-linear and chaotic dynamics of
+metric readings for typical server systems.  Therefore, a chaotic time
+series approximation for run-time power consumption is adopted to arrive
+at Chaotic Attractor Prediction (CAP), which exhibits polynomial time
+complexity.  Our proposed model is the first step towards building
+solutions for power and thermal management in data centers usually
+housing many servers.
+\section{Future Directions}
+\label{sec:future-directions}
+The topics of power and thermal management in large scale computing have
+only recently begun to receive systematic attention.  As such, we
+anticipate that the work in this Prospectus will serve as a starting
+point for a longer-term research program.   Examples of longer-term
+questions that will need to be addressed include:
+\begin{itemize}
+\item Our Thermal-Aware Scheduler considers scheduling only within a single
+  server blade. High-performance computing applications distribute
+  workload across multiple environments using interfaces such as MPI and
+  OpenMP.  A topic for further research is how to extend the TCAP and
+  Thermal-Aware Scheduling into such environments.
+\item A related topic for the future involves the effect of
+  operating-system virtualization on Thermal-Aware Scheduling.  Some
+  attention has been applied to this area in recent work
+  \cite{Merkel2010} but questions remain open considering issues of
+  scheduler interference between host and virtual operating systems and
+  the impact of virtualization on power management in the clustered,
+  grid, and cloud environment.
+\item An interesting extension of the system model described in
+  \ref{chp:modelstruct} involves considering whether we can quantify the
+  energy expended per bit transfer as data moves through the
+  system. From this, we can build a more detailed analytical model of
+  the thermodynamics of the system than the current practice of
+  RC-thermal modeling \cite{Skadron2004}.  
+\end{itemize}
+
+% Following comment block used by GNU-EMACS and AUCTEX packages
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "dissertation.tex"
+%%% TeX-PDF-mode: t
+%%% TeX-source-correlate-mode: t
+%%% End: 

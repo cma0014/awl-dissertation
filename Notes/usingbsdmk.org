@@ -1,0 +1,54 @@
+#+TITLE:     usingbsdmk.org
+#+AUTHOR:    awl8049
+#+EMAIL:     awlewis@cacs.louisiana.edu
+#+DATE:      2011-03-11 Fri
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT: 
+* Understanding the FreeBSD make files 
+FreeBSD provides the developer with a collection of makefiles to automate
+various tasks. On most FreeBSD systems you'll find
+them in the /usr/share/mk directory.
+** Using the system make files
+While there are many files available in /usr/share/mk, the most commonly
+used are the files for building programs and libraries.
+*** Building program executables using bsd.prog.mk
+The simplest program Makefile is:
+
+# $FreeBSD$
+#+BEGIN_EXAMPLE
+PROG=   foo
+
+.include <bsd.prog.mk>
+#+END_EXAMPLE
+
+*** Building system libraries and shared objects using bsd.lib.mk
+
+The simplest library Makefile is:
+#+BEGIN_EXAMPLE
+# $FreeBSD$
+
+LIB=	foo 
+SHLIB_MAJOR= 1 
+MAN=	libfoo.3 
+SRCS=	foo.c
+
+.include <bsd.lib.mk> 
+#+END_EXAMPLE
+**** Things to remember about working with libraries
+1) The library name is set by the LIB variable.  The result will be a
+   library named lib$LIB.a.
+2) If you want a static library, define the NO_PIC variable
+** Important global considerations
+1) You need to always put the ".include" as the last entry in the file.
+2) Follow the style guidelines in the style.Makefile(5) man page.
+3) Look for examples. Much of what you want to do has already been done
+   by other people.

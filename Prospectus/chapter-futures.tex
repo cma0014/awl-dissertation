@@ -1,0 +1,143 @@
+\chapter{Current State, Plan for Completion, and  Future Plans}
+\label{chp:statusandplans}
+
+We presented in \citeN{Lewis2008,Lewis2010,Lewis2011} a full-system
+power and thermal mode that provides a run-time system-wide prediction
+of energy consumption on server blades as a continuous system of
+differential equations.  Using chaotic time series, we construct
+discrete approximations of the solution of this system so as to provide
+a full system approximation to the thermal behavior of the processor.
+In this prospectus, we propose to use this predictor to implement a
+prototype of the scheduler described in Chapter~\ref{chp:schedule} that
+is predicted to have a measurable reduction in energy consumption and
+thermal stress as compared to existing thread schedulers.
+
+\begin{table}
+\footnotesize
+\caption{Completion Task List}
+\label{tab:completeplan}
+\centering
+% BEGIN RECEIVE ORGTBL completeplan
+\begin{tabular}{rl}
+Id & Task \\
+\hline
+\hline
+1 & Respond to review comments for \cite{Lewis2011}. \\
+2 & Implement scheduler prototype in FreeBSD. \\
+3 & Evaluate scheduler performance using parallel benchmarks. \\
+4 & Document results and submit to archival journal. \\
+5 & Create dissertation from this document \& output from Task 4. \\
+6 & Defend dissertation. \\
+7 & Respond to comments from committee and Graduate School editor. \\
+8 & Submit final version of document. \\
+\hline
+\end{tabular}
+% END RECEIVE ORGTBL completeplan
+\end{table}
+\begin{comment}
+#+ORGTBL: SEND completeplan orgtbl-to-latex :splice nil :skip 0
+| Id | Task                                                           |
+|----+----------------------------------------------------------------|
+|----+----------------------------------------------------------------|
+|  1 | Respond to review comments for \cite{Lewis2011}.               |
+|  2 | Implement scheduler prototype in FreeBSD.                      |
+|  3 | Evaluate scheduler performance using parallel benchmarks.      |
+|  4 | Document results and submit to archival journal.               |
+|  5 | Create dissertation from this document \& output from Task 4.  |
+|  6 | Defend dissertation.                                           |
+|  7 | Respond to comments from committee and Graduate School editor. |
+|  8 | Submit final version of document.                              |
+|----+----------------------------------------------------------------|
+\end{comment}
+
+\section{Plan for Completion}
+\label{sec:completionplans}
+Table~\ref{tab:completeplan} lists the tasks required to complete this
+work.  Task~\#1 addresses any required changes that arise from the peer
+review of \cite{Lewis2011}.   
+
+A prototype for the scheduler described in Chapter~\ref{chp:schedule}
+will be implemented for the FreeBSD operating system
+\cite{McKusick2004}.  We use FreeBSD for two reasons: (1) the scheduler
+architecture in FreeBSD is well documented and can be simply modified
+compared to other choices (such as Linux or OpenSolaris), and (2) the
+infrastructure for managing PMCs in FreeBSD has many of the advantages
+of OpenSolaris but is not tied to a specific kernel version as is the
+Linux infrastructure.
+
+The performance of our prototype is considered in Task~\#3.  The
+baseline performance of the scheduler will be determined by examining
+the system performance, thermal behavior, and energy consumption of
+three standard benchmarks suites: (1) SPEC CPU2006 \cite{spec2006}, (2)
+High Performance Linpack(HPL) \cite{Linpack1991}, and (3) the Stream
+memory benchmark \cite{McCalpin1995}.  
+
+\section{Future Directions}
+\label{sec:future-directions}
+The topics of power and thermal management in large scale computing have
+only recently begun to receive systematic attention.  As such, we
+anticipate that the work in this Prospectus will serve as a starting
+point for a longer-term research program.   Examples of longer-term
+questions that will need to be addressed include:
+\begin{itemize}
+\item Our Thermal-Aware Scheduler considers scheduling only within a single
+  server blade. High-performance computing applications distribute
+  workload across multiple environments using interfaces such as MPI and
+  OpenMP.  A topic for further research is how to extend the TCAP and
+  Thermal-Aware Scheduling into such environments.
+\item A related topic for the future involves the effect of
+  operating-system virtualization on Thermal-Aware Scheduling.  Some
+  attention has been applied to this area in recent work
+  \cite{Merkel2010} but questions remain open considering issues of
+  scheduler interference between host and virtual operating systems and
+  the impact of virtualization on power management in the clustered,
+  grid, and cloud environment.
+\item An interesting extension of the system model described in
+  \ref{chp:modelstruct} involves considering whether we can quantify the
+  energy expended per bit transfer as data moves through the
+  system. From this, we can build a more detailed analytical model of
+  the thermodynamics of the system than the current practice of
+  RC-thermal modeling \cite{Skadron2004}.  
+\end{itemize}
+
+\section{Conclusions}
+\label{sec:conclusions}
+A fast and accurate model for energy consumption and thermal envelope in
+a server is critical to understanding and solving the power management
+challenges unique in dense servers.  In this paper, we have introduced a
+comprehensive model of energy consumption by servers as a continuous
+system of differential equations.  The model measures energy input to
+the system as a function of the work done for completing tasks being
+gauged and the residual thermal energy given off by the system as a
+result.  Traffic on the system bus, misses in the L2 cache, CPU
+temperatures, and ambient temperatures are combined together to create a
+model, which can be employed to manage the processor thermal envelope.
+
+The model serves as a predictive tool by approximating observed
+performance metrics in a discrete time series for estimating future
+metrics, and thus corresponding energy consumption amounts.  It was
+found through experimental validation that commonly used techniques of
+regressive time series forecasting, while attractive because of their
+simplicity, inadequately capture the non-linear and chaotic dynamics of
+metric readings for typical server systems.  Therefore, a chaotic time
+series approximation for run-time power consumption is adopted to arrive
+at Chaotic Attractor Prediction (CAP), which exhibits polynomial time
+complexity.  
+
+We extend the CAP concept to the thermal domain through the concept of
+Thermal Chaotic Attractor Prediction (TCAP). Our system model introduced
+three metrics that model the system thermal behavior: Thermal Equivalent
+of Application, Thermal Efficiency, and Thermal Cost.  TCAP is used to
+approximate future values of each of these quantities given the energy
+consumption predicted by CAP.  The thermal predictions are used as
+optimization metrics in our Thermal-Aware Scheduler for thread
+scheduling and load balancing purposes.  Our proposed model is the first
+step towards building solutions for power and thermal management in data
+centers usually housing many servers.
+
+% Following comment block used by GNU-EMACS and AUCTEX packages
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "prospectus.tex"
+%%% End: 

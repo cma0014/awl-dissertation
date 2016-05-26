@@ -1,0 +1,7 @@
+function w5=squish(array)
+    l=size(array)
+    for i=1:5:l,
+        w5(count)=sum(array(i:i+5));
+    end
+    end
+        

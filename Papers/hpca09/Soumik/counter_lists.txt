@@ -1,0 +1,105 @@
+Logging sequence :
+iostat -> vmstat -> page fault -> kernel memory -> disk data
+
+
+IPMI variables :
+
+CPU_0_Temp 
+CPU_1_Temp 
+Ambient_Temp0 
+Ambient_Temp1 
+Blower_Fan_0 
+Blower_Fan_1 
+Axial_Fan_0 
+Axial_Fan_1
+
+IOSTAT variables :
+
+extended device statistics                    tty         cpu
+device    r/s    w/s   kr/s   kw/s wait actv  svc_t  %w  %b  tin tout  us sy wt id
+sd0       0.1    2.0    5.0   20.6  0.0  0.0    8.5   0   0    6   17  21  3  0 76
+sd1       0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+sd2       0.0    0.0    0.0    0.0  0.0  0.0    1.0   0   0 
+nfs1      0.0    0.0    0.0    0.0  0.0  0.0    0.0   0   0 
+
+Kernel Memory allocation :
+
+09:17:35 sml_mem   alloc  fail  lg_mem   alloc  fail  ovsz_alloc  fail
+09:17:40 378835136 332523968     0 1349177344 1292909440     0    76648448     0
+
+DISK logging data :
+
+SAR : (ignore) SunOS canfire03 5.11 onnv-gate i86pc    07/12/2009
+
+09:17:35   device        %busy   avque   r+w/s  blks/s  avwait  avserv
+
+09:17:40   nfs1              0     0.0       0       0     0.0     0.0
+           sd0               0     0.0       2      23     4.0     0.5
+           sd0,a             0     0.0       2      23     4.0     0.5
+           sd0,c             0     0.0       0       0     0.0     0.0
+           sd0,i             0     0.0       0       0     0.0     0.0
+           sd0,q             0     0.0       0       0     0.0     0.0
+           sd0,r             0     0.0       0       0     0.0     0.0
+           sd1               0     0.0       0       0     0.0     0.0
+           sd2               0     0.0       0       0     0.0     0.0
+           sd2,a             0     0.0       0       0     0.0     0.0
+           sd2,c             0     0.0       0       0     0.0     0.0
+           sd2,i             0     0.0       0       0     0.0     0.0
+           sd2,j             0     0.0       0       0     0.0     0.0
+           sd2,q             0     0.0       0       0     0.0     0.0
+           sd2,r             0     0.0       0       0     0.0     0.0
+           ehci0,bu          0     0.0       0       0     0.0     0.0
+           ehci0,ct          0     0.0       0       0     0.0     0.0
+           ehci0,in          0     0.0       0       0     0.0     0.0
+           ehci0,is          0     0.0       0       0     0.0     0.0
+           ehci0,to          0     0.0       0       0     0.0     0.0
+           ohci0,bu          0     0.0       0       0     0.0     0.0
+           ohci0,ct          0     0.0       0       0     0.0     0.0
+           ohci0,in          0     0.0       0       0     0.0     0.0
+           ohci0,is          0     0.0       0       0     0.0     0.0
+           ohci0,to          0     0.0       0       0     0.0     0.0
+
+VMSTAT information :
+
+ kthr      memory            page            disk          faults      cpu
+ r b w   swap  free  re  mf pi po fr de sr s0 s1 s2 --   in   sy   cs us sy id
+ 0 0 0 8953196 5855336 99 1755 0 0 0  0  2  2 -0  0  0  661 1387  259 21  3 76
+ 0 0 0 9237684 6099488 150 2550 0 0 0 0  0  2  0  0  0  707 2093  305  0  4 96
+ 0 0 0 9237220 6099228 129 2167 0 0 0 0  0  0  0  0  0  565 1663  255  0  4 96
+
+POWER information :
+
+RunId,NumDataLines,SeqNum,Watts,Amps,WattHours,Cost,MoKWh,MoCost,MaxWatts,MaxVolts,MaxAmps,MinWatts,MinVolts,MinAmps,Factor,DutyCycle,PowerCycle
+bzip2.cactusadm,203,0,2062,1146,1866,0,0,0,0,2062,1146,1866,2062,1146,1866,96,0,1,0,0
+bzip2.cactusadm,203,1,1895,1148,1712,5,0,0,0,2078,1149,1870,1850,1146,1673,96,100,0,0,0
+
+Performance counters :
+
+pic0: pic0=PAPI_l2_dcm
+pic1: pic1=PAPI_l2_icm
+pic2: pic0=NB_ht_bus0_bandwidth,umask=0x07
+pic3: pic1=NB_ht_bus1_bandwidth,umask=0x07,sys
+   time cpu event      pic0      pic1 
+  5.002   0  tick     28500     40874  # pic0=PAPI_l2_dcm,pic1=PAPI_l2_icm
+  5.012   3  tick     41464     54741  # pic0=PAPI_l2_dcm,pic1=PAPI_l2_icm
+  5.013   2  tick     33189     45436  # pic0=PAPI_l2_dcm,pic1=PAPI_l2_icm
+ 10.002   1  tick   1483724         0  # pic0=NB_ht_bus0_bandwidth,umask=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,sys
+ 10.012   3  tick         0  33849564  # pic0=NB_ht_bus0_bandwidth,umask=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,sys
+ 10.013   2  tick         0  33856763  # pic0=NB_ht_bus0_bandwidth,umask=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,sys
+ 15.002   0  tick     19571     35195  # pic0=PAPI_l2_dcm,pic1=PAPI_l2_icm
+ 15.012   3  tick     15760     23779  # pic0=PAPI_l2_dcm,pic1=PAPI_l2_icm
+ 15.013   2  tick     25533     28601  # pic0=PAPI_l2_dcm,pic1=PAPI_l2_icm
+ 20.002   0  tick   1511142         0  # pic0=NB_ht_bus0_bandwidth,umask=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,sys
+ 20.012   3  tick         0  32356432  # pic0=NB_ht_bus0_bandwidth,umask=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,sys
+ 20.013   2  tick         0  32397067  # pic0=NB_ht_bus0_bandwidth,umask=0x07,pic1=NB_ht_bus1_bandwidth,umask=0x07,sys
+
+
+
+PAGE fault :
+
+SunOS canfire03 5.11 onnv-gate i86pc    07/12/2009
+
+09:17:35  pgout/s ppgout/s pgfree/s pgscan/s %ufs_ipf
+09:17:40     0.00     0.00     0.00     0.00     0.00
+
+

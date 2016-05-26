@@ -1,0 +1,160 @@
+>> aprediction3;
+PHASE 1: CONSOLIDATE DATA FROM BENCHMARKS ===>
+bm: bzip2	 353	 353	 300	 300 add to  ProcPwrTotal dataTotal and counts
+bm: cactusadm	 408	 408	 353	 353 add to  ProcPwrTotal dataTotal and counts
+bm: gromac	 304	 304	 408	 408 add to ProcPwr data
+bm: h264ref	 413	 413	 408	 408 add to  ProcPwrTotal dataTotal and counts
+bm: lbm	 367	 367	 413	 413 add to ProcPwr data
+bm: leslie3d	 310	 310	 413	 413 add to ProcPwr data
+Linear regression without interaction terms:
+Beta coefficients for linear model:
+ i     beta
+        0.789947
+       -0.814065
+        0.617593
+        0.509110
+        0.512512
+        0.009598
+       -0.006705
+        0.002672
+        0.002613
+        0.003415
+        0.003550
+        0.027925
+        0.013207
+        0.001239
+        0.000572
+        0.001251
+       -0.000766
+
+Regression coefficent t-test with dfe =   396.00
+ i   Beta         SE          t        pval
+  0.789947  -0.814065   0.617593   0.509110
+  0.512512   0.009598  -0.006705   0.002672
+  0.002613   0.003415   0.003550   0.027925
+  0.013207   0.001239   0.000572   0.001251
+ -0.000766   0.202815   0.175192   0.136878
+  0.106528   0.110393   0.004159   0.003952
+  0.000704   0.000687   0.000679   0.000664
+  0.016756   0.006686   0.000587   0.000551
+  0.001654   0.001655   3.894916  -4.646707
+  4.512004   4.779112   4.642617   2.307572
+ -1.696510   3.794624   3.803562   5.028946
+  5.349323   1.666552   1.975356   2.110361
+  1.038812   0.755910  -0.462766   0.000115
+  0.000005   0.000008   0.000002   0.000005
+  0.021538   0.090575   0.000171   0.000165
+  0.000001   0.000000   0.096394   0.048922
+  0.035454   0.299526   0.450153   0.643786
+R-sq: 9.988115e-01 Adj R-sq;   0.998763
+
+
+Regression ANOVA
+
+Source        df        SS        MS         F         P
+  Regr   16.00 9.233068e+04 5770.67 2.080009e+04    0.00 
+ Resid  396.00 1.098642e+02    0.28 
+ Total  412.00 9.244055e+04
+
+Overriding...
+Before adjustment:
+ 1     0.1000 + 
+ 2    -0.8141 +  Ambient_Temp0
+ 3     0.6176 +  Ambient_Temp1
+ 4     0.4890 +  CPU_0_Temp
+ 5     0.5010 +  CPU_1_Temp
+ 6     0.0096 +  HT1Scaled
+ 7    -0.0067 +  HT2Scaled
+ 8     0.0027 +  cmiss_core0_scaled
+ 9     0.0026 +  cmiss_core1_scaled
+10     0.0034 +  cmiss_core2_scaled
+11     0.0036 +  cmiss_core3_scaled
+12     0.0140 +  disk_read_kbytes
+13     0.0070 +  disk_write_kbytes
+14     0.0012 +  Axial_Fan_0
+15     0.0007 +  Axial_Fan_1
+16     0.0013 +  Blower_Fan_0
+17    -0.0008 +  Blower_Fan_1
+Do you wish to adjust the values of the beta coefficients? (1 -> Yes, 0 -> No (default) Your choice? 0
+No adjustments made
+After adjustment:
+ 1     0.1000 + 
+ 2    -0.8141 +  Ambient_Temp0
+ 3     0.6176 +  Ambient_Temp1
+ 4     0.4890 +  CPU_0_Temp
+ 5     0.5010 +  CPU_1_Temp
+ 6     0.0096 +  HT1Scaled
+ 7    -0.0067 +  HT2Scaled
+ 8     0.0027 +  cmiss_core0_scaled
+ 9     0.0026 +  cmiss_core1_scaled
+10     0.0034 +  cmiss_core2_scaled
+11     0.0036 +  cmiss_core3_scaled
+12     0.0140 +  disk_read_kbytes
+13     0.0070 +  disk_write_kbytes
+14     0.0012 +  Axial_Fan_0
+15     0.0007 +  Axial_Fan_1
+16     0.0013 +  Blower_Fan_0
+17    -0.0008 +  Blower_Fan_1
+
+
+PHASE 2: Check model against benchmarks used.
+
+Benchmark statistics:
+
+bm mix max | mean(p) median(p) std(p) var(p) | mean(phat) median(phat) std(phat) var(phat)
+bzip2 |  62.1600  70.6200 |  66.1046  68.1900   3.0556   9.3367 |  64.9894  65.2896   2.7907   7.7882
+cactusadm |  61.8900  69.4500 |  66.1834  68.1000   2.8098   7.8952 |  65.1514  66.7794   3.0703   9.4265
+gromac |  61.4700  67.5000 |  64.7068  66.8100   2.5583   6.5450 |  63.5214  63.7123   3.0005   9.0028
+h264ref |  60.5640  66.8262 |  64.0805  65.5914   2.2539   5.0799 |  62.7864  63.3699   2.1456   4.6038
+lbm |  61.8300  72.2400 |  67.6934  71.1900   4.4984  20.2355 |  65.9177  69.6148   5.2219  27.2686
+leslie3d |  60.5583  68.5887 |  64.8270  67.8612   3.3222  11.0368 |  61.9594  63.2632   2.6314   6.9241
+
+Error statistics for each benchmark:
+
+bm mix max | mean(p) median(p) std(p) var(p) | %error mean(relerr) median(relerr) max(relerror) |  rmse
+bzip2 |  62.1600  70.6200 |   1.5362   1.2761   1.1496   1.3217 |   2.2783   0.0228   0.0202   0.0793 |   1.9177
+cactusadm |  61.8900  69.4500 |   1.2277   0.9191   1.0764   1.1585 |   1.8688   0.0187   0.0135   0.0894 |   1.6319
+gromac |  61.4700  67.5000 |   1.3835   0.8593   1.3019   1.6949 |   2.1485   0.0215   0.0136   0.1004 |   1.8983
+h264ref |  60.5640  66.8262 |   1.5993   1.4324   1.0325   1.0660 |   2.4904   0.0249   0.0221   0.0868 |   1.9029
+lbm |  61.8300  72.2400 |   1.8672   1.6007   1.1636   1.3541 |   2.8361   0.0284   0.0229   0.1330 |   2.1993
+leslie3d |  60.5583  68.5887 |   2.8862   3.2187   1.2402   1.5380 |   4.3965   0.0440   0.0487   0.1409 |   3.1406
+
+Paired t-test between actual and estimated power
+h: Accept/Reject p: p-value ci: conf interval
+bzip2 | h =   1.0000 p =   0.0000 ci = [  0.6828   1.5477] 
+cactusadm | h =   1.0000 p =   0.0000 ci = [  0.6276   1.4365] 
+gromac | h =   1.0000 p =   0.0000 ci = [  0.7413   1.6296] 
+h264ref | h =   1.0000 p =   0.0000 ci = [  0.9936   1.5947] 
+lbm | h =   1.0000 p =   0.0000 ci = [  1.0694   2.4821] 
+leslie3d | h =   1.0000 p =   0.0000 ci = [  2.3949   3.3403] 
+bm: astar
+bm: gamess
+bm: calculix
+bm: gobmk
+bm: zeusmp
+
+Benchmark statistics:
+
+bm mix max | mean(p) median(p) std(p) var(p) | mean(phat) median(phat) std(phat) var(phat)
+astar |  60.2120  70.4340 |  63.7308  65.3465   2.9556   8.7353 |  65.1791  64.7625   2.0414   4.1674
+gamess |  63.0630  73.8870 |  66.3033  66.8910   2.3280   5.4194 |  65.6348  65.8153   1.5201   2.3107
+calculix |  61.2480  73.8870 |  64.8119  64.0530   3.2611  10.6346 |  65.7112  65.2549   1.6222   2.6315
+gobmk |  63.8595  74.3820 |  67.0670  65.4465   2.7993   7.8358 |  66.3614  65.7192   2.2639   5.1252
+zeusmp |  63.2600  74.3030 |  66.6698  65.0135   3.1559   9.9596 |  67.0239  66.4618   1.6271   2.6476
+
+Error statistics for each benchmark:
+
+bm mix max | mean(p) median(p) std(p) var(p) | %error mean(relerr) median(relerr) max(relerror) |  rmse
+astar |  60.2120  70.4340 |   1.9373   1.9612   1.1594   1.3441 |   3.1026   0.0310   0.0310   0.0895 |   2.2568
+gamess |  63.0630  73.8870 |   1.4988   1.0833   1.4218   2.0215 |   2.2191   0.0222   0.0164   0.1026 |   2.0642
+calculix |  61.2480  73.8870 |   2.0451   2.2144   1.2069   1.4566 |   3.1951   0.0320   0.0348   0.1006 |   2.3738
+gobmk |  63.8595  74.3820 |   1.1470   0.6502   1.2052   1.4525 |   1.6712   0.0167   0.0101   0.0857 |   1.6624
+zeusmp |  63.2600  74.3030 |   1.8693   1.8482   1.0447   1.0913 |   2.8091   0.0281   0.0287   0.0806 |   2.1407
+
+Paired t-test between actual and estimated power
+h: Accept/Reject p: p-value ci: conf interval
+astar | h =   1.0000 p =   0.0000 ci = [ -1.8495  -1.0469] 
+gamess | h =   1.0000 p =   0.0001 ci = [  0.3450   0.9919] 
+calculix | h =   1.0000 p =   0.0000 ci = [ -1.2799  -0.5187] 
+gobmk | h =   1.0000 p =   0.0004 ci = [  0.3147   1.0965] 
+zeusmp | h =   0.0000 p =   0.0688 ci = [ -0.7356   0.0274] 

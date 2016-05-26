@@ -1,0 +1,136 @@
+%
+% File:        chapter-conclusions.tex
+% Author:      awl8049
+% Revision:    $$
+%
+\chapter{Conclusions}
+\label{chp:conclusions}
+A fast and accurate model for energy consumption and thermal envelope in
+a server is critical to understanding and solving the power management
+challenges unique in dense servers.  In this work, we have introduced a
+comprehensive model of energy consumption by servers as a continuous
+system of differential equations.  The model measures energy input to
+the system as a function of the work done for completing tasks being
+gauged and the residual thermal energy given off by the system as a
+result.  Traffic on the system bus, misses in the L2 cache, CPU
+temperatures, and ambient temperatures are combined together to create a
+model, which can be employed to manage the processor thermal envelope.
+
+The model serves as a predictive tool by approximating observed
+performance metrics in a discrete time series for estimating future
+metrics, and thus corresponding energy consumption amounts.  It was
+found through experimental validation that commonly used techniques of
+regressive time series forecasting, while attractive because of their
+simplicity, inadequately capture the non-linear and chaotic dynamics of
+metric readings for typical server systems.  Therefore, a chaotic time
+series approximation for run-time power consumption is adopted to arrive
+at Chaotic Attractor Prediction (CAP), which exhibits polynomial time
+complexity.  Our proposed model is the first step towards building
+solutions for power and thermal management in data centers usually
+housing many servers.
+
+Dense servers pose power and thermal challenges, which often cannot be
+addressed satisfactorily by conventional DVFS and DTM mechanisms,
+especially under heavy workloads common for high-performance systems.
+We have investigated into thermal-aware scheduling to deal with such
+challenges, capable of managing system energy consumption within a given
+power and thread envelope effectively.  As opposed to prior work aiming
+to bound temperatures below critical thresholds, our proposed scheduler
+considers how to dispatch heavy workloads in the high-performance
+multi-core system for die temperature management across all cores.  It
+is based on the thermal Chaotic Attractor Predictors (tCAPs) we develop
+to guide thread selection and load balancing, taking into account key
+thermal indicators and system performance metrics for preventing DTM
+instances proactively.  The proposed tCAP-oriented scheduling (dubbed
+the TAS scheduler) has been implemented to replace the original
+scheduler of the FreeBSD operating system (called the ULE scheduler) for
+evaluation on a testbed server under benchmarks from the SPEC CPU2006
+and PARSEC suites.  Experimental results demonstrate that our TAS
+scheduler can lower the mean on-die core temperature by up to
+12.8$^{\circ}$C (from 44.8$^\circ$C down to 32.0$^\circ$C) under PARSEC
+benchmarks and by up to 3.3$^{\circ}$C under mixes of SPEC benchmarks
+for concurrent execution, while exhibiting negligible performance
+degradation, in comparison to the ULE scheduler.  When compared with a
+recent energy-aware scheduling technique reported to attain core
+temperature reduction by up to 4$^\circ$C (from 63$^\circ$C down to
+59$^\circ$C) upon executing four parallel scientific applications
+compatible to PARSEC benchmarks on an Intel Xeon 5520 4-core processor
+\cite{Sarood2011}, our TAS clearly enjoys better thermal reduction under
+multi-threaded execution.
+
+\section{Future Directions}
+\label{sec:future-directions}
+The topics of power and thermal management in large scale computing have
+only recently begun to receive systematic attention.  Our work serves as
+a starting point for a longer-term research program to consider some
+unanswered question related to these topics.
+
+The experimental validation of CAP reveals opportunities for further
+investigation of power modeling. The model developed in this work is
+valid for any dual-core/dual-processor system using NUMA memory access
+connected in a point-to-point manner using the HyperTransport or the QPL
+structures.  However, it can be scaled to quad-core dual processors
+based on those two structures.  One would expect to see a slight
+difference or variation in power prediction due to a greater or less
+affect of die temperatures on the other performance measures.  Under a
+dual-core quad-processor server, for example, additional regression
+variables would be incorporated in $E_{proc}$, giving rise to more
+performance measures (i.e., a larger $r$).  Similarly, more PeCs related
+to cache misses would then be involved in $E_{mem}$.  The solution
+approach of CAP remains exactly identical, except for a larger $r$ in
+its prediction computation.  CAP has been validated for NUMA-based
+servers, built on AMD Operton processors and Intel Xeon processors with
+Nehalem architecture; it requires validation on other architectures,
+like NVIDA GPU processors and IBM Cell BE processors.  Further studies
+on the power and thermal envelope of multi-chip server systems, which
+involve network traffic and off-chip synchronization traffic, is
+required to understand their contributions to the system thermal
+envelope.
+
+Operating system schedulers such as the FreeBSD ULE scheduler were
+introduced before the wide-spread adoption of multi-core processors such
+as those used in our evaluation.   Thus, their scheduling decisions rarely
+take into account the interactions within multi-core processors that
+arise from contention of shared resources.   At best, as we have seen
+with our extensions to push migration in TAS, they make very
+coarse-grain decisions about how to address such resource contention.
+For instance, recent studies ~\cite{McCullough2011}
+identified that many methods used for power modeling suffer high
+prediction errors due to inherent complexities of multiple cores, hidden
+device states, and large dynamic power components.  The question of how
+such errors impacts scheduling decisions has yet to be explored for both
+existing schedulers and energy/thermal aware schedulers such as TAS.
+
+Our Thermal Aware Scheduler considers scheduling only within a single
+server blade. High-performance computing applications distribute
+workload across multiple environments using interfaces such as MPI and
+OpenMP.  A topic for further research is how to extend the CAP and
+Thermal Aware Scheduling into such environments.   A recent study of
+power profiles of a four-node cluster executing  MapReduce-style
+codes~\cite{DavisRivoire2011} found that inter-node variability in
+homogeneous clusters leads to substantially different single-node models
+with higher error rates for cluster level measurements.  This study
+shows the need to carefully consider the dynamics of the interactions
+between nodes and tools like our chaotic attractor predictors are
+well-positioned as a predictive tool for use in this use-case scenario.
+
+A related topic is consideration of the effect of operating-system
+virtualization on Thermal Aware Scheduling.  Some attention has been
+applied to this area in recent work \cite{Merkel2010} but questions
+remain open considering issues of scheduler interference between host
+and virtual operating systems and the impact of virtualization on
+power management in the clustered, grid, and cloud environment.  Open
+questions remain as to how a scheduler in the virtual machine manager
+coordinates energy and thermal management decisions with an operating
+system in a virtual machine that is unaware of the virtual environment.
+Scheduling decisions made within the virtual machine may lead to
+unexpected contention for resources in use by other virtual machines
+with unexpected consequences for thermal management.
+% Following comment block used by GNU-EMACS and AUCTEX packages
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "dissertation.tex"
+%%% TeX-PDF-mode: t
+%%% TeX-source-correlate-mode: t
+%%% End: 

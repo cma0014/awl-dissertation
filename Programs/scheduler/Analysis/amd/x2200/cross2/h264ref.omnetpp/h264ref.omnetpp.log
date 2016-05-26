@@ -1,0 +1,22 @@
+The sample interval is 5 seconds
+Resetting power meter...
+Collection of IPMI data started
+Collection of PMC data started
+Collection of system statistics started
+Sleeping for 300 seconds to let everyone settle
+Now starting to log iostat data
+Now starting to log vmstat data
+Now starting to log page fault data
+Now starting to log krenel memory allocation data
+Now starting to log disk data
+And now we start the benchmarks
+Starting the 464.h264ref benchmark at 20:37
+The process id for the 464.h264ref benchmark is 134180
+And now we start the 471.omnetpp benchmark at 20:37
+The process id for the  benchmark is 134193
+Now we wait until both benchmarks have finished
+Both benchmarks have completed at 21:01
+Sleeping for 600 secondsto allow the machine to cool down.
+Now shutdowning the data collection utilities.
+OK...I'm back, and now I'm downloading the power data
+Data collection complete at 21:11

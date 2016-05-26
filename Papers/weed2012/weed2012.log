@@ -1,0 +1,731 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.5.17)  17 MAY 2012 16:20
+entering extended mode
+**\input weed2012.tex
+
+("c:\Users\Adam Lewis\Dropbox\dissertation\vmpowermgt\Papers\weed2012\weed2012.
+tex" ("C:\Program Files\MiKTeX 2.9\tex\latex\ieeetran\IEEEtran.cls"
+Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 366.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 724.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 724.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+)
+\everypar=\toks15
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box27
+\beforetitleunit=\skip44
+\aftertitleunit=\skip45
+\ttl@plus=\dimen117
+\ttl@minus=\dimen118
+\ttl@toksa=\toks16
+\titlewidth=\dimen119
+\titlewidthlast=\dimen120
+\titlewidthfirst=\dimen121
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen122
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen123
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen124
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks18
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks19
+\eqnshift@=\dimen125
+\alignsep@=\dimen126
+\tagshift@=\dimen127
+\tagwidth@=\dimen128
+\totwidth@=\dimen129
+\lineht@=\dimen130
+\@envbody=\toks20
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\classes\amsthm.sty"
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip49
+\thm@postskip=\skip50
+\thm@headsep=\skip51
+\dth@everypar=\toks27
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amscd.sty"
+Package: amscd 1999/11/29 v2.0
+\athelp@=\toks28
+\minaw@=\dimen131
+\bigaw@=\dimen132
+\minCDarrowwidth=\dimen133
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2012/04/03 v0.4s Insert pages of external PDF documents (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count103
+\calc@Bcount=\count104
+\calc@Adimen=\dimen134
+\calc@Bdimen=\dimen135
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count105
+\calc@Cskip=\skip54
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks29
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count106
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2012/04/03 v0.4s Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box30
+\AM@toc@title=\toks30
+\c@AM@survey=\count107
+\AM@templatesizebox=\box31
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\preprint\authblk.sty"
+Package: authblk 2009/11/18 1.3 (PWD)
+\affilsep=\skip55
+\@affilsep=\skip56
+\c@Maxaffil=\count108
+\c@authors=\count109
+\c@affil=\count110
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\afterpage.sty"
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks31
+\AP@partial=\box32
+\AP@footins=\box33
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen138
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen139
+\captionmargin@=\dimen140
+\captionwidth=\dimen141
+\caption@indent=\dimen142
+\caption@parindent=\dimen143
+\caption@hangindent=\dimen144
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+\c@KVtest=\count111
+\sf@farskip=\skip57
+\sf@captopadj=\dimen145
+\sf@capskip=\skip58
+\sf@nearskip=\skip59
+\c@subfigure=\count112
+\c@subfigure@save=\count113
+\c@lofdepth=\count114
+\c@subtable=\count115
+\c@subtable@save=\count116
+\c@lotdepth=\count117
+\sf@top=\skip60
+\sf@bottom=\skip61
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\placeins\placeins.sty"
+Package: placeins 2005/04/18  v 2.2
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \begin {center}{\normalfont \footnotesize #1}\\{\normal
+font \footnotesize \scshape #2}\end {center}\@IEEEtablecaptionsepspace \else \@
+IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {
+#1.}~~ #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \
+footnotesize {#1.}~~ }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent 
+\unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfon
+t \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont 
+\footnotesize \box \@tempboxa \hfil }\fi \fi \fi .
+\c@ContinuedFloat=\count118
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\titling\titling.sty"
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip62
+\thanksmargin=\skip63
+\droptitle=\skip64
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\sttools\flushend.sty"
+Package: flushend 1997/10/01
+\@aaa=\box34
+\@ccc=\box35
+\@viper=\box36
+\hold@viper=\box37
+\atColsBreak=\toks32
+\@extra@skip=\dimen146
+\@nd@page@rule=\dimen147
+)
+
+LaTeX Warning: Unused global option(s):
+    [times].
+
+
+("c:\Users\Adam Lewis\Dropbox\dissertation\vmpowermgt\Papers\weed2012\weed2012.
+aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+\AtBeginShipoutBox=\box38
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count119
+\scratchdimen=\dimen148
+\scratchbox=\box39
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen149
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks34
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 83.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
+\c@defn=\count125
+\c@thm=\count126
+LaTeX Font Info:    Try loading font information for U+msa on input line 115.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 115.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+Underfull \hbox (badness 1701) in paragraph at lines 121--137
+\OT1/ptm/m/n/10 ad-justs the pro-ces-sor volt-age and fre-quency (known as
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 121--137
+\OT1/ptm/m/n/10 down the pro-ces-sor when-ever nec-es-sary. How-ever, the
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 121--137
+\OT1/ptm/m/n/10 on ap-pli-ca-tion per-for-mance and sys-tem re-li-a-bil-ity [[]
+],
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 121--137
+\OT1/ptm/m/n/10 [[]], [[]]. This pa-per in-tro-duces ef-fec-tive schedul-ing fo
+r
+ []
+
+
+Underfull \hbox (badness 2600) in paragraph at lines 138--149
+\OT1/ptm/m/n/10 (like those with In-tel's Hy-per-Thread-ing tech-nol-ogy) as
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 138--149
+\OT1/ptm/m/n/10 and schedul-ing within the op-er-at-ing sys-tem, achiev-able
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 138--149
+\OT1/ptm/m/n/10 via mod-el-ing full-system en-ergy con-sump-tion based on
+ []
+
+
+Underfull \hbox (badness 2744) in paragraph at lines 150--165
+\OT1/ptm/m/n/10 and die tem-per-a-tures) and sys-tem per-for-mance met-rics
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 180--193
+\OT1/ptm/m/n/10 sys-tem ex-e-cuted on In-tel Xeon (Wood-crest) pro-ces-sors.
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 180--193
+\OT1/ptm/m/n/10 schedul-ing tech-nique [[]], which gets core tem-per-a-ture
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+Underfull \hbox (badness 3168) in paragraph at lines 208--225
+[]\OT1/ptm/m/n/10 Existing ther-mal mod-els all re-quired to fit tar-geted
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 208--225
+\OT1/ptm/m/n/10 of tem-per-a-tures dur-ing the course of ex-e-cut-ing var-i-ous
+
+ []
+
+
+Underfull \hbox (badness 8038) in paragraph at lines 208--225
+\OT1/ptm/m/n/10 work-loads. Ex-pres-sion co-ef-fi-cients were es-ti-mated by
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 208--225
+\OT1/ptm/m/n/10 fu-ture tem-per-a-tures. Dif-fer-ent mod-el-ing tech-niques hav
+e
+ []
+
+
+Overfull \hbox (4.9794pt too wide) in paragraph at lines 302--328
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 330--349
+\OT1/ptm/m/n/10 die tem-per-a-tures and chas-sis am-bi-ent tem-per-a-tures. The
+
+ []
+
+[2]
+Underfull \hbox (badness 3118) in paragraph at lines 352--363
+\OT1/ptm/m/n/10 tech-niques to ad-dress DTM events has been ef-fec-tive
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 352--363
+\OT1/ptm/m/n/10 in ad-dress-ing ther-mal emer-gen-cies [[]], [[]], com-monly
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 382--391
+[]\OT1/ptm/m/n/10 The sched-uler in an op-er-at-ing sys-tem is re-spon-si-ble
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 382--391
+\OT1/ptm/m/n/10 for mak-ing two de-ci-sions in each time quan-tum: (1)
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 382--391
+\OT1/ptm/m/n/10 thread schedul-ing, i.e., de-cid-ing the next thread to run
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 440--451
+\OT1/ptm/m/n/10 de-tailed in [[]]), we cre-ate ther-mal Chaotic At-trac-tor
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 440--451
+\OT1/ptm/m/n/10 the ther-mal be-hav-ior dur-ing ap-pli-ca-tion ex-e-cu-tion. We
+
+ []
+
+<graphics/architecture.pdf, id=19, 568.1225pt x 287.0725pt>
+File: graphics/architecture.pdf Graphic file (type pdf)
+
+<use graphics/architecture.pdf>
+Package pdftex.def Info: graphics/architecture.pdf used on input line 454.
+(pdftex.def)             Requested size: 252.00317pt x 101.17773pt.
+ [3 <c:/Users/Adam Lewis/Dropbox/dissertation/vmpowermgt/Papers/weed2012/graphi
+cs/architecture.pdf>]
+Underfull \hbox (badness 1418) in paragraph at lines 497--515
+\OT1/ptm/m/n/10 It was shown pre-vi-ously [[]] that the great-est ther-mal
+ []
+
+
+Underfull \hbox (badness 2538) in paragraph at lines 518--535
+\OT1/ptm/m/n/10 Specif-i-cally, TAS or-ga-nizes sys-tem cores into ``ther-mal
+ []
+
+<graphics/thbalance.pdf, id=140, 550.055pt x 275.0275pt>
+File: graphics/thbalance.pdf Graphic file (type pdf)
+
+<use graphics/thbalance.pdf>
+Package pdftex.def Info: graphics/thbalance.pdf used on input line 548.
+(pdftex.def)             Requested size: 251.996pt x 180.67938pt.
+
+Underfull \hbox (badness 3407) in paragraph at lines 576--582
+\OT1/ptm/m/n/10 server. Our TAS im-ple-men-ta-tion mod-i-fied the ex-ist-ing
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 576--582
+\OT1/ptm/m/n/10 thread se-lec-tion and load bal-anc-ing in FreeBSD's ULE
+ []
+
+[4 <c:/Users/Adam Lewis/Dropbox/dissertation/vmpowermgt/Papers/weed2012/graphic
+s/thbalance.pdf>] <graphics/tasdesign.pdf, id=259, 499.8675pt x 228.855pt>
+File: graphics/tasdesign.pdf Graphic file (type pdf)
+
+<use graphics/tasdesign.pdf>
+Package pdftex.def Info: graphics/tasdesign.pdf used on input line 585.
+(pdftex.def)             Requested size: 252.00014pt x 93.94987pt.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 595.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 1983) in paragraph at lines 589--610
+\OT1/ptm/m/n/10 the per-for-mance of sin-gle SPEC CPU2006 bench-marks
+ []
+
+<graphics/speccpuperformance.png, id=260, 697.1646pt x 200.9106pt>
+File: graphics/speccpuperformance.png Graphic file (type png)
+
+<use graphics/speccpuperformance.png>
+Package pdftex.def Info: graphics/speccpuperformance.png used on input line 613
+.
+(pdftex.def)             Requested size: 252.00029pt x 93.9528pt.
+
+Underfull \hbox (badness 2735) in paragraph at lines 617--625
+\OT1/ptm/m/n/10 from the Prince-ton Ap-pli-ca-tion Repos-i-tory for Shared-
+ []
+
+<graphics/parsectemp.png, id=262, 697.6464pt x 202.356pt>
+File: graphics/parsectemp.png Graphic file (type png)
+
+<use graphics/parsectemp.png>
+Package pdftex.def Info: graphics/parsectemp.png used on input line 731.
+(pdftex.def)             Requested size: 251.99347pt x 122.85957pt.
+
+Underfull \hbox (badness 1509) in paragraph at lines 733--733
+[]\OT1/ptm/m/n/9 Fig. 5: |Com-par-i-son of PAR-SEC bench-mark av-er-age core di
+e
+ []
+
+<graphics/parsecperformance.png, id=263, 693.792pt x 199.947pt>
+File: graphics/parsecperformance.png Graphic file (type png)
+
+<use graphics/parsecperformance.png>
+Package pdftex.def Info: graphics/parsecperformance.png used on input line 737.
+
+(pdftex.def)             Requested size: 251.99866pt x 93.95068pt.
+ [5 <c:/Users/Adam Lewis/Dropbox/dissertation/vmpowermgt/Papers/weed2012/graphi
+cs/tasdesign.pdf> <c:/Users/Adam Lewis/Dropbox/dissertation/vmpowermgt/Papers/w
+eed2012/graphics/speccpuperformance.png>]
+Underfull \hbox (badness 7433) in paragraph at lines 771--782
+[]\OT1/ptm/m/n/10 Execution per-for-mance (mea-sured in terms of the
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 771--782
+\OT1/ptm/m/n/10 marks ex-am-ined ex-cept \OT1/pcr/m/n/10 streamcluster\OT1/ptm/
+m/n/10 . Con-sid-er-able
+ []
+
+<graphics/ParsecPowerConsumption.png, id=300, 604.1772pt x 226.9278pt>
+File: graphics/ParsecPowerConsumption.png Graphic file (type png)
+
+<use graphics/ParsecPowerConsumption.png>
+Package pdftex.def Info: graphics/ParsecPowerConsumption.png used on input line
+ 784.
+(pdftex.def)             Requested size: 252.00108pt x 93.95166pt.
+
+Underfull \hbox (badness 4686) in paragraph at lines 785--785
+[]\OT1/ptm/m/n/9 Fig. 7: |Com-par-i-son of PAR-SEC bench-mark av-er-age power
+ []
+
+<graphics/parsecedp1.pdf, id=301, 596.2275pt x 230.8625pt>
+File: graphics/parsecedp1.pdf Graphic file (type pdf)
+
+<use graphics/parsecedp1.pdf>
+Package pdftex.def Info: graphics/parsecedp1.pdf used on input line 800.
+(pdftex.def)             Requested size: 251.99684pt x 93.94969pt.
+
+<graphics/parsecedp2.pdf, id=302, 596.2275pt x 230.8625pt>
+File: graphics/parsecedp2.pdf Graphic file (type pdf)
+
+<use graphics/parsecedp2.pdf>
+Package pdftex.def Info: graphics/parsecedp2.pdf used on input line 807.
+(pdftex.def)             Requested size: 251.99684pt x 93.94969pt.
+ [6 <c:/Users/Adam Lewis/Dropbox/dissertation/vmpowermgt/Papers/weed2012/graphi
+cs/parsectemp.png> <c:/Users/Adam Lewis/Dropbox/dissertation/vmpowermgt/Papers/
+weed2012/graphics/parsecperformance.png> <c:/Users/Adam Lewis/Dropbox/dissertat
+ion/vmpowermgt/Papers/weed2012/graphics/ParsecPowerConsumption.png> <c:/Users/A
+dam Lewis/Dropbox/dissertation/vmpowermgt/Papers/weed2012/graphics/parsecedp1.p
+df> <c:/Users/Adam Lewis/Dropbox/dissertation/vmpowermgt/Papers/weed2012/graphi
+cs/parsecedp2.pdf>]
+("c:\Users\Adam Lewis\Dropbox\dissertation\vmpowermgt\Papers\weed2012\weed2012.
+bbl"
+Underfull \hbox (badness 1701) in paragraph at lines 10--16
+\OT1/ptm/m/n/8 schedul-ing in mul-ti-socket CPU servers.  \OT1/ptm/m/it/8 IEEE 
+Trans-ac-tions on
+ []
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 30--35
+\OT1/ptm/m/n/8 on multi-core pro-ces-sors.  In \OT1/ptm/m/it/8 Proc.of the 22nd
+ Int'l. Conf. on
+ []
+
+)
+Extra height:23.75189pt when 427.35617pt
+Extra height:23.75189pt when 428.35617pt
+
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+Extra height:23.75189pt when 429.35617pt
+
+Underfull \vbox (badness 1221) has occurred while \output is active []
+
+Extra height:23.75189pt when 430.35617pt
+Extra height:0.0pt when 431.35617pt
+(2)Left:431.35617pt Right:434.06912pt Output:431.35617pt
+(2)Left:434.06912pt Right:434.06912pt Output:434.06912pt
+- LAST -
+Extra skip:0.0pt
+Left:434.06912pt
+Right:434.06912pt
+Output:434.06912pt
+ [7]
+("c:\Users\Adam Lewis\Dropbox\dissertation\vmpowermgt\Papers\weed2012\weed2012.
+aux") ) 
+Here is how much of TeX's memory you used:
+ 5638 strings out of 494045
+ 85205 string characters out of 3148372
+ 183254 words of memory out of 3000000
+ 8825 multiletter control sequences out of 15000+200000
+ 42362 words of font info for 88 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 37i,11n,39p,253b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on weed2012.pdf (7 pages, 639649 bytes).
+PDF statistics:
+ 416 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+

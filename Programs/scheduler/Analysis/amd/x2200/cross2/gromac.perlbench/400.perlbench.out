@@ -1,0 +1,38 @@
+/opt/wattsup/benchcmd.sh 400.perlbench
+~/Research/cpu2006 ~/Research/vmpowermgt/Programs/scheduler/Analysis/amd/x2200/cross2
+runspec v4662 - Copyright 1999-2006 Standard Performance Evaluation Corporation
+Using 'solaris-x86' tools
+Reading MANIFEST... 17935 files
+Loading runspec modules...............
+Locating benchmarks...found 31 benchmarks in 12 benchsets.
+Locating output formats: ASCII, config, CSV, flags, HTML, mail, PDF, PostScript, raw, Screen, Submission Check
+Reading config file '/export/home/awl8049/Research/cpu2006/config/powermodel.cfg'
+Benchmarks selected: 400.perlbench
+Compiling Binaries
+  Up to date 400.perlbench ref base mar30.amd64 default
+
+
+Parsing Flags
+  Looking at 400.perlbench base mar30.amd64 default: done
+Flag Parsing Complete
+
+Setting Up Run Directories
+  Setting up 400.perlbench ref base mar30.amd64 default: existing (run_base_ref_mar30.amd64.0000)
+Running Benchmarks
+  Running 400.perlbench ref base mar30.amd64 default
+Success: 1x400.perlbench
+Producing Reports
+mach: default
+  ext: mar30.amd64
+    size: ref
+      set: int
+        format: raw -> /export/home/awl8049/Research/cpu2006/result/CINT2006.261.rsf
+        format: flags -> /export/home/awl8049/Research/cpu2006/result/CINT2006.261.flags.html
+        format: ASCII -> /export/home/awl8049/Research/cpu2006/result/CINT2006.261.txt
+        format: HTML -> /export/home/awl8049/Research/cpu2006/result/CINT2006.261.html, CINT2006.261.gif
+      set: fp
+
+The log for this run is in /export/home/awl8049/Research/cpu2006/result/CPU2006.261.log
+
+runspec finished at Sun May 10 01:20:22 2009; 828 total seconds elapsed
+~/Research/vmpowermgt/Programs/scheduler/Analysis/amd/x2200/cross2

@@ -1,0 +1,16 @@
+The sample interval is 5 seconds
+Resetting power meter...
+Collection of IPMI data started
+Collection of PMC data started
+Collection of system statistics started
+Now starting to log iostat data
+Sleeping for 300 seconds to let everyone settle
+Now starting to log vmstat data
+Now starting to log page fault data
+Now starting to log krenel memory allocation data
+Now starting to log disk data
+And now we start the 436.cactusADM benchmark at 14:36
+The 436.cactusADM benchmark has completed at 14:59
+Sleeping for 600 secondsto allow the machine to cool down.
+Now shutdowning the data collection utilities.
+Data collection complete at 15:09

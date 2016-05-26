@@ -1,0 +1,261 @@
+% Created 2010-10-27 Wed 14:13
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{t1enc}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\providecommand{\alert}[1]{\textbf{#1}}
+
+\title{scheduler3.org}
+\author{}
+\date{2010-10-27 Wed}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\vspace*{1cm}
+\section{THERMAL-AWARE SCHEDULING}
+\label{sec-1}
+\subsection{Terminology}
+\label{sec-1_1}
+\subsubsection{thread}
+\label{sec-1_1_1}
+
+A schedulable entity reflecting a single flow of execution.
+\subsubsection{task}
+\label{sec-1_1_2}
+
+A collection of threads running within one address space.
+\subsubsection{timeslice}
+\label{sec-1_1_3}
+
+A period of time a scheduler intends to schedule a thread.
+\subsubsection{quantum}
+\label{sec-1_1_4}
+
+The actual execution time utilized by a thread.
+\subsubsection{run-queue}
+\label{sec-1_1_5}
+
+A queue containing runnable threads of a processor.
+\subsubsection{scheduling policy}
+\label{sec-1_1_6}
+\subsection{Scheduling policies}
+\label{sec-1_2}
+\subsubsection{constant time scheduling}
+\label{sec-1_2_1}
+
+Priority based scheduling algorithm favoring I/O-bound threads
+\begin{itemize}
+
+\item Linux O(1) scheduler\\
+\label{sec-1_2_1_1}%
+\end{itemize} % ends low level
+\subsubsection{linear time scheduling}
+\label{sec-1_2_2}
+\begin{itemize}
+
+\item Round-robin scheduler\\
+\label{sec-1_2_2_1}%
+\item Multilevel feedback queue\\
+\label{sec-1_2_2_2}%
+\end{itemize} % ends low level
+\subsubsection{Proportional share policies}
+\label{sec-1_2_3}
+\begin{itemize}
+
+\item fair scheduling/stride scheduling\\
+\label{sec-1_2_3_1}%
+Fair scheduling: allocation of available CPU time is equally distributed
+amongst system users and groups as opposed to equal distribution among
+processes.  Common implementation method is to recursively apply
+round-robin scheduling strategy at each level of abstraction.
+\begin{itemize}
+
+\item Terminology
+\label{sec-1_2_3_1_1}%
+\begin{itemize}
+
+\item Stride\\
+\label{sec-1_2_3_1_1_1}%
+The time interval a thread has to wait between its consecutive
+executions.
+
+\item Virtual time\\
+\label{sec-1_2_3_1_1_2}%
+Defines which thread is scheduled next.  Each thread has own concept of
+virtual time which is synchronized with a per run-queue global virtual
+time when a thread becomes runnable.  The idea is that virtual times of
+all threads and the global virtual time of a run-queue are equal at each
+distinct point of time.
+\end{itemize} % ends low level
+
+\item Start-time fair queuing\\
+\label{sec-1_2_3_1_2}%
+\item completely fair scheduler\\
+\label{sec-1_2_3_1_3}%
+Implementation in the most recent Linux kernel. Complexity is O(log N)
+where N is the number of tasks in the runqueue.  Choosing a task can be
+done in constant time, but reinserting task requires O(log N) because
+runqueue is implemented as red/black tree.
+
+\item brain f*** scheduler
+\label{sec-1_2_3_1_4}%
+\begin{itemize}
+
+\item Loosely based on idea of earliest eligible virtual deadline first\\
+\label{sec-1_2_3_1_4_1}%
+\item Signal queue of queued but not running processes\\
+\label{sec-1_2_3_1_4_2}%
+\item Avoid complexity of per-CPU queues\\
+\label{sec-1_2_3_1_4_3}%
+\item Optimized for mobile and desktop, light NUMA \& fewer than 16 cores\\
+\label{sec-1_2_3_1_4_4}%
+Balancing of heuristics is a problem.  Gains of local runqueue locking
+lost due to need of having grab multiple locks.
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+\subsection{Approaches}
+\label{sec-1_3}
+\subsubsection{real-time and embedded systems}
+\label{sec-1_3_1}
+\subsubsection{adjusting heuristics}
+\label{sec-1_3_2}
+
+Use scheduling heuristics to determine how to adjust how processes are scheduled.
+\begin{itemize}
+
+\item Heat and Run\\
+\label{sec-1_3_2_1}%
+Proposed to distribute work amongst available cores until DTM occurs and
+migrate work away from the overheated cores.
+
+\item HybDTM\\
+\label{sec-1_3_2_2}%
+Combine DTM techniques with a thread migration strategy that reduces the
+thread priority of jobs on cores that are running hot.
+
+\item ThreshHot\\
+\label{sec-1_3_2_3}%
+\cite{Yang2008}\cite{Yang2010} used an on-line temperature estimator to
+determine what order threads should be scheduled onto cores. This work
+analytically demonstrated that you want give preference to those threads
+that contribute the most to the increase in the temperature to complete
+them as quickly as possible
+
+\item Task Vectors\\
+\label{sec-1_3_2_4}%
+In \cite{Merkel2008b}, sort taks in each core's run-queue by memory
+intensity so as to schedule memory-bound tasks at slower frequencies.
+\end{itemize} % ends low level
+\subsubsection{avoiding thermal emergencies}
+\label{sec-1_3_3}
+\begin{itemize}
+
+\item thread migration\\
+\label{sec-1_3_3_1}%
+Based on adjusting scheduling heuristics 
+
+\item Adjust load balancing based on thread migration\\
+\label{sec-1_3_3_2}%
+\cite{Coskun2007} move work to the coolest processor.
+\end{itemize} % ends low level
+\subsection{Opportunities}
+\label{sec-1_4}
+\subsubsection{assets}
+\label{sec-1_4_1}
+\begin{itemize}
+
+\item power model
+\label{sec-1_4_1_1}%
+\begin{itemize}
+
+\item thermal extension\\
+\label{sec-1_4_1_1_1}%
+\end{itemize} % ends low level
+\end{itemize} % ends low level
+\subsubsection{Energy as resource}
+\label{sec-1_4_2}
+\begin{itemize}
+
+\item Prior work
+\label{sec-1_4_2_1}%
+\begin{itemize}
+
+\item ECOSystem and currentcy \cite{Zeng2002}\\
+\label{sec-1_4_2_1_1}%
+Currentcy: an abstraction for the energy a system can spend on various
+devices.  One unit of currentcy represents the right to consume a
+certain amount of energy within a fixed amount of time.   Schedule
+processes either with a static-priority policy where system allocates
+currentcy to devices according to a static share while currentcy-centric
+scheduling adjusts priorities on the basis of ration of consumed
+currentcy to entitled currentcy.
+
+\item Cinder capacitors \cite{Rumble2009}\\
+\label{sec-1_4_2_1_2}%
+Proposed for mobile devices.  Treat energy as equivalent resource to
+disk, memory, etc.   Manage in the same way as physical capacitor.
+
+\item Energy limits and task vectors \cite{Bellosa2003}\cite{Klee2008}\cite{Merkel2008}\\
+\label{sec-1_4_2_1_3}%
+\end{itemize} % ends low level
+
+\item Thermal equivalence of application\\
+\label{sec-1_4_2_2}%
+Adaptation of the analytical model from journal paper to thermal
+domain.  Provides way of dynamically allocating concept of currentcy to
+tasks. Use similar model to what was used in Cinder to manage.
+\end{itemize} % ends low level
+\subsubsection{Avoidance of DTM events}
+\label{sec-1_4_3}
+\begin{itemize}
+
+\item The time differential\\
+\label{sec-1_4_3_1}%
+Nanosecond decisions in the scheduler, minutes at the application.
+Application decisions for managing temperature and how does this map
+into effects seen at the scheduler level?
+
+\item How this notion of fair scheduling affect these schemes?\\
+\label{sec-1_4_3_2}%
+CFS and BFS both make serious effort to avoid complicated heuristics.
+Avoid the complex structures involved with classic UNIX schedulers?
+\end{itemize} % ends low level
+\subsection{Proposed contributions}
+\label{sec-1_5}
+\subsubsection{Thermal model}
+\label{sec-1_5_1}
+
+A switching activity based thermal model that extends the power model in prior work.
+\subsubsection{Thermal load of application (TheA)}
+\label{sec-1_5_2}
+
+A means to dynamically gauge application contribution to the thermal load of the system.
+\subsubsection{Energy-Aware Fair Scheduling (EAFS)}
+\label{sec-1_5_3}
+A energy-aware fair scheduling policy that treats energy as a first
+level scheduling constraint 
+
+\label{sec:references}
+\bibliographystyle{IEEEtran}
+\bibliography{scheduler3.bib}
+
+
+\end{document}

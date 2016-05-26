@@ -1,0 +1,77 @@
+#+TITLE:     initialresults.org
+#+AUTHOR:    
+#+EMAIL:     awl8049@canmac01.cacs.louisiana.edu
+#+DATE:      2011-10-14 Fri
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+* The Thermally-Aware Scheduler
+  The default scheduler in the FreeBSD operating system is the ULE
+  scheduler.  This scheduler was introduced in release 5.0 of the
+  FreeBSD operating system and was made the default scheduler starting
+  with release 7.1 and forward.  The ULE scheduler improved upon the
+  traditional system scheduler from 4.3BSD by including additional
+  support for
+  1. Thread CPU affinity
+  2. CPU topology awareness including support for hyper-threading
+  3. Per-CPU queues
+  4. Interactivity heurisitcs that detect interactive applications and
+     schedules them preferentially under high load. [FreeBSD Develpers
+     Handbook]
+
+  The Thermally-Aware Scheduler (TAS) enhances the existing ULE
+  scheduler through the addition of thermal heuristics in the scheduling
+  decisions.  The PCOST metric [reference to previous section in full
+  paper] is used to guide the choice of which 
+* Initial evaluation of the TAS scheduler
+  Three benchmarks were used in the initial evaluation of the TAS
+  scheduler:
+  - Idle :: The power and thermal behavior of the system was measured
+            for 5 minutes with no applications running on a default
+            FreeBSD install other than our measurement infrastructure.
+  - CPU Burn :: CPUBurn is a set of programs that load x86 CPUs as
+                heavily as possible.  FPU and ALU instructions are coded
+                in an endless loop in an attempt to maximize heat
+                production from the CPU by putting stress on the CPU,
+                cooling system, motherboard, and power supply.
+
+		The appropriate program for the system under test is
+                executed for 5 minutes while system measures temperature
+                and power consumption over that period.
+  - Forkbomb :: Forkbomb is a Linux and FreeBSD utility for stress
+                testing that uses the fork() system call to start
+                multiple processes to consume CPU resources, allocate as
+                much memory as possible using the realloc() system call,
+                and perform multiple read and writes from that memory as
+                to thrash the system cache.  The application is executed
+                for 5 minutes while measuring temperature and power
+                consumption.
+* Results
+  - The following figures show the difference between the temperatures
+    reported by the sensors associated with each core, as measured by the FreeBSD coretemp
+    device driver, during the run of each benchmark.   It compares the
+    temperature difference between the ULE scheduler and the TAS
+    scheduler with a negative difference indicating the reported
+    temperature is lower for the TAS scheduler.
+  - [[file:graphics/tas_run1_idle_2011Oct14.png][Idle benchmark: Temp. diff. between TAS and ULE scheduler]]
+    [[file:graphics/tas_run1_idle_2011Oct14.png]]
+  - [[file:graphics/tas_run1_cpuburn_2011Oct14.png][CPU Burn Benchmark: Temp. diff. between TAS and ULE scheduler]]
+    [[file:graphics/tas_run1_cpuburn_2011Oct14.png]]
+  - [[file:graphics/tas_run1_fbomb_2011Oct14.png][Forkbomb Benchmark: Temp. diff. between TAS and ULE scheduler]]
+    [[file:graphics/tas_run1_fbomb_2011Oct14.png]]
+* Observations
+  1. The CPU Burn and forkbomb benchmarks show definite affinity to
+     particular processors.  This is reasonable as the scheduler tries
+     to keep threads running on the same processor to maintain cache
+     affinity.
+
+
+    

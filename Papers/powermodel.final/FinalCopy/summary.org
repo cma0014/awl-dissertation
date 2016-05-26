@@ -1,0 +1,40 @@
+#+TITLE:     List of changes to TACO submission
+#+AUTHOR:    Adam Lewis
+#+EMAIL:     Adam.Lewis@athens.edu
+#+DATE:      2012-09-23 Sun
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+* Desired changes to document
+|--------+-------+-------+---------------------------------------------------|
+| Pg No. | Para. | Sent. | Comment                                           |
+|--------+-------+-------+---------------------------------------------------|
+|      1 |     1 |     4 | Change ``Case'' to case                           |
+|      1 |     7 |     1 | Add period to sentence.                           |
+|--------+-------+-------+---------------------------------------------------|
+|      2 |     1 |     2 | Drop ``,''                                        |
+|      2 |     2 |     3 | Replace ``,'' at end of sentence with ``.''       |
+|--------+-------+-------+---------------------------------------------------|
+|      3 |     2 |     3 | Add space at end of sentence                      |
+|      3 |     2 |     5 | Add ``measures'' after ``thermal.                 |
+|      3 |     2 |     7 | Delete ``the'' between ``uses'' and ``collected'' |
+|      3 |     2 |     9 | Add ``the'' before ``statistical analysis''       |
+|--------+-------+-------+---------------------------------------------------|
+|      4 |     4 |     2 | Add ``an'' before ``analysis''                    |
+|      4 |     4 |     5 | Add ``,'' before ``such'' and after ``CPU''       |
+|--------+-------+-------+---------------------------------------------------|
+|      5 |     2 |     3 | Drop ``a'' between ``the'' and ``subset''         |
+|      5 |     2 |     4 | Replace ``so as'' with ``to''                     |
+|      5 |     2 |     4 | Replace ``removed'' with ``away''                 |
+|      5 |     3 |     2 | Replace with Delta symbol                         |
+|--------+-------+-------+---------------------------------------------------|
+|     11 |     2 |     1 | Replace ``nineteen (19)'' with ``twenty (20)''    |
+|--------+-------+-------+---------------------------------------------------|

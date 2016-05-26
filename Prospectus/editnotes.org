@@ -1,0 +1,45 @@
+# -*- mode: org -*-
+#+TITLE:   editnotes.org
+#+AUTHOR:    Adam Lewis
+#+EMAIL:     adaml@awlconsulting.com
+#+DATE:      2010-10-28 Thu
+#+DESCRIPTION: Notes to editor for prospectus
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+STARTUP: overview
+#+STARTUP: logdone
+#+PROPERTY: Effort_ALL 0:10 0:20 0:30 1:00 2:00 4:00 8:00
+#+TAGS: Content(c) Presentation(p) Format(f) Other(o)
+* Overall
+** [2010-12-22 Wed] Revision needed to make document flow better between chapters.  :Content:
+** [2010-12-22 Wed] Need to figure out why LaTeX not handling widows correctly. :Format:
+* Introduction
+** [2010-12-22 Wed] Additional material needed related to scheduling.  :Content:
+* Background and Related Work
+** [2010-12-22 Wed] Need more detail for scheduling.		    :Content:
+* System Modeling
+** [2010-12-22 Wed] Need to tighten the math in in the TEA section. :Content:
+* Effective Prediction
+** [2010-12-22 Wed] Rewrite Section 4.2 to incorporate time series stuff. :Content:
+* Thermal-Aware Scheduling
+** [2010-12-22 Wed] Update existing figures and add new ones. :Content:Presentation:
+** [2010-12-22 Wed] Discussion about dispatcher behavior needs update. :Content:
+   - Note taken on [2010-12-22 Wed 14:53] \\
+     Text contains discussion inspired by implementation of OpenSolaris
+     dispatcher.  This needs to be made generic.
+* Evaluation and Results
+** [2010-12-22 Wed] Need to include discussion about scheduling.    :Content:
+* Current State, Plan for Completion, and Conclusions
+** [2010-12-22 Wed] Do we need to explicitly include a publication list?  :Presentation:
+** [2010-12-22 Wed] Gantt chart or other project management artifacts? :Presentation:
+* Bibliography and other end matter
+** [2010-12-22 Wed] Should bibliography include references not cited? :Presentation:
+

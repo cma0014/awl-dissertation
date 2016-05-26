@@ -1,0 +1,3204 @@
+pic0: pic0=FSB_data_activity,emask=0x3f,sys
+pic1: pic1=PAPI_l2_tcm,sys
+   time cpu event      pic0 
+  2.005   1  tick  24861160  # pic0=FSB_data_activity,emask=0x3f,sys
+  2.005   3  tick  24861160  # counter shared with CPU 1
+  4.005   0  tick    110910  # pic1=PAPI_l2_tcm,sys
+  4.005   2  tick    110910  # counter shared with CPU 0
+  6.005   0  tick   2086864  # pic0=FSB_data_activity,emask=0x3f,sys
+  6.005   2  tick   2086864  # counter shared with CPU 0
+  8.005   0  tick    343492  # pic1=PAPI_l2_tcm,sys
+  8.005   2  tick    343492  # counter shared with CPU 0
+  8.007   1  tick    302716  # pic1=PAPI_l2_tcm,sys
+  8.007   3  tick    302716  # counter shared with CPU 1
+ 10.005   0  tick  12128700  # pic0=FSB_data_activity,emask=0x3f,sys
+ 10.005   2  tick  12128700  # counter shared with CPU 0
+ 12.005   0  tick    117250  # pic1=PAPI_l2_tcm,sys
+ 12.005   2  tick    117250  # counter shared with CPU 0
+ 14.005   1  tick   2398404  # pic0=FSB_data_activity,emask=0x3f,sys
+ 14.005   3  tick   2398404  # counter shared with CPU 1
+ 16.005   1  tick    765118  # pic1=PAPI_l2_tcm,sys
+ 16.005   3  tick    765118  # counter shared with CPU 1
+ 18.005   1  tick    280786  # pic0=FSB_data_activity,emask=0x3f,sys
+ 18.005   3  tick    280786  # counter shared with CPU 1
+ 18.005   0  tick    287872  # pic0=FSB_data_activity,emask=0x3f,sys
+ 18.005   2  tick    287872  # counter shared with CPU 0
+ 20.005   1  tick      6077  # pic1=PAPI_l2_tcm,sys
+ 20.005   0  tick     45914  # pic1=PAPI_l2_tcm,sys
+ 20.005   2  tick     45914  # counter shared with CPU 0
+ 22.005   1  tick  20953448  # pic0=FSB_data_activity,emask=0x3f,sys
+ 22.005   3  tick  20953448  # counter shared with CPU 1
+ 24.005   1  tick     20167  # pic1=PAPI_l2_tcm,sys
+ 24.005   3  tick     20167  # counter shared with CPU 1
+ 26.005   1  tick   1694526  # pic0=FSB_data_activity,emask=0x3f,sys
+ 26.005   3  tick   1694526  # counter shared with CPU 1
+ 28.005   1  tick    246021  # pic1=PAPI_l2_tcm,sys
+ 28.005   3  tick    246021  # counter shared with CPU 1
+ 30.005   0  tick  11933336  # pic0=FSB_data_activity,emask=0x3f,sys
+ 30.005   2  tick  11933336  # counter shared with CPU 0
+ 32.005   0  tick     66231  # pic1=PAPI_l2_tcm,sys
+ 32.005   2  tick     66231  # counter shared with CPU 0
+ 34.005   0  tick   3170780  # pic0=FSB_data_activity,emask=0x3f,sys
+ 34.005   2  tick   3170780  # counter shared with CPU 0
+ 36.005   1  tick    788552  # pic1=PAPI_l2_tcm,sys
+ 36.005   3  tick    788552  # counter shared with CPU 1
+ 38.005   0  tick   1529380  # pic0=FSB_data_activity,emask=0x3f,sys
+ 38.005   2  tick   1529380  # counter shared with CPU 0
+ 40.005   1  tick      2983  # pic1=PAPI_l2_tcm,sys
+ 40.005   3  tick      2983  # counter shared with CPU 1
+ 40.005   0  tick     88469  # pic1=PAPI_l2_tcm,sys
+ 40.005   2  tick     88469  # counter shared with CPU 0
+ 42.005   0  tick  20998230  # pic0=FSB_data_activity,emask=0x3f,sys
+ 42.005   2  tick  20998230  # counter shared with CPU 0
+ 44.005   1  tick     47889  # pic1=PAPI_l2_tcm,sys
+ 44.005   3  tick     47889  # counter shared with CPU 1
+ 46.005   0  tick    843884  # pic0=FSB_data_activity,emask=0x3f,sys
+ 46.005   2  tick    843884  # counter shared with CPU 0
+ 48.005   1  tick    295014  # pic1=PAPI_l2_tcm,sys
+ 48.005   3  tick    295014  # counter shared with CPU 1
+ 50.005   0  tick  11552986  # pic0=FSB_data_activity,emask=0x3f,sys
+ 50.005   2  tick  11552986  # counter shared with CPU 0
+ 52.005   1  tick      5599  # pic1=PAPI_l2_tcm,sys
+ 52.005   0  tick     88942  # pic1=PAPI_l2_tcm,sys
+ 52.005   2  tick     88942  # counter shared with CPU 0
+ 54.005   1  tick   3180014  # pic0=FSB_data_activity,emask=0x3f,sys
+ 54.005   2  tick   3173168  # counter shared with CPU 0
+ 54.005   3  tick   3180014  # counter shared with CPU 1
+ 56.005   0  tick    684523  # pic1=PAPI_l2_tcm,sys
+ 56.005   2  tick    684523  # counter shared with CPU 0
+ 58.005   1  tick   1352830  # pic0=FSB_data_activity,emask=0x3f,sys
+ 58.005   3  tick   1352830  # counter shared with CPU 1
+ 60.005   1  tick     52769  # pic1=PAPI_l2_tcm,sys
+ 60.005   3  tick     52769  # counter shared with CPU 1
+ 62.005   1  tick  21008394  # pic0=FSB_data_activity,emask=0x3f,sys
+ 62.005   3  tick  21008394  # counter shared with CPU 1
+ 64.005   1  tick     64231  # pic1=PAPI_l2_tcm,sys
+ 64.005   3  tick     64231  # counter shared with CPU 1
+ 66.005   0  tick   2094976  # pic0=FSB_data_activity,emask=0x3f,sys
+ 66.005   2  tick   2094976  # counter shared with CPU 0
+ 68.005   0  tick    331322  # pic1=PAPI_l2_tcm,sys
+ 68.005   2  tick    331322  # counter shared with CPU 0
+ 70.005   1  tick  11967970  # pic0=FSB_data_activity,emask=0x3f,sys
+ 70.005   3  tick  11967970  # counter shared with CPU 1
+ 72.005   0  tick    127866  # pic1=PAPI_l2_tcm,sys
+ 72.005   2  tick    127866  # counter shared with CPU 0
+ 74.005   0  tick   2151276  # pic0=FSB_data_activity,emask=0x3f,sys
+ 74.005   2  tick   2151276  # counter shared with CPU 0
+ 76.005   1  tick    681403  # pic1=PAPI_l2_tcm,sys
+ 76.005   3  tick    681403  # counter shared with CPU 1
+ 78.005   1  tick    249762  # pic0=FSB_data_activity,emask=0x3f,sys
+ 78.005   3  tick    249762  # counter shared with CPU 1
+sk=0x3f,sys
+ 78.005   2  tick    254494  # counter shared with CPU 0
+ 80.005   1  tick      5952  # pic1=PAPI_l2_tcm,sys
+ 80.005   0  tick     64837  # pic1=PAPI_l2_tcm,sys
+ 80.005   2  tick     64837  # counter shared with CPU 0
+ 82.005   1  tick  20690794  # pic0=FSB_data_activity,emask=0x3f,sys
+ 82.005   3  tick  20690794  # counter shared with CPU 1
+ 84.005   1  tick     65045  # pic1=PAPI_l2_tcm,sys
+ 84.005   3  tick     65045  # counter shared with CPU 1
+ 86.005   0  tick   1732348  # pic0=FSB_data_activity,emask=0x3f,sys
+ 86.005   2  tick   1732348  # counter shared with CPU 0
+ 88.005   1  tick    288175  # pic1=PAPI_l2_tcm,sys
+ 88.005   3  tick    288175  # counter shared with CPU 1
+ 90.005   0  tick  12140882  # pic0=FSB_data_activity,emask=0x3f,sys
+ 90.005   2  tick  12140882  # counter shared with CPU 0
+ 92.005   0  tick     27790  # pic1=PAPI_l2_tcm,sys
+ 92.005   2  tick     27790  # counter shared with CPU 0
+ 94.005   0  tick   2881560  # pic0=FSB_data_activity,emask=0x3f,sys
+ 94.005   2  tick   2881560  # counter shared with CPU 0
+ 94.007   1  tick   2915862  # pic0=FSB_data_activity,emask=0x3f,sys
+ 94.007   3  tick   2915862  # counter shared with CPU 1
+ 96.005   1  tick    740303  # pic1=PAPI_l2_tcm,sys
+ 96.005   3  tick    740303  # counter shared with CPU 1
+ 98.005   1  tick   1422314  # pic0=FSB_data_activity,emask=0x3f,sys
+ 98.005   0  tick   1426630  # pic0=FSB_data_activity,emask=0x3f,sys
+ 98.005   2  tick   1426630  # counter shared with CPU 0
+100.005   0  tick     84581  # pic1=PAPI_l2_tcm,sys
+100.005   2  tick     84581  # counter shared with CPU 0
+102.005   1  tick  20935158  # pic0=FSB_data_activity,emask=0x3f,sys
+102.005   3  tick  20935158  # counter shared with CPU 1
+104.005   1  tick      6584  # pic1=PAPI_l2_tcm,sys
+104.005   0  tick     48460  # pic1=PAPI_l2_tcm,sys
+104.005   2  tick     48460  # counter shared with CPU 0
+106.005   1  tick    756622  # pic0=FSB_data_activity,emask=0x3f,sys
+106.005   3  tick    756622  # counter shared with CPU 1
+108.005   1  tick    296529  # pic1=PAPI_l2_tcm,sys
+108.005   3  tick    296529  # counter shared with CPU 1
+110.005   1  tick  11665082  # pic0=FSB_data_activity,emask=0x3f,sys
+110.005   3  tick  11665082  # counter shared with CPU 1
+112.005   1  tick     73740  # pic1=PAPI_l2_tcm,sys
+112.005   3  tick     73740  # counter shared with CPU 1
+114.005   0  tick   2893350  # pic0=FSB_data_activity,emask=0x3f,sys
+114.005   3  tick   2886528  # counter shared with CPU 1
+114.005   2  tick   2893350  # counter shared with CPU 0
+116.005   0  tick    821010  # pic1=PAPI_l2_tcm,sys
+116.005   2  tick    821010  # counter shared with CPU 0
+118.005   1  tick   1511458  # pic0=FSB_data_activity,emask=0x3f,sys
+118.005   0  tick   1511636  # pic0=FSB_data_activity,emask=0x3f,sys
+118.005   2  tick   1511636  # counter shared with CPU 0
+120.005   1  tick      3705  # pic1=PAPI_l2_tcm,sys
+120.005   0  tick     63096  # pic1=PAPI_l2_tcm,sys
+120.005   2  tick     63096  # counter shared with CPU 0
+122.005   1  tick  20845124  # pic0=FSB_data_activity,emask=0x3f,sys
+122.005   3  tick  20845124  # counter shared with CPU 1
+124.005   0  tick     23129  # pic1=PAPI_l2_tcm,sys
+124.005   2  tick     23129  # counter shared with CPU 0
+126.005   1  tick   1995126  # pic0=FSB_data_activity,emask=0x3f,sys
+126.005   3  tick   1995126  # counter shared with CPU 1
+128.005   0  tick    315831  # pic1=PAPI_l2_tcm,sys
+128.005   2  tick    315831  # counter shared with CPU 0
+128.006   1  tick    331755  # pic1=PAPI_l2_tcm,sys
+128.006   3  tick    331755  # counter shared with CPU 1
+130.005   0  tick  12634226  # pic0=FSB_data_activity,emask=0x3f,sys
+130.005   2  tick  12634226  # counter shared with CPU 0
+132.005   1  tick     18439  # pic1=PAPI_l2_tcm,sys
+132.005   2  tick    125461  # counter shared with CPU 0
+132.005   3  tick     18439  # counter shared with CPU 1
+134.005   0  tick   1805674  # pic0=FSB_data_activity,emask=0x3f,sys
+134.005   2  tick   1805674  # counter shared with CPU 0
+136.005   0  tick    713960  # pic1=PAPI_l2_tcm,sys
+136.005   2  tick    713960  # counter shared with CPU 0
+138.005   1  tick    253606  # pic0=FSB_data_activity,emask=0x3f,sys
+138.005   3  tick    253606  # counter shared with CPU 1
+sk=0x3f,sys
+138.005   2  tick    252060  # counter shared with CPU 0
+140.005   1  tick      7987  # pic1=PAPI_l2_tcm,sys
+140.005   0  tick     41923  # pic1=PAPI_l2_tcm,sys
+140.005   2  tick     41923  # counter shared with CPU 0
+142.005   0  tick  20979464  # pic0=FSB_data_activity,emask=0x3f,sys
+142.005   2  tick  20979464  # counter shared with CPU 0
+142.005   1  tick  20997466  # pic0=FSB_data_activity,emask=0x3f,sys
+142.005   3  tick  20997466  # counter shared with CPU 1
+144.005   0  tick     45734  # pic1=PAPI_l2_tcm,sys
+144.005   2  tick     45734  # counter shared with CPU 0
+146.005   1  tick   1779524  # pic0=FSB_data_activity,emask=0x3f,sys
+146.005   3  tick   1779524  # counter shared with CPU 1
+148.005   1  tick    313670  # pic1=PAPI_l2_tcm,sys
+148.005   3  tick    313670  # counter shared with CPU 1
+150.005   1  tick  12467930  # pic0=FSB_data_activity,emask=0x3f,sys
+150.005   3  tick  12467930  # counter shared with CPU 1
+152.005   1  tick     61678  # pic1=PAPI_l2_tcm,sys
+152.005   3  tick     61678  # counter shared with CPU 1
+154.005   0  tick   2570608  # pic0=FSB_data_activity,emask=0x3f,sys
+154.005   2  tick   2570608  # counter shared with CPU 0
+156.005   1  tick    712671  # pic1=PAPI_l2_tcm,sys
+156.005   3  tick    712671  # counter shared with CPU 1
+158.005   0  tick   1614702  # pic0=FSB_data_activity,emask=0x3f,sys
+158.005   2  tick   1614702  # counter shared with CPU 0
+160.005   1  tick      2633  # pic1=PAPI_l2_tcm,sys
+160.005   0  tick     91253  # pic1=PAPI_l2_tcm,sys
+160.005   2  tick     91253  # counter shared with CPU 0
+162.005   0  tick  21048458  # pic0=FSB_data_activity,emask=0x3f,sys
+162.005   2  tick  21048458  # counter shared with CPU 0
+162.005   1  tick  21076626  # pic0=FSB_data_activity,emask=0x3f,sys
+162.005   3  tick  21076626  # counter shared with CPU 1
+164.005   0  tick     51870  # pic1=PAPI_l2_tcm,sys
+164.005   2  tick     51870  # counter shared with CPU 0
+166.005   0  tick    814332  # pic0=FSB_data_activity,emask=0x3f,sys
+166.005   2  tick    814332  # counter shared with CPU 0
+168.005   0  tick    289112  # pic1=PAPI_l2_tcm,sys
+168.005   2  tick    289112  # counter shared with CPU 0
+168.005   1  tick    296595  # pic1=PAPI_l2_tcm,sys
+168.005   3  tick    296595  # counter shared with CPU 1
+170.005   0  tick  12365914  # pic0=FSB_data_activity,emask=0x3f,sys
+170.005   2  tick  12365914  # counter shared with CPU 0
+172.005   0  tick     67988  # pic1=PAPI_l2_tcm,sys
+172.005   2  tick     67988  # counter shared with CPU 0
+174.005   1  tick   2639618  # pic0=FSB_data_activity,emask=0x3f,sys
+174.005   3  tick   2639618  # counter shared with CPU 1
+174.005   0  tick   2649322  # pic0=FSB_data_activity,emask=0x3f,sys
+174.005   2  tick   2649322  # counter shared with CPU 0
+176.005   1  tick    919115  # pic1=PAPI_l2_tcm,sys
+176.005   3  tick    919115  # counter shared with CPU 1
+178.005   0  tick   1400360  # pic0=FSB_data_activity,emask=0x3f,sys
+178.005   2  tick   1400360  # counter shared with CPU 0
+180.005   1  tick     22324  # pic1=PAPI_l2_tcm,sys
+180.005   3  tick     22324  # counter shared with CPU 1
+182.005   0  tick  19515544  # pic0=FSB_data_activity,emask=0x3f,sys
+182.005   2  tick  19515544  # counter shared with CPU 0
+182.005   1  tick  19542512  # pic0=FSB_data_activity,emask=0x3f,sys
+182.005   3  tick  19542512  # counter shared with CPU 1
+184.005   1  tick    169363  # pic1=PAPI_l2_tcm,sys
+184.005   3  tick    169363  # counter shared with CPU 1
+184.005   0  tick     49964  # pic1=PAPI_l2_tcm,sys
+184.005   2  tick     49964  # counter shared with CPU 0
+186.005   0  tick   2000130  # pic0=FSB_data_activity,emask=0x3f,sys
+186.005   2  tick   2000130  # counter shared with CPU 0
+188.005   0  tick    350323  # pic1=PAPI_l2_tcm,sys
+188.005   2  tick    350323  # counter shared with CPU 0
+190.005   0  tick  12740740  # pic0=FSB_data_activity,emask=0x3f,sys
+190.005   2  tick  12740740  # counter shared with CPU 0
+192.005   0  tick    106918  # pic1=PAPI_l2_tcm,sys
+192.005   2  tick    106918  # counter shared with CPU 0
+194.005   1  tick   1470676  # pic0=FSB_data_activity,emask=0x3f,sys
+194.005   3  tick   1470676  # counter shared with CPU 1
+194.005   0  tick   1481970  # pic0=FSB_data_activity,emask=0x3f,sys
+194.005   2  tick   1481970  # counter shared with CPU 0
+196.005   1  tick    782874  # pic1=PAPI_l2_tcm,sys
+196.005   3  tick    782874  # counter shared with CPU 1
+198.005   1  tick    292938  # pic0=FSB_data_activity,emask=0x3f,sys
+198.005   3  tick    292938  # counter shared with CPU 1
+198.005   0  tick    295970  # pic0=FSB_data_activity,emask=0x3f,sys
+198.005   2  tick    295970  # counter shared with CPU 0
+200.005   1  tick      4220  # pic1=PAPI_l2_tcm,sys
+200.005   3  tick      4220  # counter shared with CPU 1
+200.005   0  tick     53509  # pic1=PAPI_l2_tcm,sys
+200.005   2  tick     53509  # counter shared with CPU 0
+202.005   0  tick  17283952  # pic0=FSB_data_activity,emask=0x3f,sys
+202.005   2  tick  17283952  # counter shared with CPU 0
+202.005   1  tick  17319116  # pic0=FSB_data_activity,emask=0x3f,sys
+202.005   3  tick  17319116  # counter shared with CPU 1
+204.005   0  tick    305247  # pic1=PAPI_l2_tcm,sys
+204.005   2  tick    305247  # counter shared with CPU 0
+206.005   0  tick   1861920  # pic0=FSB_data_activity,emask=0x3f,sys
+206.005   2  tick   1861920  # counter shared with CPU 0
+208.005   0  tick    338652  # pic1=PAPI_l2_tcm,sys
+208.005   2  tick    338652  # counter shared with C208.005   3  tick    286137  # counter shared with CPU 1
+210.005   0  tick  12850278  # pic0=FSB_data_activity,emask=0x3f,sys
+210.005   2  tick  12850278  # counter shared with CPU 0
+212.005   1  tick     18373  # pic1=PAPI_l2_tcm,sys
+212.005   3  tick     18373  # counter shared with CPU 1
+214.005   0  tick   2528234  # pic0=FSB_data_activity,emask=0x3f,sys
+214.005   2  tick   2528234  # counter shared with CPU 0
+216.005   1  tick    865147  # pic1=PAPI_l2_tcm,sys
+216.005   3  tick    865147  # counter shared with CPU 1
+218.005   1  tick   1434364  # pic0=FSB_data_activity,emask=0x3f,sys
+218.005   3  tick   1434364  # counter shared with CPU 1
+220.005   1  tick     80678  # pic1=PAPI_l2_tcm,sys
+220.005   3  tick     80678  # counter shared with CPU 1
+222.005   0  tick  15204952  # pic0=FSB_data_activity,emask=0x3f,sys
+222.005   2  tick  15204952  # counter shared with CPU 0
+222.005   1  tick  15218380  # pic0=FSB_data_activity,emask=0x3f,sys
+222.005   3  tick  15218380  # counter shared with CPU 1
+224.005   0  tick    245452  # pic1=PAPI_l2_tcm,sys
+224.005   2  tick    245452  # counter shared with CPU 0
+226.005   1  tick    829906  # pic0=FSB_data_activity,emask=0x3f,sys
+226.005   3  tick    829906  # counter shared with CPU 1
+228.005   1  tick    318064  # pic1=PAPI_l2_tcm,sys
+228.005   3  tick    318064  # counter shared with CPU 1
+228.006   0  tick    279870  # pic1=PAPI_l2_tcm,sys
+228.006   2  tick    279870  # counter shared with CPU 0
+230.005   1  tick  12456060  # pic0=FSB_data_activity,emask=0x3f,sys
+230.005   3  tick  12456060  # counter shared with CPU 1
+232.005   0  tick     12041  # pic1=PAPI_l2_tcm,sys
+232.005   3  tick     92235  # counter shared with CPU 1
+232.005   2  tick     12041  # counter shared with CPU 0
+234.005   1  tick   2365400  # pic0=FSB_data_activity,emask=0x3f,sys
+234.005   3  tick   2365400  # counter shared with CPU 1
+236.005   1  tick    682873  # pic1=PAPI_l2_tcm,sys
+236.005   3  tick    682873  # counter shared with CPU 1
+238.005   0  tick   1501490  # pic0=FSB_data_activity,emask=0x3f,sys
+238.005   1  tick   1502038  # pic0=FSB_data_activity,emask=0x3f,sys
+238.005   3  tick   1502038  # counter shared with CPU 1
+240.005   0  tick      2850  # pic1=PAPI_l2_tcm,sys
+240.005   1  tick     58707  # pic1=PAPI_l2_tcm,sys
+240.005   3  tick     58707  # counter shared with CPU 1
+242.005   1  tick  13135358  # pic0=FSB_data_activity,emask=0x3f,sys
+242.005   3  tick  13135358  # counter shared with CPU 1
+242.005   0  tick  13146562  # pic0=FSB_data_activity,emask=0x3f,sys
+242.005   2  tick  13146562  # counter shared with CPU 0
+244.005   0  tick    289861  # pic1=PAPI_l2_tcm,sys
+244.005   1  tick    484747  # pic1=PAPI_l2_tcm,sys
+244.005   3  tick    484747  # counter shared with CPU 1
+246.005   0  tick   2171899  # pic0=FSB_data_activity,emask=0x3f,sys
+246.005   2  tick   2171899  # counter shared with CPU 0
+sk=0x3f,sys
+246.005   3  tick   2173638  # counter shared with CPU 1
+248.005   1  tick    343852  # pic1=PAPI_l2_tcm,sys
+248.005   3  tick    343852  # counter shared with CPU 1
+250.005   1  tick  13069076  # pic0=FSB_data_activity,emask=0x3f,sys
+250.005   3  tick  13069076  # counter shared with CPU 1
+252.005   0  tick     23744  # pic1=PAPI_l2_tcm,sys
+252.005   2  tick     23744  # counter shared with CPU 0
+254.005   0  tick   1167706  # pic0=FSB_data_activity,emask=0x3f,sys
+254.005   2  tick   1167706  # counter shared with CPU 0
+256.005   1  tick    773307  # pic1=PAPI_l2_tcm,sys
+256.005   3  tick    773307  # counter shared with CPU 1
+258.005   1  tick    256610  # pic0=FSB_data_activity,emask=0x3f,sys
+258.005   3  tick    256610  # counter shared with CPU 1
+260.005   1  tick     69989  # pic1=PAPI_l2_tcm,sys
+260.005   3  tick     69989  # counter shared with CPU 1
+262.005   0  tick  11271068  # pic0=FSB_data_activity,emask=0x3f,sys
+262.005   2  tick  11271068  # counter shared with CPU 0
+264.005   1  tick    590354  # pic1=PAPI_l2_tcm,sys
+264.005   3  tick    590354  # counter shared with CPU 1
+266.005   0  tick   1800848  # pic0=FSB_data_activity,emask=0x3f,sys
+266.005   2  tick   1800848  # counter shared with CPU 0
+268.005   0  tick    164408  # pic1=PAPI_l2_tcm,sys
+268.005   2  tick    164408  # counter shared with CPU 0
+270.005   0  tick  15408247  # pic0=FSB_data_activity,emask=0x3f,sys
+270.005   2  tick  15408247  # counter shared with CPU 0
+sk=0x3f,sys
+270.005   3  tick  15412606  # counter shared with CPU 1
+272.005   0  tick     20598  # pic1=PAPI_l2_tcm,sys
+272.005   2  tick     20598  # counter shared with CPU 0
+274.005   1  tick   2202674  # pic0=FSB_data_activity,emask=0x3f,sys
+274.005   3  tick   2202674  # counter shared with CPU 1
+276.005   0  tick    661025  # pic1=PAPI_l2_tcm,sys
+276.005   2  tick    661025  # counter shared with CPU 0
+278.005   0  tick   1551400  # pic0=FSB_data_activity,emask=0x3f,sys
+278.005   1  tick   1554598  # pic0=FSB_data_activity,emask=0x3f,sys
+278.005   3  tick   1554598  # counter shared with CPU 1
+280.005   0  tick      4561  # pic1=PAPI_l2_tcm,sys
+280.005   1  tick     99134  # pic1=PAPI_l2_tcm,sys
+280.005   3  tick     99134  # counter shared with CPU 1
+282.005   1  tick  10523026  # pic0=FSB_data_activity,emask=0x3f,sys
+282.005   3  tick  10523026  # counter shared with CPU 1
+284.005   0  tick    458007  # pic1=PAPI_l2_tcm,sys
+284.005   2  tick    458007  # counter shared with CPU 0
+286.005   1  tick    854192  # pic0=FSB_data_activity,emask=0x3f,sys
+286.005   3  tick    854192  # counter shared with CPU 1
+288.005   0  tick    124264  # pic1=PAPI_l2_tcm,sys
+288.005   1  tick    177781  # pic1=PAPI_l2_tcm,sys
+288.005   3  tick    177781  # counter shared with CPU 1
+290.005   0  tick  16000358  # pic0=FSB_data_activity,emask=0x3f,sys
+290.005   2  tick  16000358  # counter shared with CPU 0
+292.005   0  tick     76836  # pic1=PAPI_l2_tcm,sys
+292.005   2  tick     76836  # counter shared with CPU 0
+294.005   0  tick   2201378  # pic0=FSB_data_activity,emask=0x3f,sys
+294.005   2  tick   2201378  # counter shared with CPU 0
+294.005   1  tick   2225734  # pic0=FSB_data_activity,emask=0x3f,sys
+294.005   3  tick   2225734  # counter shared with CPU 1
+296.005   0  tick    695524  # pic1=PAPI_l2_tcm,sys
+296.005   2  tick    695524  # counter shared with CPU 0
+298.005   1  tick   1423982  # pic0=FSB_data_activity,emask=0x3f,sys
+298.005   0  tick   1421846  # pic0=FSB_data_activity,emask=0x3f,sys
+298.005   2  tick   1421846  # counter shared with CPU 0
+300.005   0  tick     55296  # pic1=PAPI_l2_tcm,sys
+300.005   2  tick     55296  # counter shared with CPU 0
+302.005   1  tick  33170348  # pic0=FSB_data_activity,emask=0x3f,sys
+302.005   3  tick  33170348  # counter shared with CPU 1
+302.006   0  tick  33208946  # pic0=FSB_data_activity,emask=0x3f,sys
+302.006   2  tick  33208946  # counter shared with CPU 0
+304.005   0  tick   1216394  # pic1=PAPI_l2_tcm,sys
+304.005   2  tick   1216394  # counter shared with CPU 0
+306.005   1  tick  35526166  # pic0=FSB_data_activity,emask=0x3f,sys
+306.005   0  tick  35535158  # pic0=FSB_data_activity,emask=0x3f,sys
+306.005   2  tick  35535158  # counter shared with CPU 0
+308.006   1  tick   4020283  # pic1=PAPI_l2_tcm,sys
+308.006   3  tick   4020283  # counter shared with CPU 1
+308.228   0  tick   5843016  # pic1=PAPI_l2_tcm,sys
+308.228   2  tick   5843016  # counter shared with CPU 0
+310.005   0  tick  64234514  # pic0=FSB_data_activity,emask=0x3f,sys
+310.005   2  tick  64234514  # counter shared with CPU 0
+312.005   0  tick    487456  # pic1=PAPI_l2_tcm,sys
+312.005   1  tick   1950096  # pic1=PAPI_l2_tcm,sys
+312.005   3  tick   1950096  # counter shared with CPU 1
+314.005   0  tick 103731444  # pic0=FSB_data_activity,emask=0x3f,sys
+314.005   2  tick 103731444  # counter shared with CPU 0
+314.005   1  tick 103714058  # pic0=FSB_data_activity,emask=0x3f,sys
+314.005   3  tick 103714058  # counter shared with CPU 1
+316.005   0  tick   1648113  # pic1=PAPI_l2_tcm,sys
+316.005   2  tick   1648113  # counter shared with CPU 0
+316.005   1  tick   1939129  # pic1=PAPI_l2_tcm,sys
+316.005   3  tick   1939129  # counter shared with CPU 1
+318.005   0  tick 105051332  # pic0=FSB_data_activity,emask=0x3f,sys
+318.005   2  tick 105051332  # counter shared with CPU 0
+320.005   1  tick    725630  # pic1=PAPI_l2_tcm,sys
+320.005   3  tick    725630  # counter shared with CPU 1
+322.005   0  tick  14766188  # pic0=FSB_data_activity,emask=0x3f,sys
+322.005   2  tick  14766188  # counter shared with CPU 0
+324.005   1  tick    791073  # pic1=PAPI_l2_tcm,sys
+324.005   3  tick    791073  # counter shared with CPU 1
+326.005   0  tick   4007820  # pic0=FSB_data_activity,emask=0x3f,sys
+326.005   2  tick   4007820  # counter shared with CPU 0
+328.005   1  tick   3248322  # pic1=PAPI_l2_tcm,sys
+328.005   3  tick   3248322  # counter shared with CPU 1
+330.005   0  tick  22911102  # pic0=FSB_data_activity,emask=0x3f,sys
+330.005   2  tick  22911102  # counter shared with CPU 0
+330.005   1  tick  22925342  # pic0=FSB_data_activity,emask=0x3f,sys
+330.005   3  tick  22925342  # counter shared with CPU 1
+332.005   0  tick    263015  # pic1=PAPI_l2_tcm,sys
+332.005   2  tick    263015  # counter shared with CPU 0
+334.005   1  tick  73045993  # pic0=FSB_data_activity,emask=0x3f,sys
+334.005   3  tick  73045993  # counter shared with CPU 1
+336.005   0  tick   3843423  # pic1=PAPI_l2_tcm,sys
+336.005   2  tick   3843423  # counter shared with C336.005   3  tick   4851046  # counter shared with CPU 1
+338.005   1  tick  99043006  # pic0=FSB_data_activity,emask=0x3f,sys
+338.005   3  tick  99043006  # counter shared with CPU 1
+340.005   1  tick   8669908  # pic1=PAPI_l2_tcm,sys
+340.005   3  tick   8669908  # counter shared with CPU 1
+342.005   0  tick 153819604  # pic0=FSB_data_activity,emask=0x3f,sys
+342.005   2  tick 153819604  # counter shared with CPU 0
+344.005   1  tick  14451279  # pic1=PAPI_l2_tcm,sys
+344.005   3  tick  14451279  # counter shared with CPU 1
+346.005   1  tick 205116302  # pic0=FSB_data_activity,emask=0x3f,sys
+346.005   3  tick 205116302  # counter shared with CPU 1
+348.005   1  tick  13315254  # pic1=PAPI_l2_tcm,sys
+348.005   3  tick  13315254  # counter shared with CPU 1
+350.005   1  tick 181069822  # pic0=FSB_data_activity,emask=0x3f,sys
+350.005   0  tick 181063738  # pic0=FSB_data_activity,emask=0x3f,sys
+350.005   2  tick 181063738  # counter shared with CPU 0
+352.005   1  tick     97265  # pic1=PAPI_l2_tcm,sys
+352.005   3  tick     97265  # counter shared with CPU 1
+352.005   0  tick   9064001  # pic1=PAPI_l2_tcm,sys
+352.005   2  tick   9064001  # counter shared with CPU 0
+354.005   1  tick 101242204  # pic0=FSB_data_activity,emask=0x3f,sys
+354.005   3  tick 101242204  # counter shared with CPU 1
+356.005   0  tick    374559  # pic1=PAPI_l2_tcm,sys
+356.005   2  tick    374559  # counter shared with C356.005   3  tick   9624225  # counter shared with CPU 1
+358.005   1  tick  93569496  # pic0=FSB_data_activity,emask=0x3f,sys
+358.005   0  tick  93580652  # pic0=FSB_data_activity,emask=0x3f,sys
+358.005   2  tick  93580652  # counter shared with CPU 0
+360.005   0  tick   6052785  # pic1=PAPI_l2_tcm,sys
+360.005   2  tick   6052785  # counter shared with CPU 0
+362.005   0  tick  52996513  # pic0=FSB_data_activity,emask=0x3f,sys
+362.005   2  tick  52996513  # counter shared with CPU 0
+364.005   0  tick   3453123  # pic1=PAPI_l2_tcm,sys
+364.005   2  tick   3453123  # counter shared with CPU 0
+366.005   1  tick  74128400  # pic0=FSB_data_activity,emask=0x3f,sys
+366.005   3  tick  74128400  # counter shared with CPU 1
+366.005   0  tick  74119212  # pic0=FSB_data_activity,emask=0x3f,sys
+366.005   2  tick  74119212  # counter shared with CPU 0
+368.005   1  tick    110309  # pic1=PAPI_l2_tcm,sys
+368.005   3  tick    110309  # counter shared with C368.005   2  tick   9016955  # counter shared with CPU 0
+370.005   1  tick 108235534  # pic0=FSB_data_activity,emask=0x3f,sys
+370.005   3  tick 108235534  # counter shared with CPU 1
+372.005   1  tick   6313412  # pic1=PAPI_l2_tcm,sys
+372.005   3  tick   6313412  # counter shared with CPU 1
+374.005   0  tick  45792484  # pic0=FSB_data_activity,emask=0x3f,sys
+374.005   1  tick  45793524  # pic0=FSB_data_activity,emask=0x3f,sys
+374.005   3  tick  45793524  # counter shared with CPU 1
+376.005   1  tick   5352069  # pic1=PAPI_l2_tcm,sys
+376.005   3  tick   5352069  # counter shared with CPU 1
+376.005   0  tick    360874  # pic1=PAPI_l2_tcm,sys
+376.005   2  tick    360874  # counter shared with CPU 0
+378.005   1  tick  60253902  # pic0=FSB_data_activity,emask=0x3f,sys
+378.005   3  tick  60253902  # counter shared with CPU 1
+380.005   1  tick   5905480  # pic1=PAPI_l2_tcm,sys
+380.005   3  tick   5905480  # counter shared with CPU 1
+382.005   0  tick  27582572  # pic0=FSB_data_activity,emask=0x3f,sys
+382.005   2  tick  27582572  # counter shared with CPU 0
+382.006   1  tick  27732700  # pic0=FSB_data_activity,emask=0x3f,sys
+382.006   3  tick  27732700  # counter shared with CPU 1
+384.005   1  tick   2513756  # pic1=PAPI_l2_tcm,sys
+384.005   3  tick   2513756  # counter shared with CPU 1
+386.005   1  tick  23108538  # pic0=FSB_data_activity,emask=0x3f,sys
+386.005   2  tick  23105986  # counter shared with CPU 0
+386.005   3  tick  23108538  # counter shared with CPU 1
+388.005   0  tick     61441  # pic1=PAPI_l2_tcm,sys
+388.005   2  tick     61441  # counter shared with CPU 0
+388.005   1  tick      7294  # pic1=PAPI_l2_tcm,sys
+388.005   3  tick      7294  # counter shared with CPU 1
+390.005   1  tick   9600882  # pic0=FSB_data_activity,emask=0x3f,sys
+390.005   3  tick   9600882  # counter shared with CPU 1
+392.005   0  tick    514532  # pic1=PAPI_l2_tcm,sys
+392.005   2  tick    514532  # counter shared with CPU 0
+394.005   1  tick   4757422  # pic0=FSB_data_activity,emask=0x3f,sys
+394.005   0  tick   4761296  # pic0=FSB_data_activity,emask=0x3f,sys
+394.005   2  tick   4761296  # counter shared with CPU 0
+396.005   0  tick    332290  # pic1=PAPI_l2_tcm,sys
+396.005   2  tick    332290  # counter shared with CPU 0
+398.005   0  tick  21166176  # pic0=FSB_data_activity,emask=0x3f,sys
+398.005   2  tick  21166176  # counter shared with CPU 0
+400.005   0  tick   3575485  # pic1=PAPI_l2_tcm,sys
+400.005   2  tick   3575485  # counter shared with C400.005   3  tick   3343951  # counter shared with CPU 1
+402.005   0  tick  41771890  # pic0=FSB_data_activity,emask=0x3f,sys
+402.005   2  tick  41771890  # counter shared with CPU 0
+404.005   0  tick    955316  # pic1=PAPI_l2_tcm,sys
+404.005   2  tick    955316  # counter shared with CPU 0
+404.005   1  tick   1417668  # pic1=PAPI_l2_tcm,sys
+404.005   3  tick   1417668  # counter shared with CPU 1
+406.005   1  tick   6782114  # pic0=FSB_data_activity,emask=0x3f,sys
+406.005   2  tick   6779861  # counter shared with CPU 0
+406.005   3  tick   6782114  # counter shared with CPU 1
+408.005   1  tick    107884  # pic1=PAPI_l2_tcm,sys
+408.005   3  tick    107884  # counter shared with CPU 1
+408.005   0  tick   1695111  # pic1=PAPI_l2_tcm,sys
+408.005   2  tick   1695111  # counter shared with CPU 0
+410.005   1  tick 249869306  # pic0=FSB_data_activity,emask=0x3f,sys
+410.005   0  tick 249861318  # pic0=FSB_data_activity,emask=0x3f,sys
+410.005   2  tick 249861318  # counter shared with CPU 0
+412.005   1  tick  17565004  # pic1=PAPI_l2_tcm,sys
+412.005   3  tick  17565004  # counter shared with CPU 1
+414.005   0  tick 234796340  # pic0=FSB_data_activity,emask=0x3f,sys
+414.005   1  tick 234802276  # pic0=FSB_data_activity,emask=0x3f,sys
+414.005   3  tick 234802276  # counter shared with CPU 1
+416.005   1  tick  25080071  # pic1=PAPI_l2_tcm,sys
+416.005   3  tick  25080071  # counter shared with CPU 1
+416.006   0  tick    168703  # pic1=PAPI_l2_tcm,sys
+416.006   2  tick    168703  # counter shared with CPU 0
+418.005   0  tick 256952533  # pic0=FSB_data_activity,emask=0x3f,sys
+418.005   1  tick 257193868  # pic0=FSB_data_activity,emask=0x3f,sys
+418.005   3  tick 257193868  # counter shared with CPU 1
+420.005   1  tick  24630578  # pic1=PAPI_l2_tcm,sys
+420.005   3  tick  24630578  # counter shared with CPU 1
+422.005   1  tick 263892284  # pic0=FSB_data_activity,emask=0x3f,sys
+422.005   3  tick 263892284  # counter shared with CPU 1
+424.005   1  tick  10773584  # pic1=PAPI_l2_tcm,sys
+424.005   3  tick  10773584  # counter shared with CPU 1
+426.005   0  tick 368753756  # pic0=FSB_data_activity,emask=0x3f,sys
+426.005   2  tick 368753756  # counter shared with CPU 0
+428.005   1  tick    152925  # pic1=PAPI_l2_tcm,sys
+428.005   3  tick    152925  # counter shared with CPU 1
+428.005   0  tick  18078017  # pic1=PAPI_l2_tcm,sys
+428.005   2  tick  18078017  # counter shared with CPU 0
+430.005   0  tick 213934448  # pic0=FSB_data_activity,emask=0x3f,sys
+430.005   2  tick 213934448  # counter shared with CPU 0
+430.005   1  tick 214095664  # pic0=FSB_data_activity,emask=0x3f,sys
+430.005   3  tick 214095664  # counter shared with CPU 1
+432.005   1  tick  10300632  # pic1=PAPI_l2_tcm,sys
+432.005   3  tick  10300632  # counter shared with CPU 1
+432.005   0  tick   9977216  # pic1=PAPI_l2_tcm,sys
+432.005   2  tick   9977216  # counter shared with CPU 0
+434.005   1  tick 270296188  # pic0=FSB_data_activity,emask=0x3f,sys
+434.005   3  tick 270296188  # counter shared with CPU 1
+434.005   0  tick 270294848  # pic0=FSB_data_activity,emask=0x3f,sys
+434.005   2  tick 270294848  # counter shared with CPU 0
+436.005   0  tick  21733208  # pic1=PAPI_l2_tcm,sys
+436.005   2  tick  21733208  # counter shared with CPU 0
+438.005   0  tick 282036888  # pic0=FSB_data_activity,emask=0x3f,sys
+438.005   2  tick 282036888  # counter shared with CPU 0
+440.005   1  tick  22556315  # pic1=PAPI_l2_tcm,sys
+440.005   3  tick  22556315  # counter shared with CPU 1
+442.005   0  tick 269953686  # pic0=FSB_data_activity,emask=0x3f,sys
+442.005   1  tick 269954827  # pic0=FSB_data_activity,emask=0x3f,sys
+442.005   3  tick 269954827  # counter shared with CPU 1
+444.005   0  tick   1251691  # pic1=PAPI_l2_tcm,sys
+444.005   2  tick   1251691  # counter shared with CPU 0
+446.005   0  tick 287224974  # pic0=FSB_data_activity,emask=0x3f,sys
+446.005   2  tick 287224974  # counter shared with CPU 0
+448.005   0  tick  20988775  # pic1=PAPI_l2_tcm,sys
+448.005   2  tick  20988775  # counter shared with CPU 0
+450.005   0  tick 291018478  # pic0=FSB_data_activity,emask=0x3f,sys
+450.005   2  tick 291018478  # counter shared with CPU 0
+450.005   1  tick 291068556  # pic0=FSB_data_activity,emask=0x3f,sys
+450.005   3  tick 291068556  # counter shared with CPU 1
+452.005   0  tick  21823559  # pic1=PAPI_l2_tcm,sys
+452.005   2  tick  21823559  # counter shared with C452.005   3  tick   3183687  # counter shared with CPU 1
+454.005   0  tick 311277700  # pic0=FSB_data_activity,emask=0x3f,sys
+454.005   1  tick 311285218  # pic0=FSB_data_activity,emask=0x3f,sys
+454.005   3  tick 311285218  # counter shared with CPU 1
+456.005   1  tick  26274813  # pic1=PAPI_l2_tcm,sys
+456.005   3  tick  26274813  # counter shared with CPU 1
+458.005   0  tick 328531240  # pic0=FSB_data_activity,emask=0x3f,sys
+458.005   2  tick 328531240  # counter shared with CPU 0
+458.006   1  tick 328802708  # pic0=FSB_data_activity,emask=0x3f,sys
+458.006   3  tick 328802708  # counter shared with CPU 1
+460.005   1  tick   2850641  # pic1=PAPI_l2_tcm,sys
+460.005   0  tick  24745247  # pic1=PAPI_l2_tcm,sys
+460.005   2  tick  24745247  # counter shared with CPU 0
+462.005   0  tick 330455056  # pic0=FSB_data_activity,emask=0x3f,sys
+462.005   2  tick 330455056  # counter shared with CPU 0
+464.005   0  tick  26154509  # pic1=PAPI_l2_tcm,sys
+464.005   2  tick  26154509  # counter shared with CPU 0
+464.006   1  tick     76810  # pic1=PAPI_l2_tcm,sys
+464.006   3  tick     76810  # counter shared with CPU 1
+466.005   0  tick 324828744  # pic0=FSB_data_activity,emask=0x3f,sys
+466.005   2  tick 324828744  # counter shared with CPU 0
+466.005   1  tick 324538006  # pic0=FSB_data_activity,emask=0x3f,sys
+466.005   3  tick 324538006  # counter shared with CPU 1
+468.005   1  tick  21784867  # pic1=PAPI_l2_tcm,sys
+468.005   3  tick  21784867  # counter shared with CPU 1
+468.005   0  tick   4742830  # pic1=PAPI_l2_tcm,sys
+468.005   2  tick   4742830  # counter shared with CPU 0
+470.005   1  tick 320584250  # pic0=FSB_data_activity,emask=0x3f,sys
+470.005   3  tick 320584250  # counter shared with CPU 1
+472.005   0  tick   4356929  # pic1=PAPI_l2_tcm,sys
+472.005   2  tick   4356929  # counter shared with CPU 0
+472.005   1  tick  20211000  # pic1=PAPI_l2_tcm,sys
+472.005   3  tick  20211000  # counter shared with CPU 1
+474.005   1  tick 274524396  # pic0=FSB_data_activity,emask=0x3f,sys
+474.005   3  tick 274524396  # counter shared with CPU 1
+476.005   1  tick  24557451  # pic1=PAPI_l2_tcm,sys
+476.005   3  tick  24557451  # counter shared with CPU 1
+476.008   0  tick    129619  # pic1=PAPI_l2_tcm,sys
+476.008   2  tick    129619  # counter shared with CPU 0
+478.005   1  tick 358597732  # pic0=FSB_data_activity,emask=0x3f,sys
+478.005   3  tick 358597732  # counter shared with CPU 1
+478.005   0  tick 357972528  # pic0=FSB_data_activity,emask=0x3f,sys
+478.005   2  tick 357972528  # counter shared with CPU 0
+480.005   1  tick   6732421  # pic1=PAPI_l2_tcm,sys
+480.005   3  tick   6732421  # counter shared with C480.005   2  tick  28650200  # counter shared with CPU 0
+482.005   0  tick 210452964  # pic0=FSB_data_activity,emask=0x3f,sys
+482.005   2  tick 210452964  # counter shared with CPU 0
+sk=0x3f,sys
+482.005   3  tick 210453300  # counter shared with CPU 1
+484.005   0  tick    122960  # pic1=PAPI_l2_tcm,sys
+484.005   2  tick    122960  # counter shared with C484.005   3  tick  24115986  # counter shared with CPU 1
+486.005   0  tick 242009312  # pic0=FSB_data_activity,emask=0x3f,sys
+486.005   2  tick 242009312  # counter shared with CPU 0
+486.006   1  tick 242101270  # pic0=FSB_data_activity,emask=0x3f,sys
+486.006   3  tick 242101270  # counter shared with CPU 1
+488.005   1  tick   2190409  # pic1=PAPI_l2_tcm,sys
+488.005   0  tick  22907534  # pic1=PAPI_l2_tcm,sys
+488.005   2  tick  22907534  # counter shared with CPU 0
+490.005   1  tick 240834642  # pic0=FSB_data_activity,emask=0x3f,sys
+490.005   3  tick 240834642  # counter shared with CPU 1
+sk=0x3f,sys
+490.005   2  tick 240811974  # counter shared with CPU 0
+492.005   0  tick  24501610  # pic1=PAPI_l2_tcm,sys
+492.005   2  tick  24501610  # counter shared with CPU 0
+494.005   1  tick 239643436  # pic0=FSB_data_activity,emask=0x3f,sys
+494.005   3  tick 239643436  # counter shared with CPU 1
+496.005   1  tick   3248557  # pic1=PAPI_l2_tcm,sys
+496.005   3  tick   3248557  # counter shared with C496.005   2  tick  21015563  # counter shared with CPU 0
+498.005   1  tick 229131974  # pic0=FSB_data_activity,emask=0x3f,sys
+498.005   3  tick 229131974  # counter shared with CPU 1
+500.005   1  tick   8374082  # pic1=PAPI_l2_tcm,sys
+500.005   3  tick   8374082  # counter shared with CPU 1
+500.005   0  tick  16153248  # pic1=PAPI_l2_tcm,sys
+500.005   2  tick  16153248  # counter shared with CPU 0
+502.005   0  tick 229610260  # pic0=FSB_data_activity,emask=0x3f,sys
+502.005   2  tick 229610260  # counter shared with CPU 0
+504.005   0  tick  24571606  # pic1=PAPI_l2_tcm,sys
+504.005   2  tick  24571606  # counter shared with CPU 0
+506.005   0  tick 227560480  # pic0=FSB_data_activity,emask=0x3f,sys
+506.005   2  tick 227560480  # counter shared with CPU 0
+508.005   1  tick    609307  # pic1=PAPI_l2_tcm,sys
+508.005   3  tick    609307  # counter shared with CPU 1
+508.006   0  tick  23869463  # pic1=PAPI_l2_tcm,sys
+508.006   2  tick  23869463  # counter shared with CPU 0
+510.005   1  tick 226798204  # pic0=FSB_data_activity,emask=0x3f,sys
+510.005   3  tick 226798204  # counter shared with CPU 1
+510.005   0  tick 226591956  # pic0=FSB_data_activity,emask=0x3f,sys
+510.005   2  tick 226591956  # counter shared with CPU 0
+512.005   0  tick  23347410  # pic1=PAPI_l2_tcm,sys
+512.005   2  tick  23347410  # counter shared with CPU 0
+512.005   1  tick    184667  # pic1=PAPI_l2_tcm,sys
+512.005   3  tick    184667  # counter shared with CPU 1
+514.005   1  tick 241309142  # pic0=FSB_data_activity,emask=0x3f,sys
+514.005   3  tick 241309142  # counter shared with CPU 1
+516.005   0  tick    166654  # pic1=PAPI_l2_tcm,sys
+516.005   2  tick    166654  # counter shared with C516.005   3  tick  23755756  # counter shared with CPU 1
+518.005   0  tick 229699580  # pic0=FSB_data_activity,emask=0x3f,sys
+518.005   2  tick 229699580  # counter shared with CPU 0
+sk=0x3f,sys
+518.005   3  tick 229701636  # counter shared with CPU 1
+520.005   0  tick   8712876  # pic1=PAPI_l2_tcm,sys
+520.005   2  tick   8712876  # counter shared with CPU 0
+522.005   1  tick 234332709  # pic0=FSB_data_activity,emask=0x3f,sys
+522.005   3  tick 234332709  # counter shared with CPU 1
+524.005   0  tick  22468677  # pic1=PAPI_l2_tcm,sys
+524.005   2  tick  22468677  # counter shared with CPU 0
+526.005   0  tick 228761448  # pic0=FSB_data_activity,emask=0x3f,sys
+526.005   2  tick 228761448  # counter shared with CPU 0
+528.005   0  tick  19644759  # pic1=PAPI_l2_tcm,sys
+528.005   2  tick  19644759  # counter shared with CPU 0
+530.005   1  tick 225668420  # pic0=FSB_data_activity,emask=0x3f,sys
+530.005   3  tick 225668420  # counter shared with CPU 1
+530.005   0  tick 225675268  # pic0=FSB_data_activity,emask=0x3f,sys
+530.005   2  tick 225675268  # counter shared with CPU 0
+532.005   1  tick    179130  # pic1=PAPI_l2_tcm,sys
+532.005   3  tick    179130  # counter shared with CPU 1
+532.005   0  tick  24373045  # pic1=PAPI_l2_tcm,sys
+532.005   2  tick  24373045  # counter shared with CPU 0
+534.005   0  tick 235443881  # pic0=FSB_data_activity,emask=0x3f,sys
+534.005   1  tick 235485416  # pic0=FSB_data_activity,emask=0x3f,sys
+534.005   3  tick 235485416  # counter shared with CPU 1
+536.005   1  tick  24267343  # pic1=PAPI_l2_tcm,sys
+536.005   3  tick  24267343  # counter shared with CPU 1
+538.005   0  tick 227311160  # pic0=FSB_data_activity,emask=0x3f,sys
+538.005   2  tick 227311160  # counter shared with CPU 0
+sk=0x3f,sys
+538.005   3  tick 227311838  # counter shared with CPU 1
+540.005   0  tick   3555206  # pic1=PAPI_l2_tcm,sys
+540.005   2  tick   3555206  # counter shared with CPU 0
+542.005   0  tick 237648554  # pic0=FSB_data_activity,emask=0x3f,sys
+542.005   2  tick 237648554  # counter shared with CPU 0
+544.005   0  tick  15026605  # pic1=PAPI_l2_tcm,sys
+544.005   2  tick  15026605  # counter shared with CPU 0
+546.005   1  tick 232016206  # pic0=FSB_data_activity,emask=0x3f,sys
+546.005   3  tick 232016206  # counter shared with CPU 1
+sk=0x3f,sys
+546.005   2  tick 232027524  # counter shared with CPU 0
+548.005   0  tick  15325598  # pic1=PAPI_l2_tcm,sys
+548.005   2  tick  15325598  # counter shared with CPU 0
+548.005   1  tick   9366109  # pic1=PAPI_l2_tcm,sys
+548.005   3  tick   9366109  # counter shared with CPU 1
+550.005   0  tick 232148580  # pic0=FSB_data_activity,emask=0x3f,sys
+550.005   2  tick 232148580  # counter shared with CPU 0
+sk=0x3f,sys
+550.005   3  tick 232113412  # counter shared with CPU 1
+552.005   0  tick    157721  # pic1=PAPI_l2_tcm,sys
+552.005   2  tick    157721  # counter shared with C552.005   3  tick  23864253  # counter shared with CPU 1
+554.005   1  tick 234791836  # pic0=FSB_data_activity,emask=0x3f,sys
+554.005   3  tick 234791836  # counter shared with CPU 1
+556.005   0  tick   1753442  # pic1=PAPI_l2_tcm,sys
+556.005   1  tick  22648270  # pic1=PAPI_l2_tcm,sys
+556.005   3  tick  22648270  # counter shared with CPU 1
+558.005   1  tick 232358604  # pic0=FSB_data_activity,emask=0x3f,sys
+558.005   3  tick 232358604  # counter shared with CPU 1
+560.005   1  tick  23954126  # pic1=PAPI_l2_tcm,sys
+560.005   3  tick  23954126  # counter shared with CPU 1
+562.005   0  tick 238755974  # pic0=FSB_data_activity,emask=0x3f,sys
+562.005   1  tick 238754204  # pic0=FSB_data_activity,emask=0x3f,sys
+562.005   3  tick 238754204  # counter shared with CPU 1
+564.005   1  tick  23882326  # pic1=PAPI_l2_tcm,sys
+564.005   3  tick  23882326  # counter shared with CPU 1
+566.005   1  tick 231009198  # pic0=FSB_data_activity,emask=0x3f,sys
+566.005   3  tick 231009198  # counter shared with CPU 1
+568.005   0  tick  11371675  # pic1=PAPI_l2_tcm,sys
+568.005   2  tick  11371675  # counter shared with CPU 0
+570.005   0  tick 229613168  # pic0=FSB_data_activity,emask=0x3f,sys
+570.005   1  tick 229626826  # pic0=FSB_data_activity,emask=0x3f,sys
+570.005   3  tick 229626826  # counter shared with CPU 1
+572.005   0  tick    153203  # pic1=PAPI_l2_tcm,sys
+572.005   2  tick    153203  # counter shared with C572.005   3  tick  23623854  # counter shared with CPU 1
+574.005   1  tick 233084546  # pic0=FSB_data_activity,emask=0x3f,sys
+574.005   3  tick 233084546  # counter shared with CPU 1
+576.005   1  tick  20872778  # pic1=PAPI_l2_tcm,sys
+576.005   3  tick  20872778  # counter shared with CPU 1
+578.005   1  tick 222939598  # pic0=FSB_data_activity,emask=0x3f,sys
+578.005   3  tick 222939598  # counter shared with CPU 1
+580.005   0  tick  19555020  # pic1=PAPI_l2_tcm,sys
+580.005   2  tick  19555020  # counter shared with CPU 0
+582.005   1  tick 228104006  # pic0=FSB_data_activity,emask=0x3f,sys
+582.005   0  tick 228099438  # pic0=FSB_data_activity,emask=0x3f,sys
+582.005   2  tick 228099438  # counter shared with CPU 0
+584.005   1  tick     27699  # pic1=PAPI_l2_tcm,sys
+584.005   0  tick  23113445  # pic1=PAPI_l2_tcm,sys
+584.005   2  tick  23113445  # counter shared with CPU 0
+586.005   1  tick 209292196  # pic0=FSB_data_activity,emask=0x3f,sys
+586.005   3  tick 209292196  # counter shared with CPU 1
+586.005   0  tick 209295028  # pic0=FSB_data_activity,emask=0x3f,sys
+586.005   2  tick 209295028  # counter shared with CPU 0
+588.006   0  tick  22074527  # pic1=PAPI_l2_tcm,sys
+588.006   2  tick  22074527  # counter shared with CPU 0
+588.007   1  tick    380846  # pic1=PAPI_l2_tcm,sys
+588.007   3  tick    380846  # counter shared with CPU 1
+590.005   1  tick 209642232  # pic0=FSB_data_activity,emask=0x3f,sys
+590.005   3  tick 209642232  # counter shared with CPU 1
+592.005   0  tick    121915  # pic1=PAPI_l2_tcm,sys
+592.005   2  tick    121915  # counter shared with CPU 0
+592.005   1  tick  21797971  # pic1=PAPI_l2_tcm,sys
+592.005   3  tick  21797971  # counter shared with CPU 1
+594.005   1  tick 198613582  # pic0=FSB_data_activity,emask=0x3f,sys
+594.005   3  tick 198613582  # counter shared with CPU 1
+594.005   0  tick 198688403  # pic0=FSB_data_activity,emask=0x3f,sys
+594.005   2  tick 198688403  # counter shared with CPU 0
+596.005   1  tick  20563540  # pic1=PAPI_l2_tcm,sys
+596.005   3  tick  20563540  # counter shared with CPU 1
+598.005   0  tick 201929274  # pic0=FSB_data_activity,emask=0x3f,sys
+598.005   2  tick 201929274  # counter shared with CPU 0
+600.005   1  tick   5344977  # pic1=PAPI_l2_tcm,sys
+600.005   3  tick   5344977  # counter shared with C600.005   2  tick  15876790  # counter shared with CPU 0
+602.005   0  tick 206062834  # pic0=FSB_data_activity,emask=0x3f,sys
+602.005   2  tick 206062834  # counter shared with CPU 0
+604.005   1  tick    790526  # pic1=PAPI_l2_tcm,sys
+604.005   0  tick  20114993  # pic1=PAPI_l2_tcm,sys
+604.005   2  tick  20114993  # counter shared with CPU 0
+606.005   0  tick 193121827  # pic0=FSB_data_activity,emask=0x3f,sys
+606.005   2  tick 193121827  # counter shared with CPU 0
+608.005   1  tick    361385  # pic1=PAPI_l2_tcm,sys
+608.005   0  tick  20039497  # pic1=PAPI_l2_tcm,sys
+608.005   2  tick  20039497  # counter shared with CPU 0
+610.005   1  tick 179694168  # pic0=FSB_data_activity,emask=0x3f,sys
+610.005   3  tick 179694168  # counter shared with CPU 1
+612.005   1  tick  19132147  # pic1=PAPI_l2_tcm,sys
+612.005   3  tick  19132147  # counter shared with CPU 1
+614.005   1  tick 177463987  # pic0=FSB_data_activity,emask=0x3f,sys
+614.005   3  tick 177463987  # counter shared with CPU 1
+616.005   1  tick  17866628  # pic1=PAPI_l2_tcm,sys
+616.005   3  tick  17866628  # counter shared with CPU 1
+618.005   1  tick 177306248  # pic0=FSB_data_activity,emask=0x3f,sys
+618.005   3  tick 177306248  # counter shared with CPU 1
+620.005   1  tick  19676285  # pic1=PAPI_l2_tcm,sys
+620.005   3  tick  19676285  # counter shared with CPU 1
+622.005   1  tick 162379048  # pic0=FSB_data_activity,emask=0x3f,sys
+622.005   3  tick 162379048  # counter shared with CPU 1
+624.005   1  tick   3821686  # pic1=PAPI_l2_tcm,sys
+624.005   3  tick   3821686  # counter shared with CPU 1
+626.005   1  tick 150512535  # pic0=FSB_data_activity,emask=0x3f,sys
+626.005   3  tick 150512535  # counter shared with CPU 1
+628.005   1  tick  16884832  # pic1=PAPI_l2_tcm,sys
+628.005   3  tick  16884832  # counter shared with CPU 1
+628.006   0  tick    132406  # pic1=PAPI_l2_tcm,sys
+628.006   2  tick    132406  # counter shared with CPU 0
+630.005   1  tick 161263760  # pic0=FSB_data_activity,emask=0x3f,sys
+630.005   3  tick 161263760  # counter shared with CPU 1
+632.005   1  tick  16940404  # pic1=PAPI_l2_tcm,sys
+632.005   3  tick  16940404  # counter shared with CPU 1
+634.005   1  tick 145737934  # pic0=FSB_data_activity,emask=0x3f,sys
+634.005   0  tick 145759242  # pic0=FSB_data_activity,emask=0x3f,sys
+634.005   2  tick 145759242  # counter shared with CPU 0
+636.005   0  tick   9398726  # pic1=PAPI_l2_tcm,sys
+636.005   2  tick   9398726  # counter shared with CPU 0
+638.005   0  tick 148565772  # pic0=FSB_data_activity,emask=0x3f,sys
+638.005   2  tick 148565772  # counter shared with CPU 0
+sk=0x3f,sys
+638.005   3  tick 148594902  # counter shared with CPU 1
+640.005   1  tick  16825018  # pic1=PAPI_l2_tcm,sys
+640.005   3  tick  16825018  # counter shared with CPU 1
+642.005   1  tick 152218220  # pic0=FSB_data_activity,emask=0x3f,sys
+642.005   3  tick 152218220  # counter shared with CPU 1
+644.005   1  tick   6174544  # pic1=PAPI_l2_tcm,sys
+644.005   3  tick   6174544  # counter shared with CPU 1
+646.005   1  tick 148526048  # pic0=FSB_data_activity,emask=0x3f,sys
+646.005   3  tick 148526048  # counter shared with CPU 1
+648.005   1  tick  59241531  # pic1=PAPI_l2_tcm,sys
+648.005   3  tick  59241531  # counter shared with CPU 1
+648.006   0  tick    119150  # pic1=PAPI_l2_tcm,sys
+648.006   2  tick    119150  # counter shared with CPU 0
+650.005   0  tick 320498050  # pic0=FSB_data_activity,emask=0x3f,sys
+650.005   2  tick 320498050  # counter shared with CPU 0
+652.005   1  tick  21245047  # pic1=PAPI_l2_tcm,sys
+652.005   3  tick  21245047  # counter shared with CPU 1
+654.005   1  tick 276829830  # pic0=FSB_data_activity,emask=0x3f,sys
+654.005   3  tick 276829830  # counter shared with CPU 1
+656.005   1  tick  14718898  # pic1=PAPI_l2_tcm,sys
+656.005   3  tick  14718898  # counter shared with CPU 1
+658.005   0  tick 231889282  # pic0=FSB_data_activity,emask=0x3f,sys
+658.005   2  tick 231889282  # counter shared with CPU 0
+sk=0x3f,sys
+658.005   3  tick 231891989  # counter shared with CPU 1
+660.005   1  tick  12618109  # pic1=PAPI_l2_tcm,sys
+660.005   3  tick  12618109  # counter shared with CPU 1
+662.005   1  tick 232681408  # pic0=FSB_data_activity,emask=0x3f,sys
+662.005   3  tick 232681408  # counter shared with CPU 1
+664.005   1  tick  11869494  # pic1=PAPI_l2_tcm,sys
+664.005   3  tick  11869494  # counter shared with CPU 1
+666.005   1  tick 325130198  # pic0=FSB_data_activity,emask=0x3f,sys
+666.005   3  tick 325130198  # counter shared with CPU 1
+668.005   1  tick  25141192  # pic1=PAPI_l2_tcm,sys
+668.005   3  tick  25141192  # counter shared with CPU 1
+670.005   1  tick 307180870  # pic0=FSB_data_activity,emask=0x3f,sys
+670.005   0  tick 307205784  # pic0=FSB_data_activity,emask=0x3f,sys
+670.005   2  tick 307205784  # counter shared with CPU 0
+672.005   1  tick  21158046  # pic1=PAPI_l2_tcm,sys
+672.005   3  tick  21158046  # counter shared with CPU 1
+674.005   0  tick 273679656  # pic0=FSB_data_activity,emask=0x3f,sys
+674.005   2  tick 273679656  # counter shared with CPU 0
+sk=0x3f,sys
+674.005   3  tick 273670068  # counter shared with CPU 1
+676.005   1  tick  20490525  # pic1=PAPI_l2_tcm,sys
+676.005   3  tick  20490525  # counter shared with CPU 1
+678.005   0  tick 288870253  # pic0=FSB_data_activity,emask=0x3f,sys
+678.005   2  tick 288870253  # counter shared with CPU 0
+sk=0x3f,sys
+678.005   3  tick 288866290  # counter shared with CPU 1
+680.005   1  tick  20872714  # pic1=PAPI_l2_tcm,sys
+680.005   3  tick  20872714  # counter shared with CPU 1
+682.005   1  tick 232065576  # pic0=FSB_data_activity,emask=0x3f,sys
+682.005   3  tick 232065576  # counter shared with CPU 1
+684.005   1  tick  24532333  # pic1=PAPI_l2_tcm,sys
+684.005   3  tick  24532333  # counter shared with C684.005   2  tick   3573074  # counter shared with CPU 0
+686.005   0  tick 417148472  # pic0=FSB_data_activity,emask=0x3f,sys
+686.005   2  tick 417148472  # counter shared with CPU 0
+686.005   1  tick 417177268  # pic0=FSB_data_activity,emask=0x3f,sys
+686.005   3  tick 417177268  # counter shared with CPU 1
+688.005   1  tick  20051107  # pic1=PAPI_l2_tcm,sys
+688.005   3  tick  20051107  # counter shared with CPU 1
+690.005   1  tick 194351402  # pic0=FSB_data_activity,emask=0x3f,sys
+690.005   3  tick 194351402  # counter shared with CPU 1
+692.005   0  tick   3266885  # pic1=PAPI_l2_tcm,sys
+692.005   1  tick  18002777  # pic1=PAPI_l2_tcm,sys
+692.005   3  tick  18002777  # counter shared with CPU 1
+694.005   1  tick 200808882  # pic0=FSB_data_activity,emask=0x3f,sys
+694.005   3  tick 200808882  # counter shared with CPU 1
+696.005   0  tick  13714305  # pic1=PAPI_l2_tcm,sys
+696.005   2  tick  13714305  # counter shared with CPU 0
+698.005   1  tick 220844540  # pic0=FSB_data_activity,emask=0x3f,sys
+698.005   3  tick 220844540  # counter shared with CPU 1
+698.005   0  tick 220825244  # pic0=FSB_data_activity,emask=0x3f,sys
+698.005   2  tick 220825244  # counter shared with CPU 0
+700.005   1  tick    115467  # pic1=PAPI_l2_tcm,sys
+700.005   0  tick  20954042  # pic1=PAPI_l2_tcm,sys
+700.005   2  tick  20954042  # counter shared with CPU 0
+702.005   1  tick 208171230  # pic0=FSB_data_activity,emask=0x3f,sys
+702.005   3  tick 208171230  # counter shared with CPU 1
+702.005   0  tick 208171322  # pic0=FSB_data_activity,emask=0x3f,sys
+702.005   2  tick 208171322  # counter shared with CPU 0
+704.005   1  tick    348260  # pic1=PAPI_l2_tcm,sys
+704.005   0  tick  21752044  # pic1=PAPI_l2_tcm,sys
+704.005   2  tick  21752044  # counter shared with CPU 0
+706.005   1  tick 215343354  # pic0=FSB_data_activity,emask=0x3f,sys
+706.005   3  tick 215343354  # counter shared with CPU 1
+708.005   0  tick     64768  # pic1=PAPI_l2_tcm,sys
+708.005   1  tick  22165378  # pic1=PAPI_l2_tcm,sys
+708.005   3  tick  22165378  # counter shared with CPU 1
+710.005   1  tick 210988526  # pic0=FSB_data_activity,emask=0x3f,sys
+710.005   3  tick 210988526  # counter shared with CPU 1
+710.007   0  tick 211158498  # pic0=FSB_data_activity,emask=0x3f,sys
+710.007   2  tick 211158498  # counter shared with CPU 0
+712.005   1  tick  18809265  # pic1=PAPI_l2_tcm,sys
+712.005   3  tick  18809265  # counter shared with CPU 1
+714.005   0  tick 211567144  # pic0=FSB_data_activity,emask=0x3f,sys
+714.005   2  tick 211567144  # counter shared with CPU 0
+716.005   1  tick    126175  # pic1=PAPI_l2_tcm,sys
+716.005   0  tick  22252524  # pic1=PAPI_l2_tcm,sys
+716.005   2  tick  22252524  # counter shared with CPU 0
+718.005   0  tick 229874914  # pic0=FSB_data_activity,emask=0x3f,sys
+718.005   2  tick 229874914  # counter shared with CPU 0
+718.005   1  tick 229959538  # pic0=FSB_data_activity,emask=0x3f,sys
+718.005   3  tick 229959538  # counter shared with CPU 1
+720.005   1  tick    132233  # pic1=PAPI_l2_tcm,sys
+720.005   0  tick  22245922  # pic1=PAPI_l2_tcm,sys
+720.005   2  tick  22245922  # counter shared with CPU 0
+722.005   1  tick 217868060  # pic0=FSB_data_activity,emask=0x3f,sys
+722.005   3  tick 217868060  # counter shared with CPU 1
+722.005   0  tick 217867440  # pic0=FSB_data_activity,emask=0x3f,sys
+722.005   2  tick 217867440  # counter shared with CPU 0
+724.005   1  tick    463691  # pic1=PAPI_l2_tcm,sys
+724.005   3  tick    463691  # counter shared with C724.005   2  tick  22414503  # counter shared with CPU 0
+726.005   1  tick 228637768  # pic0=FSB_data_activity,emask=0x3f,sys
+726.005   3  tick 228637768  # counter shared with CPU 1
+728.005   1  tick  22594177  # pic1=PAPI_l2_tcm,sys
+728.005   3  tick  22594177  # counter shared with CPU 1
+730.005   1  tick 218958066  # pic0=FSB_data_activity,emask=0x3f,sys
+730.005   3  tick 218958066  # counter shared with CPU 1
+732.005   1  tick  12912165  # pic1=PAPI_l2_tcm,sys
+732.005   0  tick  10216194  # pic1=PAPI_l2_tcm,sys
+732.005   2  tick  10216194  # counter shared with CPU 0
+734.005   1  tick 215205134  # pic0=FSB_data_activity,emask=0x3f,sys
+734.005   0  tick 215200760  # pic0=FSB_data_activity,emask=0x3f,sys
+734.005   2  tick 215200760  # counter shared with CPU 0
+736.005   1  tick     24683  # pic1=PAPI_l2_tcm,sys
+736.005   3  tick     24683  # counter shared with CPU 1
+736.005   0  tick  22769192  # pic1=PAPI_l2_tcm,sys
+736.005   2  tick  22769192  # counter shared with CPU 0
+738.005   0  tick 219663740  # pic0=FSB_data_activity,emask=0x3f,sys
+738.005   2  tick 219663740  # counter shared with CPU 0
+740.005   1  tick  20095794  # pic1=PAPI_l2_tcm,sys
+740.005   3  tick  20095794  # counter shared with CPU 1
+742.005   0  tick 218178936  # pic0=FSB_data_activity,emask=0x3f,sys
+742.005   1  tick 218175032  # pic0=FSB_data_activity,emask=0x3f,sys
+742.005   3  tick 218175032  # counter shared with CPU 1
+744.005   1  tick  22770350  # pic1=PAPI_l2_tcm,sys
+744.005   3  tick  22770350  # counter shared with CPU 1
+746.005   0  tick 234038770  # pic0=FSB_data_activity,emask=0x3f,sys
+746.005   1  tick 234042138  # pic0=FSB_data_activity,emask=0x3f,sys
+746.005   3  tick 234042138  # counter shared with CPU 1
+748.005   1  tick  23193004  # pic1=PAPI_l2_tcm,sys
+748.005   3  tick  23193004  # counter shared with CPU 1
+750.005   1  tick 226681896  # pic0=FSB_data_activity,emask=0x3f,sys
+750.005   3  tick 226681896  # counter shared with CPU 1
+752.005   1  tick  20979625  # pic1=PAPI_l2_tcm,sys
+752.005   3  tick  20979625  # counter shared with CPU 1
+752.005   0  tick   2506916  # pic1=PAPI_l2_tcm,sys
+752.005   2  tick   2506916  # counter shared with CPU 0
+754.005   1  tick 225002685  # pic0=FSB_data_activity,emask=0x3f,sys
+754.005   3  tick 225002685  # counter shared with CPU 1
+756.005   0  tick    109074  # pic1=PAPI_l2_tcm,sys
+756.005   1  tick  22988329  # pic1=PAPI_l2_tcm,sys
+756.005   3  tick  22988329  # counter shared with CPU 1
+758.005   0  tick 222933576  # pic0=FSB_data_activity,emask=0x3f,sys
+758.005   2  tick 222933576  # counter shared with CPU 0
+758.006   1  tick 223180376  # pic0=FSB_data_activity,emask=0x3f,sys
+758.006   3  tick 223180376  # counter shared with CPU 1
+760.005   1  tick  12651923  # pic1=PAPI_l2_tcm,sys
+760.005   3  tick  12651923  # counter shared with CPU 1
+762.005   1  tick 212604792  # pic0=FSB_data_activity,emask=0x3f,sys
+762.005   3  tick 212604792  # counter shared with CPU 1
+764.005   0  tick     63737  # pic1=PAPI_l2_tcm,sys
+764.005   2  tick     63737  # counter shared with CPU 0
+766.005   1  tick 209571246  # pic0=FSB_data_activity,emask=0x3f,sys
+766.005   0  tick 209352622  # pic0=FSB_data_activity,emask=0x3f,sys
+766.005   2  tick 209352622  # counter shared with CPU 0
+768.005   1  tick  12378804  # pic1=PAPI_l2_tcm,sys
+768.005   3  tick  12378804  # counter shared with CPU 1
+770.005   1  tick 203760366  # pic0=FSB_data_activity,emask=0x3f,sys
+770.005   3  tick 203760366  # counter shared with CPU 1
+sk=0x3f,sys
+770.005   2  tick 203777519  # counter shared with CPU 0
+772.005   0  tick  14700608  # pic1=PAPI_l2_tcm,sys
+772.005   2  tick  14700608  # counter shared with C772.005   3  tick   6037398  # counter shared with CPU 1
+774.005   1  tick 207992798  # pic0=FSB_data_activity,emask=0x3f,sys
+774.005   3  tick 207992798  # counter shared with CPU 1
+776.005   0  tick     92059  # pic1=PAPI_l2_tcm,sys
+776.005   2  tick     92059  # counter shared with C776.005   3  tick  21211252  # counter shared with CPU 1
+778.005   1  tick 187018570  # pic0=FSB_data_activity,emask=0x3f,sys
+778.005   3  tick 187018570  # counter shared with CPU 1
+778.007   0  tick 187370466  # pic0=FSB_data_activity,emask=0x3f,sys
+778.007   2  tick 187370466  # counter shared with CPU 0
+780.005   1  tick   3952071  # pic1=PAPI_l2_tcm,sys
+780.005   3  tick   3952071  # counter shared with C780.005   2  tick  17533578  # counter shared with CPU 0
+782.005   0  tick 194400505  # pic0=FSB_data_activity,emask=0x3f,sys
+782.005   2  tick 194400505  # counter shared with CPU 0
+784.005   0  tick  12128107  # pic1=PAPI_l2_tcm,sys
+784.005   2  tick  12128107  # counter shared with CPU 0
+786.005   1  tick 206346998  # pic0=FSB_data_activity,emask=0x3f,sys
+786.005   3  tick 206346998  # counter shared with CPU 1
+786.005   0  tick 206380622  # pic0=FSB_data_activity,emask=0x3f,sys
+786.005   2  tick 206380622  # counter shared with CPU 0
+788.005   1  tick   1209679  # pic1=PAPI_l2_tcm,sys
+788.005   3  tick   1209679  # counter shared with C788.005   2  tick  20226542  # counter shared with CPU 0
+790.005   0  tick 192075262  # pic0=FSB_data_activity,emask=0x3f,sys
+790.005   2  tick 192075262  # counter shared with CPU 0
+792.005   1  tick   1043032  # pic1=PAPI_l2_tcm,sys
+792.005   3  tick   1043032  # counter shared with CPU 1
+792.005   0  tick  18859383  # pic1=PAPI_l2_tcm,sys
+792.005   2  tick  18859383  # counter shared with CPU 0
+794.005   0  tick 197373038  # pic0=FSB_data_activity,emask=0x3f,sys
+794.005   1  tick 197403402  # pic0=FSB_data_activity,emask=0x3f,sys
+794.005   3  tick 197403402  # counter shared with CPU 1
+796.005   0  tick     31945  # pic1=PAPI_l2_tcm,sys
+796.005   1  tick  18620671  # pic1=PAPI_l2_tcm,sys
+796.005   3  tick  18620671  # counter shared with CPU 1
+798.005   1  tick 191189456  # pic0=FSB_data_activity,emask=0x3f,sys
+798.005   3  tick 191189456  # counter shared with CPU 1
+798.006   0  tick 191340578  # pic0=FSB_data_activity,emask=0x3f,sys
+798.006   2  tick 191340578  # counter shared with CPU 0
+800.005   1  tick  15775558  # pic1=PAPI_l2_tcm,sys
+800.005   0  tick   4749876  # pic1=PAPI_l2_tcm,sys
+800.005   2  tick   4749876  # counter shared with CPU 0
+802.005   1  tick 189926334  # pic0=FSB_data_activity,emask=0x3f,sys
+802.005   3  tick 189926334  # counter shared with CPU 1
+802.005   0  tick 189933900  # pic0=FSB_data_activity,emask=0x3f,sys
+802.005   2  tick 189933900  # counter shared with CPU 0
+804.005   0  tick  18916630  # pic1=PAPI_l2_tcm,sys
+804.005   2  tick  18916630  # counter shared with CPU 0
+806.005   0  tick 175075780  # pic0=FSB_data_activity,emask=0x3f,sys
+806.005   2  tick 175075780  # counter shared with CPU 0
+808.005   1  tick   1041534  # pic1=PAPI_l2_tcm,sys
+808.005   0  tick  20192755  # pic1=PAPI_l2_tcm,sys
+808.005   2  tick  20192755  # counter shared with CPU 0
+810.005   1  tick 181026484  # pic0=FSB_data_activity,emask=0x3f,sys
+810.005   0  tick 181023862  # pic0=FSB_data_activity,emask=0x3f,sys
+810.005   2  tick 181023862  # counter shared with CPU 0
+812.005   0  tick  19365807  # pic1=PAPI_l2_tcm,sys
+812.005   2  tick  19365807  # counter shared with CPU 0
+814.005   0  tick 205994006  # pic0=FSB_data_activity,emask=0x3f,sys
+814.005   2  tick 205994006  # counter shared with CPU 0
+816.005   1  tick    144155  # pic1=PAPI_l2_tcm,sys
+816.005   0  tick  19004285  # pic1=PAPI_l2_tcm,sys
+816.005   2  tick  19004285  # counter shared with CPU 0
+818.005   1  tick 188990518  # pic0=FSB_data_activity,emask=0x3f,sys
+818.005   0  tick 188990540  # pic0=FSB_data_activity,emask=0x3f,sys
+818.005   2  tick 188990540  # counter shared with CPU 0
+820.005   1  tick   7998365  # pic1=PAPI_l2_tcm,sys
+820.005   3  tick   7998365  # counter shared with CPU 1
+820.005   0  tick  12377170  # pic1=PAPI_l2_tcm,sys
+820.005   2  tick  12377170  # counter shared with CPU 0
+822.005   0  tick 160058714  # pic0=FSB_data_activity,emask=0x3f,sys
+822.005   1  tick 160084734  # pic0=FSB_data_activity,emask=0x3f,sys
+822.005   3  tick 160084734  # counter shared with CPU 1
+824.005   1  tick  17604321  # pic1=PAPI_l2_tcm,sys
+824.005   3  tick  17604321  # counter shared with CPU 1
+826.005   1  tick 159587026  # pic0=FSB_data_activity,emask=0x3f,sys
+826.005   3  tick 159587026  # counter shared with CPU 1
+826.005   0  tick 159606646  # pic0=FSB_data_activity,emask=0x3f,sys
+826.005   2  tick 159606646  # counter shared with CPU 0
+828.005   0  tick  13764943  # pic1=PAPI_l2_tcm,sys
+828.005   2  tick  13764943  # counter shared with CPU 0
+830.005   1  tick 158178448  # pic0=FSB_data_activity,emask=0x3f,sys
+830.005   3  tick 158178448  # counter shared with CPU 1
+832.005   1  tick   3373257  # pic1=PAPI_l2_tcm,sys
+832.005   3  tick   3373257  # counter shared with CPU 1
+834.005   1  tick 161914756  # pic0=FSB_data_activity,emask=0x3f,sys
+834.005   3  tick 161914756  # counter shared with CPU 1
+836.005   1  tick  10654513  # pic1=PAPI_l2_tcm,sys
+836.005   0  tick   5789577  # pic1=PAPI_l2_tcm,sys
+836.005   2  tick   5789577  # counter shared with CPU 0
+838.005   0  tick 144186544  # pic0=FSB_data_activity,emask=0x3f,sys
+838.005   2  tick 144186544  # counter shared with CPU 0
+840.005   0  tick  15708333  # pic1=PAPI_l2_tcm,sys
+840.005   2  tick  15708333  # counter shared with CPU 0
+840.006   1  tick    376889  # pic1=PAPI_l2_tcm,sys
+840.006   3  tick    376889  # counter shared with CPU 1
+842.005   1  tick 144335666  # pic0=FSB_data_activity,emask=0x3f,sys
+842.005   3  tick 144335666  # counter shared with CPU 1
+844.005   1  tick  15402798  # pic1=PAPI_l2_tcm,sys
+844.005   3  tick  15402798  # counter shared with CPU 1
+846.005   1  tick 134369979  # pic0=FSB_data_activity,emask=0x3f,sys
+846.005   3  tick 134369979  # counter shared with CPU 1
+846.006   0  tick 134494904  # pic0=FSB_data_activity,emask=0x3f,sys
+846.006   2  tick 134494904  # counter shared with CPU 0
+848.005   0  tick   8117884  # pic1=PAPI_l2_tcm,sys
+848.005   2  tick   8117884  # counter shared with CPU 0
+850.005   1  tick 132997738  # pic0=FSB_data_activity,emask=0x3f,sys
+850.005   3  tick 132997738  # counter shared with CPU 1
+852.005   1  tick  15395828  # pic1=PAPI_l2_tcm,sys
+852.005   3  tick  15395828  # counter shared with CPU 1
+854.005   1  tick 149398788  # pic0=FSB_data_activity,emask=0x3f,sys
+854.005   3  tick 149398788  # counter shared with CPU 1
+856.005   1  tick  15407424  # pic1=PAPI_l2_tcm,sys
+856.005   3  tick  15407424  # counter shared with CPU 1
+858.005   1  tick 132505620  # pic0=FSB_data_activity,emask=0x3f,sys
+858.005   3  tick 132505620  # counter shared with CPU 1
+860.005   1  tick  15485940  # pic1=PAPI_l2_tcm,sys
+860.005   3  tick  15485940  # counter shared with CPU 1
+862.005   1  tick 144149594  # pic0=FSB_data_activity,emask=0x3f,sys
+862.005   3  tick 144149594  # counter shared with CPU 1
+864.005   0  tick   2010273  # pic1=PAPI_l2_tcm,sys
+864.005   2  tick   2010273  # counter shared with CPU 0
+866.005   0  tick 434796404  # pic0=FSB_data_activity,emask=0x3f,sys
+866.005   2  tick 434796404  # counter shared with CPU 0
+868.005   1  tick   7501913  # pic1=PAPI_l2_tcm,sys
+868.005   0  tick  10890024  # pic1=PAPI_l2_tcm,sys
+868.005   2  tick  10890024  # counter shared with CPU 0
+870.005   0  tick 382557812  # pic0=FSB_data_activity,emask=0x3f,sys
+870.005   1  tick 382581960  # pic0=FSB_data_activity,emask=0x3f,sys
+870.005   3  tick 382581960  # counter shared with CPU 1
+872.005   1  tick  24184782  # pic1=PAPI_l2_tcm,sys
+872.005   3  tick  24184782  # counter shared with CPU 1
+874.005   1  tick 254023214  # pic0=FSB_data_activity,emask=0x3f,sys
+874.005   3  tick 254023214  # counter shared with CPU 1
+876.005   1  tick  23698360  # pic1=PAPI_l2_tcm,sys
+876.005   3  tick  23698360  # counter shared with CPU 1
+878.005   1  tick 282335203  # pic0=FSB_data_activity,emask=0x3f,sys
+878.005   3  tick 282335203  # counter shared with CPU 1
+880.005   1  tick  23053495  # pic1=PAPI_l2_tcm,sys
+880.005   3  tick  23053495  # counter shared with CPU 1
+882.005   1  tick 311640162  # pic0=FSB_data_activity,emask=0x3f,sys
+882.005   0  tick 311661874  # pic0=FSB_data_activity,emask=0x3f,sys
+882.005   2  tick 311661874  # counter shared with CPU 0
+884.005   1  tick   2215716  # pic1=PAPI_l2_tcm,sys
+884.005   0  tick  23186499  # pic1=PAPI_l2_tcm,sys
+884.005   2  tick  23186499  # counter shared with CPU 0
+886.005   1  tick 271644704  # pic0=FSB_data_activity,emask=0x3f,sys
+886.005   3  tick 271644704  # counter shared with CPU 1
+886.005   0  tick 271643489  # pic0=FSB_data_activity,emask=0x3f,sys
+886.005   2  tick 271643489  # counter shared with CPU 0
+888.005   0  tick  21548980  # pic1=PAPI_l2_tcm,sys
+888.005   2  tick  21548980  # counter shared with CPU 0
+888.005   1  tick   1573722  # pic1=PAPI_l2_tcm,sys
+888.005   3  tick   1573722  # counter shared with CPU 1
+890.005   1  tick 258206360  # pic0=FSB_data_activity,emask=0x3f,sys
+890.005   3  tick 258206360  # counter shared with CPU 1
+892.005   0  tick    190504  # pic1=PAPI_l2_tcm,sys
+892.005   2  tick    190504  # counter shared with C892.005   3  tick  24588578  # counter shared with CPU 1
+894.005   0  tick 273925712  # pic0=FSB_data_activity,emask=0x3f,sys
+894.005   1  tick 273962350  # pic0=FSB_data_activity,emask=0x3f,sys
+894.005   3  tick 273962350  # counter shared with CPU 1
+896.005   1  tick   2009720  # pic1=PAPI_l2_tcm,sys
+896.005   0  tick  24784676  # pic1=PAPI_l2_tcm,sys
+896.005   2  tick  24784676  # counter shared with CPU 0
+898.005   1  tick 397579832  # pic0=FSB_data_activity,emask=0x3f,sys
+898.005   3  tick 397579832  # counter shared with CPU 1
+898.005   0  tick 397632416  # pic0=FSB_data_activity,emask=0x3f,sys
+898.005   2  tick 397632416  # counter shared with CPU 0
+900.005   0  tick  28763401  # pic1=PAPI_l2_tcm,sys
+900.005   2  tick  28763401  # counter shared with CPU 0
+902.005   0  tick 211770806  # pic0=FSB_data_activity,emask=0x3f,sys
+902.005   1  tick 211791156  # pic0=FSB_data_activity,emask=0x3f,sys
+902.005   3  tick 211791156  # counter shared with CPU 1
+904.005   1  tick  21109055  # pic1=PAPI_l2_tcm,sys
+904.005   3  tick  21109055  # counter shared with CPU 1
+906.005   1  tick 209404960  # pic0=FSB_data_activity,emask=0x3f,sys
+906.005   3  tick 209404960  # counter shared with CPU 1
+908.005   0  tick   4395252  # pic1=PAPI_l2_tcm,sys
+908.005   2  tick   4395252  # counter shared with CPU 0
+910.005   1  tick 224980806  # pic0=FSB_data_activity,emask=0x3f,sys
+910.005   3  tick 224980806  # counter shared with CPU 1
+912.005   0  tick    161711  # pic1=PAPI_l2_tcm,sys
+912.005   2  tick    161711  # counter shared with C912.005   3  tick  22630106  # counter shared with CPU 1
+914.005   1  tick 220203050  # pic0=FSB_data_activity,emask=0x3f,sys
+914.005   3  tick 220203050  # counter shared with CPU 1
+914.005   0  tick 220330898  # pic0=FSB_data_activity,emask=0x3f,sys
+914.005   2  tick 220330898  # counter shared with CPU 0
+916.005   1  tick  10689861  # pic1=PAPI_l2_tcm,sys
+916.005   0  tick  12501097  # pic1=PAPI_l2_tcm,sys
+916.005   2  tick  12501097  # counter shared with CPU 0
+918.005   1  tick 226308854  # pic0=FSB_data_activity,emask=0x3f,sys
+918.005   0  tick 226316798  # pic0=FSB_data_activity,emask=0x3f,sys
+918.005   2  tick 226316798  # counter shared with CPU 0
+920.005   0  tick  16657167  # pic1=PAPI_l2_tcm,sys
+920.005   2  tick  16657167  # counter shared with CPU 0
+922.005   1  tick 233935898  # pic0=FSB_data_activity,emask=0x3f,sys
+922.005   3  tick 233935898  # counter shared with CPU 1
+924.005   1  tick    375026  # pic1=PAPI_l2_tcm,sys
+924.005   0  tick  23143475  # pic1=PAPI_l2_tcm,sys
+924.005   2  tick  23143475  # counter shared with CPU 0
+926.005   0  tick 228944798  # pic0=FSB_data_activity,emask=0x3f,sys
+926.005   2  tick 228944798  # counter shared with CPU 0
+928.005   0  tick  23448596  # pic1=PAPI_l2_tcm,sys
+928.005   2  tick  23448596  # counter shared with CPU 0
+928.005   1  tick    350611  # pic1=PAPI_l2_tcm,sys
+928.005   3  tick    350611  # counter shared with CPU 1
+930.005   0  tick 237163218  # pic0=FSB_data_activity,emask=0x3f,sys
+930.005   2  tick 237163218  # counter shared with CPU 0
+sk=0x3f,sys
+930.005   3  tick 237163012  # counter shared with CPU 1
+932.005   0  tick    106761  # pic1=PAPI_l2_tcm,sys
+932.005   1  tick  23766143  # pic1=PAPI_l2_tcm,sys
+932.005   3  tick  23766143  # counter shared with CPU 1
+934.005   1  tick 228755734  # pic0=FSB_data_activity,emask=0x3f,sys
+934.005   3  tick 228755734  # counter shared with CPU 1
+936.005   0  tick   3239007  # pic1=PAPI_l2_tcm,sys
+936.005   1  tick  20979818  # pic1=PAPI_l2_tcm,sys
+936.005   3  tick  20979818  # counter shared with CPU 1
+938.005   0  tick 223210472  # pic0=FSB_data_activity,emask=0x3f,sys
+938.005   2  tick 223210472  # counter shared with CPU 0
+sk=0x3f,sys
+938.005   3  tick 223198308  # counter shared with CPU 1
+940.005   1  tick  22386975  # pic1=PAPI_l2_tcm,sys
+940.005   3  tick  22386975  # counter shared with CPU 1
+942.005   0  tick 225786309  # pic0=FSB_data_activity,emask=0x3f,sys
+942.005   2  tick 225786309  # counter shared with CPU 0
+942.005   1  tick 225823134  # pic0=FSB_data_activity,emask=0x3f,sys
+942.005   3  tick 225823134  # counter shared with CPU 1
+944.005   1  tick  17035567  # pic1=PAPI_l2_tcm,sys
+944.005   3  tick  17035567  # counter shared with CPU 1
+946.005   1  tick 203466228  # pic0=FSB_data_activity,emask=0x3f,sys
+946.005   3  tick 203466228  # counter shared with CPU 1
+948.005   1  tick  21363191  # pic1=PAPI_l2_tcm,sys
+948.005   3  tick  21363191  # counter shared with CPU 1
+950.005   1  tick 215326134  # pic0=FSB_data_activity,emask=0x3f,sys
+950.005   3  tick 215326134  # counter shared with CPU 1
+952.005   0  tick    158900  # pic1=PAPI_l2_tcm,sys
+952.005   1  tick  20834869  # pic1=PAPI_l2_tcm,sys
+952.005   3  tick  20834869  # counter shared with CPU 1
+954.005   0  tick 193756262  # pic0=FSB_data_activity,emask=0x3f,sys
+954.005   1  tick 193734186  # pic0=FSB_data_activity,emask=0x3f,sys
+954.005   3  tick 193734186  # counter shared with CPU 1
+956.005   1  tick  19704629  # pic1=PAPI_l2_tcm,sys
+956.005   3  tick  19704629  # counter shared with CPU 1
+958.005   0  tick 179439570  # pic0=FSB_data_activity,emask=0x3f,sys
+958.005   2  tick 179439570  # counter shared with CPU 0
+960.005   0  tick  13637926  # pic1=PAPI_l2_tcm,sys
+960.005   2  tick  13637926  # counter shared with CPU 0
+962.005   1  tick 171591444  # pic0=FSB_data_activity,emask=0x3f,sys
+962.005   3  tick 171591444  # counter shared with CPU 1
+962.005   0  tick 171600026  # pic0=FSB_data_activity,emask=0x3f,sys
+962.005   2  tick 171600026  # counter shared with CPU 0
+964.005   1  tick   6638143  # pic1=PAPI_l2_tcm,sys
+964.005   0  tick  12350245  # pic1=PAPI_l2_tcm,sys
+964.005   2  tick  12350245  # counter shared with CPU 0
+966.005   0  tick 159161154  # pic0=FSB_data_activity,emask=0x3f,sys
+966.005   2  tick 159161154  # counter shared with CPU 0
+968.005   1  tick    124366  # pic1=PAPI_l2_tcm,sys
+968.005   3  tick    124366  # counter shared with C968.005   2  tick  18055459  # counter shared with CPU 0
+970.005   1  tick 166106782  # pic0=FSB_data_activity,emask=0x3f,sys
+970.005   0  tick 166110866  # pic0=FSB_data_activity,emask=0x3f,sys
+970.005   2  tick 166110866  # counter shared with CPU 0
+972.005   1  tick  17118238  # pic1=PAPI_l2_tcm,sys
+972.005   3  tick  17118238  # counter shared with CPU 1
+974.005   0  tick 145489026  # pic0=FSB_data_activity,emask=0x3f,sys
+974.005   2  tick 145489026  # counter shared with CPU 0
+974.005   1  tick 145494440  # pic0=FSB_data_activity,emask=0x3f,sys
+974.005   3  tick 145494440  # counter shared with CPU 1
+976.005   1  tick  16799472  # pic1=PAPI_l2_tcm,sys
+976.005   3  tick  16799472  # counter shared with CPU 1
+978.005   1  tick 151987040  # pic0=FSB_data_activity,emask=0x3f,sys
+978.005   0  tick 152003461  # pic0=FSB_data_activity,emask=0x3f,sys
+978.005   2  tick 152003461  # counter shared with CPU 0
+980.005   1  tick     81012  # pic1=PAPI_l2_tcm,sys
+980.005   0  tick  16483126  # pic1=PAPI_l2_tcm,sys
+980.005   2  tick  16483126  # counter shared with CPU 0
+982.005   1  tick 145596420  # pic0=FSB_data_activity,emask=0x3f,sys
+982.005   3  tick 145596420  # counter shared with CPU 1
+sk=0x3f,sys
+982.005   2  tick 145593520  # counter shared with CPU 0
+984.005   0  tick  12015606  # pic1=PAPI_l2_tcm,sys
+984.005   2  tick  12015606  # counter shared with CPU 0
+986.005   1  tick 174852218  # pic0=FSB_data_activity,emask=0x3f,sys
+986.005   0  tick 174863327  # pic0=FSB_data_activity,emask=0x3f,sys
+986.005   2  tick 174863327  # counter shared with CPU 0
+988.005   1  tick    212940  # pic1=PAPI_l2_tcm,sys
+988.005   3  tick    212940  # counter shared with CPU 1
+988.005   0  tick  59060918  # pic1=PAPI_l2_tcm,sys
+988.005   2  tick  59060918  # counter shared with CPU 0
+990.005   0  tick 293792130  # pic0=FSB_data_activity,emask=0x3f,sys
+990.005   2  tick 293792130  # counter shared with CPU 0
+992.005   1  tick  23342431  # pic1=PAPI_l2_tcm,sys
+992.005   3  tick  23342431  # counter shared with CPU 1
+994.005   0  tick 365636094  # pic0=FSB_data_activity,emask=0x3f,sys
+994.005   1  tick 365626570  # pic0=FSB_data_activity,emask=0x3f,sys
+994.005   3  tick 365626570  # counter shared with CPU 1
+996.005   1  tick   5454490  # pic1=PAPI_l2_tcm,sys
+996.005   0  tick   7985635  # pic1=PAPI_l2_tcm,sys
+996.005   2  tick   7985635  # counter shared with CPU 0
+998.005   0  tick 260940138  # pic0=FSB_data_activity,emask=0x3f,sys
+998.005   2  tick 260940138  # counter shared with CPU 0
+1000.005   1  tick    213988  # pic1=PAPI_l2_tcm,sys
+1000.005   3  tick    213988  # counter shared with C1000.005   2  tick  27142386  # counter shared with CPU 0
+1002.005   0  tick 312144396  # pic0=FSB_data_activity,emask=0x3f,sys
+1002.005   2  tick 312144396  # counter shared with CPU 0
+1002.005   1  tick 312179286  # pic0=FSB_data_activity,emask=0x3f,sys
+1002.005   3  tick 312179286  # counter shared with CPU 1
+1004.005   1  tick  19619980  # pic1=PAPI_l2_tcm,sys
+1004.005   0  tick   5622671  # pic1=PAPI_l2_tcm,sys
+1004.005   2  tick   5622671  # counter shared with CPU 0
+1006.005   1  tick 291067938  # pic0=FSB_data_activity,emask=0x3f,sys
+1006.005   3  tick 291067938  # counter shared with CPU 1
+1006.005   0  tick 291058952  # pic0=FSB_data_activity,emask=0x3f,sys
+1006.005   2  tick 291058952  # counter shared with CPU 0
+1008.005   1  tick     67381  # pic1=PAPI_l2_tcm,sys
+1008.005   0  tick  21729136  # pic1=PAPI_l2_tcm,sys
+1008.005   2  tick  21729136  # counter shared with CPU 0
+1010.005   1  tick 272754032  # pic0=FSB_data_activity,emask=0x3f,sys
+1010.005   3  tick 272754032  # counter shared with CPU 1
+1012.005   1  tick  20426489  # pic1=PAPI_l2_tcm,sys
+1012.005   3  tick  20426489  # counter shared with CPU 1
+1014.005   1  tick 268837050  # pic0=FSB_data_activity,emask=0x3f,sys
+1014.005   3  tick 268837050  # counter shared with CPU 1
+1016.005   0  tick  10003433  # pic1=PAPI_l2_tcm,sys
+1016.005   2  tick  10003433  # counter shared with CPU 0
+1016.007   1  tick  13759659  # pic1=PAPI_l2_tcm,sys
+1016.007   3  tick  13759659  # counter shared with CPU 1
+1018.005   1  tick 369625348  # pic0=FSB_data_activity,emask=0x3f,sys
+1018.005   3  tick 369625348  # counter shared with CPU 1
+1018.005   0  tick 370104118  # pic0=FSB_data_activity,emask=0x3f,sys
+1018.005   2  tick 370104118  # counter shared with CPU 0
+1020.005   1  tick    222091  # pic1=PAPI_l2_tcm,sys
+1020.005   0  tick  33170494  # pic1=PAPI_l2_tcm,sys
+1020.005   2  tick  33170494  # counter shared with CPU 0
+1022.005   1  tick 190157480  # pic0=FSB_data_activity,emask=0x3f,sys
+1022.005   3  tick 190157480  # counter shared with CPU 1
+1022.005   0  tick 190148500  # pic0=FSB_data_activity,emask=0x3f,sys
+1022.005   2  tick 190148500  # counter shared with CPU 0
+1024.005   1  tick   1750966  # pic1=PAPI_l2_tcm,sys
+1024.005   3  tick   1750966  # counter shared with C1024.005   2  tick  19052243  # counter shared with CPU 0
+1026.005   0  tick 215152564  # pic0=FSB_data_activity,emask=0x3f,sys
+1026.005   2  tick 215152564  # counter shared with CPU 0
+1028.005   1  tick    134720  # pic1=PAPI_l2_tcm,sys
+1028.005   0  tick  21665492  # pic1=PAPI_l2_tcm,sys
+1028.005   2  tick  21665492  # counter shared with CPU 0
+1030.005   0  tick 209716600  # pic0=FSB_data_activity,emask=0x3f,sys
+1030.005   2  tick 209716600  # counter shared with CPU 0
+1030.005   1  tick 209768681  # pic0=FSB_data_activity,emask=0x3f,sys
+1030.005   3  tick 209768681  # counter shared with CPU 1
+1032.005   1  tick   4472021  # pic1=PAPI_l2_tcm,sys
+1032.005   3  tick   4472021  # counter shared with CPU 1
+1032.005   0  tick  18375246  # pic1=PAPI_l2_tcm,sys
+1032.005   2  tick  18375246  # counter shared with CPU 0
+1034.005   1  tick 214266202  # pic0=FSB_data_activity,emask=0x3f,sys
+1034.005   3  tick 214266202  # counter shared with CPU 1
+1034.005   0  tick 214259914  # pic0=FSB_data_activity,emask=0x3f,sys
+1034.005   2  tick 214259914  # counter shared with CPU 0
+1036.005   0  tick  22521353  # pic1=PAPI_l2_tcm,sys
+1036.005   2  tick  22521353  # counter shared with CPU 0
+1038.005   0  tick 231001618  # pic0=FSB_data_activity,emask=0x3f,sys
+1038.005   2  tick 231001618  # counter shared with CPU 0
+1040.005   0  tick    112836  # pic1=PAPI_l2_tcm,sys
+1040.005   2  tick    112836  # counter shared with CPU 0
+1040.005   1  tick  22921646  # pic1=PAPI_l2_tcm,sys
+1040.005   3  tick  22921646  # counter shared with CPU 1
+1042.005   1  tick 223809576  # pic0=FSB_data_activity,emask=0x3f,sys
+1042.005   3  tick 223809576  # counter shared with CPU 1
+1044.005   0  tick   2741552  # pic1=PAPI_l2_tcm,sys
+1044.005   2  tick   2741552  # counter shared with CPU 0
+1046.005   1  tick 230903426  # pic0=FSB_data_activity,emask=0x3f,sys
+1046.005   0  tick 230903962  # pic0=FSB_data_activity,emask=0x3f,sys
+1046.005   2  tick 230903962  # counter shared with CPU 0
+1048.005   1  tick   3069807  # pic1=PAPI_l2_tcm,sys
+1048.005   3  tick   3069807  # counter shared with C1048.005   2  tick  20067582  # counter shared with CPU 0
+1050.005   0  tick 212999366  # pic0=FSB_data_activity,emask=0x3f,sys
+1050.005   2  tick 212999366  # counter shared with CPU 0
+1050.005   1  tick 213019604  # pic0=FSB_data_activity,emask=0x3f,sys
+1050.005   3  tick 213019604  # counter shared with CPU 1
+1052.005   1  tick   2099653  # pic1=PAPI_l2_tcm,sys
+1052.005   3  tick   2099653  # counter shared with CPU 1
+1054.005   0  tick 195196592  # pic0=FSB_data_activity,emask=0x3f,sys
+1054.005   2  tick 195196592  # counter shared with CPU 0
+sk=0x3f,sys
+1054.005   3  tick 195189960  # counter shared with CPU 1
+1056.005   0  tick    112952  # pic1=PAPI_l2_tcm,sys
+1056.005   2  tick    112952  # counter shared with C1056.005   3  tick  19340842  # counter shared with CPU 1
+1058.005   1  tick 182990022  # pic0=FSB_data_activity,emask=0x3f,sys
+1058.005   3  tick 182990022  # counter shared with CPU 1
+1060.005   1  tick  16788896  # pic1=PAPI_l2_tcm,sys
+1060.005   3  tick  16788896  # counter shared with CPU 1
+1062.005   1  tick 150474344  # pic0=FSB_data_activity,emask=0x3f,sys
+1062.005   3  tick 150474344  # counter shared with CPU 1
+1064.005   0  tick    239972  # pic1=PAPI_l2_tcm,sys
+1064.005   2  tick    239972  # counter shared with CPU 0
+1066.005   1  tick 152950148  # pic0=FSB_data_activity,emask=0x3f,sys
+1066.005   3  tick 152950148  # counter shared with CPU 1
+1068.005   1  tick  12333990  # pic1=PAPI_l2_tcm,sys
+1068.005   3  tick  12333990  # counter shared with CPU 1
+1070.005   0  tick 136774482  # pic0=FSB_data_activity,emask=0x3f,sys
+1070.005   2  tick 136774482  # counter shared with CPU 0
+1072.005   0  tick  12762171  # pic1=PAPI_l2_tcm,sys
+1072.005   2  tick  12762171  # counter shared with C1072.005   3  tick   4421269  # counter shared with CPU 1
+1074.005   0  tick 140639033  # pic0=FSB_data_activity,emask=0x3f,sys
+1074.005   2  tick 140639033  # counter shared with CPU 0
+1076.005   1  tick  15789838  # pic1=PAPI_l2_tcm,sys
+1076.005   3  tick  15789838  # counter shared with CPU 1
+1078.005   1  tick 141689272  # pic0=FSB_data_activity,emask=0x3f,sys
+1078.005   3  tick 141689272  # counter shared with CPU 1
+1080.005   1  tick   4313632  # pic1=PAPI_l2_tcm,sys
+1080.005   0  tick  12287607  # pic1=PAPI_l2_tcm,sys
+1080.005   2  tick  12287607  # counter shared with CPU 0
+1082.005   1  tick 136176080  # pic0=FSB_data_activity,emask=0x3f,sys
+1082.005   3  tick 136176080  # counter shared with CPU 1
+sk=0x3f,sys
+1082.005   2  tick 136171370  # counter shared with CPU 0
+1084.005   0  tick  15812945  # pic1=PAPI_l2_tcm,sys
+1084.005   2  tick  15812945  # counter shared with CPU 0
+1086.005   1  tick 153668114  # pic0=FSB_data_activity,emask=0x3f,sys
+1086.005   0  tick 153678046  # pic0=FSB_data_activity,emask=0x3f,sys
+1086.005   2  tick 153678046  # counter shared with CPU 0
+1088.005   1  tick    122813  # pic1=PAPI_l2_tcm,sys
+1088.005   0  tick  15805892  # pic1=PAPI_l2_tcm,sys
+1088.005   2  tick  15805892  # counter shared with CPU 0
+1090.005   1  tick 136022700  # pic0=FSB_data_activity,emask=0x3f,sys
+1090.005   3  tick 136022700  # counter shared with CPU 1
+sk=0x3f,sys
+1090.005   2  tick 136016368  # counter shared with CPU 0
+1092.005   0  tick  15862063  # pic1=PAPI_l2_tcm,sys
+1092.005   2  tick  15862063  # counter shared with CPU 0
+1094.005   1  tick 142925011  # pic0=FSB_data_activity,emask=0x3f,sys
+1094.005   3  tick 142925011  # counter shared with CPU 1
+1096.005   0  tick  15755770  # pic1=PAPI_l2_tcm,sys
+1096.005   2  tick  15755770  # counter shared with CPU 0
+1098.005   0  tick 139887530  # pic0=FSB_data_activity,emask=0x3f,sys
+1098.005   2  tick 139887530  # counter shared with CPU 0
+1100.005   1  tick   1623460  # pic1=PAPI_l2_tcm,sys
+1100.005   3  tick   1623460  # counter shared with C1100.005   2  tick  15021584  # counter shared with CPU 0
+1102.005   1  tick 135934904  # pic0=FSB_data_activity,emask=0x3f,sys
+1102.005   0  tick 135949570  # pic0=FSB_data_activity,emask=0x3f,sys
+1102.005   2  tick 135949570  # counter shared with CPU 0
+1104.005   1  tick    193154  # pic1=PAPI_l2_tcm,sys
+1104.005   0  tick  15682166  # pic1=PAPI_l2_tcm,sys
+1104.005   2  tick  15682166  # counter shared with CPU 0
+1106.005   1  tick 154452539  # pic0=FSB_data_activity,emask=0x3f,sys
+1106.005   3  tick 154452539  # counter shared with CPU 1
+1108.005   1  tick  12182890  # pic1=PAPI_l2_tcm,sys
+1108.005   3  tick  12182890  # counter shared with CPU 1
+1110.005   0  tick 135380956  # pic0=FSB_data_activity,emask=0x3f,sys
+1110.005   1  tick 135383736  # pic0=FSB_data_activity,emask=0x3f,sys
+1110.005   3  tick 135383736  # counter shared with CPU 1
+1112.005   0  tick   2556438  # pic1=PAPI_l2_tcm,sys
+1112.005   2  tick   2556438  # counter shared with CPU 0
+1114.005   0  tick 147181948  # pic0=FSB_data_activity,emask=0x3f,sys
+1114.005   2  tick 147181948  # counter shared with CPU 0
+1116.005   1  tick   1145728  # pic1=PAPI_l2_tcm,sys
+1116.005   0  tick  15270726  # pic1=PAPI_l2_tcm,sys
+1116.005   2  tick  15270726  # counter shared with CPU 0
+1118.005   0  tick 467694704  # pic0=FSB_data_activity,emask=0x3f,sys
+1118.005   2  tick 467694704  # counter shared with CPU 0
+1118.007   1  tick 468177454  # pic0=FSB_data_activity,emask=0x3f,sys
+1118.007   3  tick 468177454  # counter shared with CPU 1
+1120.005   1  tick   5285378  # pic1=PAPI_l2_tcm,sys
+1120.005   3  tick   5285378  # counter shared with C1120.005   2  tick  11338752  # counter shared with CPU 0
+1122.005   0  tick 387623646  # pic0=FSB_data_activity,emask=0x3f,sys
+1122.005   2  tick 387623646  # counter shared with CPU 0
+1124.005   0  tick     39436  # pic1=PAPI_l2_tcm,sys
+1124.005   1  tick  27813917  # pic1=PAPI_l2_tcm,sys
+1124.005   3  tick  27813917  # counter shared with CPU 1
+1126.005   0  tick 379717036  # pic0=FSB_data_activity,emask=0x3f,sys
+1126.005   2  tick 379717036  # counter shared with CPU 0
+1126.006   1  tick 379888110  # pic0=FSB_data_activity,emask=0x3f,sys
+1126.006   3  tick 379888110  # counter shared with CPU 1
+1128.005   1  tick   3664822  # pic1=PAPI_l2_tcm,sys
+1128.005   0  tick  27895703  # pic1=PAPI_l2_tcm,sys
+1128.005   2  tick  27895703  # counter shared with CPU 0
+1130.005   1  tick 380587618  # pic0=FSB_data_activity,emask=0x3f,sys
+1130.005   0  tick 380564336  # pic0=FSB_data_activity,emask=0x3f,sys
+1130.005   2  tick 380564336  # counter shared with CPU 0
+1132.005   1  tick    316638  # pic1=PAPI_l2_tcm,sys
+1132.005   3  tick    316638  # counter shared with CPU 1
+1132.005   0  tick  28521885  # pic1=PAPI_l2_tcm,sys
+1132.005   2  tick  28521885  # counter shared with CPU 0
+1134.005   0  tick 311684852  # pic0=FSB_data_activity,emask=0x3f,sys
+1134.005   2  tick 311684852  # counter shared with CPU 0
+1136.005   0  tick  24923566  # pic1=PAPI_l2_tcm,sys
+1136.005   2  tick  24923566  # counter shared with CPU 0
+1138.005   0  tick 308610844  # pic0=FSB_data_activity,emask=0x3f,sys
+1138.005   2  tick 308610844  # counter shared with CPU 0
+1140.005   0  tick  30216495  # pic1=PAPI_l2_tcm,sys
+1140.005   2  tick  30216495  # counter shared with CPU 0
+1140.005   1  tick   3024639  # pic1=PAPI_l2_tcm,sys
+1140.005   3  tick   3024639  # counter shared with CPU 1
+1142.005   1  tick 406120282  # pic0=FSB_data_activity,emask=0x3f,sys
+1142.005   3  tick 406120282  # counter shared with CPU 1
+1144.005   1  tick  19198366  # pic1=PAPI_l2_tcm,sys
+1144.005   3  tick  19198366  # counter shared with CPU 1
+1146.005   0  tick 210489582  # pic0=FSB_data_activity,emask=0x3f,sys
+1146.005   2  tick 210489582  # counter shared with CPU 0
+sk=0x3f,sys
+1146.005   3  tick 210487068  # counter shared with CPU 1
+1148.005   1  tick   7645227  # pic1=PAPI_l2_tcm,sys
+1148.005   0  tick  14620200  # pic1=PAPI_l2_tcm,sys
+1148.005   2  tick  14620200  # counter shared with CPU 0
+1150.005   1  tick 218988576  # pic0=FSB_data_activity,emask=0x3f,sys
+1150.005   0  tick 218986518  # pic0=FSB_data_activity,emask=0x3f,sys
+1150.005   2  tick 218986518  # counter shared with CPU 0
+1152.005   0  tick  22537396  # pic1=PAPI_l2_tcm,sys
+1152.005   2  tick  22537396  # counter shared with CPU 0
+1152.005   1  tick    149830  # pic1=PAPI_l2_tcm,sys
+1152.005   3  tick    149830  # counter shared with CPU 1
+1154.005   0  tick 235783780  # pic0=FSB_data_activity,emask=0x3f,sys
+1154.005   2  tick 235783780  # counter shared with CPU 0
+1156.005   1  tick     38505  # pic1=PAPI_l2_tcm,sys
+1156.005   3  tick     38505  # counter shared with CPU 1
+1156.005   0  tick  23251901  # pic1=PAPI_l2_tcm,sys
+1156.005   2  tick  23251901  # counter shared with CPU 0
+1158.005   1  tick 229238894  # pic0=FSB_data_activity,emask=0x3f,sys
+1158.005   0  tick 229228402  # pic0=FSB_data_activity,emask=0x3f,sys
+1158.005   2  tick 229228402  # counter shared with CPU 0
+1160.005   1  tick    377359  # pic1=PAPI_l2_tcm,sys
+1160.005   0  tick  22637644  # pic1=PAPI_l2_tcm,sys
+1160.005   2  tick  22637644  # counter shared with CPU 0
+1162.005   1  tick 208727432  # pic0=FSB_data_activity,emask=0x3f,sys
+1162.005   0  tick 208716114  # pic0=FSB_data_activity,emask=0x3f,sys
+1162.005   2  tick 208716114  # counter shared with CPU 0
+1164.005   0  tick  17995900  # pic1=PAPI_l2_tcm,sys
+1164.005   2  tick  17995900  # counter shared with CPU 0
+1166.005   0  tick 165774794  # pic0=FSB_data_activity,emask=0x3f,sys
+1166.005   2  tick 165774794  # counter shared with CPU 0
+1168.005   1  tick  10897289  # pic1=PAPI_l2_tcm,sys
+1168.005   3  tick  10897289  # counter shared with C1168.005   2  tick   7604613  # counter shared with CPU 0
+1170.005   1  tick 152928430  # pic0=FSB_data_activity,emask=0x3f,sys
+1170.005   0  tick 152935286  # pic0=FSB_data_activity,emask=0x3f,sys
+1170.005   2  tick 152935286  # counter shared with CPU 0
+1172.005   0  tick  16407738  # pic1=PAPI_l2_tcm,sys
+1172.005   2  tick  16407738  # counter shared with CPU 0
+1174.005   1  tick 168459564  # pic0=FSB_data_activity,emask=0x3f,sys
+1174.005   3  tick 168459564  # counter shared with CPU 1
+1176.005   0  tick    215077  # pic1=PAPI_l2_tcm,sys
+1176.005   2  tick    215077  # counter shared with C1176.005   3  tick  17719511  # counter shared with CPU 1
+1178.005   1  tick 153023720  # pic0=FSB_data_activity,emask=0x3f,sys
+1178.005   3  tick 153023720  # counter shared with CPU 1
+1180.005   1  tick  17757993  # pic1=PAPI_l2_tcm,sys
+1180.005   3  tick  17757993  # counter shared with CPU 1
+1182.005   0  tick 162547272  # pic0=FSB_data_activity,emask=0x3f,sys
+1182.005   2  tick 162547272  # counter shared with CPU 0
+sk=0x3f,sys
+1182.005   3  tick 162545446  # counter shared with CPU 1
+1184.005   1  tick  17721976  # pic1=PAPI_l2_tcm,sys
+1184.005   3  tick  17721976  # counter shared with CPU 1
+1186.005   1  tick 152854760  # pic0=FSB_data_activity,emask=0x3f,sys
+1186.005   3  tick 152854760  # counter shared with CPU 1
+1188.005   0  tick  15008232  # pic1=PAPI_l2_tcm,sys
+1188.005   2  tick  15008232  # counter shared with CPU 0
+1190.005   0  tick 191949540  # pic0=FSB_data_activity,emask=0x3f,sys
+1190.005   2  tick 191949540  # counter shared with CPU 0
+1192.005   1  tick   2406214  # pic1=PAPI_l2_tcm,sys
+1192.005   3  tick   2406214  # counter shared with C1192.005   2  tick  58606526  # counter shared with CPU 0
+1194.005   1  tick 209414452  # pic0=FSB_data_activity,emask=0x3f,sys
+1194.005   3  tick 209414452  # counter shared with CPU 1
+1196.005   0  tick  16560796  # pic1=PAPI_l2_tcm,sys
+1196.005   2  tick  16560796  # counter shared with CPU 0
+1198.005   1  tick  41255532  # pic0=FSB_data_activity,emask=0x3f,sys
+1198.005   3  tick  41255532  # counter shared with CPU 1
+1200.005   1  tick     87815  # pic1=PAPI_l2_tcm,sys
+1200.005   3  tick     87815  # counter shared with CPU 1
+1200.006   0  tick     33380  # pic1=PAPI_l2_tcm,sys
+1200.006   2  tick     33380  # counter shared with CPU 0
+1202.005   0  tick  19203626  # pic0=FSB_data_activity,emask=0x3f,sys
+1202.005   2  tick  19203626  # counter shared with CPU 0
+1204.005   0  tick     50067  # pic1=PAPI_l2_tcm,sys
+1204.005   2  tick     50067  # counter shared with CPU 0
+1206.005   0  tick   8340727  # pic0=FSB_data_activity,emask=0x3f,sys
+1206.005   2  tick   8340727  # counter shared with CPU 0
+1208.005   0  tick   1295640  # pic1=PAPI_l2_tcm,sys
+1208.005   2  tick   1295640  # counter shared with C1208.005   3  tick   1171926  # counter shared with CPU 1
+1210.005   1  tick 122906999  # pic0=FSB_data_activity,emask=0x3f,sys
+1210.005   0  tick 122923524  # pic0=FSB_data_activity,emask=0x3f,sys
+1210.005   2  tick 122923524  # counter shared with CPU 0
+1212.005   1  tick     96267  # pic1=PAPI_l2_tcm,sys
+1212.005   3  tick     96267  # counter shared with CPU 1
+1212.005   0  tick  13355017  # pic1=PAPI_l2_tcm,sys
+1212.005   2  tick  13355017  # counter shared with CPU 0
+1214.005   0  tick 136441462  # pic0=FSB_data_activity,emask=0x3f,sys
+1214.005   2  tick 136441462  # counter shared with CPU 0
+1216.005   0  tick   2866296  # pic1=PAPI_l2_tcm,sys
+1216.005   2  tick   2866296  # counter shared with C1216.005   3  tick  11932564  # counter shared with CPU 1
+1218.005   1  tick 131962138  # pic0=FSB_data_activity,emask=0x3f,sys
+1218.005   3  tick 131962138  # counter shared with CPU 1
+1218.005   0  tick 132054500  # pic0=FSB_data_activity,emask=0x3f,sys
+1218.005   2  tick 132054500  # counter shared with CPU 0
+1220.005   1  tick  15108795  # pic1=PAPI_l2_tcm,sys
+1220.005   3  tick  15108795  # counter shared with CPU 1
+1222.005   1  tick 216504908  # pic0=FSB_data_activity,emask=0x3f,sys
+1222.005   3  tick 216504908  # counter shared with CPU 1
+1224.005   0  tick    159209  # pic1=PAPI_l2_tcm,sys
+1224.005   2  tick    159209  # counter shared with C1224.005   3  tick  13866514  # counter shared with CPU 1
+1226.005   1  tick 210363940  # pic0=FSB_data_activity,emask=0x3f,sys
+1226.005   3  tick 210363940  # counter shared with CPU 1
+1228.005   0  tick   7744928  # pic1=PAPI_l2_tcm,sys
+1228.005   2  tick   7744928  # counter shared with CPU 0
+1230.005   1  tick 248318440  # pic0=FSB_data_activity,emask=0x3f,sys
+1230.005   0  tick 248329351  # pic0=FSB_data_activity,emask=0x3f,sys
+1230.005   2  tick 248329351  # counter shared with CPU 0
+1232.005   1  tick    152167  # pic1=PAPI_l2_tcm,sys
+1232.005   3  tick    152167  # counter shared with CPU 1
+1232.005   0  tick  18921066  # pic1=PAPI_l2_tcm,sys
+1232.005   2  tick  18921066  # counter shared with CPU 0
+1234.005   0  tick 251533699  # pic0=FSB_data_activity,emask=0x3f,sys
+1234.005   2  tick 251533699  # counter shared with CPU 0
+1236.005   1  tick  10438442  # pic1=PAPI_l2_tcm,sys
+1236.005   3  tick  10438442  # counter shared with CPU 1
+1238.005   1  tick 244576928  # pic0=FSB_data_activity,emask=0x3f,sys
+1238.005   3  tick 244576928  # counter shared with CPU 1
+1240.005   0  tick    208694  # pic1=PAPI_l2_tcm,sys
+1240.005   2  tick    208694  # counter shared with C1240.005   3  tick  17941685  # counter shared with CPU 1
+1242.005   0  tick 226522158  # pic0=FSB_data_activity,emask=0x3f,sys
+1242.005   2  tick 226522158  # counter shared with CPU 0
+1242.005   1  tick 226498008  # pic0=FSB_data_activity,emask=0x3f,sys
+1242.005   3  tick 226498008  # counter shared with CPU 1
+1244.005   1  tick  14796057  # pic1=PAPI_l2_tcm,sys
+1244.005   3  tick  14796057  # counter shared with CPU 1
+1246.005   0  tick 222352432  # pic0=FSB_data_activity,emask=0x3f,sys
+1246.005   2  tick 222352432  # counter shared with CPU 0
+sk=0x3f,sys
+1246.005   3  tick 222347942  # counter shared with CPU 1
+1248.005   1  tick  16096456  # pic1=PAPI_l2_tcm,sys
+1248.005   3  tick  16096456  # counter shared with CPU 1
+1250.005   1  tick 297486580  # pic0=FSB_data_activity,emask=0x3f,sys
+1250.005   0  tick 297503588  # pic0=FSB_data_activity,emask=0x3f,sys
+1250.005   2  tick 297503588  # counter shared with CPU 0
+1252.005   1  tick    134960  # pic1=PAPI_l2_tcm,sys
+1252.005   3  tick    134960  # counter shared with CPU 1
+1252.005   0  tick  17174396  # pic1=PAPI_l2_tcm,sys
+1252.005   2  tick  17174396  # counter shared with CPU 0
+1254.005   0  tick 257730670  # pic0=FSB_data_activity,emask=0x3f,sys
+1254.005   2  tick 257730670  # counter shared with CPU 0
+1256.005   0  tick   6385451  # pic1=PAPI_l2_tcm,sys
+1256.005   2  tick   6385451  # counter shared with CPU 0
+1256.005   1  tick  20944251  # pic1=PAPI_l2_tcm,sys
+1256.005   3  tick  20944251  # counter shared with CPU 1
+1258.005   1  tick 153618050  # pic0=FSB_data_activity,emask=0x3f,sys
+1258.005   3  tick 153618050  # counter shared with CPU 1
+1258.005   0  tick 153793303  # pic0=FSB_data_activity,emask=0x3f,sys
+1258.005   2  tick 153793303  # counter shared with CPU 0
+1260.005   0  tick    110102  # pic1=PAPI_l2_tcm,sys
+1260.005   2  tick    110102  # counter shared with C1260.005   3  tick  16320874  # counter shared with CPU 1
+1262.005   1  tick 169524726  # pic0=FSB_data_activity,emask=0x3f,sys
+1262.005   3  tick 169524726  # counter shared with CPU 1
+1264.005   0  tick  16906565  # pic1=PAPI_l2_tcm,sys
+1264.005   2  tick  16906565  # counter shared with CPU 0
+1266.005   1  tick 172121364  # pic0=FSB_data_activity,emask=0x3f,sys
+1266.005   3  tick 172121364  # counter shared with CPU 1
+1266.005   0  tick 172126560  # pic0=FSB_data_activity,emask=0x3f,sys
+1266.005   2  tick 172126560  # counter shared with CPU 0
+1268.005   1  tick    456560  # pic1=PAPI_l2_tcm,sys
+1268.005   3  tick    456560  # counter shared with CPU 1
+1270.005   0  tick 183240532  # pic0=FSB_data_activity,emask=0x3f,sys
+1270.005   2  tick 183240532  # counter shared with CPU 0
+1272.005   0  tick    274426  # pic1=PAPI_l2_tcm,sys
+1272.005   2  tick    274426  # counter shared with C1272.005   3  tick  17426417  # counter shared with CPU 1
+1274.005   0  tick 167754184  # pic0=FSB_data_activity,emask=0x3f,sys
+1274.005   1  tick 167755556  # pic0=FSB_data_activity,emask=0x3f,sys
+1274.005   3  tick 167755556  # counter shared with CPU 1
+1276.005   1  tick  17334435  # pic1=PAPI_l2_tcm,sys
+1276.005   0  tick   1345034  # pic1=PAPI_l2_tcm,sys
+1276.005   2  tick   1345034  # counter shared with CPU 0
+1278.005   0  tick 170695850  # pic0=FSB_data_activity,emask=0x3f,sys
+1278.005   1  tick 170715254  # pic0=FSB_data_activity,emask=0x3f,sys
+1278.005   3  tick 170715254  # counter shared with CPU 1
+1280.005   1  tick  17655248  # pic1=PAPI_l2_tcm,sys
+1280.005   3  tick  17655248  # counter shared with CPU 1
+1282.005   1  tick 174111976  # pic0=FSB_data_activity,emask=0x3f,sys
+1282.005   3  tick 174111976  # counter shared with CPU 1
+1284.005   0  tick  11820545  # pic1=PAPI_l2_tcm,sys
+1284.005   2  tick  11820545  # counter shared with CPU 0
+1286.005   1  tick 167166982  # pic0=FSB_data_activity,emask=0x3f,sys
+1286.005   3  tick 167166982  # counter shared with CPU 1
+1286.005   0  tick 167168714  # pic0=FSB_data_activity,emask=0x3f,sys
+1286.005   2  tick 167168714  # counter shared with CPU 0
+1288.005   0  tick  18297370  # pic1=PAPI_l2_tcm,sys
+1288.005   2  tick  18297370  # counter shared with CPU 0
+1290.005   0  tick 185547312  # pic0=FSB_data_activity,emask=0x3f,sys
+1290.005   2  tick 185547312  # counter shared with CPU 0
+1292.005   0  tick  11937341  # pic1=PAPI_l2_tcm,sys
+1292.005   2  tick  11937341  # counter shared with CPU 0
+1294.005   1  tick 172690266  # pic0=FSB_data_activity,emask=0x3f,sys
+1294.005   3  tick 172690266  # counter shared with CPU 1
+1294.005   0  tick 172703948  # pic0=FSB_data_activity,emask=0x3f,sys
+1294.005   2  tick 172703948  # counter shared with CPU 0
+1296.005   1  tick   5576058  # pic1=PAPI_l2_tcm,sys
+1296.005   3  tick   5576058  # counter shared with CPU 1
+1298.005   1  tick 179001459  # pic0=FSB_data_activity,emask=0x3f,sys
+1298.005   3  tick 179001459  # counter shared with CPU 1
+1298.005   0  tick 179097584  # pic0=FSB_data_activity,emask=0x3f,sys
+1298.005   2  tick 179097584  # counter shared with CPU 0
+1300.005   1  tick    131201  # pic1=PAPI_l2_tcm,sys
+1300.005   3  tick    131201  # counter shared with C1300.005   2  tick  18422258  # counter shared with CPU 0
+1302.005   0  tick 174923710  # pic0=FSB_data_activity,emask=0x3f,sys
+1302.005   2  tick 174923710  # counter shared with CPU 0
+1304.005   1  tick   6620866  # pic1=PAPI_l2_tcm,sys
+1304.005   0  tick  12160100  # pic1=PAPI_l2_tcm,sys
+1304.005   2  tick  12160100  # counter shared with CPU 0
+1306.005   1  tick 175839758  # pic0=FSB_data_activity,emask=0x3f,sys
+1306.005   3  tick 175839758  # counter shared with CPU 1
+1306.005   0  tick 175845255  # pic0=FSB_data_activity,emask=0x3f,sys
+1306.005   2  tick 175845255  # counter shared with CPU 0
+1308.005   0  tick  18542807  # pic1=PAPI_l2_tcm,sys
+1308.005   2  tick  18542807  # counter shared with CPU 0
+1310.005   1  tick 190116756  # pic0=FSB_data_activity,emask=0x3f,sys
+1310.005   3  tick 190116756  # counter shared with CPU 1
+1312.005   0  tick  18387106  # pic1=PAPI_l2_tcm,sys
+1312.005   2  tick  18387106  # counter shared with CPU 0
+1314.005   1  tick 179501184  # pic0=FSB_data_activity,emask=0x3f,sys
+1314.005   3  tick 179501184  # counter shared with CPU 1
+1316.005   1  tick   3120178  # pic1=PAPI_l2_tcm,sys
+1316.005   3  tick   3120178  # counter shared with CPU 1
+1318.005   0  tick 186313304  # pic0=FSB_data_activity,emask=0x3f,sys
+1318.005   2  tick 186313304  # counter shared with CPU 0
+1320.005   0  tick  12915813  # pic1=PAPI_l2_tcm,sys
+1320.005   2  tick  12915813  # counter shared with CPU 0
+1322.005   1  tick 180061628  # pic0=FSB_data_activity,emask=0x3f,sys
+1322.005   3  tick 180061628  # counter shared with CPU 1
+sk=0x3f,sys
+1322.005   2  tick 180070950  # counter shared with CPU 0
+1324.005   0  tick  14962934  # pic1=PAPI_l2_tcm,sys
+1324.005   2  tick  14962934  # counter shared with CPU 0
+1326.005   1  tick 179883774  # pic0=FSB_data_activity,emask=0x3f,sys
+1326.005   0  tick 179883914  # pic0=FSB_data_activity,emask=0x3f,sys
+1326.005   2  tick 179883914  # counter shared with CPU 0
+1328.005   1  tick    153845  # pic1=PAPI_l2_tcm,sys
+1328.005   3  tick    153845  # counter shared with CPU 1
+1328.005   0  tick  18696752  # pic1=PAPI_l2_tcm,sys
+1328.005   2  tick  18696752  # counter shared with CPU 0
+1330.005   1  tick 185661482  # pic0=FSB_data_activity,emask=0x3f,sys
+1330.005   3  tick 185661482  # counter shared with CPU 1
+sk=0x3f,sys
+1330.005   2  tick 185652024  # counter shared with CPU 0
+1332.005   1  tick  13072766  # pic1=PAPI_l2_tcm,sys
+1332.005   3  tick  13072766  # counter shared with CPU 1
+1334.005   0  tick 176016422  # pic0=FSB_data_activity,emask=0x3f,sys
+1334.005   1  tick 176011368  # pic0=FSB_data_activity,emask=0x3f,sys
+1334.005   3  tick 176011368  # counter shared with CPU 1
+1336.005   1  tick  18522893  # pic1=PAPI_l2_tcm,sys
+1336.005   3  tick  18522893  # counter shared with CPU 1
+1336.005   0  tick     72840  # pic1=PAPI_l2_tcm,sys
+1336.005   2  tick     72840  # counter shared with CPU 0
+1338.005   1  tick 188992848  # pic0=FSB_data_activity,emask=0x3f,sys
+1338.005   3  tick 188992848  # counter shared with CPU 1
+1338.005   0  tick 189095492  # pic0=FSB_data_activity,emask=0x3f,sys
+1338.005   2  tick 189095492  # counter shared with CPU 0
+1340.005   0  tick  18548020  # pic1=PAPI_l2_tcm,sys
+1340.005   2  tick  18548020  # counter shared with CPU 0
+1342.005   1  tick 175269346  # pic0=FSB_data_activity,emask=0x3f,sys
+1342.005   0  tick 175272021  # pic0=FSB_data_activity,emask=0x3f,sys
+1342.005   2  tick 175272021  # counter shared with CPU 0
+1344.005   1  tick   8423902  # pic1=PAPI_l2_tcm,sys
+1344.005   3  tick   8423902  # counter shared with CPU 1
+1346.005   1  tick 176758192  # pic0=FSB_data_activity,emask=0x3f,sys
+1346.005   0  tick 176774000  # pic0=FSB_data_activity,emask=0x3f,sys
+1346.005   2  tick 176774000  # counter shared with CPU 0
+1348.005   1  tick    109374  # pic1=PAPI_l2_tcm,sys
+1348.005   3  tick    109374  # counter shared with CPU 1
+1348.005   0  tick  18308445  # pic1=PAPI_l2_tcm,sys
+1348.005   2  tick  18308445  # counter shared with CPU 0
+1350.005   1  tick 174916698  # pic0=FSB_data_activity,emask=0x3f,sys
+1350.005   3  tick 174916698  # counter shared with CPU 1
+1350.006   0  tick 175002290  # pic0=FSB_data_activity,emask=0x3f,sys
+1350.006   2  tick 175002290  # counter shared with CPU 0
+1352.005   0  tick  11484510  # pic1=PAPI_l2_tcm,sys
+1352.005   2  tick  11484510  # counter shared with CPU 0
+1354.005   0  tick 169953322  # pic0=FSB_data_activity,emask=0x3f,sys
+1354.005   2  tick 169953322  # counter shared with CPU 0
+1356.005   0  tick  15466267  # pic1=PAPI_l2_tcm,sys
+1356.005   2  tick  15466267  # counter shared with CPU 0
+1358.005   0  tick 170752586  # pic0=FSB_data_activity,emask=0x3f,sys
+1358.005   1  tick 170769652  # pic0=FSB_data_activity,emask=0x3f,sys
+1358.005   3  tick 170769652  # counter shared with CPU 1
+1360.005   0  tick      9448  # pic1=PAPI_l2_tcm,sys
+1360.005   2  tick      9448  # counter shared with CPU 0
+1360.005   1  tick  15355300  # pic1=PAPI_l2_tcm,sys
+1360.005   3  tick  15355300  # counter shared with CPU 1
+1362.005   1  tick 145458252  # pic0=FSB_data_activity,emask=0x3f,sys
+1362.005   3  tick 145458252  # counter shared with CPU 1
+1364.005   1  tick  15685848  # pic1=PAPI_l2_tcm,sys
+1364.005   3  tick  15685848  # counter shared with CPU 1
+1364.005   0  tick    388809  # pic1=PAPI_l2_tcm,sys
+1364.005   2  tick    388809  # counter shared with CPU 0
+1366.005   1  tick 156942560  # pic0=FSB_data_activity,emask=0x3f,sys
+1366.005   2  tick 156890292  # counter shared with CPU 0
+1366.005   3  tick 156942560  # counter shared with CPU 1
+1368.005   1  tick     78638  # pic1=PAPI_l2_tcm,sys
+1368.005   3  tick     78638  # counter shared with CPU 1
+1368.005   0  tick  15561376  # pic1=PAPI_l2_tcm,sys
+1368.005   2  tick  15561376  # counter shared with CPU 0
+1370.005   1  tick 137897548  # pic0=FSB_data_activity,emask=0x3f,sys
+1370.005   3  tick 137897548  # counter shared with CPU 1
+1370.005   0  tick 137927856  # pic0=FSB_data_activity,emask=0x3f,sys
+1370.005   2  tick 137927856  # counter shared with CPU 0
+1372.005   1  tick   9262123  # pic1=PAPI_l2_tcm,sys
+1372.005   3  tick   9262123  # counter shared with CPU 1
+1374.005   0  tick 133374902  # pic0=FSB_data_activity,emask=0x3f,sys
+1374.005   1  tick 133395024  # pic0=FSB_data_activity,emask=0x3f,sys
+1374.005   3  tick 133395024  # counter shared with CPU 1
+1376.005   0  tick     88946  # pic1=PAPI_l2_tcm,sys
+1376.005   1  tick  14141496  # pic1=PAPI_l2_tcm,sys
+1376.005   3  tick  14141496  # counter shared with CPU 1
+1378.005   1  tick 133254360  # pic0=FSB_data_activity,emask=0x3f,sys
+1378.005   3  tick 133254360  # counter shared with CPU 1
+1378.005   0  tick 133374424  # pic0=FSB_data_activity,emask=0x3f,sys
+1378.005   2  tick 133374424  # counter shared with CPU 0
+1380.005   1  tick  12942188  # pic1=PAPI_l2_tcm,sys
+1380.005   3  tick  12942188  # counter shared with CPU 1
+1382.005   1  tick 118953420  # pic0=FSB_data_activity,emask=0x3f,sys
+1382.005   3  tick 118953420  # counter shared with CPU 1
+1384.005   0  tick    475820  # pic1=PAPI_l2_tcm,sys
+1384.005   1  tick  11934665  # pic1=PAPI_l2_tcm,sys
+1384.005   3  tick  11934665  # counter shared with CPU 1
+1386.005   1  tick 119640154  # pic0=FSB_data_activity,emask=0x3f,sys
+1386.005   0  tick 119674638  # pic0=FSB_data_activity,emask=0x3f,sys
+1386.005   2  tick 119674638  # counter shared with CPU 0
+1388.005   1  tick    116490  # pic1=PAPI_l2_tcm,sys
+1388.005   3  tick    116490  # counter shared with CPU 1
+1388.005   0  tick  14013622  # pic1=PAPI_l2_tcm,sys
+1388.005   2  tick  14013622  # counter shared with CPU 0
+1390.005   0  tick  97917630  # pic0=FSB_data_activity,emask=0x3f,sys
+1390.005   2  tick  97917630  # counter shared with CPU 0
+1390.007   1  tick  98052028  # pic0=FSB_data_activity,emask=0x3f,sys
+1390.007   3  tick  98052028  # counter shared with CPU 1
+1392.005   1  tick   3964697  # pic1=PAPI_l2_tcm,sys
+1392.005   3  tick   3964697  # counter shared with CPU 1
+1394.005   0  tick  84823268  # pic0=FSB_data_activity,emask=0x3f,sys
+1394.005   1  tick  84820222  # pic0=FSB_data_activity,emask=0x3f,sys
+1394.005   3  tick  84820222  # counter shared with CPU 1
+1396.005   0  tick     27887  # pic1=PAPI_l2_tcm,sys
+1396.005   1  tick   9516646  # pic1=PAPI_l2_tcm,sys
+1396.005   3  tick   9516646  # counter shared with CPU 1
+1398.005   0  tick  87415546  # pic0=FSB_data_activity,emask=0x3f,sys
+1398.005   2  tick  87415546  # counter shared with CPU 0
+1400.005   0  tick   8058419  # pic1=PAPI_l2_tcm,sys
+1400.005   2  tick   8058419  # counter shared with CPU 0
+1402.005   0  tick  81747300  # pic0=FSB_data_activity,emask=0x3f,sys
+1402.005   2  tick  81747300  # counter shared with CPU 0
+1404.005   0  tick   7842935  # pic1=PAPI_l2_tcm,sys
+1404.005   2  tick   7842935  # counter shared with CPU 0
+1406.005   1  tick  97893668  # pic0=FSB_data_activity,emask=0x3f,sys
+1406.005   3  tick  97893668  # counter shared with CPU 1
+1408.005   1  tick   9366967  # pic1=PAPI_l2_tcm,sys
+1408.005   3  tick   9366967  # counter shared with CPU 1
+1410.005   0  tick  81840156  # pic0=FSB_data_activity,emask=0x3f,sys
+1410.005   2  tick  81840156  # counter shared with CPU 0
+1412.005   1  tick  12677409  # pic1=PAPI_l2_tcm,sys
+1412.005   3  tick  12677409  # counter shared with CPU 1
+1412.005   0  tick   2027816  # pic1=PAPI_l2_tcm,sys
+1412.005   2  tick   2027816  # counter shared with CPU 0
+1414.005   1  tick 266412920  # pic0=FSB_data_activity,emask=0x3f,sys
+1414.005   3  tick 266412920  # counter shared with CPU 1
+1414.005   0  tick 266280628  # pic0=FSB_data_activity,emask=0x3f,sys
+1414.005   2  tick 266280628  # counter shared with CPU 0
+1416.005   1  tick    169126  # pic1=PAPI_l2_tcm,sys
+1416.005   0  tick   8677014  # pic1=PAPI_l2_tcm,sys
+1416.005   2  tick   8677014  # counter shared with CPU 0
+1418.005   1  tick 199799742  # pic0=FSB_data_activity,emask=0x3f,sys
+1418.005   3  tick 199799742  # counter shared with CPU 1
+1418.006   0  tick 199970174  # pic0=FSB_data_activity,emask=0x3f,sys
+1418.006   2  tick 199970174  # counter shared with CPU 0
+1420.005   1  tick   2303201  # pic1=PAPI_l2_tcm,sys
+1420.005   3  tick   2303201  # counter shared with C1420.005   2  tick   5893483  # counter shared with CPU 0
+1422.005   1  tick 163445416  # pic0=FSB_data_activity,emask=0x3f,sys
+1422.005   0  tick 163459400  # pic0=FSB_data_activity,emask=0x3f,sys
+1422.005   2  tick 163459400  # counter shared with CPU 0
+1424.005   0  tick   4730216  # pic1=PAPI_l2_tcm,sys
+1424.005   2  tick   4730216  # counter shared with CPU 0
+1424.005   1  tick    357732  # pic1=PAPI_l2_tcm,sys
+1424.005   3  tick    357732  # counter shared with CPU 1
+1426.005   0  tick 207150928  # pic0=FSB_data_activity,emask=0x3f,sys
+1426.005   2  tick 207150928  # counter shared with CPU 0
+1428.005   0  tick   6358602  # pic1=PAPI_l2_tcm,sys
+1428.005   2  tick   6358602  # counter shared with CPU 0
+1430.005   1  tick 214724640  # pic0=FSB_data_activity,emask=0x3f,sys
+1430.005   0  tick 214729792  # pic0=FSB_data_activity,emask=0x3f,sys
+1430.005   2  tick 214729792  # counter shared with CPU 0
+1432.005   1  tick  15086094  # pic1=PAPI_l2_tcm,sys
+1432.005   3  tick  15086094  # counter shared with CPU 1
+1432.005   0  tick   6874046  # pic1=PAPI_l2_tcm,sys
+1432.005   2  tick   6874046  # counter shared with CPU 0
+1434.005   0  tick 161569822  # pic0=FSB_data_activity,emask=0x3f,sys
+1434.005   1  tick 161731851  # pic0=FSB_data_activity,emask=0x3f,sys
+1434.005   3  tick 161731851  # counter shared with CPU 1
+1436.005   1  tick  13585242  # pic1=PAPI_l2_tcm,sys
+1436.005   3  tick  13585242  # counter shared with CPU 1
+1438.005   1  tick 145777542  # pic0=FSB_data_activity,emask=0x3f,sys
+1438.005   3  tick 145777542  # counter shared with CPU 1
+1440.005   1  tick   9258200  # pic1=PAPI_l2_tcm,sys
+1440.005   3  tick   9258200  # counter shared with CPU 1
+1442.005   1  tick 149400102  # pic0=FSB_data_activity,emask=0x3f,sys
+1442.005   3  tick 149400102  # counter shared with CPU 1
+1444.005   1  tick  15994499  # pic1=PAPI_l2_tcm,sys
+1444.005   3  tick  15994499  # counter shared with CPU 1
+1446.005   1  tick 169702906  # pic0=FSB_data_activity,emask=0x3f,sys
+1446.005   0  tick 169718826  # pic0=FSB_data_activity,emask=0x3f,sys
+1446.005   2  tick 169718826  # counter shared with CPU 0
+1448.005   0  tick     62247  # pic1=PAPI_l2_tcm,sys
+1448.005   1  tick  16262032  # pic1=PAPI_l2_tcm,sys
+1448.005   3  tick  16262032  # counter shared with CPU 1
+1450.005   1  tick 159292362  # pic0=FSB_data_activity,emask=0x3f,sys
+1450.005   3  tick 159292362  # counter shared with CPU 1
+1452.005   1  tick  15416382  # pic1=PAPI_l2_tcm,sys
+1452.005   3  tick  15416382  # counter shared with CPU 1
+1454.005   1  tick 172965650  # pic0=FSB_data_activity,emask=0x3f,sys
+1454.005   3  tick 172965650  # counter shared with CPU 1
+1454.005   0  tick 172985875  # pic0=FSB_data_activity,emask=0x3f,sys
+1454.005   2  tick 172985875  # counter shared with CPU 0
+1456.005   1  tick     29388  # pic1=PAPI_l2_tcm,sys
+1456.005   3  tick     29388  # counter shared with CPU 1
+1456.005   0  tick  16976888  # pic1=PAPI_l2_tcm,sys
+1456.005   2  tick  16976888  # counter shared with CPU 0
+1458.005   1  tick 165956565  # pic0=FSB_data_activity,emask=0x3f,sys
+1458.005   0  tick 165953962  # pic0=FSB_data_activity,emask=0x3f,sys
+1458.005   2  tick 165953962  # counter shared with CPU 0
+1460.005   0  tick   7752272  # pic1=PAPI_l2_tcm,sys
+1460.005   1  tick  10066506  # pic1=PAPI_l2_tcm,sys
+1460.005   3  tick  10066506  # counter shared with CPU 1
+1462.005   0  tick 168113145  # pic0=FSB_data_activity,emask=0x3f,sys
+1462.005   2  tick 168113145  # counter shared with CPU 0
+sk=0x3f,sys
+1462.005   3  tick 168100605  # counter shared with CPU 1
+1464.005   1  tick  15259652  # pic1=PAPI_l2_tcm,sys
+1464.005   3  tick  15259652  # counter shared with C1464.005   2  tick   2138609  # counter shared with CPU 0
+1466.005   0  tick 171535454  # pic0=FSB_data_activity,emask=0x3f,sys
+1466.005   2  tick 171535454  # counter shared with CPU 0
+1466.006   1  tick 171632376  # pic0=FSB_data_activity,emask=0x3f,sys
+1466.006   3  tick 171632376  # counter shared with CPU 1
+1468.005   1  tick  15019092  # pic1=PAPI_l2_tcm,sys
+1468.005   3  tick  15019092  # counter shared with CPU 1
+1468.008   0  tick   3369365  # pic1=PAPI_l2_tcm,sys
+1468.008   2  tick   3369365  # counter shared with CPU 0
+1470.005   0  tick 168236734  # pic0=FSB_data_activity,emask=0x3f,sys
+1470.005   2  tick 168236734  # counter shared with CPU 0
+1472.005   1  tick  17905289  # pic1=PAPI_l2_tcm,sys
+1472.005   3  tick  17905289  # counter shared with CPU 1
+1474.005   0  tick 184290207  # pic0=FSB_data_activity,emask=0x3f,sys
+1474.005   1  tick 184283974  # pic0=FSB_data_activity,emask=0x3f,sys
+1474.005   3  tick 184283974  # counter shared with CPU 1
+1476.005   1  tick   9168595  # pic1=PAPI_l2_tcm,sys
+1476.005   0  tick   8828853  # pic1=PAPI_l2_tcm,sys
+1476.005   2  tick   8828853  # counter shared with CPU 0
+1478.005   1  tick 170417296  # pic0=FSB_data_activity,emask=0x3f,sys
+1478.005   3  tick 170417296  # counter shared with CPU 1
+1478.010   0  tick 171119594  # pic0=FSB_data_activity,emask=0x3f,sys
+1478.010   2  tick 171119594  # counter shared with CPU 0
+1480.005   1  tick   2439453  # pic1=PAPI_l2_tcm,sys
+1480.005   3  tick   2439453  # counter shared with CPU 1
+1482.005   1  tick 172869448  # pic0=FSB_data_activity,emask=0x3f,sys
+1482.005   3  tick 172869448  # counter shared with CPU 1
+1482.005   0  tick 172891120  # pic0=FSB_data_activity,emask=0x3f,sys
+1482.005   2  tick 172891120  # counter shared with CPU 0
+1484.005   1  tick     37766  # pic1=PAPI_l2_tcm,sys
+1484.005   3  tick     37766  # counter shared with CPU 1
+1484.005   0  tick  17685555  # pic1=PAPI_l2_tcm,sys
+1484.005   2  tick  17685555  # counter shared with CPU 0
+1486.005   0  tick 176033458  # pic0=FSB_data_activity,emask=0x3f,sys
+1486.005   2  tick 176033458  # counter shared with CPU 0
+1486.006   1  tick 176100249  # pic0=FSB_data_activity,emask=0x3f,sys
+1486.006   3  tick 176100249  # counter shared with CPU 1
+1488.005   1  tick   9971432  # pic1=PAPI_l2_tcm,sys
+1488.005   3  tick   9971432  # counter shared with CPU 1
+1490.005   0  tick 175096356  # pic0=FSB_data_activity,emask=0x3f,sys
+1490.005   1  tick 175100496  # pic0=FSB_data_activity,emask=0x3f,sys
+1490.005   3  tick 175100496  # counter shared with CPU 1
+1492.005   1  tick  11342109  # pic1=PAPI_l2_tcm,sys
+1492.005   3  tick  11342109  # counter shared with CPU 1
+1494.005   0  tick 190099884  # pic0=FSB_data_activity,emask=0x3f,sys
+1494.005   2  tick 190099884  # counter shared with CPU 0
+1496.005   1  tick    107187  # pic1=PAPI_l2_tcm,sys
+1496.005   0  tick  18350667  # pic1=PAPI_l2_tcm,sys
+1496.005   2  tick  18350667  # counter shared with CPU 0
+1498.005   1  tick 176287264  # pic0=FSB_data_activity,emask=0x3f,sys
+1498.005   0  tick 176287300  # pic0=FSB_data_activity,emask=0x3f,sys
+1498.005   2  tick 176287300  # counter shared with CPU 0
+1500.005   0  tick  14645251  # pic1=PAPI_l2_tcm,sys
+1500.005   2  tick  14645251  # counter shared with CPU 0
+1502.005   1  tick 178593697  # pic0=FSB_data_activity,emask=0x3f,sys
+1502.005   3  tick 178593697  # counter shared with CPU 1
+1504.005   1  tick  17255225  # pic1=PAPI_l2_tcm,sys
+1504.005   3  tick  17255225  # counter shared with CPU 1
+1506.005   1  tick 165067756  # pic0=FSB_data_activity,emask=0x3f,sys
+1506.005   3  tick 165067756  # counter shared with CPU 1
+sk=0x3f,sys
+1506.005   2  tick 165085678  # counter shared with CPU 0
+1508.005   1  tick  10358317  # pic1=PAPI_l2_tcm,sys
+1508.005   3  tick  10358317  # counter shared with CPU 1
+1510.005   1  tick 159210380  # pic0=FSB_data_activity,emask=0x3f,sys
+1510.005   3  tick 159210380  # counter shared with CPU 1
+1512.005   0  tick     86291  # pic1=PAPI_l2_tcm,sys
+1512.005   1  tick  16059361  # pic1=PAPI_l2_tcm,sys
+1512.005   3  tick  16059361  # counter shared with CPU 1
+1514.005   1  tick 153730631  # pic0=FSB_data_activity,emask=0x3f,sys
+1514.005   3  tick 153730631  # counter shared with CPU 1
+1516.005   0  tick   7356303  # pic1=PAPI_l2_tcm,sys
+1516.005   2  tick   7356303  # counter shared with CPU 0
+1516.005   1  tick   7545763  # pic1=PAPI_l2_tcm,sys
+1516.005   3  tick   7545763  # counter shared with CPU 1
+1518.005   0  tick 153691402  # pic0=FSB_data_activity,emask=0x3f,sys
+1518.005   1  tick 153686852  # pic0=FSB_data_activity,emask=0x3f,sys
+1518.005   3  tick 153686852  # counter shared with CPU 1
+1520.005   1  tick  15146010  # pic1=PAPI_l2_tcm,sys
+1520.005   3  tick  15146010  # counter shared with CPU 1
+1520.005   0  tick    339063  # pic1=PAPI_l2_tcm,sys
+1520.005   2  tick    339063  # counter shared with CPU 0
+1522.005   1  tick 154623272  # pic0=FSB_data_activity,emask=0x3f,sys
+1522.005   3  tick 154623272  # counter shared with CPU 1
+1522.005   0  tick 154600100  # pic0=FSB_data_activity,emask=0x3f,sys
+1522.005   2  tick 154600100  # counter shared with CPU 0
+1524.005   1  tick   1861031  # pic1=PAPI_l2_tcm,sys
+1524.005   3  tick   1861031  # counter shared with CPU 1
+1526.005   1  tick 128456332  # pic0=FSB_data_activity,emask=0x3f,sys
+1526.005   0  tick 128474812  # pic0=FSB_data_activity,emask=0x3f,sys
+1526.005   2  tick 128474812  # counter shared with CPU 0
+1528.005   1  tick   1915219  # pic1=PAPI_l2_tcm,sys
+1528.005   3  tick   1915219  # counter shared with CPU 1
+1528.005   0  tick  14840043  # pic1=PAPI_l2_tcm,sys
+1528.005   2  tick  14840043  # counter shared with CPU 0
+1530.005   1  tick 136534820  # pic0=FSB_data_activity,emask=0x3f,sys
+1530.005   0  tick 136531468  # pic0=FSB_data_activity,emask=0x3f,sys
+1530.005   2  tick 136531468  # counter shared with CPU 0
+1532.005   1  tick    124269  # pic1=PAPI_l2_tcm,sys
+1532.005   3  tick    124269  # counter shared with CPU 1
+1532.005   0  tick  16228652  # pic1=PAPI_l2_tcm,sys
+1532.005   2  tick  16228652  # counter shared with CPU 0
+1534.005   1  tick 140256486  # pic0=FSB_data_activity,emask=0x3f,sys
+1534.005   3  tick 140256486  # counter shared with CPU 1
+sk=0x3f,sys
+1534.005   2  tick 140249810  # counter shared with CPU 0
+1536.005   1  tick   9614326  # pic1=PAPI_l2_tcm,sys
+1536.005   3  tick   9614326  # counter shared with CPU 1
+1538.005   1  tick 135828006  # pic0=FSB_data_activity,emask=0x3f,sys
+1538.005   3  tick 135828006  # counter shared with CPU 1
+1540.005   1  tick  13069142  # pic1=PAPI_l2_tcm,sys
+1540.005   3  tick  13069142  # counter shared with CPU 1
+1542.005   1  tick 148666996  # pic0=FSB_data_activity,emask=0x3f,sys
+1542.005   3  tick 148666996  # counter shared with CPU 1
+1544.005   1  tick  13322629  # pic1=PAPI_l2_tcm,sys
+1544.005   3  tick  13322629  # counter shared with CPU 1
+1546.005   0  tick 131218980  # pic0=FSB_data_activity,emask=0x3f,sys
+1546.005   1  tick 131217480  # pic0=FSB_data_activity,emask=0x3f,sys
+1546.005   3  tick 131217480  # counter shared with CPU 1
+1548.005   1  tick  12417830  # pic1=PAPI_l2_tcm,sys
+1548.005   3  tick  12417830  # counter shared with CPU 1
+1550.005   1  tick 117252092  # pic0=FSB_data_activity,emask=0x3f,sys
+1550.005   3  tick 117252092  # counter shared with CPU 1
+1552.005   0  tick    102411  # pic1=PAPI_l2_tcm,sys
+1552.005   2  tick    102411  # counter shared with C1552.005   3  tick  14655233  # counter shared with CPU 1
+1554.005   0  tick 128435858  # pic0=FSB_data_activity,emask=0x3f,sys
+1554.005   2  tick 128435858  # counter shared with CPU 0
+1556.005   0  tick   6635881  # pic1=PAPI_l2_tcm,sys
+1556.005   2  tick   6635881  # counter shared with CPU 0
+1558.005   1  tick 140195034  # pic0=FSB_data_activity,emask=0x3f,sys
+1558.005   0  tick 140194634  # pic0=FSB_data_activity,emask=0x3f,sys
+1558.005   2  tick 140194634  # counter shared with CPU 0
+1560.005   1  tick     99680  # pic1=PAPI_l2_tcm,sys
+1560.005   0  tick  13014880  # pic1=PAPI_l2_tcm,sys
+1560.005   2  tick  13014880  # counter shared with CPU 0
+1562.005   0  tick 149786496  # pic0=FSB_data_activity,emask=0x3f,sys
+1562.005   1  tick 149803718  # pic0=FSB_data_activity,emask=0x3f,sys
+1562.005   3  tick 149803718  # counter shared with CPU 1
+1564.005   1  tick  13443852  # pic1=PAPI_l2_tcm,sys
+1564.005   3  tick  13443852  # counter shared with CPU 1
+1566.005   1  tick  97560534  # pic0=FSB_data_activity,emask=0x3f,sys
+1566.005   3  tick  97560534  # counter shared with CPU 1
+1568.005   1  tick  10998920  # pic1=PAPI_l2_tcm,sys
+1568.005   3  tick  10998920  # counter shared with CPU 1
+1570.005   1  tick 107273240  # pic0=FSB_data_activity,emask=0x3f,sys
+1570.005   0  tick 107297464  # pic0=FSB_data_activity,emask=0x3f,sys
+1570.005   2  tick 107297464  # counter shared with CPU 0
+1572.005   1  tick     74090  # pic1=PAPI_l2_tcm,sys
+1572.005   3  tick     74090  # counter shared with CPU 1
+1572.005   0  tick  11701777  # pic1=PAPI_l2_tcm,sys
+1572.005   2  tick  11701777  # counter shared with CPU 0
+1574.005   0  tick  98865222  # pic0=FSB_data_activity,emask=0x3f,sys
+1574.005   2  tick  98865222  # counter shared with CPU 0
+1574.005   1  tick  98929975  # pic0=FSB_data_activity,emask=0x3f,sys
+1574.005   3  tick  98929975  # counter shared with CPU 1
+1576.005   1  tick   4465381  # pic1=PAPI_l2_tcm,sys
+1576.005   3  tick   4465381  # counter shared with CPU 1
+1578.005   1  tick  84923952  # pic0=FSB_data_activity,emask=0x3f,sys
+1578.005   0  tick  84950576  # pic0=FSB_data_activity,emask=0x3f,sys
+1578.005   2  tick  84950576  # counter shared with CPU 0
+1580.005   1  tick     88444  # pic1=PAPI_l2_tcm,sys
+1580.005   0  tick   9017703  # pic1=PAPI_l2_tcm,sys
+1580.005   2  tick   9017703  # counter shared with CPU 0
+1582.005   0  tick  91060172  # pic0=FSB_data_activity,emask=0x3f,sys
+1582.005   2  tick  91060172  # counter shared with CPU 0
+1584.005   0  tick   1490090  # pic1=PAPI_l2_tcm,sys
+1584.005   2  tick   1490090  # counter shared with CPU 0
+1586.005   0  tick  70843756  # pic0=FSB_data_activity,emask=0x3f,sys
+1586.005   2  tick  70843756  # counter shared with CPU 0
+sk=0x3f,sys
+1586.005   3  tick  70846246  # counter shared with CPU 1
+1588.005   0  tick    628106  # pic1=PAPI_l2_tcm,sys
+1588.005   2  tick    628106  # counter shared with CPU 0
+1588.005   1  tick   7909870  # pic1=PAPI_l2_tcm,sys
+1588.005   3  tick   7909870  # counter shared with CPU 1
+1590.005   0  tick  83381037  # pic0=FSB_data_activity,emask=0x3f,sys
+1590.005   2  tick  83381037  # counter shared with CPU 0
+1592.005   1  tick   8032055  # pic1=PAPI_l2_tcm,sys
+1592.005   3  tick   8032055  # counter shared with CPU 1
+1594.005   1  tick  71107656  # pic0=FSB_data_activity,emask=0x3f,sys
+1594.005   3  tick  71107656  # counter shared with CPU 1
+1594.005   0  tick  71141044  # pic0=FSB_data_activity,emask=0x3f,sys
+1594.005   2  tick  71141044  # counter shared with CPU 0
+1596.005   0  tick   2958972  # pic1=PAPI_l2_tcm,sys
+1596.005   2  tick   2958972  # counter shared with C1596.005   3  tick   6281427  # counter shared with CPU 1
+1598.005   1  tick  70073684  # pic0=FSB_data_activity,emask=0x3f,sys
+1598.005   3  tick  70073684  # counter shared with CPU 1
+1600.005   1  tick   8036342  # pic1=PAPI_l2_tcm,sys
+1600.005   3  tick   8036342  # counter shared with CPU 1
+1602.005   1  tick  77994994  # pic0=FSB_data_activity,emask=0x3f,sys
+1602.005   3  tick  77994994  # counter shared with CPU 1
+1604.005   0  tick   1385129  # pic1=PAPI_l2_tcm,sys
+1604.005   1  tick   7567797  # pic1=PAPI_l2_tcm,sys
+1604.005   3  tick   7567797  # counter shared with CPU 1
+1606.005   0  tick  69015466  # pic0=FSB_data_activity,emask=0x3f,sys
+1606.005   1  tick  69011516  # pic0=FSB_data_activity,emask=0x3f,sys
+1606.005   3  tick  69011516  # counter shared with CPU 1
+1608.005   1  tick  25306004  # pic1=PAPI_l2_tcm,sys
+1608.005   3  tick  25306004  # counter shared with CPU 1
+1610.005   0  tick 209373374  # pic0=FSB_data_activity,emask=0x3f,sys
+1610.005   2  tick 209373374  # counter shared with CPU 0
+1612.005   1  tick   5120442  # pic1=PAPI_l2_tcm,sys
+1612.005   0  tick   7510679  # pic1=PAPI_l2_tcm,sys
+1612.005   2  tick   7510679  # counter shared with CPU 0
+1614.005   1  tick 161858147  # pic0=FSB_data_activity,emask=0x3f,sys
+1614.005   0  tick 161850006  # pic0=FSB_data_activity,emask=0x3f,sys
+1614.005   2  tick 161850006  # counter shared with CPU 0
+1616.005   0  tick   7539228  # pic1=PAPI_l2_tcm,sys
+1616.005   2  tick   7539228  # counter shared with CPU 0
+1616.005   1  tick   1167553  # pic1=PAPI_l2_tcm,sys
+1616.005   3  tick   1167553  # counter shared with CPU 1
+1618.005   1  tick 195092330  # pic0=FSB_data_activity,emask=0x3f,sys
+1618.005   3  tick 195092330  # counter shared with CPU 1
+1620.005   0  tick   7925584  # pic1=PAPI_l2_tcm,sys
+1620.005   2  tick   7925584  # counter shared with CPU 0
+1622.005   0  tick 284902553  # pic0=FSB_data_activity,emask=0x3f,sys
+1622.005   2  tick 284902553  # counter shared with CPU 0
+1624.005   0  tick   6605331  # pic1=PAPI_l2_tcm,sys
+1624.005   2  tick   6605331  # counter shared with CPU 0
+1626.005   1  tick 148551198  # pic0=FSB_data_activity,emask=0x3f,sys
+1626.005   0  tick 148563712  # pic0=FSB_data_activity,emask=0x3f,sys
+1626.005   2  tick 148563712  # counter shared with CPU 0
+1628.005   1  tick    142161  # pic1=PAPI_l2_tcm,sys
+1628.005   0  tick  15834345  # pic1=PAPI_l2_tcm,sys
+1628.005   2  tick  15834345  # counter shared with CPU 0
+1630.005   1  tick 175362594  # pic0=FSB_data_activity,emask=0x3f,sys
+1630.005   3  tick 175362594  # counter shared with CPU 1
+1630.005   0  tick 175356942  # pic0=FSB_data_activity,emask=0x3f,sys
+1630.005   2  tick 175356942  # counter shared with CPU 0
+1632.005   0  tick  15553579  # pic1=PAPI_l2_tcm,sys
+1632.005   2  tick  15553579  # counter shared with CPU 0
+1634.005   1  tick 164852448  # pic0=FSB_data_activity,emask=0x3f,sys
+1634.005   3  tick 164852448  # counter shared with CPU 1
+1636.005   1  tick   4408037  # pic1=PAPI_l2_tcm,sys
+1636.005   3  tick   4408037  # counter shared with CPU 1
+1636.006   0  tick  12758648  # pic1=PAPI_l2_tcm,sys
+1636.006   2  tick  12758648  # counter shared with CPU 0
+1638.005   1  tick 178124334  # pic0=FSB_data_activity,emask=0x3f,sys
+1638.005   0  tick 177908070  # pic0=FSB_data_activity,emask=0x3f,sys
+1638.005   2  tick 177908070  # counter shared with CPU 0
+1640.005   1  tick  17326643  # pic1=PAPI_l2_tcm,sys
+1640.005   3  tick  17326643  # counter shared with CPU 1
+1642.005   1  tick 172099510  # pic0=FSB_data_activity,emask=0x3f,sys
+1642.005   0  tick 172114532  # pic0=FSB_data_activity,emask=0x3f,sys
+1642.005   2  tick 172114532  # counter shared with CPU 0
+1644.005   0  tick  16580553  # pic1=PAPI_l2_tcm,sys
+1644.005   2  tick  16580553  # counter shared with CPU 0
+1646.005   1  tick 172343390  # pic0=FSB_data_activity,emask=0x3f,sys
+1646.005   3  tick 172343390  # counter shared with CPU 1
+1646.005   0  tick 172354950  # pic0=FSB_data_activity,emask=0x3f,sys
+1646.005   2  tick 172354950  # counter shared with CPU 0
+1648.005   1  tick     94575  # pic1=PAPI_l2_tcm,sys
+1648.005   0  tick  17799353  # pic1=PAPI_l2_tcm,sys
+1648.005   2  tick  17799353  # counter shared with CPU 0
+1650.005   0  tick 187369574  # pic0=FSB_data_activity,emask=0x3f,sys
+1650.005   2  tick 187369574  # counter shared with CPU 0
+1650.005   1  tick 187487427  # pic0=FSB_data_activity,emask=0x3f,sys
+1650.005   3  tick 187487427  # counter shared with CPU 1
+1652.005   1  tick    654439  # pic1=PAPI_l2_tcm,sys
+1652.005   3  tick    654439  # counter shared with C1652.005   2  tick  17665205  # counter shared with CPU 0
+1654.005   1  tick 175572264  # pic0=FSB_data_activity,emask=0x3f,sys
+1654.005   3  tick 175572264  # counter shared with CPU 1
+1654.005   0  tick 175588202  # pic0=FSB_data_activity,emask=0x3f,sys
+1654.005   2  tick 175588202  # counter shared with CPU 0
+1656.005   0  tick  17900773  # pic1=PAPI_l2_tcm,sys
+1656.005   2  tick  17900773  # counter shared with CPU 0
+1656.006   1  tick    390942  # pic1=PAPI_l2_tcm,sys
+1656.006   3  tick    390942  # counter shared with CPU 1
+1658.005   1  tick 175282742  # pic0=FSB_data_activity,emask=0x3f,sys
+1658.005   3  tick 175282742  # counter shared with CPU 1
+1660.005   0  tick     96216  # pic1=PAPI_l2_tcm,sys
+1660.005   1  tick  16402815  # pic1=PAPI_l2_tcm,sys
+1660.005   3  tick  16402815  # counter shared with CPU 1
+1662.005   1  tick 165287690  # pic0=FSB_data_activity,emask=0x3f,sys
+1662.005   3  tick 165287690  # counter shared with CPU 1
+1664.005   1  tick  15359440  # pic1=PAPI_l2_tcm,sys
+1664.005   3  tick  15359440  # counter shared with CPU 1
+1666.005   1  tick 146720501  # pic0=FSB_data_activity,emask=0x3f,sys
+1666.005   3  tick 146720501  # counter shared with CPU 1
+1668.005   1  tick  15041119  # pic1=PAPI_l2_tcm,sys
+1668.005   3  tick  15041119  # counter shared with CPU 1
+1670.005   1  tick 150605358  # pic0=FSB_data_activity,emask=0x3f,sys
+1670.005   3  tick 150605358  # counter shared with CPU 1
+1672.005   1  tick  12136631  # pic1=PAPI_l2_tcm,sys
+1672.005   3  tick  12136631  # counter shared with CPU 1
+1674.005   1  tick 133922406  # pic0=FSB_data_activity,emask=0x3f,sys
+1674.005   3  tick 133922406  # counter shared with CPU 1
+1676.005   1  tick  12707081  # pic1=PAPI_l2_tcm,sys
+1676.005   3  tick  12707081  # counter shared with CPU 1
+1678.005   1  tick 129055978  # pic0=FSB_data_activity,emask=0x3f,sys
+1678.005   3  tick 129055978  # counter shared with CPU 1
+1680.005   0  tick    114516  # pic1=PAPI_l2_tcm,sys
+1680.005   2  tick    114516  # counter shared with C1680.005   3  tick  12069752  # counter shared with CPU 1
+1682.005   1  tick  98247234  # pic0=FSB_data_activity,emask=0x3f,sys
+1682.005   3  tick  98247234  # counter shared with CPU 1
+1684.005   0  tick   4119299  # pic1=PAPI_l2_tcm,sys
+1684.005   2  tick   4119299  # counter shared with CPU 0
+1684.006   1  tick   7108721  # pic1=PAPI_l2_tcm,sys
+1684.006   3  tick   7108721  # counter shared with CPU 1
+1686.005   1  tick 107793374  # pic0=FSB_data_activity,emask=0x3f,sys
+1686.005   0  tick 107910635  # pic0=FSB_data_activity,emask=0x3f,sys
+1686.005   2  tick 107910635  # counter shared with CPU 0
+1688.005   0  tick  10048533  # pic1=PAPI_l2_tcm,sys
+1688.005   2  tick  10048533  # counter shared with CPU 0
+1690.005   1  tick  91842468  # pic0=FSB_data_activity,emask=0x3f,sys
+1690.005   3  tick  91842468  # counter shared with CPU 1
+1692.005   1  tick   9084945  # pic1=PAPI_l2_tcm,sys
+1692.005   3  tick   9084945  # counter shared with CPU 1
+1694.005   0  tick  81078340  # pic0=FSB_data_activity,emask=0x3f,sys
+1694.005   1  tick  81076554  # pic0=FSB_data_activity,emask=0x3f,sys
+1694.005   3  tick  81076554  # counter shared with CPU 1
+1696.005   1  tick   8859778  # pic1=PAPI_l2_tcm,sys
+1696.005   3  tick   8859778  # counter shared with CPU 1
+1696.005   0  tick     40888  # pic1=PAPI_l2_tcm,sys
+1696.005   2  tick     40888  # counter shared with CPU 0
+1698.005   1  tick  94461180  # pic0=FSB_data_activity,emask=0x3f,sys
+1698.005   3  tick  94461180  # counter shared with CPU 1
+1700.005   0  tick   9088299  # pic1=PAPI_l2_tcm,sys
+1700.005   2  tick   9088299  # counter shared with CPU 0
+1702.005   1  tick  77959036  # pic0=FSB_data_activity,emask=0x3f,sys
+1702.005   0  tick  77957385  # pic0=FSB_data_activity,emask=0x3f,sys
+1702.005   2  tick  77957385  # counter shared with CPU 0
+1704.005   1  tick  10452862  # pic1=PAPI_l2_tcm,sys
+1704.005   3  tick  10452862  # counter shared with CPU 1
+1706.005   1  tick 174049682  # pic0=FSB_data_activity,emask=0x3f,sys
+1706.005   3  tick 174049682  # counter shared with CPU 1
+1708.005   1  tick   6112945  # pic1=PAPI_l2_tcm,sys
+1708.005   3  tick   6112945  # counter shared with CPU 1
+1710.005   1  tick 173074717  # pic0=FSB_data_activity,emask=0x3f,sys
+1710.005   3  tick 173074717  # counter shared with CPU 1
+1710.006   0  tick 173281238  # pic0=FSB_data_activity,emask=0x3f,sys
+1710.006   2  tick 173281238  # counter shared with CPU 0
+1712.005   1  tick   3940021  # pic1=PAPI_l2_tcm,sys
+1712.005   0  tick   6819625  # pic1=PAPI_l2_tcm,sys
+1712.005   2  tick   6819625  # counter shared with CPU 0
+1714.005   1  tick 203402624  # pic0=FSB_data_activity,emask=0x3f,sys
+1714.005   0  tick 203406672  # pic0=FSB_data_activity,emask=0x3f,sys
+1714.005   2  tick 203406672  # counter shared with CPU 0
+1716.005   1  tick    153752  # pic1=PAPI_l2_tcm,sys
+1716.005   0  tick   7714123  # pic1=PAPI_l2_tcm,sys
+1716.005   2  tick   7714123  # counter shared with CPU 0
+1718.005   1  tick 258836840  # pic0=FSB_data_activity,emask=0x3f,sys
+1718.005   3  tick 258836840  # counter shared with CPU 1
+1720.005   1  tick  11565793  # pic1=PAPI_l2_tcm,sys
+1720.005   3  tick  11565793  # counter shared with CPU 1
+1722.005   0  tick 130053370  # pic0=FSB_data_activity,emask=0x3f,sys
+1722.005   1  tick 130047536  # pic0=FSB_data_activity,emask=0x3f,sys
+1722.005   3  tick 130047536  # counter shared with CPU 1
+1724.005   1  tick  14875078  # pic1=PAPI_l2_tcm,sys
+1724.005   3  tick  14875078  # counter shared with CPU 1
+1724.006   0  tick     60914  # pic1=PAPI_l2_tcm,sys
+1724.006   2  tick     60914  # counter shared with CPU 0
+1726.005   0  tick 165485958  # pic0=FSB_data_activity,emask=0x3f,sys
+1726.005   2  tick 165485958  # counter shared with CPU 0
+1728.005   1  tick   2363513  # pic1=PAPI_l2_tcm,sys
+1728.005   0  tick  13528564  # pic1=PAPI_l2_tcm,sys
+1728.005   2  tick  13528564  # counter shared with CPU 0
+1730.005   1  tick 159572515  # pic0=FSB_data_activity,emask=0x3f,sys
+1730.005   3  tick 159572515  # counter shared with CPU 1
+1732.005   1  tick  15266772  # pic1=PAPI_l2_tcm,sys
+1732.005   3  tick  15266772  # counter shared with CPU 1
+1734.005   0  tick 165291814  # pic0=FSB_data_activity,emask=0x3f,sys
+1734.005   2  tick 165291814  # counter shared with CPU 0
+1736.005   1  tick   3306069  # pic1=PAPI_l2_tcm,sys
+1736.005   0  tick  13915136  # pic1=PAPI_l2_tcm,sys
+1736.005   2  tick  13915136  # counter shared with CPU 0
+1738.005   0  tick 167357132  # pic0=FSB_data_activity,emask=0x3f,sys
+1738.005   2  tick 167357132  # counter shared with CPU 0
+1740.005   1  tick   1431517  # pic1=PAPI_l2_tcm,sys
+1740.005   0  tick  16662222  # pic1=PAPI_l2_tcm,sys
+1740.005   2  tick  16662222  # counter shared with CPU 0
+1742.005   1  tick 169372836  # pic0=FSB_data_activity,emask=0x3f,sys
+1742.005   3  tick 169372836  # counter shared with CPU 1
+1744.005   1  tick  17101249  # pic1=PAPI_l2_tcm,sys
+1744.005   3  tick  17101249  # counter shared with CPU 1
+1746.005   1  tick 178453638  # pic0=FSB_data_activity,emask=0x3f,sys
+1746.005   3  tick 178453638  # counter shared with CPU 1
+1748.005   1  tick  16195590  # pic1=PAPI_l2_tcm,sys
+1748.005   3  tick  16195590  # counter shared with CPU 1
+1750.005   1  tick 145577250  # pic0=FSB_data_activity,emask=0x3f,sys
+1750.005   2  tick 145578972  # counter shared with CPU 0
+1750.005   3  tick 145577250  # counter shared with CPU 1
+1752.005   1  tick   9034696  # pic1=PAPI_l2_tcm,sys
+1752.005   3  tick   9034696  # counter shared with CPU 1
+1754.005   0  tick 124769726  # pic0=FSB_data_activity,emask=0x3f,sys
+1754.005   1  tick 124768538  # pic0=FSB_data_activity,emask=0x3f,sys
+1754.005   3  tick 124768538  # counter shared with CPU 1
+1756.005   0  tick     41445  # pic1=PAPI_l2_tcm,sys
+1756.005   1  tick  12160592  # pic1=PAPI_l2_tcm,sys
+1756.005   3  tick  12160592  # counter shared with CPU 1
+1758.005   1  tick 100871366  # pic0=FSB_data_activity,emask=0x3f,sys
+1758.005   3  tick 100871366  # counter shared with CPU 1
+1760.005   0  tick   5776772  # pic1=PAPI_l2_tcm,sys
+1760.005   2  tick   5776772  # counter shared with CPU 0
+1762.005   0  tick  82757062  # pic0=FSB_data_activity,emask=0x3f,sys
+1762.005   2  tick  82757062  # counter shared with CPU 0
+1764.005   0  tick   7440837  # pic1=PAPI_l2_tcm,sys
+1764.005   2  tick   7440837  # counter shared with CPU 0
+1766.005   1  tick  93879336  # pic0=FSB_data_activity,emask=0x3f,sys
+1766.005   3  tick  93879336  # counter shared with CPU 1
+1766.005   0  tick  93893128  # pic0=FSB_data_activity,emask=0x3f,sys
+1766.005   2  tick  93893128  # counter shared with CPU 0
+1768.005   1  tick     83879  # pic1=PAPI_l2_tcm,sys
+1768.005   0  tick   8518802  # pic1=PAPI_l2_tcm,sys
+1768.005   2  tick   8518802  # counter shared with CPU 0
+1770.005   1  tick  75447356  # pic0=FSB_data_activity,emask=0x3f,sys
+1770.005   0  tick  75448550  # pic0=FSB_data_activity,emask=0x3f,sys
+1770.005   2  tick  75448550  # counter shared with CPU 0
+1772.005   0  tick   8834683  # pic1=PAPI_l2_tcm,sys
+1772.005   2  tick   8834683  # counter shared with CPU 0
+1772.006   1  tick    354820  # pic1=PAPI_l2_tcm,sys
+1772.006   3  tick    354820  # counter shared with CPU 1
+1774.005   1  tick  84191914  # pic0=FSB_data_activity,emask=0x3f,sys
+1774.005   3  tick  84191914  # counter shared with CPU 1
+1776.005   0  tick     99176  # pic1=PAPI_l2_tcm,sys
+1776.005   2  tick     99176  # counter shared with CPU 0
+1776.006   1  tick   8354311  # pic1=PAPI_l2_tcm,sys
+1776.006   3  tick   8354311  # counter shared with CPU 1
+1778.005   1  tick  72796796  # pic0=FSB_data_activity,emask=0x3f,sys
+1778.005   3  tick  72796796  # counter shared with CPU 1
+1780.005   1  tick   5420558  # pic1=PAPI_l2_tcm,sys
+1780.005   0  tick   4334488  # pic1=PAPI_l2_tcm,sys
+1780.005   2  tick   4334488  # counter shared with CPU 0
+1782.005   1  tick  71701386  # pic0=FSB_data_activity,emask=0x3f,sys
+1782.005   0  tick  71698934  # pic0=FSB_data_activity,emask=0x3f,sys
+1782.005   2  tick  71698934  # counter shared with CPU 0
+1784.005   1  tick     30699  # pic1=PAPI_l2_tcm,sys
+1784.005   3  tick     30699  # counter shared with CPU 1
+1784.005   0  tick   8421002  # pic1=PAPI_l2_tcm,sys
+1784.005   2  tick   8421002  # counter shared with CPU 0
+1786.005   0  tick  81288816  # pic0=FSB_data_activity,emask=0x3f,sys
+1786.005   2  tick  81288816  # counter shared with CPU 0
+1788.005   1  tick   6854543  # pic1=PAPI_l2_tcm,sys
+1788.005   3  tick   6854543  # counter shared with CPU 1
+1790.005   0  tick  72678058  # pic0=FSB_data_activity,emask=0x3f,sys
+1790.005   2  tick  72678058  # counter shared with CPU 0
+1792.005   1  tick    961038  # pic1=PAPI_l2_tcm,sys
+1792.005   3  tick    961038  # counter shared with CPU 1
+1794.005   1  tick  85342375  # pic0=FSB_data_activity,emask=0x3f,sys
+1794.005   3  tick  85342375  # counter shared with CPU 1
+1796.005   1  tick   8220671  # pic1=PAPI_l2_tcm,sys
+1796.005   3  tick   8220671  # counter shared with CPU 1
+1798.005   1  tick  72321986  # pic0=FSB_data_activity,emask=0x3f,sys
+1798.005   3  tick  72321986  # counter shared with CPU 1
+1798.016   0  tick  72880668  # pic0=FSB_data_activity,emask=0x3f,sys
+1798.016   2  tick  72880668  # counter shared with CPU 0
+1800.005   0  tick   3044487  # pic1=PAPI_l2_tcm,sys
+1800.005   2  tick   3044487  # counter shared with CPU 0
+1802.005   0  tick  72284840  # pic0=FSB_data_activity,emask=0x3f,sys
+1802.005   2  tick  72284840  # counter shared with CPU 0
+1804.005   1  tick    109119  # pic1=PAPI_l2_tcm,sys
+1804.005   0  tick   8235068  # pic1=PAPI_l2_tcm,sys
+1804.005   2  tick   8235068  # counter shared with CPU 0
+1806.005   0  tick  80617466  # pic0=FSB_data_activity,emask=0x3f,sys
+1806.005   2  tick  80617466  # counter shared with CPU 0
+1808.005   1  tick   4410135  # pic1=PAPI_l2_tcm,sys
+1808.005   3  tick   4410135  # counter shared with CPU 1
+1810.005   1  tick  72379374  # pic0=FSB_data_activity,emask=0x3f,sys
+1810.005   3  tick  72379374  # counter shared with CPU 1
+1812.005   1  tick  27588758  # pic1=PAPI_l2_tcm,sys
+1812.005   3  tick  27588758  # counter shared with CPU 1
+1814.005   1  tick 169974504  # pic0=FSB_data_activity,emask=0x3f,sys
+1814.005   3  tick 169974504  # counter shared with CPU 1
+1814.005   0  tick 170000389  # pic0=FSB_data_activity,emask=0x3f,sys
+1814.005   2  tick 170000389  # counter shared with CPU 0
+1816.005   0  tick   3683108  # pic1=PAPI_l2_tcm,sys
+1816.005   2  tick   3683108  # counter shared with CPU 0
+1818.005   1  tick 213059638  # pic0=FSB_data_activity,emask=0x3f,sys
+1818.005   0  tick 213073022  # pic0=FSB_data_activity,emask=0x3f,sys
+1818.005   2  tick 213073022  # counter shared with CPU 0
+1820.005   0  tick  23084854  # pic1=PAPI_l2_tcm,sys
+1820.005   2  tick  23084854  # counter shared with CPU 0
+1822.005   0  tick 125679056  # pic0=FSB_data_activity,emask=0x3f,sys
+1822.005   2  tick 125679056  # counter shared with CPU 0
+1824.005   1  tick  13887434  # pic1=PAPI_l2_tcm,sys
+1824.005   3  tick  13887434  # counter shared with CPU 1
+1826.005   0  tick 150059858  # pic0=FSB_data_activity,emask=0x3f,sys
+1826.005   2  tick 150059858  # counter shared with CPU 0
+1828.005   1  tick  13380729  # pic1=PAPI_l2_tcm,sys
+1828.005   3  tick  13380729  # counter shared with C1828.005   2  tick   3273887  # counter shared with CPU 0
+1830.005   0  tick 159109904  # pic0=FSB_data_activity,emask=0x3f,sys
+1830.005   2  tick 159109904  # counter shared with CPU 0
+sk=0x3f,sys
+1830.005   3  tick 159111256  # counter shared with CPU 1
+1832.005   1  tick  16617833  # pic1=PAPI_l2_tcm,sys
+1832.005   3  tick  16617833  # counter shared with CPU 1
+1834.005   1  tick 177608814  # pic0=FSB_data_activity,emask=0x3f,sys
+1834.005   3  tick 177608814  # counter shared with CPU 1
+1836.005   1  tick    116110  # pic1=PAPI_l2_tcm,sys
+1836.005   0  tick  16567991  # pic1=PAPI_l2_tcm,sys
+1836.005   2  tick  16567991  # counter shared with CPU 0
+1838.005   1  tick 137176776  # pic0=FSB_data_activity,emask=0x3f,sys
+1838.005   0  tick 137173564  # pic0=FSB_data_activity,emask=0x3f,sys
+1838.005   2  tick 137173564  # counter shared with CPU 0
+1840.005   0  tick  12539079  # pic1=PAPI_l2_tcm,sys
+1840.005   2  tick  12539079  # counter shared with CPU 0
+1840.005   1  tick    427338  # pic1=PAPI_l2_tcm,sys
+1840.005   3  tick    427338  # counter shared with CPU 1
+1842.005   1  tick 113068088  # pic0=FSB_data_activity,emask=0x3f,sys
+1842.005   3  tick 113068088  # counter shared with CPU 1
+1844.005   1  tick   1720943  # pic1=PAPI_l2_tcm,sys
+1844.005   3  tick   1720943  # counter shared with CPU 1
+1844.005   0  tick   8911227  # pic1=PAPI_l2_tcm,sys
+1844.005   2  tick   8911227  # counter shared with CPU 0
+1846.005   1  tick  88704052  # pic0=FSB_data_activity,emask=0x3f,sys
+1846.005   3  tick  88704052  # counter shared with CPU 1
+sk=0x3f,sys
+1846.005   2  tick  88702938  # counter shared with CPU 0
+1848.005   1  tick   4187623  # pic1=PAPI_l2_tcm,sys
+1848.005   3  tick   4187623  # counter shared with CPU 1
+1848.005   0  tick   6154118  # pic1=PAPI_l2_tcm,sys
+1848.005   2  tick   6154118  # counter shared with CPU 0
+1850.005   1  tick  85920364  # pic0=FSB_data_activity,emask=0x3f,sys
+1850.005   0  tick  85919129  # pic0=FSB_data_activity,emask=0x3f,sys
+1850.005   2  tick  85919129  # counter shared with CPU 0
+1852.005   1  tick     61973  # pic1=PAPI_l2_tcm,sys
+1852.005   0  tick  10006759  # pic1=PAPI_l2_tcm,sys
+1852.005   2  tick  10006759  # counter shared with CPU 0
+1854.005   1  tick  95006328  # pic0=FSB_data_activity,emask=0x3f,sys
+1854.005   3  tick  95006328  # counter shared with CPU 1
+1856.005   1  tick   1951967  # pic1=PAPI_l2_tcm,sys
+1856.005   3  tick   1951967  # counter shared with CPU 1
+1856.005   0  tick   8924655  # pic1=PAPI_l2_tcm,sys
+1856.005   2  tick   8924655  # counter shared with CPU 0
+1858.005   1  tick  87365816  # pic0=FSB_data_activity,emask=0x3f,sys
+1858.005   0  tick  87309012  # pic0=FSB_data_activity,emask=0x3f,sys
+1858.005   2  tick  87309012  # counter shared with CPU 0
+1860.005   1  tick    223637  # pic1=PAPI_l2_tcm,sys
+1860.005   0  tick  10146734  # pic1=PAPI_l2_tcm,sys
+1860.005   2  tick  10146734  # counter shared with CPU 0
+1862.005   1  tick 101917764  # pic0=FSB_data_activity,emask=0x3f,sys
+1862.005   3  tick 101917764  # counter shared with CPU 1
+1864.005   0  tick    116105  # pic1=PAPI_l2_tcm,sys
+1864.005   2  tick    116105  # counter shared with CPU 0
+1864.005   1  tick  10600557  # pic1=PAPI_l2_tcm,sys
+1864.005   3  tick  10600557  # counter shared with CPU 1
+1866.005   1  tick 309987022  # pic0=FSB_data_activity,emask=0x3f,sys
+1866.005   3  tick 309987022  # counter shared with CPU 1
+1868.005   1  tick   9093157  # pic1=PAPI_l2_tcm,sys
+1868.005   2  tick   8357488  # counter shared with CPU 0
+1868.005   3  tick   9093157  # counter shared with CPU 1
+1870.005   0  tick 151005002  # pic0=FSB_data_activity,emask=0x3f,sys
+1870.005   2  tick 151005002  # counter shared with CPU 0
+1872.005   1  tick     79536  # pic1=PAPI_l2_tcm,sys
+1872.005   3  tick     79536  # counter shared with CPU 1
+1874.005   1  tick   9005525  # pic0=FSB_data_activity,emask=0x3f,sys
+1874.005   3  tick   9005525  # counter shared with CPU 1
+1876.005   0  tick    539110  # pic1=PAPI_l2_tcm,sys
+1876.005   2  tick    539110  # counter shared with CPU 0
+1878.005   0  tick    645406  # pic0=FSB_data_activity,emask=0x3f,sys
+1878.005   2  tick    645406  # counter shared with CPU 0
+1880.005   0  tick    544248  # pic1=PAPI_l2_tcm,sys
+1880.005   2  tick    544248  # counter shared with CPU 0
+1880.005   1  tick    114507  # pic1=PAPI_l2_tcm,sys
+1880.005   3  tick    114507  # counter shared with CPU 1
+1882.005   0  tick  27800010  # pic0=FSB_data_activity,emask=0x3f,sys
+1882.005   2  tick  27800010  # counter shared with CPU 0
+1884.005   1  tick     57778  # pic1=PAPI_l2_tcm,sys
+1884.005   3  tick     57778  # counter shared with CPU 1
+1886.005   0  tick   1560062  # pic0=FSB_data_activity,emask=0x3f,sys
+1886.005   2  tick   1560062  # counter shared with CPU 0
+1888.005   0  tick    649266  # pic1=PAPI_l2_tcm,sys
+1888.005   2  tick    649266  # counter shared with CPU 0
+1888.005   1  tick    903646  # pic1=PAPI_l2_tcm,sys
+1888.005   3  tick    903646  # counter shared with CPU 1
+1890.005   0  tick   2042106  # pic0=FSB_data_activity,emask=0x3f,sys
+1890.005   2  tick   2042106  # counter shared with CPU 0
+sk=0x3f,sys
+1890.005   3  tick   2031778  # counter shared with CPU 1
+1892.005   0  tick      7948  # pic1=PAPI_l2_tcm,sys
+1892.005   2  tick      7948  # counter shared with C1892.005   3  tick     76959  # counter shared with CPU 1
+1894.005   1  tick  10012608  # pic0=FSB_data_activity,emask=0x3f,sys
+1894.005   2  tick  10012068  # counter shared with CPU 0
+1894.005   3  tick  10012608  # counter shared with CPU 1
+1896.005   0  tick    482180  # pic1=PAPI_l2_tcm,sys
+1896.005   2  tick    482180  # counter shared with C1896.005   3  tick    573514  # counter shared with CPU 1
+1898.005   0  tick   1381970  # pic0=FSB_data_activity,emask=0x3f,sys
+1898.005   1  tick   1378570  # pic0=FSB_data_activity,emask=0x3f,sys
+1898.005   3  tick   1378570  # counter shared with CPU 1
+1900.005   1  tick     56884  # pic1=PAPI_l2_tcm,sys
+1900.005   3  tick     56884  # counter shared with CPU 1
+1902.005   0  tick  18707104  # pic0=FSB_data_activity,emask=0x3f,sys
+1902.005   2  tick  18707104  # counter shared with CPU 0
+1904.005   0  tick     28064  # pic1=PAPI_l2_tcm,sys
+1904.005   3  tick     16881  # counter shared with CPU 1
+1904.005   2  tick     28064  # counter shared with CPU 0
+1906.005   1  tick    569780  # pic0=FSB_data_activity,emask=0x3f,sys
+1906.005   3  tick    569780  # counter shared with CPU 1
+sk=0x3f,sys
+1906.005   2  tick    570128  # counter shared with CPU 0
+1908.005   0  tick    854958  # pic1=PAPI_l2_tcm,sys
+1908.005   2  tick    854958  # counter shared with CPU 0
+1910.005   1  tick   1968654  # pic0=FSB_data_activity,emask=0x3f,sys
+1910.005   3  tick   1968654  # counter shared with CPU 1
+1912.005   1  tick     60038  # pic1=PAPI_l2_tcm,sys
+1912.005   3  tick     60038  # counter shared with CPU 1
+1914.005   0  tick   9910252  # pic0=FSB_data_activity,emask=0x3f,sys
+1914.005   2  tick   9910252  # counter shared with CPU 0
+1916.005   0  tick    583343  # pic1=PAPI_l2_tcm,sys
+1916.005   2  tick    583343  # counter shared with CPU 0
+1918.005   0  tick   1388715  # pic0=FSB_data_activity,emask=0x3f,sys
+1918.005   2  tick   1388715  # counter shared with CPU 0
+1920.005   1  tick     56868  # pic1=PAPI_l2_tcm,sys
+1920.005   3  tick     56868  # counter shared with CPU 1
+1922.005   1  tick  19576678  # pic0=FSB_data_activity,emask=0x3f,sys
+1922.005   3  tick  19576678  # counter shared with CPU 1
+1924.005   1  tick     31845  # pic1=PAPI_l2_tcm,sys
+1924.005   3  tick     31845  # counter shared with CPU 1
+1926.005   0  tick   1555228  # pic0=FSB_data_activity,emask=0x3f,sys
+1926.005   2  tick   1555228  # counter shared with CPU 0
+1928.005   0  tick    744633  # pic1=PAPI_l2_tcm,sys
+1928.005   2  tick    744633  # counter shared with CPU 0
+1928.005   1  tick    753353  # pic1=PAPI_l2_tcm,sys
+1928.005   3  tick    753353  # counter shared with CPU 1
+1930.005   1  tick   3003226  # pic0=FSB_data_activity,emask=0x3f,sys
+1930.005   3  tick   3003226  # counter shared with CPU 1
+1932.005   1  tick     15288  # pic1=PAPI_l2_tcm,sys
+1932.005   3  tick     15288  # counter shared with CPU 1
+1934.005   0  tick   8597574  # pic0=FSB_data_activity,emask=0x3f,sys
+1934.005   2  tick   8597574  # counter shared with CPU 0
+1936.005   1  tick    518734  # pic1=PAPI_l2_tcm,sys
+1936.005   3  tick    518734  # counter shared with CPU 1
+1938.005   1  tick    687288  # pic0=FSB_data_activity,emask=0x3f,sys
+1938.005   3  tick    687288  # counter shared with CPU 1
+sk=0x3f,sys
+1938.005   2  tick    693504  # counter shared with CPU 0
+1940.005   1  tick     52258  # pic1=PAPI_l2_tcm,sys
+1940.005   3  tick     52258  # counter shared with CPU 1
+1940.006   0  tick    105950  # pic1=PAPI_l2_tcm,sys
+1940.006   2  tick    105950  # counter shared with CPU 0
+1942.005   0  tick  19773134  # pic0=FSB_data_activity,emask=0x3f,sys
+1942.005   2  tick  19773134  # counter shared with CPU 0
+1944.005   1  tick     81684  # pic1=PAPI_l2_tcm,sys
+1944.005   3  tick     81684  # counter shared with CPU 1
+1946.005   0  tick   1684556  # pic0=FSB_data_activity,emask=0x3f,sys
+1946.005   2  tick   1684556  # counter shared with CPU 0
+1948.005   0  tick    631166  # pic1=PAPI_l2_tcm,sys
+1948.005   2  tick    631166  # counter shared with CPU 0
+1948.005   1  tick    589024  # pic1=PAPI_l2_tcm,sys
+1948.005   3  tick    589024  # counter shared with CPU 1
+1950.005   1  tick   5903938  # pic0=FSB_data_activity,emask=0x3f,sys
+1950.005   3  tick   5903938  # counter shared with CPU 1
+1952.005   1  tick     61577  # pic1=PAPI_l2_tcm,sys
+1952.005   3  tick     61577  # counter shared with CPU 1
+1954.005   0  tick   9685278  # pic0=FSB_data_activity,emask=0x3f,sys
+1954.005   2  tick   9685278  # counter shared with CPU 0
+1956.005   1  tick    610719  # pic1=PAPI_l2_tcm,sys
+1956.005   3  tick    610719  # counter shared with CPU 1
+1958.005   1  tick   1398200  # pic0=FSB_data_activity,emask=0x3f,sys
+1958.005   3  tick   1398200  # counter shared with CPU 1
+1960.005   1  tick    144051  # pic1=PAPI_l2_tcm,sys
+1960.005   3  tick    144051  # counter shared with CPU 1
+1962.005   0  tick  19052466  # pic0=FSB_data_activity,emask=0x3f,sys
+1962.005   2  tick  19052466  # counter shared with CPU 0
+1964.005   0  tick     27712  # pic1=PAPI_l2_tcm,sys
+1964.005   3  tick     19222  # counter shared with CPU 1
+1964.005   2  tick     27712  # counter shared with CPU 0
+1966.005   1  tick    473018  # pic0=FSB_data_activity,emask=0x3f,sys
+1966.005   0  tick    474242  # pic0=FSB_data_activity,emask=0x3f,sys
+1966.005   2  tick    474242  # counter shared with CPU 0
+1968.005   1  tick    446269  # pic1=PAPI_l2_tcm,sys
+1968.005   0  tick    540264  # pic1=PAPI_l2_tcm,sys
+1968.005   2  tick    540264  # counter shared with CPU 0
+1970.005   1  tick   8604704  # pic0=FSB_data_activity,emask=0x3f,sys
+1970.005   3  tick   8604704  # counter shared with CPU 1
+1972.005   1  tick     63203  # pic1=PAPI_l2_tcm,sys
+1972.005   3  tick     63203  # counter shared with CPU 1
+1974.005   0  tick   9357320  # pic0=FSB_data_activity,emask=0x3f,sys
+1974.005   2  tick   9357320  # counter shared with CPU 0
+1974.005   1  tick   9394750  # pic0=FSB_data_activity,emask=0x3f,sys
+1974.005   3  tick   9394750  # counter shared with CPU 1
+1976.005   1  tick    568506  # pic1=PAPI_l2_tcm,sys
+1976.005   3  tick    568506  # counter shared with CPU 1
+1976.005   0  tick    456981  # pic1=PAPI_l2_tcm,sys
+1976.005   2  tick    456981  # counter shared with CPU 0
+1978.005   1  tick   1374724  # pic0=FSB_data_activity,emask=0x3f,sys
+1978.005   3  tick   1374724  # counter shared with CPU 1
+1980.005   1  tick     83484  # pic1=PAPI_l2_tcm,sys
+1980.005   3  tick     83484  # counter shared with CPU 1
+1982.005   0  tick  20136472  # pic0=FSB_data_activity,emask=0x3f,sys
+1982.005   2  tick  20136472  # counter shared with CPU 0
+1984.005   1  tick     79303  # pic1=PAPI_l2_tcm,sys
+1984.005   3  tick     79303  # counter shared with CPU 1
+1986.005   1  tick   2033920  # pic0=FSB_data_activity,emask=0x3f,sys
+1986.005   3  tick   2033920  # counter shared with CPU 1
+1988.005   0  tick    501224  # pic1=PAPI_l2_tcm,sys
+1988.005   2  tick    501224  # counter shared with CPU 0
+1988.005   1  tick    271634  # pic1=PAPI_l2_tcm,sys
+1988.005   3  tick    271634  # counter shared with CPU 1
+1990.005   0  tick  11511028  # pic0=FSB_data_activity,emask=0x3f,sys
+1990.005   2  tick  11511028  # counter shared with CPU 0
+1992.005   0  tick     65550  # pic1=PAPI_l2_tcm,sys
+1992.005   2  tick     65550  # counter shared with CPU 0
+1994.005   0  tick   7790124  # pic0=FSB_data_activity,emask=0x3f,sys
+1994.005   2  tick   7790124  # counter shared with CPU 0
+1994.005   1  tick   7821988  # pic0=FSB_data_activity,emask=0x3f,sys
+1994.005   3  tick   7821988  # counter shared with CPU 1
+1996.005   0  tick    479336  # pic1=PAPI_l2_tcm,sys
+1996.005   2  tick    479336  # counter shared with CPU 0
+1998.005   1  tick    787440  # pic0=FSB_data_activity,emask=0x3f,sys
+1998.005   3  tick    787440  # counter shared with CPU 1
+2000.005   0  tick     52927  # pic1=PAPI_l2_tcm,sys
+2000.005   2  tick     52927  # counter shared with CPU 0
+2002.005   0  tick  20060120  # pic0=FSB_data_activity,emask=0x3f,sys
+2002.005   2  tick  20060120  # counter shared with CPU 0
+2004.005   0  tick     87420  # pic1=PAPI_l2_tcm,sys
+2004.005   2  tick     87420  # counter shared with CPU 0
+2006.005   0  tick   2186668  # pic0=FSB_data_activity,emask=0x3f,sys
+2006.005   2  tick   2186668  # counter shared with CPU 0
+2008.005   1  tick    329056  # pic1=PAPI_l2_tcm,sys
+2008.005   3  tick    329056  # counter shared with CPU 1
+2010.005   0  tick  12746342  # pic0=FSB_data_activity,emask=0x3f,sys
+2010.005   2  tick  12746342  # counter shared with CPU 0
+2012.005   0  tick     66151  # pic1=PAPI_l2_tcm,sys
+2012.005   2  tick     66151  # counter shared with CPU 0
+2014.005   1  tick   5534500  # pic0=FSB_data_activity,emask=0x3f,sys
+2014.005   3  tick   5534500  # counter shared with CPU 1
+2016.005   1  tick    647778  # pic1=PAPI_l2_tcm,sys
+2016.005   3  tick    647778  # counter shared with CPU 1
+2016.005   0  tick    714953  # pic1=PAPI_l2_tcm,sys
+2016.005   2  tick    714953  # counter shared with CPU 0
+2018.005   1  tick   1373984  # pic0=FSB_data_activity,emask=0x3f,sys
+2018.005   3  tick   1373984  # counter shared with CPU 1
+2020.005   0  tick     56383  # pic1=PAPI_l2_tcm,sys
+2020.005   2  tick     56383  # counter shared with C2020.005   3  tick    123289  # counter shared with CPU 1
+2022.005   1  tick  19416610  # pic0=FSB_data_activity,emask=0x3f,sys
+2022.005   3  tick  19416610  # counter shared with CPU 1
+2024.005   1  tick     21993  # pic1=PAPI_l2_tcm,sys
+2024.005   3  tick     21993  # counter shared with CPU 1
+2026.005   0  tick    853306  # pic0=FSB_data_activity,emask=0x3f,sys
+2026.005   3  tick    851042  # counter shared with CPU 1
+2026.005   2  tick    853306  # counter shared with CPU 0
+2028.005   0  tick    226866  # pic1=PAPI_l2_tcm,sys
+2028.005   2  tick    226866  # counter shared with CPU 0
+2030.005   0  tick  12770882  # pic0=FSB_data_activity,emask=0x3f,sys
+2030.005   2  tick  12770882  # counter shared with CPU 0
+2032.005   1  tick     67186  # pic1=PAPI_l2_tcm,sys
+2032.005   3  tick     67186  # counter shared with CPU 1
+2034.005   1  tick   3090638  # pic0=FSB_data_activity,emask=0x3f,sys
+2034.005   3  tick   3090638  # counter shared with CPU 1
+2036.005   0  tick    705922  # pic1=PAPI_l2_tcm,sys
+2036.005   2  tick    705922  # counter shared with CPU 0
+2038.005   1  tick   1415182  # pic0=FSB_data_activity,emask=0x3f,sys
+2038.005   0  tick   1414848  # pic0=FSB_data_activity,emask=0x3f,sys
+2038.005   2  tick   1414848  # counter shared with CPU 0
+2040.005   0  tick     68917  # pic1=PAPI_l2_tcm,sys
+2040.005   2  tick     68917  # counter shared with CPU 0
+2042.005   1  tick  20836090  # pic0=FSB_data_activity,emask=0x3f,sys
+2042.005   3  tick  20836090  # counter shared with CPU 1
+2044.005   1  tick     83885  # pic1=PAPI_l2_tcm,sys
+2044.005   3  tick     83885  # counter shared with CPU 1
+2046.005   0  tick   2283282  # pic0=FSB_data_activity,emask=0x3f,sys
+2046.005   2  tick   2283282  # counter shared with CPU 0
+2048.005   0  tick    340423  # pic1=PAPI_l2_tcm,sys
+2048.005   2  tick    340423  # counter shared with CPU 0
+2048.009   1  tick    318894  # pic1=PAPI_l2_tcm,sys
+2048.009   3  tick    318894  # counter shared with CPU 1
+2050.005   0  tick  13077314  # pic0=FSB_data_activity,emask=0x3f,sys
+2050.005   2  tick  13077314  # counter shared with CPU 0
+2052.005   0  tick     52038  # pic1=PAPI_l2_tcm,sys
+2052.005   2  tick     52038  # counter shared with CPU 0
+2054.005   0  tick   1722340  # pic0=FSB_data_activity,emask=0x3f,sys
+2054.005   2  tick   1722340  # counter shared with CPU 0
+2056.005   0  tick    685262  # pic1=PAPI_l2_tcm,sys
+2056.005   2  tick    685262  # counter shared with CPU 0
+2056.005   1  tick    833292  # pic1=PAPI_l2_tcm,sys
+2056.005   3  tick    833292  # counter shared with CPU 1
+2058.005   0  tick    750232  # pic0=FSB_data_activity,emask=0x3f,sys
+2058.005   2  tick    750232  # counter shared with CPU 0
+2060.005   0  tick     94362  # pic1=PAPI_l2_tcm,sys
+2060.005   2  tick     94362  # counter shared with CPU 0
+2062.005   0  tick  20839020  # pic0=FSB_data_activity,emask=0x3f,sys
+2062.005   2  tick  20839020  # counter shared with CPU 0
+2064.005   0  tick     51632  # pic1=PAPI_l2_tcm,sys
+2064.005   2  tick     51632  # counter shared with CPU 0
+2066.005   0  tick   2206048  # pic0=FSB_data_activity,emask=0x3f,sys
+2066.005   2  tick   2206048  # counter shared with CPU 0
+2068.005   0  tick    308773  # pic1=PAPI_l2_tcm,sys
+2068.005   2  tick    308773  # counter shared with CPU 0
+2070.005   0  tick  13198550  # pic0=FSB_data_activity,emask=0x3f,sys
+2070.005   2  tick  13198550  # counter shared with CPU 0
+2072.005   0  tick     68889  # pic1=PAPI_l2_tcm,sys
+2072.005   2  tick     68889  # counter shared with CPU 0
+2074.005   0  tick   2842622  # pic0=FSB_data_activity,emask=0x3f,sys
+2074.005   2  tick   2842622  # counter shared with CPU 0
+2076.005   0  tick    662955  # pic1=PAPI_l2_tcm,sys
+2076.005   2  tick    662955  # counter shared with CPU 0
+2078.005   0  tick   1476214  # pic0=FSB_data_activity,emask=0x3f,sys
+2078.005   2  tick   1476214  # counter shared with CPU 0
+2080.005   1  tick     19132  # pic1=PAPI_l2_tcm,sys
+2080.005   2  tick    112130  # counter shared with CPU 0
+2080.005   3  tick     19132  # counter shared with CPU 1
+2082.005   0  tick  19836146  # pic0=FSB_data_activity,emask=0x3f,sys
+2082.005   3  tick  19834356  # counter shared with CPU 1
+2082.005   2  tick  19836146  # counter shared with CPU 0
+2084.005   0  tick     18418  # pic1=PAPI_l2_tcm,sys
+2084.005   2  tick     18418  # counter shared with CPU 0
+2086.005   0  tick    906780  # pic0=FSB_data_activity,emask=0x3f,sys
+2086.005   2  tick    906780  # counter shared with CPU 0
+2088.005   0  tick    277722  # pic1=PAPI_l2_tcm,sys
+2088.005   2  tick    277722  # counter shared with CPU 0
+2090.005   1  tick  13204668  # pic0=FSB_data_activity,emask=0x3f,sys
+2090.005   3  tick  13204668  # counter shared with CPU 1
+2092.005   1  tick     62578  # pic1=PAPI_l2_tcm,sys
+2092.005   3  tick     62578  # counter shared with CPU 1
+2094.005   1  tick   2755494  # pic0=FSB_data_activity,emask=0x3f,sys
+2094.005   2  tick   2751936  # counter shared with CPU 0
+2094.005   3  tick   2755494  # counter shared with CPU 1
+2096.005   1  tick    814124  # pic1=PAPI_l2_tcm,sys
+2096.005   3  tick    814124  # counter shared with CPU 1
+2098.005   0  tick   1363314  # pic0=FSB_data_activity,emask=0x3f,sys
+2098.005   2  tick   1363314  # counter shared with CPU 0
+2100.005   0  tick     77660  # pic1=PAPI_l2_tcm,sys
+2100.005   2  tick     77660  # counter shared with CPU 0
+2102.005   0  tick  20862056  # pic0=FSB_data_activity,emask=0x3f,sys
+2102.005   2  tick  20862056  # counter shared with CPU 0
+2102.005   1  tick  20875522  # pic0=FSB_data_activity,emask=0x3f,sys
+2102.005   3  tick  20875522  # counter shared with CPU 1
+2104.005   0  tick     83342  # pic1=PAPI_l2_tcm,sys
+2104.005   2  tick     83342  # counter shared with CPU 0
+2106.005   1  tick   2222554  # pic0=FSB_data_activity,emask=0x3f,sys
+2106.005   3  tick   2222554  # counter shared with CPU 1
+2108.005   0  tick    307397  # pic1=PAPI_l2_tcm,sys
+2108.005   2  tick    307397  # counter shared with CPU 0
+2108.007   1  tick    353604  # pic1=PAPI_l2_tcm,sys
+2108.007   3  tick    353604  # counter shared with CPU 1
+2110.005   1  tick  13456258  # pic0=FSB_data_activity,emask=0x3f,sys
+2110.005   3  tick  13456258  # counter shared with CPU 1
+2112.005   1  tick     51468  # pic1=PAPI_l2_tcm,sys
+2112.005   3  tick     51468  # counter shared with CPU 1
+2114.005   0  tick   1416416  # pic0=FSB_data_activity,emask=0x3f,sys
+2114.005   2  tick   1416416  # counter shared with CPU 0
+2116.005   0  tick    738659  # pic1=PAPI_l2_tcm,sys
+2116.005   2  tick    738659  # counter shared with CPU 0
+2118.005   1  tick    783192  # pic0=FSB_data_activity,emask=0x3f,sys
+2118.005   3  tick    783192  # counter shared with CPU 1
+2120.005   1  tick     74860  # pic1=PAPI_l2_tcm,sys
+2120.005   3  tick     74860  # counter shared with CPU 1
+2122.005   0  tick  18697840  # pic0=FSB_data_activity,emask=0x3f,sys
+2122.005   2  tick  18697840  # counter shared with CPU 0
+2122.005   1  tick  18724930  # pic0=FSB_data_activity,emask=0x3f,sys
+2122.005   3  tick  18724930  # counter shared with CPU 1
+2124.005   0  tick    112347  # pic1=PAPI_l2_tcm,sys
+2124.005   2  tick    112347  # counter shared with CPU 0
+2126.005   1  tick   2118402  # pic0=FSB_data_activity,emask=0x3f,sys
+2126.005   3  tick   2118402  # counter shared with CPU 1
+2128.005   1  tick    398491  # pic1=PAPI_l2_tcm,sys
+2128.005   3  tick    398491  # counter shared with CPU 1
+2128.005   0  tick    233242  # pic1=PAPI_l2_tcm,sys
+2128.005   2  tick    233242  # counter shared with CPU 0
+2130.005   1  tick  13569978  # pic0=FSB_data_activity,emask=0x3f,sys
+2130.005   3  tick  13569978  # counter shared with CPU 1
+2132.005   1  tick     67244  # pic1=PAPI_l2_tcm,sys
+2132.005   3  tick     67244  # counter shared with CPU 1
+2134.005   1  tick   2443482  # pic0=FSB_data_activity,emask=0x3f,sys
+2134.005   3  tick   2443482  # counter shared with CPU 1
+2136.005   1  tick    629066  # pic1=PAPI_l2_tcm,sys
+2136.005   3  tick    629066  # counter shared with CPU 1
+2136.005   0  tick    918798  # pic1=PAPI_l2_tcm,sys
+2136.005   2  tick    918798  # counter shared with CPU 0
+2138.005   1  tick   1421112  # pic0=FSB_data_activity,emask=0x3f,sys
+2138.005   3  tick   1421112  # counter shared with CPU 1
+2138.005   0  tick   1378630  # pic0=FSB_data_activity,emask=0x3f,sys
+2138.005   2  tick   1378630  # counter shared with CPU 0
+2140.005   1  tick     11364  # pic1=PAPI_l2_tcm,sys
+2140.005   3  tick     11364  # counter shared with C2140.005   2  tick    128700  # counter shared with CPU 0
+2142.005   0  tick  14774442  # pic0=FSB_data_activity,emask=0x3f,sys
+2142.005   2  tick  14774442  # counter shared with CPU 0
+2142.005   1  tick  14799250  # pic0=FSB_data_activity,emask=0x3f,sys
+2142.005   3  tick  14799250  # counter shared with CPU 1
+2144.005   0  tick    185381  # pic1=PAPI_l2_tcm,sys
+2144.005   2  tick    185381  # counter shared with CPU 0
+2146.005   0  tick    992590  # pic0=FSB_data_activity,emask=0x3f,sys
+2146.005   2  tick    992590  # counter shared with CPU 0
+2148.005   1  tick    248165  # pic1=PAPI_l2_tcm,sys
+2148.005   3  tick    248165  # counter shared with CPU 1
+2150.005   0  tick  13614452  # pic0=FSB_data_activity,emask=0x3f,sys
+2150.005   2  tick  13614452  # counter shared with CPU 0
+2152.005   0  tick      8083  # pic1=PAPI_l2_tcm,sys
+2152.005   1  tick     72588  # pic1=PAPI_l2_tcm,sys
+2152.005   3  tick     72588  # counter shared with CPU 1
+2154.005   1  tick   2493390  # pic0=FSB_data_activity,emask=0x3f,sys
+2154.005   2  tick   2498575  # counter shared with CPU 0
+2154.005   3  tick   2493390  # counter shared with CPU 1
+2156.005   0  tick    756102  # pic1=PAPI_l2_tcm,sys
+2156.005   2  tick    756102  # counter shared with CPU 0
+2158.005   0  tick   1433710  # pic0=FSB_data_activity,emask=0x3f,sys
+2158.005   2  tick   1433710  # counter shared with CPU 0
+2160.005   1  tick     71093  # pic1=PAPI_l2_tcm,sys
+2160.005   3  tick     71093  # counter shared with CPU 1
+2162.005   1  tick  12918746  # pic0=FSB_data_activity,emask=0x3f,sys
+2162.005   3  tick  12918746  # counter shared with CPU 1
+2164.005   0  tick    363097  # pic1=PAPI_l2_tcm,sys
+2164.005   2  tick    363097  # counter shared with CPU 0
+2166.005   0  tick   2097895  # pic0=FSB_data_activity,emask=0x3f,sys
+2166.005   2  tick   2097895  # counter shared with CPU 0
+2166.005   1  tick   2101970  # pic0=FSB_data_activity,emask=0x3f,sys
+2166.005   3  tick   2101970  # counter shared with CPU 1
+2168.005   0  tick    361768  # pic1=PAPI_l2_tcm,sys
+2168.005   2  tick    361768  # counter shared with CPU 0
+2168.005   1  tick    301475  # pic1=PAPI_l2_tcm,sys
+2168.005   3  tick    301475  # counter shared with CPU 1
+2170.005   0  tick  13762566  # pic0=FSB_data_activity,emask=0x3f,sys
+2170.005   2  tick  13762566  # counter shared with CPU 0
+2172.005   0  tick      5070  # pic1=PAPI_l2_tcm,sys
+2172.005   2  tick      5070  # counter shared with C2172.005   3  tick     55445  # counter shared with CPU 1
+2174.005   0  tick   1017831  # pic0=FSB_data_activity,emask=0x3f,sys
+2174.005   2  tick   1017831  # counter shared with CPU 0
+2176.005   0  tick    779585  # pic1=PAPI_l2_tcm,sys
+2176.005   2  tick    779585  # counter shared with CPU 0
+2176.005   1  tick    737026  # pic1=PAPI_l2_tcm,sys
+2176.005   3  tick    737026  # counter shared with CPU 1
+2178.005   0  tick    849634  # pic0=FSB_data_activity,emask=0x3f,sys
+2178.005   2  tick    849634  # counter shared with CPU 0
+2180.005   0  tick     11516  # pic1=PAPI_l2_tcm,sys
+2180.005   2  tick     11516  # counter shared with C2180.005   3  tick     82584  # counter shared with CPU 1
+2182.005   0  tick  10221284  # pic0=FSB_data_activity,emask=0x3f,sys
+2182.005   2  tick  10221284  # counter shared with CPU 0
+2184.005   1  tick    453210  # pic1=PAPI_l2_tcm,sys
+2184.005   2  tick    550067  # counter shared with CPU 0
+2184.005   3  tick    453210  # counter shared with CPU 1
+2186.005   1  tick   2156132  # pic0=FSB_data_activity,emask=0x3f,sys
+2186.005   3  tick   2156132  # counter shared with CPU 1
+2188.005   0  tick    201507  # pic1=PAPI_l2_tcm,sys
+2188.005   1  tick    260288  # pic1=PAPI_l2_tcm,sys
+2188.005   3  tick    260288  # counter shared with CPU 1
+2190.005   1  tick  15609946  # pic0=FSB_data_activity,emask=0x3f,sys
+2190.005   3  tick  15609946  # counter shared with CPU 1
+2192.005   1  tick     11180  # pic1=PAPI_l2_tcm,sys
+2192.005   3  tick     11180  # counter shared with C2192.005   2  tick     70697  # counter shared with CPU 0
+2194.005   0  tick   2221210  # pic0=FSB_data_activity,emask=0x3f,sys
+2194.005   2  tick   2221210  # counter shared with CPU 0
+2194.005   1  tick   2245508  # pic0=FSB_data_activity,emask=0x3f,sys
+2194.005   3  tick   2245508  # counter shared with CPU 1
+2196.005   1  tick    657476  # pic1=PAPI_l2_tcm,sys
+2196.005   3  tick    657476  # counter shared with CPU 1
+2198.005   1  tick   1566744  # pic0=FSB_data_activity,emask=0x3f,sys
+2198.005   3  tick   1566744  # counter shared with CPU 1
+sk=0x3f,sys
+2198.005   2  tick   1570796  # counter shared with CPU 0
+2200.005   0  tick    120436  # pic1=PAPI_l2_tcm,sys
+2200.005   2  tick    120436  # counter shared with CPU 0
+2202.005   0  tick   9054672  # pic0=FSB_data_activity,emask=0x3f,sys
+2202.005   2  tick   9054672  # counter shared with CPU 0
+2204.005   0  tick    420611  # pic1=PAPI_l2_tcm,sys
+2204.005   2  tick    420611  # counter shared with CPU 0
+2206.005   1  tick    883308  # pic0=FSB_data_activity,emask=0x3f,sys
+2206.005   3  tick    883308  # counter shared with CPU 1
+2208.005   1  tick    111726  # pic1=PAPI_l2_tcm,sys
+2208.005   3  tick    111726  # counter shared with CPU 1
+2210.005   1  tick  18649424  # pic0=FSB_data_activity,emask=0x3f,sys
+2210.005   3  tick  18649424  # counter shared with CPU 1
+2212.005   1  tick     10018  # pic1=PAPI_l2_tcm,sys
+2212.005   3  tick     10018  # counter shared with C2212.005   2  tick     60971  # counter shared with CPU 0
+2214.005   1  tick   1489130  # pic0=FSB_data_activity,emask=0x3f,sys
+2214.005   3  tick   1489130  # counter shared with CPU 1
+2216.005   0  tick    869671  # pic1=PAPI_l2_tcm,sys
+2216.005   2  tick    869671  # counter shared with CPU 0
+2216.005   1  tick    734586  # pic1=PAPI_l2_tcm,sys
+2216.005   3  tick    734586  # counter shared with CPU 1
+2218.005   1  tick   1377900  # pic0=FSB_data_activity,emask=0x3f,sys
+2218.005   3  tick   1377900  # counter shared with CPU 1
+2220.005   0  tick     40782  # pic1=PAPI_l2_tcm,sys
+2220.005   2  tick     40782  # counter shared with CPU 0
+2222.005   0  tick  10085582  # pic0=FSB_data_activity,emask=0x3f,sys
+2222.005   2  tick  10085582  # counter shared with CPU 0
+2222.006   1  tick  10113960  # pic0=FSB_data_activity,emask=0x3f,sys
+2222.006   3  tick  10113960  # counter shared with CPU 1
+2224.005   0  tick    552081  # pic1=PAPI_l2_tcm,sys
+2224.005   2  tick    552081  # counter shared with CPU 0
+2226.005   0  tick   2213276  # pic0=FSB_data_activity,emask=0x3f,sys
+2226.005   2  tick   2213276  # counter shared with CPU 0
+2228.005   0  tick    113978  # pic1=PAPI_l2_tcm,sys
+2228.005   2  tick    113978  # counter shared with CPU 0
+2230.005   0  tick  19743354  # pic0=FSB_data_activity,emask=0x3f,sys
+2230.005   2  tick  19743354  # counter shared with CPU 0
+2232.005   0  tick     43258  # pic1=PAPI_l2_tcm,sys
+2232.005   2  tick     43258  # counter shared with CPU 0
+2234.005   0  tick    135854  # pic0=FSB_data_activity,emask=0x3f,sys
+2234.005   2  tick    135854  # counter shared with CPU 0
+2236.005   0  tick    683776  # pic1=PAPI_l2_tcm,sys
+2236.005   2  tick    683776  # counter shared with CPU 0
+2238.005   0  tick    918980  # pic0=FSB_data_activity,emask=0x3f,sys
+2238.005   2  tick    918980  # counter shared with CPU 0
+2240.005   1  tick     32699  # pic1=PAPI_l2_tcm,sys
+2240.005   3  tick     32699  # counter shared with CPU 1
+2242.005   1  tick   9908932  # pic0=FSB_data_activity,emask=0x3f,sys
+2242.005   3  tick   9908932  # counter shared with CPU 1
+2244.005   0  tick    674024  # pic1=PAPI_l2_tcm,sys
+2244.005   2  tick    674024  # counter shared with CPU 0
+2246.005   0  tick   2070962  # pic0=FSB_data_activity,emask=0x3f,sys
+2246.005   2  tick   2070962  # counter shared with CPU 0
+2248.005   1  tick     35040  # pic1=PAPI_l2_tcm,sys
+2248.005   3  tick     35040  # counter shared with CPU 1
+2250.005   0  tick  19798681  # pic0=FSB_data_activity,emask=0x3f,sys
+2250.005   2  tick  19798681  # counter shared with CPU 0
+2252.005   1  tick      8395  # pic1=PAPI_l2_tcm,sys
+2252.005   0  tick     72185  # pic1=PAPI_l2_tcm,sys
+2252.005   2  tick     72185  # counter shared with CPU 0
+2254.005   1  tick   1487378  # pic0=FSB_data_activity,emask=0x3f,sys
+2254.005   0  tick   1483462  # pic0=FSB_data_activity,emask=0x3f,sys
+2254.005   2  tick   1483462  # counter shared with CPU 0
+2256.005   0  tick    951317  # pic1=PAPI_l2_tcm,sys
+2256.005   2  tick    951317  # counter shared with CPU 0
+2256.005   1  tick    660315  # pic1=PAPI_l2_tcm,sys
+2256.005   3  tick    660315  # counter shared with CPU 1
+2258.005   0  tick   1418442  # pic0=FSB_data_activity,emask=0x3f,sys
+2258.005   1  tick   1363098  # pic0=FSB_data_activity,emask=0x3f,sys
+2258.005   3  tick   1363098  # counter shared with CPU 1
+2260.005   0  tick     20423  # pic1=PAPI_l2_tcm,sys
+2260.005   2  tick     20423  # counter shared with CPU 0
+2262.005   0  tick   8856048  # pic0=FSB_data_activity,emask=0x3f,sys
+2262.005   2  tick   8856048  # counter shared with CPU 0
+2262.005   1  tick   8882432  # pic0=FSB_data_activity,emask=0x3f,sys
+2262.005   3  tick   8882432  # counter shared with CPU 1
+2264.005   1  tick    533957  # pic1=PAPI_l2_tcm,sys
+2264.005   3  tick    533957  # counter shared with CPU 1
+2266.005   0  tick   1009244  # pic0=FSB_data_activity,emask=0x3f,sys
+2266.005   2  tick   1009244  # counter shared with CPU 0
+2268.005   0  tick     37300  # pic1=PAPI_l2_tcm,sys
+2268.005   2  tick     37300  # counter shared with CPU 0
+2270.005   0  tick  19758036  # pic0=FSB_data_activity,emask=0x3f,sys
+2270.005   2  tick  19758036  # counter shared with CPU 0
+2272.005   1  tick     58082  # pic1=PAPI_l2_tcm,sys
+2272.005   3  tick     58082  # counter shared with CPU 1
+2274.005   1  tick   1564698  # pic0=FSB_data_activity,emask=0x3f,sys
+2274.005   3  tick   1564698  # counter shared with CPU 1
+2276.005   0  tick    714216  # pic1=PAPI_l2_tcm,sys
+2276.005   2  tick    714216  # counter shared with CPU 0
+2278.005   1  tick   1485860  # pic0=FSB_data_activity,emask=0x3f,sys
+2278.005   3  tick   1485860  # counter shared with CPU 1
+sk=0x3f,sys
+2278.005   2  tick   1485056  # counter shared with CPU 0
+2280.005   1  tick     21066  # pic1=PAPI_l2_tcm,sys
+2280.005   3  tick     21066  # counter shared with CPU 1
+2282.005   1  tick   9662912  # pic0=FSB_data_activity,emask=0x3f,sys
+2282.005   3  tick   9662912  # counter shared with CPU 1
+2284.005   0  tick    526800  # pic1=PAPI_l2_tcm,sys
+2284.005   2  tick    526800  # counter shared with CPU 0
+2286.005   0  tick   2082688  # pic0=FSB_data_activity,emask=0x3f,sys
+2286.005   2  tick   2082688  # counter shared with CPU 0
+2288.005   1  tick     34960  # pic1=PAPI_l2_tcm,sys
+2288.005   3  tick     34960  # counter shared with CPU 1
+2290.005   1  tick  20062432  # pic0=FSB_data_activity,emask=0x3f,sys
+2290.005   3  tick  20062432  # counter shared with CPU 1
+2292.005   1  tick     44790  # pic1=PAPI_l2_tcm,sys
+2292.005   3  tick     44790  # counter shared with CPU 1
+2294.005   1  tick    205690  # pic0=FSB_data_activity,emask=0x3f,sys
+2294.005   3  tick    205690  # counter shared with CPU 1
+2296.005   1  tick    841158  # pic1=PAPI_l2_tcm,sys
+2296.005   3  tick    841158  # counter shared with CPU 1
+2296.005   0  tick    724629  # pic1=PAPI_l2_tcm,sys
+2296.005   2  tick    724629  # counter shared with CPU 0
+2298.005   0  tick    839990  # pic0=FSB_data_activity,emask=0x3f,sys
+2298.005   1  tick    864540  # pic0=FSB_data_activity,emask=0x3f,sys
+2298.005   3  tick    864540  # counter shared with CPU 1
+2300.005   0  tick     19861  # pic1=PAPI_l2_tcm,sys
+2300.005   2  tick     19861  # counter shared with CPU 0
+2302.005   0  tick   9493654  # pic0=FSB_data_activity,emask=0x3f,sys
+2302.005   2  tick   9493654  # counter shared with CPU 0
+2304.005   1  tick    575873  # pic1=PAPI_l2_tcm,sys
+2304.005   3  tick    575873  # counter shared with CPU 1
+2306.005   0  tick   2173820  # pic0=FSB_data_activity,emask=0x3f,sys
+2306.005   2  tick   2173820  # counter shared with CPU 0
+2308.005   0  tick     79021  # pic1=PAPI_l2_tcm,sys
+2308.005   2  tick     79021  # counter shared with CPU 0
+2310.005   1  tick  19836550  # pic0=FSB_data_activity,emask=0x3f,sys
+2310.005   3  tick  19836550  # counter shared with CPU 1
+sk=0x3f,sys
+2310.005   2  tick  19836914  # counter shared with CPU 0
+2312.005   0  tick      4516  # pic1=PAPI_l2_tcm,sys
+2312.005   1  tick     79582  # pic1=PAPI_l2_tcm,sys
+2312.005   3  tick     79582  # counter shared with CPU 1
+2314.005   1  tick   1416672  # pic0=FSB_data_activity,emask=0x3f,sys
+2314.005   3  tick   1416672  # counter shared with CPU 1
+2316.005   0  tick    703338  # pic1=PAPI_l2_tcm,sys
+2316.005   2  tick    703338  # counter shared with CPU 0
+2316.005   1  tick    918937  # pic1=PAPI_l2_tcm,sys
+2316.005   3  tick    918937  # counter shared with CPU 1
+2318.005   0  tick   1471446  # pic0=FSB_data_activity,emask=0x3f,sys
+2318.005   2  tick   1471446  # counter shared with CPU 0
+2320.005   1  tick     25297  # pic1=PAPI_l2_tcm,sys
+2320.005   3  tick     25297  # counter shared with CPU 1
+2322.005   0  tick   8520970  # pic0=FSB_data_activity,emask=0x3f,sys
+2322.005   2  tick   8520970  # counter shared with CPU 0
+2324.005   0  tick    370659  # pic1=PAPI_l2_tcm,sys
+2324.005   2  tick    370659  # counter shared with CPU 0
+2326.005   1  tick   1079730  # pic0=FSB_data_activity,emask=0x3f,sys
+2326.005   3  tick   1079730  # counter shared with CPU 1
+2328.005   0  tick     75715  # pic1=PAPI_l2_tcm,sys
+2328.005   2  tick     75715  # counter shared with CPU 0
+2330.005   1  tick  20172668  # pic0=FSB_data_activity,emask=0x3f,sys
+2330.005   3  tick  20172668  # counter shared with CPU 1
+2332.005   0  tick     52464  # pic1=PAPI_l2_tcm,sys
+2332.005   2  tick     52464  # counter shared with CPU 0
+2334.005   0  tick   1573190  # pic0=FSB_data_activity,emask=0x3f,sys
+2334.005   2  tick   1573190  # counter shared with CPU 0
+2336.005   0  tick    687204  # pic1=PAPI_l2_tcm,sys
+2336.005   2  tick    687204  # counter shared with CPU 0
+2336.005   1  tick    775963  # pic1=PAPI_l2_tcm,sys
+2336.005   3  tick    775963  # counter shared with CPU 1
+2338.005   0  tick   2974080  # pic0=FSB_data_activity,emask=0x3f,sys
+2338.005   2  tick   2974080  # counter shared with CPU 0
+2340.005   1  tick     10870  # pic1=PAPI_l2_tcm,sys
+2340.005   0  tick     83834  # pic1=PAPI_l2_tcm,sys
+2340.005   2  tick     83834  # counter shared with CPU 0
+2342.005   0  tick   9373480  # pic0=FSB_data_activity,emask=0x3f,sys
+2342.005   2  tick   9373480  # counter shared with CPU 0
+2344.005   1  tick    583226  # pic1=PAPI_l2_tcm,sys
+2344.005   3  tick    583226  # counter shared with CPU 1
+2346.005   1  tick   2241426  # pic0=FSB_data_activity,emask=0x3f,sys
+2346.005   3  tick   2241426  # counter shared with CPU 1
+2348.005   0  tick    114159  # pic1=PAPI_l2_tcm,sys
+2348.005   2  tick    114159  # counter shared with CPU 0
+2350.005   0  tick  20112644  # pic0=FSB_data_activity,emask=0x3f,sys
+2350.005   2  tick  20112644  # counter shared with CPU 0
+2352.005   0  tick     13620  # pic1=PAPI_l2_tcm,sys
+2352.005   2  tick     13620  # counter shared with CPU 0
+2354.005   1  tick    157412  # pic0=FSB_data_activity,emask=0x3f,sys
+2354.005   3  tick    157412  # counter shared with CPU 1
+2356.005   0  tick    536589  # pic1=PAPI_l2_tcm,sys
+2356.005   2  tick    536589  # counter shared with CPU 0
+2356.005   1  tick    665826  # pic1=PAPI_l2_tcm,sys
+2356.005   3  tick    665826  # counter shared with CPU 1
+2358.005   1  tick   5015522  # pic0=FSB_data_activity,emask=0x3f,sys
+2358.005   3  tick   5015522  # counter shared with CPU 1
+2360.005   1  tick     56827  # pic1=PAPI_l2_tcm,sys
+2360.005   3  tick     56827  # counter shared with CPU 1
+2362.005   0  tick   9096164  # pic0=FSB_data_activity,emask=0x3f,sys
+2362.005   2  tick   9096164  # counter shared with CPU 0
+2362.005   1  tick   9116872  # pic0=FSB_data_activity,emask=0x3f,sys
+2362.005   3  tick   9116872  # counter shared with CPU 1
+2364.005   0  tick    515444  # pic1=PAPI_l2_tcm,sys
+2364.005   2  tick    515444  # counter shared with CPU 0
+2366.005   1  tick   2110316  # pic0=FSB_data_activity,emask=0x3f,sys
+2366.005   0  tick   2121250  # pic0=FSB_data_activity,emask=0x3f,sys
+2366.005   2  tick   2121250  # counter shared with CPU 0
+2368.005   0  tick     32706  # pic1=PAPI_l2_tcm,sys
+2368.005   2  tick     32706  # counter shared with CPU 0
+2370.005   1  tick  20331081  # pic0=FSB_data_activity,emask=0x3f,sys
+2370.005   3  tick  20331081  # counter shared with CPU 1
+2372.005   1  tick     67886  # pic1=PAPI_l2_tcm,sys
+2372.005   3  tick     67886  # counter shared with CPU 1
+2374.005   1  tick   1438260  # pic0=FSB_data_activity,emask=0x3f,sys
+2374.005   3  tick   1438260  # counter shared with CPU 1
+2376.005   0  tick    444964  # pic1=PAPI_l2_tcm,sys
+2376.005   2  tick    444964  # counter shared with CPU 0
+2376.005   1  tick    587682  # pic1=PAPI_l2_tcm,sys
+2376.005   3  tick    587682  # counter shared with CPU 1
+2378.005   1  tick   8051386  # pic0=FSB_data_activity,emask=0x3f,sys
+2378.005   3  tick   8051386  # counter shared with CPU 1
+2380.005   0  tick      7654  # pic1=PAPI_l2_tcm,sys
+2380.005   1  tick    117243  # pic1=PAPI_l2_tcm,sys
+2380.005   3  tick    117243  # counter shared with CPU 1
+2382.005   0  tick   8124912  # pic0=FSB_data_activity,emask=0x3f,sys
+2382.005   2  tick   8124912  # counter shared with CPU 0
+2382.005   1  tick   8132748  # pic0=FSB_data_activity,emask=0x3f,sys
+2382.005   3  tick   8132748  # counter shared with CPU 1
+2384.005   0  tick    460570  # pic1=PAPI_l2_tcm,sys
+2384.005   2  tick    460570  # counter shared with CPU 0
+2386.005   0  tick    976656  # pic0=FSB_data_activity,emask=0x3f,sys
+2386.005   2  tick    976656  # counter shared with CPU 0
+2388.005   1  tick     83286  # pic1=PAPI_l2_tcm,sys
+2388.005   3  tick     83286  # counter shared with CPU 1
+2390.005   0  tick  20392824  # pic0=FSB_data_activity,emask=0x3f,sys
+2390.005   1  tick  20396684  # pic0=FSB_data_activity,emask=0x3f,sys
+2390.005   3  tick  20396684  # counter shared with CPU 1
+2392.005   1  tick     58112  # pic1=PAPI_l2_tcm,sys
+2392.005   3  tick     58112  # counter shared with CPU 1
+2394.005   0  tick   1536984  # pic0=FSB_data_activity,emask=0x3f,sys
+2394.005   2  tick   1536984  # counter shared with CPU 0
+2396.005   0  tick    425100  # pic1=PAPI_l2_tcm,sys
+2396.005   2  tick    425100  # counter shared with CPU 0
+2396.005   1  tick    387518  # pic1=PAPI_l2_tcm,sys
+2396.005   3  tick    387518  # counter shared with CPU 1
+2398.005   1  tick  10464598  # pic0=FSB_data_activity,emask=0x3f,sys
+2398.005   3  tick  10464598  # counter shared with CPU 1
+2400.005   1  tick     67974  # pic1=PAPI_l2_tcm,sys
+2400.005   3  tick     67974  # counter shared with CPU 1
+2402.005   0  tick   8961798  # pic0=FSB_data_activity,emask=0x3f,sys
+2402.005   2  tick   8961798  # counter shared with CPU 0
+2402.005   1  tick   8982626  # pic0=FSB_data_activity,emask=0x3f,sys
+2402.005   3  tick   8982626  # counter shared with CPU 1
+2404.005   0  tick    534898  # pic1=PAPI_l2_tcm,sys
+2404.005   2  tick    534898  # counter shared with CPU 0
+2406.005   1  tick   2122032  # pic0=FSB_data_activity,emask=0x3f,sys
+2406.005   3  tick   2122032  # counter shared with CPU 1
+2408.005   0  tick     36344  # pic1=PAPI_l2_tcm,sys
+2408.005   2  tick     36344  # counter shared with CPU 0
+2410.005   1  tick  20663538  # pic0=FSB_data_activity,emask=0x3f,sys
+2410.005   3  tick  20663538  # counter shared with CPU 1
+2412.005   0  tick     16266  # pic1=PAPI_l2_tcm,sys
+2412.005   2  tick     16266  # counter shared with CPU 0
+2414.005   0  tick    134392  # pic0=FSB_data_activity,emask=0x3f,sys
+2414.005   2  tick    134392  # counter shared with CPU 0
+2416.005   1  tick    262387  # pic1=PAPI_l2_tcm,sys
+2416.005   3  tick    262387  # counter shared with CPU 1
+2416.005   0  tick    363633  # pic1=PAPI_l2_tcm,sys
+2416.005   2  tick    363633  # counter shared with CPU 0
+2418.005   1  tick  11510564  # pic0=FSB_data_activity,emask=0x3f,sys
+2418.005   3  tick  11510564  # counter shared with CPU 1
+2420.005   0  tick     21653  # pic1=PAPI_l2_tcm,sys
+2420.005   2  tick     21653  # counter shared with CPU 0
+2422.005   0  tick   6565630  # pic0=FSB_data_activity,emask=0x3f,sys
+2422.005   2  tick   6565630  # counter shared with CPU 0
+2422.005   1  tick   6582254  # pic0=FSB_data_activity,emask=0x3f,sys
+2422.005   3  tick   6582254  # counter shared with CPU 1
+2424.005   0  tick    543641  # pic1=PAPI_l2_tcm,sys
+2424.005   2  tick    543641  # counter shared with CPU 0
+2426.005   0  tick   2106052  # pic0=FSB_data_activity,emask=0x3f,sys
+2426.005   2  tick   2106052  # counter shared with CPU 0
+2428.005   1  tick     34011  # pic1=PAPI_l2_tcm,sys
+2428.005   0  tick     82138  # pic1=PAPI_l2_tcm,sys
+2428.005   2  tick     82138  # counter shared with CPU 0
+2430.005   1  tick  20465950  # pic0=FSB_data_activity,emask=0x3f,sys
+2430.005   3  tick  20465950  # counter shared with CPU 1
+2432.005   1  tick      4782  # pic1=PAPI_l2_tcm,sys
+2432.005   3  tick      4782  # counter shared with CPU 1
+2432.005   0  tick     83367  # pic1=PAPI_l2_tcm,sys
+2432.005   2  tick     83367  # counter shared with CPU 0
+2434.005   1  tick   1475866  # pic0=FSB_data_activity,emask=0x3f,sys
+2434.005   3  tick   1475866  # counter shared with CPU 1
+sk=0x3f,sys
+2434.005   2  tick   1470446  # counter shared with CPU 0
+2436.005   1  tick    352779  # pic1=PAPI_l2_tcm,sys
+2436.005   3  tick    352779  # counter shared with CPU 1
+2436.007   0  tick    341461  # pic1=PAPI_l2_tcm,sys
+2436.007   2  tick    341461  # counter shared with CPU 0
+2438.005   0  tick  12330490  # pic0=FSB_data_activity,emask=0x3f,sys
+2438.005   2  tick  12330490  # counter shared with CPU 0
+2440.005   0  tick    106489  # pic1=PAPI_l2_tcm,sys
+2440.005   2  tick    106489  # counter shared with C2440.005   3  tick     18411  # counter shared with CPU 1
+2442.005   0  tick   3179678  # pic0=FSB_data_activity,emask=0x3f,sys
+2442.005   2  tick   3179678  # counter shared with CPU 0
+2444.005   0  tick    734916  # pic1=PAPI_l2_tcm,sys
+2444.005   2  tick    734916  # counter shared with CPU 0
+2446.005   1  tick   1081502  # pic0=FSB_data_activity,emask=0x3f,sys
+2446.005   3  tick   1081502  # counter shared with CPU 1
+2448.005   1  tick     46936  # pic1=PAPI_l2_tcm,sys
+2448.005   3  tick     46936  # counter shared with CPU 1
+2450.005   0  tick  21358420  # pic0=FSB_data_activity,emask=0x3f,sys
+2450.005   2  tick  21358420  # counter shared with CPU 0
+sk=0x3f,sys
+2450.005   3  tick  21357016  # counter shared with CPU 1
+2452.005   1  tick     64453  # pic1=PAPI_l2_tcm,sys
+2452.005   3  tick     64453  # counter shared with CPU 1
+2454.005   0  tick   1526842  # pic0=FSB_data_activity,emask=0x3f,sys
+2454.005   2  tick   1526842  # counter shared with CPU 0
+2456.005   1  tick    323482  # pic1=PAPI_l2_tcm,sys
+2456.005   3  tick    323482  # counter shared with CPU 1
+2456.005   0  tick    347873  # pic1=PAPI_l2_tcm,sys
+2456.005   2  tick    347873  # counter shared with CPU 0
+2458.005   1  tick  12268711  # pic0=FSB_data_activity,emask=0x3f,sys
+2458.005   3  tick  12268711  # counter shared with CPU 1
+2460.005   1  tick     61964  # pic1=PAPI_l2_tcm,sys
+2460.005   2  tick     38236  # counter shared with CPU 0
+2460.005   3  tick     61964  # counter shared with CPU 1
+2462.005   0  tick   3213858  # pic0=FSB_data_activity,emask=0x3f,sys
+2462.005   2  tick   3213858  # counter shared with CPU 0
+2464.005   0  tick    752210  # pic1=PAPI_l2_tcm,sys
+2464.005   2  tick    752210  # counter shared with CPU 0
+2466.005   0  tick   2132804  # pic0=FSB_data_activity,emask=0x3f,sys
+2466.005   3  tick   2132508  # counter shared with CPU 1
+2466.005   2  tick   2132804  # counter shared with CPU 0
+2468.005   0  tick      4139  # pic1=PAPI_l2_tcm,sys
+2468.005   2  tick      4139  # counter shared with CPU 0
+2468.005   1  tick     99943  # pic1=PAPI_l2_tcm,sys
+2468.005   3  tick     99943  # counter shared with CPU 1
+2470.005   1  tick  20905804  # pic0=FSB_data_activity,emask=0x3f,sys
+2470.005   3  tick  20905804  # counter shared with CPU 1
+2470.005   0  tick  20915944  # pic0=FSB_data_activity,emask=0x3f,sys
+2470.005   2  tick  20915944  # counter shared with CPU 0
+2472.005   0  tick     30754  # pic1=PAPI_l2_tcm,sys
+2472.005   2  tick     30754  # counter shared with CPU 0
+2474.005   0  tick    184536  # pic0=FSB_data_activity,emask=0x3f,sys
+2474.005   2  tick    184536  # counter shared with CPU 0
+2476.005   0  tick    317466  # pic1=PAPI_l2_tcm,sys
+2476.005   2  tick    317466  # counter shared with CPU 0
+2478.005   1  tick  11922616  # pic0=FSB_data_activity,emask=0x3f,sys
+2478.005   3  tick  11922616  # counter shared with CPU 1
+2480.005   0  tick      4760  # pic1=PAPI_l2_tcm,sys
+2480.005   1  tick     58837  # pic1=PAPI_l2_tcm,sys
+2480.005   3  tick     58837  # counter shared with CPU 1

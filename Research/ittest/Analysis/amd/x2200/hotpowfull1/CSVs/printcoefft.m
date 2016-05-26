@@ -1,0 +1,13 @@
+function printcoefft(stats)
+%printcoefft(stats
+%
+%
+    fprintf('\n');
+    fprintf('Regression coefficent t-test with dfe = %10.6\n',stats.tstat.dfe);
+    fprintf('Beta     SE       t      pval\n');
+    fprintf('%10.6f %10.6f %10.6f %10.6f\n',...
+        stats.tstat.beta, ...
+        stats.tstat.se, ...
+        stats.tstat.t, ...
+        stats.tstat.pval);
+    fprintf('\n');

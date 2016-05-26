@@ -1,0 +1,150 @@
+
+%  $Description$ 
+%
+%  $Author: awl8049 $
+%  $Date: 2007/07/30 19:20:06 $
+%  $Revision: 1.1 $
+
+\documentclass[times, 10pt,onecolumn]{article} 
+\usepackage{latex8}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{authblk}
+%\documentstyle[times,art10,twocolumn,latex8]{article}
+\pagestyle{empty}
+\begin{document}
+\title{Dissteration Working Document}
+\author[*]{Adam Lewis}
+\affil[*]{Center for Advanced Computer Studies\\ 
+University of Louisiana at Lafayette\\
+Lafayette, LA 70504, USA\\ 
+awlewis@cacs.louisiana.edu
+}
+\maketitle
+\thispagestyle{empty}
+\begin{abstract}
+
+\end{abstract}
+\section{Problem Statement}
+\label{Problem Statement}
+Large data centers host hundreds or thousands of servers that require complex
+and costly cooling solutions.  Providing proper cooling has become more
+difficult as increased component density has resulted in higher energy
+consumption and greater heat output.   This issue is compounded in server
+clusters as greater numbers of more powerful nodes results in greater energy
+consumption across the entire cluster.
+
+Application servers have characteristics that make energy conservation
+particularly difficult \cite{Bianchini2004}.  Typical workloads on such
+servers lead to intensive CPU and memory use which means energy conservation
+mechanisms must not cause execessive overhead under moderate and heavy loads.
+In addition, such workloads tend to require applications maintain some form of
+soft state that is typically not replicated across nodes in a server
+cluster. As result, mechanisms that look to shut down portions of a cluster
+would require applications to consider migration of that state across nodes.
+
+On average, the equipment in a single rack enclosure in a data center consumes
+about 1.7 kW but the maximum power that can be consumed by a rack enclosure is
+over 20 kW. \cite{APC2007a} Consider the case where a typical blade server
+consisting of six 7U requires 3 kW of power which means that the entire
+enclosure requires 18 kW of power and 18 kW of cooling be provided to the
+enclosure. From a cooling standpoint, the data center has to supply 2500 cubic
+feet per minute (cfm) of cool air to the enclosure and remove that the same
+amount of air from the unit.  Supporting this level of cooling requires
+providing almost 8 times of much airflow to the enclosure than what is
+typically provided.
+
+Suppose each chassis requires 3 kW of power which means that the entire
+enclosure requires 18 kW of power and 18 kW of cooling be provided to the
+enclosure. From a cooling standpoint, the data center has to supply 2500 cubic
+feet per minute (cfm) of cool air to the enclosure and remove that the same
+amount of air from the unit.  Supporting this level of cooling requires
+providing almost 8 times of much airflow to the enclosure than what is
+typically provided.
+
+The emergence of \it(virtualization), the ability to run applications on
+virtual servers where one or more virtual server is mapped to a physical
+machine, provides the means to address workload dynamics through the
+application of \it(migration).   Migrating a virtual server gives a method to
+remap physical resources to virtual servers depending the workload and server characteristics.
+% \begin{verbatim}
+% From Dr. Tzeng's e-mail ->
+% >> You should think about if it make sense to use
+% >> virtualization for power reduction via migrating
+% >> an execution or a continuous service to lower
+% >> power consuming nodes; how and when to do it?
+% >> what issues are involved, etc.
+% >> An analytic model may be establish for this study as well.
+% \end{verbatim}
+
+What opportunities does applying virtualization in the cluster environment
+provide to address the problems of energy conservation and thermal management?
+
+\begin{itemize}
+\item How: Combine thermal management, virtual machines, and migration to
+  reduce temperature and energy consumption?
+\item What: Migration, fail-over
+\item When: anticipate rather than react to problems
+\end{itemize}
+
+\subsection{How}
+\label{sec:how}
+Prior work in this area has focused on balancing thermal load across a cluster
+and then shutting down the overheated nodes. \it{cite required}
+Virtualization has been considered as a mean to simplify the migration of
+application state by considering the migration of virtual machines from node
+to node. \it{cite required}
+
+In this work, we consider the following issues:
+\begin{itemize}
+\item Is migration required to switch between virtual machines between nodes
+  in the cluster?
+\item Can virtual machines be used as means of switching between nodes without
+  significant impact on performance service level agreements?
+\item How do you manage the process? Is it possible to use information in the
+  hypervisor to avoid overhead?
+\item 
+\end{itemize}
+
+\subsection{What}
+\label{sec:what}
+The workloads being considered in this work have very tight performance
+requirements in their service level agreements.  Switching between nodes must
+occur in such a way that the service being provided is minimally impacted.
+
+In this work, we consider the following issues:
+\begin{itemize}
+\item Is migration necessary?  Is it possible to achieve similar effects using
+  suspended virtual machines?
+\item Is it really necessary to completely shutdown the cluster node to cool
+  down the machine?
+\end{itemize}
+
+\subsection{When}
+\label{sec:Communication}
+Much of the work in this area has considered when to migrate a virtual machine
+to maximize performance rather than minimize peformance.   Our objective is to
+devise a set of algorithms that reduce the overall power consumption without
+significant impact to quality of service provided by an application server.
+
+In this work, we consider the following issues:
+\begin{itemize}
+\item Can we build an analytical model that allows us better anticipate when
+  to start moving processes to other machines?
+\item What would be the inputs into this model? CPU performance data? sensor
+  measurements from individual nodes? sensor measurements from within the
+  computer rack.
+\end{itemize}
+
+\section{Research Plan}
+
+
+\section{Related Work}
+
+
+\section{References}
+\nocite{*}
+\bibliographystyle{latex8}
+\bibliography{ResearchPlan}
+\end{document}
+\endinput

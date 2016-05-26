@@ -1,0 +1,142 @@
+%
+% File:     chapter-appendix1.tex
+% Author:   awl8049
+% Revision: $$
+%
+This appendix describes three regression-based prediction models: a linear
+AR(1) model \cite{Box1994}, a MARS model \cite{Friedman1991}, and an
+EWMA model. 
+Each model is an  approximations to the dynamic system in
+\equationname~(\ref{eq:linmodel}), following regressive combinations of
+five energy contributors to a server, as given in 
+\equationname~(\ref{eq:tseries})~\cite{Lewis2008}.
+
+The same data sets used to generate the chaotic model were used to
+create the AR(1) model. Two methods were considered for consolidation:
+arithmetic mean (average) and geometric mean.  Trial models were
+constructed using each method and a statistical analysis of variance was
+performed to determine which model generated the best fit to the
+collected data with a time interval $t=5$ seconds.  Note that the statistical coefficients need to be computed
+only once using some benchmarks, for a given server architecture.
+The coefficients obtained can then be provided through either
+the system firmware or the operating system kernel for use in the server
+executing any application.
+
+Under linear auto-regression, energy consumed by the processor for the
+AMD server, $E_{proc}^{AMD}$ as defined by
+\equationname~(\ref{eq:procpwr2}), is a \textit{linear combination} of
+$MP_{proc}^{AMD}$ measures (stated in Section~\ref{sec:variables}) as \cite{Lewis2008}:
+\begin{equation*}
+  \label{eq:apxproc}
+  E_{proc}^{AMD} \approx 0.49*T_{C_{0}}+0.50*T_{C_{1}}+0.01*HT_{1}. 
+\end{equation*}
+
+For the Intel server, its energy consumption by the processor,
+$E_{proc}^{Intel}$, is a function of $MP_{proc}^{Intel}$ (detailed in
+Section~\ref{sec:variables}), leading to its estimated energy as follows:
+\begin{equation*}
+  \label{eq:apxpr}
+  E_{proc}^{Intel} \approx 2.29*T_{C_{0}}+0.03*T_{C_{1}}+0.52*QPL_{C}.
+\end{equation*}
+ 
+In a similar fashion, energy consumed by the memory subsystem in the AMD server,
+$E_{mem}^{AMD}$, is a function of $MP_{mem}^{AMD}$, yielding
+\begin{equation*}
+  \label{eq:apxmem}
+  E_{mem}^{AMD} \approx 0.01*HT_{2}+0.003*CM_{0}+0.003*CM_{1}+0.014*CM_{2}+0.01*CM_{3}.
+\end{equation*}
+
+Energy consumption for the memory subsystem in the Intel server,
+$E_{mem}^{Intel}$, is a function of $MP_{mem}^{Intel}$, giving rise to
+\begin{equation*}
+  E_{mem}^{Intel} \approx 0.52*QPL_{IO}+0.35*CM_{0}+0.31*CM_{1}. 
+\end{equation*}
+
+Energy consumed as a result of disk activities in the AMD server (or the
+Intel server) is a function of $MP_{hdd}^{AMD}$ (or $MP_{hdd}^{Intel}$),
+arriving at 
+\begin{equation*}
+E_{hdd}^{AMD} \approx 0.014*D_{r}+0.007*D_{w}
+\end{equation*}
+and
+\begin{equation*}
+E_{hdd}^{Intel} \approx 0.01*D_{r}+0.01*D_{w}.
+\end{equation*}
+
+Energy consumed by the board in the AMD server is a function of $MP_{board}^{AMD}$,
+whose components are added in a linearly weighted fashion to derive
+$E_{board}^{AMD}$ (or $E_{board}^{Intel}$), as follows:
+\begin{equation*}
+E_{board}^{AMD} \approx 0.101+0.81*T_{A_{0}}+0.62*T_{A_{1}}
+\end{equation*}
+and
+\begin{equation*}
+E_{board}^{Intel} \approx 2.53+0.03*T_{A_{0}}+0.01*T_{A_{1}}+0.01*T_{A_{2}}.
+\end{equation*}
+
+Finally, energy consumed by electromechanical elements in the AMD server, $E_{em}^{AMD}$,
+is a linear function of $MP_{em}^{AMD}$, leading to
+\begin{equation*}
+E_{em}^{AMD} \approx 0.001*F_{C}+0.001*F_{M}.
+\end{equation*}
+Similarly, energy consumption attributed to electromechanical elements in the Intel server, $E_{em}^{Intel}$, equals
+\begin{align*}
+E_{em}^{Intel}\approx4.85*F_{C}&+6.61*F_{M2a}+3.92*F_{M2b}+0.28*F_{M3a}+0.52*F_{M3b}\\
+            &+0.01*F_{M4a}+0.01*F_{M4b}+0.78*F_{M5a}+0.61*F_{M5b}.
+\end{align*}
+
+Total energy consumption for the AMD server (or the Intel server)
+under AR(1) equals the summation of above five consumption contributors
+\cite{Lewis2008}.
+
+The models for AMD and Intel severs reveal the issues of adopting linear
+regression to obtain individual component contribution.  Consider the
+Intel processor as an example.  The coefficients for temperature sensors
+are significantly larger than those for the workload-related PeCs, with
+those coefficients apparently overbalancing the remaining model
+components.  This fact is quite non-intuitive, as one would like to
+derive certain physical interpretation on each constant to understand
+the behavior of its associated model component.  In addition, other
+processor models have negative coefficients for similar model
+components, making linear regression deemed unsuitable for such modeling
+~\cite{Bertran2010,McCullough2011}.
+\begin{comment}
+One concern here is that may also be true for the components of the
+chaotic times series.  It may be best to point out how we're reasoning
+about the totality rather than the components of the system.
+\end{comment}
+
+The MARS predictor used in our evaluation was created using the
+consolidated data set employed to establish the CAP and the AR(1)
+predictors.  It was generated by means of the ARESlab toolkit
+\cite{Jekabsons2010}, and the resulting set of splines served as a
+predictive tool, as described in Section~\ref{sec:evaluation}.  Note
+that ARESlab is a MATLAB toolkit for building piecewise-linear and
+piecewise-cubic MARS regression models.  The toolkit was adopted to
+build a piece-wise cubic model using the same consolidated training set
+employed for creating the AR and the CAP models.  The toolkit output is
+a structure which defines the basis functions and associated
+coefficients of \equationname~(\ref{eq:mars}) given in
+Section~\ref{sec:priorwork} to approximate system dynamics.
+
+The EWMA predictor used in our evaluation was also created using the
+consolidated data set employed to established CAP, AR(1), and MARS
+predictors.  The predictor was generated using an Exponentially Weighted
+Moving Average using the recurrence relation of
+\begin{align}
+  \label{eq:1}
+  S_{1}&=Y_{1}\nonumber\\
+  S_{t}&=\alpha Y_{t-1}+(1-\alpha))S_{t-1}, t>1\nonumber
+\end{align}
+where $Y_{t}$ is an observation of the power consumed at time $t$,
+$S_{t}$ is the value of the weighted average at time $t$, and $\alpha$
+is a coefficient representing the weighting decrease degree, for
+$0\leq \alpha \leq1$.
+% Following comment block used by GNU-EMACS and AUCTEX packages
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "dissertation.tex"
+%%% TeX-PDF-mode: t
+%%% TeX-source-correlate-mode: t
+%%% End: 

@@ -1,0 +1,366 @@
+specsingle.sh: Executing gromacs benchmark.
+specsingle.sh: Destination directory is /usr/home/awl8049/scheduler/
+specsingle.sh: Using spec3gromacs as id for this run
+specsingle.sh: Clearing memory on power meter
+specsingle.sh: Restarting teaplant.
+And now we start the Specsingle gromacs benchmark at 
+/usr/local/cpu2006 /usr/home2/awl8049/dissertation/vmpowermgt/Programs/sched_data_collect
+runspec v4662 - Copyright 1999-2006 Standard Performance Evaluation Corporation
+Using 'linux-suse101-i386' tools
+Reading MANIFEST... 17934 files
+Loading runspec modules...............
+Locating benchmarks...found 31 benchmarks in 12 benchsets.
+Locating output formats: ASCII, config, CSV, flags, HTML, mail, PDF, PostScript, raw, Screen, Submission Check
+Reading config file '/usr/local/cpu2006/config/schedtas.cfg'
+Benchmarks selected: 435.gromacs
+Compiling Binaries
+  Building 435.gromacs ref base i386-m32-gcc42-nn default: (build_base_i386-m32-gcc42-nn.0000)
+specmake clean 2> make.clean.err | tee make.clean.out
+rm -rf gromacs gromacs.exe *.o  *.fppized.f*
+find . \( -name \*.o -o -name '*.fppized.f*' \) -print | xargs rm -rf
+rm -rf core 
+specmake build 2> make.err | tee make.out
+g95 -c -o flincs.o    -O2                flincs.f
+specperl /usr/local/cpu2006/bin/specpp   -DSPEC_CPU -DNDEBUG   fsettle.F -o fsettle.fppized.f
+g95 -c -o fsettle.fppized.o    -O2                fsettle.fppized.f
+g95 -c -o fshake.o    -O2                fshake.f
+g95 -c -o innerf.o    -O2                innerf.f
+g95 -c -o flincsd.o    -O2                flincsd.f
+specperl /usr/local/cpu2006/bin/specpp   -DSPEC_CPU -DNDEBUG   fsettled.F -o fsettled.fppized.f
+g95 -c -o fsettled.fppized.o    -O2                fsettled.fppized.f
+g95 -c -o fshaked.o    -O2                fshaked.f
+gcc -c -o 3dview.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                3dview.c
+gcc -c -o atomprop.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                atomprop.c
+gcc -c -o binio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                binio.c
+gcc -c -o block_tx.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                block_tx.c
+gcc -c -o bondfree.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                bondfree.c
+gcc -c -o buffer.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                buffer.c
+gcc -c -o calcgrid.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                calcgrid.c
+gcc -c -o calch.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                calch.c
+gcc -c -o calcmu.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                calcmu.c
+gcc -c -o calcvir.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                calcvir.c
+gcc -c -o clincs.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                clincs.c
+gcc -c -o comlib.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                comlib.c
+gcc -c -o confio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                confio.c
+gcc -c -o constr.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                constr.c
+gcc -c -o copyrite.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                copyrite.c
+gcc -c -o coupling.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                coupling.c
+gcc -c -o csettle.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                csettle.c
+gcc -c -o disre.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                disre.c
+gcc -c -o do_fit.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                do_fit.c
+gcc -c -o do_gct.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                do_gct.c
+gcc -c -o dummies.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                dummies.c
+gcc -c -o ebin.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                ebin.c
+gcc -c -o edsam.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                edsam.c
+gcc -c -o enxio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                enxio.c
+gcc -c -o ewald.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                ewald.c
+gcc -c -o ewald_util.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                ewald_util.c
+gcc -c -o f77_wrappers.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                f77_wrappers.c
+gcc -c -o fatal.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                fatal.c
+gcc -c -o ffscanf.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                ffscanf.c
+gcc -c -o fftgrid.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                fftgrid.c
+gcc -c -o filenm.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                filenm.c
+gcc -c -o fnbf.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                fnbf.c
+gcc -c -o force.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                force.c
+gcc -c -o futil.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                futil.c
+gcc -c -o gbutil.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                gbutil.c
+gcc -c -o gctio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                gctio.c
+gcc -c -o genalg.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                genalg.c
+gcc -c -o ghat.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                ghat.c
+gcc -c -o glaasje.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                glaasje.c
+gcc -c -o gmx_system_xdr.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                gmx_system_xdr.c
+gcc -c -o gmxfio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                gmxfio.c
+gcc -c -o ifunc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                ifunc.c
+gcc -c -o index.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                index.c
+index.c:55: warning: conflicting types for built-in function 'yn'
+gcc -c -o init.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                init.c
+gcc -c -o init_sh.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                init_sh.c
+gcc -c -o innerc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                innerc.c
+gcc -c -o invblock.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                invblock.c
+gcc -c -o ionize.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                ionize.c
+gcc -c -o libxdrf.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                libxdrf.c
+gcc -c -o macros.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                macros.c
+gcc -c -o main.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                main.c
+gcc -c -o maths.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                maths.c
+gcc -c -o matio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                matio.c
+gcc -c -o md.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                md.c
+gcc -c -o mdatom.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                mdatom.c
+gcc -c -o mdebin.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                mdebin.c
+gcc -c -o mdrun.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                mdrun.c
+gcc -c -o memdump.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                memdump.c
+gcc -c -o minimize.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                minimize.c
+gcc -c -o mshift.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                mshift.c
+gcc -c -o mvdata.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                mvdata.c
+gcc -c -o mvxvf.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                mvxvf.c
+gcc -c -o names.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                names.c
+gcc -c -o network.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                network.c
+gcc -c -o nrama.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                nrama.c
+gcc -c -o nrjac.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                nrjac.c
+gcc -c -o nrnb.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                nrnb.c
+gcc -c -o ns.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                ns.c
+gcc -c -o nsb.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                nsb.c
+gcc -c -o nsgrid.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                nsgrid.c
+gcc -c -o orires.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                orires.c
+gcc -c -o pargs.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pargs.c
+gcc -c -o pbc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pbc.c
+gcc -c -o pdbio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pdbio.c
+gcc -c -o pme.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pme.c
+gcc -c -o poisson.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                poisson.c
+gcc -c -o pppm.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pppm.c
+gcc -c -o princ.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                princ.c
+gcc -c -o psgather.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                psgather.c
+gcc -c -o pssolve.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pssolve.c
+gcc -c -o psspread.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                psspread.c
+gcc -c -o pull.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pull.c
+gcc -c -o pullinit.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pullinit.c
+gcc -c -o pullio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pullio.c
+gcc -c -o pullutil.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                pullutil.c
+gcc -c -o rando.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                rando.c
+gcc -c -o random.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                random.c
+gcc -c -o rbin.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                rbin.c
+gcc -c -o rdgroup.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                rdgroup.c
+gcc -c -o readinp.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                readinp.c
+gcc -c -o relax_sh.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                relax_sh.c
+gcc -c -o replace.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                replace.c
+gcc -c -o rmpbc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                rmpbc.c
+gcc -c -o shakef.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                shakef.c
+gcc -c -o shift_util.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                shift_util.c
+gcc -c -o sim_util.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                sim_util.c
+gcc -c -o smalloc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                smalloc.c
+gcc -c -o sortwater.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                sortwater.c
+gcc -c -o splittop.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                splittop.c
+gcc -c -o stat.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                stat.c
+gcc -c -o statutil.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                statutil.c
+gcc -c -o strdb.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                strdb.c
+gcc -c -o string2.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                string2.c
+gcc -c -o symtab.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                symtab.c
+gcc -c -o synclib.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                synclib.c
+gcc -c -o tables.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                tables.c
+gcc -c -o tgroup.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                tgroup.c
+gcc -c -o tpxio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                tpxio.c
+gcc -c -o trnio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                trnio.c
+gcc -c -o trxio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                trxio.c
+gcc -c -o txtdump.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                txtdump.c
+gcc -c -o typedefs.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                typedefs.c
+gcc -c -o update.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                update.c
+gcc -c -o vcm.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                vcm.c
+gcc -c -o vec.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                vec.c
+gcc -c -o viewit.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                viewit.c
+gcc -c -o wgms.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                wgms.c
+gcc -c -o wman.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                wman.c
+gcc -c -o wnblist.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                wnblist.c
+gcc -c -o writeps.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                writeps.c
+gcc -c -o xdrd.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                xdrd.c
+gcc -c -o xtcio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                xtcio.c
+gcc -c -o xutils.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                xutils.c
+gcc -c -o xvgr.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H  -O2                xvgr.c
+g95   -O2          flincs.o fsettle.fppized.o fshake.o innerf.o flincsd.o fsettled.fppized.o fshaked.o 3dview.o atomprop.o binio.o block_tx.o bondfree.o buffer.o calcgrid.o calch.o calcmu.o calcvir.o clincs.o comlib.o confio.o constr.o copyrite.o coupling.o csettle.o disre.o do_fit.o do_gct.o dummies.o ebin.o edsam.o enxio.o ewald.o ewald_util.o f77_wrappers.o fatal.o ffscanf.o fftgrid.o filenm.o fnbf.o force.o futil.o gbutil.o gctio.o genalg.o ghat.o glaasje.o gmx_system_xdr.o gmxfio.o ifunc.o index.o init.o init_sh.o innerc.o invblock.o ionize.o libxdrf.o macros.o main.o maths.o matio.o md.o mdatom.o mdebin.o mdrun.o memdump.o minimize.o mshift.o mvdata.o mvxvf.o names.o network.o nrama.o nrjac.o nrnb.o ns.o nsb.o nsgrid.o orires.o pargs.o pbc.o pdbio.o pme.o poisson.o pppm.o princ.o psgather.o pssolve.o psspread.o pull.o pullinit.o pullio.o pullutil.o rando.o random.o rbin.o rdgroup.o readinp.o relax_sh.o replace.o rmpbc.o shakef.o shift_util.o sim_util.o smalloc.o sortwater.o splittop.o stat.o statutil.o strdb.o string2.o symtab.o synclib.o tables.o tgroup.o tpxio.o trnio.o trxio.o txtdump.o typedefs.o update.o vcm.o vec.o viewit.o wgms.o wman.o wnblist.o writeps.o xdrd.o xtcio.o xutils.o xvgr.o             -lm        -o gromacs
+ld: cannot find -lf95
+specmake: *** [gromacs] Error 1
+Error with make 'specmake build': check file '/usr/local/cpu2006/benchspec/CPU2006/435.gromacs/run/build_base_i386-m32-gcc42-nn.0000/make.err'
+  Error with make!
+*** Error building 435.gromacs
+  Building 435.gromacs ref peak i386-m32-gcc42-nn default: (build_peak_i386-m32-gcc42-nn.0000)
+specmake clean 2> make.clean.err | tee make.clean.out
+rm -rf gromacs gromacs.exe *.o  *.fppized.f*
+find . \( -name \*.o -o -name '*.fppized.f*' \) -print | xargs rm -rf
+rm -rf core 
+specmake build 2> make.err | tee make.out
+g95 -c -o flincs.o                    flincs.f
+specperl /usr/local/cpu2006/bin/specpp   -DSPEC_CPU -DNDEBUG   fsettle.F -o fsettle.fppized.f
+g95 -c -o fsettle.fppized.o                    fsettle.fppized.f
+g95 -c -o fshake.o                    fshake.f
+g95 -c -o innerf.o                    innerf.f
+g95 -c -o flincsd.o                    flincsd.f
+specperl /usr/local/cpu2006/bin/specpp   -DSPEC_CPU -DNDEBUG   fsettled.F -o fsettled.fppized.f
+g95 -c -o fsettled.fppized.o                    fsettled.fppized.f
+g95 -c -o fshaked.o                    fshaked.f
+gcc -c -o 3dview.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  3dview.c
+gcc -c -o atomprop.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  atomprop.c
+gcc -c -o binio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  binio.c
+gcc -c -o block_tx.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  block_tx.c
+gcc -c -o bondfree.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  bondfree.c
+gcc -c -o buffer.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  buffer.c
+gcc -c -o calcgrid.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  calcgrid.c
+gcc -c -o calch.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  calch.c
+gcc -c -o calcmu.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  calcmu.c
+gcc -c -o calcvir.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  calcvir.c
+gcc -c -o clincs.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  clincs.c
+gcc -c -o comlib.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  comlib.c
+gcc -c -o confio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  confio.c
+gcc -c -o constr.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  constr.c
+gcc -c -o copyrite.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  copyrite.c
+gcc -c -o coupling.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  coupling.c
+gcc -c -o csettle.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  csettle.c
+gcc -c -o disre.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  disre.c
+gcc -c -o do_fit.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  do_fit.c
+gcc -c -o do_gct.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  do_gct.c
+gcc -c -o dummies.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  dummies.c
+gcc -c -o ebin.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  ebin.c
+gcc -c -o edsam.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  edsam.c
+gcc -c -o enxio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  enxio.c
+gcc -c -o ewald.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  ewald.c
+gcc -c -o ewald_util.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  ewald_util.c
+gcc -c -o f77_wrappers.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  f77_wrappers.c
+gcc -c -o fatal.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  fatal.c
+gcc -c -o ffscanf.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  ffscanf.c
+gcc -c -o fftgrid.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  fftgrid.c
+gcc -c -o filenm.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  filenm.c
+gcc -c -o fnbf.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  fnbf.c
+gcc -c -o force.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  force.c
+gcc -c -o futil.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  futil.c
+gcc -c -o gbutil.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  gbutil.c
+gcc -c -o gctio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  gctio.c
+gcc -c -o genalg.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  genalg.c
+gcc -c -o ghat.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  ghat.c
+gcc -c -o glaasje.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  glaasje.c
+gcc -c -o gmx_system_xdr.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  gmx_system_xdr.c
+gcc -c -o gmxfio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  gmxfio.c
+gcc -c -o ifunc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  ifunc.c
+gcc -c -o index.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  index.c
+index.c:55: warning: conflicting types for built-in function 'yn'
+gcc -c -o init.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  init.c
+gcc -c -o init_sh.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  init_sh.c
+gcc -c -o innerc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  innerc.c
+gcc -c -o invblock.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  invblock.c
+gcc -c -o ionize.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  ionize.c
+gcc -c -o libxdrf.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  libxdrf.c
+gcc -c -o macros.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  macros.c
+gcc -c -o main.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  main.c
+gcc -c -o maths.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  maths.c
+gcc -c -o matio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  matio.c
+gcc -c -o md.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  md.c
+gcc -c -o mdatom.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  mdatom.c
+gcc -c -o mdebin.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  mdebin.c
+gcc -c -o mdrun.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  mdrun.c
+gcc -c -o memdump.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  memdump.c
+gcc -c -o minimize.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  minimize.c
+gcc -c -o mshift.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  mshift.c
+gcc -c -o mvdata.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  mvdata.c
+gcc -c -o mvxvf.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  mvxvf.c
+gcc -c -o names.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  names.c
+gcc -c -o network.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  network.c
+gcc -c -o nrama.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  nrama.c
+gcc -c -o nrjac.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  nrjac.c
+gcc -c -o nrnb.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  nrnb.c
+gcc -c -o ns.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  ns.c
+gcc -c -o nsb.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  nsb.c
+gcc -c -o nsgrid.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  nsgrid.c
+gcc -c -o orires.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  orires.c
+gcc -c -o pargs.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pargs.c
+gcc -c -o pbc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pbc.c
+gcc -c -o pdbio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pdbio.c
+gcc -c -o pme.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pme.c
+gcc -c -o poisson.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  poisson.c
+gcc -c -o pppm.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pppm.c
+gcc -c -o princ.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  princ.c
+gcc -c -o psgather.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  psgather.c
+gcc -c -o pssolve.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pssolve.c
+gcc -c -o psspread.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  psspread.c
+gcc -c -o pull.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pull.c
+gcc -c -o pullinit.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pullinit.c
+gcc -c -o pullio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pullio.c
+gcc -c -o pullutil.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  pullutil.c
+gcc -c -o rando.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  rando.c
+gcc -c -o random.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  random.c
+gcc -c -o rbin.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  rbin.c
+gcc -c -o rdgroup.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  rdgroup.c
+gcc -c -o readinp.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  readinp.c
+gcc -c -o relax_sh.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  relax_sh.c
+gcc -c -o replace.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  replace.c
+gcc -c -o rmpbc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  rmpbc.c
+gcc -c -o shakef.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  shakef.c
+gcc -c -o shift_util.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  shift_util.c
+gcc -c -o sim_util.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  sim_util.c
+gcc -c -o smalloc.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  smalloc.c
+gcc -c -o sortwater.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  sortwater.c
+gcc -c -o splittop.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  splittop.c
+gcc -c -o stat.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  stat.c
+gcc -c -o statutil.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  statutil.c
+gcc -c -o strdb.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  strdb.c
+gcc -c -o string2.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  string2.c
+gcc -c -o symtab.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  symtab.c
+gcc -c -o synclib.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  synclib.c
+gcc -c -o tables.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  tables.c
+gcc -c -o tgroup.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  tgroup.c
+gcc -c -o tpxio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  tpxio.c
+gcc -c -o trnio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  trnio.c
+gcc -c -o trxio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  trxio.c
+gcc -c -o txtdump.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  txtdump.c
+gcc -c -o typedefs.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  typedefs.c
+gcc -c -o update.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  update.c
+gcc -c -o vcm.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  vcm.c
+gcc -c -o vec.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  vec.c
+gcc -c -o viewit.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  viewit.c
+gcc -c -o wgms.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  wgms.c
+gcc -c -o wman.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  wman.c
+gcc -c -o wnblist.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  wnblist.c
+gcc -c -o writeps.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  writeps.c
+gcc -c -o xdrd.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  xdrd.c
+gcc -c -o xtcio.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  xtcio.c
+gcc -c -o xutils.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  xutils.c
+gcc -c -o xvgr.o -DSPEC_CPU -DNDEBUG  -I. -DHAVE_CONFIG_H                  xvgr.c
+g95             flincs.o fsettle.fppized.o fshake.o innerf.o flincsd.o fsettled.fppized.o fshaked.o 3dview.o atomprop.o binio.o block_tx.o bondfree.o buffer.o calcgrid.o calch.o calcmu.o calcvir.o clincs.o comlib.o confio.o constr.o copyrite.o coupling.o csettle.o disre.o do_fit.o do_gct.o dummies.o ebin.o edsam.o enxio.o ewald.o ewald_util.o f77_wrappers.o fatal.o ffscanf.o fftgrid.o filenm.o fnbf.o force.o futil.o gbutil.o gctio.o genalg.o ghat.o glaasje.o gmx_system_xdr.o gmxfio.o ifunc.o index.o init.o init_sh.o innerc.o invblock.o ionize.o libxdrf.o macros.o main.o maths.o matio.o md.o mdatom.o mdebin.o mdrun.o memdump.o minimize.o mshift.o mvdata.o mvxvf.o names.o network.o nrama.o nrjac.o nrnb.o ns.o nsb.o nsgrid.o orires.o pargs.o pbc.o pdbio.o pme.o poisson.o pppm.o princ.o psgather.o pssolve.o psspread.o pull.o pullinit.o pullio.o pullutil.o rando.o random.o rbin.o rdgroup.o readinp.o relax_sh.o replace.o rmpbc.o shakef.o shift_util.o sim_util.o smalloc.o sortwater.o splittop.o stat.o statutil.o strdb.o string2.o symtab.o synclib.o tables.o tgroup.o tpxio.o trnio.o trxio.o txtdump.o typedefs.o update.o vcm.o vec.o viewit.o wgms.o wman.o wnblist.o writeps.o xdrd.o xtcio.o xutils.o xvgr.o             -lm        -o gromacs
+ld: cannot find -lf95
+specmake: *** [gromacs] Error 1
+Error with make 'specmake build': check file '/usr/local/cpu2006/benchspec/CPU2006/435.gromacs/run/build_peak_i386-m32-gcc42-nn.0000/make.err'
+  Error with make!
+*** Error building 435.gromacs
+
+Build errors: 435.gromacs(base), 435.gromacs(peak)
+
+Parsing Flags
+  Looking at 435.gromacs base i386-m32-gcc42-nn default: no stored flags!
+  Looking at 435.gromacs peak i386-m32-gcc42-nn default: no stored flags!
+Flag Parsing Complete
+
+Setting Up Run Directories
+Running Benchmarks
+Error: 2x435.gromacs
+Producing Reports
+mach: default
+  ext: i386-m32-gcc42-nn
+    size: ref
+      set: int
+      set: fp
+NOTICE: sw_compiler is longer than 50 characters and will be split
+        format: raw -> /usr/local/cpu2006/result/CFP2006.044.rsf
+        format: flags -> /usr/local/cpu2006/result/CFP2006.044.flags.html
+        format: ASCII -> /usr/local/cpu2006/result/CFP2006.044.txt
+        format: HTML -> /usr/local/cpu2006/result/CFP2006.044.html, CFP2006.044.gif
+        format: PDF -> /usr/local/cpu2006/result/CFP2006.044.pdf
+        format: Screen -> 
+
+                                  Estimated                       Estimated
+                Base     Base       Base        Peak     Peak       Peak
+Benchmarks      Ref.   Run Time     Ratio       Ref.   Run Time     Ratio
+-------------- ------  ---------  ---------    ------  ---------  ---------
+410.bwaves                                  NR                              NR 
+416.gamess                                  NR                              NR 
+433.milc                                    NR                              NR 
+434.zeusmp                                  NR                              NR 
+435.gromacs                                 NR                              NR 
+436.cactusADM                               NR                              NR 
+437.leslie3d                                NR                              NR 
+444.namd                                    NR                              NR 
+447.dealII                                  NR                              NR 
+450.soplex                                  NR                              NR 
+453.povray                                  NR                              NR 
+454.calculix                                NR                              NR 
+459.GemsFDTD                                NR                              NR 
+465.tonto                                   NR                              NR 
+470.lbm                                     NR                              NR 
+481.wrf                                     NR                              NR 
+482.sphinx3                                 NR                              NR 
+ Est. SPECfp_base2006                    --
+ Est. SPECfp2006                                                         --
+
+
+The log for this run is in /usr/local/cpu2006/result/CPU2006.044.log
+
+runspec finished at Mon Oct 24 17:59:47 2011; 75 total seconds elapsed
+/usr/home2/awl8049/dissertation/vmpowermgt/Programs/sched_data_collect
+And the Specsingle gromacs benchmark has completed at 17:59
+specsingle.sh: Telling teaplant to cycle log files
+specsingle.sh: Downloading data from the power meter
+specsingle.sh: Data collection complete

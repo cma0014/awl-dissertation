@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.7)
+The top-level auxiliary file: scheduler2.aux
+The style file: latex8.bst
+Database file #1: scheduler2.bib.bib
+Warning--entry type for "Sun2009" isn't style-file defined
+--line 84 of file scheduler2.bib.bib
+Warning--empty booktitle in Li2008
+Warning--empty year in Merkel2008
+You've used 30 entries,
+            2118 wiz_defined-function locations,
+            693 strings with 9724 characters,
+and the built_in function-call counts, 10888 in all, are:
+= -- 1099
+> -- 478
+< -- 13
++ -- 189
+- -- 158
+* -- 704
+:= -- 1724
+add.period$ -- 97
+call.type$ -- 30
+change.case$ -- 169
+chr.to.int$ -- 0
+cite$ -- 32
+duplicate$ -- 466
+empty$ -- 871
+format.name$ -- 158
+if$ -- 2381
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 27
+newline$ -- 151
+num.names$ -- 58
+pop$ -- 210
+preamble$ -- 1
+purify$ -- 140
+quote$ -- 0
+skip$ -- 336
+stack$ -- 0
+substring$ -- 624
+swap$ -- 139
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 118
+warning$ -- 2
+while$ -- 102
+width$ -- 32
+write$ -- 336
+(There were 3 warnings)

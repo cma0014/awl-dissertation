@@ -1,0 +1,300 @@
+%
+% File:     dissertation.tex
+% Author:   awl8049
+% Revision: $Revision: 1.2 $
+%
+% Document based on the template for thesis and dissertations
+% developed by Steven White and Malcolm Hutson.
+
+\documentclass[12pt]{report}	% The documentclass must be ``report''.
+
+% Dissertation package style file.
+\usepackage{template/uldiss}  		
+
+\usepackage{amsmath,amsthm,amsfonts,amscd} % Some packages to write mathematics.
+\usepackage{eucal} % Euler fonts
+\usepackage{verbatim} % Allows quoting source with commands.
+\usepackage{listings}
+\lstloadlanguages{Matlab,C++,C,Pascal}
+\lstset{
+         basicstyle=\footnotesize\ttfamily, 
+         %numbers=left,              
+         numberstyle=\tiny,          
+         %stepnumber=2,              
+         numbersep=5pt,              
+         tabsize=2,                  
+         extendedchars=true,         
+         breaklines=true,            
+         keywordstyle=textbf,    
+         stringstyle=\ttfamily, 
+         showspaces=false,       
+         showtabs=false,         
+         xleftmargin=17pt,
+         framexleftmargin=17pt,
+         framexrightmargin=5pt,
+         framexbottommargin=4pt,
+         %backgroundcolor=\color{lightgray},
+         showstringspaces=false  
+ }
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+\usepackage{pdfpages}
+\usepackage{comment}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg,.pdf}
+\graphicspath{{modelgraphics/}{schedulegraphics/}}
+\usepackage[caption=false,labelfont=sf,textfont=sf,captionskip=5pt]{subfig}
+%\usepackage{fixltx2e}
+
+%\usepackage{draftwatermark}		% Uncomment this line to have the
+				% word, "DRAFT," as a background
+				% "watermark" on all of the pages of
+				% of your draft versions. When ready
+				% to generate your final copy, re-comment
+				% it out with a percent sign to remove
+				% the word draft before you run
+				% latex for the last time.
+\newcommand{\equationname}{Equation}
+\newcommand{\equationnames}{Equations}
+\newcommand{\figurenames}{Figures}
+%\newcommand{\figurename}{Figure}
+
+% Uncomment one of the following depending upon the type of document
+% you are producing
+%\prospectus
+\dissertation
+%\masterthesis
+%\masterreport
+
+\cacscmps
+
+%
+% Basic Information 
+%
+
+\author{Adam Wade Lewis}
+  % Your name how it should normally appear across the document.
+  % The graduate school requires that your name always appear identically
+  %   every time that it is used. To help, we recommend use \theauthor
+  %   wherever your name should be printed for consistency.
+
+\properauthor{Lewis, Adam Wade}
+  % Your proper name for alphabetizing. (Used in the abstract.)
+  % Last, First Middle Suffix
+
+\title{Energy~Conservation~and~Thermal~Management in~High-Performance
+  Server~Architectures}
+  % The title of your thesis/dissertation. Use a tilde (~) for any
+  %   spaces that should not be broken at line breaks.
+
+\dean{David Breaux}
+  % The Dean of the Graduate School
+
+\degree{Doctor of Philosophy}
+\major{Computer Science}
+\graduationmonth{Spring}      
+\graduationyear{2012}   
+  
+\previousdegrees{Bachelor of Arts, The University of the South, 1986;
+  Master of Science, University of Tennessee at Chattanooga, 1989; Doctor of Philosophy, University of Louisiana at Lafayette, \thegraduationmonth \ \thegraduationyear}
+
+% LaTeX doesn't have a good way to count words in section, use word
+% counting functions in your favorite editor and insert result here
+\abstractwordcount{350}
+% The UL Graduate School requires that you not include the Extended
+% Heading Abstract to be included in the page count.  Means that you
+% cannot use the automated page count in LaTeX for this purpose.  The
+% \abstractpagecount variable addresses this problem; however, you must
+% manually set that value in the same manner as \abstractwordcount.
+\abstractpagecount{87}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Enter names of the member(s) of your committee. 
+% Put one name per line with the name in square brackets. 
+% The name on the last line, however, must be in curly braces.
+% NOTE: The first member should be your comittee chairr.
+% NOTE: Maximum six members. Minimum one member (supervisor).
+%
+\committeemembers
+         [Nian-Feng Tzeng]
+         [Magdy Bayoumi]
+         [Dmitri Perkins]
+         {Ashok Kumar}
+	
+\committeememberstitle
+    [Professor of Computer Engineering]
+    [Professor of Computer Engineering]
+    [Associate Professor of Computer Science]
+    {Assistant Professor of Computer Science}
+
+%\supervisortitle{Dr.}   
+
+\hyphenation{FORTRAN Hy-phen-a-tion science}
+%\hyphenpenalty=100000
+
+
+%\singlespacing
+%\oneandonehalfspacing
+
+%\singlespacequote
+%\oneandonehalfspacequote
+
+%\topmargin 0.125in	% Adjust this value if the PostScript file output
+			% of your dissertation has incorrect top and 
+			% bottom margins. Print a copy of at least one
+			% full page of your dissertation (not the first
+			% page of a chapter) and measure the top and
+			% bottom margins with a ruler. You must have
+			% a top margin of 1.5" and a bottom margin of
+			% at least 1.25". The page numbers must be at
+			% least 1.00" from the bottom of the page.
+			% If the margins are not correct, adjust this
+			% value accordingly and re-compile and print again.
+			%
+			% The default value is 0.125" 
+
+
+\makeindex              % Make the index
+
+\begin{document}
+
+\titlepage              % Produces the title page.
+\copyrightpage          % Produces the copyright page.
+\approvalpage           % Produces the approval page
+
+%
+% Dedication, epigraph, and/or acknowledgments are optional, but must
+% occur here.
+%
+\begin{dedication}
+  Dedicated to my parents, Laura Mae and Jeter Wade Lewis, who have been
+  a loving and supportive presence in my life.  It has been through
+  their support that this work has been possible.
+\end{dedication}
+
+ \begin{epigraph}
+ Never travel without a towel.\\
+ --Douglas Adams, \emph{The Hitchhiker's Guide to the Galaxy}, 1980
+ \end{epigraph}
+
+\begin{acknowledgments}		% Optional
+  The author extends his thanks to the many people whose contributions
+  and support have improved the overall quality of this dissertation.
+  It has been an honor to work with Professor Nian-Feng Tzeng, my
+  advisor and committee chair.  I am profoundly grateful to him for his
+  perceptive and extremely patient mentoring over the past seven years.
+  I have become a much more competent and confident scholar as result of
+  his honest and supportive feedback.  I thank Professors Magdy Bayoumi,
+  Dmitri Perkins, and Ashok Kumar for serving on my committee and
+  providing feedback during the defense of my dissertation.
+
+  This research was made possible by the assistance and support of my
+  collaborators and co-authors.  In particular, I am grateful to Soumik
+  Ghosh for his assistance in the early development of the energy and
+  thermal models in this research and to Jim Simon for his assistance in
+  the collection and interpretation of the results that lead to the
+  development of Chaotic Attractor Predictors.  This work would not have
+  been possible without the support and assistance of the members of the
+  Computer Architecture and Networking research group in the Center for
+  Advanced Computer Studies.  You have my thanks for your willingness to
+  tolerate my quirkiness over the past seven years.
+
+  This research was supported in part through a fellowship and funding
+  provided by the Louisiana Board of Regents and through funding
+  provided by the United States Department of Energy.
+
+\end{acknowledgments}
+
+\tableofcontents 
+\listoftables    
+\listoffigures   
+
+% For really large documents, it's best to use the LaTeX include
+% function to insert each chapter into the document.  If you insist, you can
+% just include each chapter here...
+\input{chapter-introduction}
+\input{chapter-related}
+\input{chapter-systemmodel}
+\input{chapter-prediction}
+\input{chapter-evaluation}
+\input{chapter-scheduling}
+\input{chapter-scheduler-evaluation}
+\input{chapter-conclusions}
+\bibliography{dissertation.bib}                      
+% \index{Bibliography@\emph{Bibliography}}
+%
+% Generate the index.
+%
+%\printindex     % Include the index here. Comment out this line      %
+%               % with a percent sign if you do not want an index .  %
+ \begin{abstract} 
+   Modern processors crudely manage thermal emergencies through Dynamic
+   Thermal Management (DTM), where the processor monitors the die
+   temperature and dynamically adjusts the processor voltage and
+   frequency (DVFS) to throttle down the processor when
+   necessary. However, DVFS tends to yield marked degradation in both
+   application performance and system reliability.  This dissertation
+   proposes a run-time model relating server energy consumption to
+   its overall thermal envelope, using hardware performance counters and
+   experimental measurements.  Our approach differs from prior work by
+   linking system energy input to subsystem energy consumption based on
+   a small set of tightly correlated parameters.  The proposed model
+   takes into account processor power, bus activities, and system
+   ambient temperature for real-time prediction of the power consumption
+   of long running jobs.  Using the HyperTransport and QuickPath Link
+   structures as case studies and through electrical measurements on
+   example server subsystems, we develop a chaotic time--series
+   approximation for run-time power consumption, arriving at the Chaotic
+   Attractor Predictor (CAP).  With polynomial time complexity, CAP
+   exhibits high prediction accuracy, with prediction errors within
+   1.6\% (or 3.3\%) for servers based on the HyperTransport bus (or the
+   QuickPath Links), as verified by a set of common processor
+   benchmarks.
+
+   Based on our Chaotic Attractor Predictors, we have developed and
+   evaluated an effective thread scheduler for multi-core systems.
+   Besides CAPs, our scheduler uses two basic principles to minimize
+   server energy consumption: (1) selecting the thread with the least
+   probability of causing a DTM in the subsequent time quantum, for
+   execution on the next available core, and (2) migrating execution
+   threads on thermally overextended cores to other cool cores via load
+   balancing.  Our scheduler is evaluated in practice to assess the
+   advantages resulting from incorporating thermal-awareness into the
+   existing scheduler in the FreeBSD operating system.  Experiments
+   reveal that our scheduler exhibits reduction in mean core on-die
+   temperatures by up to 12.8$^{\circ}$C\ under PARSEC benchmarks (which
+   have multi-threaded workloads) and by up to 3.3$^{\circ}$C\ under
+   mixes of SPEC CPU2006 benchmarks for concurrent execution on all four
+   server cores, while experiencing only 1\% to 4\% performance
+   degradation.
+ \end{abstract}
+
+\begin{biography}
+  Adam Wade Lewis received a Bachelor of Arts in Mathematics and
+  a Bachelor of Arts in Theatre from the The University of the
+  South in 1986 and a Master of Science in Computer Science from
+  The University of Tennessee at Chattanooga in 1989. His background
+  includes experience in the retail information technology and
+  networking engineering fields as a Software Developer, Business
+  Analyst, and Project Manager for NCR~Corporation throughout the
+  world. He is a member of SIAM, the ACM, and the IEEE Computer Society.
+ \end{biography}
+
+
+\end{document}
+% The following comment block is used by the different flavors of EMACS and
+% the AUCTEX package to manage multiple documents.  In order for AUCTEX
+% to understand you're working with multiple files, you should define
+% the TeX-master variable as a file local variable that identifies your
+% master document.
+%
+% Please do not remove.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "dissertation.tex"
+%%% TeX-PDF-mode: t
+%%% TeX-source-correlate-mode: t
+%%% End: 
